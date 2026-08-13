@@ -1,0 +1,24 @@
+**TRACK: Rat Bat Blue**
+[MetaData]
+key: A minor | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving, bluesy rock
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | A . . . | F . . . | C . . . | G . . . | E . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | F . . . | G . . . | E . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 50
