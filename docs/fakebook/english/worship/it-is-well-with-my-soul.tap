@@ -1,0 +1,22 @@
+**TRACK: It Is Well with My Soul**
+[MetaData]
+key: D | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Serene
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+Melody: | D4 . F#4 . | A4 . . . | B4 . A4 . | G4 . F#4 . |
+Lyrics: | When peace like a riv - er at - tend - eth my way |
+@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+Melody: | D4 . F#4 . | A4 . . . | B4 . A4 . | G4 . F#4 . |
+Lyrics: | When sor - rows like sea - bil - lows roll |
+@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+Melody: | F#4 . A4 . | A4 . . . | B4 . D5 . | D5 . . . |
+Lyrics: | It is well, with my soul |
+@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 55

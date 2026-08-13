@@ -1,0 +1,16 @@
+**TRACK: In the Sweet By and By**
+[MetaData]
+key: G | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
+Lyrics: | There's a land that is fair - er than day, | And by faith we can see it a - far, | For the Fa - ther waits o - ver the way, | To pre - pare us a dwell - ing place there. |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | A3 . F#3 . | G3 . . . |
+Lyrics: | In the sweet by and by, | We shall meet on that beau - ti - ful shore, | In the sweet by and by, | We shall meet on that beau - ti - ful shore. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55
