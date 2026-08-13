@@ -1,0 +1,31 @@
+**TRACK: For Good**
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 45
+| Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb1-bb2-eb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | vel: 60
+| Eb . . . | Bb . . . | F . . . | F . . . |
+@guitar | eb1-bb2-eb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Eb . . . | F . . . | F . . . |
+@guitar | c1-g2-c2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 45
+| Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb1-bb2-eb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | vel: 60
+|

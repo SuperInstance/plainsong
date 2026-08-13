@@ -1,0 +1,24 @@
+**TRACK: Popular**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Bright, theatrical
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Cm . . . | F . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 65

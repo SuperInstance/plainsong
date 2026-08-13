@@ -1,0 +1,30 @@
+**TRACK: Defying Gravity**
+[MetaData]
+key: Db | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Soaring
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Bbm . . . | Gb . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 50
+Chords: | Db . . . | Bbm . . . | Gb . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Gb/Ab . . . |
+@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | F . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 65
+Chords: | Db . . . | F . . . | Bbm . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | ab2-c3-eb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Gb/Ab . . . |
+@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 60
+
+[CH] (Final Chorus - 8 Bars)
+Chords: | Db . . . | F . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 70
+Chords: | Db . . . | F . . . | Bbm . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . |

@@ -1,0 +1,20 @@
+**TRACK: Take Me or Leave Me**
+[MetaData]
+key: Fm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Defiant
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Ab . . . | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Ab . . . | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . | Db . . . | Ab . . . | Eb . . . | C . . . |
+@guitar | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | bb1-db2-f2 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | c2-e2-g2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Eb . . . | Ab . . . | C . . . |
+@guitar | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | c2-e2-g2 . . . | vel: 50

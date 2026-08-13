@@ -1,0 +1,24 @@
+**TRACK: Cell Block Tango**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Sultry, Menacing
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[B] (Bridge - 4 Bars)
+Chords: | Bb . . . | A7 . . . | Bb . . . | A7 . . . |
+@guitar | bb2-d3-f3 . . . | a2-c#3-e3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 70
