@@ -1,0 +1,26 @@
+**TRACK: Mille bolle blu**
+[MetaData]
+key: Bb | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+Chords: | Bb . . . | Eb . . . | C7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-eb3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+Chords: | Bb . . . | Eb . . . | C7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-eb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 65
+Chords: | Bb . . . | Eb . . . | F7 . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C7 . . . | F7 . . . | F7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-eb3 . . . | f2-a2-eb3 . . . | vel: 60
