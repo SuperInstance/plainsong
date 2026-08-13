@@ -1,0 +1,30 @@
+**TRACK: Embraceable You**
+[MetaData]
+key: Ab | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Ddim . . . |
+| Ab . . . | F7 . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | ab2-eb3-ab3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | d3-f3-ab3 . . . | vel: 50
+@guitar | ab2-eb3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Ddim . . . |
+| Ab . . . | F7 . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | ab2-eb3-ab3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | d3-f3-ab3 . . . | vel: 52
+@guitar | ab2-eb3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | vel: 52
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | F7 . . . |
+| Bbm7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a2-c3 . . . | vel: 55
+@guitar | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | ab2-eb3-ab3 . . . | eb2-g2-bb2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Db . . . |
+| Ab . . . | F7 . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | ab2-eb3-ab3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 58
+@guitar | ab2-eb3-ab3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | vel: 58
+
+[OUT] (

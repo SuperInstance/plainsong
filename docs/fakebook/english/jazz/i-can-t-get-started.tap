@@ -1,0 +1,20 @@
+**TRACK: I Can't Get Started**
+[MetaData]
+key: Cm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | d3-f3-ab3-c4 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | d3-f3-ab3-c4 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7 . . . | Cm . . . | G7 . . . |
+@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | d3-f3-ab3-c4 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2

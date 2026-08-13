@@ -1,0 +1,24 @@
+**TRACK: It's a Wonderful World**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . | Bb . . . | Bb . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c2-e3-g3 . . . | c2-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . | Bb . . . | Bb . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c2-e3-g3 . . . | c2-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . | Bb . . . | Bb . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c2-e3-g3 . . . | c2-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c2-e3-g3 . . . | c2-e3-g3 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . | Bb . . . | Bb . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . .

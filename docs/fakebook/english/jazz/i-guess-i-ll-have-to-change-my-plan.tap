@@ -1,0 +1,23 @@
+**TRACK: I Guess I'll Have to Change My Plan**
+[MetaData]
+key: Eb | tempo: 100 | subdivision: 8th
+time: 2/2 | mood: Elegant
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . | Eb . . . | Ab . . . | Eb Bb7 . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3 bb2-d3 . . | eb3-g3-bb3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . | C7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Gm7 . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 45
+
+[V3] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . | Eb . . . | Ab . . . | Eb Bb7 . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3 bb2-d3 . . | eb3-g3-bb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Eb . . .

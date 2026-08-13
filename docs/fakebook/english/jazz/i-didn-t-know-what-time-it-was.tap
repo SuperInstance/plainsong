@@ -1,0 +1,24 @@
+**TRACK: I Didn't Know What Time It Was**
+[MetaData]
+key: C | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 4 Bars)
+Chords: | Cmaj7 . . . | Am7 . . . | Dm7 . . . | G7 . . . |
+@guitar | c3-e3-g3-b3 . . . | a2-c3-e3-g3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . |
+@guitar | e3-g3-b3-d3 . . . | a2-c#3-e3-g3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cmaj7 . . . | Am7 . . . | Dm7 . . . | G7 . . . |
+@guitar | c3-e3-g3-b3 . . . | a2-c3-e3-g3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fmaj7 . . . | Fm6 . . . | Cmaj7 . . . | A7 . . . |
+@guitar | f3-a3-c3-e3 . . . | f3-ab3-c3-d3 . . . | c3-e3-g3-b3 . . . | a2-c#3-e3-g3 . . . | vel: 58
+
+[V3] (Verse - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | G7 . . . |
+@guitar | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | g2-b2-d3-f3 . . . | vel: 55
