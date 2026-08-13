@@ -1,0 +1,20 @@
+**TRACK: Groovin' High**
+[MetaData]
+key: Eb | tempo: 200 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb6 . . . | Fm7 . . . | Bb7 . . . | Eb6 . . . | Ab7 . . . | Dm7 G7 . . | Cm7 . . . | F7 Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | d3-f3-a3 g2-b2-d3 . . | c3-eb3-g3 . . . | f2-a2-c3 bb2-d3-f3 . . | vel: 65
+
+[B1] (Bridge - 8 Bars)
+Chords: | Bb7 . . . | Eb6 . . . | Bb7 . . . | Eb6 . . . | Ab7 . . . | Dm7 G7 . . | Cm7 . . . | F7 Bb7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | d3-f3-a3 g2-b2-d3 . . | c3-eb3-g3 . . . | f2-a2-c3 bb2-d3-f3 . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb6 . . . | Fm7 . . . | Bb7 . . . | Eb6 . . . | Ab7 . . . | Dm7 G7 . . | Cm7 . . . | F7 Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | d3-f3-a3 g2-b2-d3 . . | c3-eb3-g3 . . . | f2-a2-c3 bb2-d3-f3 . . | vel: 70
+
+[O] (Outro - 4 Bars)
+Chords: | Eb6 . . . | Fm7 . . . | Bb7 . . . | Eb6 . . . |
+@guitar | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 60

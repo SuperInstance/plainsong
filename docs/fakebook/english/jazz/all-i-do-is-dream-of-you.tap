@@ -1,0 +1,30 @@
+**TRACK: All I Do Is Dream of You**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+| F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+| A7 . . . | Dm . . . | G7 . . . | C7 . . . |
+@guitar | a1-c#2-e2 . . . | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-bb2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 60
+| F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
+@guitar | bb1-d2-f2 . . . | bb1-db2-f2 . . . | f2-a2-c3 . . . | d1-f#2-a2 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | G7 . . . | C7 . . . | F . . . | Dm . . . |
+@guitar | g1-b1-d2 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | d2-f2-a2 . .

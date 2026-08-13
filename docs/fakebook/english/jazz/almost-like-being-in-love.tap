@@ -1,0 +1,28 @@
+**TRACK: Almost Like Being in Love**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Gm7 . . . | Am7 . . . | Dm7 . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 55
+Chords: | Gm7 . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | vel: 60
+Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | vel: 60
+
+[B] (Bridge - 8 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-b3-d3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 55
+Chords: | Gm7 . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Gm7 . . . | Am7 . . . | Dm7 . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 55
+Chords: | Gm7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3
