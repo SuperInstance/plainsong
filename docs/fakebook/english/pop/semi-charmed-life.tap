@@ -1,0 +1,24 @@
+**TRACK: Semi-Charmed Life**
+[MetaData]
+key: E | tempo: 105 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | B . . . | C#m . . . | A . . . | E . . . | B . . . | C#m . . . | A . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | C#m . . . | A . . . | E . . . | B . . . | B . . . |
+@guitar | a1-e2-a2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | b1-f#2-b2 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | B . . . | C#m . . . | A . . . | E . . . | B . . . | C#m . . . | A . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e2-a2 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | A . . . | B . . . | E . . . |
+@guitar | f#1-c#2-f#2 . . . | a1-e2-a2 . . . | b1-f#2-b2 . . . | e2-b2-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | C#m . . . | A . . . | E . . . | B . . . | B . . . |
+@guitar | a1-e2-a2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | a1-e

@@ -1,0 +1,30 @@
+**TRACK: Iris**
+[MetaData]
+key: Bb | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 50
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 65
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | c3-eb3-g3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 50
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 65

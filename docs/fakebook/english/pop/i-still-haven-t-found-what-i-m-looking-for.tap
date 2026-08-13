@@ -1,0 +1,24 @@
+**TRACK: I Still Haven't Found What I'm Looking For**
+[MetaData]
+key: D | tempo: 101 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | A . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | A . . . | G . . . | D . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-a3-d4 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | D . . . | D . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 45
