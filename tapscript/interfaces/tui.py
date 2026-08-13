@@ -12,7 +12,6 @@ for moving between pieces and hearing them.
 from __future__ import annotations
 
 import threading
-from pathlib import Path
 from typing import Any
 
 from ..runtime.config import Config, load_config

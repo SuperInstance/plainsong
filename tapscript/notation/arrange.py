@@ -28,7 +28,6 @@ from .ir import (
     ROLE_NOTE,
     ROLE_PLAYER,
     Arrangement,
-    Cell,
     ChordEvent,
     Diagnostic,
     Line,

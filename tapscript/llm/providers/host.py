@@ -45,7 +45,6 @@ from ..base import Provider
 from ..types import (
     CompletionRequest,
     CompletionResponse,
-    Message,
     ProviderError,
     ToolCall,
     Usage,

@@ -19,7 +19,7 @@ from .notation.ir import (
     Line,
     Score,
 )
-from .notation.parser import REST_TOKENS, SUSTAIN_CHARS, SUSTAIN_TOKENS, parse, token_weight
+from .notation.parser import REST_TOKENS, SUSTAIN_TOKENS, parse, token_weight
 
 ROLE_PREFIX = {
     ROLE_CHORDS: "Chords:",
