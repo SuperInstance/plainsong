@@ -1,0 +1,24 @@
+**TRACK: Rebel Without a Pause**
+[MetaData]
+key: Bb minor | tempo: 98 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | vel: 70
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | vel: 80
+
+[BR] (Breakdown - 4 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+@guitar | b1-f2-b2 . . . | b1-f2-b2 . . . | b1-f2-b2 . . . | b1-f2-b2 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | vel: 60

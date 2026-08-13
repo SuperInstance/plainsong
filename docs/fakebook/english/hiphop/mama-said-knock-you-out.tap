@@ -1,0 +1,24 @@
+**TRACK: Mama Said Knock You Out**
+[MetaData]
+key: Dm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Bb . . . | A . . . | A . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 50

@@ -1,0 +1,24 @@
+**TRACK: Gin and Juice**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Laid-back G-funk
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | B7 . . . |
+@guitar | c2-g2-c3 . . . | g2-d2-g3 . . . | d2-a2-d3 . . . | b1-f#2-b2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 45
