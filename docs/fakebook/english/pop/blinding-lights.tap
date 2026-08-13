@@ -1,0 +1,20 @@
+**TRACK: Blinding Lights**
+[MetaData]
+key: Fm | tempo: 171 | subdivision: 8th  
+time: 4/4 | mood: Synthwave
+
+[V1] (Verse - 8 Bars)  
+Chords: | Fm . . . | Fm . . . | Ab . . . | Ab . . . |  
+Chords: | Bbm . . . | Bbm . . . | Db . . . | Eb . . . |  
+@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50  
+@guitar | bb2-db3-f3 . . . | bb2-db3-f3 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)  
+Chords: | Fm . . . | Fm . . . | Ab . . . | Ab . . . |  
+Chords: | Bbm . . . | Bbm . . . | Db . . . | Eb . . . |  
+@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 65  
+@guitar | bb2-db3-f3 . . . | bb2-db3-f3 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Db . . . | Eb . . . | Fm . . . | Fm . . . |  
+@guitar | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | vel: 58

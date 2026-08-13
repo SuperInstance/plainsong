@@ -1,0 +1,20 @@
+**TRACK: I Wanna Dance with Somebody**
+[MetaData]
+key: Ab | tempo: 119 | subdivision: 8th
+time: 4/4 | mood: Upbeat
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Db . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Db . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Db . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-c3-f3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | eb2-bb3-eb3 . . . | vel: 58
