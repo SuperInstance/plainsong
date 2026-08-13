@@ -1,0 +1,22 @@
+**TRACK: Yuan Zi**
+[MetaData]
+key: C#m | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | F#m . . . | C#m . . . | D . . . | B . . . |
+@guitar | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | d3-f#3-a3 . . . | b2-d#3-f#3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | vel: 65
+Chords: | D . . . | A . . . | B . . . | B . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | B . . . |
+@guitar | f#2-a2-c#3 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 55

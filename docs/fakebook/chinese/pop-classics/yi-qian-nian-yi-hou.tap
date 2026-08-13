@@ -1,0 +1,24 @@
+**TRACK: Yi Qian Nian Yi Hou**
+[MetaData]
+key: D | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | A . . . |
+@guitar | g2-b3-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | G . . . | A . . . | A . . . |
+@guitar | e3-g3-b3 . . . | g2-b3-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | A . . . |
+@guitar | g2-b3-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 65
