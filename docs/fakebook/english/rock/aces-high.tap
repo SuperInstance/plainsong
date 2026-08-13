@@ -1,0 +1,20 @@
+**TRACK: Aces High**
+[MetaData]
+key: Dm | tempo: 180 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Bb . . . | A . . . | A . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60

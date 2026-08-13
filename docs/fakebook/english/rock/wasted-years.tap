@@ -1,0 +1,20 @@
+**TRACK: Wasted Years**
+[MetaData]
+key: F#m | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | E . . . | F#m . . . |
+@guitar | f#2-c#3-a3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | f#2-c#3-a3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | E . . . | F#m . . . |
+@guitar | f#2-c#3-a3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | f#2-c#3-a3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | D . . . | A . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | E . . . |
+@guitar | b2-f#3-b3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
