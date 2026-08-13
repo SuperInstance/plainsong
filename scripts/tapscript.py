@@ -190,12 +190,17 @@ class ChordSymbol:
 @dataclass
 class NoteEvent:
     """A parsed melody note."""
-    degree: int           # scale degree 1-7
+    degree: int           # scale degree 1-7 (legacy v1 notation)
     alteration: int       # chromatic alteration
     octave: int           # -1, 0, +1
-    duration_div: int     # duration divisor: 1=quarter, 2=eighth, 4=sixteenth
+    duration_div: int     # duration divisor: 1=quarter, 2=eighth, 4=sixteenth (legacy)
     is_rest: bool = False
     sustain: bool = False  # '.' = hold previous
+    # Spacing-based notation fields (duration-by-spacing proposal)
+    absolute_pitch: Optional[str] = None   # e.g. 'C4', 'D#5' — if set, used directly for MIDI
+    duration_eighths: int = 0              # duration in eighth notes (0=use legacy duration_div)
+    is_chord_note: bool = False            # True if part of a chord (plays simultaneously)
+    chord_group: int = 0                   # chord group index (notes with same group + start play together)
 
 
 @dataclass
@@ -392,6 +397,204 @@ def parse_melody_token(token: str) -> List[NoteEvent]:
     return events
 
 
+# ---------------------------------------------------------------------------
+# Spacing-Based Duration Notation Parser (Casey's proposal)
+# ---------------------------------------------------------------------------
+
+# Regex to detect spacing-notation note tokens: letter + optional accidental + octave + sustain chars
+_SPACED_NOTE_RE = re.compile(r'^([A-Ga-g])([#b]?)(\d)([~\-]*)$')
+_SPACED_REST_RE = re.compile(r'^r([~\-]*)$', re.IGNORECASE)
+
+# Detect if a melody line uses spacing notation (has absolute pitch tokens)
+_SPACING_LINE_RE = re.compile(r'\b([A-Ga-g][#b]?\d[~\-]*)')
+
+
+def is_spacing_notation_line(line: str) -> bool:
+    """Check if a melody line uses spacing-based duration notation.
+    Returns True if any token looks like an absolute pitch with sustain chars
+    (e.g. C4~~, D5--, E3~).
+    """
+    tokens = line.replace('|', ' ').split()
+    for token in tokens:
+        # Strip chord separators
+        for sub in token.split('+'):
+            if _SPACED_NOTE_RE.match(sub):
+                return True
+    return False
+
+
+def parse_spaced_note_token(token: str) -> List[NoteEvent]:
+    """Parse a spacing-notation note token.
+    
+    Formats:
+      C4     = eighth note (1 eighth duration)
+      C4~    = quarter note (2 eighths)
+      C4~~   = dotted quarter (3 eighths)
+      C4~~~  = half note (4 eighths)
+      C4--------  = whole note (8 eighths, using dashes)
+      C4+E4+G4    = chord (all notes same duration)
+      C4~~+E4~~+G4~~ = chord held for 3 eighths
+      r          = eighth rest
+      r~~        = 3-eighth rest
+      -          = eighth rest (alternative)
+    
+    Returns a list of NoteEvents. For chords, multiple events are returned
+    with is_chord_note=True and matching chord_group values.
+    """
+    token = token.strip()
+    if not token:
+        return []
+
+    # Handle chord notation: C4~~+E4~~+G4~~
+    if '+' in token:
+        subtokens = token.split('+')
+        all_events = []
+        max_duration = 1
+        group_id = id(token)  # unique group identifier
+        
+        for i, sub in enumerate(subtokens):
+            sub = sub.strip()
+            if not sub:
+                continue
+            events = parse_spaced_note_token(sub)
+            for e in events:
+                e.is_chord_note = True
+                e.chord_group = group_id
+                if e.duration_eighths > max_duration:
+                    max_duration = e.duration_eighths
+            all_events.extend(events)
+        
+        # Normalize all chord notes to the max duration
+        for e in all_events:
+            e.duration_eighths = max_duration
+        
+        return all_events
+
+    # Check for rest with sustain: r~~, r--
+    rest_match = _SPACED_REST_RE.match(token)
+    if rest_match:
+        sustain_chars = len(rest_match.group(1))
+        duration = 1 + sustain_chars  # base eighth + sustains
+        return [NoteEvent(
+            degree=0, alteration=0, octave=0,
+            duration_div=2, is_rest=True,
+            absolute_pitch=None, duration_eighths=duration,
+        )]
+
+    # Bare dash = eighth rest (same as legacy)
+    if token == '-':
+        return [NoteEvent(
+            degree=0, alteration=0, octave=0,
+            duration_div=2, is_rest=True,
+            duration_eighths=1,
+        )]
+
+    # Sustain token (just sustain chars, extends previous note)
+    if token == '.' or re.match(r'^[~\-]+$', token) and len(token) > 0:
+        # This is a sustain — we could extend previous note or treat as rest
+        # For spacing notation, bare sustain chars after a space are ambiguous.
+        # Treat as sustain of previous note (will be handled at compile time).
+        sustain_count = len(token.replace('.', ''))
+        return [NoteEvent(
+            degree=0, alteration=0, octave=0,
+            duration_div=2, sustain=True,
+            duration_eighths=sustain_count if sustain_count > 0 else 1,
+        )]
+
+    # Check for note with sustain chars: C4~~, D5--
+    note_match = _SPACED_NOTE_RE.match(token)
+    if note_match:
+        letter = note_match.group(1).upper()
+        accidental = note_match.group(2)
+        octave_str = note_match.group(3)
+        sustain_chars = note_match.group(4)
+
+        # Build absolute pitch string
+        pitch = f"{letter}{accidental}{octave_str}"
+        
+        # Duration: 1 eighth base + 1 per sustain char
+        duration = 1 + len(sustain_chars)
+
+        return [NoteEvent(
+            degree=0, alteration=0, octave=0,
+            duration_div=2,
+            absolute_pitch=pitch,
+            duration_eighths=duration,
+        )]
+
+    # If nothing matched, return empty (token will be silently skipped)
+    return []
+
+
+def parse_spaced_melody_line(line: str) -> List[List[NoteEvent]]:
+    """Parse a full spacing-notation melody line, split by bar pipes.
+    
+    Returns a list of bars, each containing a list of NoteEvents.
+    """
+    bars = []
+    # Split on | but keep track of bar boundaries
+    bar_tokens = line.split('|')
+    
+    for bt in bar_tokens:
+        bt = bt.strip()
+        if not bt:
+            continue
+        
+        # Parse each whitespace-separated token
+        events = []
+        tokens = bt.split()
+        
+        for token in tokens:
+            if token == '.':
+                # Sustain previous note
+                events.append(NoteEvent(
+                    degree=0, alteration=0, octave=0,
+                    duration_div=2, sustain=True,
+                    duration_eighths=1,
+                ))
+                continue
+            
+            note_events = parse_spaced_note_token(token)
+            events.extend(note_events)
+        
+        bars.append(events)
+    
+    return bars
+
+
+def absolute_pitch_to_midi(pitch: str) -> int:
+    """Convert absolute pitch name (e.g. 'C4', 'A#5') to MIDI note number.
+    C4 = 60 (middle C). A4 = 69 (440 Hz).
+    """
+    if not pitch or len(pitch) < 2:
+        return 60  # default to middle C
+    
+    letter = pitch[0].upper()
+    if letter not in NOTE_TO_SEMITONE:
+        return 60
+    
+    semitone = NOTE_TO_SEMITONE[letter]
+    pos = 1
+    
+    # Check for accidental
+    if len(pitch) > 2 and pitch[1] in '#b':
+        if pitch[1] == '#':
+            semitone += 1
+        elif pitch[1] == 'b':
+            semitone -= 1
+        pos = 2
+    
+    # Octave number
+    try:
+        octave = int(pitch[pos:])
+    except ValueError:
+        octave = 4
+    
+    # MIDI note = (octave + 1) * 12 + semitone
+    # C4 = (4+1)*12 + 0 = 60, A4 = (4+1)*12 + 9 = 69
+    return (octave + 1) * 12 + semitone
+
+
 def is_chord_line(line: str) -> bool:
     """Heuristic: does this line contain chord symbols (Roman numerals)?"""
     tokens = line.split()
@@ -407,7 +610,7 @@ def is_chord_line(line: str) -> bool:
 
 
 def is_melody_line(line: str) -> bool:
-    """Heuristic: does this line contain melody notes (numbers)?"""
+    """Heuristic: does this line contain melody notes (numbers or absolute pitches)?"""
     tokens = line.split()
     note_count = 0
     total_tokens = 0
@@ -415,9 +618,14 @@ def is_melody_line(line: str) -> bool:
         if t in ('|', '.', '-'):
             continue
         total_tokens += 1
-        # Check if it looks like melody
+        # Check if it looks like melody (legacy scale degree)
         cleaned = re.sub(r'[#b^_,:]', '', t)
         if cleaned.isdigit():
+            note_count += 1
+        # Check if it looks like spacing notation (absolute pitch)
+        elif _SPACED_NOTE_RE.match(t.split('+')[0]):
+            note_count += 1
+        elif _SPACED_REST_RE.match(t):
             note_count += 1
     return total_tokens > 0 and note_count >= total_tokens * 0.4
 
@@ -502,11 +710,12 @@ def parse_tapscript(text: str) -> TapScriptComposition:
             continue
 
         # Musical line
-        if current_section is not None and ('|' in line or is_chord_line(line) or is_melody_line(line)):
+        if current_section is not None and ('|' in line or is_chord_line(line) or is_melody_line(line) or is_spacing_notation_line(line)):
             # Split by bars
             bar_tokens = line.split('|')
             bar_idx = 0
             line_is_chords = is_chord_line(line)
+            line_is_spacing = is_spacing_notation_line(line)
 
             for bt in bar_tokens:
                 bt = bt.strip()
@@ -531,8 +740,15 @@ def parse_tapscript(text: str) -> TapScriptComposition:
                         chord = parse_chord_token(t)
                         if chord:
                             bar.chords.append(chord)
+                elif line_is_spacing:
+                    # Parse spacing-based melody notation
+                    for t in tokens:
+                        if t == '|':
+                            continue
+                        notes = parse_spaced_note_token(t)
+                        bar.notes.extend(notes)
                 else:
-                    # Parse melody
+                    # Parse legacy melody
                     for t in tokens:
                         if t == '|':
                             continue
@@ -772,38 +988,101 @@ def compile_to_midi(comp: TapScriptComposition, output_path: Optional[str] = Non
 
             # Melody
             if play_melody and bar.notes:
-                slot_dur = bar_duration / max(len(bar.notes), 1)
-                last_degree = 1
-                note_start = current_time
-
-                for ni, note_ev in enumerate(bar.notes):
-                    if note_ev.is_rest:
-                        note_start += slot_dur
-                        continue
-                    if note_ev.sustain:
-                        # Extend last note
-                        if midi_instrument.notes:
-                            midi_instrument.notes[-1].end = min(
-                                note_start + slot_dur,
-                                current_time + bar_duration
+                # Check if these are spacing-notation notes (have absolute_pitch set)
+                has_spacing_notes = any(n.absolute_pitch is not None for n in bar.notes)
+                
+                if has_spacing_notes:
+                    # Spacing notation: use duration_eighths for timing
+                    beat_eighths = 2  # 2 eighths per beat in 4/4
+                    eighth_dur = beat_dur / beat_eighths
+                    note_start = current_time
+                    
+                    # Track chord groups to stack notes at the same start time
+                    processed_chord_groups = set()
+                    chord_start_times = {}  # group_id -> start_time
+                    
+                    for ni, note_ev in enumerate(bar.notes):
+                        if note_ev.is_rest:
+                            dur = note_ev.duration_eighths * eighth_dur if note_ev.duration_eighths > 0 else eighth_dur
+                            note_start += dur
+                            continue
+                        if note_ev.sustain:
+                            # Extend last note
+                            dur = note_ev.duration_eighths * eighth_dur if note_ev.duration_eighths > 0 else eighth_dur
+                            if midi_instrument.notes:
+                                midi_instrument.notes[-1].end = min(
+                                    midi_instrument.notes[-1].end + dur,
+                                    current_time + bar_duration
+                                )
+                            note_start += dur
+                            continue
+                        
+                        # Compute MIDI note from absolute pitch
+                        if note_ev.absolute_pitch:
+                            midi_note = absolute_pitch_to_midi(note_ev.absolute_pitch)
+                        else:
+                            # Fallback to scale degree
+                            midi_note = _midi_note_for_degree(
+                                comp.header.key,
+                                note_ev.degree,
+                                note_ev.alteration,
+                                note_ev.octave
                             )
-                        note_start += slot_dur
-                        continue
+                        
+                        dur = note_ev.duration_eighths * eighth_dur if note_ev.duration_eighths > 0 else eighth_dur
+                        vel = _humanize_velocity(base_vel + 10, rng)
+                        
+                        if note_ev.is_chord_note:
+                            group = note_ev.chord_group
+                            if group in chord_start_times:
+                                # This note is part of a chord already started; use same start time
+                                start = chord_start_times[group]
+                            else:
+                                start = note_start
+                                chord_start_times[group] = note_start
+                                note_start += dur
+                        else:
+                            start = note_start
+                            note_start += dur
+                        
+                        midi_instrument.notes.append(pretty_midi.Note(
+                            velocity=vel, pitch=midi_note,
+                            start=start, end=start + dur * 0.9
+                        ))
+                else:
+                    # Legacy melody: slot-based timing
+                    slot_dur = bar_duration / max(len(bar.notes), 1)
+                    last_degree = 1
+                    note_start = current_time
 
-                    midi_note = _midi_note_for_degree(
-                        comp.header.key,
-                        note_ev.degree,
-                        note_ev.alteration,
-                        note_ev.octave
-                    )
-                    dur = slot_dur
-                    vel = _humanize_velocity(base_vel + 10, rng)
-                    midi_instrument.notes.append(pretty_midi.Note(
-                        velocity=vel, pitch=midi_note,
-                        start=note_start, end=note_start + dur * 0.9
-                    ))
-                    last_degree = note_ev.degree
-                    note_start += dur
+                    for ni, note_ev in enumerate(bar.notes):
+                        if note_ev.is_rest:
+                            note_start += slot_dur
+                            continue
+                        if note_ev.sustain:
+                            # Extend last note
+                            if midi_instrument.notes:
+                                midi_instrument.notes[-1].end = min(
+                                    note_start + slot_dur,
+                                    current_time + bar_duration
+                                )
+                            note_start += slot_dur
+                            continue
+
+                        midi_note = _midi_note_for_degree(
+                            comp.header.key,
+                            note_ev.degree,
+                            note_ev.alteration,
+                            note_ev.octave
+                        )
+                        dur = slot_dur
+                        vel = _humanize_velocity(base_vel + 10, rng)
+                        midi_instrument.notes.append(pretty_midi.Note(
+                            velocity=vel, pitch=midi_note,
+                            start=note_start, end=note_start + dur * 0.9
+                        ))
+                        last_degree = note_ev.degree
+                        note_start += dur
 
             # If no specific role matched and bar has chords, play block chords
             elif (play_chords or play_pad or play_bass) and not bar.chords and not bar.notes:

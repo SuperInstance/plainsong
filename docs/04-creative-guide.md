@@ -89,3 +89,52 @@ To bring these concepts to life, let's explore two complete compositions, dissec
 **Conclusion: The Journey Beyond**
 
 As you step into the world of composing with TapScript, remember that every note, every rest, every lyric, and every dynamic marking is a brushstroke on the canvas of your listener's heart. May your journey be filled with the joy of creation, the thrill of exploration, and the warmth of connection. Happy composing!
+
+---
+
+**6. Duration-by-Spacing: A Visual Approach to Rhythm**
+
+One of TapScript's most intuitive features is **duration-by-spacing** —
+writing longer sustain characters after a note to make it last longer.
+This creates a visual map: looking at the notation, you can *see* which
+notes are long and which are short, the way you can on traditional staff
+notation where a half note looks longer than an eighth.
+
+**How it works:** Each note name can be followed by tildes (`~`) or dashes
+(`-`). Each sustain character adds one eighth-note of duration:
+
+```
+C4       = eighth note (short, clipped)
+C4~      = quarter note
+C4~~     = dotted quarter
+C4~~~    = half note
+C4~~~~~~~ = whole note
+```
+
+**Creative implications:**
+
+- **Phrasing:** Long strings of tildes create legato phrases. Alternating
+  bare notes and rests creates staccato passages. The visual rhythm of
+  the notation mirrors the musical rhythm.
+- **Emotional weight:** A note with `~~~~~~~` *looks* important — and it
+  is. Use long sustains for emotional peaks, cadential points, and
+  dramatic pauses.
+- **Rests as breathing room:** `r~~~` gives the melody space to breathe,
+  like a singer pausing between phrases. The visual gap in the notation
+  is the silence in the music.
+- **Chord sustains:** `C4~~+E4~~+G4~~` holds a chord for three eighths —
+  a dotted quarter of harmonic color. Use this for slow, rich passages
+  where each chord gets its moment.
+
+**Example — A Melodic Phrase:**
+
+```
+Melody: | E4~~~ D4~~~ C4~~~ r~~~ | D4~ E4~ G4~ A4~ | C5~~~~ r~~~~ |
+```
+
+The first bar is contemplative — three half-weight notes and a rest.
+The second bar picks up energy with four quick quarter notes. The third
+bar holds a single note and then silence — a moment of resolution before
+the next phrase.
+
+This is notation that *looks* like music.

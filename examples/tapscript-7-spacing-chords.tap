@@ -1,0 +1,24 @@
+```tapscript
+key: A minor
+tempo: 75
+time: 4/4
+
+[Intro]
+A3~~~ E4~~~ C4~~~ G4~~~
+A3~~~ E4~~~ C4~~~ G4~~~
+
+[Verse]
+C4~~+E4~~+G4~~  D4~~+F4~~+A4~~
+E4~~+G4~~+B4~~  A4~~+C5~~+E5~~
+C5~~~  B4~~~  A4~~~  G4~~~
+F4~~~  E4~~~  D4~~~  r~~~
+
+[Chorus]
+A4~~~ C5~~~ E5~~~ A5~~~
+G5~~~ E5~~~ C5~~~ A4~~~
+F4~~+A4~~+C5~~  E4~~+G4~~+B4~~
+A4~~~~  r~~~~
+
+@wesley: piano | both | vel: 70
+@hermes: strings | pad | vel: 55
+```

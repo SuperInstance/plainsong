@@ -227,7 +227,78 @@ composer.
 
 ---
 
-## 5. Try It
+## 5. Duration-by-Spacing Notation (v1 Engine)
+
+The v1 engine (`scripts/tapscript.py`) supports an alternative melody
+notation where **note duration is shown by sustain characters** after each
+note name, rather than by fixed subdivision slots. This is Casey's design:
+wider visual spacing = longer notes.
+
+### 5.1 Syntax
+
+Write absolute pitch names followed by sustain characters:
+
+| Sustain chars | Duration | Note type |
+|-------------|----------|-----------|
+| (none) | 1 eighth | eighth note |
+| `~` or `-` | 2 eighths | quarter note |
+| `~~` or `--` | 3 eighths | dotted quarter |
+| `~~~` or `---` | 4 eighths | half note |
+| `~~~~~~~` | 8 eighths | whole note |
+
+Both tildes (`~`) and dashes (`-`) work as sustain characters — dashes look
+like tie lines, tildes look like vibrato/hold marks.
+
+### 5.2 Example
+
+```tapscript
+key: C major
+tempo: 90
+
+[Melody]
+C4~~~ D4~~~ E4~~~ F4~~~
+G4~~~ A4~~~ G4~~~ E4~~~
+```
+
+Each note with `~~~` lasts 4 eighth-notes (a half note). The visual width
+of the token on screen mirrors how long it sounds.
+
+### 5.3 Chords
+
+Use `+` to stack notes into a chord. All notes in a chord share the same
+duration:
+
+```
+C4~~+E4~~+G4~~  D4~~+F4~~+A4~~
+```
+
+### 5.4 Rests
+
+Use `r` with sustain characters for timed rests:
+
+```
+C4~~~ r~~~ D4~~~ r~~~
+```
+
+Or bare `-` for an eighth rest.
+
+### 5.5 Detection
+
+The parser auto-detects spacing notation: if any token on a melody line
+matches an absolute pitch pattern (`[A-G][#b]?[0-9][~\-]*`), the entire
+line is parsed as spacing notation. Legacy scale-degree lines (digits
+1-7) continue to work exactly as before — the two notations are mutually
+exclusive per line.
+
+### 5.6 Example Files
+
+- `examples/tapscript-6-spacing-melody.tap` — basic spacing notation
+- `examples/tapscript-7-spacing-chords.tap` — chords with spacing
+- `examples/tapscript-8-spacing-dashes.tap` — dash-style sustains in D dorian
+
+---
+
+## 6. Try It
 
 ```bash
 python3 scripts/tapscript_v2.py --example deck_work --wav deck.wav
@@ -236,3 +307,9 @@ python3 scripts/tapscript_v2.py --example deck_work --wav deck.wav
 Then open the file in any audio player, or start the web server and load
 "Deck Work" from the example dropdown to see the notation and audio side by
 side.
+
+To try the v1 engine with spacing notation:
+
+```bash
+python3 scripts/tapscript.py --cli examples/tapscript-6-spacing-melody.tap --wav spacing.wav
+```

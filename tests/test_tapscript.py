@@ -24,6 +24,9 @@ from tapscript import (
     HARBOR_DAWN, THE_ROOM_IS_SAFE, OPEN_MIC,
     _midi_note_for_degree, _chord_midi_notes, _midi_to_freq,
     _synth_wave, _get_waveform_for_instrument, extract_tapscript_blocks,
+    # New spacing notation imports
+    is_spacing_notation_line, parse_spaced_note_token, parse_spaced_melody_line,
+    absolute_pitch_to_midi,
 )
 
 
@@ -755,6 +758,307 @@ class TestChordIntervalsComplete(unittest.TestCase):
             for i in range(1, len(intervals)):
                 self.assertGreater(intervals[i], intervals[i-1],
                                   f"{name} intervals not ascending at position {i}")
+
+
+class TestSpacingNotationDetection(unittest.TestCase):
+    """Tests for detecting spacing-notation melody lines."""
+
+    def test_simple_spacing_line_detected(self):
+        line = '| C4~~ D4~~ E4~~ F4~~ |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_dash_sustain_detected(self):
+        line = '| C4-- D4-- E4-- F4-- |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_mixed_sustain_chars_detected(self):
+        line = '| C4~~~ D4--- E4 F4 |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_bare_note_detected(self):
+        line = '| C4 D4 E4 F4 |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_chord_spacing_detected(self):
+        line = '| C4~~+E4~~+G4~~ D4--- |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_legacy_melody_not_detected_as_spacing(self):
+        # Scale-degree numbers should NOT be detected as spacing notation
+        line = '| 1  3  5  3 |'
+        self.assertFalse(is_spacing_notation_line(line))
+
+    def test_legacy_chord_line_not_detected_as_spacing(self):
+        line = '| I  .  IV  . |'
+        self.assertFalse(is_spacing_notation_line(line))
+
+    def test_rest_with_sustain_detected(self):
+        line = '| C4~~ r~~ D4 F4 |'
+        self.assertTrue(is_spacing_notation_line(line))
+
+    def test_empty_line_not_detected(self):
+        self.assertFalse(is_spacing_notation_line(''))
+        self.assertFalse(is_spacing_notation_line('|  |'))
+
+
+class TestParseSpacedNoteToken(unittest.TestCase):
+    """Tests for parsing individual spacing-notation tokens."""
+
+    def test_bare_note_eighth(self):
+        events = parse_spaced_note_token('C4')
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0].absolute_pitch, 'C4')
+        self.assertEqual(events[0].duration_eighths, 1)
+
+    def test_one_tilde_quarter(self):
+        events = parse_spaced_note_token('C4~')
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0].duration_eighths, 2)
+
+    def test_two_tildes_dotted_quarter(self):
+        events = parse_spaced_note_token('D4~~')
+        self.assertEqual(events[0].duration_eighths, 3)
+
+    def test_three_tildes_half(self):
+        events = parse_spaced_note_token('E4~~~')
+        self.assertEqual(events[0].duration_eighths, 4)
+
+    def test_seven_tildes_whole(self):
+        events = parse_spaced_note_token('F4~~~~~~~')
+        self.assertEqual(events[0].duration_eighths, 8)
+
+    def test_dash_sustain(self):
+        events = parse_spaced_note_token('G4--')
+        self.assertEqual(events[0].duration_eighths, 3)
+        self.assertEqual(events[0].absolute_pitch, 'G4')
+
+    def test_mixed_tilde_and_dash(self):
+        # Should count all sustain chars
+        events = parse_spaced_note_token('A4~-')
+        self.assertEqual(events[0].duration_eighths, 3)
+
+    def test_sharp_note(self):
+        events = parse_spaced_note_token('C#4')
+        self.assertEqual(events[0].absolute_pitch, 'C#4')
+        self.assertEqual(events[0].duration_eighths, 1)
+
+    def test_flat_note(self):
+        events = parse_spaced_note_token('Bb4')
+        self.assertEqual(events[0].absolute_pitch, 'Bb4')
+
+    def test_lowercase_note(self):
+        events = parse_spaced_note_token('e4~~')
+        self.assertEqual(events[0].absolute_pitch, 'E4')
+        self.assertEqual(events[0].duration_eighths, 3)
+
+    def test_rest_bare(self):
+        events = parse_spaced_note_token('r')
+        self.assertEqual(len(events), 1)
+        self.assertTrue(events[0].is_rest)
+        self.assertEqual(events[0].duration_eighths, 1)
+
+    def test_rest_with_tildes(self):
+        events = parse_spaced_note_token('r~~~~')
+        self.assertTrue(events[0].is_rest)
+        self.assertEqual(events[0].duration_eighths, 5)
+
+    def test_rest_with_dashes(self):
+        events = parse_spaced_note_token('r---')
+        self.assertTrue(events[0].is_rest)
+        self.assertEqual(events[0].duration_eighths, 4)
+
+    def test_bare_dash_rest(self):
+        events = parse_spaced_note_token('-')
+        self.assertTrue(events[0].is_rest)
+        self.assertEqual(events[0].duration_eighths, 1)
+
+    def test_chord_simple(self):
+        events = parse_spaced_note_token('C4+E4+G4')
+        self.assertEqual(len(events), 3)
+        for e in events:
+            self.assertTrue(e.is_chord_note)
+            self.assertEqual(e.duration_eighths, 1)
+
+    def test_chord_with_sustain(self):
+        events = parse_spaced_note_token('C4~~+E4~~+G4~~')
+        self.assertEqual(len(events), 3)
+        for e in events:
+            self.assertTrue(e.is_chord_note)
+            self.assertEqual(e.duration_eighths, 3)
+
+    def test_chord_all_share_max_duration(self):
+        events = parse_spaced_note_token('C4+E4~~~+G4')
+        self.assertEqual(len(events), 3)
+        # All should have max duration
+        for e in events:
+            self.assertEqual(e.duration_eighths, 4)  # 1 + 3 tildes
+
+    def test_empty_token(self):
+        events = parse_spaced_note_token('')
+        self.assertEqual(len(events), 0)
+
+    def test_unknown_token(self):
+        events = parse_spaced_note_token('hello')
+        self.assertEqual(len(events), 0)
+
+
+class TestAbsolutePitchToMidi(unittest.TestCase):
+    """Tests for absolute pitch to MIDI note conversion."""
+
+    def test_middle_c(self):
+        self.assertEqual(absolute_pitch_to_midi('C4'), 60)
+
+    def test_a4_440hz(self):
+        self.assertEqual(absolute_pitch_to_midi('A4'), 69)
+
+    def test_c_sharp_4(self):
+        self.assertEqual(absolute_pitch_to_midi('C#4'), 61)
+
+    def test_b_flat_4(self):
+        # Bb4 should normalize to A#4 = 70
+        self.assertEqual(absolute_pitch_to_midi('Bb4'), 70)
+
+    def test_c5(self):
+        self.assertEqual(absolute_pitch_to_midi('C5'), 72)
+
+    def test_c3(self):
+        self.assertEqual(absolute_pitch_to_midi('C3'), 48)
+
+    def test_lowercase(self):
+        self.assertEqual(absolute_pitch_to_midi('c4'), 60)
+        self.assertEqual(absolute_pitch_to_midi('a4'), 69)
+
+    def test_invalid_pitch_defaults(self):
+        self.assertEqual(absolute_pitch_to_midi(''), 60)
+        self.assertEqual(absolute_pitch_to_midi('X9'), 60)
+
+    def test_all_octaves_c(self):
+        for octave in range(0, 9):
+            midi = absolute_pitch_to_midi(f'C{octave}')
+            expected = (octave + 1) * 12
+            self.assertEqual(midi, expected,
+                           f'C{octave} should be MIDI {expected}')
+
+
+class TestParseSpacedMelodyLine(unittest.TestCase):
+    """Tests for parsing full spacing-notation melody lines."""
+
+    def test_single_bar(self):
+        bars = parse_spaced_melody_line('| C4 D4 E4 F4 |')
+        self.assertEqual(len(bars), 1)
+        self.assertEqual(len(bars[0]), 4)
+        self.assertEqual(bars[0][0].absolute_pitch, 'C4')
+        self.assertEqual(bars[0][1].absolute_pitch, 'D4')
+
+    def test_two_bars(self):
+        bars = parse_spaced_melody_line('| C4~~~ D4~ | E4~ F4~~~ |')
+        self.assertEqual(len(bars), 2)
+        self.assertEqual(bars[0][0].duration_eighths, 4)  # C4~~~ = 4 eighths
+        self.assertEqual(bars[0][1].duration_eighths, 2)  # D4~ = 2 eighths
+
+    def test_bar_with_rest(self):
+        bars = parse_spaced_melody_line('| C4 r D4 r |')
+        self.assertEqual(len(bars[0]), 4)
+        self.assertTrue(bars[0][1].is_rest)
+        self.assertTrue(bars[0][3].is_rest)
+
+    def test_bar_with_chord(self):
+        bars = parse_spaced_melody_line('| C4~~+E4~~+G4~~ D4 |')
+        self.assertEqual(len(bars[0]), 4)  # 3 chord notes + 1 melody note
+        # First three should be chord notes
+        for i in range(3):
+            self.assertTrue(bars[0][i].is_chord_note)
+
+    def test_bar_with_sustain_in_sustain_chars(self):
+        bars = parse_spaced_melody_line('| C4~~ D4~~ |')
+        self.assertEqual(len(bars[0]), 2)
+        self.assertEqual(bars[0][0].duration_eighths, 3)
+        self.assertEqual(bars[0][1].duration_eighths, 3)
+
+    def test_empty_bar(self):
+        bars = parse_spaced_melody_line('|  |')
+        self.assertEqual(len(bars), 0)
+
+
+class TestSpacingNotationIntegration(unittest.TestCase):
+    """Integration tests: spacing notation parsed through the full TapScript parser."""
+
+    def test_spacing_melody_parses_in_composition(self):
+        text = '''key: C major\ntempo: 120\n\n[V1]\nC4~~ D4~~ E4~~ F4~~\n'''
+        comp = parse_tapscript(text)
+        self.assertEqual(len(comp.sections), 1)
+        self.assertGreater(len(comp.sections[0].bars), 0)
+        notes = comp.sections[0].bars[0].notes
+        self.assertGreater(len(notes), 0)
+        self.assertEqual(notes[0].absolute_pitch, 'C4')
+        self.assertEqual(notes[0].duration_eighths, 3)
+
+    def test_spacing_notation_backward_compatible_with_legacy(self):
+        # Legacy notation still works
+        text = '''key: C major\ntempo: 120\n\n[V1]\n1    3    5    3\n'''
+        comp = parse_tapscript(text)
+        notes = comp.sections[0].bars[0].notes
+        self.assertGreaterEqual(len(notes), 4)
+        # Legacy notes use degree, not absolute_pitch
+        self.assertIsNone(notes[0].absolute_pitch)
+        self.assertEqual(notes[0].degree, 1)
+
+    def test_chords_still_work_with_spacing_melody(self):
+        text = '''key: C major\ntempo: 120\n\n[V1]\nI    .    IV   .\nC4~~ D4~~ E4~~ F4~~\n'''
+        comp = parse_tapscript(text)
+        bar = comp.sections[0].bars[0]
+        self.assertGreater(len(bar.chords), 0)
+        self.assertGreater(len(bar.notes), 0)
+
+    def test_full_composition_with_spacing_notation(self):
+        text = '''key: C major\ntempo: 90\ntime: 4/4\n\n[Melody]\nC4~~~ D4~~~ E4~~~ F4~~~\nC4~~~ D4~~~ E4~~~ F4~~~\n\n[Chords]\nI    .    IV   .\nV    .    vi   .\n\n@wesley: piano | both | vel: 70\n'''
+        comp = parse_tapscript(text)
+        self.assertEqual(len(comp.sections), 2)
+        self.assertGreater(comp.total_bars, 0)
+
+    def test_spacing_notation_with_dashes_works(self):
+        text = '''key: G major\ntempo: 100\n\n[Riff]\nG4-- D5 B4-- A4\n'''
+        comp = parse_tapscript(text)
+        notes = comp.sections[0].bars[0].notes
+        self.assertGreater(len(notes), 0)
+        # G4-- = 3 eighth duration
+        g_notes = [n for n in notes if n.absolute_pitch and n.absolute_pitch.startswith('G')]
+        self.assertGreater(len(g_notes), 0)
+        self.assertEqual(g_notes[0].duration_eighths, 3)
+
+    def test_rests_in_spacing_notation(self):
+        text = '''key: C major\ntempo: 120\n\n[V1]\nC4 r D4 r E4 r G4 r\n'''
+        comp = parse_tapscript(text)
+        notes = comp.sections[0].bars[0].notes
+        # Should have 8 events: 4 notes + 4 rests
+        self.assertEqual(len(notes), 8)
+        rests = [n for n in notes if n.is_rest]
+        self.assertEqual(len(rests), 4)
+
+    def test_chords_in_spacing_notation(self):
+        text = '''key: C major\ntempo: 80\n\n[V1]\nC4~~+E4~~+G4~~ D4~~+F4~~+A4~~\n'''
+        comp = parse_tapscript(text)
+        notes = comp.sections[0].bars[0].notes
+        chord_notes = [n for n in notes if n.is_chord_note]
+        self.assertEqual(len(chord_notes), 6)  # 3 per chord, 2 chords
+
+
+class TestExistingExamplesStillWork(unittest.TestCase):
+    """Verify all existing examples still parse with the new code."""
+
+    def test_harbor_dawn_still_parses(self):
+        comp = parse_tapscript(HARBOR_DAWN)
+        self.assertEqual(comp.header.key.root, 'D')
+        self.assertGreater(comp.total_bars, 0)
+
+    def test_the_room_is_safe_still_parses(self):
+        comp = parse_tapscript(THE_ROOM_IS_SAFE)
+        self.assertEqual(comp.header.key.root, 'E')
+
+    def test_open_mic_still_parses(self):
+        comp = parse_tapscript(OPEN_MIC)
+        self.assertEqual(comp.header.key.root, 'G')
+        self.assertGreater(comp.header.swing, 0)
 
 
 if __name__ == '__main__':
