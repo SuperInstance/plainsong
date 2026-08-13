@@ -1,0 +1,26 @@
+**TRACK: Easy**
+[MetaData]
+key: F | tempo: 99 | subdivision: 8th
+time: 4/4 | mood: Smooth
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Gm7 . . . |
+| Fmaj7 . . . | Gm7 . . . | Am7 . . . | Bbmaj7 . . . |
+@guitar | f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | a2-c4-e4-g4 . . . | g2-bb3-d4-f4 . . . |
+| f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | a2-c4-e4-g4 . . . | bb2-d4-f4-a4 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Gm7 . . . |
+| Fmaj7 . . . | Gm7 . . . | Bbmaj7 . . . | C . . . |
+@guitar | f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | a2-c4-e4-g4 . . . | g2-bb3-d4-f4 . . . |
+| f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | bb2-d4-f4-a4 . . . | c3-e4-g4 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . . | Gm7 . . . | C . . . | F . . . |
+@guitar | d3-f4-a4-c4 . . . | g2-bb3-d4-f4 . . . | c3-e4-g4 . . . | f3-a3-c4-f4 . . . | vel: 52
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Gm7 . . . |
+| Fmaj7 . . . | Gm7 . . . | Bbmaj7 . . . | C . . . |
+@guitar | f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | a2-c4-e4-g4 . . . | g2-bb3-d4-f4 . . . |
+| f3-a3-c4-e4 . . . | g2-bb3-d4-f4 . . . | bb2-d4-f4-a4 . . . | c3-e4-g4 . . . | vel: 50

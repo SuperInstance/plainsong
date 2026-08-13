@@ -1,0 +1,24 @@
+**TRACK: Kiss**
+[MetaData]
+key: Am | tempo: 111 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | Dm . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | vel: 58
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | G . . . | E7 . . . |
+@guitar | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 62
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | Dm . . . |
+@guitar | a2-c3-e3 . . . | d3-f3-a3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | vel: 66
+
+[BR] (Bridge - 2 Bars)
+Chords: | F . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 54

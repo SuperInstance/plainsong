@@ -1,0 +1,24 @@
+**TRACK: Still**
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Soulful Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | C . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 45

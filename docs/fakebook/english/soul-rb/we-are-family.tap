@@ -1,0 +1,20 @@
+**TRACK: We Are Family**
+[MetaData]
+key: Eb | tempo: 118 | subdivision: 8th  
+time: 4/4 | mood: Upbeat
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Bb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Bb . . . | Ab . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Bb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Bb . . . | Gm . . . | Cm . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | vel: 60
