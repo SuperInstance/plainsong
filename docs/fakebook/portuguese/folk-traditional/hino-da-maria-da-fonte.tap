@@ -1,0 +1,28 @@
+**TRACK: Hino da Maria da Fonte**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . |
+Melody: | D4 . F4 . | E4 . C#4 . |
+Lyrics: | Ma - ri - a da Fon - te, |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . |
+Melody: | D4 . A4 . | Bb4 . A4 . |
+Lyrics: | le - van - ta - te já, |
+@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | Dm . . . |
+Melody: | C#4 . E4 . | D4 . F4 . |
+Lyrics: | que o po - vo quer lu - tar, |
+@piano | a2-c#3-e3 . . . | d3-f3-a3 . . . | vel: 50
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Gm . . . | A . . . |
+Melody: | Bb4 . G4 . | A4 . . . |
+Lyrics: | a - té vi - tor - i - ar! |
+@piano | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50

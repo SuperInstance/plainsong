@@ -1,0 +1,22 @@
+**TRACK: Romance da Bela Infanta**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E . . . |
+Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . . . |
+Lyrics: | A . be - la . | in - fan - ta . | vai . a . ca - | minho . . . |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+Melody: | A3 . C4 . | F4 . E4 . | G4 . F4 . | E4 . . . |
+Lyrics: | Va - i . pa - ra . | a . fon - te . | la - var . o . | ro - sto . . . |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | G4 . E4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Quem . te . ve - ja . | quem . te . ve - ja . | a . la - var . o . | ro - sto . . . |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
