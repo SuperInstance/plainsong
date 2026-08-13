@@ -1,0 +1,31 @@
+**TRACK: Ya Lala**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | vel: 65
+Chords: | F . . . | C . . . | Dm . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | A . . . | A . . . |
+@guitar | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | vel: 65
+Chords: |
