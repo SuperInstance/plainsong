@@ -1,0 +1,26 @@
+**TRACK: Schlagerboogie**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | C . . . | C . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | C . . . | C . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65
+Chords: | F . . . | C . . . | G . . . | G . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
