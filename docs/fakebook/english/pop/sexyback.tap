@@ -1,0 +1,20 @@
+**TRACK: SexyBack**
+[MetaData]
+key: Am | tempo: 116 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | F . . . | F . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | F . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 50

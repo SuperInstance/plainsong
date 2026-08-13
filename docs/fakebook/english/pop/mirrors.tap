@@ -1,0 +1,24 @@
+**TRACK: Mirrors**
+[MetaData]
+key: C#m | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | E . . . | A . . . | F#m . . . |
+@guitar | c#3-e3-g#3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C#m . . . | E . . . | A . . . | F#m . . . |
+@guitar | c#3-e3-g#3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | C#m . . . |
+@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | c#3-e3-g#3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | A . . . | E . . . | B . . . |
+@guitar | f#2-a2-c#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | C#m . . . | E . . . | A . . . | F#m . . . |
+@guitar | c#3-e3-g#3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | vel: 45

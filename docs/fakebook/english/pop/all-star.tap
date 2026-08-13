@@ -1,0 +1,20 @@
+**TRACK: All Star**
+[MetaData]
+key: F#m | tempo: 104 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | F#m . . . |
+@guitar | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
+@guitar | b1-f#2-b2 . . . | f#2-c#3-f#3 . . . | g2-d3-g3 . . . | a1-e2-a2 . . . | vel: 58
