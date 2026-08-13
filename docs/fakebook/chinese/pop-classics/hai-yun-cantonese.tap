@@ -1,0 +1,30 @@
+**TRACK: Hai Yun (Cantonese)**
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 45
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+Chords: | Dm . . . | Eb . . . | Cm . . . | F . . . |
+@guitar | d2-f2-a2 . . . | eb2-g2-bb2 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 60
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3
