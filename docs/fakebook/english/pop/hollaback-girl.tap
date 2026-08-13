@@ -1,0 +1,24 @@
+**TRACK: Hollaback Girl**
+[MetaData]
+key: Fm | tempo: 110 | subdivision: 16th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Fm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Fm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Fm . . . | Bbm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 70
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | C7 . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | Fm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55

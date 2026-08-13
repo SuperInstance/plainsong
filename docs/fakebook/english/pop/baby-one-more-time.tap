@@ -1,0 +1,24 @@
+**TRACK: ...Baby One More Time**
+[MetaData]
+key: C#m | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | C#m . . . | G# . . . | A . . . | E . . . |
+@guitar | x-4-6-6-5-4 . . . | 4-6-6-5-4-4 . . . | 5-7-7-6-5-5 . . . | 0-2-2-1-0-0 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C#m . . . | G# . . . | A . . . | E . . . |
+@guitar | x-4-6-6-5-4 . . . | 4-6-6-5-4-4 . . . | 5-7-7-6-5-5 . . . | 0-2-2-1-0-0 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C#m . . . | G# . . . | A . . . | E . . . |
+@guitar | x-4-6-6-5-4 . . . | 4-6-6-5-4-4 . . . | 5-7-7-6-5-5 . . . | 0-2-2-1-0-0 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | F#m . . . | G# . . . |
+@guitar | 2-4-4-2-2-2 . . . | 4-6-6-5-4-4 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | C#m . . . | C#m . . . |
+@guitar | x-4-6-6-5-4 . . . | x-4-6-6-5-4 . . . | vel: 50
