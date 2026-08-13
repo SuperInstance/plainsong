@@ -1,0 +1,30 @@
+**TRACK: Ni Zui Zhen Gui**
+[MetaData]
+key: C | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Sentimental
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | vel: 50
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+@guitar | f2-a2-c3 . . . | e2-g2-c3 . . . | d2-f2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | vel: 52
+Chords: | F . . . | G . . . | C . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | Am/G . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | g2-b2-d3 . . . | vel: 65
+Chords: | F . . . | G . . . | C . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Dm7 . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | d2-f2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 45
