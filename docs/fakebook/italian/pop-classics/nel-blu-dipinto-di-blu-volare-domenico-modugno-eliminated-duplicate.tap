@@ -1,0 +1,24 @@
+**TRACK: Nel blu dipinto di blu (Volare)**
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 40

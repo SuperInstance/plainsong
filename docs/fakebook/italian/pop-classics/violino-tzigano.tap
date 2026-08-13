@@ -1,0 +1,24 @@
+**TRACK: Violino tzigano**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . | Am . . . | Dm . . . | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . | Am . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | E7 . . . | F . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . | Am . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 45
