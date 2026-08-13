@@ -1,0 +1,29 @@
+**TRACK: Hao Xiang Ni**
+[MetaData]
+key: C | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Sentimental
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Em . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+@bass | c2 . . . | e2 . . . | a1 . . . | f1 . . . | vel: 45
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | C . . . | Em . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+@bass | c2 . . . | e2 . . . | a1 . . . | f1 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | vel: 65
+@bass | f1 . . . | g1 . . . | c2 . . . | a1 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | G . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+@bass | d1 . . . | g1 . . . | c2 . . . | g1 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | Am . . . | F . . . | C . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 45
+@bass | c2 . . . | a1 . . . | f1 . . . | c2 . . . | vel: 40
