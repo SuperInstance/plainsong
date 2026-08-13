@@ -1,0 +1,16 @@
+**TRACK: The Song of the Four Seasons**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | D4 . B3 . |
+Lyrics: | Spring has come a - gain | win - ter's gone a - way | birds are sing - ing now | in the month of May |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | E4 . C4 . | D4 . B3 . | A3 . C4 . |
+Lyrics: | Four sea - sons turn - ing | round and round they go | sum - mer, au - tumn, win - ter | then the spring - time's glow |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

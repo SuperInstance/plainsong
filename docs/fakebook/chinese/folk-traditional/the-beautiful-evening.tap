@@ -1,0 +1,16 @@
+**TRACK: The Beautiful Evening**
+[MetaData]
+key: G | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . | D . . | Em . . | C . . |
+Melody: | B3 . D4 . | A3 . C4 . | G3 . B3 . | E4 . . . |
+Lyrics: | The beau - ti - ful | eve - ning is | calm and so | clear . . |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | e2-g2-b2 . . | c2-e2-g2 . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . | D . . | C . . | G . . |
+Melody: | D4 . G4 . | B3 . D4 . | E4 . C4 . | D4 . . . |
+Lyrics: | Sing of the | eve - ning | soft and sweet | light . . |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | c2-e2-g2 . . | g2-b2-d3 . . | vel: 55

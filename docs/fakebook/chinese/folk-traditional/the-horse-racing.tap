@@ -1,0 +1,22 @@
+**TRACK: The Horse Racing**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | G . | D . | G . | D . |
+Melody: | B3 . | A3 . | G3 . | A3 . |
+Lyrics: | The | horse | rac - | ing |
+@piano | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | d2-f#2-a2 . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | G . | C . | G . | D . |
+Melody: | B3 . | C4 . | B3 . | A3 . |
+Lyrics: | down | the | track | so |
+@piano | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | d2-f#2-a2 . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . | D . | G . | G . |
+Melody: | D4 . | B3 . | G3 . | G3 . |
+Lyrics: | Go | horse | go | now |
+@piano | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | g2-b2-d3 . | vel: 65

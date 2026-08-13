@@ -1,0 +1,28 @@
+**TRACK: The Sichuan Tune**
+[MetaData]
+key: Em | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Gentle, folk-like
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | Am . . . |
+Melody: | E4 . G4 . | A4 . B4 . |
+Lyrics: | 清 晨 起 来 | 雾 蒙 蒙 |
+@piano | e2-b2-e3 . . . | a2-c3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | B7 . . . |
+Melody: | C5 . B4 . | A4 . G4 . |
+Lyrics: | 山 间 小 路 | 弯 又 长 |
+@piano | c3-e3-g3 . . . | b2-d3-f#3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . . | Am . . . |
+Melody: | G4 . A4 . | B4 . D5 . |
+Lyrics: | 歌 声 飘 过 | 田 野 上 |
+@piano | e2-b2-e3 . . . | a2-c3-e3 . . . | vel: 55
+
+[CH2] (Chorus - 4 Bars)
+Chords: | C . . . | B7 . . . |
+Melody: | C5 . B4 . | A4 . G4 . |
+Lyrics: | 回 荡 在 那 | 远 山 旁 |
+@piano | c3-e3-g3 . . . | b2-d3-f#3 . . . | vel: 55

@@ -1,0 +1,28 @@
+**TRACK: The Moon Reflected in Erquan**
+[MetaData]
+key: G | tempo: 60 | subdivision: 8th
+time: 4/4 | mood: Gentle, sorrowful
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+Melody: | B3 . D4 . | A3 . C4 . | G3 . B3 . | E4 . D4 . |
+Lyrics: | 二 泉 映 月 | 琴 声 悠 扬 | 诉 说 心 中 | 无 限 凄 凉 |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | C . . . | G . . . |
+Melody: | B3 . A3 . | G3 . A3 . | B3 . D4 . | G3 . . . |
+Lyrics: | 月 光 照 水 | 波 光 粼 粼 | 曲 终 人 散 | 余 音 绕 梁 |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | D . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | A3 . F#3 . |
+Lyrics: | 二 泉 映 月 | 千 古 绝 唱 | 悲 欢 离 合 | 都 在 弦 上 |
+@piano | c2-e2-g2 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | G . . . | G . . . |
+Melody: | B3 . D4 . | G3 . . . |
+Lyrics: | 月 落 乌 啼 | 静 夜 思 乡 |
+@piano | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 40
