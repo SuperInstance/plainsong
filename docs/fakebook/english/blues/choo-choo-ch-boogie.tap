@@ -1,0 +1,20 @@
+**TRACK: Choo Choo Ch'Boogie**
+[MetaData]
+key: A | tempo: 168 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | E7 . . . | A . . . | E7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | E7 . . . | A . . . | E7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | E7 . . . | A . . . | E7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . | B7 . . . | E7 . . . | A . . . | E7 . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3-a3 . . . | e2-g#2-b2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-b2-d3 . . . | vel: 60

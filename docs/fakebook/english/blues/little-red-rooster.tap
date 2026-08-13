@@ -1,0 +1,20 @@
+**TRACK: Little Red Rooster**
+[MetaData]
+key: Am | tempo: 74 | subdivision: 8th
+time: 4/4 | mood: Swampy
+
+[V1] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | D . . . | D . . . | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50
+
+[V2] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | D . . . | D . . . | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | E . . . | E . . . | F . . . | F . . . | D . . . | D . . . | Am . . . | Am . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | D . . . | D . . . | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 .

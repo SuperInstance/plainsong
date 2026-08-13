@@ -1,0 +1,30 @@
+**TRACK: Kansas City**
+[MetaData]
+key: Eb | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | Eb . . . | Eb . . . | Eb . . . | Eb7 . . . |
+| Ab . . . | Ab . . . | Eb . . . | Eb . . . |
+| Bb7 . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . |
+| ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
+| bb2-d3-f3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[CH] (Chorus - 12 Bars)
+Chords: | Eb . . . | Eb . . . | Eb . . . | Eb7 . . . |
+| Ab . . . | Ab . . . | Eb . . . | Eb . . . |
+| Bb7 . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . |
+| ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
+| bb2-d3-f3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Eb . . . | Eb . . . |
+| Bb7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
+| bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . Eb . . . |
+@guitar | eb3-g3-bb3 . . .

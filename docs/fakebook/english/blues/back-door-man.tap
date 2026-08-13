@@ -1,0 +1,20 @@
+**TRACK: Back Door Man**
+[MetaData]
+key: E | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . |
+@guitar | a1-c#2-e2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | B . . . | A . . . | E . . . | E . . . |
+@guitar | b1-d#2-f#2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
+
+[V3] (Verse - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a1-c#2-e2 . . . | b1-d#2-f#2 . . . | vel: 60
