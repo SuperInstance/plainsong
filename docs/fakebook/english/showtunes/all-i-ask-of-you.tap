@@ -1,0 +1,28 @@
+**TRACK: All I Ask of You**
+[MetaData]
+key: Db | tempo: 66 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gb . . . | Db . . . | Bbm . . . | Eb . . . |
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Db . . . | Gb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-b2-eb3 . . . | db3-f3-ab3 . . . | gb2-bb2-db3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gb . . . | Db . . . | Bbm . . . | Eb . . . |
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Db . . . | Db . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 45

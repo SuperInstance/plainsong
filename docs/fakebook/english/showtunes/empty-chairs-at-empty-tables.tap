@@ -1,0 +1,24 @@
+**TRACK: Empty Chairs at Empty Tables**
+[MetaData]
+key: Am | tempo: 70 | subdivision: 8th
+time: 6/8 | mood: Somber
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . . . | Dm . . . . . | G . . . . . | C . . . . . |
+@guitar | a2-e3-a3-c4 . . . . . | d3-a3-d4-f4 . . . . . | g2-d3-g3-b3 . . . . . | c3-e3-g3-c4 . . . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . . . | E . . . . . | Am . . . . . | E . . . . . |
+@guitar | f2-c3-f3-a3 . . . . . | e2-b2-e3-g#3 . . . . . | a2-e3-a3-c4 . . . . . | e2-b2-e3-g#3 . . . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . . . | F . . . . . | C . . . . . | G . . . . . |
+@guitar | a2-e3-a3-c4 . . . . . | f2-c3-f3-a3 . . . . . | c3-g3-c4-e4 . . . . . | g2-d3-g3-b3 . . . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . . . | E . . . . . | Am . . . . . | G . . . . . |
+@guitar | d3-a3-d4-f4 . . . . . | e2-b2-e3-g#3 . . . . . | a2-e3-a3-c4 . . . . . | g2-d3-g3-b3 . . . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . . . | F . . . . . | E . . . . . | Am . . . . . |
+@guitar | a2-e3-a3-c4 . . . . . | f2-c3-f3-a3 . . . . . | e2-b2-e3-g#3 . . . . . | a2-e3-a3-c4 . . . . . | vel: 40

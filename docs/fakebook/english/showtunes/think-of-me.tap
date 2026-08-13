@@ -1,0 +1,20 @@
+**TRACK: Think of Me**
+[MetaData]
+key: C | tempo: 66 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | F . . . | C . . . | G . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | F . . . | C . . . | G . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | G . . . | C . . . | Am . . . | F . . . | G . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

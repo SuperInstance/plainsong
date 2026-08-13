@@ -1,0 +1,26 @@
+**TRACK: Bring Him Home**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 6/8 | mood: Prayerful
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . . . | Db/Ab . . . . . | Ab . . . . . | Eb/G . . . . . |
+| Ab . . . . . | Db/Ab . . . . . | Ab . . . . . | Eb . . . . . |
+@guitar | ab2-eb3-ab3 . . . . . | db3-ab3-db4 . . . . . | ab2-eb3-ab3 . . . . . | eb3-g3-b3 . . . . . |
+| ab2-eb3-ab3 . . . . . | db3-ab3-db4 . . . . . | ab2-eb3-ab3 . . . . . | eb3-bb3-eb4 . . . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . . . | Db/Ab . . . . . | Ab . . . . . | Eb/G . . . . . |
+| Fm . . . . . | Db . . . . . | Ab/Eb . . . . . | Eb . . . . . |
+@guitar | ab2-eb3-ab3 . . . . . | db3-ab3-db4 . . . . . | ab2-eb3-ab3 . . . . . | eb3-g3-b3 . . . . . |
+| f3-ab3-c4 . . . . . | db3-f3-ab3 . . . . . | eb3-ab3-eb4 . . . . . | eb3-bb3-eb4 . . . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . . . | Ab . . . . . | Fm . . . . . | Eb . . . . . |
+| Db . . . . . | Ab . . . . . | Eb . . . . . | Eb . . . . . |
+@guitar | db3-f3-ab3 . . . . . | ab2-eb3-ab3 . . . . . | f3-ab3-c4 . . . . . | eb3-bb3-eb4 . . . . . |
+| db3-f3-ab3 . . . . . | ab2-eb3-ab3 . . . . . | eb3-bb3-eb4 . . . . . | eb3-bb3-eb4 . . . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . . . | Eb . . . . . | Ab . . . . . | Ab . . . . . |
+@guitar | bb2-db3-f3 . . . . . | eb3-bb3-eb4 . . . . . | ab2-eb3-ab3 . . . . . | ab2-eb3-ab
