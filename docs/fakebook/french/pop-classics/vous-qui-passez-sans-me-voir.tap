@@ -1,0 +1,28 @@
+**TRACK: Vous qui passez sans me voir**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+Chords: | E7 . . . | Am . . . | D7 . . . | G7 . . . |
+@guitar | e3-g#3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | Fm . . . | C . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 60
+Chords: | Dm . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . C . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . c3-e3-g3 . . . | vel:
