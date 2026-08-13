@@ -1,0 +1,24 @@
+**TRACK: The Marvelous Toy**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e3-g3-b3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 45
