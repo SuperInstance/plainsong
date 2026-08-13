@@ -1,0 +1,20 @@
+**TRACK: I Let a Song Go Out of My Heart**
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Ab7 . . . | Ab7 . . . | Eb . . . | Ebdim . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab2-c3-f3 . . . | ab2-c3-f3 . . . | eb3-g3-bb3 . . . | e2-g2-bb2 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Ab7 . . . | Ab7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab2-c3-f3 . . . | ab2-c3-f3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Eb/G . . . | Eb/G . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Ab7 . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60

@@ -1,0 +1,27 @@
+**TRACK: Do Nothin' Till You Hear from Me**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-b1-d2-f2 . . . | c1-e1-g1-b1 . . . |
+| f1-a1-c2-e2 . . . | b1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-b1-d2-f2 . . . | c1-e1-g1-b1 . . . |
+| f1-a1-c2-e2 . . . | b1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Am7 . . . |
+| Dm7 . . . | G7 . . . | E7 . . . | E7 . . . |
+@guitar | d1-f1-a1-c2 . . . | g1-b1-d2-f2 . . . | c1-e1-g1-b1 . . . | a1-c2-e2-g2 . . . |
+| d1-f1-a1-c2 . . . | g1-b1-d2-f2 . . . | e1-g#1-b1-d2 . . . | e1-g#1-b1-d2 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-b1-d2-f2 . . . | c1-e1-g1-b1 .

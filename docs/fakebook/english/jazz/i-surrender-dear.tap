@@ -1,0 +1,28 @@
+**TRACK: I Surrender, Dear**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am7 . . . | D7 . . . |
+@guitar | g2-b3-d3 . . . | e2-g3-b3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | vel: 50
+Chords: | G . . . | Em . . . | Am7 . . . | D7 . . . |
+@guitar | g2-b3-d3 . . . | e2-g3-b3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bm . . . | Bm7 . . . | E7 . . . | E7 . . . |
+@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 52
+Chords: | Am7 . . . | D7 . . . | G . . . | D7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | B7 . . . | Em . . . |
+@guitar | g2-b3-d3 . . . | g2-b3-d3 . . . | b2-d#3-f#3 . . . | e2-g3-b3 . . . | vel: 60
+Chords: | Am7 . . . | D7 . . . | G . . . | D7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | E7 . . . | Am7 . . . | Cm6 . . . | G . . . |
+@guitar | e2-g#3-b3 . . . | a2-c3-e3 . . . | c2-eb3-g3 . . . | g2-b3-d3 . . . | vel: 55
+Chords: | A7 . . . | D7 . . . | G . . . | D7 . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . .

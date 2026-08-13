@@ -1,0 +1,24 @@
+**TRACK: Fine and Dandy**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | A7 . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | E7 . . . | Am . . . | D7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | E7 . . . | Am . . . | D7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 45
