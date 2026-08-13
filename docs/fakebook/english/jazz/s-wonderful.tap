@@ -1,0 +1,23 @@
+**TRACK: 'S Wonderful**
+[MetaData]
+key: Eb | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | C7 . . . | C7 . . . | F7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | f2-a2-eb3 . . . | f2-a2-eb3 . . . | bb2-d2-f3 . . . | bb2-d2-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | C7 . . . | C7 . . . | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | f2-a2-eb3 . . . | bb2-d2-f3 . . . | eb3-g3-bb3 . . . | bb2-d2-f3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Abm . . . | Abm . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-bb3 . . . | f2-a2-eb3 . . . | bb2-d2-f3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | C7 . . . | C7 . . . | F7 . . . | Bb7 . . . | Eb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | f2-a2-eb3 . . . | bb2-d2-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | Eb .

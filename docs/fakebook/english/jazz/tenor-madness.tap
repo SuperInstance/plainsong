@@ -1,0 +1,19 @@
+**TRACK: Tenor Madness**
+[MetaData]
+key: Bb | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | e3-g3-bb3 . . . | e3-g3-bb3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | f3-a3-c4 . . . | e3-g3-bb3 . . . | b2-d3-f3 . . . | f3-a3-c4 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | e3-g3-bb3 . . . | e3-g3-bb3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | f3-a3-c4 . . . | e3-g3-bb3 . . . | b2-d3-f3 . . . | f3-a3-c4 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | F7 . . . | F7 . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | F7 . . . | F7 . . . |
+@guitar | f3-a3-eb4 . . . | f3-a3-eb4 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | e3-g3-bb3 . . . | e3-g3-bb3 . . . | f3-a3-eb4 . . . | f3-a3-eb4 . . . | vel: 65
+
+[V3] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . .

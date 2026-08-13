@@ -1,0 +1,28 @@
+**TRACK: Cabin in the Sky**
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 55
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Eb . . . | Ab . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | vel: 60
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab7 . . . | Db . . . | Ab7 . . . | Db . . . |
+@guitar | ab2-c3-eb3-gb3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3-gb3 . . . | db3-f3-ab3 . . . | vel: 50
+Chords: | Eb7 . . . | Ab . . . | Bb7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . .

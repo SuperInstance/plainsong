@@ -1,0 +1,23 @@
+**TRACK: Isn't It Romantic?**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse 1 - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . | F . . . | Dm . . . | Gm . C7 . | F . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . c2-e2-bb2 . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . | A7 . . . | Dm . . . | G7 . C7 . | F . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . c2-e2-bb2 . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | C7 . . . | F . . . | Dm . . . | Gm . C7 . | F . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . c2-e2-bb2 . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . | Gm . . . | C7 . . . | F . C7 . | F . . . |
+@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#3-a3 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . c2-e2-bb2 . | f2-a2-c3 . . . | vel: 58
+
+[V3] (Final Verse - 8 Bars)
+Chords: | F . . . | Dm .

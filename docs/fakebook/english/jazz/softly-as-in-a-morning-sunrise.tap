@@ -1,0 +1,20 @@
+**TRACK: Softly, as in a Morning Sunrise**
+[MetaData]
+key: Cm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Cm . . . | Cm . . . | G7 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Cm . . . | Cm . . . | G7 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm . . . | Fm . . . | Bb7 . . . | Bb7 . . . | Eb . . . | Eb . . . | G7 . . . | G7 . . . |
+@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Cm . . . | Cm . . . | G7 . . . | Cm . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | vel: 55

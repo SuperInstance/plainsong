@@ -1,0 +1,28 @@
+**TRACK: You're the Top**
+[MetaData]
+key: Eb | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Upbeat Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . |
+| Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab3-c4-eb4 . . . | ab3-b3-eb4 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . |
+| Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab3-c4-eb4 . . . | ab3-b3-eb4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+| F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Bb7 . . . | Eb . . . | C7 . . . |
+| F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | ab3-c4-eb4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50
