@@ -1,0 +1,30 @@
+**TRACK: At Last**
+[MetaData]
+key: Eb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Romantic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+| F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+| F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 55
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | C7 . . . |
+| F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 60
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | C7 . . . | F7 . . . | Bb7 . . . | Eb . . . |
+| C7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[OUT] (

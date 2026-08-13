@@ -1,0 +1,20 @@
+**TRACK: I'm Beginning to See the Light**
+[MetaData]
+key: C | tempo: 156 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm7 . . . | G7 . . . | C . . . | Am . . . | Dm7 . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm7 . . . | G7 . . . | C . . . | E7 . . . | A7 . . . | D7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G7 . . . | G7 . . . | C . . . | C . . . | G7 . . . | G7 . . . | C . . . | C . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | Fm . . . | C . . . | A7 . . . | Dm7 . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58

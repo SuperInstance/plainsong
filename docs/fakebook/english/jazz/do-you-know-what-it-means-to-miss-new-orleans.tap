@@ -1,0 +1,27 @@
+**TRACK: Do You Know What It Means to Miss New Orleans**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Melancholy Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+       | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | vel: 55
+@guitar | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e1-g#2-b2-d3 . . . | a1-c2-e2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+       | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | vel: 55
+@guitar | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e1-g#2-b2-d3 . . . | a1-c2-e2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | E7 . . . | Am7 . . . | Dm7 . . . |
+       | G7 . . . | Cmaj7 . . . | Bm7b5 . . . | E7 . . . |
+@guitar | f2-a2-c3-e3 . . . | e1-g#2-b2-d3 . . . | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | vel: 60
+@guitar | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | b1-d2-f2-a2 . . . | e1-g#2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Am7 . . . |
+       | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | E7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g

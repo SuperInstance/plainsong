@@ -1,0 +1,28 @@
+**TRACK: I've Heard That Song Before**
+[MetaData]
+key: F | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 58
+| F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | A7 . . . | Dm . . . | Bb . . . |
+@guitar | f2-a2-c3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 60
+| Gm7 . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 60
+
+[B] (Bridge - 8 Bars)
+Chords: | Dm . . . | G7 . . . | Cmaj7 . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c2-e2-bb2 . . . | vel: 62
+| F . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 65
+| F . . . | A7 . . . | Bb . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c#3-e3 . . . | bb2-d3-f3 . . . | c2-e2-bb2 . . . | vel: 65

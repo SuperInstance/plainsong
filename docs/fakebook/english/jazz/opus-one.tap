@@ -1,0 +1,31 @@
+**TRACK: Opus One**
+[MetaData]
+key: Bb | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb6 . . . | Bb6 . . . | Gm7 . . . | C7 . . . |
+| F7 . . . | F7 . . . | Cm7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . |
+| f2-a2-c3 . . . | f2-a2-c3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb6 . . . | Bb6 . . . | Gm7 . . . | C7 . . . |
+| F7 . . . | F7 . . . | Bb6 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . |
+| f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb7 . . . | Eb7 . . . | Ab7 . . . | Ab7 . . . |
+| D7 . . . | D7 . . . | G7 . . . | G7 . . . |
+@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . |
+| d2-f#2-a2 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Bb6 . . . | Bb6 . . . | Gm7 . . . | C7 . . . |
+| F7 . . . | F7 . . . | Bb6 . . . | Bb6 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . |
+| f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F7 . . . | Bb6 . .

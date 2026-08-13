@@ -1,0 +1,26 @@
+**TRACK: My Ship**
+[MetaData]
+key: Cm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-bb3 . . . | f2-ab2-c3 . . . | g2-b2-f3 . . . | vel: 50
+Chords: | Cm . . . | Ab . . . | Dm7b5 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | d2-f2-ab2 . . . | g2-b2-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-bb3 . . . | f2-ab2-c3 . . . | g2-b2-f3 . . . | vel: 50
+Chords: | Ab . . . | Bb7 . . . | Eb . . . | G7 . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-ab3 . . . | eb2-g3-bb3 . . . | g2-b2-f3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Bb7 . . . | EbMaj7 . . . | A7 . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2-d3 . . . | a2-c#3-e3-g3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm7b5 . . . | G7 . . . | Cm . . . | Cm . . . |
+@guitar | d2-f2-ab2 . . . | g2-b2-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 55
+Chords: | Fm . . . | G7 . . . | Cm . . . | G7 . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-f3 . . . | c3-eb3-g3 . . . | g2-b2-f3 . . . | vel: 55
