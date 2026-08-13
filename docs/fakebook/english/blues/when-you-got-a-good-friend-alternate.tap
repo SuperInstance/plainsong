@@ -1,0 +1,20 @@
+**TRACK: When You Got a Good Friend (alternate)**
+[MetaData]
+key: A | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Brooding
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | E . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | E . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | E . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3

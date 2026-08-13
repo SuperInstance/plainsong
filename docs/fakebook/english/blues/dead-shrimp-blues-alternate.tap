@@ -1,0 +1,24 @@
+**TRACK: Dead Shrimp Blues (alternate)**
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E7 . . . | A . . . | A7 . . . | E . . . | E7 . . . | B7 . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-g3 . . . | e2-b2-e3 . . . | e2-g#2-d3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | E7 . . . | A . . . | A7 . . . | E . . . | E7 . . . | B7 . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-g3 . . . | e2-b2-e3 . . . | e2-g#2-d3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[B] (Bridge - 4 Bars)
+Chords: | A . . . | A7 . . . | B7 . . . | B7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-g3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | E . . . | E7 . . . | A . . . | A7 . . . | E . . . | E7 . . . | B7 . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-g3 . . . | e2-b2-e3 . . . | e2-g#2-d3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

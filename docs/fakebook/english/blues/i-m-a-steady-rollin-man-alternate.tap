@@ -1,0 +1,20 @@
+**TRACK: I'm a Steady Rollin' Man (alternate)**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | G . . . | G . . . | G . . . | G . . . | C . . . | C . . . | G . . . | G . . . | D . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | G . . . | G . . . | G . . . | G . . . | C . . . | C . . . | G . . . | G . . . | D . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[BR] (Bridge/Turnaround - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | G . . . | G . . . | G . . . | G . . . | C . . . | C . . . | G . . . | G . . . | D . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2
