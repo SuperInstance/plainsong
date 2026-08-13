@@ -1,0 +1,24 @@
+**TRACK: Epitaph**
+[MetaData]
+key: Em | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e3-g3 . . . | d2-a2-d3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e3-g3 . . . | d2-a2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c2-e3-g3 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Am . . . | Am . . . | Em . . . | Em . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45
