@@ -1,0 +1,24 @@
+**TRACK: Omoide**
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | d3-f#3-a3 . . . | g2-bb2-d3 . . . | d3-f#3-a3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | vel: 65

@@ -1,0 +1,30 @@
+**TRACK: Otoko no Junjou**
+[MetaData]
+key: Gm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+Chords: | Cm . . . | F7 . . . | Bb . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+Chords: | Cm . . . | F7 . . . | Bb . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Cm . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | c3-eb3-g3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 65
+Chords: | Gm . . . | Eb . . . | D7 . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | eb2-g2-bb2 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | F7 . . . | Bb . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | d2-f#3-a3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | g2

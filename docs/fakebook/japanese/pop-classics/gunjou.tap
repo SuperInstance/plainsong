@@ -1,0 +1,26 @@
+**TRACK: Gunjou**
+[MetaData]
+key: Bm | tempo: 145 | subdivision: 8th
+time: 4/4 | mood: Euphoric
+
+[INTRO] (Intro - 2 Bars)
+Chords: | Bm . . . | G . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V1] (Verse 1 - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[PRE] (Pre-Chorus - 4 Bars)
+Chords: | Em . . . | F#m . . . | G . . . | A . . . |
+@guitar | e3-g3-b3 . . . | f#2-c#3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 65
+Chords: | D . . . | A . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50

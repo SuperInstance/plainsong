@@ -1,0 +1,24 @@
+**TRACK: Tsugunai**
+[MetaData]
+key: Am | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Enka Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Dm . . . | E7 . . . |
+@guitar | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 45

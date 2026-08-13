@@ -1,0 +1,27 @@
+**TRACK: Kita no Yadokara**
+[MetaData]
+key: Gm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Cm . . . |
+| Gm . . . | D7 . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | d2-f#2-a2 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Cm . . . |
+| Gm . . . | D7 . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | d2-f#2-a2 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Cm . . . | Gm . . . | D7 . . . |
+| Gm . . . | Cm . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | c3-eb3-g3 . . . | g2-d3-g3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | D7 . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | d2-f#2-a2 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | d2-f#2-a2 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 50
