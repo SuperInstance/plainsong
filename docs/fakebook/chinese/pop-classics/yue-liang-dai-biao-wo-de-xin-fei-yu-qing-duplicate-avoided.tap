@@ -1,0 +1,29 @@
+**TRACK: Yue Liang Dai Biao Wo De Xin - Fei Yu Qing (Alternative)**
+[MetaData]
+key: C | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@chords: Cmaj7 . . . | Am7 . . . | Fmaj7 . . . | G . . . |
+@bass: c2 . . . | a1 . . . | f1 . . . | g1 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@chords: Cmaj7 . . . | Am7 . . . | Fmaj7 . . . | G7 . . . |
+@bass: c2 . . . | a1 . . . | f1 . . . | g1 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@chords: Fmaj7 . . . | G . . . | Cmaj7 . . . | Cmaj7 . . . |
+@bass: f1 . . . | g1 . . . | c2 . . . | c2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | Em . . . | A . . . |
+@chords: Dm7 . . . | G . . . | Em7 . . . | A7 . . . |
+@bass: d1 . . . | g1 . . . | e1 . . . | a1 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@chords: Fmaj7 . . . | G . . . | Cmaj7 . . . | Cmaj7 . . . |
+@bass: f1 . . . | g1 . . . | c2 . . . | c2 . . . | vel: 60

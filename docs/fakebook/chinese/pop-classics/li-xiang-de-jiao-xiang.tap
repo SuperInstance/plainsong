@@ -1,0 +1,22 @@
+**TRACK: Li Xiang De Jiao Xiang**
+[MetaData]
+key: Gm | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | c3-eb3-g3 . . . | d2-f#2-a2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | g2-bb2-d3 . . . | vel: 60
+Chords: | Eb . . . | Bb . . . | D . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | D . . . | Gm . . . | Gm . . . |
+@guitar | c3-eb3-g3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | vel: 55
