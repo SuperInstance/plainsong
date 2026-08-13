@@ -1,0 +1,24 @@
+**TRACK: Boom Boom**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | E . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . |
+@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V3] (Verse - 4 Bars)
+Chords: | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55

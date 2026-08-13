@@ -1,0 +1,20 @@
+**TRACK: Dust My Broom**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . | B . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 65
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-f#3-b

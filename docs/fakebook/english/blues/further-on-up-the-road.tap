@@ -1,0 +1,31 @@
+**TRACK: Further On Up the Road**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | B7 . . . | E . . . |
+| E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . |
+| e2-b3-e4 . . . | e2-b3-e4 . . . | b2-d#3-f#3 . . . | e2-b3-e4 . . . |
+| e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | B7 . . . | E . . . |
+| E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . |
+| e2-b3-e4 . . . | e2-b3-e4 . . . | b2-d#3-f#3 . . . | e2-b3-e4 . . . |
+| e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[BR] (Bridge - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . |
+| B7 . . . | B7 . . . | E . . . | B7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . |
+| b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | e2-b3-e4 . . . | b2-d#3-f#3 . . . | vel: 62
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | B7 . . . | E . . . |
+| E . . . | A . . . | E . . .

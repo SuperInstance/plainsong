@@ -1,0 +1,20 @@
+**TRACK: The Sky Is Crying**
+[MetaData]
+key: E | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Slow Blues
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[SOLO] (Instrumental - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . .
