@@ -1,0 +1,31 @@
+**TRACK: They All Laughed**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . |
+| Gm . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 55
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . |
+| Gm . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 55
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | C7 . . . |
+| F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 58
+
+[V3] (Final Verse - 8 Bars)
+Chords: | F . . . | F . . . | Dm . . . | Dm . . . |
+| Gm . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . |

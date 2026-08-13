@@ -1,0 +1,27 @@
+**TRACK: Mood Indigo**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Dreamy
+
+[V1] (Verse - 8 Bars)
+Chords: | Abmaj7 . . . | Ab6 . . . | Fm7 . . . | Bb7 . . . |
+| Ebmaj7 . . . | Ab7 . . . | Dbmaj7 . . . | Db6 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-c4-f4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-bb3 . . . | vel: 50
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Abmaj7 . . . | Ab6 . . . | Fm7 . . . | Bb7 . . . |
+| Ebmaj7 . . . | Ab7 . . . | Dbmaj7 . . . | Db6 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-c4-f4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-bb3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . |
+@guitar | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | vel: 60
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Abmaj7 . . . | Ab6 . . . | Fm7 . . . | Bb7 . . . |
+| Ebmaj7 . . . | Ab7 . . . | Dbmaj7 . . . | Db6 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-c4-f4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-bb3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Abmaj7 . . . | Ab6 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-c4-f4 . . . | vel: 45

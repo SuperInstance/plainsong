@@ -1,0 +1,30 @@
+**TRACK: I'll Be Seeing You**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | Gm7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | vel: 45
+Chords: | C7 . . . | F . . . | Bb . . . | C7 . . . |
+@guitar | c2-e2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | Gm7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | vel: 45
+Chords: | C7 . . . | F . . . | Bb . . . | C7 . . . |
+@guitar | c2-e2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | vel: 45
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . . | Gm7 . . . | C7 . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 50
+Chords: | Dm . . . | Gm7 . . . | C7 . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | Gm7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | vel: 45
+Chords: | C7 . . . | F . . . | Bb . . . | C7 . . . |
+@guitar | c2-e2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | vel: 45
+
+[OUT

@@ -1,0 +1,20 @@
+**TRACK: Stella by Starlight**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Dreamy
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | Ebmaj7 . . . | Am7b5 . . . | D7b9 . . . | Gm7 . . . | C7 . . . |
+@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-a3 . . . | eb3-g3-bb3-d4 . . . | a2-c3-eb3-g3 . . . | d3-f#3-a3-c4 . . . | g2-bb2-d3-f3 . . . | c3-e3-g3-bb3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7b9 . . . | Cm7 . . . | C7 . . . |
+@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | ab3-c4-eb4-g4 . . . | d3-f3-ab3-c4 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | vel: 50
+
+[B] (Bridge - 8 Bars)
+Chords: | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7b9 . . . | Cm7 . . . | F7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
+@guitar | eb3-g3-bb3-d4 . . . | ab3-c4-eb4-g4 . . . | d3-f3-ab3-c4 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-a3 . . . | eb3-g3-bb3-d4 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Am7b5 . . . | D7b9 . . . | Gm7 . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | C7 . . . |
+@guitar | a2-c3-eb3-g3 . . . | d3-f#3-a3-c4 . . . | g
