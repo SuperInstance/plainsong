@@ -1,0 +1,20 @@
+**TRACK: Kashmir**
+[MetaData]
+key: Dm | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 60
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | C . . . | Dm . . . | Dm . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 50
+
+[IN] (Instrumental - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 65

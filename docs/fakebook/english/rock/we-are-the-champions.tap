@@ -1,0 +1,20 @@
+**TRACK: We Are the Champions**
+[MetaData]
+key: Bb | tempo: 76 | subdivision: 8th
+time: 6/8 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . . . | Eb . . . . . | Bb . . . . . | F . . . . . |
+@guitar | bb2-f3-bb3 . . . . . | eb2-bb2-eb3 . . . . . | bb2-f3-bb3 . . . . . | f2-c3-f3 . . . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bb . . . . . | Eb . . . . . | Bb . . . . . | F . . . . . |
+@guitar | bb2-f3-bb3 . . . . . | eb2-bb2-eb3 . . . . . | bb2-f3-bb3 . . . . . | f2-c3-f3 . . . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . . . | Gm . . . . . | Eb . . . . . | F . . . . . | Bb . . . . . | Gm . . . . . | Eb . . . . . | F . . . . . |
+@guitar | bb2-f3-bb3 . . . . . | g2-d3-g3 . . . . . | eb2-bb2-eb3 . . . . . | f2-c3-f3 . . . . . | bb2-f3-bb3 . . . . . | g2-d3-g3 . . . . . | eb2-bb2-eb3 . . . . . | f2-c3-f3 . . . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . . . | Bb . . . . . | Cm . . . . . | F . . . . . |
+@guitar | eb2-bb2-eb3 . . . . . | bb2-f3-bb3 . . . . . | c3-g3-c4 . . . . . | f2-c3-f3 . . . . . | vel: 55
