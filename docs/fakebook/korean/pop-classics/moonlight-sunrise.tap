@@ -1,0 +1,24 @@
+**TRACK: Moonlight Sunrise**
+[MetaData]
+key: Bbm | tempo: 115 | subdivision: 8th
+time: 4/4 | mood: Bouncy
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
+@guitar | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
+@guitar | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Bbm . . . |
+@guitar | gb2-bb2-db3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Fm . . . | Ab . . . |
+@guitar | fm2-ab2-c3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Bbm . . . |
+@guitar | gb2-bb2-db3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | vel: 65

@@ -1,0 +1,24 @@
+**TRACK: Given-Taken**
+[MetaData]
+key: F#m | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Dark, Anthemic
+
+[V1] (Verse - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 50
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 52
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | D . . . | E . . . |
+@guitar | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 58
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | D . . . | E . . . |
+@guitar | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 45
