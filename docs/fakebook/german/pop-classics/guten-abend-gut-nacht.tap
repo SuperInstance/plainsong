@@ -1,0 +1,20 @@
+**TRACK: Guten Abend, gut' Nacht**
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . | C7 . . | F . . | C7 . . |
+@guitar | f2-a2-c3 . . | c2-e2-bb2 . . | f2-a2-c3 . . | c2-e2-bb2 . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . | Bb . . | F . . | C7 . . |
+@guitar | f2-a2-c3 . . | bb2-d3-f3 . . | f2-a2-c3 . . | c2-e2-bb2 . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . | C7 . . | F . . | C7 . . |
+@guitar | f2-a2-c3 . . | c2-e2-bb2 . . | f2-a2-c3 . . | c2-e2-bb2 . . | vel: 45
+
+[OUT] (Outro - 2 Bars)
+Chords: | F . . | F . . |
+@guitar | f2-a2-c3 . . | f2-a2-c3 . . | vel: 40

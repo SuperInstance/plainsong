@@ -1,0 +1,20 @@
+**TRACK: Die Gedanken sind frei**
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Steady, reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . | G . . | C . . | E . . |
+@chords | x-0-2-2-1-0 . . | 3-2-0-0-0-3 . . | 0-3-2-0-1-0 . . | 0-2-2-1-0-0 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . | G . . | C . . | E . . |
+@chords | x-0-2-2-1-0 . . | 3-2-0-0-0-3 . . | 0-3-2-0-1-0 . . | 0-2-2-1-0-0 . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . | G . . | C . . | E . . |
+@chords | 1-3-3-2-1-1 . . | 3-2-0-0-0-3 . . | 0-3-2-0-1-0 . . | 0-2-2-1-0-0 . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . | G . . | C . . | E . . |
+@chords | x-0-2-2-1-0 . . | 3-2-0-0-0-3 . . | 0-3-2-0-1-0 . . | 0-2-2-1-0-0 . . | vel: 50
