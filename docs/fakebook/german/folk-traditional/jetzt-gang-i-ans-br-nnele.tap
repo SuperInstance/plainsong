@@ -1,0 +1,22 @@
+**TRACK: Jetzt gang i ans Brünnele**
+[MetaData]
+key: F | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . | C7 . . | F . . | C7 . . |
+Melody: | A3 . C4 . | E4 . . | F4 . E4 . | D4 . . |
+Lyrics: | Jetzt gang i ans Brün-ne-le, | a-ber nit trin-ke | Jetzt gang i ans Brün-ne-le, | a-ber nit trin-ke |
+@piano | f2-a2-c3 . . | e2-g2-bb2 . . | f2-a2-c3 . . | e2-g2-bb2 . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . | C7 . . | F . . | C7 . . |
+Melody: | A3 . C4 . | E4 . . | F4 . E4 . | D4 . . |
+Lyrics: | Jetzt gang i ans Brün-ne-le, | a-ber nit trin-ke | Jetzt gang i ans Brün-ne-le, | a-ber nit trin-ke |
+@piano | f2-a2-c3 . . | e2-g2-bb2 . . | f2-a2-c3 . . | e2-g2-bb2 . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . | F . . | C7 . . | F . . |
+Melody: | D4 . F4 . | A4 . . | G4 . E4 . | F4 . . |
+Lyrics: | Dort drin-nen liegt ein | Schätz-chen, | das weint je-den Tag | so sehr |
+@piano | bb2-d3-f3 . . | f2-a2-c3 . . | e2-g2-bb2 . . | f2-a2-c3 . . | vel: 55

@@ -1,0 +1,25 @@
+**TRACK: Schwarzbraun ist die Haselnuss**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+Melody: | A3 . C4 . | F4 . . . | G4 . E4 . | C4 . . . |
+Lyrics: | Schwarz-braun ist die | Ha-sel-nuss, | schwarz-braun bin | ich, |
+Lyrics: | ja, schwarz-braun ist die | Ha-sel-nuss, | schwarz-braun bin | ich. |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Und weil ich bin | schwarz-braun, | drum mag ich | dich, |
+Lyrics: | und weil ich bin | schwarz-braun, | drum mag ich | dich. |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+Melody: | A3 . C4 . | F4 . . . | G4 . E4 . | C4 . . . |
+Lyrics: | Mein Herz ist | wie ein | Glöck-lein, | hell, |
+Lyrics: | mein Herz ist | wie ein | Glöck-lein, | hell. |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
