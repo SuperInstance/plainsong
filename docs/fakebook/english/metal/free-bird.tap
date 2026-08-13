@@ -1,0 +1,24 @@
+**TRACK: Free Bird**
+[MetaData]
+key: G | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | C . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a1-c2-e2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[IN] (Instrumental Outro - 12 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 70

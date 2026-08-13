@@ -1,0 +1,20 @@
+**TRACK: School's Out**
+[MetaData]
+key: A | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a4 . . . | a2-e3-a4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a4 . . . | a2-e3-a4 . . . | e2-b2-e4 . . . | e2-b2-e4 . . . | vel: 75
+
+[B] (Bridge - 4 Bars)
+Chords: | Bm . . . | Bm . . . | E . . . | E . . . |
+@guitar | b2-f#3-b3 . . . | b2-f#3-b3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[OUT] (Outro - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

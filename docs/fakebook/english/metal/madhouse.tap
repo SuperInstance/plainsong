@@ -1,0 +1,24 @@
+**TRACK: Madhouse**
+[MetaData]
+key: E minor | tempo: 176 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 75
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | A . . . |
+@guitar | c2-g2-c3 . . . | g1-d2-g2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | E . . . | F . . . | E . . . |
+@guitar | f1-c2-f2 . . . | e1-b1-e2 . . . | f1-c2-f2 . . . | e1-b1-e2 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 60
