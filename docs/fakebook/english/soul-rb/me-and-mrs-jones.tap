@@ -1,0 +1,24 @@
+**TRACK: Me and Mrs. Jones**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Smooth
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e3-g3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e3-g3-b3 . . . | b2-d#3-f#3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e3-g3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e3-g3-b3 . . . | b2-d#3-f#3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | D . . . | G . . . | Em . . . | Am . . . | D . . . | G . . . | B7 . . . |
+@guitar | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | e3-g3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | B7 . . . | Em . . . | D . . . |
+@guitar | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e3-g3-b3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e3-g3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | b2-d#3-f#3 . .
