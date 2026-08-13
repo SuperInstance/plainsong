@@ -1,0 +1,13 @@
+**TRACK: Three Against Four**
+[MetaData]
+key: C | tempo: 120 | swing: 0% | subdivision: 16th
+
+[V1] (3 in player vs 4 in melody - 2 Bars)
+Chords:  | C . . . . . . . . . . . . . . . | G . . . . . . . . . . . . . . . |
+Melody: | C4 . . . E4 . . . G4 . . . C5 . . . | B4 . . . G4 . . . D4 . . . G4 . . . |
+@flash  | E3 . . . G3 . . . B3 . . . | D3 . . . F#3 . . . A3 . . . | vel: 80
+
+[V2] (Overfilled player bar - 18 tokens in a 16-slot bar)
+Chords:  | C . . . . . . . . . . . . . . . | G . . . . . . . . . . . . . . . |
+Melody: | C4 . . . E4 . . . G4 . . . C5 . . . | B4 . . . G4 . . . D4 . . . G4 . . . |
+@flash  | E3 . . . . . G3 . . . . . B3 . . . . . | D3 . . . F#3 . . . A3 . . . | vel: 80

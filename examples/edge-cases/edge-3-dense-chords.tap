@@ -1,0 +1,11 @@
+**TRACK: Cluster Bomb**
+[MetaData]
+key: C | tempo: 90 | swing: 0% | subdivision: 8th
+
+[V1] (6-note and 8-note simultaneous chords - 2 Bars)
+@wesley | c2-e2-g2-c3-e3-g3 . . . | c2-d2-e2-f#2-g#2-a#2-c3-d3 . . . | vel: 70
+@hermes | c1 . . . | g1 . . . | vel: 60
+
+[V2] (Degenerate chords - dotted and double-hyphen tokens - 2 Bars)
+@wesley | e2-.-g2 . . . | c3--e3 . . . | vel: 70
+@hermes | c1 . . . | g1 . . . | vel: 60

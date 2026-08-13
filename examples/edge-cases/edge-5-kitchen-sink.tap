@@ -1,0 +1,23 @@
+**TRACK: Kitchen Sink**
+[MetaData]
+key: Bbm | tempo: 132 | swing: 15% | subdivision: 8th
+
+[V1] (Everything At Once - 2 Bars)
+Chords:  | Bbm . F7 . | Gbmaj7 . Ddim . |
+Melody: | Bb3 . F4 . | Gb4 . Bb4 - |
+Lyrics: | sing . every . | token . once - |
+@wesley | bb1-f2-ab2 . eb3 . | gb2-bb2-db3 . f2 . | vel: 70
+@hermes | bb0 . f1 . | gb1 . d1 . | vel: 60
+
+[C] (Chorus - More Chord Qualities - 2 Bars)
+Chords:  | Esus4 . Cadd9 . | Am6 . G9 . |
+Melody: | E4 . G#4 C5 . | A4 - D5 . |
+Lyrics: | sus - pend . | add . nine . |
+@flash  | e2-b2 . c3-e3-g3 . | a2-c3-e3 - g2-b2-d3-f3 . | vel: 80
+@drums  | c2 . d2 . | c2 . d2 . | vel: 65
+
+[B] (Bridge - Augmented, Underfilled, Empty - 2 Bars)
+Chords:  | Aaug . . . | . . . . |
+Melody: | A4 . | - . |
+Lyrics: | aug . | . . |
+@wesley | a1-c#2-e#2 . . . | . . . . | vel: 50

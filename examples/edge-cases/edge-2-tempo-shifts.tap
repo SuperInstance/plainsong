@@ -1,0 +1,17 @@
+**TRACK: Tempo Rollercoaster**
+[MetaData]
+key: C | tempo: 60 | swing: 0% | subdivision: 8th
+
+[V1] (Slow - intended 60 BPM - 2 Bars)
+Chords: | C . | F . |
+Melody: | C4 . E4 . | F4 . A4 . |
+
+[C] (Fast - intended 200 BPM - tempo change attempted inline)
+tempo: 200
+Chords: | G . | C . |
+Melody: | G4 . B4 . | C5 . E5 . |
+
+[V2] (Return - intended back to 60 BPM)
+tempo: 60
+Chords: | F . | C . |
+Melody: | A4 . F4 . | E4 . C4 . |

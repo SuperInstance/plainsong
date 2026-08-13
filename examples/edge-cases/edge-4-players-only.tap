@@ -1,0 +1,13 @@
+**TRACK: Players Only**
+[MetaData]
+key: Em | tempo: 100 | swing: 10% | subdivision: 16th
+
+[V1] (No Chords, Melody, or Lyrics lines at all - 2 Bars)
+@wesley | e2-g2-b2 . . . d3 . . . | e3 . . . b2 . . . | vel: 75
+@hermes | e1 . . . e1 . . . | g1 . . . b1 . . . | vel: 65
+@drums  | c2 . c2 . c2 . c2 . | c2 . c2 . c2 . c2 . | vel: 60
+
+[C] (Second section, still players only - 2 Bars)
+@wesley | c3 . . . b2 . . . | a2 . . . g2 . . . | vel: 70
+@hermes | a1 . . . g1 . . . | e1 . . . e1 . . . | vel: 60
+@drums  | c2 . d2 . c2 . d2 . | c2 . d2 . c2 . d2 . | vel: 60
