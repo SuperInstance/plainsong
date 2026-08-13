@@ -1,0 +1,24 @@
+**TRACK: Ponteio**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 2/2 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . |
+| F#m7b5 . . . | B7 . . . | E7 . . . | Am7 . . . |
+@guitar | x0-2-0-1-0 . . . | x0-2-1-2-0 . . . | 3x-4-3-2-0 . . . | x3-2-0-1-0 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . |
+| F#m7b5 . . . | B7 . . . | E7 . . . | Am7 . . . |
+@guitar | x0-2-0-1-0 . . . | x0-2-1-2-0 . . . | 3x-4-3-2-0 . . . | x3-2-0-1-0 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . |
+| Bm7b5 . . . | E7 . . . | Am7 . . . | E7 . . . |
+@guitar | x5-3-5-3-5 . . . | 3x-3-4-3-5 . . . | x3-2-0-1-0 . . . | 1x-2-1-0-0 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . |
+| F#m7b5 . . . | B7 . . . | E7 . . . | Am7 . . . |
+@guitar | x0-2-0-1-0 . . . | x0-2-1-2-0 . . . | 3x-4-3-2-0 . . . | x3-2-0-1-0 . . . | vel: 55
