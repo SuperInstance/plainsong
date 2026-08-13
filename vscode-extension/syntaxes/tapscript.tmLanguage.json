@@ -1,0 +1,258 @@
+{
+  "scopeName": "source.tapscript",
+  "name": "TapScript",
+  "patterns": [
+    { "include": "#track-header" },
+    { "include": "#metadata-block" },
+    { "include": "#metadata-directives" },
+    { "include": "#section-header" },
+    { "include": "#keychange-block" },
+    { "include": "#comments" },
+    { "include": "#track-labels" },
+    { "include": "#player-line" },
+    { "include": "#dynamics-line" },
+    { "include": "#articulation-line" },
+    { "include": "#rest-line" },
+    { "include": "#pipe-content" }
+  ],
+  "repository": {
+    "track-header": {
+      "match": "^\\*\\*(TRACK:\\s*.+?)\\*\\*\\s*$",
+      "name": "entity.name.track.tapscript",
+      "captures": {
+        "1": {
+          "name": "entity.name.track.tapscript"
+        }
+      }
+    },
+
+    "metadata-block": {
+      "match": "^\\[MetaData\\]\\s*$",
+      "name": "keyword.control.metadata-block.tapscript"
+    },
+
+    "metadata-directives": {
+      "patterns": [
+        {
+          "match": "(?i)^(key|tempo|swing|subdivision|meter|time)\\s*[:)]",
+          "name": "keyword.control.directive.tapscript"
+        },
+        {
+          "match": "\\b(\\d+)\\s*(bpm|BPM)\\b",
+          "name": "constant.numeric.tempo.tapscript"
+        },
+        {
+          "match": "\\b\\d+\\s*/\\s*\\d+\\b",
+          "name": "constant.numeric.time-signature.tapscript"
+        },
+        {
+          "match": "(?i)\\bswing\\s*:?\\s*(\\d+%)?\\b",
+          "name": "keyword.control.swing.tapscript",
+          "captures": {
+            "1": { "name": "constant.numeric.swing-value.tapscript" }
+          }
+        },
+        {
+          "match": "(?i)\\bsubdivision\\s*:?\\s*(8th|16th|32nd)\\b",
+          "name": "keyword.control.subdivision.tapscript",
+          "captures": {
+            "1": { "name": "constant.language.subdivision-value.tapscript" }
+          }
+        }
+      ]
+    },
+
+    "section-header": {
+      "match": "^\\[([A-Za-z0-9]+)\\]\\s*(?:\\([^)]*\\))?",
+      "name": "markup.heading.section.tapscript",
+      "captures": {
+        "1": { "name": "entity.name.section.tapscript" },
+        "2": { "name": "comment.section-description.tapscript" }
+      }
+    },
+
+    "keychange-block": {
+      "match": "^\\[KeyChange\\]\\s*$",
+      "name": "keyword.control.keychange.tapscript"
+    },
+
+    "comments": {
+      "patterns": [
+        {
+          "match": "^\\s*(//|/).*$",
+          "name": "comment.line.double-slash.tapscript"
+        },
+        {
+          "match": "^\\s*#.*$",
+          "name": "comment.line.hash.tapscript"
+        }
+      ]
+    },
+
+    "track-labels": {
+      "patterns": [
+        {
+          "match": "^(Chords):\\s*",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.chords-label.tapscript" }
+          }
+        },
+        {
+          "match": "^(Melody):\\s*",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.melody-label.tapscript" }
+          }
+        },
+        {
+          "match": "^(Lyrics):\\s*",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.lyrics-label.tapscript" }
+          }
+        },
+        {
+          "match": "^(Dyn(?:amics)?)\\s*:",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.dynamics-label.tapscript" }
+          }
+        },
+        {
+          "match": "^(Art)\\s*:",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.articulation-label.tapscript" }
+          }
+        },
+        {
+          "match": "^(Rest)\\s*:",
+          "name": "keyword.control.track-label.tapscript",
+          "captures": {
+            "1": { "name": "support.type.rest-label.tapscript" }
+          }
+        }
+      ]
+    },
+
+    "player-line": {
+      "match": "^(@)(\\w+)",
+      "name": "entity.name.player.tapscript",
+      "captures": {
+        "1": { "name": "punctuation.definition.player.tapscript" },
+        "2": { "name": "variable.other.readwrite.instance.player-name.tapscript" }
+      }
+    },
+
+    "dynamics-line": {
+      "match": "\\b(pp|p|mp|mf|f|ff|fp|sfz|sf|sfp)\\b",
+      "name": "constant.language.dynamic.tapscript"
+    },
+
+    "articulation-line": {
+      "match": "(?<=\\|)\\s*([.()>\\-])",
+      "name": "keyword.operator.articulation.tapscript"
+    },
+
+    "rest-line": {
+      "patterns": [
+        {
+          "match": "\\bR\\d+\\b",
+          "name": "constant.language.multibar-rest.tapscript"
+        }
+      ]
+    },
+
+    "pipe-content": {
+      "patterns": [
+        {
+          "match": "\\|{1,2}(:?)",
+          "name": "punctuation.separator.pipe.tapscript",
+          "captures": {
+            "1": { "name": "punctuation.separator.repeat.tapscript" }
+          }
+        },
+        {
+          "match": ":?\\|{1,2}",
+          "name": "punctuation.separator.pipe.tapscript"
+        },
+        {
+          "comment": "Scientific pitch notation: letter name + optional accidental + octave number (e.g. C4, Bb2, F#5)",
+          "match": "\\b([A-Ga-g])([#b]{0,2})(\\d)\\b",
+          "name": "constant.numeric.note.tapscript",
+          "captures": {
+            "1": { "name": "entity.name.note-name.tapscript" },
+            "2": { "name": "entity.name.accidental.tapscript" },
+            "3": { "name": "entity.name.octave.tapscript" }
+          }
+        },
+        {
+          "comment": "Chord symbols: letter name + quality (e.g. Am, Fmaj7, Cdim, Gsus4)",
+          "match": "\\b([A-G])([#b]?)(maj\\d?|min\\d?|m\\d?|dim\\d?|aug\\d?|sus[24]?|add\\d+|dom7|maj7|min7|\\d+m?\\+?)\\b",
+          "name": "entity.name.chord-symbol.tapscript",
+          "captures": {
+            "1": { "name": "entity.name.chord-root.tapscript" },
+            "2": { "name": "entity.name.accidental.tapscript" },
+            "3": { "name": "entity.name.chord-quality.tapscript" }
+          }
+        },
+        {
+          "comment": "Simple chord root without explicit quality (e.g. C, Am, F)",
+          "match": "\\b([A-G])([#b]?)(m?)\\b(?=\\s|\\||$)",
+          "name": "entity.name.chord-root-simple.tapscript"
+        },
+        {
+          "comment": "Roman numeral chord notation (v1 format): i, IV, vii°, V7, bIII, etc.",
+          "match": "\\b([bB]?)(I{1,3}|IV|VI{0,3}|i{1,3}|iv|vi{0,3})(°|o|\\+|7|maj7|min7|dim|aug)?\\b",
+          "name": "entity.name.roman-numeral.tapscript"
+        },
+        {
+          "comment": "Scale degree numbers (v1 melody notation): 1, 2, 5, b3, #4, etc.",
+          "match": "(?<![A-Ga-g])([#b]?)(\\d)(\\^|_)?",
+          "name": "constant.numeric.scale-degree.tapscript",
+          "captures": {
+            "1": { "name": "entity.name.accidental.tapscript" },
+            "2": { "name": "constant.numeric.scale-degree-value.tapscript" },
+            "3": { "name": "keyword.operator.octave-shift.tapscript" }
+          }
+        },
+        {
+          "comment": "Sustain / rest dot",
+          "match": "(?<=\\s)\\.(?=\\s|\\||$)",
+          "name": "constant.language.sustain.tapscript"
+        },
+        {
+          "comment": "Continuation / tie hyphen",
+          "match": "(?<=\\s)-(?=\\s|\\||$)",
+          "name": "constant.language.tie.tapscript"
+        },
+        {
+          "comment": "Repeat markers: ||: and :||",
+          "match": "\\|\\|:|:\\|\\|",
+          "name": "keyword.operator.repeat-marker.tapscript"
+        },
+        {
+          "comment": "Ending markers: [1. [2.",
+          "match": "\\[\\d+\\.",
+          "name": "keyword.operator.ending-marker.tapscript"
+        },
+        {
+          "comment": "Velocity marker: vel: N",
+          "match": "(?i)\\bvel\\s*:\\s*\\d+\\b",
+          "name": "constant.numeric.velocity.tapscript"
+        },
+        {
+          "comment": "Hyphenated chord/multi-note token: c2-e2-g2, e2-.-g2, c3--e3",
+          "match": "(?<=[\\s|])([A-Ga-g][#b]?\\d)(-(?:[A-Ga-g][#b]?\\d|\\.)+)",
+          "name": "entity.name.chord-cluster.tapscript"
+        },
+        {
+          "comment": "D.S. al Coda and Coda markers",
+          "match": "(?i)\\b(D\\.S\\.|al\\s*Coda|Coda|Fine|D\\.C\\.)\\b",
+          "name": "keyword.control.navigation.tapscript"
+        }
+      ]
+    }
+  }
+}

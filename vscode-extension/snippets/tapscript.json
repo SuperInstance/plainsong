@@ -1,0 +1,114 @@
+{
+  "Verse Block (v2 - labeled)": {
+    "prefix": "verse",
+    "body": [
+      "[V${1:1}] (${2:Verse - 4 Bars})",
+      "Chords:  | ${3:Am}    .    | ${4:F}     ${5:G}    |",
+      "Melody: | ${6:E4}    .    | ${7:A4}    . ${8:G4} ${9:E4} |",
+      "Lyrics: | ${10:I}     .    | ${11:write} . ${12:in} ${13:code} |"
+    ],
+    "description": "A complete verse block with Chords, Melody, and Lyrics lines (v2 notation)"
+  },
+  "Chorus Block (v2 - labeled)": {
+    "prefix": "chorus",
+    "body": [
+      "[C] (Chorus - 4 Bars)",
+      "Chords:  | ${1:Am}    ${2:F}     ${3:C}     ${4:G}    | ${5:Am}    ${6:F}     ${7:C}     ${8:G}    |",
+      "Melody: | ${9:A4}    ${10:C5}    ${11:A4}    ${12:G4}   | ${13:A4}    ${14:C5}    ${15:D5}    ${16:E5}   |",
+      "Lyrics: | ${17:This}  ${18:is}    ${19:the}   ${20:new}  | ${21:syn}   ${22:-}     ${23:tax}   ${24:for}  |"
+    ],
+    "description": "A chorus block with labeled lines (v2 notation)"
+  },
+  "Player Track": {
+    "prefix": "player",
+    "body": [
+      "@${1:wesley} | ${2:c2-e2-g2}    .    .    | ${3:f2-a2-c3} ${4:g2-b2-d3} .    | vel: ${5:70}"
+    ],
+    "description": "An instrument/player track line with notes and velocity"
+  },
+  "MetaData Block": {
+    "prefix": "meta",
+    "body": [
+      "**TRACK: ${1:Song Title}**",
+      "[MetaData]",
+      "key: ${2:Am} | tempo: ${3:75} | swing: ${4:0%} | subdivision: ${5:16th}"
+    ],
+    "description": "Track header and metadata block (v2 notation)"
+  },
+  "Section Header": {
+    "prefix": "section",
+    "body": [
+      "[${1:V1}] (${2:Verse - 4 Bars})"
+    ],
+    "description": "Section header with description"
+  },
+  "Chord Line": {
+    "prefix": "chords",
+    "body": [
+      "Chords:  | ${1:Am}    .    | ${2:F}     ${3:G}    |"
+    ],
+    "description": "A labeled chord line (v2 notation)"
+  },
+  "Melody Line": {
+    "prefix": "melody",
+    "body": [
+      "Melody: | ${1:E4}    . . . | ${2:A4}    . ${3:G4} ${4:E4} |"
+    ],
+    "description": "A labeled melody line (v2 notation)"
+  },
+  "Lyrics Line": {
+    "prefix": "lyrics",
+    "body": [
+      "Lyrics: | ${1:I}     . . . | ${2:write} . ${3:in} ${4:code} |"
+    ],
+    "description": "A labeled lyrics line (v2 notation)"
+  },
+  "Dynamics Line": {
+    "prefix": "dynamics",
+    "body": [
+      "Dyn:    | ${1:p}     .     .     .    | ${2:mf}    .     .     .    |"
+    ],
+    "description": "A dynamics line with markings"
+  },
+  "Articulation Line": {
+    "prefix": "art",
+    "body": [
+      "Art:    | ${1:.}     ${2:>}     ${3:-}     .    |"
+    ],
+    "description": "An articulation line (staccato, accent, tenuto, slur)"
+  },
+  "Key Change Block": {
+    "prefix": "keychange",
+    "body": [
+      "[KeyChange]",
+      "newkey: ${1:Eb} | at bar: ${2:17} | from: ${3:C}"
+    ],
+    "description": "A key change block for mid-song modulation"
+  },
+  "Repeat Section (v1)": {
+    "prefix": "repeat",
+    "body": [
+      "||: ${1:C}     ${2:G}     | ${3:Am}    ${4:F}     :||",
+      "||: ${5:1}     ${6:5}     | ${7:3}     ${8:6}     :||"
+    ],
+    "description": "A repeated section with chord and melody lines (v1 notation)"
+  },
+  "v1 Header": {
+    "prefix": "v1header",
+    "body": [
+      "Key: ${1:Am}",
+      "Tempo: ${2:75}",
+      "Meter: ${3:4/4}"
+    ],
+    "description": "v1 notation header (Key/Tempo/Meter)"
+  },
+  "v1 Section": {
+    "prefix": "v1section",
+    "body": [
+      "[${1:Verse}]",
+      "| ${2:i} . . . | ${3:VI} . . . | ${4:VII} . . . | ${5:i} . . . |",
+      "| ${6:1} . ${7:3} . | ${8:5} . ${9:3} . | ${10:7} . ${11:6} . | ${12:1} . . . |"
+    ],
+    "description": "A section in v1 notation (Roman numerals + scale degrees)"
+  }
+}

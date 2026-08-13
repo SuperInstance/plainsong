@@ -1,0 +1,71 @@
+{
+  "name": "tapscript",
+  "displayName": "TapScript",
+  "description": "Syntax highlighting, snippets, and linting for TapScript music notation files.",
+  "version": "0.1.0",
+  "publisher": "SuperInstance",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperInstance/tapscript-studio"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "music",
+    "notation",
+    "tapscript",
+    "midi",
+    "composition"
+  ],
+  "activationEvents": [
+    "onLanguage:tapscript"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "tapscript",
+        "aliases": [
+          "TapScript",
+          "tapscript"
+        ],
+        "extensions": [
+          ".tap"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tapscript",
+        "scopeName": "source.tapscript",
+        "path": "./syntaxes/tapscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "tapscript",
+        "path": "./snippets/tapscript.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "tapscript.checkPipeBalance",
+        "title": "TapScript: Check Pipe Delimiter Balance"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0"
+  }
+}
