@@ -1,0 +1,22 @@
+**TRACK: L'Amor**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . . . | A3 . C4 . | B3 . D4 . |
+Lyrics: | L'a-mor che a me | si da, | can-ta nel cor, | va-gheg-gia an-cor |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | E7 . . . | Am . . . | E7 . . . |
+Melody: | F4 . A4 . | G4 . B4 . | A4 . C5 . | B4 . G4 . |
+Lyrics: | L'a-mor, l'a-mor | mi fa can-tar, | dol-ce ri-so | d'o-gni pen-sier |
+@piano | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | E7 . . . |
+Melody: | F4 . A4 . | G4 . B4 . | C5 . E5 . | D5 . B4 . |
+Lyrics: | Nel tuo sguar-do | tro-vo la via, | il mio cuo-re | bat-te con gio-ia |
+@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 50

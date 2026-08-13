@@ -1,0 +1,16 @@
+**TRACK: La Ninnananna di Verdi**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
+Melody: | A3 . C4 . | E4 . . . | A3 . C4 . | E4 . . . |
+Lyrics: | Nin - na | nin - na | nin - na | nin - na |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
+Melody: | D4 . F4 . | A3 . C4 . | E4 . G4 . | F4 . . . |
+Lyrics: | Fa la | nin - na | nin - na | nin - na |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 50
