@@ -1,0 +1,24 @@
+**TRACK: Sixteen Tons**
+[MetaData]
+key: Gm | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Cm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Cm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Eb . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | eb2-g2-bb2 . . . | d2-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm . . . | Cm . . . | D7 . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | vel: 50
