@@ -1,0 +1,24 @@
+**TRACK: In the Pines**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | G . . . |
+@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | G . . . |
+@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[V3] (Verse - 4 Bars)
+Chords: | Em . . . | G . . . |
+@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | vel: 55
+
+[BR] (Bridge - 2 Bars)
+Chords: | B7 . . . | Em . . . |
+@guitar | b2-d#3-f#3 . . . | e2-b2-e3 . . . | vel: 50

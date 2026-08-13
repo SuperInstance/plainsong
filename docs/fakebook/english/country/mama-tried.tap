@@ -1,0 +1,24 @@
+**TRACK: Mama Tried**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . | G . . . | C . . . | G . D . | G . . . |
+@guitar | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . d3-f#3-a3 . | g2-b3-d4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . | G . . . | C . . . | G . D . | G . . . |
+@guitar | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . d3-f#3-a3 . | g2-b3-d4 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . | G . . . | C . . . | G . D . | G . . . |
+@guitar | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . d3-f#3-a3 . | g2-b3-d4 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . . | C . . . | G . D . | G . . . |
+@guitar | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . d3-f#3-a3 . | g2-b3-d4 . . . | vel: 45

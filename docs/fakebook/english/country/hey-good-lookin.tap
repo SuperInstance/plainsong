@@ -1,0 +1,31 @@
+**TRACK: Hey, Good Lookin'**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+Chords: | C . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
+Chords: | C . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | G7 . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+Chords: | C . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
+Chords: | C . . .
