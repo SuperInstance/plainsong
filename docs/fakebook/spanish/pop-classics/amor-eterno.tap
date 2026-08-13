@@ -1,0 +1,20 @@
+**TRACK: Amor Eterno**
+[MetaData]
+key: Am | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Solemn
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . | F . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | E7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | e2-g#2-b2 . . . | vel: 55
