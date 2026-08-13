@@ -1,0 +1,20 @@
+**TRACK: Traveling Riverside Blues**
+[MetaData]
+key: A | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Swampy
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | D . . . | E . . . | A . . . | A . . . | D . . . | E . . . | A . . . | E . . . |
+@guitar | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@g

@@ -1,0 +1,27 @@
+**TRACK: Four Until Late**
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | A . . . | E . . . |
+| B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 55
+@bass | e1 . . . | e1 . . . | a1 . . . | e1 . . . | vel: 50
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | A . . . | E . . . |
+| B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | A . . . | E . . . | B7 . . . | A . . . |
+| E . . . | B7 . . . | E . . . | B7 . . . |
+@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | vel: 60
+@bass | a1 . . . | e1 . . . | b1 . . . | a1 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 50

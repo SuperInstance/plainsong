@@ -1,0 +1,30 @@
+**TRACK: Me and the Devil Blues**
+[MetaData]
+key: E | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | B7 . . . | A . . . | E . . . | E . . . |
+@guitar | b2-f#3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | B7 . . . | A . . . | E . . . | E . . . |
+@guitar | b2-f#3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | A . . . | A . . . | E . . . | E . . . |
+@guitar
