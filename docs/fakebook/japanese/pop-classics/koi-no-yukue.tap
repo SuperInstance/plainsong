@@ -1,0 +1,30 @@
+**TRACK: Koi no Yukue**
+[MetaData]
+key: Fm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | db2-f2-ab2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f2-ab2-c3 . . . | vel: 62
+Chords: | Db . . . | Ab . . . | Bbm . . . | C . . . |
+@guitar | db2-f2-ab2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | db2-f2-ab2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f2-ab2-c3 . . . |

@@ -1,0 +1,26 @@
+**TRACK: Tokai no Mannaka**
+[MetaData]
+key: Fm | tempo: 105 | subdivision: 16th
+time: 4/4 | mood: Upbeat City Pop
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 50
+Chords: | Dbmaj7 . . . | G7alt . . . | Cm7 . . . | F7 . . . |
+@guitar | db3-f3-ab3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | f2-a2-c3-eb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 65
+Chords: | Dbmaj7 . . . | G7alt . . . | Cm7 . . . | C7 . . . |
+@guitar | db3-f3-ab3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | c3-e3-g3-bb3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Abmaj7 . . . | Abmaj7 . . . | Fm7 . . . | Fm7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | vel: 55
+Chords: | Dbmaj7 . . . | Eb7 . . . | Cm7 . . . | G7alt . . . |
+@guitar | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 45

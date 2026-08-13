@@ -1,0 +1,24 @@
+**TRACK: Kawa no Nagare no Yō ni**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a1-e2-a2 . . . | d2-a2-d3 . . . | g1-b2-d3 . . . | c2-e2-g3 . . . | f1-c2-f3 . . . | d2-a2-d3 . . . | e2-g#2-b3 . . . | a1-e2-a2 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a1-e2-a2 . . . | d2-a2-d3 . . . | g1-b2-d3 . . . | c2-e2-g3 . . . | f1-c2-f3 . . . | d2-a2-d3 . . . | e2-g#2-b3 . . . | a1-e2-a2 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | f1-c2-f3 . . . | g1-b2-d3 . . . | c2-e2-g3 . . . | a1-e2-a3 . . . | d2-a2-d3 . . . | e2-g#2-b3 . . . | a1-e2-a2 . . . | e2-g#2-b3 . . . | vel: 55
+
+[BR] (Bridge - 6 Bars)
+Chords: | Dm . . . | G . . . | C . . . | F . . . | Bb . . . | E7 . . . |
+@guitar | d2-a2-d3 . . . | g1-b2-d3 . . . | c2-e2-g3 . . . | f1-c2-f3 . . . | bb1-d2-f3 . . . | e2-g#2-b3 . . . | vel: 50
+
+[CH2] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | Am . . . |
+@guitar | f1-c2-f3 . . . | g1-b2-d3 . . . | c2-e2-g3 . . . | a
