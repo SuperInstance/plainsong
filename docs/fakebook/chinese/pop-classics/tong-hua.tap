@@ -1,0 +1,24 @@
+**TRACK: Tong Hua**
+[MetaData]
+key: C | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+@guitar | f2-a2-c3 . . . | e2-g2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | vel: 62
+
+[CH2] (Chorus - 4 Bars)
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+@guitar | f2-a2-c3 . . . | e2-g2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | Em/G . . . | F . . . | G . . . |
+@guitar | a2-c3-e3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
