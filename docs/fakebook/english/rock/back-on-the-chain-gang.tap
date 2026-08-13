@@ -1,0 +1,20 @@
+**TRACK: Back on the Chain Gang**
+[MetaData]
+key: D | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . | Bm . . . | A . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . | Bm . . . | A . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | G . . . | D . . . | A . . . |
+@guitar | e2-g2-b2 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 58

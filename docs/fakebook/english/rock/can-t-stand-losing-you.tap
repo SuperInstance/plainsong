@@ -1,0 +1,24 @@
+**TRACK: Can't Stand Losing You**
+[MetaData]
+key: Am | tempo: 145 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | Dm . . . | G . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 62
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 68
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | E . . . | F . . . | E . . . |
+@guitar | d3-f3-a3 . . . | e3-g#3-b3 . . . | f2-a2-c3 . . . | e3-g#3-b3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 55

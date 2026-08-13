@@ -1,0 +1,24 @@
+**TRACK: Overkill**
+[MetaData]
+key: E | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Relentless
+
+[V1] (Verse - 4 Bars)
+Chords: | E5 . . . | D5 . . . | A5 . . . | G5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | E5 . . . | D5 . . . | A5 . . . | B5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | B5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-g3-c4 . . . | b2-f#3-b3 . . . | vel: 70
+
+[BR] (Bridge - 2 Bars)
+Chords: | A5 . . . | A5 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E5 . . . | E5 . . . | E5 . . . | E5 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

@@ -1,0 +1,24 @@
+**TRACK: Brass in Pocket**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Em . . . | C . . . |
+@guitar | e3-g3-b3 . . . | c3-e3-g3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 45

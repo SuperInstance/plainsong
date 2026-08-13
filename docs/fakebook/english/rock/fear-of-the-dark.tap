@@ -1,0 +1,30 @@
+**TRACK: Fear of the Dark**
+[MetaData]
+key: Em | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+       | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+       | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+       | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 65
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-c3-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

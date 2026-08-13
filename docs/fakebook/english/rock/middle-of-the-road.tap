@@ -1,0 +1,24 @@
+**TRACK: Middle of the Road**
+[MetaData]
+key: E | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | A . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | a2-e3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | A . . . | B . . . | E . . . |
+@guitar | c#3-g#3-c#4 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45
