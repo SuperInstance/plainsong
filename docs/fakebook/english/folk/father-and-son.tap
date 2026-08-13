@@ -1,0 +1,24 @@
+**TRACK: Father and Son**
+[MetaData]
+key: G | tempo: 75 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse 1 - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | C . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-g2-b2 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 45
