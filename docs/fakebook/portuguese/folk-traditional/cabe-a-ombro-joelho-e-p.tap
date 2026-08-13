@@ -1,0 +1,22 @@
+**TRACK: Cabeça, Ombro, Joelho e Pé**
+[MetaData]  
+key: C | tempo: 110 | subdivision: 8th  
+time: 4/4 | mood: Playful  
+
+[V1] (Verse - 4 Bars)  
+Chords: | C . . . | F . . . | C . . . | G . . . |  
+Melody: | C4 . E4 . | F4 . A4 . | G4 . E4 . | D4 . G4 . |  
+Lyrics: | Ca-be-ça, om-bro | jo-e-lho e pé | jo-e-lho e pé | ca-be-ça, om-bro |  
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55  
+
+[V2] (Verse - 4 Bars)  
+Chords: | C . . . | F . . . | C . . . | G . . . |  
+Melody: | C4 . E4 . | F4 . A4 . | G4 . E4 . | C4 . . . |  
+Lyrics: | jo-e-lho e pé | o-lhos, ou-vi-dos | bo-ca e na-riz | ca-be-ça, om-bro |  
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55  
+
+[CH] (Chorus - 4 Bars)  
+Chords: | C . . . | G . . . | C . . . | G . . . |  
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | G4 . . . |  
+Lyrics: | to-dos jun-tos | ca-be-ça, om-bro | jo-e-lho e pé | jo-e-lho e pé |  
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
