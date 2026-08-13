@@ -1,0 +1,22 @@
+**TRACK: La Campanella**
+[MetaData]
+key: g#m | tempo: 96 | subdivision: 16th
+time: 6/8 | mood: Brilliant
+
+[V1] (Verse - 4 Bars)
+Chords: | G#m . . . . . | C#7 . . . . . |
+Melody: | B4 . . D#5 . . | G#4 . . B4 . . |
+Lyrics: | la la la la la la | la la la la la la |
+@piano | g#2-b2-d#3-g#3-b3-d#4 . . . . . | c#2-e#3-g#3-b3-d#4-g#4 . . . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | F# . . . . . | B . . . . . |
+Melody: | A#4 . . C#5 . . | F#4 . . A#4 . . |
+Lyrics: | la la la la la la | la la la la la la |
+@piano | f#2-a#2-c#3-f#3-a#3-c#4 . . . . . | b1-d#2-f#2-b2-d#3-f#3 . . . . . | vel: 58
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . . . | B . . . . . |
+Melody: | G#4 . . B4 . . | D#5 . . B4 . . |
+Lyrics: | la la la la la la | la la la la la la |
+@piano | e2-g#2-b2-e3-g#3-b3 . . . . . | b1-d#2-f#2-b2-d#3-f#3 . . . . . | vel: 65

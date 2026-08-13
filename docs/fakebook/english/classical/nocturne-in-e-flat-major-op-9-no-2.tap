@@ -1,0 +1,22 @@
+**TRACK: Nocturne in E-flat major, Op. 9 No. 2**
+[MetaData]
+key: Eb | tempo: 69 | subdivision: 8th
+time: 12/8 | mood: Lyrical, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . . . | Bb7 . . . . . |
+Melody: | Eb4 . G4 . Bb4 . | D5 . C5 . Bb4 . |
+Lyrics: | (instrumental) . . . . . . |
+@piano | eb2-g2-bb2 . . . . . | f2-a2-bb2 . . . . . | vel: 45
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Eb . . . . . | Ab . . . . . |
+Melody: | Eb5 . D5 . C5 . | Bb4 . A4 . G4 . |
+Lyrics: | (instrumental) . . . . . . |
+@piano | eb2-g2-c3 . . . . . | ab2-c3-eb3 . . . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb7 . . . . . | Eb . . . . . |
+Melody: | F5 . Eb5 . D5 . | C5 . Bb4 . G4 . |
+Lyrics: | (instrumental) . . . . . . |
+@piano | f2-ab2-bb2 . . . . . | eb2-g2-bb2 . . . . . | vel: 52

@@ -1,0 +1,16 @@
+**TRACK: A Midsummer Night's Dream Overture**
+[MetaData]
+key: E | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Whimsical
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | B7 . . . | E . . . | A . . . |
+Melody: | E4 . G#4 . | B4 . B4 . | A4 . G#4 . | F#4 . E4 . |
+Lyrics: | through glades and | shadows deep, the | fairies dance in | moonlit sleep |
+@piano | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | e2-g#2-b2 . . . | a1-c#2-e2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+Melody: | C#5 . B4 . | A4 . G#4 . | F#4 . D#4 . | E4 . . . |
+Lyrics: | hark the horn, the | chase is on, the | lovers' dream is | nearly gone |
+@piano | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | e2-g#2-b2 . . . | vel: 55

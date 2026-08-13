@@ -1,0 +1,22 @@
+**TRACK: Un Sospiro**
+[MetaData]
+key: Db | tempo: 72 | subdivision: 16th
+time: 4/4 | mood: Ethereal
+
+[V1] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . |
+Melody: | F4 . Ab4 . | C5 . Db5 . |
+Lyrics: | sigh . . . | soft . . . |
+@piano | db3-f3-ab3 . . . | eb3-g3-b3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Gb . . . |
+Melody: | Db5 . F5 . | Eb5 . Gb5 . |
+Lyrics: | air . . . | dream . . . |
+@piano | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Ab . . . | Db . . . |
+Melody: | F4 . Ab4 . | Db5 . C5 . |
+Lyrics: | float . . . | far . . . |
+@piano | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | vel: 45
