@@ -1,0 +1,24 @@
+**TRACK: Georgia on My Mind**
+[MetaData]
+key: F | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . | Dm . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . | Dm . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . | Gm . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Gm . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . .

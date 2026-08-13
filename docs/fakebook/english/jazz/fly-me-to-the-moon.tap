@@ -1,0 +1,24 @@
+**TRACK: Fly Me to the Moon**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | Cmaj7 . . . | F . . . | Bm7b5 . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | b1-d2-f2 . . . | e1-g#1-b1 . . . | a1-c2-e2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars - same progression)
+Chords: | Am . . . | Dm . . . | G7 . . . | Cmaj7 . . . | F . . . | Bm7b5 . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | b1-d2-f2 . . . | e1-g#1-b1 . . . | a1-c2-e2 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . |
+@guitar | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 58
+
+[V3] (Verse - 8 Bars - same progression)
+Chords: | Am . . . | Dm . . . | G7 . . . | Cmaj7 . . . | F . . . | Bm7b5 . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | b1-d2-f2 . . . | e1-g#1-b1 . . . | a1-c2-e2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | E7 . . . | Am . . . | Am . . . |
+@guitar | f1-a1-c2 . . . | e1-g#1-b1 . . . | a1-c2-e2 . . . | a1-c2-e2 . . . | vel: 50

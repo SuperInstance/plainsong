@@ -1,0 +1,24 @@
+**TRACK: I've Got You Under My Skin**
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Eb . . . | Ab . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | vel: 60
+
+[V3] (Verse - 4 Bars)
+Chords: | Fm . . . | Bb7 . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Eb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50

@@ -1,0 +1,20 @@
+**TRACK: How High the Moon**
+[MetaData]
+key: Gm | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Cm . . . | Cm . . . | D7 . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Cm . . . | Cm . . . | D7 . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . | C7 . . . | C7 . . . | F7 . . . | F7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | f2-a3-eb3 . . . | f2-a3-eb3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Cm . . . | Cm . . . | D7 . . . | D7 . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 55
