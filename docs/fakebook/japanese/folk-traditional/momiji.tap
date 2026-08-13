@@ -1,0 +1,22 @@
+**TRACK: Momiji**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . D4 . |
+Lyrics: | a- ki ba yo | mo- mi- ji | wa a- ka | ki no ha |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . D4 . |
+Lyrics: | chi- ru wa ka | na- ru ka | ko- no ha no | a- ki no yo |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | G4 . E4 . | D4 . B3 . | C4 . . . |
+Lyrics: | mo- mi- ji wa | a- ka- ki | ha- na- no | i- ro |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

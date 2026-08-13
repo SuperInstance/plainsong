@@ -1,0 +1,34 @@
+**TRACK: Zui Zui Zukkorobashi**
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 2/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . | E7 . |
+Melody: | A3 . | G#3 . |
+Lyrics: | zu-i zu-i | zu-kko-ro- |
+@piano | a2-e3-a3 . | b1-d#2-g#2 . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . | E7 . |
+Melody: | A3 . | B3 . |
+Lyrics: | ba-shi wa | mu-gi-ma- |
+@piano | a2-e3-a3 . | b1-d#2-g#2 . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . | C . |
+Melody: | C4 . | C4 . |
+Lyrics: | me-ya no | ko-ko-ro- |
+@piano | f2-a2-c3 . | c3-e3-g3 . | vel: 60
+
+[V3] (Verse - 4 Bars)
+Chords: | G . | Am . |
+Melody: | B3 . | A3 . |
+Lyrics: | ka-ra-su | na-ku- |
+@piano | g2-b2-d3 . | a2-e3-a3 . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | E7 . | Am . |
+Melody: | G#3 . | A3 . |
+Lyrics: | to-ra | to-ra- |
+@piano | b1-d#2-g#2 . | a2-e3-a3 . | vel: 50
