@@ -1,0 +1,16 @@
+**TRACK: The Farewell at the Pavilion**
+[MetaData]
+key: Dm | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Melancholy
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | A4 . . . | C4 . D4 . | E4 . . . |
+Lyrics: | At the pav - ion gate, we part | Tears fall like rain on the stone | The wind blows cold through the pines | My heart stays here, though I roam |
+@piano | d2-a2-d3 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | a1-e2-a2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gm . . . | Dm . . . | C . . . | A . . . |
+Melody: | Bb3 . D4 . | A3 . F4 . | G4 . E4 . | D4 . C4 . |
+Lyrics: | Fare - well, fare - well, my love | The sun sets low, the moon a - bove | Re - turn to me when spring re - turns | Un - til then, my heart still burns |
+@piano | g1-d2-g2 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | a1-e2-a2 . . . | vel: 50
