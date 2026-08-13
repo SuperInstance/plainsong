@@ -1,0 +1,30 @@
+**TRACK: Just the Way You Are**
+[MetaData]
+key: Db | tempo: 109 | subdivision: 8th
+time: 4/4 | mood: Uplifting
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Db . . . | Bbm7 . . . | Bbm7 . . . |
+| Gb . . . | Gb . . . | Ab . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | bb2-db3-f3 . . . | vel: 50
+@guitar | gb2-bb2-db3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Bbm7 . . . | Ab . . . |
+| Gb . . . | Db . . . | Bbm7 . . . | Ab . . . |
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | ab2-c3-eb3 . . . | vel: 60
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | ab2-c3-eb3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Db . . . | Db . . . | Bbm7 . . . | Bbm7 . . . |
+| Gb . . . | Gb . . . | Ab . . . | Ab . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | bb2-db3-f3 . . . | vel: 50
+@guitar | gb2-bb2-db3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm7 . . . | Gb . . . | Db . . . | Ab . . . |
+@guitar | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Bbm7 . . . | Ab . . . |
+| Gb . . . | Db . . . | Bbm7 . . . |
