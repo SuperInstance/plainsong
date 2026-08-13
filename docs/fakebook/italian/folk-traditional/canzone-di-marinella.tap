@@ -1,0 +1,16 @@
+**TRACK: Canzone di Marinella**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . E4 . . | F4 . A4 . G4 . E4 | E4 . C4 . D4 . . | B3 . D4 . C4 . . |
+Lyrics: | Ma-ri-nel-la bel-la, | il tuo no-me è nel ven-to, | e la tua can-zo-ne | nel mio co-re ri-man |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . C5 . . | E4 . G4 . C4 . . | D4 . B3 . G3 . . | A3 . C4 . E4 . . |
+Lyrics: | E tu can-ti an-co-ra, | la tua vo-ce è chi-a-ra, | nel-la not-te so-la | di chi t'a-ma an-cor |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
