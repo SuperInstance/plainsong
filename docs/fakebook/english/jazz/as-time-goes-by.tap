@@ -1,0 +1,30 @@
+**TRACK: As Time Goes By**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+Chords: | C7 . . . | F . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+Chords: | C7 . . . | F . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Am . . . | Gm7 . . . | C7 . . . |
+@guitar | bb2-d3-f3 . . . | a2-c3-e3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+Chords: | C7 . . . | F . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 45

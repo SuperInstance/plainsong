@@ -1,0 +1,20 @@
+**TRACK: Round Midnight**
+[MetaData]
+key: Eb minor | tempo: 70 | subdivision: 8th
+time: 4/4 | mood: Melancholic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb- . . . | Ab- . . . | Db7 . . . | GbΔ . . . | B7 . . . | Bb-7 . . . | Eb-7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-cb3-eb3 . . . | db3-f3-ab3 . . . | gb2-bb2-db3 . . . | b2-d#3-f#3 . . . | bb2-db3-f3 . . . | eb3-gb3-bb3 . . . | ab2-cb3-eb3 . . . | vel: 50
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Eb- . . . | Ab- . . . | Db7 . . . | GbΔ . . . | B7 . . . | Bb-7 . . . | Eb-7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-cb3-eb3 . . . | db3-f3-ab3 . . . | gb2-bb2-db3 . . . | b2-d#3-f#3 . . . | bb2-db3-f3 . . . | eb3-gb3-bb3 . . . | ab2-cb3-eb3 . . . | vel: 52
+
+[BR] (Bridge - 8 Bars)
+Chords: | D7 . . . | G7 . . . | C- . . . | F7 . . . | Bb- . . . | Eb7 . . . | Ab- . . . | Db7 . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | ab2-cb3-eb3 . . . | db3-f3-ab3 . . . | vel: 55
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Eb- . . . | Ab- . . . | Db7 . . . | GbΔ . . . | B7 . . . | Bb-7 . . . | Eb-7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-cb3-eb3 . . . | db3-f3-ab3 . . . | gb2-bb2-db3 . . . | b2-d#3-f#3 . . . | bb2-db3-f3 . . . | eb3-gb3-bb3 . . . | ab2-cb3-
