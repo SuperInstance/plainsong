@@ -1,0 +1,28 @@
+**TRACK: Mikawa Ondo**
+[MetaData]
+key: Gm | tempo: 112 | subdivision: 8th
+time: 2/4 | mood: Festive
+
+[V1] (Verse - 4 Bars)
+Chords: | Gm . | D7 . | Gm . | Gm . |
+Melody: | G3 . A3 . | F3 . G3 . | D3 . D3 . | G3 . . . |
+Lyrics: | Yo-i ya-sa | to-ki ya- | i-ya-sa | no-ko-ri |
+@piano | g2-bb2-d3 . | f#2-a2-c3 . | g2-bb2-d3 . | g2-bb2-d3 . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | Gm . | Cm . | D7 . | Gm . |
+Melody: | Bb3 . A3 . | G3 . F3 . | E3 . D3 . | D3 . G3 . |
+Lyrics: | Mi-ka-wa | on-do wa | ko-ko-ro | no ma-ma |
+@piano | g2-bb2-d3 . | c3-eb3-g3 . | f#2-a2-c3 . | g2-bb2-d3 . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gm . | D7 . | Gm . | D7 . |
+Melody: | D4 . Bb3 . | A3 . G3 . | F3 . E3 . | D3 . D3 . |
+Lyrics: | Ha-ru-ka | yo-i ya- | sa no-ko- | ri yo-i |
+@piano | g2-bb2-d3 . | f#2-a2-c3 . | g2-bb2-d3 . | f#2-a2-c3 . | vel: 65
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Gm . | Cm . | D7 . | Gm . |
+Melody: | G3 . Bb3 . | A3 . G3 . | F3 . E3 . | D3 . G3 . |
+Lyrics: | Mi-ka-wa | on-do wa | sa-te mo | yo-i ya-sa |
+@piano | g2-bb2-d3 . | c3-eb3-g3 . | f#2-a2-c3 . | g2-bb2-d3 . | vel: 65
