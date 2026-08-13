@@ -1,0 +1,16 @@
+**TRACK: The Harvest Song**
+[MetaData]
+key: G | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | E4 . G4 . | D4 . B3 . | A3 . F#3 . |
+Lyrics: | The corn is ripe, the fields are gold, | The sun is warm, the tale is told, | We gather now the grain so bright, | To fill the barns with golden light. |
+@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | D . . . |
+Melody: | E4 . G4 . | D4 . B3 . | E4 . A4 . | F#4 . D4 . |
+Lyrics: | Har-vest home, har-vest home, | Bring the sheaves, let the joy come, | Har-vest home, har-vest home, | Thank the Lord for what we’ve grown. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d2-f#2-a2 . . . | vel: 50
