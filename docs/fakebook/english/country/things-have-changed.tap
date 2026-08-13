@@ -1,0 +1,26 @@
+**TRACK: Things Have Changed**
+[MetaData]
+key: E | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | vel: 55
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | vel: 55
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | e2-g#3-b3 . . . | vel: 60
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | b1-d#2-f#2 . . . | e2-g#3-b3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | A . . . | B7 . . . | E . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | b1-d#2-f#2 . . . | e2-g#3-b3 . . . | vel: 55

@@ -1,0 +1,24 @@
+**TRACK: The Lonesome Fugitive**
+[MetaData]
+key: A | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 58
+
+[V2] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 58
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 64
+
+[BR] (Bridge - 2 Bars)
+Chords: | Bm . . . | E . . . |
+@guitar | b2-d3-f#3 . . . | e3-g#3-b3 . . . | vel: 52
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 64
