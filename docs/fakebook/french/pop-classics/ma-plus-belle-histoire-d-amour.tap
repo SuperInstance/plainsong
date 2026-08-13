@@ -1,0 +1,24 @@
+**TRACK: Ma plus belle histoire d'amour**
+[MetaData]
+key: Fm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
+@guitar | f3-a3-c4 . . . | c3-e3-bb3 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
+@guitar | f3-a3-c4 . . . | c3-e3-bb3 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | C7 . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-e3-bb3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Db . . . | C7 . . . |
+@guitar | f3-a3-c4 . . . | c3-e3-bb3 . . . | db3-f3-ab3 . . . | c3-e3-bb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | C7 . . . | Fm . . . |
+@guitar | f3-a3-c4 . . . | bb2-d3-f3 . . . | c3-e3-bb3 . . . | f3-a3-c4 . . . | vel: 45
