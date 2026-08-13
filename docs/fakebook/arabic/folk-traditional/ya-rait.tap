@@ -1,0 +1,16 @@
+**TRACK: Ya Rait**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E . . . |
+Melody: | A3 . C4 . | F4 . E4 . | A3 . C4 . | B3 . G#3 . |
+Lyrics: | ya rait ya rait | ya rait ya leil | ya rait ya rait | ya rait ya leil |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | E . . . |
+Melody: | D4 . F4 . | A3 . C4 . | F4 . A4 . | G#3 . B3 . |
+Lyrics: | ya leil ya leil | ya rait ya rait | ya leil ya leil | ya rait ya rait |
+@piano | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
