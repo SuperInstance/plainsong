@@ -1,0 +1,24 @@
+**TRACK: Rocky Raccoon**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Country waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | E7 . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | vel: 50
