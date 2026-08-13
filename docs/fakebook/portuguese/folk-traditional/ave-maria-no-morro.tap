@@ -1,0 +1,16 @@
+**TRACK: Ave Maria no Morro**
+[MetaData]
+key: F | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . F . |
+Melody: | A3 . C4 . | G3 . E4 . | F4 . A3 . | D4 . C4 . |
+Lyrics: | A - ve Ma - ri - a, | o - ra pro no - bis, | pe - ca - to - res, | nunc et in ho - ra |
+@piano | f2-a2-c3 . . . | e2-g2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
+Melody: | D4 . F4 . | A3 . C4 . | G3 . E4 . | F4 . . . |
+Lyrics: | San - cta Ma - ri - a, | Ma - ter De - i, | o - ra pro no - bis, | a - men |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | e2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
