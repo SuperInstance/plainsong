@@ -1,0 +1,24 @@
+**TRACK: Renegade**
+[MetaData]
+key: Am | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | G . . . | F . . . | Am . . . | Am . . . | G . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | f2-c3-f3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | G . . . | F . . . | Am . . . | Am . . . | G . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | f2-c3-f3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . | F . . . | G . . . | E . . . | E . . . |
+@guitar | f2-c3-f3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | Dm . . . | E . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 50
