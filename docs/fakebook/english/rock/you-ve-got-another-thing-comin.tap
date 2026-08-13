@@ -1,0 +1,20 @@
+**TRACK: You've Got Another Thing Comin'**
+[MetaData]
+key: Em | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | A . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c2-g2-c3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
+
+[SOLO] (Guitar Solo - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 65

@@ -1,0 +1,24 @@
+**TRACK: Painkiller**
+[MetaData]
+key: Em | tempo: 175 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 85
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | C . . . | G . . . | B . . . |
+@guitar | a2-c#3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | b1-d#2-f#2 . . . | vel: 75
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 80
