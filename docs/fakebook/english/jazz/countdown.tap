@@ -1,0 +1,20 @@
+**TRACK: Countdown**
+[MetaData]
+key: Fm | tempo: 240 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Db7 . . . | Fm7 . . . | Db7 . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | vel: 60
+
+[V2] (Verse variation - 8 Bars)
+Chords: | Fm7 . . . | Db7 . . . | Gb7 . . . | B7 . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | gb2-bb2-db3 . . . | b2-d#3-f#3 . . . | vel: 62
+
+[B1] (Bridge - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Dbmaj7 . . . | G7alt . . . |
+@guitar | eb2-gb2-bb2 . . . | ab2-c3-eb3 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 58
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Fm7 . . . | Db7 . . . | Fm7 . . . | Db7 . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | vel: 65

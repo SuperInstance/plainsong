@@ -1,0 +1,24 @@
+**TRACK: Chega de Saudade**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 2/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Am6 . . . | Am6 . . . | Dm7 . . . | G7 . . . |
+@guitar | a2-c3-e3-f3 . . . | a2-c3-e3-f3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Cmaj7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . |
+@guitar | c3-e3-g3-b3 . . . | c3-e3-g3-b3 . . . | f#2-a2-c3-e3 . . . | b2-d#3-f#3-a3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . |
+@guitar | e3-g3-b3-d3 . . . | a2-c#3-e3-g3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . |
+@guitar | c3-e3-g3-b3 . . . | f#2-a2-c3-e3 . . . | b2-d#3-f#3-a3 . . . | e3-g3-b3-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am6 . . . | Dm7 . . . | G7 . . . | Am6 . . . |
+@guitar | a2-c3-e3-f3 . . . | d3-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | a2-c3-e3-f3 . . . | vel: 40

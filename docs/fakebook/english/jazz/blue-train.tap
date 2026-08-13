@@ -1,0 +1,30 @@
+**TRACK: Blue Train**
+[MetaData]
+key: Eb | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | Eb7 . . . | Eb7 . . . | Eb7 . . . | Eb7 . . . |
+| Ab7 . . . | Ab7 . . . | Eb7 . . . | Eb7 . . . |
+| Bb7 . . . | Ab7 . . . | Eb7 . . . | Bb7 . . . |
+@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . |
+| ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . |
+| bb2-d3-f3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | Eb7 . . . | Eb7 . . . | Eb7 . . . | Eb7 . . . |
+| Ab7 . . . | Ab7 . . . | Eb7 . . . | Eb7 . . . |
+| Bb7 . . . | Ab7 . . . | Eb7 . . . | Bb7 . . . |
+@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . |
+| ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . |
+| bb2-d3-f3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | G7 . . . | G7 . . . | C7 . . . | C7 . . . |
+| F7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . |
+| f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | Eb7 . . . | Eb7 . . . | Eb7 . . . | Eb7 . . . |
+| Ab7 . .

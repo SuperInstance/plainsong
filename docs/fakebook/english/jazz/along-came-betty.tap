@@ -1,0 +1,20 @@
+**TRACK: Along Came Betty**
+[MetaData]
+key: Bb | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb6 . . . | G7 . . . | Cm7 . . . | F7 . . . | Dm7 . . . | G7 . . . | Cm7 . . . | F7 . . . |
+@guitar | b2-d3-f3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | d3-f3-a3-c4 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb6 . . . | G7 . . . | Cm7 . . . | F7 . . . | Dm7 . . . | G7 . . . | Cm7 . . . | F7 . . . |
+@guitar | b2-d3-f3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | d3-f3-a3-c4 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb7 . . . | Ab7 . . . | Dbmaj7 . . . | Gb7 . . . | Cm7 . . . | F7 . . . | Bb6 . . . | G7 . . . |
+@guitar | eb3-g3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | db3-f3-ab3-c4 . . . | gb2-bb2-db3-fb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | b2-d3-f3-g3 . . . | g2-b2-d3-f3 . . . | vel: 65
+
+[V3] (Verse - 8 Bars)
+Chords: | Bb6 . . . | G7 . . . | Cm7 . . . | F7 . . . | Dm7 . . . | G7 . . . | Cm7 . . . | F7 . . . |
+@guitar | b2-d3-f3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . |

@@ -1,0 +1,20 @@
+**TRACK: Doxy**
+[MetaData]
+key: Bb | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Head - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 60
+
+[V2] (Head Variation - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 62
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm . . . | Gm . . . | C7 . . . | C7 . . . | F7 . . . | F7 . . . | Bb . . . | F7 . . . |
+@guitar | g2-bb2-d3 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | f2-a2-eb3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 58
+
+[V3] (Final Head - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 60
