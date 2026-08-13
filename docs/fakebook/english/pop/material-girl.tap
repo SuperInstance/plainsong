@@ -1,0 +1,24 @@
+**TRACK: Material Girl**
+[MetaData]
+key: Cm | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Eb . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Fm . . . | G . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 45

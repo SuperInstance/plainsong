@@ -1,0 +1,24 @@
+**TRACK: Thriller**
+[MetaData]
+key: Dm | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . | Gm . . . | Gm . . . | Dm . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50

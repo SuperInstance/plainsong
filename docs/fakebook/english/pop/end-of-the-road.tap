@@ -1,0 +1,24 @@
+**TRACK: End of the Road**
+[MetaData]
+key: Ab major | tempo: 58 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Eb . . . | Fm . . . | Db . . . |
+@guitar | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | C . . . | Fm . . . | Eb . . . |
+@guitar | bb1-db2-f2 . . . | c2-e2-g2 . . . | f2-ab2-c3 . . . | eb2-g2-bb2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 45
