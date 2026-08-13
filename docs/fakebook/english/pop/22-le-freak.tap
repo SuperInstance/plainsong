@@ -1,0 +1,25 @@
+**TRACK: 22 Le Freak**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | D9 . . . |
+@bass | a1-e2-a2 . . . | d1-f#2-c2 . . . | a1-e2-a2 . . . | d1-f#2-c2 . . . | vel: 60
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | D9 . . . |
+@bass | a1-e2-a2 . . . | d1-f#2-c2 . . . | a1-e2-a2 . . . | d1-f#2-c2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | G7 . . . | G7 . . . | C7 . . . | C7 . . . |
+@bass | g1-d2-f2 . . . | g1-d2-f2 . . . | c1-g2-e2 . . . | c1-g2-e2 . . . | vel: 65
+@rhodes | g2-b3-d4 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
+@bass | f#1-e2-a2 . . . | b1-d#2-f#2 . . . | e1-g2-b2 . . . | a1-c#2-g2 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | G7 . . . |
+@bass | a1-e2-a2 . . . | d1-f#2-c2 . . . | a1-e2-a2 . . . | g1-d2-f2 . . . | vel: 55

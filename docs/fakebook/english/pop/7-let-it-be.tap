@@ -1,0 +1,31 @@
+**TRACK: Let It Be**
+[MetaData]
+key: C | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+Chords: | C . . . | G . . . | F . . . | C/E . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | F . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | vel: 60
+Chords: | C . . . | G . . . | F . . . | C . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+Chords: | C . . . | G . . . | F . . . | C/E . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[BR] (Bridge - 8 Bars)
+Chords: | Am . . . | G . . . | F . . . | C . . . |
+@guitar | a2-c3-e3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+Chords: | Am . . . | G . . . | F . . . | C . . . |
+@guitar | a2-c3-e3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . |

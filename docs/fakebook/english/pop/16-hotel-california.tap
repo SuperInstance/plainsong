@@ -1,0 +1,24 @@
+**TRACK: 16 Hotel California**
+[MetaData]
+key: Bm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Haunting
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | F# . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bm . . . | F# . . . | G . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | g2-b2-d3 . . . | f#2-a#2-c#3 . . . | vel: 45
