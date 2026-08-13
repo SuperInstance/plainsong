@@ -1,0 +1,26 @@
+**TRACK: Between the Devil and the Deep Blue Sea**
+[MetaData]
+key: Am | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| F7 . . . | E7 . . . | Am7 . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| F7 . . . | E7 . . . | Am7 . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Am7 . . . |
+| Dm7 . . . | E7 . . . | Am7 . . . | E7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | vel: 60
+@guitar | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F7 . . . | E7 . . . | Am7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 50

@@ -1,0 +1,31 @@
+**TRACK: I've Got the World on a String**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Gm7 . . . | C7 . . . |
+       | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+@guitar | a2-c3-e3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | F7 . . . | Bb . . . |
+       | Bbm . . . | F . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | vel: 60
+@guitar | bb2-db3-f3 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | d2-f#2-a2 . . . | g2-b2-d3 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Gm7 . . . | C7 . . . |
+       | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 55
+@guitar | a2-c3-e3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | F7 . . . | Bb . . . |
+       | Bbm . . . | F . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . |

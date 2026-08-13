@@ -1,0 +1,24 @@
+**TRACK: One for My Baby (and One More for the Road)**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad, late-night
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . | Dm . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | d1-f1-a1 . . . | d1-f1-a1 . . . | g1-bb1-d2 . . . | c1-e1-bb1 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . | Dm . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | d1-f1-a1 . . . | d1-f1-a1 . . . | g1-bb1-d2 . . . | c1-e1-bb1 . . . | vel: 45
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Bbm . . . | Bbm . . . | F . . . | F . . . | Gm . . . | C7 . . . |
+@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-db2-f2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | g1-bb1-d2 . . . | c1-e1-bb1 . . . | vel: 50
+
+[V3] (Verse - 8 Bars, final)
+Chords: | F . . . | F . . . | F . . . | F . . . | Dm . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | d1-f1-a1 . . . | d1-f1-a1 . . . | g1-bb1-d2 . . . | c1-e1-bb1 . . . | vel: 45
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Gm7 . . . | C7 . . . | F . . . |
+@guitar | f1-a1-c2 .

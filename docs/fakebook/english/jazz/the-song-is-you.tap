@@ -1,0 +1,24 @@
+**TRACK: The Song Is You**
+[MetaData]
+key: Eb | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ebmaj7 . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Ebmaj7 . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Abmaj7 . . . | Abm6 . . . | Ebmaj7 . . . | C7 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-cb4-eb4 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | G7 . . . | C7 . . . |
+@guitar | f3-ab3-c4 . . . | bb2-d3-f3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Abmaj7 . . . | Abm6 . . . | Ebmaj7 . . . | Bb7 . . . |
+@guitar | ab3-c4-eb4 . . . | ab3-cb4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
