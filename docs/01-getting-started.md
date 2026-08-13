@@ -1,409 +1,238 @@
-# TapScript: Complete Tutorial
-*A plain-text language for fretted instrument tablature and full band scores*
+# TapScript: Getting Started
+
+TapScript is a plain-text music notation format that looks like a lead sheet
+when printed and compiles to MIDI and WAV when rendered. It's part of
+TapScript Studio, a small suite of independent local web apps in this repo
+(see [docs/02-architecture.md](02-architecture.md) for how they fit
+together).
+
+This guide documents the notation and CLI implemented in
+`scripts/tapscript_v2.py` — the engine that produces the format shown in
+the project [README](../README.md) and used by every example bundled with
+it (`EXAMPLES` in that file: `harbor_dawn`, `the_room_is_safe`,
+`creatures_of_interval`, `neon_shadows`, `deck_work`).
+
+> **Note:** This repo also contains `scripts/tapscript.py`, an older engine
+> with a *different*, Roman-numeral/scale-degree notation. It is not what's
+> described below. The two are unrelated parsers that happen to share a
+> default port. See [docs/02-architecture.md](02-architecture.md) for the
+> full comparison.
 
 ---
 
-## 1. What is TapScript?
-TapScript is a human-readable, domain-specific language (DSL) for writing musical notation for fretted string instruments (guitar, bass, ukulele, etc.) and full ensemble scores. Originally built for the [TapStudio live notation tool](https://tapstudio.io/), it now has an active open-source ecosystem.
+## 1. Running It
 
-### Core Features:
-- Editable in any plain-text code editor
-- Native support for tablature, chords, lyrics, performance techniques, and dynamics
-- Compiles directly to standard MIDI and stereo WAV audio
-- Works for solo instruments or full band arrangements
-
----
-
-## 2. Notation Format & Annotated Examples
-TapScript uses a simple, consistent syntax split into three core sections:
-1.  **Metadata Header**: Global song configuration
-2.  **Track Definitions**: Declare individual instruments, tuning, and settings
-3.  **Score Body**: The actual music, events, and lyrics
-
----
-
-### 2.1 Core Syntax Rules
-| Component | Format & Notes |
-|---|---|
-| Comments | Start with `#` (same as Python) |
-| Metadata | Key-value pairs: `title: "My Song"` |
-| Single Notes | `[string]/[fret]:[duration]`<br>Strings are numbered LOWEST→HIGHEST (1 = low E on standard guitar). Fret `0` = open string, `-1` = muted string. |
-| Durations | `w` (whole), `h` (half), `q` (quarter), `e` (eighth), `s` (sixteenth), plus dotted variants like `q.` (dotted quarter note) |
-| Chords | Two formats: <br>1. Named chords: `Cm7:q` (resolves to current key)<br>2. Tabbed chords: `x 3 2 0 1 0:q` (explicit fret positions for each string) |
-| Rests | `r:[duration]` → `r:q` = quarter rest |
-| Lyrics | Inline: `1/0:q | Happy` <br> Block: `lyric_track Vocals: "Full lyric text"` |
-
----
-
-### 2.2 Annotated Full Example
-```tapscript
-# Metadata: Global song settings
-title: "Annotated TapScript Demo"
-artist: "ByteDance"
-tempo: 120 # Beats per minute
-time_signature: "4/4" # Defaults to 4/4 if omitted
-key: "C Major" # Defaults to C Major
-
-# Track Definition: Nylon acoustic guitar
-track AcousticGuitar {
-  instrument: "Acoustic Guitar (nylon)" # Standard MIDI instrument name
-  channel: 1 # Unique MIDI channel (1-16, channel 10 = drums)
-  volume: 90 # 0-127 volume level
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"] # Standard 6-string guitar tuning
-}
-
-# Score Body: Single measure with chord, melody, and lyrics
-# Plays a C major chord, open high E string quarter note, + lyrics
-{ C:q, 5/0:q } | Demo chord and melody note
-```
-
----
-
-## 3. Write Your First Composition
-We’ll build a simplified solo guitar version of *Happy Birthday*, the most accessible starting point.
-
-### Step 1: Full Code
-```tapscript
-title: "Happy Birthday (Simplified Solo Guitar)"
-artist: "Traditional"
-tempo: 110
-time_signature: "4/4"
-key: "C Major"
-
-# Standard steel-string guitar track
-track SoloGuitar {
-  instrument: "Acoustic Guitar (steel)"
-  channel: 1
-  volume: 80
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"]
-}
-
-# Measure 1: Opening phrase
-{ 1/0:e, 1/0:e, 1/2:q, 1/0:h } | Happy Birthday Dear
-# Measure 2: Repeat opening phrase
-{ 1/0:e, 1/0:e, 1/2:q, 1/0:h } | Happy Birthday Dear
-# Measure 3: Modified final phrase
-{ 3/0:e, 3/0:e, 1/2:q, 3/2:h } | Happy Birthday Dear Name
-# Measure 4: Closing phrase
-{ 3/0:e, 3/0:e, 5/2:q, 1/0:h } | Happy Birthday Dear You
-```
-
-### Step 2: Explanation
-- Uses eighth notes for the first two beats of each measure to match the classic *Happy Birthday* rhythm
-- Inline lyrics sync directly to each melodic note
-- Follows standard 4/4 time signature with properly weighted beats
-
----
-
-## 4. Chords, Melody, Lyrics & Player Lines
-Breakdown of each core musical component:
-
----
-
-### 4.1 Chords
-TapScript supports two chord formats:
-1.  **Named Chords**: Auto-resolved to your current key and track tuning. Use standard music chord naming: `G7`, `Cm7`, `Em9`. For inversions: `Cm7/E` (C minor 7 with E bass note).
-2.  **Tabbed Chords**: Explicit fret positions for every string, formatted as space-separated values. Use `x` for muted strings:
-    ```tapscript
-    # G Major barre chord for 6-string guitar
-    x 2 4 4 3 2:q
-    # C Major chord for 4-string ukulele
-    4 3 2 0:q
-    ```
-
----
-
-### 4.2 Melody Lines
-Melodies are just single-note events spread across any string. For clarity, target high strings for lead melodies:
-```tapscript
-# High B string melody note
-5/2:q
-# Low E string bass note
-1/0:q
-```
-
-#### Multiple Melody Lines (Player Voices)
-For complex fingerstyle playing (thumb bass + melody), define separate voices inside a single track to isolate independent parts:
-```tapscript
-track FingerstyleGuitar {
-  instrument: "Acoustic Guitar (steel)"
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"]
-  # Thumb plays bass on low strings 1-3
-  voice ThumbBass {
-    string_range: 1-3
-    velocity: 75 # Softer bass volume
-  }
-  # Fingers play melody on high strings 4-6
-  voice LeadMelody {
-    string_range: 4-6
-    velocity: 100 # Brighter melody volume
-  }
-}
-
-# Use the voices in your score
-{ ThumbBass: 1/0:q, LeadMelody: 5/0:q }
-```
-
----
-
-### 4.3 Lyrics
-Two syncing options:
-1.  **Inline Lyrics**: Attach directly to score events with a `|` prefix, perfect for line-by-line sync:
-    ```tapscript
-    1/0:q | Happy
-    1/0:q | Birthday
-    ```
-2.  **Block Lyrics**: Define a dedicated vocal track for full lyric alignment:
-    ```tapscript
-    track Vocals {
-      instrument: "Voice"
-      channel: 4
-    }
-    # Syncs lyrics to measure timing
-    lyric_track Vocals: "Happy Birthday Dear You Happy Birthday Dear You"
-    ```
-
----
-
-### 4.4 Performance Techniques
-Add realistic playing styles to any note or chord:
-| Technique | Syntax Example |
-|---|---|
-| Bend | `1/0:q b(2)` (bend low E string up 2 half-steps) |
-| Slide | `1/0 s(1/2):e` (slide from open low E to 2nd fret) |
-| Hammer-On | `1/0 h 1/2:e` (hammer-on from 0 to 2 on string 1) |
-| Palm Mute | `1/0:q pm` (palm-muted quarter note) |
-
----
-
-## 5. Compile to MIDI and WAV
-### 5.1 Command-Line Compiler (Recommended)
-Use the official open-source `tapscript-compiler` Python package:
-1.  **Install the tool**:
-    ```bash
-    pip install tapscript-compiler
-    ```
-2.  **Get a SoundFont**: You’ll need a free SoundFont file for WAV exports. The [GeneralUser GS Font](https://www.dropbox.com/s/4g0z0yqk8z3q78l/GeneralUser_GS_1.471.zip?dl=0) is a standard choice.
-
-#### Compile to MIDI
 ```bash
-tapc my_song.tap -o my_song.midi
-```
-This generates a standard MIDI file compatible with every DAW (GarageBand, Ableton, Logic) and MIDI player.
+# Start the web server (default port 5557)
+python3 scripts/tapscript_v2.py
 
-#### Compile to WAV
+# Compile a file to WAV and MIDI on the command line
+python3 scripts/tapscript_v2.py --cli mysong.tap --midi out.mid --wav out.wav
+
+# Render one of the five built-in examples directly to WAV
+python3 scripts/tapscript_v2.py --example harbor_dawn --wav harbor.wav
+
+# Run the web server on a different port
+python3 scripts/tapscript_v2.py --port 8080
+```
+
+These are the only CLI flags that exist (`scripts/tapscript_v2.py`
+`cli_main()`):
+
+| Flag | Meaning |
+|------|---------|
+| `--cli FILE` | Parse and compile a `.tap`-style text file instead of starting the server |
+| `--midi PATH` | Write a MIDI file to this path |
+| `--wav PATH` | Write a WAV file to this path |
+| `--example NAME` | Load one of the five built-in examples instead of a file |
+| `--port N` | Web server port (default `5557`) |
+
+With `--cli` and neither `--midi` nor `--wav` given, it prints a short
+summary (title, key, tempo, section count) and still renders a WAV to the
+default output directory. With `--example` and neither `--midi` nor `--wav`,
+it renders a WAV. There is no `--help`-documented flag for choosing MIDI
+*and* WAV output beyond passing both `--midi` and `--wav` at once.
+
+Output files are written under `~/.openclaw/workspace/output/audio` unless
+you pass an explicit path.
+
+---
+
+## 2. Anatomy of a TapScript File
+
+Here's the real shape, taken directly from the `neon_shadows` example baked
+into `scripts/tapscript_v2.py`:
+
+```tapscript
+**TRACK: Neon Shadows**
+[MetaData]
+key: Am | tempo: 75 | swing: 10% | subdivision: 16th
+
+[V1] (Verse - 4 Bars)
+Chords:  | Am    .    | F     G    |
+Melody: | E4    . . . | A4    . G4 E4 |
+Lyrics: | I     . . . | write . in code |
+@wesley | e2-a2-c3 . . | f2-a2-c3 g2-b2-d3 | vel: 60
+
+[C] (Chorus - Louder)
+Chords:  | Am    F     C     G    | Am    F     C     G    |
+Melody: | A4    C5    A4    G4   | A4    C5    D5    E5   |
+Lyrics: | This  is    the   new  | syn   -     tax   for  |
+@flash  | a2    f2    c2    g2   | a2    f2    c2    g2   | vel: 80
+@hermes | a1    .     a1    .    | f1    .     g1    .    | vel: 75
+```
+
+### 2.1 Title (optional)
+
+`**TRACK: Title Here**` is parsed by a regex looking for `**TRACK: ...**`
+on a line by itself before `[MetaData]`. If omitted, the title is just an
+empty string — nothing breaks.
+
+### 2.2 `[MetaData]` block
+
+A single pipe-delimited line of `key: value` pairs:
+
+```
+key: Am | tempo: 75 | swing: 10% | subdivision: 16th
+```
+
+| Field | Real parsing behavior |
+|-------|------------------------|
+| `key:` | Matched with `^([A-G][#b]?)(m?)$` — e.g. `Am`, `C`, `F#`, `Bbm`. Flats are normalized to their sharp equivalent internally (`Bb` → `A#`). Anything that doesn't match this pattern silently falls back to `C major`. |
+| `tempo:` | Integer BPM. Default `120` if missing. |
+| `swing:` | Integer percent (the `%` is optional and stripped). Default `0`. |
+| `subdivision:` | Integer; the `th`/`st` suffix is stripped (`16th` → `16`). Only two things matter downstream: `<= 8` gives 2 slots per beat, anything else (including the default of `16`) gives 4 slots per beat. There's no support for triplets or other subdivisions. |
+
+There is **no time signature field**. See §4.
+
+### 2.3 `[Section]` headers
+
+```
+[V1] (Verse - 4 Bars)
+```
+
+The bracketed part (`V1`) is the section's identifier — must be a single
+word (`\w+`). The parenthesized part is a free-text description that's
+parsed but not used for anything musically; it's purely a label for humans
+reading the file. Sections play in the order they appear in the file, with
+no support for jumping around (no repeats, no D.C. al Fine, nothing like
+that).
+
+### 2.4 The four line types
+
+Every line inside a section is one of:
+
+- **`Chords:`** — chord symbols per bar, e.g. `Am`, `F`, `C`, `G`, `Cmaj7`,
+  `Dm7`, `Gsus4`. Parsed by matching `^([A-G])([#b]?)(.*)$` against a table
+  of ~16 chord shapes (`maj`, `m`, `7`, `m7`, `maj7`, `dim`, `dim7`, `aug`,
+  `sus2`, `sus4`, `add9`, `6`, `m6`, `9`, `m9`). Anything with an
+  unrecognized quality suffix falls back to a plain major triad.
+- **`Melody:`** — absolute pitch tokens for a default, un-assigned melody
+  voice, rendered on its own separate MIDI/WAV track named `"melody"`.
+- **`Lyrics:`** — text syllables per slot. **These are parsed into the
+  composition and kept nowhere near the audio renderer — see §4.**
+- **`@name`** — a named performer/track, e.g. `@wesley`, `@flash`,
+  `@hermes`. Everything after the name up to the first `|` is ignored;
+  after that, `|`-delimited segments are either more bars of notes or a
+  `vel: N` field setting that track's base MIDI velocity (default `70`).
+
+All four are pipe-delimited: everything before the first `:` is the label,
+everything after is split on `|` into one token-list per bar, and each bar
+is further split on whitespace into individual tokens.
+
+### 2.5 Note tokens (absolute pitch notation)
+
+Pitches are scientific pitch notation, matched with
+`^([A-Ga-g])([#b]?)(\d+)$`:
+
+- `C4` = MIDI 60 (middle C). Case doesn't matter for the letter — `c4` and
+  `C4` are identical.
+- `#`/`b` before the octave number applies a sharp/flat: `C#4`, `Eb3`.
+- A run of hyphen-joined notes is a **chord voicing** for that slot, e.g.
+  `e2-a2-c3` sounds three notes together.
+- `.` — **sustain**: extend the previous note/chord in that track through
+  this slot.
+- `-` — **rest**: silence in `Melody:` and `@player` lines. (Its behavior
+  in `Chords:` lines is different — see §4.)
+- Anything that isn't `.`, `-`, or a valid pitch pattern is treated as a
+  rest.
+
+Each token occupies one subdivision slot (2 or 4 per beat, per
+`subdivision:` above); there's no per-token duration override.
+
+---
+
+## 3. Transposing
+
+`POST /api/transpose` (or the `keySelect` dropdown in the web UI) rewrites
+every absolute pitch token by the semitone distance between the old and new
+key, using simple key-letter arithmetic — it does **not** reason about
+scale degrees or key signatures. See §4 for what it does and doesn't touch.
+
+---
+
+## 4. Real Quirks (Not Bugs You'll Find Documented Elsewhere)
+
+These come directly from reading `scripts/tapscript_v2.py`; each one is
+easy to trip over if you assume the notation behaves the way it looks like
+it should.
+
+**Lyrics never render to audio.** `Lyrics:` lines are fully parsed and
+stored on each bar (`bar["lyrics"]`), and the web UI can display them, but
+`compile_to_midi()` never reads `bar["lyrics"]` for anything. There is no
+lyric-to-audio path at all — lyrics are structurally decorative.
+
+**`Chords:` lines cannot hold a true rest.** In a `Chords:` line, a `-`
+token is parsed as a `"rest"` event, but the chord renderer
+(`_render_chord_bar`) only ever *starts* a note on a `"chord"` event; every
+`"sustain"` and `"rest"` event it encounters afterward just extends the
+*previous* chord's held duration by one more slot. In other words, once a
+chord is sounding, writing `-` after it does exactly what `.` does — it
+holds the chord, it does not silence it. The only way to get real silence
+in a `Chords:` line is to have no chord token at all before that point in
+the bar (i.e., a leading `-`/`.` with nothing preceding it).
+
+**Transpose skips `Chords:` and `Lyrics:` lines entirely.**
+`transpose_text()` explicitly passes those two line types through
+untouched:
+```python
+if stripped.startswith('Chords:') or stripped.startswith('Lyrics:'):
+    result_lines.append(line)
+    continue
+```
+Only `Melody:` and `@player` lines get their absolute pitch tokens shifted.
+This means transposing a piece changes the key label and every melody/player
+note, but leaves the chord symbols exactly as written — `Am` stays `Am`
+even if you transpose everything else up a fourth. You have to re-voice
+`Chords:` lines by hand after transposing.
+
+**Everything is hardcoded to 4/4.** `compile_to_midi()` sets
+`beats_per_bar = 4` as a literal constant; there is no time-signature field
+in `[MetaData]` and no way to write a bar of 3/4 or 6/8. `subdivision:`
+only changes how many note slots fit inside that fixed 4-beat bar (2 or 4
+per beat), it does not change the meter itself.
+
+**No soundfont, despite what you might expect.** WAV rendering
+(`midi_to_wav`) does not load a `.sf2` file or call out to a synthesizer —
+it generates raw waveforms in NumPy per instrument family (piano, bass,
+strings, flute, guitar, drums) with hand-written ADSR envelopes, then mixes
+and normalizes. What you hear is a lightweight built-in synth, not sampled
+instruments.
+
+**Default AI composition, if configured, is DeepSeek, not Claude.** The
+`POST /api/compose` endpoint (and the "✨ Compose" button in the web UI)
+only appears if a `DEEPSEEK_API_KEY` is found in `~/.bashrc` or the
+environment; it calls `api.deepseek.com` directly. There's no fallback
+composer.
+
+---
+
+## 5. Try It
+
 ```bash
-tapc my_song.tap -o my_song.wav --soundfont /path/to/generaluser.sf2
-```
-The compiler will render all MIDI instruments to stereo audio using your SoundFont.
-
-### 5.2 Online Alternative
-Use the web-based [TapStudio Editor](https://tapstudio.io/) for zero-install compilation to MIDI and WAV, ideal for beginners.
-
----
-
-## 6. Advanced Features
-### 6.1 Repeats & Section Markers
-Save time by reusing song sections with built-in repeat tools:
-```tapscript
-# Repeat a section 2 times
-repeat 2 {
-  { C:q, G:q, Am:q, F:q }
-}
-
-# Segno + Fine markers for formal song structure
-segno # Mark start of repeat section
-{ Am:q, F:q }
-repeat from segno 2 # Repeat from segno twice
-fine # End of song marker
-
-# Da Capo Al Fine: Repeat entire song from start to fine
-dc al fine
+python3 scripts/tapscript_v2.py --example deck_work --wav deck.wav
 ```
 
-### 6.2 Dynamics Control
-Adjust volume levels globally or per-event:
-1.  **Section-wide dynamics**: Use standard shorthands (`pp`, `p`, `mp`, `mf`, `f`, `ff`):
-    ```tapscript
-    # Soft verse
-    dynamics: p {
-      { C:q, G:q }
-    }
-    # Loud chorus
-    dynamics: f {
-      { C:q, G:q }
-    }
-    ```
-2.  **Per-event velocity**: Override track volume for individual notes:
-    ```tapscript
-    # Loud single note (velocity 110)
-    5/5:q velocity: 110
-    # Soft single note (velocity 50)
-    5/5:q velocity: 50
-    ```
-
-### 6.3 Key Changes
-Modulate mid-song automatically: all named chords and key-based notes will adjust to the new key:
-```tapscript
-# Start in C Major
-key: "C Major"
-{ C:q, G:q }
-# Modulate to G Major for final chorus
-key: "G Major"
-{ G:q, D:q }
-```
-Absolute fret positions like `1/5:q` will never change, regardless of key.
-
-### 6.4 MIDI Control Changes (Effects)
-Adjust MIDI CC values to add effects like wah, reverb, or pan:
-```tapscript
-# Enable wah pedal (CC 1 = modulation/wah)
-cc: 1 60
-5/5:q
-# Reset wah to default
-cc: 1 0
-# Pan guitar to left channel
-cc: 10 0
-{ C:q }
-# Pan guitar to right channel
-cc: 10 127
-{ G:q }
-```
-
----
-
-## Progressive Example 1: Simple Solo Melody
-*Happy Birthday* polished with correct timing and lyrics (expanded from Section 3):
-```tapscript
-title: "Happy Birthday (Full Solo Melody)"
-artist: "Traditional"
-tempo: 110
-time_signature: "4/4"
-key: "C Major"
-
-track SoloGuitar {
-  instrument: "Acoustic Guitar (steel)"
-  channel: 1
-  volume: 80
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"]
-}
-
-# Measure 1
-{ 1/0:e, 1/0:e, 1/2:q, 1/0:h } | Happy Birthday Dear
-# Measure 2
-{ 1/0:e, 1/0:e, 1/2:q, 1/0:h } | Happy Birthday Dear
-# Measure 3
-{ 3/0:e, 3/0:e, 1/2:q, 3/2:h } | Happy Birthday Dear Name
-# Measure 4
-{ 3/0:e, 3/0:e, 5/2:q, 1/0:h } | Happy Birthday Dear You
-```
-
----
-
-## Progressive Example 2: Fingerstyle Guitar Arrangement (Let It Be)
-Intermediate example with dual voices, dynamics, and key changes:
-```tapscript
-title: "Let It Be (Fingerstyle Arrangement)"
-artist: "The Beatles"
-tempo: 84
-time_signature: "4/4"
-key: "C Major"
-
-track FingerstyleGuitar {
-  instrument: "Acoustic Guitar (steel)"
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"]
-  voice ThumbBass { string_range: 1-3, velocity:75 }
-  voice LeadMelody { string_range: 4-6, velocity:90 }
-}
-
-# Verse 1
-{ ThumbBass: 1/0:q, LeadMelody: 4/0:q, 5/0:q } | Let it be, let it be
-{ ThumbBass: 2/0:q, LeadMelody: 4/2:q } | Whisper words of wisdom
-
-# Chorus with boosted dynamics
-dynamics: mf {
-  repeat 2 {
-    { ThumbBass: 1/0:q, ThumbBass: 2/2:q, LeadMelody:4/3:q, 5/2:q }
-    | Let it be, let it be
-  }
-}
-
-# Final chorus with key change to D Major
-key: "D Major"
-dynamics: f {
-  { ThumbBass:1/0:q, LeadMelody:4/0:q } | Let it be, let it be
-}
-```
-
----
-
-## Progressive Example 3: Full Band Rock Arrangement
-Advanced multi-track example with drums, bass, guitar, and vocals:
-```tapscript
-title: "Basic Rock Song"
-artist: "Your Band"
-tempo: 140
-time_signature: "4/4"
-key: "G Major"
-
-# Track 1: Drums (standard MIDI channel 10)
-track Drums {
-  instrument: "Drum Kit"
-  channel: 10
-  volume: 100
-}
-
-# Track 2: Distorted Rhythm Guitar
-track RhythmGuitar {
-  instrument: "Distortion Guitar"
-  channel: 2
-  tuning: ["E2", "A2", "D3", "G3", "B3", "E4"]
-  volume: 90
-}
-
-# Track 3: Electric Bass
-track Bass {
-  instrument: "Electric Bass (finger)"
-  channel: 3
-  tuning: ["E1", "A1", "D2", "G2"]
-  volume: 85
-}
-
-# Track 4: Lead Vocals
-track Vocals {
-  instrument: "Voice"
-  channel: 4
-  volume: 95
-}
-
-# Standard rock drum loop
-drum_beat: "kick q, hh e, snare q on 2+4, hh e" {
-  repeat 4
-}
-
-# Verse 1
-{ RhythmGuitar: G:q, D:q, Em:q, C:q }
-{ Bass: 1/3:q, 2/0:q, 2/2:q, 3/0:q }
-{ Vocals: | I woke up this morning with a song in my head }
-
-# Chorus
-dynamics: f {
-  repeat 2 {
-    { RhythmGuitar: G:h, D:h, Em:h, C:h }
-    | Oh, oh, oh, let's rock this town
-  }
-}
-
-# Guitar Solo Section
-segno
-{ RhythmGuitar: C:q, G:q, D:q, Em:q }
-{ LeadGuitar: 5/5:e, 5/7:e, 5/8:e, 5/7:e }
-repeat from segno 1
-fine
-```
-
----
-
-## Troubleshooting & Pro Tips
-1.  **MIDI Channel Conflicts**: Ensure each track uses a unique MIDI channel (only drums use channel 10 by standard)
-2.  **Tuning Mismatches**: Double-check that tabbed chords have
+Then open the file in any audio player, or start the web server and load
+"Deck Work" from the example dropdown to see the notation and audio side by
+side.
