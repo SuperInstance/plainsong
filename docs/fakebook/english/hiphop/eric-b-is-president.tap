@@ -1,0 +1,24 @@
+**TRACK: Eric B. Is President**
+[MetaData]
+key: Dm | tempo: 94 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 62
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 64
+
+[BR] (Breakdown - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 66
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 45

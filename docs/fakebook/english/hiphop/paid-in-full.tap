@@ -1,0 +1,24 @@
+**TRACK: Paid in Full**
+[MetaData]
+key: Dm | tempo: 97 | subdivision: 8th
+time: 4/4 | mood: Hypnotic
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 48
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 48
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Dm . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 48
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 40

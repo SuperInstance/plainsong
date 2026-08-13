@@ -1,0 +1,20 @@
+**TRACK: Sucker M.C.'s**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Breakdown - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 50

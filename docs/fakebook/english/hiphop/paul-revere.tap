@@ -1,0 +1,27 @@
+**TRACK: Paul Revere**
+[MetaData]
+key: Am | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+       | Am . . . | Am . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+       | Am . . . | Am . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+       | Am . . . | Am . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
