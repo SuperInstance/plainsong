@@ -1,0 +1,22 @@
+**TRACK: Eine kleine Nachtmusik, K. 525**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Bright
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+Melody: | G4 . B4 . | D5 . . . |
+Lyrics: | da da da da | da da da da |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . |
+Melody: | E5 . . . | D5 . B4 . |
+Lyrics: | da da da da | da da da da |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | G . . . |
+Melody: | A4 . F#4 . | G4 . . . |
+Lyrics: | la la la la | la la la la |
+@piano | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 65

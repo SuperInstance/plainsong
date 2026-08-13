@@ -1,0 +1,22 @@
+**TRACK: Symphony No. 5 in C minor, Op. 67**
+[MetaData]
+key: Cm | tempo: 108 | subdivision: 8th
+time: 2/4 | mood: Dramatic
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Cm . . . |
+Melody: | G4 . G4 . | G4 . Eb4 . |
+Lyrics: | da da da dum | da da da dum |
+@piano | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | Ab . . . | Bb . . . |
+Melody: | F4 . F4 . | F4 . D4 . |
+Lyrics: | da da da dum | da da da dum |
+@piano | ab2-c3-f3 . . . | bb2-d3-f3 . . . | vel: 58
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . | Cm . . . |
+Melody: | G4 . G4 . | G4 . Eb4 . |
+Lyrics: | fate knocks the door | fate knocks the door |
+@piano | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 65

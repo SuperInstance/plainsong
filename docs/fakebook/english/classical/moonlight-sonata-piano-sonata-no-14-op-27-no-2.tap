@@ -1,0 +1,22 @@
+**TRACK: Moonlight Sonata (Piano Sonata No. 14, Op. 27 No. 2)**
+[MetaData]
+key: C#m | tempo: 60 | subdivision: 8th
+time: 4/4 | mood: Gentle, somber
+
+[V1] (Verse - 4 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Melody: | G#3 . . . | A3 . . . | B3 . . . | C#4 . . . |
+Lyrics: | moon - light | shin - ing | soft - ly | on the sea |
+@piano | c#2-e2-g#2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 40
+
+[V2] (Verse - 4 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Melody: | G#3 . . . | A3 . . . | B3 . . . | C#4 . . . |
+Lyrics: | dreams are | drift - ing | slow - ly | in the night |
+@piano | c#2-e2-g#2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 40
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | B . . . |
+Melody: | C#4 . E4 . | D4 . F#4 . | E4 . G#4 . | B3 . D#4 . |
+Lyrics: | hear the | waves that | call my | heart a - way |
+@piano | f#1-a1-c#2 . . . | d1-f#1-a1 . . . | e1-g#1-b1 . . . | b1-d#2-f#2 . . . | vel: 50
