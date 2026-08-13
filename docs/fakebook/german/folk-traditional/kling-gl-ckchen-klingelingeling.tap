@@ -1,0 +1,28 @@
+**TRACK: Kling, Glöckchen, klingelingeling**
+[MetaData]
+key: G | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . B3 . |
+Lyrics: | Kling Glöck-chen klin-ge-lin-ge-ling |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+Melody: | G3 . B3 . | D4 . B3 . |
+Lyrics: | Kling Glöck-chen klin-ge-lin-ge-ling |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . |
+Melody: | E4 . G4 . | B3 . D4 . |
+Lyrics: | Lasst mich ein ihr Kin-der, ist so kalt der Win-ter |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH2] (Chorus - 4 Bars)
+Chords: | D . . . | G . . . |
+Melody: | A3 . B3 . | G3 . . . |
+Lyrics: | Öff-net mir die Tü-ren, lasst mich nicht er-frie-ren |
+@piano | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55
