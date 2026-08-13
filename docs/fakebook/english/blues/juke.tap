@@ -1,0 +1,20 @@
+**TRACK: Juke**
+[MetaData]
+key: A | tempo: 145 | subdivision: 8th
+time: 12/8 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 65
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | F#m . . . | F#m . . . | Bm . . . | Bm . . . | E . . . | E . . . | A . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | b2-f#3-b3 . . . | b2-f#3-b3 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . .

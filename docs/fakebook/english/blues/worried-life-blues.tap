@@ -1,0 +1,20 @@
+**TRACK: Worried Life Blues**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Melancholy
+
+[V1] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | A7 . . . | A7 . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | a2-e3-a3 . . . | vel: 50
