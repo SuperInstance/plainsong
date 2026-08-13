@@ -21,6 +21,26 @@ midi  harbour.mid
 audio harbour.wav  [builtin/python]
 ```
 
+## Why
+
+Notation software is GUI-first and produces binary files. You cannot diff a
+`.sib` in git, embed sheet music in a README, or generate a part from a script.
+
+[ABC](https://abcnotation.com/) and [LilyPond](https://lilypond.org/) proved
+plain-text notation works, but ABC is folk-centric and LilyPond is a
+domain-specific language with a steep climb. Neither reads like a
+[lead sheet](https://en.wikipedia.org/wiki/Lead_sheet) — the chord-chart-plus-melody
+format working musicians actually use.
+
+TapScript is plain-text lead sheet notation. Three principles, from the
+[founding philosophy](proposals/00-FOUNDING-PHILOSOPHY.md):
+
+1. **Plain text is the source of truth** — not a GUI, not a binary. It diffs, it
+   merges, it lives in git.
+2. **Lead sheet, not full score** — chords, melody, lyrics, named players.
+3. **Compile, don't interpret** — the output is a standard MIDI file any DAW can
+   read, with no runtime dependency on TapScript.
+
 ## Install
 
 Python 3.10 or newer. Nothing else.
@@ -54,6 +74,38 @@ tapscript serve                       # web interface at localhost:8765
 
 All three drive the same compiler and see the same library and settings.
 
+## Timing that models the room
+
+A score usually says "this note is at beat 4.5" without saying where that
+happens — at the player's hands, at the instrument, or at the ear it is written
+for. Declare a stage and TapScript treats written times as **arrival** times and
+solves backwards for when each player has to act:
+
+```
+[Stage]
+listener: conductor
+@timpani: pos 4,-9  | speech: percussion
+@organ:   pos 0,-14 | speech: organ-large
+```
+
+```
+$ tapscript ensemble orchestra.tap
+  voice    distance  onset   travel  p-centre  act
+  timpani  9.8 m     0 ms    29 ms   1 ms      -30 ms
+  organ    14.0 m    140 ms  41 ms   60 ms     -241 ms
+
+what conductor hears, against the written beat
+  spread 0 ms
+```
+
+The organist's key goes down 241ms early so the pipe speaks on the beat. At the
+podium everything lands together; at any player's desk it does not, which is why
+an orchestra watches rather than listens. See
+[docs/performance.md](docs/performance.md).
+
+Without a `[Stage]` block none of this applies and written times are taken at
+face value, exactly as before.
+
 ## Connect a model, if you want one
 
 The compiler does not need a model. Adding one gives you an agent that writes
@@ -81,6 +133,7 @@ tapscript build            # tailor this install to your machine and use case
 |---|---|
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
+| [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
 | [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
@@ -99,13 +152,34 @@ tapscript library "waltz"
 tapscript play stand-by-me
 ```
 
+## Testing
+
+```bash
+python3 -m tapscript spec                          # the system's checks on itself
+python3 -m unittest discover -s tests              # the test suite
+python3 -m tapscript check docs examples academy   # every .tap file still parses
+```
+
+CI runs all three on Python 3.10 through 3.13 across Linux, macOS and Windows
+with nothing installed, which is what keeps the no-dependencies promise honest.
+
+## Relation to the fleet
+
+| Component | Relationship |
+|---|---|
+| [tapscript-worker](https://github.com/SuperInstance/tapscript-worker) | Cloudflare Worker version of this compiler — runs TapScript on the edge |
+| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript conduct` speaks. |
+| [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders TapScript scores as agentic performances |
+| [fleet-gateway](https://github.com/SuperInstance/fleet-gateway) | Routes model calls for the fleet |
+
 ## Status
 
 Version 1.0. The notation, the CLI surface and the provider catalogue format are
 stable; changes to them will go through a deprecation cycle.
 
-`legacy/` holds the two earlier engines this replaced. Nothing imports them and
-they are not maintained; see [legacy/README.md](legacy/README.md).
+`legacy/` holds the two earlier engines this replaced, along with the image
+gallery, the MIDI studio and a set of unrelated Rust-to-Python ports. Nothing
+imports them and they are not maintained; see [legacy/README.md](legacy/README.md).
 
 ## Licence
 
