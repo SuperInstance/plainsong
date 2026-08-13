@@ -1,0 +1,20 @@
+**TRACK: Forward Unto Zion**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Rootsy One Drop
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 52
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | F . . . | E . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55

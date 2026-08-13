@@ -1,0 +1,32 @@
+**TRACK: No Woman, No Cry**
+[MetaData]
+key: C | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Relaxed
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+| C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+| C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 60
+| C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | g2-b2-d3 . . . | vel: 52
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+| C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g
