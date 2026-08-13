@@ -432,10 +432,12 @@ class TestFeatures(unittest.TestCase):
     def test_a_silent_bar_is_all_rest(self) -> None:
         from tapscript.notation import arrange, parse
 
-        bars = features.extract(arrange(parse("[A]\nLyrics: | la la | la la |\n")))
-        self.assertTrue(bars)
-        self.assertEqual(bars[0].values["rest_ratio"], 1.0)
-        self.assertEqual(bars[0].values["note_density"], 0.0)
+        silent_middle = "[A]\nMelody: | C4 D4 E4 F4 |\n\n[B]\nLyrics: | one two |\n\n[C]\nMelody: | G4 A4 B4 C5 |\n"
+        bars = features.extract(arrange(parse(silent_middle)))
+        self.assertEqual(len(bars), 3)
+        self.assertEqual(bars[1].values["rest_ratio"], 1.0)
+        self.assertEqual(bars[1].values["note_density"], 0.0)
+        self.assertEqual(bars[1].onsets, 0)
 
     def test_density_rises_with_the_notes(self) -> None:
         from tapscript.notation import arrange, parse
