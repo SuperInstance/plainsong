@@ -1,0 +1,24 @@
+**TRACK: A Fine Romance**
+[MetaData]
+key: Ab | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
+@guitar | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f

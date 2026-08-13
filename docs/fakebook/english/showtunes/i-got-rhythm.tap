@@ -1,0 +1,22 @@
+**TRACK: I Got Rhythm**
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | C7 . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . . | G7 . . . | C7 . . . | F7 . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 58

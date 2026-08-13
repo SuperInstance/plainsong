@@ -1,0 +1,20 @@
+**TRACK: Love for Sale**
+[MetaData]
+key: Cm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Sultry Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Cm7 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | c3-eb3-g3-bb3 . . . | g2-b2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Cm7 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | c3-eb3-g3-bb3 . . . | g2-b2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab7 . . . | G7 . . . | Cm7 . . . | F7 . . . | Bb7 . . . | Eb7 . . . | D7 . . . | G7 . . . |
+@guitar | ab2-c3-eb3-gb3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-db4 . . . | d2-f#2-a2-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Cm7 . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . |
