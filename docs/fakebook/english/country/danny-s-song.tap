@@ -1,0 +1,30 @@
+**TRACK: Danny's Song**
+[MetaData]
+key: D | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Laid-back
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | D . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | vel: 60
+Chords: | G . . . | A . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | G . . . | A . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | D . . . | A . . . | D . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 45

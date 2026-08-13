@@ -1,0 +1,16 @@
+**TRACK: Country Bumpkin**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Warm
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . | G . . | C . . | G . . | G . . | D . . | G . . | G . . |
+@guitar | g2-b2-d3 . . | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | g2-b2-d3 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . | C . . | G . . | D . . | G . . | C . . | G . . | D . . |
+@guitar | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . | G . . | D . . | G . . |
+@guitar | c3-e3-g3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | vel: 55
