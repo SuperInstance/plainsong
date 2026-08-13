@@ -1,0 +1,24 @@
+**TRACK: Das Model**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Robotic
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Gm . . . | A . . . | A . . . |
+@guitar | g2-bb2-d3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 40
