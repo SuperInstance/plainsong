@@ -1,0 +1,24 @@
+**TRACK: Sweet Emotion**
+[MetaData]  
+key: A minor | tempo: 92 | subdivision: 8th  
+time: 4/4 | mood: Driving  
+
+[V1] (Verse - 8 Bars)  
+Chords: | Am . . . | Am . . . | G . . . | D . . . | Am . . . | Am . . . | G . . . | E . . . |  
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 58  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | C . . . | G . . . | D . . . | A . . . | C . . . | G . . . | E . . . | E . . . |  
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 64  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | F . . . | G . . . | Am . . . | E . . . |  
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 52  
+
+[V2] (Verse - 8 Bars)  
+Chords: | Am . . . | Am . . . | G . . . | D . . . | Am . . . | Am . . . | G . . . | E . . . |  
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 56  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | Am . . . | F . . . | G . . . | E . . . |  
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | vel: 50

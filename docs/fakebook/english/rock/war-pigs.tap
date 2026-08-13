@@ -1,0 +1,24 @@
+**TRACK: War Pigs**
+[MetaData]
+key: Em | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Heavy March
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 70
+
+[V2] (Verse Riff Variation - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | G . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | f2-c3-f3 . . . | e2-b2-e3 . . . | vel: 60
+
+[SOLO] (Guitar Solo - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 80
+
+[OUT] (Outro/Chorus - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 70

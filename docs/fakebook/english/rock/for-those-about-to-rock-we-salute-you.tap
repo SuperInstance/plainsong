@@ -1,0 +1,24 @@
+**TRACK: For Those About to Rock (We Salute You)**
+[MetaData]
+key: D | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | D . . . | D . . . | D . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | D . . . | D . . . | D . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | D . . . | G . . . | D . . . | A . . . | A . . . |
+@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | Bm . . . | A . . . | G . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[OUT] (Outro - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | D . . . | D . . . | D . . . | A . . . | D . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 .
