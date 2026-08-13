@@ -1,0 +1,24 @@
+**TRACK: Via del Campo**
+[MetaData]
+key: Em | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b1-d#2-f#2 . . . | e2-b2-e3 . . . | b1-d#2-f#2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | E7 . . . |
+@guitar | e2-b2-e3 . . . | b1-d#2-f#2 . . . | e2-b2-e3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | D . . . | G . . . | B7 . . . |
+@guitar | a1-c2-e2 . . . | d2-f#2-a2 . . . | g1-b1-d2 . . . | b1-d#2-f#2 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | B7 . . . |
+@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | a1-c2-e2 . . . | b1-d#2-f#2 . . . | vel: 52
+
+[OUT] (Outro - 2 Bars)
+Chords: | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

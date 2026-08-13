@@ -1,0 +1,24 @@
+**TRACK: Banco**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Progressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | c2-g2-c3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | g1-d2-g2 . . . | a1-e2-a2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+@guitar | f1-c2-f2 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm . . . | A . . . | Dm . . . | C . . . |
+@guitar | g1-d2-g2 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 45
