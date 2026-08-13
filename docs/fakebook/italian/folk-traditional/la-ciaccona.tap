@@ -1,0 +1,16 @@
+**TRACK: La Ciaccona**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | E . . . | Am . . . | E . . . |
+Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
+Lyrics: | la ciac - co - na | dan - za an - ti - ca | la ciac - co - na | dan - za an - ti - ca |
+@piano | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Am . . . | E . . . | Am . . . |
+Melody: | D4 . F4 . | A3 . C4 . | B3 . G#3 . | A3 . . . |
+Lyrics: | o - gni pas - so | ri - tor - na | la melo - di - a | fi - na - le |
+@piano | d3-f3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 55
