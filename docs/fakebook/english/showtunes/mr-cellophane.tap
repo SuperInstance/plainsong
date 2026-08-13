@@ -1,0 +1,24 @@
+**TRACK: Mr. Cellophane**
+[MetaData]
+key: Cm | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bb . . . | Bb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 40

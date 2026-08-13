@@ -1,0 +1,26 @@
+**TRACK: The Worst Pies in London**
+[MetaData]
+key: Em | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Driving, sardonic
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 55
+| Em . . . | Am . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 58
+| C . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | D . . . | G . . . | B7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 60
+| C . . . | B7 . . . | Em . . . | B7 . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | e2-b2-e3 . . . | vel: 60

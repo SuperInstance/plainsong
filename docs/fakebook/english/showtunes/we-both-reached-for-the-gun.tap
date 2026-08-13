@@ -1,0 +1,27 @@
+**TRACK: We Both Reached for the Gun**
+[MetaData]
+key: Cm | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Driving, vaudeville
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | Cm . . . |
+        | Ab . . . | Bb . . . | Cm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Cm . . . | Ab . . . | Bb . . . |
+        | Cm . . . | G7 . . . | Cm . . . | Cm . . . |
+@guitar | f2-ab2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | Cm . . . |
+        | Ab . . . | Bb . . . | Cm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Bb . . . | Ab . . . | G7 . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Cm . . . | Cm . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 50
