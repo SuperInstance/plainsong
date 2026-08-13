@@ -1,0 +1,26 @@
+**TRACK: Gop-stop**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 55
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 58
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | B7 . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 65
+Chords: | G . . . | D . . . | Em . . . | B7 . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | B7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | b1-f#2-a2 . . . | vel: 60
