@@ -1,0 +1,24 @@
+**TRACK: Good Vibrations**
+[MetaData]
+key: C | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Psychedelic Pop
+
+[V1] (Verse - 4 Bars)
+Chords: | C . F . | G . . . | C . F . | G . . . |
+@guitar | c3-e3-g3 . f2-a2-c3 . | g2-b2-d3 . . . | c3-e3-g3 . f2-a2-c3 . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . F . | G . Am . | F . G . | C . . . |
+@guitar | c3-e3-g3 . f2-a2-c3 . | g2-b2-d3 . a2-c3-e3 . | f2-a2-c3 . g2-b2-d3 . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | C . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . F . | G . C . | F . G . | C . . . |
+@guitar | c3-e3-g3 . f2-a2-c3 . | g2-b2-d3 . c3-e3-g3 . | f2-a2-c3 . g2-b2-d3 . | c3-e3-g3 . . . | vel: 45

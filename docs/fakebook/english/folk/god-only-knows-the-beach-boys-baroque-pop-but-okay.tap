@@ -1,0 +1,20 @@
+**TRACK: God Only Knows**
+[MetaData]
+key: A | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Baroque Pop
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | F#m . . . | F#m . . . | D . . . | D . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | F#m . . . | F#m . . . | D . . . | D . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 45

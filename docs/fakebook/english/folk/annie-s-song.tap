@@ -1,0 +1,28 @@
+**TRACK: Annie's Song**
+[MetaData]
+key: D | tempo: 76 | subdivision: 8th
+time: 3/4 | mood: Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . | D . . | D . . | D . . | G . . | A . . | D . . | A . . |
+@guitar | d3-f#3-a3 . . | . . . | . . . | . . . | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . | D . . | D . . | D . . | G . . | A . . | D . . | A . . |
+@guitar | d3-f#3-a3 . . | . . . | . . . | . . . | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . | A . . | Bm . . | Bm . . | G . . | A . . | D . . | D . . |
+@guitar | g2-b2-d3 . . | a2-c#3-e3 . . | b2-d3-f#3 . . | . . . | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Em . . | Em . . | A . . | A . . | F#m . . | F#m . . | Bm . . | Bm . . |
+@guitar | e2-g2-b2 . . | . . . | a2-c#3-e3 . . | . . . | f#2-a2-c#3 . . | . . . | b2-d3-f#3 . . | . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | D . . | D . . | D . . | D . . | G . . | A . . | D . . | A . . |
+@guitar | d3-f#3-a3 . . | . . . | . . . | . . . | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . | A . . | D . . | D . . |
+@guitar | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | . . . | vel
