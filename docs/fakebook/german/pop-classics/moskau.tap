@@ -1,0 +1,24 @@
+**TRACK: Moskau**
+[MetaData]
+key: Am | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . |
+@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 45
