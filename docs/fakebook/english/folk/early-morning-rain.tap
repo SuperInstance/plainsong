@@ -1,0 +1,24 @@
+**TRACK: Early Morning Rain**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | C . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | C . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . |
+@guitar | e3-g3-b3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | G . . . | C . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

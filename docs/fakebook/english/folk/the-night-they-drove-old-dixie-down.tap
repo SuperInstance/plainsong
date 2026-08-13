@@ -1,0 +1,28 @@
+**TRACK: The Night They Drove Old Dixie Down**
+[MetaData]
+key: A major | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Steady, mournful
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | A . . . | A . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel:
