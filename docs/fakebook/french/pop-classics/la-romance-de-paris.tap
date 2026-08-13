@@ -1,0 +1,26 @@
+**TRACK: La Romance de Paris**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . |
+        | G7 . . . | C . . . | F . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 50
+@guitar | g2-b2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . |
+        | G7 . . . | C . . . | E7 . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 50
+@guitar | g2-b2-d3 . . . | c2-e2-g2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+        | F . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | vel: 60
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 55
