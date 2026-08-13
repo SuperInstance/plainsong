@@ -1,0 +1,22 @@
+**TRACK: Polonaise in A-flat major, Op. 53 "Heroic"**
+[MetaData]
+key: Ab | tempo: 116 | subdivision: 8th
+time: 3/4 | mood: Majestic
+
+[V1] (Verse - 4 Bars)
+Chords: | Ab . . . | Eb . . . | Ab . . . | Eb . . . |
+Melody: | Ab4 . C5 . Eb5 . | Eb4 . G4 . Bb4 . | Ab4 . C5 . Eb5 . | Eb4 . G4 . Bb4 . |
+Lyrics: | la la la la la la | la la la la la la | la la la la la la | la la la la la la |
+@piano | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 65
+
+[V2] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . | Db . . . | Eb . . . |
+Melody: | Db5 . F5 . Ab5 . | Ab4 . C5 . Eb5 . | Db5 . F5 . Ab5 . | Eb4 . G4 . Bb4 . |
+Lyrics: | tra la la la la la | tra la la la la la | tra la la la la la | tra la la la la la |
+@piano | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Eb . . . | Fm . . . | Eb . . . |
+Melody: | Ab4 . C5 . Eb5 . | Eb4 . G4 . Bb4 . | F4 . Ab4 . C5 . | Eb4 . G4 . Bb4 . |
+Lyrics: | ho la la la la la | ho la la la la la | ho la la la la la | ho la la la la la |
+@piano | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | f2-ab2-c3 . . . | eb2-g2-bb2 . . . | vel: 75

@@ -1,0 +1,28 @@
+**TRACK: Prelude in D-flat major, Op. 28 No. 15 "Raindrop"**
+[MetaData]
+key: Db | tempo: 69 | subdivision: 8th
+time: 4/4 | mood: Solemn, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . |
+Melody: | F4 . Ab4 . | Eb4 . Gb4 . |
+Lyrics: | rain - drop falls | on the roof - top |
+@piano | db3-f3-ab3 . . . | ab2-eb3-gb3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Ab . . . |
+Melody: | Db4 . F4 . | Eb4 . C4 . |
+Lyrics: | tears in the dark | mem - o - ries |
+@piano | bb2-db3-f3 . . . | ab2-eb3-ab3 . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | Gb . . . | Db . . . |
+Melody: | Ab4 . Gb4 . | F4 . Db4 . |
+Lyrics: | let the storm pass | o - ver me |
+@piano | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Ab . . . | Db . . . |
+Melody: | Eb4 . Db4 . | Db4 . . . |
+Lyrics: | rain fades a - way | peace at last |
+@piano | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | vel: 40

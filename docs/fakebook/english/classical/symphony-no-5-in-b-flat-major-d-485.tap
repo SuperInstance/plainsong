@@ -1,0 +1,16 @@
+**TRACK: Symphony No. 5 in B-flat major, D. 485 - Allegro (First Theme)**
+[MetaData]
+key: Bb | tempo: 104 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Bb . . . | F . . . | Bb . . . | Eb . . . | Bb/F . . . | F . . . |
+Melody: | B3 . D4 . | F4 . . . | B3 . D4 . | F4 . . . | A3 . C4 . | Eb4 . . . | D4 . B3 . | F4 . . . |
+Lyrics: | la la la la | la la la | la la la la | la la la | la la la la | la la la | la la la la | la la la |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | C7 . . . | F . . . | Bb . . . | F/C . . . | C7 . . . |
+Melody: | A3 . C4 . | E4 . . . | A3 . C4 . | E4 . . . | F4 . A3 . | D4 . . . | C4 . A3 . | E4 . . . |
+Lyrics: | tra la la la | tra la la | tra la la la | tra la la | tra la la la | tra la la | tra la la la | tra la la |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
