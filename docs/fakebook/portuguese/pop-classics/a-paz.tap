@@ -1,0 +1,20 @@
+**TRACK: A Paz**
+[MetaData]
+key: Fm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7alt . . . | Cm7 . . . | C7 . . . |
+@guitar | f1-ab1-c2-eb2 . . . | bb1-d2-f2-ab2 . . . | eb1-g1-bb1-d2 . . . | ab1-c2-eb2-g2 . . . | d1-f1-ab1-c2 . . . | g1-b1-d2-f2 . . . | c1-eb1-g1-bb1 . . . | c1-e1-g1-bb1 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7alt . . . | Cm7 . . . | G7b9 . . . |
+@guitar | f1-ab1-c2-eb2 . . . | bb1-d2-f2-ab2 . . . | eb1-g1-bb1-d2 . . . | ab1-c2-eb2-g2 . . . | d1-f1-ab1-c2 . . . | g1-b1-d2-f2 . . . | c1-eb1-g1-bb1 . . . | g1-b1-d2-f2-ab2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Abmaj7 . . . | Db7 . . . | Ebmaj7 . . . | C7alt . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | G7b9 . . . |
+@guitar | ab1-c2-eb2-g2 . . . | db1-f2-ab2-cb3 . . . | eb1-g1-bb1-d2 . . . | c1-e1-g1-bb1-db2 . . . | f1-ab1-c2-eb2 . . . | bb1-d2-f2-ab2 . . . | eb1-g1-bb1-d2 . . . | g1-b1-d2-f2-ab2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7b5 . . . | G7b9 . . . | Cm7 . . . | F7 . . . |
+@guitar | d1-f1-ab1-c2 . . . | g1-b1-d2-f2-ab2 . . . | c1-eb1-g1-bb1 . . . | f1-a1-c2-eb2
