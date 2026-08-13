@@ -1,0 +1,24 @@
+**TRACK: La Gozadera**
+[MetaData]
+key: Cm | tempo: 95 | subdivision: 16th
+time: 4/4 | mood: Festive Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Cm . . . | Cm . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . | Cm . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50
