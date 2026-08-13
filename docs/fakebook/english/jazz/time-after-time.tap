@@ -1,0 +1,24 @@
+**TRACK: Time After Time**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
+| Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
+| Fm . . . | Db . . . | Ab . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | Bb7 . . . |
+| Eb7 . . . | Ab . . . | Db . . . | Eb7 . . . |
+@guitar | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bbm . . . | Eb7 . . . | Ab . . . | F7 . . . |
+| Bbm . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
+@guitar | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | f2-a2-c3 . . . | vel: 55

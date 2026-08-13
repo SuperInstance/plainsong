@@ -1,0 +1,24 @@
+**TRACK: Solitude**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Melancholic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am6 . . . | Dm6 . . . | Am6 . . . | E7#9 . . . |
+@comp | a2-e3-a3-c4 . . . | d2-a3-f3-c4 . . . | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am6 . . . | Dm6 . . . | Fmaj7 . . . | E7b9 . . . |
+@comp | a2-e3-a3-c4 . . . | d2-a3-f3-c4 . . . | f2-a3-c4-e4 . . . | e2-g#3-b3-d4 . . . | vel: 50
+
+[B1] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . |
+@comp | d2-a3-c4-f4 . . . | g2-b3-d4-f4 . . . | c2-e3-g3-b3 . . . | f2-a3-c4-e4 . . . | vel: 55
+
+[B2] (Bridge - 8 Bars)
+Chords: | Dm7b5 . . . | G7b9 . . . | Cmaj7 . . . | E7#9 . . . |
+@comp | d2-f3-a3-c4 . . . | g2-b3-d4-f4 . . . | c2-e3-g3-b3 . . . | e2-g#3-b3-d4 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am6 . . . | Dm6 . . . | Am6 . . . | E7#9 . . . |
+@comp | a2-e3-a3-c4 . . . | d2-a3-f3-c4 . . . | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | vel: 45

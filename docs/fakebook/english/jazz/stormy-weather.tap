@@ -1,0 +1,31 @@
+**TRACK: Stormy Weather**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Melancholic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+| F . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | bb2-db3-f3 . . . |
+| f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+| F . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | bb2-db3-f3 . . . |
+| f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
+| Gm7 . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . |
+| g2-bb2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm7 . . . | C7 . . . | Am7b5 . . . | D7 . . . |
+@guitar | g2-bb2-d3 . . . | c2-e2-g2 . . . | a2-c3-eb3 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V3] (Final Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+| F . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | bb2

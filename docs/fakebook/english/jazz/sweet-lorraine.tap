@@ -1,0 +1,24 @@
+**TRACK: Sweet Lorraine**
+[MetaData]
+key: F | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | C7 . . . | F . . . | D7 . . . | Gm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | C7 . . . | F . . . | A7 . . . | Dm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | f1-a1-c2 . . . | a1-c#1-e1 . . . | d1-f1-a1 . . . | c1-e1-g1 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | C7 . . . | F . . . | D7 . . . | Gm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F7 . . . | Bb . . . | F7 . . . | Bb . . . |
+@guitar | f1-a1-c1-eb1 . . . | bb1-d2-f2 . . . | f1-a1-c1-eb1 . . . | bb1-d2-f2 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | C7 . . . | F . . . | A7 . . . | Dm . . . | C7 . . . |
+@guitar | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-bb1-d2 . . . | c1-e1-g1 . . . | f1-a1-c2 . .
