@@ -1,0 +1,24 @@
+**TRACK: Ahebak Aktar**
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-a3-d4 . . . | bb2-f3-bb3 . . . | f2-a3-c4 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+@guitar | d3-a3-d4 . . . | bb2-f3-bb3 . . . | g2-d3-g3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Bb . . . |
+@guitar | bb2-f3-bb3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | bb2-f3-bb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | A . . . | Dm . . . | A . . . |
+@guitar | g2-d3-g3 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 50
