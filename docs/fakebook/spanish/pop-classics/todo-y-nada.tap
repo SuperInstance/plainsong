@@ -1,0 +1,24 @@
+**TRACK: Todo y Nada**
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Dramatic
+
+[V1] (Verse - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | f2-c3-f3 . . . | vel: 50
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-g3-c4 . . . | d2-a2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | D . . . |
+@guitar | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | c3-g3-c4 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | F . . . | Bb . . . | D . . . |
+@guitar | c3-g3-c4 . . . | f2-c3-f3 . . . | bb2-f3-bb3 . . . | d2-a2-d3 . . . | vel: 58
+
+[OUT] (Outro - 2 Bars)
+Chords: | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 45

@@ -1,0 +1,31 @@
+**TRACK: Cosas de la Vida - Eros Ramazzotti (Spanish version)**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . |
+| G . . . | D/F# . . . | Em . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 55
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . |
+| G . . . | D/F# . . . | Em . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 55
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+| C . . . | G . . . | D . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | vel: 60
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+| C . . . | G . . . | D . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2
