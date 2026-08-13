@@ -1,0 +1,73 @@
+**TRACK: Mad World**
+key: F#m | tempo: 92 | swing: 0% | subdivision: 8th
+style: melancholic, piano, slow 4/4
+
+[intro]
+chords:
+  F#m | A | D | Bm | F#m | A | D | Bm
+melody:
+  (rest 8 beats) | (rest 8 beats) | (rest 8 beats) | (rest 8 beats)
+@player piano: soft arpeggios, low dynamics, sustain pedal
+
+[verse1]
+chords:
+  F#m | A | D | Bm | F#m | A | D | Bm
+  F#m | A | D | Bm | F#m | A | D | Bm
+melody:
+  F#4 A4 C#5 | A4 F#4 E4 | D4 E4 F#4 | B3 D4 F#4 (hold)
+  F#4 A4 C#5 | A4 F#4 E4 | D4 E4 F#4 | B3 D4 E4 (hold)
+lyrics:
+  All a-round me are fa-mil-iar fa-ces
+  Worn out pla-ces, worn out fa-ces
+  Bright and ear-ly for their dai-ly rac-es
+  Go-ing no-where, go-ing no-where
+@player piano: melody in right hand, block chords left hand, light pedal
+
+[chorus]
+chords:
+  D | A | Bm | F#m | D | A | Bm | E
+  D | A | Bm | F#m | D | A | Bm | E
+melody:
+  D4 F#4 A4 | A3 C#4 E4 | B3 D4 F#4 | F#3 A3 C#4
+  D4 F#4 A4 | A3 C#4 E4 | B3 D4 F#4 | E3 G#3 B3 (hold)
+lyrics:
+  And I find it kind-a fun-ny, I find it kind-a sad
+  The dreams in which I'm dy-ing are the best I've ev-er had
+  I find it hard to tell you, I find it hard to take
+  When peo-ple run in cir-cles, it's a ver-y, ver-y mad world
+@player piano: melody with more sustain, chords arpeggiated, dynamics swell
+
+[verse2]
+chords:
+  F#m | A | D | Bm | F#m | A | D | Bm
+  F#m | A | D | Bm | F#m | A | D | Bm
+melody:
+  F#4 A4 C#5 | A4 F#4 E4 | D4 E4 F#4 | B3 D4 F#4 (hold)
+  F#4 A4 C#5 | A4 F#4 E4 | D4 E4 F#4 | B3 D4 E4 (hold)
+lyrics:
+  Chil-dren wait-ing for the day they feel good
+  Hap-py birth-day, hap-py birth-day
+  And I feel the way that ev-ery child should
+  Sit and lis-ten, sit and lis-ten
+@player piano: melody slightly louder, left hand adds octaves, pedal increased
+
+[chorus2]
+chords:
+  D | A | Bm | F#m | D | A | Bm | E
+  D | A | Bm | F#m | D | A | Bm | E (final E hold)
+melody:
+  D4 F#4 A4 | A3 C#4 E4 | B3 D4 F#4 | F#3 A3 C#4
+  D4 F#4 A4 | A3 C#4 E4 | B3 D4 F#4 | E3 G#3 B3 (hold 4 beats)
+lyrics:
+  And I find it kind-a fun-ny, I find it kind-a sad
+  The dreams in which I'm dy-ing are the best I've ev-er had
+  I find it hard to tell you, I find it hard to take
+  When peo-ple run in cir-cles, it's a ver-y, ver-y mad world
+@player piano: full dynamics, final chord sustained, then fade out
+
+[outro]
+chords:
+  F#m (hold 8 beats) | (rest)
+melody:
+  (rest 8 beats)
+@player piano: single low F# octave, let ring, then silence

@@ -1,0 +1,26 @@
+**TRACK: Mad World**
+[MetaData]
+key: F#m | tempo: 75 | swing: 0% | subdivision: 8th
+
+[Intro]
+Chords: | F#m . | A . | D . | Bm . |
+Melody: | F#4 . | A4 . | D4 . | B4 . |
+@piano | F#3 A3 C#4 F#4 | A3 C#4 E4 A4 | D3 F#3 A3 D4 | B2 D3 F#3 B3 | vel: 60
+
+[V1]
+Chords: | F#m . | A . | D . | Bm . |
+Melody: | F#4 . E4 . | D4 . C#4 . | D4 . E4 . | F#4 . . . |
+Lyrics: | All a - round me are fa - mil - iar fa - ces |
+@piano | F#3 A3 C#4 F#4 | A3 C#4 E4 A4 | D3 F#3 A3 D4 | B2 D3 F#3 B3 | vel: 60
+
+[V1b]
+Chords: | F#m . | A . | D . | Bm . |
+Melody: | A4 . G#4 . | F#4 . E4 . | D4 . C#4 . | B3 . . . |
+Lyrics: | worn out pla - ces, worn out fa - ces |
+@piano | F#3 A3 C#4 F#4 | A3 C#4 E4 A4 | D3 F#3 A3 D4 | B2 D3 F#3 B3 | vel: 60
+
+[C]
+Chords: | D . | A . | Bm . | F#m . |
+Melody: | D5 . C#5 . | B4 . A4 . | B4 . A4 . | F#4 . E4 . |
+Lyrics: | And I find it kind - a fun - ny, I find it kind - a sad |
+@guitar | D3 F#3 A3 D4 | A3 C#4 E4 A4 | B2 D3 F#3 B3 | F#3 A3 C#4 F#4 | vel: 70

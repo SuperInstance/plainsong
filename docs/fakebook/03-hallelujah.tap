@@ -1,0 +1,36 @@
+**TRACK: Hallelujah**
+key: C | tempo: 60 | swing: 0% | subdivision: 8th
+
+[intro]
+Chords: C | Am | C | Am | F | G | C | G
+Melody: (rest) | (rest) | (rest) | (rest) | (rest) | (rest) | (rest) | (rest)
+@player: piano, arpeggiate each chord as 8th notes (root-5th-3rd-5th pattern)
+
+[verse1]
+Chords: C | Am | C | Am | F | G | C | G
+Melody: C4 E4 G4 | A4 G4 E4 | C4 E4 G4 | A4 G4 E4 | F4 A4 C5 | G4 B4 D5 | C5 B4 G4 | G4 A4 G4
+Lyrics: I heard there was a secret chord | That David played and it pleased the Lord | But you don't really care for music, do you? | Well it goes like this: the fourth, the fifth | The minor fall and the major lift | The baffled king composing Hallelujah
+@player: piano arpeggios, voice enters on beat 1 of first line, sustain last syllable of each phrase
+
+[chorus]
+Chords: F | G | C | Am | F | G | E7 | Am
+Melody: A4 A4 A4 | G4 G4 G4 | C5 C5 C5 | A4 A4 A4 | F4 F4 F4 | G4 G4 G4 | E4 E4 E4 | A4 A4 (hold)
+Lyrics: Hallelujah, Hallelujah | Hallelujah, Hallelujah | Hallelujah, Hallelujah | Hallelujah, Hallelujah
+@player: arpeggios continue, add soft pad on E7, voice holds final note 4 beats
+
+[verse2]
+Chords: C | Am | C | Am | F | G | C | G
+Melody: C4 E4 G4 | A4 G4 E4 | C4 E4 G4 | A4 G4 E4 | F4 A4 C5 | G4 B4 D5 | C5 B4 G4 | G4 A4 G4
+Lyrics: Your faith was strong but you needed proof | You saw her bathing on the roof | Her beauty and the moonlight overthrew you | She tied you to a kitchen chair | She broke your throne and she cut your hair | And from your lips she drew the Hallelujah
+@player: same as verse1, add light bass note on beat 1 of each chord
+
+[chorus2]
+Chords: F | G | C | Am | F | G | E7 | Am
+Melody: A4 A4 A4 | G4 G4 G4 | C5 C5 C5 | A4 A4 A4 | F4 F4 F4 | G4 G4 G4 | E4 E4 E4 | A4 A4 (hold)
+Lyrics: Hallelujah, Hallelujah | Hallelujah, Hallelujah | Hallelujah, Hallelujah | Hallelujah, Hallelujah
+@player: arpeggios, add subtle strings on E7, voice holds final note
+
+[outro]
+Chords: C | Am | C | Am | F | G | C | (rest)
+Melody: (rest) | (rest) | (rest) | (rest) | (rest) | (rest) | C5 (hold 4 beats) | (rest)
+@player: arpeggios fade out, final C chord sustained with piano, let ring 4 beats, then silence

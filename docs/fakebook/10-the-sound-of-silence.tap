@@ -1,0 +1,85 @@
+**TRACK: The Sound of Silence**
+key: Am | tempo: 108 | swing: 0% | subdivision: 8th  
+style: folk, arpeggiated guitar, 4/4
+
+---
+
+**[Intro]**
+Chords: Am | Am | Am | Am  
+Melody: (rest)  
+Lyrics: (instrumental)  
+@player guitar: `Am: (0,2,2,1,0,0) arpeggio pattern: 8th-note down-up, root on A string`  
+@player bass: `Am: root A (0,2,2,1,0,0) — half notes`  
+@player drums: `soft brush pattern, kick on 1 & 3, snare on 2 & 4 (ghost)`
+
+---
+
+**[Verse 1]**
+Chords: Am | Am | Am | Am | F | F | C | C | G | G | Am | Am  
+Melody: (phrase 1: "Hello darkness, my old friend")  
+Lyrics:  
+Hello darkness, my old friend  
+I've come to talk with you again  
+Because a vision softly creeping  
+Left its seeds while I was sleeping  
+And the vision that was planted in my brain  
+Still remains  
+Within the sound of silence  
+
+@player guitar: `arpeggio per chord, 8th notes, pattern: (root, 5th, 3rd, 5th) repeated`  
+@player bass: `root notes on beats 1 & 3, fifth on beat 3 of F and C`  
+@player drums: `steady 8th-note hi-hat, kick on 1 & 3, snare on 2 & 4`  
+@player vocals: `melody contour: Am (low), F (rise), C (peak), G (fall), Am (resolve)`
+
+---
+
+**[Verse 2]**
+Chords: Am | Am | Am | Am | F | F | C | C | G | G | Am | Am  
+Melody: (phrase 2: "In restless dreams I walked alone")  
+Lyrics:  
+In restless dreams I walked alone  
+Narrow streets of cobblestone  
+'Neath the halo of a street lamp  
+I turned my collar to the cold and damp  
+When my eyes were stabbed by the flash of a neon light  
+That split the night  
+And touched the sound of silence  
+
+@player guitar: `same arpeggio, add light fingerpicking variation on F and C (add 4th string)`  
+@player bass: `add passing tone on beat 4 of G (G#) to lead into Am`  
+@player drums: `add rimshot on snare for accent at end of each phrase`  
+@player vocals: `slightly more intense, hold longer on "silence"`
+
+---
+
+**[Chorus]**
+Chords: F | F | C | C | G | G | Am | Am | F | F | C | C | G | G | Am | Am  
+Melody: (phrase 3: "And in the naked light I saw")  
+Lyrics:  
+And in the naked light I saw  
+Ten thousand people, maybe more  
+People talking without speaking  
+People hearing without listening  
+People writing songs that voices never share  
+And no one dare  
+Disturb the sound of silence  
+
+@player guitar: `arpeggio with fuller voicing, add 2nd string on C and G for brightness`  
+@player bass: `play root on 1, fifth on 3, root on 4 (walking feel)`  
+@player drums: `add floor tom on beat 3 of each bar, snare stays on 2 & 4`  
+@player vocals: `harmony enters on "people talking" — parallel 3rds above melody`
+
+---
+
+**[Outro - Instrumental tag]**
+Chords: Am | Am | F | F | C | C | G | G | Am (hold)  
+Melody: (none, guitar solo arpeggio)  
+Lyrics: (none)  
+@player guitar: `repeat intro arpeggio, then final Am with long ring, let ring 4 beats`  
+@player bass: `root A sustained, fade out`  
+@player drums: `brush swells, then stop on final Am, cymbal roll on last bar`  
+@player vocals: `(no vocals — fade out with guitar)`
+
+---
+
+**End of Track**

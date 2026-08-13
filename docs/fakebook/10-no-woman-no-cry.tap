@@ -1,0 +1,20 @@
+**TRACK: No Woman No Cry**
+[MetaData]
+key: C | tempo: 72 | swing: 0% | subdivision: 8th
+
+[Intro]
+Chords: | C . G . | Am . F . | C . G . | Am . F . |
+Melody: | (rest) . | (rest) . | (rest) . | (rest) . |
+@piano | C3 E3 G3 . | G2 B2 D3 . | A2 C3 E3 . | F2 A2 C3 . | vel: 60
+
+[V1]
+Chords: | C . G . | Am . F . | C . G . | Am . F . |
+Melody: | G3 A3 B3 . | C4 . B3 A3 | G3 . E3 . | F3 E3 D3 . | C3 . D3 E3 | D3 . C3 . |
+Lyrics: | No wom-an, no cry. | No wom-an, no cry. | No wom-an, no | cry. Said, | no wom-an, no | cry. |
+@piano | C3 E3 G3 . | G2 B2 D3 . | A2 C3 E3 . | F2 A2 C3 . | C3 E3 G3 . | G2 B2 D3 . | vel: 60
+
+[C]
+Chords: | F . G . | C . G . | F . G . | C . G . |
+Melody: | F4 . E4 D4 | C4 . D4 E4 | F4 . E4 D4 | C4 . B3 C4 | D4 . E4 . |
+Lyrics: | So no wom-an, no | cry. No wom-an, no | cry. So no wom-an, no | cry. Said, | no wom-an, no | cry. |
+@guitar | F3 A3 C4 . | G3 B3 D4 . | C4 E4 G4 . | G3 B3 D4 . | F3 A3 C4 . | G3 B3 D4 . | vel: 70
