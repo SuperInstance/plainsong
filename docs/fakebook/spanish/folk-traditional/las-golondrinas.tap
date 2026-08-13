@@ -1,0 +1,28 @@
+**TRACK: Las Golondrinas**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . E4 . | G4 . E4 . | B3 . D4 . |
+Lyrics: | A - diós, mi bien, | me voy a au - sen - | tar, me voy a o - | tras tierras, a llo - rar |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . E4 . | G4 . E4 . | B3 . D4 . |
+Lyrics: | Las go - lon - dri - | nas vuel - ven, las | vuel - vo a ver, pe - | ro tú no vuel - ves |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | G . . . |
+Melody: | A4 . G4 . | F4 . E4 . | D4 . C4 . | B3 . D4 . |
+Lyrics: | Y en mi pe - cho | que - da el do - lor, | de tu au - sen - | cia, mi a - mor |
+@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | E7 . . . |
+Melody: | A3 . C4 . | B3 . A3 . |
+Lyrics: | (hum) . . . | (hum) . . . |
+@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 45

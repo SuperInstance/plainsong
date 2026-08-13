@@ -1,0 +1,16 @@
+**TRACK: El Peje**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . . . | A3 . C4 . | B3 . D4 . |
+Lyrics: | El pe je na - da en el rí - o | su a - le - grí - a es na - dar | el pe - je can - ta y son - rí - e | cuan - do el a - gua vie - ne a bai - lar |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | E7 . . . |
+Melody: | F4 . A4 . | G4 . B4 . | C5 . . . | B4 . D4 . |
+Lyrics: | na - da, na - da, pe - je bo - ni - to | na - da, na - da, sin des - can - sar | el rí - o es tu ca - mi - no | y tu can - to es li - ber - tad |
+@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 55
