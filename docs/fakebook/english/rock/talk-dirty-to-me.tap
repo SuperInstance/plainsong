@@ -1,0 +1,24 @@
+**TRACK: Talk Dirty to Me**
+[MetaData]
+key: E | tempo: 128 | subdivision: 8th
+time: 4/4 | mood: Energetic
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b3-e4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . | B . . . | A . . . |
+@guitar | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | a2-e3-a3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b3-e4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | B . . . | A . . . | B . . . |
+@guitar | c#3-g#3-c#4 . . . | b1-f#2-b2 . . . | a2-e3-a3 . . . | b1-f#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . | B . . . | A . . . |
+@guitar | a2-e3-a3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | a2-e3-a3 . . . | vel: 70
