@@ -1,0 +1,31 @@
+**TRACK: Eu Disse Adeus**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Melancholic Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+| F . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | d3-a3-d4 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+| F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | d3-a3-d4 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . |
+| F . . . | G . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-e3-a3 . . . | vel: 60
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | E7 . . . |
+@guitar | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+| F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c

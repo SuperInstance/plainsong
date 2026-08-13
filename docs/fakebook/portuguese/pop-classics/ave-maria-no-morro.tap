@@ -1,0 +1,29 @@
+**TRACK: Ave Maria no Morro**
+[MetaData]
+key: F | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
+@bass | f2 . . . | d2 . . . | bb1 . . . | c2 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@bass | f2 . . . | d2 . . . | g2 . . . | c2 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
+@bass | bb1 . . . | f2 . . . | c2 . . . | f2 . . . | vel: 60
+@guitar | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C7 . . . | Am . . . | D7 . . . |
+@bass | g2 . . . | c2 . . . | a2 . . . | d2 . . . | vel: 55
+@guitar | g2-bb2-d3 . . . | c2-e2-g2 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C7 F . . |
+@bass | f2 . . . | d2 . . . | bb1 . . . | c2 f2 . . | vel: 50
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 f2-a2-c3 . | vel: 55
