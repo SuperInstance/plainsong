@@ -1,0 +1,16 @@
+**TRACK: Star Light, Star Bright**
+[MetaData]
+key: F | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . | C7 . . |
+Melody: | A3 . C4 . | B3 . A3 . |
+Lyrics: | Star light, star bright | first star I see to-night |
+@piano | f2-a2-c3 . . | g2-b2-c3 . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . | C7 . . |
+Melody: | G3 . A3 . | F3 . . . |
+Lyrics: | I wish I may, I wish I might | have this wish I wish to-night |
+@piano | f2-a2-c3 . . | g2-b2-c3 . . | vel: 50

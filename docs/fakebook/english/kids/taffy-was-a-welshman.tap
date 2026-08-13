@@ -1,0 +1,16 @@
+**TRACK: Taffy Was a Welshman**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
+Lyrics: | Taffy was a Welsh-man, Taffy was a thief, | Taffy came to my house and stole a piece of beef, | Taffy was a Welsh-man, Taffy was a thief, | Taffy came to my house and stole a piece of beef, |
+@piano | d2-a2-d3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A3 . C4 . | B3 . G3 . | A3 . F3 . | E3 . C#3 . |
+Lyrics: | Went to my house, stole a leg of mutton, | Went to my house, stole a piece of bread, | Taffy was a Welsh-man, Taffy was a thief, | Taffy came to my house and stole a piece of beef, |
+@piano | f1-a2-c3 . . . | c2-e2-g2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 55
