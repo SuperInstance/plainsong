@@ -1,0 +1,24 @@
+**TRACK: Chuva**
+[MetaData]
+key: Gm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-eb3-g3 . . . | d2-a2-d3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-eb3-g3 . . . | d2-a2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | D . . . |
+@guitar | bb2-d3-f3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Gm . . . | Eb . . . | D . . . |
+@guitar | c3-eb3-g3 . . . | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | d2-a2-d3 . . . | vel: 45
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm . . . | Gm . . . | Gm . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 40

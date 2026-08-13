@@ -1,0 +1,24 @@
+**TRACK: Fado Português**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 58
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
