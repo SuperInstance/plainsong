@@ -1,0 +1,20 @@
+**TRACK: Cicerenella**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Lively
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . | E7 . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
+@guitar | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d2-f3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Am . | E7 . | Am . | E7 . | Dm . | Am . | E7 . | Am . |
+@guitar | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | e2-g#3-b3 . | d2-f3-a3 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . | C . | G . | E7 . |
+@guitar | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | e2-g#3-b3 . | vel: 60
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Am . | E7 . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
+@guitar | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d2-f3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
