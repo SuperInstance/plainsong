@@ -1,0 +1,24 @@
+**TRACK: Die by the Sword**
+[MetaData]
+key: E | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | B5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | B5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | A5 . . . | G5 . . . | E5 . . . | B5 . . . |
+@guitar | a1-e2-a2 . . . | g1-d2-g2 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | C5 . . . | B5 . . . | A5 . . . | G5 . . . |
+@guitar | c2-g2-c3 . . . | b1-f#2-b2 . . . | a1-e2-a2 . . . | g1-d2-g2 . . . | vel: 65
+
+[OUT] (Outro - 2 Bars)
+Chords: | E5 . . . | E5 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60

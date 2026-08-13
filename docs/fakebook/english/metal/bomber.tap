@@ -1,0 +1,20 @@
+**TRACK: Bomber**
+[MetaData]
+key: E | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | A . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | G . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 65
