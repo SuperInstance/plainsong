@@ -1,0 +1,24 @@
+**TRACK: Fruta Fresca**
+[MetaData]
+key: Bb minor | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Bbm . . . | F . . . |
+@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Bbm . . . | F . . . |
+@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | F . . . |
+@guitar | db1-f1-ab1 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gb . . . | F . . . |
+@guitar | gb1-bb1-db2 . . . | f1-a1-c2 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bbm . . . | Bbm . . . |
+@guitar | bb1-db2-f2 . . . | bb1-db2-f2 . . . | vel: 50
