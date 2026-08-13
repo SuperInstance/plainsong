@@ -1,0 +1,16 @@
+**TRACK: La Chanson du cidre**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | C#4 . E4 . |
+Lyrics: | Quand le ci-dre est doux, | On en boit chez nous, | Quand le ci-dre est preux, | On en boit à deux. |
+@piano | d2-a2-d3 . . . | a1-c#2-e2 . . . | d2-a2-d3 . . . | a1-c#2-e2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | F4 . A4 . | E4 . G4 . | D4 . F4 . | C#4 . E4 . |
+Lyrics: | Ah! verse en-core, | Mon cher ca-ma-rade, | Le ci-dre est là, | Pour notre jo-li temps. |
+@piano | f1-a1-c2 . . . | c1-e1-g1 . . . | d2-a2-d3 . . . | a1-c#2-e2 . . . | vel: 50

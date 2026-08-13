@@ -1,0 +1,16 @@
+**TRACK: Le Soleil et la lune**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . C4 . | D4 . B3 . |
+Lyrics: | Le so - leil et la lu - ne | se pour - sui - vent dans le ciel | l'un le jour l'au - tre la nuit | ja - mais ils ne se re - trou - vent |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+Melody: | A3 . C4 . | F4 . E4 . | D4 . B3 . | A3 . . . |
+Lyrics: | Et l'on dit qu'ils s'ai - ment | mais ils ne se voi - ent ja - mais | l'un s'en va l'au - tre ar - ri - ve | dans l'é - ter - nel re - gard |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

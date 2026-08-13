@@ -1,0 +1,16 @@
+**TRACK: Le Vin de Bourgogne**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . | D . . | G . . | D . . | G . . | C . . | D . . | G . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . C4 . | B3 . D4 . | E4 . G4 . | D4 . B3 . | G3 . . . |
+Lyrics: | Le vin de Bour-gogne | Est un vin jo-li | Le vin de Bour-gogne | Est un vin jo-li | Il fait chan-ter les filles | Et dan-ser les gar-çons | Le vin de Bour-gogne | Est un vin jo-li |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . | G . . | D . . | G . . |
+Melody: | E4 . G4 . | D4 . B3 . | A3 . C4 . | B3 . . . |
+Lyrics: | Trin-quons, trin-quons | À la san-té du roi | Vi-ve le vin de Bour-gogne | Et son bon ter-roir |
+@piano | c2-e2-g2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 60
