@@ -1,0 +1,30 @@
+**TRACK: Roop Tera Mastana**
+[MetaData]
+key: Bbm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Bbm . . . | Gb . . . |
+@guitar | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | vel: 50
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Bbm . . . |
+@guitar | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | ab1-eb2-ab2 . . . | bb1-f2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Bbm . . . | Gb . . . |
+@guitar | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | vel: 52
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Bbm . . . |
+@guitar | bb1-f2-bb2 . . . | gb1-db2-gb2 . . . | ab1-eb2-ab2 . . . | bb1-f2-bb2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm . . . | F . . . | Bbm . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | f1-c2-f2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | vel: 60
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Bbm . . . |
+@guitar | gb1-db2-gb2 . . . | ab1-eb2-ab2 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ebm . . . | Bbm . . . | Ebm . . . | F . . . |
+@guitar | eb1-bb2-eb2 . . . | bb1-f2-bb2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Bbm . . . |
+@guitar

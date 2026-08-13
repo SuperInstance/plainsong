@@ -1,0 +1,24 @@
+**TRACK: Chaiyya Chaiyya**
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D . . . | Gm . . . | D . . . |
+@guitar | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | d2-f#2-a2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Eb . . . | F . . . | D . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | D . . . | Cm . . . | D . . . |
+@guitar | c2-eb2-g2 . . . | d2-f#2-a2 . . . | c2-eb2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D . . . | Gm . . . | D . . . |
+@guitar | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | d2-f#2-a2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Eb . . . | F . . . | D . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 65
