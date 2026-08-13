@@ -1,0 +1,22 @@
+**TRACK: Sato no Aki**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . C4 . |
+Lyrics: | a - ki no sa - to | yo - ni ta - ke | no o - to | hi - to - shi - ki |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . C4 . |
+Lyrics: | ka - ze - no o - to | wa - bi - shi - ki | a - ki no yo - | na - ga - me |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | A4 . G4 . | E4 . F4 . | D4 . E4 . | C4 . A3 . |
+Lyrics: | sa - to - no a - ki | ko - ko - ro - shi - zu | ka - na - shi - ki | yo - no na - me |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

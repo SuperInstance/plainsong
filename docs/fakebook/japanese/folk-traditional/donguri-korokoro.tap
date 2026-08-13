@@ -1,0 +1,22 @@
+**TRACK: Donguri Korokoro**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 G4 C5 . | D5 B4 G4 . | E4 G4 C5 . | D5 B4 G4 . |
+Lyrics: | Don-gu-ri ko-ro-ko-ro | don-bu-ri-ko | o-ke no-na-ka-de | o-ke no-na-ka-de |
+@piano | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 F4 A4 . | G4 E4 G4 . | D5 B4 G4 . | C5 . . . |
+Lyrics: | ha-ji-ke-te wa-rat-te | to-ba-ke-re-ba | ko-ro-ko-ro o-ke no | na-ka |
+@piano | f2-a2-c3-f3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 G4 C5 E5 | A4 F4 C4 . | E4 G4 C5 E5 | D5 B4 G4 . |
+Lyrics: | don-gu-ri ko-ro-ko-ro | o-ke no-na-ka | don-gu-ri ko-ro-ko-ro | sa- yo-na-ra |
+@piano | c3-e3-g3-c4 . . . | f2-a2-c3-f3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | vel: 60
