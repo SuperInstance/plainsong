@@ -1,0 +1,22 @@
+**TRACK: The Almanac**
+[MetaData]
+key: F | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+Melody: | F4 . A4 . | C5 . . B4 | A4 . F4 . | D4 . . . |
+Lyrics: | The al - ma - nac | tells of the year | in sun and rain | and har - vest cheer |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 48
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | C . . . |
+Melody: | F4 . A4 . | C5 . . B4 | A4 . G4 . | F4 . . . |
+Lyrics: | It marks the months | with leaf and flow'r | and guides the plow | through ev' - ry hour |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | F . . . |
+Melody: | D4 . F4 . | A4 . C5 . | B4 . G4 . | F4 . . . |
+Lyrics: | Turn the page, | know the sign, | al - man - ac | in time |
+@piano | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 55

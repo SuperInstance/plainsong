@@ -1,0 +1,28 @@
+**TRACK: The Sailor's Grave**
+[MetaData]
+key: Dm | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | A4 . F4 . | C4 . D4 . | E4 . . . |
+Lyrics: | The | sail - or's | grave is | deep . |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+Melody: | D4 . F4 . | A4 . G4 . | F4 . E4 . | D4 . . . |
+Lyrics: | And | cold the | wa - ters | sleep . |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A4 . C5 . | B4 . A4 . | G4 . F4 . | E4 . . . |
+Lyrics: | No | stone up - | on the | sand . |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A7 . . . |
+Melody: | D4 . F4 . | A4 . G4 . | F4 . E4 . | D4 . . . |
+Lyrics: | But | the wave - | rolls o'er | the deep . |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 50
