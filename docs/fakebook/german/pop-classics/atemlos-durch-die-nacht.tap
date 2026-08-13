@@ -1,0 +1,22 @@
+**TRACK: Atemlos durch die Nacht**
+[MetaData]
+key: C#m | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Euphoric
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . | C#m . . . | A . . . | E . . . | B . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . | F#m . . . | G# . . . | C#m . . . | G# . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | f#2-a2-c#3 . . . | g#2-c#3-e3 . . . | c#3-e3-g#3 . . . | g#2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . | A . . . | E . . . | B . . . | B . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 62
+
+[BR] (Bridge - 8 Bars)
+Chords: | F#m . . . | C#m . . . | A . . . | E . . . | F#m . . . | C#m . . . | G# . . . | G# . . . |
+@guitar | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | g#2-c#3-e3 . . . | g#2-c#3-e3 . . . | vel: 58
+
+[OUT]

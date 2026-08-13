@@ -1,0 +1,20 @@
+**TRACK: Sonderzug nach Pankow**
+[MetaData]
+key: Dm | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . | Bb . . . | F . . . | C . . . | C . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C . . . | Am . . . | Dm . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | vel: 50
