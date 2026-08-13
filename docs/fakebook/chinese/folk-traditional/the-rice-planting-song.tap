@@ -1,0 +1,16 @@
+**TRACK: The Rice Planting Song**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle, work-song
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | F . . . | C . . . |
+Melody: | C4 . E4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . |
+Lyrics: | Plant the rice, | in the field, | bend your back, | with the yield |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . F4 . | E4 . C4 . | D4 . G4 . | C4 . . . |
+Lyrics: | Sing and sway, | all the day, | rice will grow, | we will sow |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50

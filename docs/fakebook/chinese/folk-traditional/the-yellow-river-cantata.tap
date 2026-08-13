@@ -1,0 +1,34 @@
+**TRACK: The Yellow River Cantata**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Solemn, Mighty
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | A4 . F4 . | D4 . C4 . | D4 . . . |
+Lyrics: | The Yel - low | Riv - er flows | from the moun - tains | high and wide |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
+Melody: | F4 . E4 . | D4 . C4 . | A3 . C4 . | D4 . . . |
+Lyrics: | O - ver plains and | val - leys deep, | our home - land | calls to thee |
+@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A4 . A4 . | G4 . E4 . | F4 . D4 . | C4 . D4 . |
+Lyrics: | Rise, oh ri - ver, | roar and thun - der, | guard our peo - ple | for - ev - er - more |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | A . . . |
+Melody: | Bb4 . A4 . | F4 . D4 . | F4 . E4 . | D4 . . . |
+Lyrics: | From the east - ern | sea to the west, | let the an - them | ring |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+Melody: | D4 . . . | . . . . |
+Lyrics: | Yel - low | Riv - er |
+@piano | d3-f3-a3 . . . | d3-f3
