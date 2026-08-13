@@ -1,0 +1,16 @@
+**TRACK: Busan Taryeong**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | E4 . . . |
+Lyrics: | 부 산 항 아 | 배 떠 나 간 | 다 니 임 야 | 잘 있 거 라 |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | Dm . . . | E7 . . . |
+Melody: | A4 . G4 . | F4 . E4 . | D4 . C4 . | B3 . . . |
+Lyrics: | 돌 아 오 는 | 길 에 만 나 | 자 어 여 차 | 차 차 수 심 |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | d2-f3-a3 . . . | e2-g#3-b3 . . . | vel: 55
