@@ -1,0 +1,22 @@
+**TRACK: Le Roi des conscrits**
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 2/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . | A . | Dm . | A . | Dm . | F . | C . | Dm . |
+Melody: | D4 . | C#4 . | D4 . | C#4 . | D4 . | F4 . | E4 . | D4 . |
+Lyrics: | Quand le | roi des | cons-crits | pas-se | Dans nos | vil-lages | en-flam-més | Il dit |
+@piano | d3-f3-a3 . | a2-c#3-e3 . | d3-f3-a3 . | a2-c#3-e3 . | d3-f3-a3 . | f2-a2-c3 . | c3-e3-g3 . | d3-f3-a3 . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . | A . | Dm . | A . | Dm . | F . | C . | Dm . |
+Melody: | F4 . | E4 . | D4 . | C#4 . | D4 . | A3 . | A3 . | D4 . |
+Lyrics: | Aux jeu-nes | fil-les du | pa-y-s | “O-uvrez | vos por-tes | ce soir | je suis | le roi” |
+@piano | d3-f3-a3 . | a2-c#3-e3 . | d3-f3-a3 . | a2-c#3-e3 . | d3-f3-a3 . | f2-a2-c3 . | c3-e3-g3 . | d3-f3-a3 . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . | C . | Dm . | A . |
+Melody: | A3 . | G3 . | F3 . | E3 . |
+Lyrics: | Le roi des | cons-crits | c’est le | vent |
+@piano | f2-a2-c3 . | c3-e3-g3 . | d3-f3-a3 . | a2-c#3-e3 . | vel: 50

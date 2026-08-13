@@ -1,0 +1,22 @@
+**TRACK: La Fille aux cheveux de lin**
+[MetaData]
+key: Gb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Calm, flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Gb . . . | Db . . . |
+Melody: | Gb4 . F4 . | Eb4 . Db4 . |
+Lyrics: | La fille aux cheveux de lin, |
+@piano | gb2-b2-db3-gb3 . . . | db2-f2-ab3-db3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . |
+Melody: | Db4 . Eb4 . | Gb4 . F4 . |
+Lyrics: | Sur la lande, loin du chemin, |
+@piano | bbm2-db3-f3-bb3 . . . | gb2-bb2-db3-gb3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Gb . . . |
+Melody: | Ab4 . Gb4 . | F4 . Eb4 . |
+Lyrics: | Ses yeux doux et son sourire, |
+@piano | db2-f2-ab3-db3 . . . | gb2-bb2-db3-gb3 . . . | vel: 50

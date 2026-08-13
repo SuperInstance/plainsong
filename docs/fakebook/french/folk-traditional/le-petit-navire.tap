@@ -1,0 +1,16 @@
+**TRACK: Le Petit Navire**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . . . | E4 . C4 . | D4 . . . |
+Lyrics: | Il é-tait un pe-tit na-vi-re | Qui n'a-va-it ja-mais na-vi-gué | Ohé! Ohé! | Il par-tit pour un long voy-age |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Ohé, ohé, pe-tit na-vi-re | Ohé, ohé, va voguer | Sur les flots bleus de la mer | Jus-qu'au bout de l'ho-ri-zon |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
