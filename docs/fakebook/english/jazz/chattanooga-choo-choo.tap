@@ -1,0 +1,24 @@
+**TRACK: Chattanooga Choo Choo**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Upbeat Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . | C . . . | C . . . | G7 . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 58
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3

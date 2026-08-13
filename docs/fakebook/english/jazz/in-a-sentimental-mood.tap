@@ -1,0 +1,24 @@
+**TRACK: In a Sentimental Mood**
+[MetaData]
+key: Fm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Dreamy
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Dbmaj7 . . . | Fm7 . . . | Dbmaj7 . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | f2-ab2-eb3 . . . | db2-f2-ab2 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . | Dbmaj7 . . . |
+@guitar | bb1-db2-f2 . . . | eb1-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | vel: 45
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm7b5 . . . | C7 . . . | Fm7 . . . | Bbm7 . . . |
+@guitar | g1-bb1-db2 . . . | c2-e2-bb2 . . . | f2-ab2-eb3 . . . | bb1-db2-f2 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Eb7 . . . | Abmaj7 . . . | Dbmaj7 . . . | G7b9 . . . |
+@guitar | eb1-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | g1-b1-f2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | C7 . . . | Fm . . . | Fm . . . | Fm . . . |
+@guitar | c2-e2-bb2 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | vel: 40

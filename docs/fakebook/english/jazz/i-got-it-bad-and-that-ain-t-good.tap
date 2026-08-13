@@ -1,0 +1,26 @@
+**TRACK: I Got It Bad (and That Ain't Good)**
+[MetaData]
+key: F | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 50
+Chords: | Fmaj7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 55
+Chords: | A7 . . . | Dm7 . . . | G7 . . . | C7 . . . |
+@guitar | a2-c#3-e3-g3 . . . | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb6 . . . | Bbm6 . . . | Fmaj7 . . . | Am7 D7 . . . |
+@guitar | bb2-d3-f3-g3 . . . | bb2-db3-f3-ab3 . . . | f2-a2-c3-e3 . . . | a2-c3-e3-g3 d2-f#3-a3-c4 . . . | vel: 60
+Chords: | Gm7 . . . | C7 . . . | Fmaj7 . . . | C7 . . . |
+@guitar | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | c2-e2-g2-bb2 . . . | vel: 60
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g2

@@ -1,0 +1,26 @@
+**TRACK: Puttin' on the Ritz**
+[MetaData]
+key: C | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 62
+Chords: | Dm . . . | G . . . | C . . . | G . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | D7 . . . | G . . . | G7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3-f3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55

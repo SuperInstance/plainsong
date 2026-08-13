@@ -1,0 +1,24 @@
+**TRACK: Cottontail**
+[MetaData]
+key: Bb | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . | Gm . . . | C7 . . . | F7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Ab7 . . . | Bb . . . | F7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
