@@ -1,0 +1,22 @@
+**TRACK: El Toro Mata**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | F . . . |
+Melody: | A3 . C4 . | F4 . E4 . | A3 . C4 . | F4 . E4 . |
+Lyrics: | El to-ro ma-ta | ma-ta ma-ta | El to-ro ma-ta | ma-ta ma-ta |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | Am . . . | E . . . | Am . . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . C4 . |
+Lyrics: | si no fue-ra por | el to-ro | si no fue-ra por | el to-ro |
+@piano | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | E . . . |
+Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . D4 . |
+Lyrics: | ma-ta ma-ta | ma-ta ma-ta | el to-ro ma-ta | ma-ta ma-ta |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 55

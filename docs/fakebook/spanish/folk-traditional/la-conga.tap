@@ -1,0 +1,16 @@
+**TRACK: La Conga**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Festive
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
+Melody: | A3 . C4 . | A3 . C4 . | D4 . F4 . | E4 . D4 . |
+Lyrics: | La con-ga, la con-ga | se bai-la en la ca-lle | con tam-bor y cla-ve | y a-le-grí-a en el al-ma |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | e2-g#2-b2-e3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . E4 . | F4 . A4 . | G4 . E4 . C4 . | B3 . D4 . E4 . |
+Lyrics: | ¡Ven a bai-lar la con-ga! | ¡Siem-pre con go-zo y paz! | ¡Mue-ve tus pies al com-pás! | ¡Que la con-ga no se va! |
+@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f3 . . . | c3-e3-g3-c4 . . . | e2-g#2-b2-e3 . . . | vel: 65
