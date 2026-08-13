@@ -1,0 +1,29 @@
+**TRACK: A National Acrobat**
+[MetaData]
+key: Em | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Heavy, brooding
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+| Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+| Em . . . | C . . . | G . . . | B . . . |
+@guitar | e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 52
+| e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | b1-f#2-b2 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | Em . . . | D . . . |
+@guitar | a1-c2-e2 . . . | c2-e2-g2 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+| Em . . . | C . . . | G . . . | B . . . |
+@guitar | e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 60
+| e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | b1-f#2-b2 . . . | vel: 63
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | vel: 40
