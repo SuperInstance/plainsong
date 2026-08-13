@@ -1,0 +1,30 @@
+**TRACK: L'importante è finire**
+[MetaData]
+key: Bb | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 58
+Chords: | Dm . . . | Gm . . . | C7 . . . | F . . . |
+@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 65
+Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Eb . . . | Cm . . . | F . . . |
+@guitar | d3-f3-a3 . . . | eb2-g2-bb2 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 .

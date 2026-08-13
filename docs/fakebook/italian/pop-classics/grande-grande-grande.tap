@@ -1,0 +1,26 @@
+**TRACK: Grande grande grande**
+[MetaData]
+key: Cm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Dramatic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Cm . . . | Fm . . . | G . . . |
+@guitar | f2-ab2-c3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Eb . . . | Ab . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | vel: 65
+Chords: | Fm . . . | G . . . | Cm . . . | Cm . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 45
