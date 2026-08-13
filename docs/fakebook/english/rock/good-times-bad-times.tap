@@ -1,0 +1,33 @@
+**TRACK: Good Times Bad Times**
+[MetaData]
+key: E minor | tempo: 128 | subdivision: 8th
+time: 4/4 | mood: Heavy Blues Rock
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | G . . . | G . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 60
+@bass | e2 . . . | e2 . . . | g2 . . . | g2 . . . | vel: 55
+@guitar | e3-g3-b3 . . . | e3-g3-b3 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 60
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Em . . . | Em . . . | G . . . | G . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 65
+@bass | e2 . . . | e2 . . . | g2 . . . | g2 . . . | vel: 58
+@guitar | e3-g3-b3 . . . | e3-g3-b3 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | C . . . | D . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 70
+@bass | c3 . . . | d3 . . . | c3 . . . | d3 . . . | vel: 60
+@guitar | c4-e4-g4 . . . | d4-f#4-a4 . . . | c4-e4-g4 . . . | d4-f#4-a4 . . . | vel: 68
+
+[V3] (Verse 3 - 8 Bars)
+Chords: | Em . . . | Em . . . | G . . . | G . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 72
+@bass | e2 . . . | e2 . . . | g2 . . . | g2 . . . | vel: 62
+@guitar | e3-g3-b3 . . . | e3-g3-b3 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 65
+@bass | e

@@ -1,0 +1,24 @@
+**TRACK: Takin' Care of Business**
+[MetaData]
+key: D | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . | D . . . | A . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | G . . . | D . . . | A . . . | D . . . | G . . . | A . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[B] (Bridge - 4 Bars)
+Chords: | G . . . | A . . . | Bm . . . | A . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . | D . . . | A . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | G . . . | D . . . | A . . . | D . . . | G . . . | A . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . |

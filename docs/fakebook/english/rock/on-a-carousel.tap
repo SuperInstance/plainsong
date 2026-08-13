@@ -1,0 +1,32 @@
+**TRACK: On a Carousel**
+[MetaData]
+key: G | tempo: 124 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 55
+| G . . . | D . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 62
+| Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | Em . . . | C . . . |
+@guitar | c2-e2-g2 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 55
+| G . . . | D . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 62
+| Em . . . | C . . . | G . . . | D . . . |
+@g
