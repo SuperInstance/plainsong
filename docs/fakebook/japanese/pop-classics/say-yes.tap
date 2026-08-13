@@ -1,0 +1,24 @@
+**TRACK: Say Yes**
+[MetaData]
+key: Db | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Ballad-Rock
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Bbm . . . | Gb . . . | Ab . . . |
+@bass | db2 . . . | bbm2 . . . | gb2 . . . | ab2 . . . | vel: 50
+@keys | db3-f3-ab3 . . . | bbm3-db3-f3 . . . | gb3-bb3-db3 . . . | ab3-c3-eb3 . . . | vel: 45
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Db . . . | Bbm . . . | Gb . . . | Ab . . . |
+@bass | db2 . . . | bbm2 . . . | gb2 . . . | ab2 . . . | vel: 52
+@keys | db3-f3-ab3 . . . | bbm3-db3-f3 . . . | gb3-bb3-db3 . . . | ab3-c3-eb3 . . . | vel: 48
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Bbm . . . | Eb . . . | Ab . . . | Db . . . |
+@bass | gb2 . . . | db2 . . . | bbm2 . . . | eb2 . . . | ab2 . . . | db2 . . . | vel: 60
+@guitar | gb3-bb3-db3 . . . | db3-f3-ab3 . . . | bbm3-db3-f3 . . . | eb3-g3-bb3 . . . | ab3-c3-eb3 . . . | db3-f3-ab3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Ab . . . |
+@bass | bbm2 . . . | gb2 . . . | ab2 . . . | ab2 . . . | vel: 55
+@keys | bbm3-db3-f3 . . . | gb3-bb3-db3 . . . | ab3-c3-eb3 . . . | ab3-c3-eb3 . . . | vel: 50
