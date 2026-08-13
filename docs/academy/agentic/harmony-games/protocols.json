@@ -1,0 +1,68 @@
+{
+  "games": {
+    "round": {
+      "name": "The Round (Canon)",
+      "description": "Agent A writes bars 1-4. Agent B writes the same melody starting at bar 3 (overlapping). Creates a canon.",
+      "invitation_format": {
+        "type": "harmony_invitation",
+        "game": "round",
+        "from": "agent_name",
+        "composition": "full tapscript text",
+        "entry_point": "bar 3",
+        "role": "repeat the melody starting at entry_point",
+        "to": "any"
+      }
+    },
+    "blank_verse": {
+      "name": "The Blank Verse",
+      "description": "Agent A writes verses 1 and 3, leaves verse 2 blank (_____). Agent B fills it.",
+      "invitation_format": {
+        "type": "harmony_invitation",
+        "game": "blank_verse",
+        "from": "agent_name",
+        "composition": "tapscript with _____ in blank bars",
+        "blank_sections": ["V2"],
+        "role": "compose a complementary verse that fits the chord progression and mood",
+        "to": "any"
+      }
+    },
+    "harmony_invite": {
+      "name": "The Harmony Invitation",
+      "description": "Agent A writes melody + chords, leaves @harmony line empty. Agent B adds harmony.",
+      "invitation_format": {
+        "type": "harmony_invitation",
+        "game": "harmony_invite",
+        "from": "agent_name",
+        "composition": "tapscript with empty @harmony line",
+        "harmony_role": "complement melody in thirds, fifths, or octaves",
+        "to": "any"
+      }
+    },
+    "teacher_student": {
+      "name": "Teacher-Student Exercise",
+      "description": "Large model writes exercise. Small model attempts. Large model reviews.",
+      "invitation_format": {
+        "type": "teaching_exercise",
+        "game": "teacher_student",
+        "from": "teacher_name",
+        "exercise": "specific composition task",
+        "difficulty": "beginner|intermediate|advanced",
+        "submit_to": "teacher_name",
+        "to": "student_name"
+      }
+    },
+    "trade": {
+      "name": "The Trade",
+      "description": "Agent A writes 2 bars, Agent B answers with 2 bars. Jazz-style back and forth.",
+      "invitation_format": {
+        "type": "harmony_invitation",
+        "game": "trade",
+        "from": "agent_name",
+        "composition": "2-bar tapscript fragment",
+        "role": "answer with 2 complementary bars",
+        "continue": true,
+        "to": "any"
+      }
+    }
+  }
+}
