@@ -1,0 +1,26 @@
+**TRACK: Travessia**
+[MetaData]
+key: Am | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am7 . . . | Dm . . . | Dm7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-g3 . . . | d3-a3-d4 . . . | d3-a3-c4 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | G7 . . . | C . . . | C7M . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | c3-e3-b3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | Fm . . . | C . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60
+Chords: | F . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 45
