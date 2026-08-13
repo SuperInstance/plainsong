@@ -1,0 +1,28 @@
+**TRACK: Ain't No Way**
+[MetaData]
+key: Bbm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Soulful Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+| Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7#5 . . . |
+@guitar | x1-3-2-2-1 . . . | x-x-1-3-2-2 . . . | x-1-3-3-2-1 . . . | x-x-2-1-3-2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+| Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7#5 . . . |
+@guitar | x1-3-2-2-1 . . . | x-x-1-3-2-2 . . . | x-1-3-3-2-1 . . . | x-x-2-1-3-2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+| Gb7 . . . | F7 . . . | Bbm7 . . . | F7#5 . . . |
+@guitar | x1-3-2-2-1 . . . | x-x-1-3-2-2 . . . | x-1-3-3-2-1 . . . | x-x-2-1-3-2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db9 . . . | Gb9 . . . | Cb maj7 . . . | Fb9 . . . |
+| Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7#5 . . . |
+@guitar | x-x-2-1-3-2 . . . | x-x-3-2-1-2 . . . | x-3-2-1-1-1 . . . | x-x-3-2-2-1 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7#5 . . . |
+@guitar | x1-3-2-2-1 . . . | x-x-1-3-2-2 . . . | x-1-3-3-2-1 . . . | x-x-2-1-3-2 . . . | vel

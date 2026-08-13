@@ -1,0 +1,24 @@
+**TRACK: For Once in My Life**
+[MetaData]
+key: Ab | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving, Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Fm . . . | Bb7 . . . | Eb7 . . . |
+@guitar | f3-ab3-c4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Ab . . . |
+@guitar | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50

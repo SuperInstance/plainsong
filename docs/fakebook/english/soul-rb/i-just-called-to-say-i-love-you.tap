@@ -1,0 +1,28 @@
+**TRACK: I Just Called to Say I Love You**
+[MetaData]
+key: Bb | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Smooth
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Cm7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | f2-a2-eb3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Cm . . . | F . . . | F7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | f2-a2-eb3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Cm7 . . . | F7 . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | f2-a2-eb3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 45

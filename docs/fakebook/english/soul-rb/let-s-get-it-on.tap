@@ -1,0 +1,24 @@
+**TRACK: Let's Get It On**
+[MetaData]
+key: Eb | tempo: 82 | subdivision: 16th
+time: 4/4 | mood: Sensual
+
+[V1] (Verse - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | B7 . . . | E9 . . . | B7 . . . | E9 . . . |
+@guitar | b2-d#3-f#3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7 . . . | B7 . . . | F#m7 . . . | B7 . . . |
+@guitar | f#2-a2-c#3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | vel: 50

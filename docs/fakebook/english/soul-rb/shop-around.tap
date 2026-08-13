@@ -1,0 +1,24 @@
+**TRACK: Shop Around**
+[MetaData]
+key: Bb | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@bass | bb1 . . . | eb2 . . . | bb1 . . . | f1 . . . | vel: 50
+@keys | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@bass | bb1 . . . | eb2 . . . | bb1 . . . | f1 . . . | vel: 50
+@keys | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
+@bass | eb2 . . . | bb1 . . . | f1 . . . | bb1 . . . | vel: 60
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C7 . . . | F7 . . . | Bb . . . | F7 . . . |
+@bass | c2 . . . | f1 . . . | bb1 . . . | f1 . . . | vel: 55
+@keys | c2-e2-g2-bb2 . . . | f1-a1-c2-eb2 . . . | bb1-d2-f2 . . . | f1-a1-c2-eb2 . . . | vel: 55
