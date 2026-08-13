@@ -1,0 +1,32 @@
+**TRACK: Blow, Gabriel, Blow**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Brassy
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | G7 . . . | G7 . . . |
+| C . . . | C . . . | G7 . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | g2-b2-d3-f3 . . . |
+| c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+| G7 . . . | G7 . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . |
+| g2-b2-d3-f3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | F . . . |
+| C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . |
+| c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 68
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | F . . . |
+| C . . . | G7 . . . | C . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . |
+| c3-e3-g3 .
