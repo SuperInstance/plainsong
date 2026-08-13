@@ -1,0 +1,20 @@
+**TRACK: Eruption**
+[MetaData]
+key: A minor | tempo: 80 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[INTRO] (Intro - 2 Bars)
+Chords: | A5 . . . | A5 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 70
+
+[V1] (Verse - 2 Bars)
+Chords: | A5 . . . | Bb5 . . . |
+@guitar | a2-e3-a3 . . . | bb2-f3-bb3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | B5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-g3-c4 . . . | b2-f#3-b3 . . . | vel: 80
+
+[OUT] (Outro - 2 Bars)
+Chords: | A5 . . . | A5 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60

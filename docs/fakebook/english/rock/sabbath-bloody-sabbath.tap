@@ -1,0 +1,24 @@
+**TRACK: Sabbath Bloody Sabbath**
+[MetaData]
+key: Am | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Heavy, Menacing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E . . . |
+@riff | a2-a3-e3 . . . | a2-a3-e3 . . . | f2-c3-a3 . . . | e2-b2-e3 . . . | vel: 70
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@riff | a2-a3-e3 . . . | a2-a3-e3 . . . | f2-c3-a3 . . . | g2-d3-b2 . . . | vel: 72
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . |
+@riff | c3-g3-e3 . . . | c3-g3-e3 . . . | g2-d3-b2 . . . | g2-d3-b2 . . . | vel: 80
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | G . . . | F . . . | E . . . |
+@riff | f2-c3-a3 . . . | g2-d3-b2 . . . | f2-c3-a3 . . . | e2-b2-e3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E . . . |
+@riff | a2-a3-e3 . . . | a2-a3-e3 . . . | f2-c3-a3 . . . | e2-b2-e3 . . . | vel: 60

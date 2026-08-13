@@ -1,0 +1,20 @@
+**TRACK: Rocket Man**
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Eb . . . | F . . . | F . . . |
+@guitar | c2-eb2-g2 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
