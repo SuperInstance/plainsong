@@ -1,0 +1,24 @@
+**TRACK: Wayfaring Stranger**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | E . . . |
+@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 45

@@ -1,0 +1,20 @@
+**TRACK: The Water Is Wide**
+[MetaData]
+key: D | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | G . . | D . . | A . . | G . . | D . . |
+@guitar | d3-a3-d4 . . | a2-e3-a3 . . | b2-f#3-b3 . . | g2-d3-g3 . . | d3-a3-d4 . . | a2-e3-a3 . . | g2-d3-g3 . . | d3-a3-d4 . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | G . . | D . . | A . . | G . . | D . . |
+@guitar | d3-a3-d4 . . | a2-e3-a3 . . | b2-f#3-b3 . . | g2-d3-g3 . . | d3-a3-d4 . . | a2-e3-a3 . . | g2-d3-g3 . . | d3-a3-d4 . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | G . . | A . . | Bm . . | A . . |
+@guitar | g2-d3-g3 . . | a2-e3-a3 . . | b2-f#3-b3 . . | a2-e3-a3 . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | G . . | D . . | A . . | G . . | D . . |
+@guitar | d3-a3-d4 . . | a2-e3-a3 . . | b2-f#3-b3 . . | g2-d3-g3 . . | d3-a3-d4 . . | a2-e3-a3 . . | g2-d3-g3 . . | d3-a3-d4 . . | vel: 55
