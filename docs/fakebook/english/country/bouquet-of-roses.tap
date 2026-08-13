@@ -1,0 +1,20 @@
+**TRACK: Bouquet of Roses**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Sentimental Waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . | G7 . . |
+@guitar | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | g2-b2-f3 . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . | C . . |
+@guitar | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | c3-e3-g3 . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . |
+@guitar | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-f3 . . | c3-e3-g3 . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . | G7 . . | C . . | G7 . . |
+@guitar | d2-f#2-a2 . . | g2-b2-f3 . . | c3-e3-g3 . . | g2-b2-f3 . . | vel: 50

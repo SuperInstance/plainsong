@@ -1,0 +1,24 @@
+**TRACK: Down in the Valley**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Em . . . | D . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
