@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -298,11 +299,17 @@ class TestHostBridge(unittest.TestCase):
         self.assertEqual(text, "fenced")
 
     def test_command_mode_runs_a_subprocess(self):
+        # The running interpreter rather than a shell builtin: /bin/echo does
+        # not exist on Windows, and this also proves the prompt reaches the
+        # child on stdin rather than only appearing in its argv.
+        python = Path(sys.executable).as_posix()
         provider = build_provider(
-            "host", host_mode="command", host_command="/bin/echo hello-from-host"
+            "host",
+            host_mode="command",
+            host_command=f"{python} -c \"import sys; print('heard:', len(sys.stdin.read()) > 0)\"",
         )
         response = provider.complete(CompletionRequest(messages=[Message.user("hi")]))
-        self.assertIn("hello-from-host", response.text)
+        self.assertIn("heard: True", response.text)
 
 
 class TestEchoProvider(unittest.TestCase):
