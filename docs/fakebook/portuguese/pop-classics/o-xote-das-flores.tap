@@ -1,0 +1,26 @@
+**TRACK: O Xote das Flores**
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Bb . . . |
+@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | vel: 55
+Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Bb . . . |
+@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | vel: 55
+Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | A7 . . . | Dm . . . | A7 . . . |
+@guitar | bb2-d3-f3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 58

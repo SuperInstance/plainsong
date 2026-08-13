@@ -1,0 +1,26 @@
+**TRACK: O Bêbado e a Equilibrista**
+[MetaData]
+key: Gm | tempo: 82 | subdivision: 8th
+time: 4/4 | mood: Melancholic Drive
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm7 . . . | D7 . . . |
+| Gm . . . | Eb . . . | Cm7 . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 50
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm7 . . . | D7 . . . |
+| Bb . . . | Cm7 . . . | D7 . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 55
+@guitar | bb2-f3-bb3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+| Gm . . . | Eb . . . | Cm7 . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | f2-c3-f3 . . . | vel: 65
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | D7 . . . | Cm7 . . . | D7 . . . |
+@guitar | eb2-bb2-eb3 . . . | d3-a3-d4 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 45

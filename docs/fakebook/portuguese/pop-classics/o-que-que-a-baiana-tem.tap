@@ -1,0 +1,24 @@
+**TRACK: O Que É Que a Baiana Tem?**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 2/4 | mood: Samba
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . | Dm . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
+@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d3-a3-d4 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . | Dm . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
+@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d3-a3-d4 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . | G7 . | C . | A7 . | Dm . | G7 . | E7 . | E7 . |
+@guitar | d3-a3-d4 . | g2-b3-d4 . | c3-e3-g3 . | a2-c#3-e3 . | d3-a3-d4 . | g2-b3-d4 . | e2-g#3-b3 . | e2-g#3-b3 . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . | E7 . | Am . | E7 . |
+@guitar | f2-a2-c3 . | e2-g#3-b3 . | a2-e3-a3 . | e2-g#3-b3 . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . | Dm . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
+@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d3-a3-d4 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 55
