@@ -1,0 +1,22 @@
+**TRACK: La Chanson de l'oignon**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: March-like, playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | C . . . | E7 . . . |
+Melody: | A3 . A3 . | B3 . B3 . | C4 . C4 . | B3 . . . |
+Lyrics: | J’aime l’o - i - gnon | fry - é à l’huile, | J’aime l’o - i - gnon | car il est bon. |
+@piano | a2-e3-a3 . . . | g2-d3-g3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | C . . . | E7 . . . |
+Melody: | A3 . A3 . | B3 . B3 . | C4 . C4 . | B3 . . . |
+Lyrics: | J’aime l’o - i - gnon | fry - é à l’huile, | J’aime l’o - i - gnon | car il est bon. |
+@piano | a2-e3-a3 . . . | g2-d3-g3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | C4 . E4 . | D4 . . . |
+Lyrics: | Au - jour - d’hui | c’est la fê - te, | Au - jour - d’hui | c’est la fê - te. |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60

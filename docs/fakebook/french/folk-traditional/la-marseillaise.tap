@@ -1,0 +1,22 @@
+**TRACK: La Marseillaise**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: March
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E . . . |
+Melody: | A3 . C4 . E4 . . . | A3 . C4 . E4 . . . | F4 . A4 . F4 . E4 . | E4 . D4 . C4 . B3 . |
+Lyrics: | Al-lons en-fants de la pa-tri-e | Le jour de gloire est ar-ri-vé | Con-tre nous de la ty-ran-ni-e | L'é-ten-dard sang-lant est le-vé |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E . . . |
+Melody: | A3 . C4 . E4 . . . | A3 . C4 . E4 . . . | F4 . A4 . F4 . E4 . | E4 . D4 . C4 . B3 . |
+Lyrics: | En-ten-dez-vous dans les cam-pa-gnes | Mu-gir ces fé-ro-ces sol-dats | Ils vien-nent jus-que dans vos bras | É-gor-ger vos fils et vos com-pa-gnes |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . C5 . . . | B3 . D4 . G4 . . . | E4 . G4 . C5 . . . | B3 . D4 . G4 . . . |
+Lyrics: | Aux ar-mes ci-toy-ens | For-mez vos ba-ta-illons | Mar-chez mar-chez | Qu'un sang im-pur a-breu-ve nos sil-lons |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60

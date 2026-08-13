@@ -1,0 +1,22 @@
+**TRACK: Au clair de la lune**
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+Melody: | A3 . C4 . | E4 . . . | A3 . C4 . | E4 . . . |
+Lyrics: | Au clair de la lu - ne, mon a - mi Pier - rot |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+Melody: | A3 . C4 . | E4 . . . | A3 . C4 . | E4 . . . |
+Lyrics: | Prê - te - moi ta plu - me, pour é - crire un mot |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+Melody: | G3 . A3 . | C4 . . . | G3 . A3 . | C4 . . . |
+Lyrics: | Ma chan - delle est mor - te, je n'ai plus de feu |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
