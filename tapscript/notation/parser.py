@@ -46,6 +46,10 @@ MD_TITLE_RE = re.compile(r"^\s*#\s+(.+?)\s*$")
 SECTION_RE = re.compile(r"^\s*\[([^\]]+)\]\s*(?:\(([^)]*)\))?\s*$")
 LABEL_RE = re.compile(r"^\s*([A-Za-z][A-Za-z0-9 _-]{0,20})\s*:\s*(.*)$")
 OPTION_RE = re.compile(r"^\s*(vel|velocity|inst|instrument|program|pan|oct|octave)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
+# Stage options may also be written at the end of a player's note row. They are
+# only taken as options when the value reads as one, so a bar that happens to
+# start with the word stays a bar.
+STAGE_OPTION_RE = re.compile(r"^\s*(pos|position|speech|feel)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
 
 METADATA_KEYS = {
     "key", "tempo", "bpm", "swing", "subdivision", "time", "meter", "mood",
@@ -199,6 +203,7 @@ class Parser:
         self.sections: list[Section] = []
         self._current: Section | None = None
         self._saw_metadata_marker = False
+        self._in_stage = False
 
     # -- diagnostics ---------------------------------------------------------
 
@@ -245,10 +250,20 @@ class Parser:
         section = SECTION_RE.match(line)
         if section:
             name = section.group(1).strip()
+            self._in_stage = False
             if name.lower() in {"metadata", "meta", "header"}:
                 self._saw_metadata_marker = True
                 return
+            if name.lower() in {"stage", "hall", "room"}:
+                self._begin_stage()
+                return
             self._start_section(name, (section.group(2) or "").strip(), index)
+            return
+
+        # A [Stage] block runs until the next header, the way [MetaData] does.
+        # Its lines are geometry, not music, so they never reach the arranger.
+        if self._in_stage:
+            self._handle_stage(line, index)
             return
 
         if line.startswith("@"):
@@ -335,6 +350,74 @@ class Parser:
         else:
             self.meta.extra[key] = value
 
+    def _begin_stage(self) -> None:
+        """Start a ``[Stage]`` block, creating the stage the first time."""
+        from ..perform.stage import Stage
+
+        self._in_stage = True
+        self._finish_section()
+        if self.meta.stage is None:
+            self.meta.stage = Stage()
+
+    def _handle_stage(self, line: str, index: int) -> None:
+        from ..perform.stage import read_stage_line
+
+        stage = self.meta.stage
+        if stage is None:  # only reachable if _in_stage was set without a stage
+            return
+        before = len(stage.problems)
+        read_stage_line(stage, line, index)
+        for _line_number, message in stage.problems[before:]:
+            self._note(
+                "warning",
+                f"stage: {message}",
+                index,
+                hint="a stage row is `@name: pos 4,-6 | speech: brass | feel: -6ms`",
+                source=line,
+            )
+
+    def _stage_options(self, text: str) -> tuple[str, object] | None:
+        """Read a trailing ``pos: 4,-6`` cell, or return None to leave it alone."""
+        from ..perform.profiles import profile_for_name
+        from ..perform.stage import parse_duration, parse_position
+
+        option = STAGE_OPTION_RE.match(text)
+        if not option:
+            return None
+        key, value = option.group(1).lower(), option.group(2).strip()
+        if key in {"pos", "position"}:
+            point = parse_position(value)
+            return ("pos", point) if point else None
+        if key == "speech":
+            if profile_for_name(value) is not None:
+                return ("speech", value.strip().lower())
+            seconds = parse_duration(value)
+            return ("speech_seconds", seconds) if seconds is not None else None
+        seconds = parse_duration(value)
+        return ("feel", seconds) if seconds is not None else None
+
+    def _place_from_options(self, name: str, options: dict[str, object]) -> None:
+        """Fold inline stage options on a player row into the stage."""
+        from ..perform.stage import Placement, Stage
+
+        keys = {"pos", "speech", "speech_seconds", "feel"}
+        if not keys & set(options):
+            return
+        if self.meta.stage is None:
+            self.meta.stage = Stage()
+        key = name.strip().lower()
+        existing = self.meta.stage.placements.get(key)
+        position = options.get("pos") or (existing.position if existing else (0.0, 0.0))
+        self.meta.stage.placements[key] = Placement(
+            name=key,
+            position=position,  # type: ignore[arg-type]
+            speech_name=str(options.get("speech") or (existing.speech_name if existing else "")),
+            speech_override=options.get("speech_seconds")  # type: ignore[arg-type]
+            or (existing.speech_override if existing else None),
+            p_center_override=existing.p_center_override if existing else None,
+            feel=float(options.get("feel") or (existing.feel if existing else 0.0)),
+        )
+
     def _handle_role(self, role: str, payload: str, index: int, raw: str) -> None:
         self._ensure_section(index)
         cells = [Cell(tokens=self._tokenise(text, role), line=index) for text in split_cells(payload)]
@@ -371,6 +454,11 @@ class Parser:
         cells_text = split_cells(remainder)
         options: dict[str, object] = {}
         while cells_text:
+            staged = self._stage_options(cells_text[-1])
+            if staged is not None:
+                options[staged[0]] = staged[1]
+                cells_text.pop()
+                continue
             option = OPTION_RE.match(cells_text[-1])
             if not option:
                 break
@@ -390,6 +478,8 @@ class Parser:
             else:
                 options[key] = value
             cells_text.pop()
+
+        self._place_from_options(name, options)
 
         if not cells_text:
             self._append_line(

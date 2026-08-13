@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from ..llm.types import ToolSpec
+from ..perform import tools as perform_tools
 from ..runtime.config import Config, load_config
 
 MAX_READ_BYTES = 200_000
@@ -268,6 +269,7 @@ class ToolRegistry:
             _schema({"note": _string("What was decided and the reason.")}, ["note"]),
             self._record_decision,
         )
+        perform_tools.register(self)
 
     # -- handlers ------------------------------------------------------------
 

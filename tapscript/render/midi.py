@@ -8,6 +8,10 @@ file: one conductor track carrying tempo and metre, then one track per voice.
 ``pretty_midi`` and ``mido`` are never required. If they happen to be
 installed, nothing here changes -- they are only used for reading files back in
 :mod:`tapscript.render.backends`.
+
+Notes are written at their *emission* times: the moment a player or a sequencer
+has to act. On a piece that declares no stage that is the written time and this
+file is byte for byte what it always was. See ``docs/performance.md``.
 """
 
 from __future__ import annotations
@@ -127,8 +131,11 @@ class MidiWriter:
         events.append((0, 1, bytes([0xC0 | channel, track.program & 0x7F])))
 
         for note in track.notes:
-            start = self._ticks(note.start)
-            end = max(start + 1, self._ticks(note.end))
+            # Emission, not arrival: a MIDI file is an instruction to a player
+            # or a sequencer, and what it needs to be told is when to act. On a
+            # piece with no stage this is the written time, unchanged.
+            start = self._ticks(note.emission_time)
+            end = max(start + 1, self._ticks(note.emission_time + note.duration))
             pitch = max(0, min(127, int(note.pitch)))
             velocity = max(1, min(127, int(note.velocity)))
             events.append((start, 2, bytes([0x90 | channel, pitch, velocity])))

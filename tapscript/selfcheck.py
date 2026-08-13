@@ -243,3 +243,123 @@ def check_corpus() -> tuple[bool, str]:
     if failures:
         return False, f"{len(failures)} of {len(entries)} failed: {', '.join(failures[:5])}"
     return True, f"{len(entries)} library files parsed"
+
+
+# -- arrival-centric timing --------------------------------------------------
+
+STAGE_MUSIC = """**TRACK: Stage Sample**
+[MetaData]
+key: Dm | tempo: 96 | time: 4/4
+
+[A] (2 Bars)
+@timpani | d2 . . . | d2 . . . |
+@organ   | d3 . . . | a2 . . . |
+"""
+
+STAGE_BLOCK = """[Stage]
+listener: conductor
+temperature: 20
+@timpani: pos 4,-6 | speech: percussion
+@organ:   pos 0,-12 | speech: organ-large
+
+"""
+
+# The same music, with and without the stage. The pair is the control for
+# "declaring a stage changes nothing until you ask it to".
+STAGE_SAMPLE = STAGE_MUSIC.replace("[A]", STAGE_BLOCK + "[A]", 1)
+
+
+def check_stage_is_inert() -> tuple[bool, str]:
+    """Notation without a stage compiles to exactly what it always did."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+    from .render.midi import midi_bytes
+
+    plain = arrange(parse(SAMPLE))
+    if plain.stage is not None:
+        return False, "a file with no [Stage] block picked one up anyway"
+    solved = [note for _track, note in plain.iter_notes() if note.emission is not None]
+    if solved:
+        return False, f"{len(solved)} notes carry solved times without a stage"
+
+    written = midi_bytes(plain)
+    framed = midi_bytes(arrange(parse(SAMPLE), ArrangeOptions(frame="audience")))
+    if written != framed:
+        return False, "asking for a listener changed a file that has no stage"
+
+    # The same music with a stage, rendered in the score frame, is the control.
+    control = midi_bytes(arrange(parse(STAGE_MUSIC)))
+    scored = midi_bytes(arrange(parse(STAGE_SAMPLE), ArrangeOptions(frame="score")))
+    if control != scored:
+        return False, "the score frame did not reproduce the uncompensated render"
+    return True, f"{len(written)} bytes identical with and without a listener"
+
+
+def check_arrival_solver() -> tuple[bool, str]:
+    """Players act early by the right amount, and their sound lands together."""
+    from .notation import arrange, parse
+    from .perform.solve import analyse
+
+    arrangement = arrange(parse(STAGE_SAMPLE))
+    if arrangement.stage is None:
+        return False, "the [Stage] block was not read"
+
+    report = analyse(arrangement)
+    voices = {voice["voice"]: voice for voice in report["solution"]["voices"]}
+    if set(voices) != {"timpani", "organ"}:
+        return False, f"solved for {sorted(voices)}"
+
+    # 12 metres is 35ms at 20 degrees, and a large pipe takes 140ms to speak.
+    if not 33.0 <= voices["organ"]["propagation_ms"] <= 37.0:
+        return False, f"12 metres solved as {voices['organ']['propagation_ms']}ms"
+    if voices["organ"]["emission_ms"] > voices["timpani"]["emission_ms"]:
+        return False, "the organ is not acting before the timpani"
+    if report["solution"]["spread_ms"] > 1.0:
+        return False, f"arrivals are {report['solution']['spread_ms']}ms apart at the podium"
+
+    first = {
+        track.name: min(note.arrival_time for note in track.notes)
+        for track in arrangement.tracks
+    }
+    if abs(first["timpani"] - first["organ"]) > 1e-6:
+        return False, f"first arrivals differ by {abs(first['timpani'] - first['organ'])} beats"
+    if min(note.emission_time for _track, note in arrangement.iter_notes()) < 0.0:
+        return False, "somebody has to play before the piece starts"
+    return True, (
+        f"organ acts {abs(voices['organ']['emission_ms']):.0f}ms early, "
+        f"timpani {abs(voices['timpani']['emission_ms']):.0f}ms, arrivals within 1ms"
+    )
+
+
+def check_conducting() -> tuple[bool, str]:
+    """One gesture moves every voice's arrival together, their hands apart."""
+    from .notation import arrange, parse
+    from .perform.conduct import Gesture, conduct
+
+    written = arrange(parse(STAGE_SAMPLE))
+    conducted = conduct(written, [Gesture(kind="rubato", amount=-0.25, shape="step", span=8.0)])
+    if conducted.total_beats <= written.total_beats:
+        return False, "a rallentando did not make the music longer"
+
+    def arrivals(arrangement):
+        return {
+            track.name: min(note.arrival_time for note in track.notes)
+            for track in arrangement.tracks
+        }
+
+    def lead(arrangement, name):
+        track = next(item for item in arrangement.tracks if item.name == name)
+        note = min(track.notes, key=lambda item: item.start)
+        return note.arrival_time - note.emission_time
+
+    landing = arrivals(conducted)
+    if abs(landing["timpani"] - landing["organ"]) > 1e-6:
+        return False, "the gesture pulled the ensemble apart"
+    organ = lead(conducted, "organ") - lead(written, "organ")
+    timpani = lead(conducted, "timpani") - lead(written, "timpani")
+    if abs(organ) <= abs(timpani):
+        return False, "every voice's hands moved by the same amount"
+    return True, (
+        f"arrivals stayed together; the organ's lead moved {organ * 1000:.0f} thousandths of a "
+        f"beat against the timpani's {timpani * 1000:.0f}"
+    )

@@ -9,6 +9,11 @@ The pure-Python path avoids per-sample Python loops. Waveforms are built once
 per (voice, pitch) as a short block of whole cycles and repeated; envelopes are
 cached per (voice, length); mixing and enveloping run through ``map`` with
 ``operator`` callables so the inner loop stays in C.
+
+Notes are placed at their *arrival* times, because a render is a recording of
+what one listener hears. That is the opposite of the MIDI writer, which uses
+emission times; the two differ only on a piece that declares a stage. See
+``docs/performance.md``.
 """
 
 from __future__ import annotations
@@ -219,7 +224,10 @@ class Synthesiser:
         for track in arrangement.tracks:
             voice = voice_for_program(track.program, track.is_drum)
             for note in track.notes:
-                start = int((note.start / beats_per_second) * rate)
+                # Arrival, not emission: a render is what the listener hears,
+                # so a note goes where its sound gets to them. On a piece with
+                # no stage this is the written time, unchanged.
+                start = int((note.arrival_time / beats_per_second) * rate)
                 if start >= total_samples:
                     continue
                 duration_seconds = note.duration / beats_per_second

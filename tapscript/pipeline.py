@@ -60,6 +60,9 @@ class CompileResult:
         if self.audio_path:
             data["audio"] = str(self.audio_path)
             data["audio_backend"] = self.audio_backend
+        if self.arrangement is not None and self.arrangement.stage is not None:
+            data["stage"] = self.arrangement.stage.as_dict()
+            data["frame"] = self.arrangement.frame
         data["elapsed"] = {key: round(value, 3) for key, value in self.elapsed.items()}
         data["diagnostics"] = [diag.as_dict() for diag in self.diagnostics]
         return data
@@ -75,6 +78,13 @@ class CompileResult:
             voices = ", ".join(f"{t['name']} ({t['notes']})" for t in arrangement["tracks"]) or "none"
             lines.append(f"{arrangement['notes']} notes across {voices}")
             lines.append(f"length {arrangement['seconds']:g}s")
+        if self.arrangement is not None and self.arrangement.stage is not None:
+            stage = self.arrangement.stage
+            state = "compensated" if stage.compensate else "uncompensated"
+            lines.append(
+                f"stage: {len(stage.placements)} placed, heard at "
+                f"{self.arrangement.frame or stage.listener} ({state})"
+            )
         if self.midi_path:
             lines.append(f"midi  {self.midi_path}")
         if self.audio_path:
@@ -120,13 +130,25 @@ def compile_text(
     audio_backend: str = "auto",
     soundfont: str | None = None,
     report: CapabilityReport | None = None,
+    frame: str = "",
+    compensate: bool | None = None,
 ) -> CompileResult:
     """Parse, arrange and optionally write MIDI and audio.
 
     Passing ``midi=True``-like sentinel paths is not supported on purpose: pass
     a real path, or ``None`` to skip that output.
+
+    *frame* and *compensate* only matter for a piece that declares a ``[Stage]``
+    block: the first chooses whose ears the arrival times are solved for, the
+    second can turn the correction off so the render smears the way an
+    uncorrected ensemble does. See ``docs/performance.md``.
     """
     config = config or load_config()
+    if frame or compensate is not None:
+        arrange_overrides = dict(arrange_overrides or {})
+        arrange_overrides.setdefault("frame", frame)
+        if compensate is not None:
+            arrange_overrides.setdefault("compensate", compensate)
     report = report or probe()
     elapsed: dict[str, float] = {}
 

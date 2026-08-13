@@ -11,9 +11,12 @@ timing bug cannot corrupt round-tripped notation.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any, Iterator
+from typing import TYPE_CHECKING, Any, Iterator
 
 from .theory import Chord, Key
+
+if TYPE_CHECKING:  # imported for typing only -- perform/ depends on this module
+    from ..perform.stage import Placement, Stage
 
 # Line roles the parser recognises.
 ROLE_CHORDS = "chords"
@@ -155,6 +158,10 @@ class Metadata:
     swing: float = 0.0
     subdivision: str = "8th"
     extra: dict[str, str] = field(default_factory=dict)
+    stage: "Stage | None" = None
+    """Set when the file declares a ``[Stage]`` block. ``None`` means written
+    times are taken at face value, which is what everything did before
+    arrival-centric timing existed."""
 
     def as_dict(self) -> dict[str, Any]:
         return {
@@ -224,16 +231,35 @@ class Score:
 
 @dataclass
 class Note:
-    """A sounding note, positioned in beats from the start of the piece."""
+    """A sounding note, positioned in beats from the start of the piece.
+
+    ``start`` is the written time and always has been. When a piece declares a
+    stage, the solver fills in two more: ``emission``, when the player has to
+    act, and ``arrival``, when the sound reaches the listener the render is
+    made for. Both stay ``None`` otherwise, and both fall back to ``start``, so
+    nothing downstream has to know whether a stage was declared.
+    """
 
     start: float
     duration: float
     pitch: int
     velocity: int = 80
+    emission: float | None = None
+    arrival: float | None = None
 
     @property
     def end(self) -> float:
         return self.start + self.duration
+
+    @property
+    def emission_time(self) -> float:
+        """When the player acts. What a MIDI file or a performer needs."""
+        return self.start if self.emission is None else self.emission
+
+    @property
+    def arrival_time(self) -> float:
+        """When the sound is heard. What an audio render has to place."""
+        return self.start if self.arrival is None else self.arrival
 
 
 @dataclass
@@ -247,13 +273,19 @@ class Track:
     is_drum: bool = False
     notes: list[Note] = field(default_factory=list)
     instrument: str = "piano"
+    placement: "Placement | None" = None
+    """Where this voice stands, when the piece declares a stage."""
 
     def add(self, note: Note) -> None:
         self.notes.append(note)
 
     @property
     def duration(self) -> float:
-        return max((note.end for note in self.notes), default=0.0)
+        # Without a stage, arrival_time is start and this is the written end.
+        return max(
+            (max(note.end, note.arrival_time + note.duration) for note in self.notes),
+            default=0.0,
+        )
 
     def sort(self) -> None:
         self.notes.sort(key=lambda note: (note.start, note.pitch))
@@ -286,6 +318,10 @@ class Arrangement:
     chords: list[ChordEvent] = field(default_factory=list)
     diagnostics: list[Diagnostic] = field(default_factory=list)
     section_starts: list[tuple[str, float]] = field(default_factory=list)
+    stage: "Stage | None" = None
+    frame: str = ""
+    """The listener the emission and arrival times were solved for. Empty when
+    no stage was declared."""
 
     @property
     def total_beats(self) -> float:
@@ -305,7 +341,7 @@ class Arrangement:
                 yield track, note
 
     def summary(self) -> dict[str, Any]:
-        return {
+        data: dict[str, Any] = {
             "tracks": [
                 {
                     "name": track.name,
@@ -321,3 +357,6 @@ class Arrangement:
             "notes": self.note_count,
             "lyrics": len(self.lyrics),
         }
+        if self.stage is not None:
+            data["stage"] = {"frame": self.frame, "listener": self.stage.listener}
+        return data

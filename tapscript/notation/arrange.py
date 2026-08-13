@@ -74,6 +74,14 @@ class ArrangeOptions:
     chord_voicing_octave: int = 3
     max_chord_notes: int = 4
     transpose: int = 0
+    frame: str = ""
+    """Which listener to solve arrival times for. Empty means the one the
+    ``[Stage]`` block names, and ``score`` means no compensation at all. Has no
+    effect on a piece that does not declare a stage."""
+
+    compensate: bool | None = None
+    """Override the stage's own ``compensate`` setting. ``None`` leaves it
+    alone; ``False`` renders the errors instead of correcting them."""
 
 
 class Arranger:
@@ -316,7 +324,7 @@ class Arranger:
                 for note in track.notes:
                     note.pitch = max(0, min(127, note.pitch + self.options.transpose))
 
-        return Arrangement(
+        arrangement = Arrangement(
             meta=meta,
             tracks=tracks,
             lyrics=lyrics,
@@ -324,6 +332,28 @@ class Arranger:
             diagnostics=self.score.diagnostics + self.diagnostics,
             section_starts=section_starts,
         )
+        self._solve_performance(arrangement)
+        return arrangement
+
+    def _solve_performance(self, arrangement: Arrangement) -> None:
+        """Fill in emission and arrival times, if the piece declares a stage.
+
+        A piece with no ``[Stage]`` block never gets here, and one that has one
+        still keeps every written ``start`` untouched: the solved times sit
+        alongside them.
+        """
+        stage = arrangement.meta.stage
+        if stage is None:
+            return
+        from dataclasses import replace
+
+        from ..perform.solve import apply_to
+
+        if self.options.compensate is not None and self.options.compensate != stage.compensate:
+            # A copy, so that turning compensation off for one render does not
+            # rewrite the score everybody else is reading.
+            stage = replace(stage, compensate=self.options.compensate)
+        apply_to(arrangement, frame=self.options.frame, stage=stage)
 
     def _line_voice(self, line: Line, fallback_index: int) -> tuple[str, int, int]:
         role = line.role

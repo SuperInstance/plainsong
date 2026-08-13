@@ -132,6 +132,8 @@ def cmd_compile(args: argparse.Namespace, config: Config, out: Out) -> int:
         audio_backend=args.backend,
         soundfont=args.soundfont,
         arrange_overrides={"transpose": args.semitones} if args.semitones else None,
+        frame=args.frame,
+        compensate=False if args.no_compensate else None,
     )
 
     if not result.ok:
@@ -261,6 +263,32 @@ def cmd_check(args: argparse.Namespace, config: Config, out: Out) -> int:
         out.fail(f"{failures} of {checked} files have errors ({warnings} warnings)")
         return 1
     out.ok(f"{checked} file(s) checked, {warnings} warning(s)")
+    return 0
+
+
+def cmd_ensemble(args: argparse.Namespace, config: Config, out: Out) -> int:
+    from ..notation import parse
+    from ..notation.arrange import ArrangeOptions, arrange
+    from ..perform.solve import analyse, format_report
+
+    source = _resolve_notation(args.file, config, out)
+    if source is None:
+        return 2
+
+    score = parse(source.read_text(encoding="utf-8"), dialect=args.dialect, path=str(source))
+    if score.has_errors:
+        _diagnostics(out, score.errors(), str(source))
+        return 1
+    if score.meta.stage is None:
+        out.data({"stage": False})
+        out.warn(f"{source} declares no [Stage] block, so every voice is heard where it is written")
+        out.dim("add one to say where the players are -- see docs/performance.md")
+        return 0
+
+    options = ArrangeOptions(frame=args.frame, compensate=False if args.no_compensate else None)
+    report = analyse(arrange(score, options), frame=args.frame)
+    out.data(report)
+    out.say(format_report(report))
     return 0
 
 
@@ -668,7 +696,29 @@ def build_parser() -> argparse.ArgumentParser:
     compile_parser.add_argument("--soundfont", metavar="PATH", help="soundfont for the fluidsynth backend")
     compile_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
     compile_parser.add_argument("--semitones", type=int, default=0, help="transpose while compiling")
+    compile_parser.add_argument(
+        "--frame",
+        default="",
+        metavar="LISTENER",
+        help="whose ears to render for: conductor, audience, player:<name>, or score",
+    )
+    compile_parser.add_argument(
+        "--no-compensate",
+        action="store_true",
+        help="leave the stage uncorrected, so the render smears the way an uncued ensemble does",
+    )
     compile_parser.set_defaults(func=cmd_compile)
+
+    ensemble_parser = subparsers.add_parser(
+        "ensemble", help="report what each listener on the stage actually hears"
+    )
+    ensemble_parser.add_argument("file", help="a .tap file with a [Stage] block")
+    ensemble_parser.add_argument(
+        "--frame", default="", metavar="LISTENER", help="conductor, audience, player:<name>, score"
+    )
+    ensemble_parser.add_argument("--no-compensate", action="store_true", help="report the raw errors")
+    ensemble_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
+    ensemble_parser.set_defaults(func=cmd_ensemble)
 
     play_parser = subparsers.add_parser("play", help="compile and play")
     play_parser.add_argument("file", help="a .tap file or a library entry")
