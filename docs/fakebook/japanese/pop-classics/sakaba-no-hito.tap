@@ -1,0 +1,31 @@
+**TRACK: Sakaba no Hito**
+[MetaData]
+key: Am | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving, Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+        | G . . . | G . . . | C . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 55
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-g3-c4 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+        | G . . . | G . . . | C . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 55
+@guitar | g2-d3-g3 . . . | g2-d3-g3 . . . | c3-g3-c4 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+        | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+        | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3

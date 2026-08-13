@@ -1,0 +1,26 @@
+**TRACK: Hana no Uta**
+[MetaData]
+key: Gm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Bb . . . |
+        | Eb . . . | Cm . . . | D7 . . . | D7 . . . |
+@guitar | g2-d3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | b2-d3-f3 . . . | vel: 50
+@guitar | eb2-g2-bb3 . . . | c2-eb3-g3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Bb . . . |
+        | Eb . . . | Cm . . . | D7 . . . | Gm . . . |
+@guitar | g2-d3-g3 . . . | d2-f#3-a3 . . . | g2-d3-g3 . . . | b2-d3-f3 . . . | vel: 50
+@guitar | eb2-g2-bb3 . . . | c2-eb3-g3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | Gm . . . |
+        | Eb . . . | Bb . . . | D7 . . . | D7 . . . |
+@guitar | eb2-g2-bb3 . . . | b2-d3-f3 . . . | c2-eb3-g3 . . . | g2-b2-d3 . . . | vel: 65
+@guitar | eb2-g2-bb3 . . . | b2-d3-f3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | vel: 55

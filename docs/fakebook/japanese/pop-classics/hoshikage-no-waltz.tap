@@ -1,0 +1,24 @@
+**TRACK: Hoshikage no Waltz**
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . | D7 . . | Gm . . | D7 . . |
+@guitar | g2-bb2-d3 . . | d2-f#2-a2 . . | g2-bb2-d3 . . | d2-f#2-a2 . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . | Cm . . | D7 . . | D7 . . |
+@guitar | g2-bb2-d3 . . | c3-eb3-g3 . . | d2-f#2-a2 . . | d2-f#2-a2 . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . | Eb . . | Cm . . | D7 . . |
+@guitar | g2-bb2-d3 . . | eb2-g2-bb2 . . | c3-eb3-g3 . . | d2-f#2-a2 . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . | F7 . . | Eb . . | D7 . . |
+@guitar | bb2-d3-f3 . . | f2-a2-c3 . . | eb2-g2-bb2 . . | d2-f#2-a2 . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Gm . . | Cm . . | D7 . . | Gm . . |
+@guitar | g2-bb2-d3 . . | c3-eb3-g3 . . | d2-f#2-a2 . . | g2-bb2-d3 . . | vel: 45

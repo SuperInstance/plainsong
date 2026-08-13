@@ -1,0 +1,30 @@
+**TRACK: Ningyo no Koi**
+[MetaData]
+key: Gm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Dramatic
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Cm . . . |
+| Gm . . . | Eb . . . | D7 . . . | D7 . . . |
+@guitar | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . |
+| g2-bb2-d3 . . . | eb3-g3-bb3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Cm . . . |
+| Gm . . . | Eb . . . | D7 . . . | Gm . . . |
+@guitar | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . |
+| g2-bb2-d3 . . . | eb3-g3-bb3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | F7 . . . | Bb . . . | Eb . . . |
+| Gm . . . | D7 . . . | Gm . . . | D7 . . . |
+@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . |
+| g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | d2-f#2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | D7 . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm . . . | Eb . . . | D7 . . . | Gm . . . |
+@guitar | g2-bb2-d3 . . . | eb3-g3-bb3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | vel: 45
