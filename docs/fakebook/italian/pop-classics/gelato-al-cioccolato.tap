@@ -1,0 +1,27 @@
+**TRACK: Gelato al cioccolato**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+| E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+| C#m . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | E . . . |
+| A . . . | E . . . | B . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-b2 . . . | e2-b3-e4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | G#m . . . | A . . . | B . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | a2-c#3-e3 . . . | b1-d#2-f#2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 50

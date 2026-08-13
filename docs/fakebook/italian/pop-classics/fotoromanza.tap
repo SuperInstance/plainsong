@@ -1,0 +1,30 @@
+**TRACK: Fotoromanza**
+[MetaData]
+key: Dm | tempo: 128 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | c2-g2-c3 . . . | a1-e2-a2 . . . | vel: 55
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | c2-g2-c3 . . . | a1-e2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | c2-g2-c3 . . . | vel: 65
+Chords: | Dm . . . | Bb . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | A . . . | Dm . . . | A . . . |
+@guitar | g1-d2-g2 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | c2-g2-c3 . . . | a1-e2-a2 . . . | vel: 55
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | c2-g2-c3 . . . | a1-e2-a2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | c2-g2-c3 . . . | vel: 65
