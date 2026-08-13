@@ -31,4 +31,10 @@ description = "Each player acts early by speech plus travel plus p-centre, and t
 id = "conducting"
 kind = "python"
 run = "tapscript.selfcheck:check_conducting"
-description = "One gesture holds every voice's arrival together while their hands move apart"
+description = "One directive holds every voice's arrival together while their hands move apart"
+
+[[check]]
+id = "directives"
+kind = "python"
+run = "tapscript.selfcheck:check_directive_vocabulary"
+description = "anticipate moves the emission alone; push_forward moves the arrival with it"

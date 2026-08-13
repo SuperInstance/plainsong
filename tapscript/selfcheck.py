@@ -332,29 +332,28 @@ def check_arrival_solver() -> tuple[bool, str]:
 
 
 def check_conducting() -> tuple[bool, str]:
-    """One gesture moves every voice's arrival together, their hands apart."""
+    """One directive moves every voice's arrival together, their hands apart."""
     from .notation import arrange, parse
-    from .perform.conduct import Gesture, conduct
+    from .perform import conduct
 
     written = arrange(parse(STAGE_SAMPLE))
-    conducted = conduct(written, [Gesture(kind="rubato", amount=-0.25, shape="step", span=8.0)])
+    conducted = conduct.apply(
+        written,
+        {"directives": [{"action": "half_time", "intensity": 1.0, "duration_beats": 8}]},
+    )
     if conducted.total_beats <= written.total_beats:
-        return False, "a rallentando did not make the music longer"
-
-    def arrivals(arrangement):
-        return {
-            track.name: min(note.arrival_time for note in track.notes)
-            for track in arrangement.tracks
-        }
+        return False, "half time did not make the music longer"
 
     def lead(arrangement, name):
         track = next(item for item in arrangement.tracks if item.name == name)
         note = min(track.notes, key=lambda item: item.start)
         return note.arrival_time - note.emission_time
 
-    landing = arrivals(conducted)
+    landing = {
+        track.name: min(note.arrival_time for note in track.notes) for track in conducted.tracks
+    }
     if abs(landing["timpani"] - landing["organ"]) > 1e-6:
-        return False, "the gesture pulled the ensemble apart"
+        return False, "the directive pulled the ensemble apart"
     organ = lead(conducted, "organ") - lead(written, "organ")
     timpani = lead(conducted, "timpani") - lead(written, "timpani")
     if abs(organ) <= abs(timpani):
@@ -362,4 +361,50 @@ def check_conducting() -> tuple[bool, str]:
     return True, (
         f"arrivals stayed together; the organ's lead moved {organ * 1000:.0f} thousandths of a "
         f"beat against the timpani's {timpani * 1000:.0f}"
+    )
+
+
+def check_directive_vocabulary() -> tuple[bool, str]:
+    """anticipate moves the hands and leaves the sound; push_forward moves both."""
+    from .notation import arrange, parse
+    from .perform import conduct
+
+    written = arrange(parse(STAGE_SAMPLE))
+
+    def first(arrangement, name):
+        """The first note of a voice, with the global lead-in taken back off."""
+        track = next(item for item in arrangement.tracks if item.name == name)
+        note = min(track.notes, key=lambda item: item.start)
+        return (
+            note.emission_time - arrangement.lead_in,
+            note.arrival_time - arrangement.lead_in,
+        )
+
+    anticipated = conduct.apply(written, {"directives": [{"action": "anticipate", "intensity": 1.0}]})
+    pushed = conduct.apply(written, {"directives": [{"action": "push_forward", "intensity": 1.0}]})
+
+    for name in ("organ", "timpani"):
+        (base_emit, base_arrive) = first(written, name)
+        (early_emit, early_arrive) = first(anticipated, name)
+        (_ahead_emit, ahead_arrive) = first(pushed, name)
+        if abs(early_emit - base_emit) < 1e-9:
+            return False, f"anticipate did not move {name}'s hands"
+        if abs(early_arrive - base_arrive) > 1e-9:
+            return False, f"anticipate moved {name}'s sound, which is not what it means"
+        if ahead_arrive >= base_arrive:
+            return False, f"push_forward did not move {name}'s sound forward"
+
+    # A push is one instruction to the whole band: everybody's hands move by the
+    # same amount, so the gaps between them are exactly as they were.
+    gap_before = first(written, "timpani")[0] - first(written, "organ")[0]
+    gap_after = first(pushed, "timpani")[0] - first(pushed, "organ")[0]
+    if abs(gap_before - gap_after) > 1e-9:
+        return False, f"a push changed the gap between the players: {gap_before} -> {gap_after}"
+
+    reading = conduct.read({"directives": [{"action": "reharmonize"}, {"action": "lay_back"}]})
+    if reading.unhandled() != ["reharmonize"]:
+        return False, f"unhandled actions reported as {reading.unhandled()}"
+    return True, (
+        "anticipate moved the hands only, push_forward moved both, and the players stayed "
+        f"{gap_after:.4f} beats apart"
     )

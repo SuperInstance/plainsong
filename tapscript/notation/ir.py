@@ -323,6 +323,11 @@ class Arrangement:
     """The listener the emission and arrival times were solved for. Empty when
     no stage was declared."""
 
+    lead_in: float = 0.0
+    """Beats the whole piece was pushed later so that nobody has to act before
+    it starts. Emission and arrival times both include it, so subtract it to
+    compare a solved time against the beat it was written on."""
+
     @property
     def total_beats(self) -> float:
         return max((track.duration for track in self.tracks), default=0.0)

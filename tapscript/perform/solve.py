@@ -290,6 +290,7 @@ def apply_to(
 
     arrangement.stage = stage
     arrangement.frame = solution.frame
+    arrangement.lead_in = solution.lead_in
     return solution
 
 

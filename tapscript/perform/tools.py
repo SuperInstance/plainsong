@@ -36,6 +36,43 @@ MIDI export carries emission times, audio renders arrival times. A file with no
 [Stage] block behaves exactly as it always did.
 """
 
+DIRECTIVE_HELP = """A conductor's directive is applied to what the room hears, and every player's
+own timing is solved from it. The vocabulary is the one fleet-jepa-midi's
+bandleader emits, and this is the JSON it sends:
+
+    {
+      "directives": [
+        {"action": "lay_back", "intensity": 0.7, "duration_beats": 8,
+         "offset_beats": 0, "target": ["rhythm"], "priority": "blend"}
+      ],
+      "energy":  {"target": 0.8, "mode": "absolute"},
+      "tension": {"delta": 0.15, "mode": "relative"},
+      "narrative_note": "arriving at climax"
+    }
+
+Windows are in beats, not bars, and `offset_beats` need not be a downbeat --
+"drop out on beat 3" is an offset of 2. `priority` is `blend` (interpolate with
+whatever else is running) or `override` (take the others out of it). `target`
+picks layers: melody, harmony, rhythm, texture, dynamics, ensemble.
+
+The timing layer acts on the time and feel family:
+
+    lay_back      arrivals sit behind the grid
+    push_forward  arrivals sit ahead of it
+    anticipate    the hands move earlier and the sound does not move at all
+    drag          lateness accumulating across the window
+    straighten    swing towards zero
+    deepen_swing  swing towards a triplet
+    float         the ensemble stops correcting and spreads apart
+    lock_in       the ensemble tightens to a single instant
+    double_time   the subdivision halves inside the window
+    half_time     the subdivision doubles
+
+Anything else in the vocabulary is accepted and reported rather than refused,
+because a bandleader talking to several systems should not have to know which
+of them cares about what.
+"""
+
 
 def _schema(properties: dict[str, Any], required: list[str] | None = None) -> dict[str, Any]:
     return {"type": "object", "properties": properties, "required": required or []}
@@ -85,6 +122,44 @@ def register(registry: Any) -> None:
             "not measurements of any particular instrument.\n\n" + "\n".join(rows)
         )
 
+    def directive_reference() -> str:
+        return DIRECTIVE_HELP
+
+    def conduct_score(
+        directives: str, path: str = "", content: str = "", frame: str = ""
+    ) -> str:
+        from ..notation import arrange, parse
+        from ..notation.arrange import ArrangeOptions
+        from . import conduct
+        from .solve import analyse, format_report
+
+        text, problem = _load(registry, path, content)
+        if problem:
+            return problem
+        score = parse(text, path=path)
+        if score.has_errors:
+            return "the notation has errors:\n" + "\n".join(
+                f"  {diag.format()}" for diag in score.errors()
+            )
+        reading = conduct.read(directives)
+        written = arrange(score, ArrangeOptions(frame=frame))
+        conducted = conduct.apply(written, reading, frame=frame)
+
+        lines = ["directives read:", conduct.describe(reading), ""]
+        if score.meta.stage is None:
+            lines.append(
+                "this piece declares no [Stage] block, so the directives move the written "
+                "times but there is nobody's position to solve against."
+            )
+        else:
+            lines.append(format_report(analyse(conducted, frame=frame)))
+        lines.append("")
+        lines.append(
+            f"length {written.total_beats:g} beats -> {conducted.total_beats:g}, "
+            f"lead-in {conducted.lead_in:.3f} beats"
+        )
+        return "\n".join(lines)
+
     registry.add(
         "stage_reference",
         "Read how to write a [Stage] block: positions, listeners, speech profiles and feel. "
@@ -112,6 +187,30 @@ def register(registry: Any) -> None:
         "takes to sound and how far into the attack the ear places it.",
         _schema({}),
         speech_profiles,
+    )
+    registry.add(
+        "directive_reference",
+        "Read the conductor's directive vocabulary -- the JSON a bandleader sends, which "
+        "actions the timing layer acts on, and what the windows and targets mean. Call this "
+        "before writing directives for the first time in a session.",
+        _schema({}),
+        directive_reference,
+    )
+    registry.add(
+        "conduct_score",
+        "Apply a bandleader's directive JSON to a piece and report what it did to the "
+        "ensemble's timing: how the arrivals moved together and how far each player's hands "
+        "moved to keep them there.",
+        _schema(
+            {
+                "directives": _string("The directive JSON. See directive_reference."),
+                "path": _string("A .tap file to conduct."),
+                "content": _string("Notation to conduct instead of a path."),
+                "frame": _string("Whose ears: conductor, audience, player:<name>, or score."),
+            },
+            ["directives"],
+        ),
+        conduct_score,
     )
 
 

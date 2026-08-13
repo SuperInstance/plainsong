@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import unittest
 
 from tapscript.notation import arrange, parse
@@ -43,6 +44,18 @@ audience: 0,14
 @timpani | d2 . . . | d2 . . . |
 @violin1 | d5 . . . | e5 . . . |
 @organ   | d3 . . . | a2 . . . |
+"""
+
+
+SWUNG = """**TRACK: Swung**
+[MetaData]
+key: C | tempo: 120 | time: 4/4 | swing: 60%
+
+[Stage]
+@ride: pos 1,-2 | speech: percussion
+
+[A] (1 bar)
+@ride | c4 d4 c4 d4 c4 d4 c4 d4 |
 """
 
 
@@ -285,17 +298,235 @@ class TestArrangementIntegration(unittest.TestCase):
         self.assertFalse(report["stage"])
 
 
+BANDLEADER = """{
+  "directives": [
+    {
+      "action": "lay_back",
+      "intensity": 0.7,
+      "duration_beats": 8,
+      "offset_beats": 0,
+      "target": ["rhythm"],
+      "priority": "blend"
+    }
+  ],
+  "energy":  { "target": 0.8,  "mode": "absolute" },
+  "density": { "target": 0.6,  "mode": "absolute" },
+  "tension": { "delta": 0.15,  "mode": "relative" },
+  "narrative_note": "arriving at climax",
+  "revise_macro_plan": false
+}"""
+
+
+class TestDirectiveSchema(unittest.TestCase):
+    def test_the_bandleader_message_reads(self):
+        reading = conduct.read(BANDLEADER)
+        self.assertEqual(len(reading.directives), 1)
+        directive = reading.directives[0]
+        self.assertEqual(directive.action, "lay_back")
+        self.assertAlmostEqual(directive.intensity, 0.7)
+        self.assertEqual(directive.duration_beats, 8.0)
+        self.assertEqual(directive.target, ("rhythm",))
+        self.assertEqual(directive.priority, "blend")
+        self.assertAlmostEqual(reading.energy.target, 0.8)
+        self.assertEqual(reading.energy.mode, "absolute")
+        self.assertAlmostEqual(reading.tension.delta, 0.15)
+        self.assertEqual(reading.tension.mode, "relative")
+        self.assertEqual(reading.narrative_note, "arriving at climax")
+        self.assertFalse(reading.revise_macro_plan)
+        self.assertEqual(reading.problems, [])
+
+    def test_a_dict_a_string_and_a_set_all_read(self):
+        from_json = conduct.read(BANDLEADER)
+        from_dict = conduct.read(json.loads(BANDLEADER))
+        self.assertEqual(from_json.directives, from_dict.directives)
+        self.assertIs(conduct.read(from_json), from_json)
+
+    def test_broken_json_is_a_problem_not_an_exception(self):
+        reading = conduct.read("{not json")
+        self.assertEqual(reading.directives, ())
+        self.assertTrue(reading.problems)
+
+    def test_windows_are_in_beats_and_need_not_start_on_a_downbeat(self):
+        directive = conduct.Directive(action="lay_back", offset_beats=2.0, duration_beats=1.5)
+        self.assertFalse(directive.covers(1.99))
+        self.assertTrue(directive.covers(2.0))
+        self.assertTrue(directive.covers(3.4))
+        self.assertFalse(directive.covers(3.5))
+
+    def test_an_open_window_runs_to_the_end(self):
+        directive = conduct.Directive(action="lay_back", offset_beats=4.0)
+        self.assertTrue(directive.covers(4000.0))
+
+    def test_targets_select_layers(self):
+        everyone = conduct.Directive(action="lay_back")
+        rhythm = conduct.Directive(action="lay_back", target=("rhythm",))
+        self.assertTrue(everyone.applies_to({"melody"}))
+        self.assertTrue(rhythm.applies_to({"rhythm", "ensemble"}))
+        self.assertFalse(rhythm.applies_to({"melody", "ensemble"}))
+
+    def test_unhandled_actions_are_reported_not_refused(self):
+        reading = conduct.read(
+            {"directives": [{"action": "reharmonize"}, {"action": "drop_out"}, {"action": "drag"}]}
+        )
+        self.assertEqual(reading.unhandled(), ["reharmonize", "drop_out"])
+        self.assertEqual(len(reading.directives), 3)
+
+    def test_an_unhandled_action_still_compiles(self):
+        arrangement = arrange(parse(ORCHESTRA))
+        conducted = conduct.apply(arrangement, {"directives": [{"action": "reharmonize"}]})
+        self.assertEqual(conducted.note_count, arrangement.note_count)
+        self.assertTrue(any("reharmonize" in diag.message for diag in conducted.diagnostics))
+
+    def test_blending_interpolates_and_override_wins(self):
+        blend = conduct._blend([(10.0, 1.0, "blend"), (0.0, 1.0, "blend")], 0.0)
+        self.assertAlmostEqual(blend, 5.0)
+        override = conduct._blend([(10.0, 1.0, "blend"), (0.0, 1.0, "override")], 0.0)
+        self.assertAlmostEqual(override, 0.0)
+        self.assertAlmostEqual(conduct._blend([], 3.0), 3.0)
+
+
 class TestConducting(unittest.TestCase):
     def setUp(self):
         self.arrangement = arrange(parse(ORCHESTRA))
-        self.gesture = conduct.Gesture(kind="rubato", amount=-0.3, shape="step", start=0.0, span=8.0)
 
-    def test_a_rubato_stretches_the_timeline(self):
-        conducted = conduct.conduct(self.arrangement, [self.gesture])
+    def _first(self, arrangement, name):
+        """First note of a voice, with the global lead-in taken back off."""
+        track = next(item for item in arrangement.tracks if item.name == name)
+        note = min(track.notes, key=lambda item: item.start)
+        return (
+            note.emission_time - arrangement.lead_in,
+            note.arrival_time - arrangement.lead_in,
+        )
+
+    def test_anticipate_moves_the_hands_and_leaves_the_sound(self):
+        # The drummer raising the stick early so the note still lands on the
+        # beat. A correction, not an effect: nobody hears it as early.
+        conducted = conduct.apply(
+            self.arrangement, {"directives": [{"action": "anticipate", "intensity": 1.0}]}
+        )
+        for name in ("organ", "violin1", "timpani"):
+            before_emit, before_arrive = self._first(self.arrangement, name)
+            after_emit, after_arrive = self._first(conducted, name)
+            self.assertAlmostEqual(after_arrive, before_arrive, places=9, msg=name)
+            self.assertLess(after_emit, before_emit, msg=name)
+
+    def test_push_forward_moves_both(self):
+        # The whole band leaning ahead. An expressive choice, and audible.
+        conducted = conduct.apply(
+            self.arrangement, {"directives": [{"action": "push_forward", "intensity": 1.0}]}
+        )
+        for name in ("organ", "violin1", "timpani"):
+            before_emit, before_arrive = self._first(self.arrangement, name)
+            after_emit, after_arrive = self._first(conducted, name)
+            self.assertLess(after_arrive, before_arrive, msg=name)
+            self.assertLess(after_emit, before_emit, msg=name)
+
+    def test_a_push_moves_everyone_equally_and_keeps_them_apart(self):
+        # Twelve milliseconds at the listener is twelve milliseconds in every
+        # player's own clock -- and the far organ and the near violin stay
+        # exactly as far apart in absolute time as they were.
+        feel = conduct.Feel(push_forward=0.012)
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "push_forward", "intensity": 1.0}]},
+            feel=feel,
+        )
+        beats_per_ms = self.arrangement.meta.tempo / 60.0 / 1000.0
+        shifts = []
+        for name in ("organ", "violin1", "timpani"):
+            before_emit, _ = self._first(self.arrangement, name)
+            after_emit, _ = self._first(conducted, name)
+            shifts.append(before_emit - after_emit)
+        for shift in shifts:
+            self.assertAlmostEqual(shift, 12.0 * beats_per_ms, places=9)
+
+        def gap(arrangement):
+            return self._first(arrangement, "violin1")[0] - self._first(arrangement, "organ")[0]
+
+        self.assertAlmostEqual(gap(conducted), gap(self.arrangement), places=9)
+
+    def test_lay_back_sits_behind_the_grid(self):
+        conducted = conduct.apply(
+            self.arrangement, {"directives": [{"action": "lay_back", "intensity": 1.0}]}
+        )
+        before = self._first(self.arrangement, "timpani")[1]
+        after = self._first(conducted, "timpani")[1]
+        self.assertGreater(after, before)
+
+    def test_drag_accumulates_across_its_window(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "drag", "intensity": 1.0, "duration_beats": 8}]},
+        )
+        track = next(item for item in conducted.tracks if item.name == "timpani")
+        written = next(item for item in self.arrangement.tracks if item.name == "timpani")
+        lateness = [
+            note.arrival_time - conducted.lead_in - (base.arrival_time - self.arrangement.lead_in)
+            for note, base in zip(sorted(track.notes, key=lambda n: n.start),
+                                  sorted(written.notes, key=lambda n: n.start))
+        ]
+        self.assertLess(lateness[0], lateness[-1])
+        self.assertAlmostEqual(lateness[0], 0.0, places=6)
+
+    def test_a_window_leaves_the_rest_of_the_piece_alone(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "lay_back", "intensity": 1.0, "offset_beats": 4,
+                             "duration_beats": 4}]},
+        )
+        track = next(item for item in conducted.tracks if item.name == "timpani")
+        written = next(item for item in self.arrangement.tracks if item.name == "timpani")
+        first_pair = sorted(track.notes, key=lambda n: n.start)[0]
+        base_pair = sorted(written.notes, key=lambda n: n.start)[0]
+        self.assertAlmostEqual(
+            first_pair.arrival_time - conducted.lead_in,
+            base_pair.arrival_time - self.arrangement.lead_in,
+            places=9,
+        )
+
+    def test_targeting_a_layer_leaves_the_others_where_they_were(self):
+        conducted = conduct.apply(self.arrangement, BANDLEADER)
+        # lay_back targets rhythm, which on this stage is the timpani alone.
+        timpani = self._first(conducted, "timpani")[1] - self._first(self.arrangement, "timpani")[1]
+        violin = self._first(conducted, "violin1")[1] - self._first(self.arrangement, "violin1")[1]
+        self.assertGreater(timpani, 0.0)
+        self.assertAlmostEqual(violin, 0.0, places=9)
+
+    def test_float_widens_the_spread_and_lock_in_closes_it(self):
+        def spread(arrangement):
+            firsts = [
+                min(note.arrival_time for note in track.notes) for track in arrangement.tracks
+            ]
+            return max(firsts) - min(firsts)
+
+        loose = conduct.apply(
+            self.arrangement, {"directives": [{"action": "float", "intensity": 1.0}]}
+        )
+        tight = conduct.apply(
+            self.arrangement, {"directives": [{"action": "lock_in", "intensity": 1.0}]}
+        )
+        self.assertGreater(spread(loose), spread(self.arrangement))
+        self.assertLess(spread(tight), 1e-9)
+
+    def test_half_time_stretches_the_timeline(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "half_time", "intensity": 1.0, "duration_beats": 8}]},
+        )
         self.assertGreater(conducted.total_beats, self.arrangement.total_beats)
 
-    def test_arrivals_stay_together_through_the_gesture(self):
-        conducted = conduct.conduct(self.arrangement, [self.gesture])
+    def test_double_time_compresses_it(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "double_time", "intensity": 1.0, "duration_beats": 8}]},
+        )
+        self.assertLess(conducted.total_beats, self.arrangement.total_beats)
+
+    def test_arrivals_stay_together_through_a_tempo_change(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "half_time", "intensity": 1.0, "duration_beats": 8}]},
+        )
         by_voice = {
             track.name: sorted(note.arrival_time for note in track.notes)
             for track in conducted.tracks
@@ -303,8 +534,11 @@ class TestConducting(unittest.TestCase):
         self.assertAlmostEqual(by_voice["timpani"][0], by_voice["organ"][0], places=6)
         self.assertAlmostEqual(by_voice["timpani"][-1], by_voice["organ"][-1], places=6)
 
-    def test_emissions_move_by_different_amounts(self):
-        conducted = conduct.conduct(self.arrangement, [self.gesture])
+    def test_a_tempo_change_moves_hands_by_different_amounts(self):
+        conducted = conduct.apply(
+            self.arrangement,
+            {"directives": [{"action": "half_time", "intensity": 1.0, "duration_beats": 8}]},
+        )
 
         def lead(arrangement, name):
             """Beats between a voice acting and the sound being heard."""
@@ -313,17 +547,18 @@ class TestConducting(unittest.TestCase):
             return note.arrival_time - note.emission_time
 
         # The correction is a fixed number of milliseconds; longer beats make it
-        # a smaller slice of one. The organ's slice shrinks by ten times as much
-        # as the timpani's, because it was ten times bigger to begin with.
+        # a smaller slice of one. The organ's slice shrinks by far more than the
+        # timpani's, because it was ten times bigger to begin with.
         organ = lead(conducted, "organ") - lead(self.arrangement, "organ")
         timpani = lead(conducted, "timpani") - lead(self.arrangement, "timpani")
         self.assertLess(organ, 0.0)
         self.assertLess(timpani, 0.0)
         self.assertGreater(abs(organ), abs(timpani) * 5)
 
-    def test_a_swell_moves_velocities_not_times(self):
-        swell = conduct.Gesture(kind="swell", amount=0.2, shape="step")
-        conducted = conduct.conduct(self.arrangement, [swell])
+    def test_energy_moves_velocities_not_times(self):
+        conducted = conduct.apply(
+            self.arrangement, {"energy": {"target": 0.8, "mode": "absolute"}}
+        )
         before = [note.start for _t, note in self.arrangement.iter_notes()]
         after = [note.start for _t, note in conducted.iter_notes()]
         self.assertEqual(before, after)
@@ -332,26 +567,44 @@ class TestConducting(unittest.TestCase):
             sum(note.velocity for _t, note in self.arrangement.iter_notes()),
         )
 
+    def test_straighten_pulls_the_offbeats_back_onto_the_grid(self):
+        swung = arrange(parse(SWUNG))
+        offbeat = 0.5 + 0.6 / 6.0
+        original = [
+            note.start for _t, note in swung.iter_notes() if abs(note.start % 1.0 - offbeat) < 1e-6
+        ]
+        self.assertTrue(original, "the sample has no swung off-beats to straighten")
+        straight = conduct.apply(swung, {"directives": [{"action": "straighten", "intensity": 1.0}]})
+        moved = [
+            note.start for _t, note in straight.iter_notes() if abs(note.start % 1.0 - 0.5) < 1e-6
+        ]
+        self.assertEqual(len(moved), len(original))
+
+    def test_deepen_swing_pushes_them_further_out(self):
+        swung = arrange(parse(SWUNG))
+        deeper = conduct.apply(swung, {"directives": [{"action": "deepen_swing", "intensity": 1.0}]})
+        before = sorted(note.start % 1.0 for _t, note in swung.iter_notes())
+        after = sorted(note.start % 1.0 for _t, note in deeper.iter_notes())
+        self.assertGreater(max(after), max(before))
+
     def test_conducting_leaves_the_original_alone(self):
         before = [note.start for _t, note in self.arrangement.iter_notes()]
-        conduct.conduct(self.arrangement, [self.gesture])
+        conduct.apply(self.arrangement, BANDLEADER)
         self.assertEqual(before, [note.start for _t, note in self.arrangement.iter_notes()])
 
-    def test_gestures_read_from_text(self):
-        gesture = conduct.parse_gesture("rubato -0.2 arch 4 8")
-        self.assertEqual(gesture.kind, "rubato")
-        self.assertAlmostEqual(gesture.amount, -0.2)
-        self.assertEqual(gesture.shape, "arch")
-        self.assertEqual((gesture.start, gesture.span), (4.0, 8.0))
-        self.assertIsNone(conduct.parse_gesture("wave the stick about"))
-
     def test_conducting_is_deterministic(self):
-        first = conduct.conduct(self.arrangement, [self.gesture])
-        second = conduct.conduct(self.arrangement, [self.gesture])
+        first = conduct.apply(self.arrangement, BANDLEADER)
+        second = conduct.apply(self.arrangement, BANDLEADER)
         self.assertEqual(
             [note.emission_time for _t, note in first.iter_notes()],
             [note.emission_time for _t, note in second.iter_notes()],
         )
+
+    def test_a_directive_message_describes_itself(self):
+        text = conduct.describe(BANDLEADER)
+        self.assertIn("lay_back", text)
+        self.assertIn("rhythm", text)
+        self.assertIn("arriving at climax", text)
 
 
 class TestAgentTools(unittest.TestCase):
