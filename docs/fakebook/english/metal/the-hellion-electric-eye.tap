@@ -1,0 +1,24 @@
+**TRACK: The Hellion/Electric Eye**
+[MetaData]
+key: E minor | tempo: 140 | subdivision: 16th
+time: 4/4 | mood: Driving, Anthemic
+
+[INTRO] (Instrumental - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 70
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 65
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 65
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-e3-a3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 70

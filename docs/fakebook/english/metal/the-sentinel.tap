@@ -1,0 +1,24 @@
+**TRACK: The Sentinel**
+[MetaData]
+key: Em | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | B . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | D . . . | B . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | b2-d#3-f#3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45
