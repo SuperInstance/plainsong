@@ -1,0 +1,31 @@
+**TRACK: C'est la même chanson**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 55
+Chords: | G . . . | Em . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | vel: 65
+Chords: | F . . . | C . . . | D . . . | D . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 55
+Chords: | G . . . | Em . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | vel: 65
+Chords: | F . . . | C . . . | D . . . | D .
