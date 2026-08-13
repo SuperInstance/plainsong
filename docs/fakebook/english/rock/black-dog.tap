@@ -1,0 +1,20 @@
+**TRACK: Black Dog**
+[MetaData]
+key: Am | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Am . . . | Am . . . | Am . . . | Am . . . | F . . . | G . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | F . . . | G . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 50

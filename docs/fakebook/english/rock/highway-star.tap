@@ -1,0 +1,24 @@
+**TRACK: Highway Star**
+[MetaData]
+key: Am | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | F . . . | G . . . | G . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | F . . . | G . . . | G . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | C . . . | C . . . | G . . . | G . . . | A . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | g1-b1-d2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 65
+
+[BR] (Bridge/Solo - 8 Bars)
+Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 .
