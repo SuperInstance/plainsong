@@ -1,0 +1,16 @@
+**TRACK: The Elfin Knight**
+[MetaData]
+key: Em | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Mystical
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . |
+Melody: | E4 . G4 . | B4 . . . |
+Lyrics: | The el - fin knight stands |
+@piano | e3-g3-b3 . . . | c3-e3-g3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | Em . . . |
+Melody: | B3 . D4 . | E4 . G4 . |
+Lyrics: | on the hill so high |
+@piano | d3-f#3-a3 . . . | e3-g3-b3 . . . | vel: 50
