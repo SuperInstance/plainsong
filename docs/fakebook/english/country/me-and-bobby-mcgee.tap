@@ -1,0 +1,24 @@
+**TRACK: Me and Bobby McGee**
+[MetaData]
+key: A | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | A . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 45

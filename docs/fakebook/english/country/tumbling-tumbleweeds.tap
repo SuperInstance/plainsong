@@ -1,0 +1,24 @@
+**TRACK: Tumbling Tumbleweeds**
+[MetaData]
+key: C | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Western Swing
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | F . C . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . c3-e3-g3 . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G7 . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | D7 . . . | G7 . . . | G7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f#2-a2 . . . | g2-b2-f3 . . . | g2-b2-f3 . . . | vel: 58
+
+[V3] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | F . C . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . c3-e3-g3 . | vel: 55

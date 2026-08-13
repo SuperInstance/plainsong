@@ -1,0 +1,24 @@
+**TRACK: I Don't Hurt Anymore**
+[MetaData]
+key: A | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Country Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . | A . . | D . . | A . . | A . . | E7 . . | A . . | E7 . . |
+@guitar | a2-e3-a3 . . | a2-e3-a3 . . | d3-a3-d4 . . | a2-e3-a3 . . | a2-e3-a3 . . | e2-g#3-b3 . . | a2-e3-a3 . . | e2-g#3-b3 . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . | A . . | D . . | A . . | A . . | E7 . . | A . . | A . . |
+@guitar | a2-e3-a3 . . | a2-e3-a3 . . | d3-a3-d4 . . | a2-e3-a3 . . | a2-e3-a3 . . | e2-g#3-b3 . . | a2-e3-a3 . . | a2-e3-a3 . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . | A . . | B7 . . | E7 . . | A . . | E7 . . | A . . | A . . |
+@guitar | d3-a3-d4 . . | a2-e3-a3 . . | b2-d#3-f#3 . . | e2-g#3-b3 . . | a2-e3-a3 . . | e2-g#3-b3 . . | a2-e3-a3 . . | a2-e3-a3 . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . | D . . | A . . | E7 . . |
+@guitar | d3-a3-d4 . . | d3-a3-d4 . . | a2-e3-a3 . . | e2-g#3-b3 . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | A . . | A . . | D . . | A . . | A . . | E7 . . | A . . | A . . |
+@guitar | a2-e3-a3 . . | a2-e3-a3 . . | d3-a3-d4 . . | a2-e3-a3 . . | a2-e3-a3 . . | e2-g#3-b3 . . | a2-e3-a3 . . | a2-e3-a3 . . | vel: 55
