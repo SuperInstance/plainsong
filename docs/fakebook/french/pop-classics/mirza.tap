@@ -1,0 +1,27 @@
+**TRACK: Mirza**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
+| Am . . . | Am . . . | Dm . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
+| Am . . . | Am . . . | Dm . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+| F . . . | G . . . | Am . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | E7 . . . | Am . . . | G . . . |
+@guitar | d3-a3-d4 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 50

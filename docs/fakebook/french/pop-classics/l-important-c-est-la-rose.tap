@@ -1,0 +1,26 @@
+**TRACK: L'important c'est la rose**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Waltz-like yet driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G . . . |
+| C . . . | Am . . . | Dm . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . |
+| c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G . . . |
+| E7 . . . | Am . . . | D7 . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . |
+| e3-g#3-b3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+| C . . . | F . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . |
+| c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | G . . . |
+@guitar | a2-c3-e3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | g2-b2-d3 . . . | vel: 50
