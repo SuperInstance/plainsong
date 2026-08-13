@@ -1,0 +1,24 @@
+**TRACK: Peace Sells**
+[MetaData]
+key: Em | tempo: 145 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | B5 . . . | A5 . . . | E5 . . . | E5 . . . |
+@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

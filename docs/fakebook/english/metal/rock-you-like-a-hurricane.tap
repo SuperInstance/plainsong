@@ -1,0 +1,20 @@
+**TRACK: Rock You Like a Hurricane**
+[MetaData]
+key: Em | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-a2-d3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | D . . . | D . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | d3-a2-d3 . . . | d3-a2-d3 . . . | vel: 58
