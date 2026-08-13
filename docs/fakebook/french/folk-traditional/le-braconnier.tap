@@ -1,0 +1,16 @@
+**TRACK: Le Braconnier**
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | C#4 . E4 . |
+Lyrics: | Dans le bois j’ai pris un lièvre | Dans le bois j’ai pris un lièvre |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | Bb3 . D4 . | A3 . C4 . | C#4 . E4 . |
+Lyrics: | Ah! Ah! le braconnier | Ah! Ah! le braconnier |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 50

@@ -1,0 +1,22 @@
+**TRACK: La Marche des Rois Mages**
+[MetaData]
+key: Em | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Majestic
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . | Am . . | Em . . | B7 . . |
+Melody: | E4 . G4 | A4 . G4 | E4 . D4 | B3 . . |
+Lyrics: | De - but | des Rois | Ma - ges | vers l'É - |
+@piano | e3-b3-e4 . . | a2-c4-e4 . . | e3-b3-e4 . . | b2-d4-f#4 . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . | Am . . | C . . | B7 . . |
+Melody: | E4 . G4 | A4 . B4 | C5 . B4 | B3 . . |
+Lyrics: | toi - le | bril - lan | te d'or | pur, |
+@piano | e3-b3-e4 . . | a2-c4-e4 . . | c3-e4-g4 . . | b2-d4-f#4 . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . | G . . | Am . . | B7 . . |
+Melody: | B4 . C5 | B4 . G4 | A4 . F#4 | B3 . . |
+Lyrics: | Mar - chez | joy - eux | Rois, ve - nez | tous |
+@piano | e3-b3-e4 . . | g3-b3-d4 . . | a2-c4-e4 . . | b2-d4-f#4 . . | vel: 55
