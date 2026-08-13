@@ -1,0 +1,27 @@
+**TRACK: Being with You**
+[MetaData]
+key: Bbm | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Romantic Groove
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+| Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+@guitar | x-bb2-db3-f3 . . . | gb2-bb2-db3-gb3 . . . | f2-a2-c3-eb3 . . . | x-bb2-db3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+| Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+@guitar | x-bb2-db3-f3 . . . | gb2-bb2-db3-gb3 . . . | f2-a2-c3-eb3 . . . | x-bb2-db3-f3 . . . | vel: 62
+
+[B] (Bridge - 4 Bars)
+Chords: | Eb m7 . . . | Ab7 . . . | Db maj7 . . . | F7 . . . |
+@guitar | eb2-gb2-bb2-db3 . . . | ab2-c3-eb3-gb3 . . . | db2-f2-ab2-db3 . . . | f2-a2-c3-eb3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+| Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+@guitar | x-bb2-db3-f3 . . . | gb2-bb2-db3-gb3 . . . | f2-a2-c3-eb3 . . . | x-bb2-db3-f3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm7 . . . | Gb maj7 . . . | F7 . . . | Bbm7 . . . |
+@guitar | x-bb2-db3-f3 . . . | gb2-bb2-db3-gb3 . . . | f2-a2-c3-eb3 . . . | x-bb2-db3-f3 . . . | vel: 45

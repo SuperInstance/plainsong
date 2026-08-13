@@ -1,0 +1,24 @@
+**TRACK: Got to Be Real**
+[MetaData]
+key: Am | tempo: 106 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . |
+| f2-a2-c3-e3 . . . | b1-d3-f3-a3 . . . | e2-g#3-b3-d3 . . . | a2-c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+| Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . |
+| f2-a2-c3-e3 . . . | b1-d3-f3-a3 . . . | e2-g#3-b3-d3 . . . | a2-c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . |
+@guitar | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | f2-a2-c3-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am7 . . . | Dm7 . . . | E7 . . . | Am7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f3-a3-c3 . . . | e2-g#3-b3-d3 . . . | a2-c3-e3-g3 . . . | vel: 50

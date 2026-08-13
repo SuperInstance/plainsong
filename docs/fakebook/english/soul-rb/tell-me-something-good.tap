@@ -1,0 +1,20 @@
+**TRACK: Tell Me Something Good**
+[MetaData]
+key: Em | tempo: 108 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . |
+@guitar | e2-g2-b2-d3 . . . | a1-c#2-e2-g2 . . . | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f#1-a1-c2-e2 . . . | b1-d#2-f#2-a2 . . . | e2-g2-b2-d3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . |
+@guitar | e2-g2-b2-d3 . . . | a1-c#2-e2-g2 . . . | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f#1-a1-c2-e2 . . . | b1-d#2-f#2-a2 . . . | e2-g2-b2-d3 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cmaj7 . . . | B7 . . . | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | B7 . . . |
+@guitar | c2-e2-g2-b2 . . . | b1-d#2-f#2-a2 . . . | e2-g2-b2-d3 . . . | a1-c#2-e2-g2 . . . | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | b1-d#2-f#2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
+@guitar | f#1-a1-c2-e2 . . . | b1-d#2-f#2-a2 . . . | e2-g2-b2-d3 . . . | a1-c#2-e2-g2 . . . | vel: 60

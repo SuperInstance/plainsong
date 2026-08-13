@@ -1,0 +1,26 @@
+**TRACK: Car Wash**
+[MetaData]
+key: Gm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | g2-bb2-d3-g3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | bb1-d2-f2-ab2 . . . | vel: 55
+Chords: | Eb7 . . . | D7 . . . | Gm7 . . . | D7 . . . |
+@guitar | eb2-g2-bb2-db3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-g3 . . . | d2-f#2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | g2-bb2-d3-g3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | bb1-d2-f2-ab2 . . . | vel: 65
+Chords: | Eb7 . . . | D7 . . . | Gm7 . . . | D7 . . . |
+@guitar | eb2-g2-bb2-db3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-g3 . . . | d2-f#2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm7 . . . | F7 . . . | Bb7 . . . | D7 . . . |
+@guitar | c2-eb2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | bb1-d2-f2-ab2 . . . | d2-f#2-a2-c3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | g2-bb2-d3-g3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | bb1-d2-f2-ab2 . . . | vel: 55
+Chords: | Eb7 . . . | D7 . . . | Gm7 . . . | D7 . . . |
+@guitar | eb2-g2-bb2-db3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-g3 . . . | d2-f#2-a2-c3
