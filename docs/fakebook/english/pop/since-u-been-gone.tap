@@ -1,0 +1,16 @@
+**TRACK: Since U Been Gone**
+[MetaData]
+key: Bb major | tempo: 132 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb3-g3-bb3 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb3-g3-bb3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | F . . . | Gm . . . | F . . . |
+@guitar | eb3-g3-bb3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | f2-a2-c3 . . . | vel: 55

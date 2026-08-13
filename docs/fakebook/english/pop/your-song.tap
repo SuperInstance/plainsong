@@ -1,0 +1,30 @@
+**TRACK: Your Song**
+[MetaData]
+key: Eb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm7 . . . | Ab . . . |
+       | Eb . . . | Bb/D . . . | Cm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 50
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm7 . . . | Ab . . . |
+       | Eb . . . | Bb/D . . . | Cm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 55
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Abmaj7 . . . | Ab6 . . . | Ab . . . |
+       | Eb/G . . . | Bb/F . . . | Eb . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3-g3 . . . | ab2-c3-eb3-f3 . . . | ab2-c3-eb3 . . . | vel: 65
+@guitar | eb3-g3-bb3 . . . | bb2-f3-a3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Cm7 . . . | Fm7 . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Abmaj7 . . . | Ab6 . . . | Ab . . . |
+       | Eb/G . . . | Bb/F . . . | Eb . . . | Bb

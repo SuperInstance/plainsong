@@ -1,0 +1,24 @@
+**TRACK: Family Affair**
+[MetaData]
+key: Em | tempo: 94 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-d#2-f#2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-d#2-f#2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-d#2-f#2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | B7 . . . | Em . . . | Em . . . |
+@guitar | a1-c2-e2 . . . | b1-d#2-f#2 . . . | e2-g2-b2 . . . | e2-g2-b2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-d#2-f#2 . . . | vel: 50
