@@ -1,0 +1,24 @@
+**TRACK: El Leila Hagar**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | E . . . |
+@guitar | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E . . . | Am . . . | A7 . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | E . . . | Am . . . | Am . . . |
+@guitar | d2-a2-d3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50

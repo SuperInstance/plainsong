@@ -1,0 +1,24 @@
+**TRACK: Al Atlal**
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Majestic
+
+[V1] (Verse 1 - 8 Bars)
+Chords: | Am . . . | Dm . . . | E . . . | Am . . . | F . . . | Dm . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | f2-c3-f3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | Dm . . . | E . . . | Am . . . | F . . . | G . . . | C . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | c3-g3-c4 . . . | e3-b3-e4 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E . . . |
+@guitar | f2-c3-f3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 60
+
+[V3] (Verse 3 - 8 Bars)
+Chords: | Am . . . | Dm . . . | E . . . | Am . . . | F . . . | Dm . . . | E . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | f2-c3-f3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | E . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-c3-f3 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | vel: 45

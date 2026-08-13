@@ -1,0 +1,24 @@
+**TRACK: Ya Tayr**
+[MetaData]
+key: Em | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | D . . . | G . . . | B7 . . . |
+@guitar | a1-e2-a2 . . . | d2-a2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . |
+@guitar | c2-g2-c3 . . . | g1-d2-g2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | Em . . . | Am . . . | B7 . . . |
+@guitar | f1-c2-f2 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 45

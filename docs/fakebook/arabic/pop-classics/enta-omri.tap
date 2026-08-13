@@ -1,0 +1,30 @@
+**TRACK: Enta Omri**
+[MetaData]
+key: D minor | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Majestic
+
+[INTRO] (Instrumental - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
+@guitar | d3-a3-d4 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | g2-bb2-d3 . . . | vel: 50
+Chords: | Dm . . . | A7 . . . | Bb . . . | A7 . . . |
+@guitar | d3-a3-d4 . . . | a2-c#3-e3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |
+@guitar | d3-a3-d4 . . . | g2-bb2-d3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 60
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | F . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | d3-a3-d4 . . . | vel: 65
+Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
+@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Bb . . . | A7 . . . |
+@guitar | g2-bb2-d3 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 Dm . . . |
+@guitar | d3-a3-d4 . . . | g2-bb2-d3 . . . | d3-a3-d
