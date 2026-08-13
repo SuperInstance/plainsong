@@ -1,0 +1,30 @@
+**TRACK: Le Plat Pays**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Brooding
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 45
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | Bb . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | vel:
