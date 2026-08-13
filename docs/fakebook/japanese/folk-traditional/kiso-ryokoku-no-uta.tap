@@ -1,0 +1,22 @@
+**TRACK: Kiso Ryokoku no Uta**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
+Melody: | A3 . C4 . E4 . . | F4 . . A4 . G4 . | A3 . C4 . E4 . . | B3 . D4 . B3 . . |
+Lyrics: | Ki-so no ya-ma-da wa su-zu-shi-ke-re | Na-ga-re-ru ka-wa no se-su-ra-gi ni | Ta-bi no ko-ko-ro mo na-gus-me-te | U-ta-u fu-ru-sa-to no ha-ru no ko-e |
+@piano | a2-e3-a3 . . . c3-e3-g3 . . . | f2-a2-c3 . . . a2-c3-e3 . . . | a2-e3-a3 . . . c3-e3-g3 . . . | e2-g#2-b2 . . . b1-d2-f#2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
+Melody: | F4 . A4 . C5 . . | E4 . G4 . C4 . . | D4 . F4 . A4 . . | B3 . D4 . E4 . . |
+Lyrics: | Yo-shi-no sa-ku-ra ni ka-ze fu-ke-ba | O-ki-tsu shi-ra-na-mi ko-ro-mo-de ni | Su-mi-e no ka-ri ga ne-wo ta-te-te | Yu-ku-e mo shi-ra-zu a-ki no so-ra |
+@piano | f2-a2-c3 . . . a2-c3-f3 . . . | c3-e3-g3 . . . g2-c3-e3 . . . | d2-f2-a2 . . . a2-d3-f3 . . . | e2-g#2-b2 . . . b1-d2-f#2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . E4 . G4 | F4 . A4 . C5 . A4 | G4 . E4 . C4 . E4 | B3 . D4 . B3 . . |
+Lyrics: | Ko-no-ka-wa-na-ga-re yo-shi-no-ka-wa | Ha-na-no-ka-ze ni yo-i-za-me-te | Sa-to-no-me-gu-mi wo u-ta-u-na-ra | Ki-so no fu-ru-sa-to i-tsu-ma-de-mo |
+@piano | a2-e3-a3 . . . c3-e3-g3 . . . | f
