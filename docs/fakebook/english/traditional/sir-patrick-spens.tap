@@ -1,0 +1,34 @@
+**TRACK: Sir Patrick Spens**
+[MetaData]
+key: Dm | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | C . . . | F . . . | Dm . . . |
+Melody: | D4 . F4 . | E4 . C4 . | A3 . C4 . | D4 . . . |
+Lyrics: | The king sits in Dun - fer - line town, Drink - ing the blood - red wine |
+@piano | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | C . . . | Bb . . . | A . . . |
+Melody: | D4 . F4 . | E4 . C4 . | Bb3 . D4 . | A3 . . . |
+Lyrics: | O where will I get a skeel - y skip - per, To sail this ship of mine? |
+@piano | d3-f3-a3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | a2-c3-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | G4 . E4 . | D4 . F4 . | A3 . . . |
+Lyrics: | O sail - or, sail - or, tell me true, The wind blows cold and free |
+@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c3-e3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | Dm . . . | C . . . | F . . . | Dm . . . |
+Melody: | D4 . F4 . | E4 . C4 . | A3 . C4 . | D4 . . . |
+Lyrics: | The ship it sank, the crew did drown, Sir Pat - rick lay at sea |
+@piano | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+Melody: | D4 . . . | . . . . |
+Lyrics: | . . . . | . . . . |
+@piano | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 45

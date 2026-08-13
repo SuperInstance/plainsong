@@ -1,0 +1,16 @@
+**TRACK: Hangman's Reel**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . E4 . | F4 . E4 . D4 . | C4 . E4 . G4 . | B3 . D4 . B3 . |
+Lyrics: | Oh the hang-man's rope is long . | And the gal-lows tree is high . | And the reels they turn so slow . | As the night wind pass-es by . |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . C5 . | E4 . G4 . E4 . | D4 . B3 . D4 . | C4 . A3 . C4 . |
+Lyrics: | Dance the reel, dance the reel . | While the moon is cold and pale . | Hang-man's dance, hang-man's dance . | Till the morn-ing light shall fail . |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | vel: 55

@@ -1,0 +1,25 @@
+**TRACK: The Three Ravens**
+[MetaData]
+key: Dm | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . | F . . | C . . | Dm . . |
+Melody: | D4 . F4 . | A4 . . . | G4 . E4 . | D4 . . . |
+Lyrics: | There were three | ra - vens sat | on a tree, | down a down |
+Lyrics: | hey down | hey down | hey down | der - ry |
+@piano | d3-f3-a3 . . | f3-a3-c4 . . | c3-e3-g3 . . | d3-f3-a3 . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . | F . . | C . . | Dm . . |
+Melody: | D4 . F4 . | A4 . . . | G4 . E4 . | D4 . . . |
+Lyrics: | They were as | black as they | might be, | down a down |
+Lyrics: | hey down | hey down | hey down | der - ry |
+@piano | d3-f3-a3 . . | f3-a3-c4 . . | c3-e3-g3 . . | d3-f3-a3 . . | vel: 45
+
+[CH] (Chorus - 2 Bars)
+Chords: | C . . | Dm . . |
+Melody: | E4 . G4 . | F4 . D4 . |
+Lyrics: | With a down | der - ry |
+Lyrics: | der - ry | down, down |
+@piano | c3-e3-g3 . . | d3-f3-a3 . . | vel: 50
