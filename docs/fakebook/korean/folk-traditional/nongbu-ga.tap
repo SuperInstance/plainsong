@@ -1,0 +1,28 @@
+**TRACK: Nongbu Ga**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . . E4 . | C4 . D4 . | B3 . . . |
+Lyrics: | nong bu ga ga | nong bu ga ga | nong bu ga ga | nong bu ga |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+Melody: | A3 . C4 . | F4 . . E4 . | G4 . E4 . | C4 . A3 . |
+Lyrics: | nong bu ga ga | nong bu ga ga | nong bu ga ga | nong bu ga |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E7 . . . |
+Melody: | F4 . A4 . | G4 . B4 . | A4 . C5 . | B4 . G#4 . |
+Lyrics: | hei ya hei ya | hei ya hei ya | nong bu ga ga | nong bu ga |
+@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH2] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+Melody: | F4 . A4 . | G4 . B4 . | A4 . C5 . | A4 . . . |
+Lyrics: | hei ya hei ya | hei ya hei ya | nong bu ga ga | nong bu ga |
+@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
