@@ -34,8 +34,8 @@ from .ir import (
     Cell,
     Diagnostic,
     Line,
-    Meter,
     Metadata,
+    Meter,
     Score,
     Section,
 )
@@ -659,5 +659,5 @@ def parse(text: str, dialect: str = "auto", path: str = "") -> Score:
 
 
 def parse_file(path: str, dialect: str = "auto") -> Score:
-    with open(path, "r", encoding="utf-8") as handle:
+    with open(path, encoding="utf-8") as handle:
         return parse(handle.read(), dialect=dialect, path=path)

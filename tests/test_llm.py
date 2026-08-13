@@ -109,6 +109,7 @@ class TestCredentials(unittest.TestCase):
                 self.assertTrue(forget_key("fake", paths))
                 self.assertEqual(resolve_key(info, paths=paths), "")
 
+    @unittest.skipIf(os.name == "nt", "POSIX permission bits do not apply on Windows")
     def test_stored_keys_are_not_world_readable(self):
         with tempfile.TemporaryDirectory() as directory:
             with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}, clear=False):

@@ -14,9 +14,10 @@ from __future__ import annotations
 import json
 import re
 import time
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any
 
 from .notation.ir import Score
 from .runtime.paths import Paths, default_paths

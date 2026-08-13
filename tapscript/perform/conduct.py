@@ -46,8 +46,9 @@ from __future__ import annotations
 
 import json
 import math
+from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
-from typing import Any, Iterable, Sequence
+from typing import Any
 
 from .solve import Shaping
 
@@ -136,7 +137,7 @@ class Directive:
     priority: str = "blend"
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "Directive":
+    def from_dict(cls, data: dict[str, Any]) -> Directive:
         target = data.get("target") or ()
         if isinstance(target, str):
             target = (target,)
@@ -197,7 +198,7 @@ class Scalar:
     mode: str = "absolute"
 
     @classmethod
-    def from_dict(cls, data: Any) -> "Scalar | None":
+    def from_dict(cls, data: Any) -> Scalar | None:
         if not isinstance(data, dict):
             return None
         mode = str(data.get("mode", "absolute")).strip().lower()
@@ -233,7 +234,7 @@ class DirectiveSet:
     problems: list[str] = field(default_factory=list)
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "DirectiveSet":
+    def from_dict(cls, data: dict[str, Any]) -> DirectiveSet:
         raw = data.get("directives") or []
         directives = tuple(
             Directive.from_dict(item) for item in raw if isinstance(item, dict)
@@ -253,7 +254,7 @@ class DirectiveSet:
         )
 
     @classmethod
-    def from_json(cls, payload: str) -> "DirectiveSet":
+    def from_json(cls, payload: str) -> DirectiveSet:
         try:
             data = json.loads(payload)
         except (TypeError, ValueError) as exc:
@@ -513,6 +514,10 @@ def apply(
     voice's correction is a fixed number of seconds and the number of beats that
     buys changes with the tempo. Actions outside the time and feel family are
     recorded as diagnostics and otherwise ignored.
+
+    Of the three scalars, ``energy`` scales velocities and ``tension`` shortens
+    notes. ``density`` is read and reported but does nothing here: it asks for
+    more or fewer notes, and moving notes around is all this layer can do.
     """
     from copy import deepcopy
 
@@ -545,7 +550,8 @@ def apply(
             active = reading.active(written, layers)
             # Swing sits on the written grid, so it is applied before the
             # timeline is stretched rather than after.
-            swung = written + _swing_shift(written, written_swing, _swing_target(active, written_swing, feel))
+            target = _swing_target(active, written_swing, feel)
+            swung = written + _swing_shift(written, written_swing, target)
             start = time_map(swung)
             end = time_map(swung + note.duration)
             note.start = start
@@ -610,7 +616,8 @@ def describe(directives: Any) -> str:
     for name in ("energy", "density", "tension"):
         scalar = getattr(reading, name)
         if scalar is not None:
-            lines.append(f"  {name}: {scalar.mode} {scalar.target if scalar.target is not None else scalar.delta}")
+            value = scalar.target if scalar.target is not None else scalar.delta
+            lines.append(f"  {name}: {scalar.mode} {value}")
     if reading.narrative_note:
         lines.append(f"  note: {reading.narrative_note}")
     for problem in reading.problems:

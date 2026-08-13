@@ -28,9 +28,25 @@ def _env_path(name: str) -> Path | None:
     return Path(raw).expanduser() if raw else None
 
 
+def _home() -> Path:
+    """The user's home directory, or somewhere writable if there isn't one.
+
+    ``Path.home()`` raises when neither HOME nor USERPROFILE is set, which
+    happens on stripped-down CI runners and in some service accounts. Falling
+    back to the temporary directory keeps the program usable there instead of
+    failing at import time.
+    """
+    try:
+        return Path.home()
+    except RuntimeError:
+        import tempfile
+
+        return Path(tempfile.gettempdir())
+
+
 def _platform_dirs() -> tuple[Path, Path, Path, Path]:
     """Return (config, data, state, cache) roots for this platform."""
-    home = Path.home()
+    home = _home()
     if sys.platform == "darwin":
         base = home / "Library"
         return (

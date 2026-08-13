@@ -10,9 +10,10 @@ from __future__ import annotations
 import json
 import time
 import uuid
+from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Iterable
+from typing import Any
 
 from ..llm.base import Provider
 from ..llm.types import (

@@ -168,7 +168,7 @@ def check_transpose() -> tuple[bool, str]:
         ]
 
     melody_before, melody_after = pitches(original, "melody"), pitches(moved, "melody")
-    shifts = {later - earlier for earlier, later in zip(melody_before, melody_after)}
+    shifts = {later - earlier for earlier, later in zip(melody_before, melody_after, strict=True)}
     if shifts != {3}:
         return False, f"melody shifted by {sorted(shifts)}, expected 3 semitones"
 
@@ -180,7 +180,7 @@ def check_transpose() -> tuple[bool, str]:
         return False, "the chord row produced no notes"
     wrong = [
         (before, after)
-        for before, after in zip(chord_before, chord_after)
+        for before, after in zip(chord_before, chord_after, strict=True)
         if (before + 3) % 12 != after
     ]
     if wrong:

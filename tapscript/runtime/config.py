@@ -13,12 +13,17 @@ package keeps a zero-install footprint.
 from __future__ import annotations
 
 import os
-import tomllib
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 from .paths import Paths, default_paths
+
+try:  # tomllib arrived in the standard library in 3.11
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover - the 3.10 path
+    from . import _toml as tomllib
+
 
 DEFAULTS: dict[str, Any] = {
     "core": {

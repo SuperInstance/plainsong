@@ -18,9 +18,10 @@ import os
 import platform
 import shutil
 import sys
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 # Where soundfonts tend to live, per platform. Checked in order.
 SOUNDFONT_HINTS = (

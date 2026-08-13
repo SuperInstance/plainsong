@@ -249,7 +249,7 @@ class Chord:
             notes = notes[:4]
         return [note for note in notes if 0 <= note <= 127]
 
-    def transpose(self, semitones: int) -> "Chord":
+    def transpose(self, semitones: int) -> Chord:
         return Chord(
             self.root_pc + semitones,
             self.quality,
@@ -348,7 +348,7 @@ class Key:
         table = DIATONIC_TRIADS.get(self.mode, DIATONIC_TRIADS["major"])
         return table[(degree - 1) % len(table)]
 
-    def transpose(self, semitones: int) -> "Key":
+    def transpose(self, semitones: int) -> Key:
         return Key(self.tonic_pc + semitones, self.mode)
 
     def __repr__(self) -> str:  # pragma: no cover - debugging aid

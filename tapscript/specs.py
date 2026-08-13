@@ -18,13 +18,19 @@ import importlib
 import shutil
 import subprocess
 import time
-import tomllib
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 from .runtime.capabilities import CapabilityReport, probe
 from .runtime.paths import Paths, default_paths
+
+try:  # tomllib arrived in the standard library in 3.11
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover - the 3.10 path
+    from .runtime import _toml as tomllib
+
 
 CHECK_KINDS = ("python", "command", "capability", "file")
 
@@ -131,7 +137,7 @@ class Spec:
     checks: list[Check] = field(default_factory=list)
     source: Path | None = None
 
-    def verify(self, paths: Paths | None = None, report: CapabilityReport | None = None) -> "SpecResult":
+    def verify(self, paths: Paths | None = None, report: CapabilityReport | None = None) -> SpecResult:
         paths = paths or default_paths()
         report = report or probe()
         results = [check.execute(paths, report) for check in self.checks]

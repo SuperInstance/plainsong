@@ -8,8 +8,9 @@ that launched us.
 from __future__ import annotations
 
 import json
+from collections.abc import Iterator
 from dataclasses import dataclass, field
-from typing import Any, Iterator, Literal
+from typing import Any, Literal
 
 Role = Literal["system", "user", "assistant", "tool"]
 
@@ -37,19 +38,19 @@ class Message:
     name: str = ""
 
     @classmethod
-    def system(cls, content: str) -> "Message":
+    def system(cls, content: str) -> Message:
         return cls(role="system", content=content)
 
     @classmethod
-    def user(cls, content: str) -> "Message":
+    def user(cls, content: str) -> Message:
         return cls(role="user", content=content)
 
     @classmethod
-    def assistant(cls, content: str = "", tool_calls: list[ToolCall] | None = None) -> "Message":
+    def assistant(cls, content: str = "", tool_calls: list[ToolCall] | None = None) -> Message:
         return cls(role="assistant", content=content, tool_calls=tool_calls or [])
 
     @classmethod
-    def tool(cls, tool_call_id: str, content: str, name: str = "") -> "Message":
+    def tool(cls, tool_call_id: str, content: str, name: str = "") -> Message:
         return cls(role="tool", content=content, tool_call_id=tool_call_id, name=name)
 
     def as_dict(self) -> dict[str, Any]:
@@ -63,7 +64,7 @@ class Message:
         return data
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "Message":
+    def from_dict(cls, data: dict[str, Any]) -> Message:
         return cls(
             role=data.get("role", "user"),
             content=data.get("content", "") or "",
@@ -138,7 +139,7 @@ class Usage:
     def total(self) -> int:
         return self.input_tokens + self.output_tokens
 
-    def __add__(self, other: "Usage") -> "Usage":
+    def __add__(self, other: Usage) -> Usage:
         return Usage(self.input_tokens + other.input_tokens, self.output_tokens + other.output_tokens)
 
 

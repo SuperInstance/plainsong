@@ -14,12 +14,17 @@ created with owner-only permissions.
 from __future__ import annotations
 
 import os
-import tomllib
 from pathlib import Path
 
 from ..runtime.config import dumps_toml
 from ..runtime.paths import Paths, default_paths
 from .catalog import ProviderInfo
+
+try:  # tomllib arrived in the standard library in 3.11
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover - the 3.10 path
+    from ..runtime import _toml as tomllib
+
 
 
 def _read_store(paths: Paths) -> dict[str, str]:

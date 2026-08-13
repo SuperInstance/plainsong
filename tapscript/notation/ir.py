@@ -10,8 +10,9 @@ timing bug cannot corrupt round-tripped notation.
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Any, Iterator
+from typing import TYPE_CHECKING, Any
 
 from .theory import Chord, Key
 
@@ -136,7 +137,7 @@ class Meter:
         return f"{self.numerator}/{self.denominator}"
 
     @classmethod
-    def parse(cls, text: str) -> "Meter":
+    def parse(cls, text: str) -> Meter:
         try:
             numerator, _, denominator = text.strip().partition("/")
             meter = cls(int(numerator), int(denominator or 4))
@@ -158,7 +159,7 @@ class Metadata:
     swing: float = 0.0
     subdivision: str = "8th"
     extra: dict[str, str] = field(default_factory=dict)
-    stage: "Stage | None" = None
+    stage: Stage | None = None
     """Set when the file declares a ``[Stage]`` block. ``None`` means written
     times are taken at face value, which is what everything did before
     arrival-centric timing existed."""
@@ -273,7 +274,7 @@ class Track:
     is_drum: bool = False
     notes: list[Note] = field(default_factory=list)
     instrument: str = "piano"
-    placement: "Placement | None" = None
+    placement: Placement | None = None
     """Where this voice stands, when the piece declares a stage."""
 
     def add(self, note: Note) -> None:
@@ -318,7 +319,7 @@ class Arrangement:
     chords: list[ChordEvent] = field(default_factory=list)
     diagnostics: list[Diagnostic] = field(default_factory=list)
     section_starts: list[tuple[str, float]] = field(default_factory=list)
-    stage: "Stage | None" = None
+    stage: Stage | None = None
     frame: str = ""
     """The listener the emission and arrival times were solved for. Empty when
     no stage was declared."""

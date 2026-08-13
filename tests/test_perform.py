@@ -463,7 +463,7 @@ class TestConducting(unittest.TestCase):
         lateness = [
             note.arrival_time - conducted.lead_in - (base.arrival_time - self.arrangement.lead_in)
             for note, base in zip(sorted(track.notes, key=lambda n: n.start),
-                                  sorted(written.notes, key=lambda n: n.start))
+                                  sorted(written.notes, key=lambda n: n.start), strict=True)
         ]
         self.assertLess(lateness[0], lateness[-1])
         self.assertAlmostEqual(lateness[0], 0.0, places=6)

@@ -18,9 +18,10 @@ from __future__ import annotations
 import importlib.util
 import sys
 from abc import ABC, abstractmethod
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 from ..notation.ir import Arrangement
 from ..runtime.config import Config, load_config

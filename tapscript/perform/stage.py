@@ -89,7 +89,6 @@ class Placement:
 
     def profile(self, program: int = 0, is_drum: bool = False) -> SpeechProfile:
         """The profile for this voice: what it declared, else its GM program."""
-        from .profiles import profile_for_program
 
         named = profile_for_name(self.speech_name) if self.speech_name else None
         base = named or profile_for_program(program, is_drum)
@@ -152,6 +151,20 @@ class Stage:
         if found is not None:
             return found.position
         return self.listeners.get(self.listener.strip().lower(), (0.0, 0.0))
+
+    def knows_frame(self, frame: str) -> bool:
+        """Whether a ``--frame`` name means anything on this stage.
+
+        Worth asking separately, because a typo in a player's name would
+        otherwise fall back to the stage's own listener and quietly report the
+        wrong desk's numbers.
+        """
+        key = (frame or "").strip().lower()
+        if not key or key == FRAME_SCORE:
+            return True
+        if key.startswith(PLAYER_FRAME_PREFIX):
+            return key[len(PLAYER_FRAME_PREFIX) :].strip() in self.placements
+        return key in self.listeners or key in self.placements
 
     def distance(self, voice: str, frame: str = "") -> float:
         """Metres from a voice to a listener. Zero if the frame is the score."""

@@ -8,7 +8,7 @@ interfaces -- is written against this and nothing else.
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
-from typing import Iterator
+from collections.abc import Iterator
 
 from .catalog import ProviderInfo
 from .types import CompletionRequest, CompletionResponse, Delta, Message, ProviderError

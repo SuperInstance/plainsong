@@ -13,9 +13,10 @@ from __future__ import annotations
 
 import json
 import traceback
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 from ..llm.types import ToolSpec
 from ..perform import tools as perform_tools

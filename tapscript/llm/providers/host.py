@@ -168,8 +168,7 @@ class HostProvider(Provider):
             completed = subprocess.run(
                 argv,
                 input=prompt.encode("utf-8"),
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
+                capture_output=True,
                 timeout=self.poll_timeout,
                 check=False,
             )

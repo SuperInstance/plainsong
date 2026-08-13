@@ -251,34 +251,130 @@ what the compiler did before any of this existed.
 
 ## Conducting
 
-A gesture is not learned per player. One thing goes out and the whole ensemble
-reacts to it at once. So a gesture is defined on the **arrival** timeline — on
-what the room is meant to hear — and each player's emission falls out of it:
+A conductor does not learn a separate correction for each player. One
+instruction goes out and everybody reacts to the same thing at once. So a
+directive is defined on the **arrival** timeline — on what the room is meant to
+hear — and each player's emission falls out of it.
+
+The vocabulary is not ours. It is the one the bandleader in
+[`SuperInstance/fleet-jepa-midi`](https://github.com/SuperInstance/fleet-jepa-midi)
+emits as JSON every one to four bars, and `tapscript.perform.conduct` reads that
+JSON unchanged so the two systems mean the same thing by the same word. Nothing
+here opens a socket; it is a pure function from (arrangement, directives) to a
+new arrangement, and somebody else wires the transport.
 
 ```python
+import json
 from tapscript.notation import arrange, parse
-from tapscript.perform.conduct import Gesture, conduct
+from tapscript.perform import conduct
 
 written = arrange(parse(text))
-held_back = conduct(written, [Gesture(kind="rubato", amount=-0.25, span=8.0, shape="arch")])
+conducted = conduct.apply(written, json.dumps({
+    "directives": [
+        {"action": "lay_back", "intensity": 0.7, "duration_beats": 8,
+         "offset_beats": 0, "target": ["rhythm"], "priority": "blend"}
+    ],
+    "energy":  {"target": 0.8, "mode": "absolute"},
+    "tension": {"delta": 0.15, "mode": "relative"},
+    "narrative_note": "arriving at climax",
+}))
 ```
 
-| Kind | Does |
+Windows are measured in **beats**, not bars, because beats are
+tempo-independent. `offset_beats` need not be a downbeat — most real cues are
+not, and "drop out on beat 3" is an offset of 2. One to three directives may be
+in force at a time: `blend` interpolates them by intensity, and an `override`
+directive takes the blenders out of the conversation rather than out-shouting
+them. `target` names layers — `melody`, `harmony`, `rhythm`, `texture`,
+`dynamics`, `ensemble` — and an empty target reaches everyone.
+
+### The time and feel family
+
+| Action | Does |
 |---|---|
-| `rubato` | bends the timeline: `amount=-0.25` is a quarter slower at the peak |
-| `swell` | scales velocities |
-| `lean` | scales note lengths without moving anything |
+| `lay_back` | arrivals sit behind the grid — 25ms at intensity 1 |
+| `push_forward` | arrivals sit ahead of it — 18ms |
+| `anticipate` | the hands move earlier and the sound does not move at all — 40ms |
+| `drag` | lateness accumulating across the window — 60ms by the end |
+| `straighten` | swing towards zero |
+| `deepen_swing` | swing towards a triplet |
+| `float` | the ensemble stops correcting and spreads apart |
+| `lock_in` | the ensemble tightens onto one instant |
+| `double_time` | the subdivision halves inside the window |
+| `half_time` | the subdivision doubles |
 
-Shapes are `arch` (in and out again), `ramp`, `fall` and `step`, over `span`
-beats from `start`.
+Those magnitudes are the defaults in `conduct.Feel`, chosen from the middle of
+what players actually do — a jazz drummer sitting behind the ride sits ten to
+thirty milliseconds back, and pushing is habitually subtler than laying back.
+Pass your own if you disagree: `conduct.apply(written, directives,
+feel=conduct.Feel(push_forward=0.012))`.
 
-The arrivals stay together through the gesture — that is the definition of it
-being one gesture. The players' hands do not. Each player's lead is a fixed
+Anything else in the bandleader's vocabulary — `reharmonize`, `drop_out`,
+whatever else it knows — is read, reported as unhandled, and otherwise ignored.
+A bandleader talking to several systems at once should not have to know which of
+them cares about what.
+
+Of the three scalars, `energy` scales velocities and `tension` shortens notes.
+`density` is read and reported but does nothing here: it asks for more or fewer
+notes, and moving notes around is all a timing layer can do.
+
+### anticipate is not push_forward
+
+This is the distinction the whole model exists to express.
+
+**`push_forward` moves the arrival.** The band leans ahead, hands and sound
+together, and the audience hears it. Every player's hands move by the *same*
+amount, so the gaps between them are untouched:
+
+```
+what the directives did          push_forward, intensity 1.0
+  voice    sound moved  hands moved
+  timpani  -18 ms       -18 ms
+  violin1  -18 ms       -18 ms
+  organ    -18 ms       -18 ms
+  spread at the listener 6 ms -> 6 ms
+```
+
+**`anticipate` moves the emission and leaves the arrival exactly where it was.**
+The player starts the motion earlier — the raised stick, the extra bow, the
+organist's head start — and the note still lands on the beat. It is a
+correction, not an effect, and nobody hears it as early:
+
+```
+what the directives did          anticipate, intensity 1.0
+  voice    sound moved  hands moved
+  timpani  +0 ms        -40 ms
+  violin1  +0 ms        -40 ms
+  organ    +0 ms        -40 ms
+  spread at the listener 6 ms -> 6 ms
+```
+
+If those two came out the same, the model would be wrong. `float` is the third
+corner of it — nobody correcting for anything, everybody drifting late by
+exactly their own uncorrected delay:
+
+```
+what the directives did          float, intensity 1.0
+  voice    sound moved  hands moved
+  timpani  +16 ms       +16 ms
+  horn     +40 ms       +40 ms
+  violin1  +59 ms       +59 ms
+  organ    +176 ms      +176 ms
+  spread at the listener 6 ms -> 160 ms
+```
+
+### Why the geometry keeps coming back
+
+The arrivals stay together through a directive — that is the definition of it
+being *one* directive. The players' hands do not. Each player's lead is a fixed
 number of milliseconds, and a beat is not: shorten the beats and that lead
-becomes a bigger slice of one. Speeding up makes the organist anticipate by
-much more of a beat, and the timpanist by only a little, because the organist's
+becomes a bigger slice of one. `double_time` makes the organist anticipate by
+much more of a beat and the timpanist by only a little, because the organist's
 lead was ten times bigger to begin with. Nobody wrote that rule down; it comes
 out of solving in seconds and writing in beats.
+
+The agent has the same thing: `directive_reference` for the vocabulary and
+`conduct_score` to apply a message and report what it did.
 
 ## What it does not do
 
@@ -288,5 +384,8 @@ out of solving in seconds and writing in beats.
 - Speech times do not change with dynamic, register or articulation within a
   voice, though in a real player they do. One profile covers the whole part.
 - The compensation is applied per voice, not per note. A player who has to
-  anticipate more on a soft entry than a loud one is beyond this model.
+  anticipate more on a soft entry than a loud one is beyond this model, unless a
+  directive says so for a window.
+- Directives outside the time and feel family are read and ignored. This is a
+  timing layer; it has no opinion about reharmonisation.
 - Nothing is inferred. A piece with no `[Stage]` block is left alone, forever.

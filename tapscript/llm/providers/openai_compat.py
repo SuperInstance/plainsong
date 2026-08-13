@@ -9,7 +9,8 @@ all of which are data in the catalogue, not code here.
 from __future__ import annotations
 
 import json
-from typing import Any, Iterator
+from collections.abc import Iterator
+from typing import Any
 from urllib.parse import urlencode
 
 from ..base import Provider

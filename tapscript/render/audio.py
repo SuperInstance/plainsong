@@ -21,10 +21,10 @@ from __future__ import annotations
 import math
 import wave
 from array import array
+from collections.abc import Sequence
 from dataclasses import dataclass
 from operator import add, mul
 from pathlib import Path
-from typing import Sequence
 
 from ..notation.ir import Arrangement
 from .voices import Voice, voice_for_program
@@ -271,7 +271,7 @@ class Synthesiser:
             for index, value in enumerate(mix):
                 accumulator = alpha * accumulator + inverse * value
                 filtered[index] = accumulator
-            mix = [raw * 0.55 + smooth * 0.45 for raw, smooth in zip(mix, filtered)]
+            mix = [raw * 0.55 + smooth * 0.45 for raw, smooth in zip(mix, filtered, strict=True)]
         peak = max((abs(value) for value in mix), default=0.0)
         if peak > 0:
             scale = options.normalize / peak

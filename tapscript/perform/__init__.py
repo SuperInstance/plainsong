@@ -32,9 +32,9 @@ from .stage import (
     speed_of_sound,
 )
 
-# The two verbs keep their module names: `perform.solve.solve(...)` and
-# `perform.conduct.conduct(...)`. Re-exporting the functions here would shadow
-# the modules they live in, which is worse than the extra word.
+# The verbs keep their module names: `perform.solve.solve(...)` and
+# `perform.conduct.apply(...)`. Re-exporting them here would shadow the modules
+# they live in, which is worse than the extra word.
 __all__ = [
     "FRAME_SCORE",
     "Directive",

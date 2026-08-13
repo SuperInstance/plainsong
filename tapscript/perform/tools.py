@@ -131,7 +131,7 @@ def register(registry: Any) -> None:
         from ..notation import arrange, parse
         from ..notation.arrange import ArrangeOptions
         from . import conduct
-        from .solve import analyse, format_report
+        from .solve import format_movement, movement
 
         text, problem = _load(registry, path, content)
         if problem:
@@ -146,18 +146,13 @@ def register(registry: Any) -> None:
         conducted = conduct.apply(written, reading, frame=frame)
 
         lines = ["directives read:", conduct.describe(reading), ""]
+        lines.append(format_movement(movement(written, conducted)))
         if score.meta.stage is None:
+            lines.append("")
             lines.append(
-                "this piece declares no [Stage] block, so the directives move the written "
-                "times but there is nobody's position to solve against."
+                "this piece declares no [Stage] block, so the directives moved the written "
+                "times but there was nobody's position to solve against. Call stage_reference."
             )
-        else:
-            lines.append(format_report(analyse(conducted, frame=frame)))
-        lines.append("")
-        lines.append(
-            f"length {written.total_beats:g} beats -> {conducted.total_beats:g}, "
-            f"lead-in {conducted.lead_in:.3f} beats"
-        )
         return "\n".join(lines)
 
     registry.add(

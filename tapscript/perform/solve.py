@@ -27,8 +27,9 @@ arrivals stay together.
 
 from __future__ import annotations
 
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass, field, replace
-from typing import Any, Callable, Iterable, Sequence
+from typing import Any
 
 from .stage import FRAME_SCORE, PLAYER_FRAME_PREFIX, Stage
 
@@ -137,10 +138,19 @@ class Solution:
     reference: str
     speed: float
     voices: dict[str, VoiceTiming] = field(default_factory=dict)
+    requested: str = ""
+    """What the caller asked for, when that was not a listener this stage has.
+    Empty otherwise; ``frame`` always says where the listening actually
+    happened."""
+
     lead_in: float = 0.0
     """Beats the whole piece was pushed later so that nothing has to be played
     before the file starts. Applied to emissions and arrivals alike, so it moves
     the music without changing anything inside it."""
+
+    @property
+    def unknown_frame(self) -> bool:
+        return bool(self.requested)
 
     @property
     def spread(self) -> float:
@@ -156,6 +166,7 @@ class Solution:
             "reference": self.reference,
             "speed_of_sound": round(self.speed, 2),
             "compensate": self.stage.compensate,
+            "requested": self.requested,
             "spread_ms": round(self.spread * 1000.0, 1),
             "lead_in_beats": round(self.lead_in, 4),
             "voices": [timing.as_dict() for timing in self.voices.values()],
@@ -175,9 +186,14 @@ def solve(
     listener, and ``score`` means no compensation at all.
     """
     reference = stage.listener or "conductor"
-    observation = (frame or reference).strip().lower()
+    known = stage.knows_frame(frame)
+    observation = (frame if known else reference).strip().lower() or reference.strip().lower()
     solution = Solution(
-        stage=stage, frame=observation, reference=reference, speed=stage.speed
+        stage=stage,
+        frame=observation,
+        reference=reference,
+        speed=stage.speed,
+        requested="" if known else frame,
     )
     if observation == FRAME_SCORE:
         return solution
@@ -249,6 +265,17 @@ def apply_to(
         [(track.name.strip().lower(), track.program, track.is_drum) for track in arrangement.tracks],
         frame=frame,
     )
+    if solution.unknown_frame:
+        from ..notation.ir import Diagnostic
+
+        arrangement.diagnostics.append(
+            Diagnostic(
+                severity="warning",
+                message=f"nobody called {frame!r} is on this stage; listening at "
+                f"{solution.frame} instead",
+                hint="frames are: " + ", ".join(frames_for(stage)),
+            )
+        )
     if not solution.voices:
         arrangement.stage = stage
         arrangement.frame = solution.frame
@@ -362,6 +389,11 @@ def format_report(report: dict[str, Any]) -> str:
         f"written for {solution['reference']}, listening at {solution['frame']}, "
         f"{geometry['temperature']:g} C, sound at {geometry['speed_of_sound']:g} m/s",
     ]
+    if solution["requested"]:
+        lines.append(
+            f"nobody called {solution['requested']!r} is on this stage; "
+            f"listening at {solution['frame']} instead"
+        )
     if not solution["compensate"]:
         lines.append("compensation is off: nobody is correcting for any of this")
 
@@ -428,6 +460,94 @@ def format_report(report: dict[str, Any]) -> str:
 
     for problem in report["problems"]:
         lines.append(f"  stage: {problem}")
+    return "\n".join(lines)
+
+
+def movement(before: Any, after: Any) -> dict[str, Any]:
+    """What a conductor's directives did, voice by voice.
+
+    Notes are paired in written order, which holds because every transform here
+    is monotone in time. Shifts are reported in milliseconds at the written
+    tempo; where a directive changed the tempo itself, that is a reading of the
+    beat positions rather than of any one moment.
+    """
+    tempo = float(getattr(before.meta, "tempo", 100.0) or 100.0)
+    to_ms = 60_000.0 / max(tempo, 1e-6)
+    later = {track.name: track for track in after.tracks}
+    voices: list[dict[str, Any]] = []
+
+    for track in before.tracks:
+        partner = later.get(track.name)
+        if partner is None or not track.notes:
+            continue
+        pairs = list(
+            zip(
+                sorted(track.notes, key=lambda note: (note.start, note.pitch)),
+                sorted(partner.notes, key=lambda note: (note.start, note.pitch)),
+                strict=False,  # voices differ in length; compare the overlap
+            )
+        )
+        if not pairs:
+            continue
+        arrival = [
+            (second.arrival_time - after.lead_in) - (first.arrival_time - before.lead_in)
+            for first, second in pairs
+        ]
+        emission = [
+            (second.emission_time - after.lead_in) - (first.emission_time - before.lead_in)
+            for first, second in pairs
+        ]
+        voices.append(
+            {
+                "voice": track.name,
+                "arrival_ms": round(sum(arrival) / len(arrival) * to_ms, 1),
+                "arrival_last_ms": round(arrival[-1] * to_ms, 1),
+                "emission_ms": round(sum(emission) / len(emission) * to_ms, 1),
+            }
+        )
+
+    def spread(arrangement: Any) -> float:
+        firsts = [
+            min(note.arrival_time for note in track.notes)
+            for track in arrangement.tracks
+            if track.notes
+        ]
+        return (max(firsts) - min(firsts)) * to_ms if firsts else 0.0
+
+    return {
+        "voices": voices,
+        "spread_before_ms": round(spread(before), 1),
+        "spread_after_ms": round(spread(after), 1),
+        "beats_before": round(before.total_beats, 3),
+        "beats_after": round(after.total_beats, 3),
+        "lead_in_beats": round(after.lead_in, 4),
+    }
+
+
+def format_movement(report: dict[str, Any]) -> str:
+    """The movement report as text."""
+    header = ("voice", "sound moved", "hands moved", "by the end")
+    rows: list[tuple[str, ...]] = [header]
+    for voice in report["voices"]:
+        rows.append(
+            (
+                voice["voice"],
+                f"{voice['arrival_ms']:+.0f} ms",
+                f"{voice['emission_ms']:+.0f} ms",
+                f"{voice['arrival_last_ms']:+.0f} ms",
+            )
+        )
+    widths = [max(len(row[index]) for row in rows) for index in range(len(header))]
+    lines = ["what the directives did"]
+    for row in rows:
+        lines.append(
+            "  " + "  ".join(cell.ljust(widths[index]) for index, cell in enumerate(row)).rstrip()
+        )
+    lines.append(
+        f"  spread at the listener {report['spread_before_ms']:.0f} ms -> "
+        f"{report['spread_after_ms']:.0f} ms, "
+        f"length {report['beats_before']:g} -> {report['beats_after']:g} beats"
+    )
     return "\n".join(lines)
 
 
