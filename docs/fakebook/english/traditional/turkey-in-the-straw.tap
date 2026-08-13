@@ -1,0 +1,16 @@
+**TRACK: Turkey in the Straw**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | G . | D . | G . | D . |
+Melody: | G4 A4 B4 D5 | B4 A4 G4 E4 | G4 A4 B4 D5 | B4 A4 G4 . |
+Lyrics: | Oh I had a lit - tle tur - key | his name was Jim - my | Oh I had a lit - tle tur - key | his name was Jim - my |
+@piano | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | d2-f#2-a2 . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . | C . | G . | D . |
+Melody: | D5 B4 G4 A4 | B4 G4 E4 . | D5 B4 G4 A4 | B4 A4 G4 . |
+Lyrics: | Tur - key in the straw, tur - key in the hay | Roll 'em up and twist 'em up a | high tuck - a - haw |
+@piano | g2-b2-d3 . | c2-e2-g2 . | g2-b2-d3 . | d2-f#2-a2 . | vel: 60
