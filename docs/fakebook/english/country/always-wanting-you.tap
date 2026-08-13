@@ -1,0 +1,28 @@
+**TRACK: Always Wanting You**
+[MetaData]
+key: A | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Country Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 50
+Chords: | A . . . | D . . . | E . . . | A . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 50
+Chords: | A . . . | D . . . | E . . . | A . . . |
+@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | A . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 60
+Chords: | D . . . | A . . . | E . . . | A . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | F#m . . . |
+@guitar | b2-d3-f#3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | f#2-a3-c#4 . . . | vel: 55
+Chords: | Bm . . . | E . . . | A . . . | E . . . |
+@guitar | b2-d3-f#3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . |
