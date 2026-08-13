@@ -1,0 +1,24 @@
+**TRACK: Fly Like an Eagle**
+[MetaData]
+key: Em | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | A . . . | A . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | A . . . | A . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | D . . . | D . . . | Em . . . | Em . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

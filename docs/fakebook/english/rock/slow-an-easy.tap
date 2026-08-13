@@ -1,0 +1,20 @@
+**TRACK: Slow an' Easy**
+[MetaData]
+key: A | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 50
+Chords: | A . . . | A . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | D . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | vel: 65
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 55

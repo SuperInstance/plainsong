@@ -1,0 +1,23 @@
+**TRACK: Walk of Life**
+[MetaData]
+key: D | tempo: 174 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+| D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+| D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[IN] (Instrumental - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+| D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 70

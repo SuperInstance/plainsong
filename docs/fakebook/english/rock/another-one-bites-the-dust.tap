@@ -1,0 +1,24 @@
+**TRACK: Another One Bites the Dust**
+[MetaData]
+key: Em | tempo: 110 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | G . . . | G . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 60
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | Em . . . | D . . . | D . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 70
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | C . . . | B . . . | B . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 50
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | G . . . | G . . . |
+@drums | k . s . | k . s . | k . s . | k . s . | vel: 60
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 55
