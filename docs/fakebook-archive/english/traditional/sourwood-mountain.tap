@@ -1,0 +1,22 @@
+**TRACK: Sourwood Mountain**
+[MetaData]
+key: D | tempo: 100 | subdivision: 8th
+time: 2/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | D . | A . | D . | A . |
+Melody: | D4 . | A3 . | F#4 . | E4 . |
+Lyrics: | Chick- en crow- ing | on Sour- wood | Moun- tain, | Hey- ho- |
+@piano | d3-f#3-a3 . | a2-c#3-e3 . | d3-f#3-a3 . | a2-c#3-e3 . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | D . | A . | D . | D . |
+Melody: | F#4 . | E4 . | D4 . | A3 . |
+Lyrics: | So man- y | pret- ty | girls I | can't count | 'em |
+@piano | d3-f#3-a3 . | a2-c#3-e3 . | d3-f#3-a3 . | d3-f#3-a3 . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . | A . | D . | A . |
+Melody: | B4 . | A4 . | F#4 . | E4 . |
+Lyrics: | Hey- ho- | did- dle- um | day, | Hey- ho- |
+@piano | g2-b2-d3 . | a2-c#3-e3 . | d3-f#3-a3 . | a2-c#3-e3 . | vel: 65

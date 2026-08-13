@@ -1,0 +1,30 @@
+**TRACK: I Could Write a Book**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 2/2 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | Am7 . . . | Dm7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 50
+Chords: | G7 . . . | G7 . . . | C . . . | C . . . |
+@guitar | g2-b2-d3-f3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+Chords: | D7 . . . | G7 . . . | C . . . | C . . . |
+@guitar | d2-f#2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . |
+@guitar | e2-g2-b2-d3 . . . | a2-c#3-e3-g3 . . . | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | Am7 . . . | Dm7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 50
+Chords: | G7 . . . | G7 . . . | C . . . | C . . . |
+@guitar | g2-b2-d3-f3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . .

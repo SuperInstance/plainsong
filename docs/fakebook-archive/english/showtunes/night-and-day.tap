@@ -1,0 +1,28 @@
+**TRACK: Night and Day**
+[MetaData]
+key: Cm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50
+Chords: | Db . . . | Db . . . | G7 . . . | G7 . . . |
+@guitar | db2-f2-ab2 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 52
+Chords: | Db . . . | Db . . . | G7 . . . | G7 . . . |
+@guitar | db2-f2-ab2 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 52
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm . . . | Fm . . . | Bb7 . . . | Bb7 . . . |
+@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+Chords: | Eb . . . | Eb . . . | Ab . . . | G7 . . . |
+@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 58
+Chords: | Db . . . | Db . . . | G7 . . . | Cm . . . |
+@guitar | db2-f2-ab2 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | vel: 58

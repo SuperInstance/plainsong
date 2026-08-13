@@ -1,0 +1,28 @@
+**TRACK: Embraceable You**
+[MetaData]
+key: Ab | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Romantic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Ab7 . . . | Db . . . |
+| Db . . . | Db . . . | Ab . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Ab7 . . . | Db . . . |
+| Db . . . | Bbm7 . . . | Eb7 . . . | Eb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Ab7 . . . | Db . . . |
+| Bbm7 . . . | Eb7 . . . | Ab . . . | Ab . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Db . . . | Ddim . . . | Ab . . . |
+| Fm7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . |
+@guitar | db2-f3-ab3 . . . | db2-f3-ab3 . . . | d2-f3-ab3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Ab . . . | Eb7 . . . | Ab . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 48

@@ -1,0 +1,20 @@
+**TRACK: I Get a Kick Out of You**
+[MetaData]
+key: Eb | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3-ab3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3-ab3 . . . | vel: 50

@@ -1,0 +1,22 @@
+**TRACK: Piano Sonata No. 8 "Pathétique" - Adagio Cantabile**
+[MetaData]
+key: Ab | tempo: 66 | subdivision: 8th
+time: 2/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Ab . . . | Db . . . |
+Melody: | Eb4 . G4 . | Ab4 . . . |
+Lyrics: | pa - the - tique . . . |
+@piano | ab2-eb3-ab3 . . . | db2-f3-ab3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Ab . . . | Fm . . . |
+Melody: | C4 . Eb4 . | F4 . . . |
+Lyrics: | son - a - ta . . . |
+@piano | ab2-c3-eb3 . . . | f2-c3-f3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Eb . . . |
+Melody: | Db4 . F4 . | Eb4 . . . |
+Lyrics: | beeth - o - ven . . . |
+@piano | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | vel: 55

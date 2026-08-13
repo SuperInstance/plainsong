@@ -1,0 +1,24 @@
+**TRACK: They All Laughed**
+[MetaData]
+key: F | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | Gm7 . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e3-bb3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | Gm7 . . . | C7 . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e3-bb3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e3-bb3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gm7 . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c2-e3-bb3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45

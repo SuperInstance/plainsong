@@ -1,0 +1,20 @@
+**TRACK: Miss Otis Regrets**
+[MetaData]
+key: Cm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Melancholy Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Cm . . . | Cm . . . | G . . . | G . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Fm . . . | G . . . | Cm . . . | G . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[B] (Bridge - 4 Bars)
+Chords: | Ab . . . | Ab . . . | G . . . | G . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Fm . . . | G . . . | Cm . . . | Cm . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 50

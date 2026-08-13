@@ -1,0 +1,24 @@
+**TRACK: They Can’t Take That Away from Me**
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . eb3-g3-bb3 . . . | vel: 55
