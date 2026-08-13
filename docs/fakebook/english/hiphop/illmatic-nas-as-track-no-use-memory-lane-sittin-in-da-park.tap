@@ -1,0 +1,24 @@
+**TRACK: Memory Lane (Sittin' in da Park)**
+[MetaData]
+key: Dm | tempo: 93 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 52
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | A . . . | Dm . . . | Dm . . . |
+@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50

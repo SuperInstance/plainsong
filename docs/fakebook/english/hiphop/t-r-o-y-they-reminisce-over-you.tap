@@ -1,0 +1,24 @@
+**TRACK: T.R.O.Y. (They Reminisce Over You)**
+[MetaData]
+key: F#m | tempo: 93 | subdivision: 8th
+time: 4/4 | mood: Laid-back, Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | E . . . |
+@guitar | b1-d2-f#2 . . . | f#2-a2-c#3 . . . | g1-b1-d2 . . . | e1-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 45

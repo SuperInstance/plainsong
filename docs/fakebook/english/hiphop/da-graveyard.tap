@@ -1,0 +1,20 @@
+**TRACK: Da Graveyard**
+[MetaData]
+key: Dm | tempo: 93 | subdivision: 8th
+time: 4/4 | mood: Dark, Grimey
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Gm . . . | A . . . | A . . . |
+@guitar | g1-d2-g2 . . . | g1-d2-g2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 55

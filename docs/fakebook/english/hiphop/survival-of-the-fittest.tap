@@ -1,0 +1,20 @@
+**TRACK: Survival of the Fittest**
+[MetaData]
+key: F#m | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Dark
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | E . . . | D . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | E . . . | D . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | F#m . . . | D . . . |
+@guitar | b1-f#2-b2 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 45
