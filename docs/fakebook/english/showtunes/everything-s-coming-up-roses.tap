@@ -1,0 +1,24 @@
+**TRACK: Everything’s Coming Up Roses**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Triumphant
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 65
+
+[B] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | E7 . . . | Am . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-f3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 70

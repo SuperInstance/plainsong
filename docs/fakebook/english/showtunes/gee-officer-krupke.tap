@@ -1,0 +1,20 @@
+**TRACK: Gee, Officer Krupke**
+[MetaData]
+key: Cm | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Sarcastic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | G7 . . . | Cm . . . | Cm . . . | Fm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f3-ab3-c4 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f3-ab3-c4 . . . | g2-b2-d3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Eb . . . | Bb7 . . . | Ab . . . | Ab . . . | Eb . . . | G7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | g2-b2-d3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Cm . . . | Ddim . . . | G7 . . . |
+@guitar | f3-ab3-c4 . . . | c3-eb3-g3 . . . | d3-f3-ab3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | G7 . . . | Ab . . . | Ab . . . | Eb . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f3-ab3-c4 . . . | g2-b2-d3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | g2-b2-d3 . . . | vel: 58

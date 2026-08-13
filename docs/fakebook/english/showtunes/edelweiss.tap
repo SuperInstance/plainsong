@@ -1,0 +1,28 @@
+**TRACK: Edelweiss**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle Waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | C . . | F . . | C . . | F . . | C . . | G . . | C . . |
+@guitar | c3-e3-g3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . | C . . | F . . | C . . | F . . | C . . | G . . | C . . |
+@guitar | c3-e3-g3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . | C . . | F . . | C . . | F . . | C . . | G . . | C . . |
+@guitar | c3-e3-g3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . | Am . . | Dm . . | G . . |
+@guitar | a2-c3-e3 . . | a2-c3-e3 . . | d2-f2-a2 . . | g2-b2-d3 . . | vel: 45
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . | C . . | F . . | C . . | F . . | C . . | G . . | C . . |
+@guitar | c3-e3-g3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . | F . . | C . . | C . . |
+@guitar | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | c3-e3-g3 . . |

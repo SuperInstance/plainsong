@@ -1,0 +1,24 @@
+**TRACK: Some Enchanted Evening**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | Am . . | Dm . . | G7 . . | C . . | Am . . | Dm . . | G7 . . |
+@guitar | c3-e3-g3 . . | a2-c3-e3 . . | d3-f3-a3 . . | g2-b2-f3 . . | c3-e3-g3 . . | a2-c3-e3 . . | d3-f3-a3 . . | g2-b2-f3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . | Am . . | F . . | G7 . . | C . . | E7 . . | F . . | G7 . . |
+@guitar | c3-e3-g3 . . | a2-c3-e3 . . | f2-a2-c3 . . | g2-b2-f3 . . | c3-e3-g3 . . | e2-g#2-b2 . . | f2-a2-c3 . . | g2-b2-f3 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | G7 . . | C . . | C . . | F . . | G7 . . | C . . | G7 . . |
+@guitar | f2-a2-c3 . . | g2-b2-f3 . . | c3-e3-g3 . . | c3-e3-g3 . . | f2-a2-c3 . . | g2-b2-f3 . . | c3-e3-g3 . . | g2-b2-f3 . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Am . . | D7 . . | G . . | G . . | Am . . | D7 . . | G7 . . | G7 . . |
+@guitar | a2-c3-e3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | g2-b2-d3 . . | a2-c3-e3 . . | d2-f#2-a2 . . | g2-b2-f3 . . | g2-b2-f3 . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . | Am . . | Dm . . | G7 . . | C . . | Am . . | Dm . . | G7 . . |
+@guitar | c3-e3-g3 . . | a2-c3-e3 . . | d3-f3-a3 . . | g2-b2-f3 . . | c3-e3-g3 . . | a2-c3-e3 . . | d3-f3-a3 . . | g2-b2-f3 . . | vel: 50

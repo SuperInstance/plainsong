@@ -1,0 +1,24 @@
+**TRACK: I Could Have Danced All Night**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . | G7 . . . | C . . . | G7 . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . | C . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3
