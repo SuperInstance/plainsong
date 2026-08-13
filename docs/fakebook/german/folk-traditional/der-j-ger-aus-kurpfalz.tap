@@ -1,0 +1,22 @@
+**TRACK: Der Jäger aus Kurpfalz**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | G4 . A4 . | B4 . A4 . | G4 . E4 . | D4 . . . |
+Lyrics: | Der Jä-ger aus Kur-pfalz, | der rei-tet durch den grü-nen Wald, | er schießt das Wild-da-pre- | tier, |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | G4 . A4 . | B4 . A4 . | G4 . E4 . | D4 . . . |
+Lyrics: | er schießt das Wild-da-pre- | tier, und lässt es lau-fen, | der Jä-ger aus Kur-pfalz, | der Jä-ger aus Kur-pfalz. |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+Melody: | E4 . G4 . | G4 . D4 . | F#4 . A4 . | G4 . . . |
+Lyrics: | Hal-li, hal-lo, hal-li, | hal-lo, du schö-ner | Wald, vor dir, | halt, halt! |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 65

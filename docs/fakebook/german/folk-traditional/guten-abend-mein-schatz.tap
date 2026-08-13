@@ -1,0 +1,22 @@
+**TRACK: Guten Abend, mein Schatz**
+[MetaData]
+key: G | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D | G . . |
+Melody: | G3 . B3 | A3 . . | G3 . E3 | D3 . . | G3 . B3 | C4 . . | B3 . A3 | G3 . . |
+Lyrics: | Gu-ten | A-bend, | mein Schatz, | gu-te | Nacht, | mein Herz, | schlaf | gut |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | g2-b2-d3 . . | g2-b2-d3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D | G . . |
+Melody: | G3 . B3 | A3 . . | G3 . E3 | D3 . . | G3 . B3 | C4 . . | B3 . A3 | G3 . . |
+Lyrics: | Die | Ster-ne | leuch-ten | hell, | die | Nacht ist | still und | warm |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | g2-b2-d3 . . | g2-b2-d3 . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . | G . . | D . . | G . . | C . . | G . . | D . . | G . . |
+Melody: | E4 . . | D4 . . | B3 . . | G3 . . | E4 . . | D4 . . | B3 . A3 | G3 . . |
+Lyrics: | Schlaf in | Frie-den, | mein | Lieb, | die | En-gel | wa-chen | bei dir |
+@piano | c2-e2-g2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 60

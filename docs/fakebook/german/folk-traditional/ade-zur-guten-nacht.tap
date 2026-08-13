@@ -1,0 +1,22 @@
+**TRACK: Ade zur guten Nacht**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | B3 . D4 . |
+Lyrics: | A - de zur gu - ten Nacht | nun wird der Schluss ge - macht | dass ich muss schei - den | ach hätt ich nie ge - se - hen |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | D4 . B3 . |
+Lyrics: | die - ses jun - gen Her - zen - lieb | das tut mir gar so weh | muss ich von ihr schei - den | das tut mir gar so weh |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | G4 . E4 . | D4 . B3 . | A3 . C4 . |
+Lyrics: | Ade, ade, ade | zur gu - ten Nacht | nun ist der Schluss ge - macht | dass ich muss schei - den |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
