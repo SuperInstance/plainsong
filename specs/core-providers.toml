@@ -1,0 +1,27 @@
+[spec]
+id = "core.providers"
+title = "A model can be reached however the user has one"
+why = """
+The system must work with a hosted API, a local server, a surrounding agent, or
+nothing at all. The catalogue is data, so this checks that every entry in it has
+an adapter behind it and that the offline path always exists.
+"""
+tags = ["core", "fast"]
+
+[[check]]
+id = "catalogue"
+kind = "python"
+run = "tapscript.selfcheck:check_providers"
+description = "Every catalogue entry maps to an adapter"
+
+[[check]]
+id = "offline"
+kind = "python"
+run = "tapscript.selfcheck:check_offline_provider"
+description = "The offline provider works with no key and no network"
+
+[[check]]
+id = "tools"
+kind = "python"
+run = "tapscript.selfcheck:check_tools"
+description = "Agent tools are registered with valid schemas"

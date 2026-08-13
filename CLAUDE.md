@@ -4,72 +4,113 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-TapScript is a plain-text music notation that reads like a lead sheet and compiles to MIDI/WAV. The repo holds two independent compiler engines, three unrelated local web apps, a large corpus of `.tap` notation (fake book, songs, training material), and a VS Code extension.
+TapScript is a plain-text music notation that compiles to MIDI and audio. The
+product is the `tapscript/` package: one compiler, three interfaces (CLI, TUI,
+web), a provider-agnostic model layer, and an embedded agent. `legacy/` holds
+the two superseded engines and is not maintained.
 
-## Setup and commands
+## Commands
 
-There is no `requirements.txt`, no packaging, no lockfile. Install by hand:
-
-```bash
-pip install numpy scipy pretty_midi flask pytest   # CI installs only numpy flask pytest
-```
-
-`pretty_midi` is optional — tests skip MIDI compilation without it. `scripts/tapscript_v2.py` imports `scipy` and `pretty_midi` at module load and will not start without them.
+No dependencies are required. Do not add any to the core.
 
 ```bash
-# Tests (CI runs this on Python 3.10/3.11/3.12)
-python3 -m pytest tests/ -v --tb=short
+# Tests (CI runs these on 3.10-3.13 across Linux, macOS, Windows, with no pip install)
+python3 -m unittest discover -s tests -v
+python3 -m unittest tests.test_notation.TestArrange.test_tokens_divide_the_bar
+python3 -m pytest tests -q                    # works too, if pytest is installed
 
-# One test class / one test
-python3 -m pytest tests/test_tapscript.py::TestParseChordToken -v
-python3 -m pytest tests/test_tapscript.py::TestTransposition::test_transpose_changes_key -v
+# The system's checks on itself -- run these before and after any change
+python3 -m tapscript spec                     # exits non-zero on failure
+python3 -m tapscript doctor --specs
+python3 -m tapscript check docs examples academy   # 6,322 .tap files must still parse
 
-# src/test_swmidi8.py is NOT collected by CI (it lives in src/, not tests/)
-python3 -m pytest src/test_swmidi8.py -v
+# Working with notation
+python3 -m tapscript new "Title" -o song.tap
+python3 -m tapscript compile song.tap -o out.mid --audio out.wav
+python3 -m tapscript info song.tap --verbose  # every diagnostic
+python3 -m tapscript transpose song.tap Dm
 
-# Compile notation from the CLI
-python3 scripts/tapscript_v2.py --cli docs/fakebook/03-hallelujah.tap --midi out.mid --wav out.wav
-python3 scripts/tapscript.py --example harbor_dawn --wav harbor.wav
+# Interfaces
+python3 -m tapscript tui
+python3 -m tapscript serve --port 8765
 
-# Web apps (each is a standalone process; start by hand)
-python3 scripts/gallery_v4.py      # 5555  (gallery_v5.py is the newer three-panel version)
-python3 scripts/midi_studio.py     # 5556
-python3 scripts/tapscript_v2.py    # 5557  — pass --port to move it aside
-python3 scripts/tapscript.py       # 5557  — same hardcoded port, cannot run alongside v2
+# The agent, offline
+python3 -m tapscript agent --provider echo "write something in D minor"
 ```
 
-`tests/` adds `scripts/` to `sys.path` and imports `tapscript` directly — module-level symbols in `scripts/tapscript.py` (including the `EXAMPLES` string constants) are part of the test surface.
+Every command takes `--json`. Use it when parsing output.
 
 ## Architecture
 
-`docs/02-architecture.md` is accurate and detailed; read it before any nontrivial change. The essentials:
+`docs/architecture.md` is accurate; read it before a nontrivial change. The
+parts that are easy to get wrong:
 
-**Nothing is shared.** Every script under `scripts/` is self-contained and imports only stdlib + numpy/scipy/pretty_midi (+ Flask for `tapscript.py`). The GM program table, the CSS theme, the ADSR envelope, and the velocity humanization exist in duplicate. Fixing a bug in one engine does not fix it in the other. The three web apps are coupled only by writing into `~/.openclaw/workspace/output/audio`, kept apart by filename prefix convention (`composition_*`, `tapscript_*`, `tapscript_v2_*`) — nothing enforces it.
+**Parse and arrange are separate.** `notation/parser.py` builds a `Score` --
+structure and tokens as written, timing still implicit. `notation/arrange.py`
+turns that into an `Arrangement` of timed notes. Renderers only ever see the
+arrangement. Transposition is parse, rewrite tokens, emit (`transform.py`),
+which is why it moves the chord row.
 
-**Compiler pipeline** (both engines, four stages): hand-written line-oriented regex parser → AST → `compile_to_midi()` → `midi_to_wav()`. The WAV stage reopens the `.mid` from disk with `pretty_midi` rather than reusing the in-memory object, which is why `compile_to_midi()` always writes the file before returning. No soundfont is involved — WAV is synthesized in NumPy (v1: waveform guessed from track name + delay-line reverb; v2: per-instrument `synth_piano`/`synth_bass`/… functions, no reverb). Velocity humanization uses a seeded RNG (`seed=42`), so renders are deterministic.
+**The timing rule: a bar is one bar long, and the tokens in it divide it.**
+Twelve tokens are triplets; a seventeenth cannot spill into the next bar. This
+is the fix for BUG-1/BUG-2 in `examples/edge-cases/BUGS.md`. `core.bar_fill =
+"grid"` restores the old fixed-slot behaviour and reports what it drops. Slot
+positions are computed from the bar start, never accumulated -- do not
+reintroduce a running cursor.
 
-**Two engines, two notations:**
+**Rows of different kinds sound together; a row repeated in one section follows
+on.** Two `Melody:` rows in a section are eight bars, not four played twice.
 
-| | `scripts/tapscript.py` (v1) | `scripts/tapscript_v2.py` (v2) |
-|---|---|---|
-| Pitch | Relative — Roman numerals + scale degrees, resolved against the key at compile time | Absolute — scientific pitch (`C4`, `e2`), resolved at parse time |
-| Line typing | Heuristic (`is_chord_line`/`is_melody_line` score token shapes) — can silently drop notes | Explicit `Chords:` / `Melody:` / `Lyrics:` / `@name` prefixes |
-| AST | `@dataclass` types (`TapScriptComposition → Section → Bar → …`) | Plain nested dicts |
-| Transpose | Rewrite `key:`, re-parse — correct by construction | Regex-shift every pitch token; `Chords:` and `Lyrics:` pass through verbatim |
-| Time sig | `time: N/M` honored | Fixed 4/4 |
-| Web | Flask | stdlib `http.server`, plus `/api/compose` via DeepSeek |
+**Nothing may be imported at module scope outside the standard library.** The
+MIDI writer and synthesiser are hand-written for this reason. NumPy, fluidsynth,
+ffmpeg and mido are probed in `runtime/capabilities.py` and imported inside the
+function that uses them. CI installs nothing, so a stray import fails the build.
 
-v2 is the notation in active use — the README sample, every `.tap` file in `docs/fakebook/`, `docs/songs/`, and `examples/` uses it. v1 is legacy but still live, and the newest feature (duration-by-spacing, `C4~~~` where each sustain char adds an eighth) landed **only in v1**; see `docs/melody-spacing-design-decisions.md` and `proposals/melody-duration-spacing.md`. Both engines ship examples named `harbor_dawn` and `the_room_is_safe` that are unrelated pieces of text.
+**Nothing may hardcode a path.** Everything comes from `runtime/paths.py`.
+`tests/test_runtime.py::test_no_home_directory_is_hardcoded` greps the package
+for `~/.openclaw`, `/home/eileen` and `/Users/` -- the previous version wrote
+into one contributor's home directory.
 
-**`src/`** is separate from the compilers — Python ports of other fleet projects (`pulse_grid.py`: 96 PPQ timing grid; `swmidi8.py`: fixed 8-byte wire-format codec from tensor-midi; `groove_tracker.py`: port of `groove.rs`). Nothing in `scripts/` imports them yet.
+**Providers are data.** `llm/catalog.json` maps a provider to a wire format;
+`llm/providers/` has one adapter per format (`openai`, `anthropic`, `gemini`,
+`host`, `echo`). Adding a service that speaks an existing format is a catalogue
+entry, not code. The `host` provider borrows the model from a surrounding agent
+(Claude Code, openclaw) so no API key is needed -- see `docs/host-bridge.md`.
+
+**One of everything.** GM programs live only in `tapscript/instruments.py`; all
+three interfaces call `pipeline.compile_text`. The version this replaced kept
+four copies of the GM table that had drifted apart. If you are about to copy a
+table between files, don't.
+
+## Specs
+
+`specs/*.toml` state what the system promises; `tapscript/selfcheck.py` holds the
+checks. They are separate from the tests because a user runs them to find out
+what works on their machine, and the build agent runs them to verify its own
+changes. A new capability wants a spec as well as a test.
+
+## Changing the notation
+
+Several thousand `.tap` files in this repository depend on it, plus files we
+cannot see. A change needs a failing-then-passing spec, a clean
+`tapscript check docs examples academy`, and a `CHANGELOG.md` entry. If existing
+notation would parse differently afterwards, that is breaking even if the new
+reading is better: put it behind a setting and default to the old behaviour.
 
 ## Content directories
 
-`docs/fakebook/` (~3,800 `.tap` transcriptions across a dozen languages), `docs/songs/`, `docs/prose/`, `docs/traditions/`, `docs/training/`, `academy/` (five graded levels + assessments) are notation and prose corpora, mostly generated. `scripts/fakebook_generator.py` bulk-generates them via DeepSeek and enforces a hard copyright policy: full melody+lyrics only for public-domain material, chord-chart skeletons for copyrighted songs, with `Lyrics:`/`Melody:` lines stripped as a safety net. Do not loosen that.
+`docs/fakebook/` (~3,800 generated `.tap` transcriptions across a dozen
+languages), `docs/songs/`, `docs/prose/`, `docs/traditions/`, `docs/training/`,
+`academy/`. Generated material -- it parses, but it is not all well written, and
+it accounts for ~3,800 bar-count warnings. The old generator in
+`legacy/scripts/fakebook_generator.py` enforced a copyright policy (full
+melody+lyrics only for public-domain works, chord charts otherwise). Keep that
+policy if you regenerate anything.
 
-## Known rough edges
+## Rough edges
 
-- `examples/edge-cases/BUGS.md` documents reproduced v2 parser bugs (non-standard token counts silently misplaced, overfilled bars destroying notes). They are open; check it before "fixing" surprising timing behavior.
-- Hardcoded absolute paths: output goes to `~/.openclaw/workspace/output/`, and `scripts/fakebook_generator.py` hardcodes `/home/eileen/projects/tapscript-studio`.
-- API keys (`DEEPSEEK_API_KEY`) are read by grepping `~/.bashrc` before falling back to the environment.
-- `vscode-extension/` declares a `test` script pointing at `test/runTest.js`, which does not exist. Its one real feature is the `tapscript.checkPipeBalance` linter in `src/extension.js`.
+- The built-in synthesiser is a preview renderer; timbres are approximations.
+  Audio is mono.
+- The host bridge cannot stream and reports no token usage.
+- `legacy/` needs `numpy scipy pretty_midi flask` and is excluded from CI and
+  from ruff. It can be deleted.
