@@ -1,0 +1,24 @@
+**TRACK: Stone Free**
+[MetaData]
+key: E | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | b2-f#3-b3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | A . . . | A . . . | B . . . | B . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | b2-f#3-b3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | C#m . . . | G# . . . | G# . . . |
+@guitar | c#3-e3-g#3 . . . | c#3-e3-g#3 . . . | g#2-c#3-e3 . . . | g#2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | b2-f#3-b3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | A . . . | A . . . | B . . . | B . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . .

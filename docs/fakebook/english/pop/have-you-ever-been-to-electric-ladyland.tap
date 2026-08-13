@@ -1,0 +1,24 @@
+**TRACK: Have You Ever Been (To Electric Ladyland)**
+[MetaData]
+key: E | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Psychedelic
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | C#m . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | c#3-e3-g#3 . . . | b1-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . | A . . . | B7 . . . |
+@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | b1-f#2-a2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | B7 . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | b1-f#2-a2 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

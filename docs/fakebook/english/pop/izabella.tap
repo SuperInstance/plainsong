@@ -1,0 +1,24 @@
+**TRACK: Izabella**
+[MetaData]
+key: Em | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | C . . . | G . . . | D . . . |
+@guitar | a2-e2-a3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | d2-a2-d3 . . . | vel: 70
+
+[BR] (Bridge - 2 Bars)
+Chords: | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50
