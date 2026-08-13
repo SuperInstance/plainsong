@@ -1,0 +1,16 @@
+**TRACK: So treiben wir den Winter aus**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Joyful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . | G . . | C . . | G . . |
+Melody: | E4 . G4 | D4 . F4 | E4 . G4 | D4 . F4 |
+Lyrics: | So trei-ben wir den Win-ter aus, | aus un-ser-re Stadt hin-aus, | So trei-ben wir den Win-ter aus, | aus un-ser-re Stadt hin-aus, |
+@piano | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . | C . . | G . . | C . . |
+Melody: | A3 . C4 | E4 . G4 | D4 . B3 | C4 . . |
+Lyrics: | Und wenn wir ihn hin-aus-ge-trie-ben | ha-ben, kommt der Früh-ling her-ein, | ja Früh-ling, Früh-ling, komm her-ein, | und bring uns Blu-men und Son-nen-schein, |
+@piano | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 60

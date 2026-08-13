@@ -1,0 +1,22 @@
+**TRACK: Hab' meine Liebe im Herzen**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+Melody: | E4 . G4 . | D4 . B3 . | A3 . C4 . | F4 . E4 . |
+Lyrics: | Hab mei-ne Lie-be | im Her-zen, ja | im Her-zen, die | kann nie ver-geh'n |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |
+Lyrics: | Sie blüht und grünt | im Len-ze, ja | im Len-ze, und | blüht im-mer-währ |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . F4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Drum sing ich | froh im Her- | zen, mein Lied | der Lie-be |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
