@@ -1,0 +1,24 @@
+**TRACK: Young Americans**
+[MetaData]
+key: Eb | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | Gm7 . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 55

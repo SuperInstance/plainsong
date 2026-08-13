@@ -1,0 +1,24 @@
+**TRACK: Suffragette City**
+[MetaData]
+key: E | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e3-g#3-b3 . . . | a3-c#4-e4 . . . | e3-g#3-b3 . . . | b3-d#4-f#4 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | A . . . | B . . . | E . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[OUT] (Outro - 2 Bars)
+Chords: | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 50
