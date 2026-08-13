@@ -1,0 +1,24 @@
+**TRACK: Heartbreaker**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | D . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | vel: 58
+
+[V2] (Verse Variation - 4 Bars)
+Chords: | Am . . . | G . . . | D . . . | E . . . |
+@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 62
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Am . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | vel: 66
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | E . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 54

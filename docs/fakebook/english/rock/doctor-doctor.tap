@@ -1,0 +1,24 @@
+**TRACK: Doctor Doctor**
+[MetaData]
+key: E minor | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | Em . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[SOLO] (Guitar Solo - 8 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 65

@@ -1,0 +1,20 @@
+**TRACK: Since I've Been Loving You**
+[MetaData]
+key: Cm | tempo: 74 | subdivision: 8th
+time: 4/4 | mood: Bluesy, Slow Burn
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Bb . . . | Ab . . . | Gm . . . | Fm . . . | Cm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-bb2-d3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Bb . . . | Ab . . . | Gm . . . | Fm . . . | Cm . . . | G7 . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-bb2-d3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 58
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Cm . . . | Cm . . . | Ab . . . | Bb . . . | G7 . . . | G7 . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 62
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Cm . . . | Cm . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 50

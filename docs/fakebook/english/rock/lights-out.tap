@@ -1,0 +1,24 @@
+**TRACK: Lights Out**
+[MetaData]
+key: E minor | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-a2 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | C . . . | D . . . | Em . . . |
+@guitar | g2-b2-d3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | A . . . | B7 . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | a1-c#2-e2 . . . | b1-f#2-a2 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50
