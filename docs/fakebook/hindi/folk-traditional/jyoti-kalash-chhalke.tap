@@ -1,0 +1,22 @@
+**TRACK: Jyoti Kalash Chhalke**
+[MetaData]
+key: Cm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Devotional
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+Melody: | C4 . Eb4 . | Ab3 . C4 . | G3 . Bb3 . | F3 . Ab3 . |
+Lyrics: | Jyo-ti ka-lash chhal-ke | bha-rat maa-ke | man-dir mein | jyot ja-ge |
+@piano | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | f2-ab2-c3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Fm . . . | Cm . . . | Ab . . . | Bb . . . |
+Melody: | F4 . Ab4 . | E4 . G4 . | C4 . Eb4 . | D4 . F4 . |
+Lyrics: | shan-kar-dha-ri-naath | ja-gaa-ke | bha-rat maa-ke | man-dir mein |
+@piano | f2-ab2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+Melody: | C4 . C4 . | Ab3 . Ab3 . | G3 . Bb3 . | F3 . F3 . |
+Lyrics: | jyot ja-ge | jyot ja-ge | bha-rat maa-ke | man-dir mein |
+@piano | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | f2-ab2-c3 . . . | vel: 50

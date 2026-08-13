@@ -1,0 +1,16 @@
+**TRACK: Jai Jai Ram Ram**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Devotional
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+Melody: | E4 . G4 . | A4 . C5 . | A4 . F4 . | G4 . E4 . |
+Lyrics: | Jai Jai Ram Ram | Jai Jai Ram Ram | Jai Jai Ram Ram | Jai Jai Ram Ram |
+@piano | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . C5 . | E5 . C5 . | D5 . B4 . | C5 . G4 . |
+Lyrics: | Ram Ram Jai | Ram Ram Jai | Ram Ram Jai | Ram Ram Jai |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
