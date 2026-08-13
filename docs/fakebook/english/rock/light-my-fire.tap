@@ -1,0 +1,24 @@
+**TRACK: Light My Fire**
+[MetaData]
+key: Am | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | Am . . . | F . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 55
+Chords: | Am . . . | F . . . | E . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | A . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | a2-e3-a3 . . . | vel: 65
+Chords: | G . . . | A . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | F . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50
