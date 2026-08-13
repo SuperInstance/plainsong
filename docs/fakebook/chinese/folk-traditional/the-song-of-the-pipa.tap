@@ -1,0 +1,22 @@
+**TRACK: The Song of the Pipa**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | A4 . F4 . | E4 . D4 . | C#4 . . . |
+Lyrics: | pi pa sheng dong | ting wo su shuo | gu shi you chang | qing si mian mian |
+@piano | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+Melody: | D4 . F4 . | A4 . G4 . | F4 . E4 . | E4 . C#4 . |
+Lyrics: | zhi yin nan yu | qing huai jie you | sui yue ru ge | xin shi nan shou |
+@piano | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A4 . C5 . | B4 . G4 . | A4 . F4 . | E4 . C#4 . |
+Lyrics: | lai ri fang chang | mo wen gui qi | yue guang ru shui | zhao wo xin jian |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 55

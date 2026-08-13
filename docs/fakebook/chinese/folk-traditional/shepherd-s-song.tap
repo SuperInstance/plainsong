@@ -1,0 +1,22 @@
+**TRACK: Shepherd's Song**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 6/8 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . . . | D . . . . . |
+Melody: | B3 . D4 . G4 . | A3 . F#3 . D3 . |
+Lyrics: | While shep-herds watched their flocks by night |
+@piano | g2-b2-d3 . . . . . | d2-f#2-a2 . . . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . . . | G . . . . . |
+Melody: | E4 . G4 . C4 . | B3 . D4 . G3 . |
+Lyrics: | All seat-ed on the ground |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . . . | G . . . . . |
+Melody: | F#4 . A4 . D4 . | B3 . D4 . G4 . |
+Lyrics: | The an-gel of the Lord came down |
+@piano | d3-f#3-a3 . . . . . | g2-b2-d3 . . . . . | vel: 55

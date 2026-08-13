@@ -1,0 +1,22 @@
+**TRACK: Nanniwan**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 2/4 | mood: Gentle, nostalgic
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |
+Melody: | D4 . F4 . | G4 . F4 . | E4 . D4 . | C#4 . D4 . |
+Lyrics: | 花 篮 的 花 儿 香 | 听 我 来 唱 一 唱 | 唱 呀 一 唱 | 来 到 了 南 泥 湾 |
+@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |
+Melody: | D4 . F4 . | G4 . F4 . | E4 . D4 . | C#4 . D4 . |
+Lyrics: | 南 泥 湾 好 地 方 | 好 地 方 来 好 风 光 | 好 地 方 来 | 好 风 光 到 处 是 庄 稼 |
+@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+Melody: | A4 . G4 . | F4 . E4 . | D4 . F4 . | E4 . C#4 . |
+Lyrics: | 遍 地 是 牛 羊 | 遍 地 是 牛 羊 | 再 不 是 旧 模 样 | 是 陕 北 的 好 江 南 |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50

@@ -1,0 +1,16 @@
+**TRACK: Little Cabbage**
+[MetaData]
+key: Cm | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+Melody: | C4 . Eb4 . | Ab3 . C4 . | Eb4 . G4 . | F4 . D4 . |
+Lyrics: | Xiao bai cai ya, | di di huang ya, | san si sui shang, | mei le niang ya |
+@piano | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . . . | Cm . . . | G . . . | Cm . . . |
+Melody: | F4 . Ab4 . | G4 . Eb4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Gen zhe ye ye, | hao guo ri zi, | zhi pa ye ye, | qu shi chang |
+@piano | f2-ab2-c3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | vel: 50
