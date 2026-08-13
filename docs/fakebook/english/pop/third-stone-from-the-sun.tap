@@ -1,0 +1,24 @@
+**TRACK: Third Stone from the Sun**
+[MetaData]
+key: E | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Spacey
+
+[V1] (Main Theme - 8 Bars)
+Chords: | E . . . | E . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 50
+
+[V2] (Variation - 8 Bars)
+Chords: | E . . . | E . . . | D . . . | D . . . | A . . . | A . . . | B . . . | B . . . |
+@guitar | e2-g#3-b3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a1-c#3-e3 . . . | a1-c#3-e3 . . . | b1-d#3-f#3 . . . | b1-d#3-f#3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . |
+@guitar | c2-e3-g3 . . . | c2-e3-g3 . . . | g1-b2-d3 . . . | g1-b2-d3 . . . | vel: 45
+
+[V3] (Return - 8 Bars)
+Chords: | E . . . | E . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 40

@@ -1,0 +1,24 @@
+**TRACK: Are You Experienced?**
+[MetaData]
+key: E | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Psychedelic
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | C#m . . . | G# . . . | A . . . | B . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-c#3-e3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | F# . . . | E . . . | D . . . | A . . . |
+@guitar | f#2-a#2-c#3 . . . | e2-g#2-b2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
