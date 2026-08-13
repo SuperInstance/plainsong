@@ -1,0 +1,24 @@
+**TRACK: Will You Still Love Me Tomorrow**
+[MetaData]
+key: F | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | Bb . . . |
+@guitar | f1-a1-c2 . . . | a1-c2-e2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | Am . . . | Dm . . . | Bb . . . |
+@guitar | f1-a1-c2 . . . | a1-c2-e2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+@guitar | c2-e2-g2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | g1-b1-d2 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Am . . . | Bb . . . |
+@guitar | a1-c2-e2 . . . | bb1-d2-f2 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | F . . . | F . . . |
+@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 45

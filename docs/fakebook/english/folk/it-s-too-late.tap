@@ -1,0 +1,30 @@
+**TRACK: It's Too Late**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 50
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Db . . . | Ab . . . |
+@guitar | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | vel: 60
+Chords: | Fm . . . | Eb . . . | Db . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | eb2-g3-bb3 . . . | db2-f3-ab3 . . . | eb2-g3-bb3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 50
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f3-ab3 . . . | bb2-db3-f3 . . . | eb2-g3-bb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Db . . . | Ab . . . |
+@guitar | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | vel: 60

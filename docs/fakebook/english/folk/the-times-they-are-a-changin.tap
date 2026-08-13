@@ -1,0 +1,24 @@
+**TRACK: The Times They Are A-Changin'**
+[MetaData]
+key: D | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | A . . . | D . . . |
+@guitar | g2-b3-d3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Bm . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[V3] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b3-d3 . . . | d2-f#3-a3 . . . | vel: 55
