@@ -1,0 +1,24 @@
+**TRACK: Hanamizuki**
+[MetaData]
+key: G | tempo: 94 | subdivision: 8th
+time: 4/4 | mood: Gentle, Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . | G . . . | D/F# . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . | G . . . | D/F# . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . | F . . . | C . . . | D . . . | D . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | Em/G . . . | F . . . | D . . . |
+@guitar | a2-c3-e3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . | F . . . | C . . . | D . . . | D . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f#2-a
