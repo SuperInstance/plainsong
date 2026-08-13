@@ -1,0 +1,28 @@
+**TRACK: La Leggenda del Piave**
+[MetaData]
+key: Bb major | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Solemn, martial
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
+Lyrics: | Il Pia- ve mor- mo- ra- va | cal- mo e tran- quil- lo- al | pas- sag- io dei pri- mo | sol- di- ni- del- la- |
+@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |
+Melody: | D4 . F4 . | G4 . A4 . | F4 . E4 . | D4 . . . |
+Lyrics: | pri- ma- guer- ra- di- ce- va- | il- fiu- me- sa- cro- al- | Re- gno- d'Ita- lia- e- | l'ul- ti- mo- |
+@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | f2-a3-c4 . . . | bb2-d3-f3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
+Lyrics: | No- vel- la- glo- ri- a- | di- ca- da- ver- so- il | mon- te- il- suo- can- | to- dol- ce- |
+@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 50
+
+[CH2] (Chorus Variation - 4 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |
+Melody: | D4 . F4 . | G4 . A4 . | F4 . E4 . | D4 . . . |
+Lyrics: | ri- scor- re- va- il- | fiu- me- sa- cro- al- | Re- gno- d'Ita- lia- e- | l'ul- ti- mo- |
+@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . |

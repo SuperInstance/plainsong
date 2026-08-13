@@ -1,0 +1,16 @@
+**TRACK: La Valsugana**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | E . . . | Am . . . | E . . . |
+Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
+Lyrics: | La val su - ga - na | è bel - la, oh quant'è bel - la | la val su - ga - na | è bel - la, sì, per me |
+@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | E . . . | Am . . . | E . . . |
+Melody: | D4 . F4 . | E4 . G#3 . | A3 . C4 . | B3 . G#3 . |
+Lyrics: | E con la mi - a | bel - la, la vo' spo - sar | la val su - ga - na | è il mio pa - es |
+@piano | d3-f3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 50
