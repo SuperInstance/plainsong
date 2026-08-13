@@ -1,0 +1,20 @@
+**TRACK: Get Lucky**
+[MetaData]
+key: Am | tempo: 116 | subdivision: 16th
+time: 4/4 | mood: Groovy
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
