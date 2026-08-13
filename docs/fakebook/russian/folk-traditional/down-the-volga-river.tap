@@ -1,0 +1,22 @@
+**TRACK: Down the Volga River**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Solemn, rolling
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+Melody: | D4 . F4 . | A4 . . . | F4 . E4 . | D4 . . . |
+Lyrics: | Down the Vol- ga | ri- ver wide, | our boat glides | with the tide |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+Melody: | D4 . F4 . | A4 . G4 . | F4 . E4 . | D4 . . . |
+Lyrics: | From the north- | ern hills we come, | to the south- | land warm |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A4 . C5 . | B4 . A4 . | F4 . A4 . | E4 . . . |
+Lyrics: | Hey, ho, pull to- | geth- er, men, | down the riv- er | flow |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
