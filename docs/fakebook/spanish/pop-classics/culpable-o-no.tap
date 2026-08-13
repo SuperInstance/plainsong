@@ -1,0 +1,24 @@
+**TRACK: Culpable o No**
+[MetaData]
+key: Bbm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic Bolero
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gb . . . | F . . . |
+@guitar | gb1-bb1-db2 . . . | f1-a1-c2 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bbm . . . | Bbm . . . |
+@guitar | bb1-db2-f2 . . . | bb1-db2-f2 . . . | vel: 45

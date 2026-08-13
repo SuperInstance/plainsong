@@ -1,0 +1,24 @@
+**TRACK: Ahora Te Puedes Marchar**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | G . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | G . . . | F . . . | E . . . |
+@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Dm . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60

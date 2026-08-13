@@ -1,0 +1,24 @@
+**TRACK: La Media Vuelta**
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Bolero
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | E7 . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | E7 . . . | E7 . . . | Am . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . | F . . . | G . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | A7 . . . | Dm . . . | G7 . . . | C . . . |
+@guitar | a2-c#3-e3 . . . | d2-f2-a2 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | vel: 45
