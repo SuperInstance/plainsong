@@ -1,0 +1,16 @@
+**TRACK: Ya Layal**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | A3 . C#4 . | D4 . F4 . | E4 . . . |
+Lyrics: | ya la - yal | ya la - yal | ya lay - al | sa - hi - ni |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+Melody: | F4 . E4 . | D4 . C4 . | Bb3 . A3 . | A3 . . . |
+Lyrics: | ya lay - al | ya lay - al | hab - bi - bi | ya lay - al |
+@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 55
