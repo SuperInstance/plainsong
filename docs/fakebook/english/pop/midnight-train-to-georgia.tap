@@ -1,0 +1,32 @@
+**TRACK: Midnight Train to Georgia**
+[MetaData]
+key: Eb | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Gm . . . | Cm . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | vel: 60
+Chords: | Fm . . . | Bb . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Gm . . . | Cm . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | vel: 60
+Chords: | Fm . . . | Bb . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g

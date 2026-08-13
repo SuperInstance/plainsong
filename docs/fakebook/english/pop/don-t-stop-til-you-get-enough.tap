@@ -1,0 +1,20 @@
+**TRACK: Don't Stop 'til You Get Enough**
+[MetaData]
+key: C#m | tempo: 120 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | C#m . . . | F#7 . . . | F#7 . . . | C#m . . . | C#m . . . | F#7 . . . | F#7 . . . |
+@guitar | c#3-e3-g#3 . . . | c#3-e3-g#3 . . . | f#2-a#2-c#3 . . . | f#2-a#2-c#3 . . . | c#3-e3-g#3 . . . | c#3-e3-g#3 . . . | f#2-a#2-c#3 . . . | f#2-a#2-c#3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | F#m . . . | F#m . . . | G#7 . . . | G#7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | g#2-b2-d#3 . . . | g#2-b2-d#3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | B . . . | B . . . | F#7 . . . | F#7 . . . |
+@guitar | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | f#2-a#2-c#3 . . . | f#2-a#2-c#3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | C#m . . . | C#m . . . | F#7 . . . | F#7 . . . |
+@guitar | c#3-e3-g#3 . . . | c#3-e3-g#3 . . . | f#2-a#2-c#3 . . . | f#2-a#2-c#3 . . . | vel: 55

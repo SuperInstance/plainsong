@@ -1,0 +1,20 @@
+**TRACK: Hips Don't Lie**
+[MetaData]
+key: Em | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e3-b3-e4 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e3-b3-e4 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-e3-a3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | vel: 60
