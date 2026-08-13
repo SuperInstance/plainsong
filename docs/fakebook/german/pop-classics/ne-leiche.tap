@@ -1,0 +1,24 @@
+**TRACK: Ne Leiche**
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Groove
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C . . . | Am . . . | Bb . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 48
