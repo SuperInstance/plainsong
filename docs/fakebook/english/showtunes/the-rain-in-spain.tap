@@ -1,0 +1,24 @@
+**TRACK: The Rain in Spain**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | A7 . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Gm . . . | A7 . . . | A7 . . . |
+@guitar | g2-bb2-d3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 58
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 50
