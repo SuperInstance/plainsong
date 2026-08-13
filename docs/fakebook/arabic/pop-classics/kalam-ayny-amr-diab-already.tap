@@ -1,0 +1,24 @@
+**TRACK: Kalam Ayny - Amr Diab (already)**
+[MetaData]
+key: Dm | tempo: 95 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | A . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gm . . . | A . . . |
+@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | A . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
