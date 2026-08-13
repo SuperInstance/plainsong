@@ -1,0 +1,30 @@
+**TRACK: Yong Heng De Lian Ren**
+[MetaData]
+key: Eb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 50
+Chords: | Eb . . . | Bb/D . . . | Fm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 50
+Chords: | Fm7 . . . | Bb . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Gm7 . . . | Cm . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | vel: 60
+Chords: | Fm7 . . . | Bb . . . | Eb . . . | Bb . . . |
+@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Eb/Bb . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Cm . . . | Fm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | c3-eb3-g3 . .

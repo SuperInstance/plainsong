@@ -1,0 +1,29 @@
+**TRACK: Zui Wei Da De Wang Yi**
+[MetaData]
+key: Bb major | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 52
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 65
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 65
+Chords: | Dm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | d2-f2-a2 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+Ch
