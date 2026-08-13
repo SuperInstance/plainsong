@@ -1,0 +1,20 @@
+**TRACK: N.I.B.**
+[MetaData]
+key: Em | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Driving, heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars, variation)
+Chords: | Em . . . | C . . . | D . . . | Em . . . | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | vel: 72
+
+[BR] (Bridge - 8 Bars)
+Chords: | C . . . | D . . . | Em . . . | C . . . | D . . . | Em . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60

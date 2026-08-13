@@ -1,0 +1,20 @@
+**TRACK: Angel of Death**
+[MetaData]
+key: Bb minor | tempo: 206 | subdivision: 16th
+time: 4/4 | mood: Relentless
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb5 . . . | Eb5 . . . | Bb5 . . . | F5 . . . |
+@guitar | b1-f2-b2 . . . | eb1-bb1-eb2 . . . | b1-f2-b2 . . . | f1-c2-f2 . . . | vel: 70
+
+[V2] (Verse Riff Variation - 8 Bars)
+Chords: | Bb5 . . . | Eb5 . . . | C5 . . . | F5 . . . |
+@guitar | b1-f2-b2 . . . | eb1-bb1-eb2 . . . | c2-g2-c3 . . . | f1-c2-f2 . . . | vel: 75
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb5 . . . | Db5 . . . | Bb5 . . . | F5 . . . |
+@guitar | gb1-db2-gb2 . . . | db1-ab1-db2 . . . | b1-f2-b2 . . . | f1-c2-f2 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | E5 . . . | B5 . . . | C5 . . . | D5 . . . |
+@guitar | e1-b1-e2 . . . | b1-f#2-b2 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 65

@@ -1,0 +1,23 @@
+**TRACK: Raining Blood**
+[MetaData]
+key: Bm | tempo: 106 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | Bm . . . | G . . . | G . . . | Bm . . . | Bm . . . | A . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | Bm . . . | Bm . . . | G . . . | G . . . | Bm . . . | Bm . . . | A . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 75
+
+[B] (Bridge - 8 Bars)
+Chords: | F#5 . . . | F#5 . . . | E5 . . . | E5 . . . | D5 . . . | D5 . . . | Bm . . . | Bm . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | b1-f#2-b2 . . . | b1-f#2-b2 . . . | vel: 80
+
+[V3] (Verse - 8 Bars)
+Chords: | Bm . . . | Bm . . . | G . . . | G . . . | Bm . . . | Bm . . . | A . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 85
+
+[OUT] (Outro - 8 Bars)
+Chords: | Bm . . . | Bm . . . | Bm . . . | Bm . . .

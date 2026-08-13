@@ -1,0 +1,24 @@
+**TRACK: South of Heaven**
+[MetaData]
+key: E | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Dark, Menacing
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | D . . . | C . . . | D . . . | E . . . | D . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-g3-c4 . . . | d2-a2-d3 . . . | vel: 55
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | E . . . | D . . . | C . . . | D . . . | E . . . | D . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-g3-c4 . . . | d2-a2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | G . . . | F . . . | G . . . | A . . . | G . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | E . . . | C . . . | D . . . | E . . . |
+@guitar | e2-b2-e3 . . . | c3-g3-c4 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45
