@@ -1,0 +1,28 @@
+**TRACK: Itsuka no Sora**
+[MetaData]
+key: Bm | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Reflective Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | A . . . | G . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | f#2-a#2-c#3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bm . . . | A . . . | G . . . | F# . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | f#2-a#2-c#3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 62
+Chords: | D . . . | A . . . | Bm . . . | F# . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | vel: 64
+
+[BR] (Bridge - 4 Bars)
+Chords: | G . . . | A . . . | Bm . . . | G A . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 a2-c#3-e3 . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 66
+Chords: | D . . . | A . . . | Bm . . . | F# . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | vel: 68
