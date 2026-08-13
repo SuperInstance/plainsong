@@ -1,0 +1,28 @@
+**TRACK: Symphony No. 6 "Pastoral" - First Movement (Allegro ma non troppo)**
+[MetaData]
+key: F | tempo: 66 | subdivision: 8th
+time: 2/4 | mood: Serene
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+Melody: | F4 . A4 . | C5 . B4 . | A4 . G4 . | F4 . E4 . |
+Lyrics: | wel - come spring, | gen - tle breeze, | brook - lets flow, | sun - light gleams |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+Melody: | F4 . A4 . | C5 . B4 . | A4 . G4 . | F4 . E4 . |
+Lyrics: | birds a - wake, | mead - ows green, | joy - ful hearts, | peace - ful dreams |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+Melody: | A4 . C5 . | B4 . G4 . | A4 . F4 . | G4 . C4 . |
+Lyrics: | sing with joy, | na - ture's call, | dance in light, | one and all |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | F . . . | F . . . |
+Melody: | F4 . . . | . . . . |
+Lyrics: | peace . . . | . . . . |
+@piano | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 40

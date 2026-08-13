@@ -1,0 +1,22 @@
+**TRACK: Appassionata Sonata (Op. 57, First Movement Theme)**
+[MetaData]  
+key: Fm | tempo: 84 | subdivision: 16th  
+time: 12/8 | mood: Turbulent
+
+[V1] (Verse - 4 Bars)  
+Chords: | Fm . . . . . | Db . . . . . |  
+Melody: | F4 . . . Ab4 . . . | Db4 . . . F4 . . . |  
+Lyrics: | (instrumental) |  
+@piano | f2-c3-f3 . . . . . | db2-ab2-db3 . . . . . | vel: 60
+
+[V2] (Verse Variation - 4 Bars)  
+Chords: | Fm . . . . . | Eb . . . . . |  
+Melody: | F4 . . . C5 . . . | Eb4 . . . G4 . . . |  
+Lyrics: | (instrumental) |  
+@piano | f2-c3-f3 . . . . . | eb2-bb2-eb3 . . . . . | vel: 65
+
+[CH] (Chorus - 4 Bars)  
+Chords: | Cdim . . . . . | Fm . . . . . |  
+Melody: | B4 . . . C5 . . . | F4 . . . Ab4 . . . |  
+Lyrics: | (instrumental) |  
+@piano | c3-eb3-gb3 . . . . . | f2-c3-f3 . . . . . | vel: 70

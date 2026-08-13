@@ -1,0 +1,22 @@
+**TRACK: Moonlight Sonata**
+[MetaData]
+key: C#m | tempo: 69 | subdivision: 8th
+time: 4/4 | mood: Solemn, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Melody: | G#3 . . . | A3 . . . | B3 . . . | C#4 . . . |
+Lyrics: | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . |
+@piano | c#2-e2-g#2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |
+Melody: | C#4 . E4 . | G#3 . B3 . | A3 . C#4 . | G#3 . . . |
+Lyrics: | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . |
+@piano | a1-c#2-e2 . . . | e2-g#2-b2 . . . | f#1-a1-c#2 . . . | c#2-e2-g#2 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | C#m . . . | C#m . . . |
+Melody: | G#3 . . . | . . . . |
+Lyrics: | (instrumental) . . . | (instrumental) . . . |
+@piano | c#2-e2-g#2 . . . | c#2-e2-g#2 . . . | vel: 40

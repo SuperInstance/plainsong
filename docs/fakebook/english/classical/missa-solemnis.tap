@@ -1,0 +1,22 @@
+**TRACK: Missa Solemnis - Kyrie**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | C . . . |
+Melody: | D4 . F4 . | E4 . . . | D4 . C4 . | A3 . . . |
+Lyrics: | Ky - ri - e | e - le - i - son | Ky - ri - e | e - le - i - son |
+@piano | d2-a2-d3 . . . | a2-c#3-e3 . . . | d2-a2-d3 . . . | c2-e3-g3 . . . | vel: 40
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A . . . |
+Melody: | A3 . C4 . | B3 . D4 . | A3 . F4 . | E4 . . . |
+Lyrics: | Chri - ste e - | le - i - son | Chri - ste e - | le - i - son |
+@piano | f2-a2-c3 . . . | c2-e3-g3 . . . | d2-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | A . . . | Dm . . . |
+Melody: | D4 . F4 . | Bb3 . D4 . | E4 . C#4 . | D4 . . . |
+Lyrics: | Ky - ri - e | e - le - i - son | e - le - i - son | Ky - ri - e |
+@piano | d2-a2-d3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | d2-a2-d3 . . . | vel: 40

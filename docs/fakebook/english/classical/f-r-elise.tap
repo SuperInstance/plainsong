@@ -1,0 +1,16 @@
+**TRACK: Für Elise**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 3/8 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . | Am . . | Dm . . | E7 . . |
+Melody: | E5 . D#5 . | E5 . D#5 . | E5 . B4 . | D5 . C5 . |
+Lyrics: | la la la | la la la | la la la | la la la |
+@piano | a2-c3-e3 . . | a2-c3-e3 . . | d3-f3-a3 . . | e3-g#3-b3 . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . | Am . . | Dm . . | E7 . . |
+Melody: | A4 . C5 . | E5 . A4 . | B4 . D5 . | C5 . B4 . |
+Lyrics: | la la la | la la la | la la la | la la la |
+@piano | a2-c3-e3 . . | a2-c3-e3 . . | d3-f3-a3 . . | e3-g#3-b3 . . | vel: 50

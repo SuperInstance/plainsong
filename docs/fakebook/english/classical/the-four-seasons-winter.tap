@@ -1,0 +1,22 @@
+**TRACK: The Four Seasons (Winter) - I. Allegro non molto**
+[MetaData]
+key: Fm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Icy, dramatic
+
+[V1] (Verse - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | C . . . | Fm . . . |
+Melody: | F4 . Ab4 . | F4 . Eb4 . | D4 . C4 . | Db4 . C4 . |
+Lyrics: | (instrumental) |
+@strings | f2-ab2-c3 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | f1-ab1-c2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | C . . . | Fm . . . |
+Melody: | F4 . Ab4 . | F4 . Eb4 . | D4 . C4 . | Db4 . C4 . |
+Lyrics: | (instrumental) |
+@strings | f2-ab2-c3 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | f1-ab1-c2 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | C . . . | Fm . . . | C . . . |
+Melody: | Db5 . C5 . | Bb4 . Ab4 . | F4 . Ab4 . | G4 . C4 . |
+Lyrics: | (instrumental) |
+@strings | db2-f2-ab2 . . . | c2-e2-g2 . . . | f1-ab1-c2 . . . | c2-e2-g2 . . . | vel: 70

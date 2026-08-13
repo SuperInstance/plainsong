@@ -1,0 +1,16 @@
+**TRACK: Symphony No. 7 in A major - Allegretto**
+[MetaData]
+key: Am | tempo: 104 | subdivision: 8th
+time: 2/4 | mood: Solemn
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . |
+Melody: | A3 . A3 . | A3 . A3 . | F3 . F3 . | F3 . F3 . | E3 . E3 . | E3 . E3 . | D3 . D3 . | D3 . D3 . |
+Lyrics: | la la la la | la la la la | la la la la | la la la la | la la la la | la la la la | la la la la | la la la la |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-c3-f3 . . . | f2-c3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | E . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | E . . . | E . . . |
+Melody: | E4 . E4 . | E4 . E4 . | A3 . A3 . | A3 . A3 . | F3 . F3 . | F3 . F3 . | E3 . E3 . | E3 . E3 . |
+Lyrics: | ah ah ah ah | ah ah ah ah | ah ah ah ah | ah ah ah ah | ah ah ah ah | ah ah ah ah | ah ah ah ah | ah ah ah ah |
+@piano | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 50
