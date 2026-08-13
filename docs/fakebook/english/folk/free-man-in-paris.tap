@@ -1,0 +1,30 @@
+**TRACK: Free Man in Paris**
+[MetaData]
+key: D | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 52
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | D . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | vel: 60
+Chords: | G . . . | A . . . | D . . . | A . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | A . . . | F#m . . . | Bm . . . |
+@guitar | e2-g2-b2 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | b2-d3-f#3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | D . . . | G . . . | D . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e

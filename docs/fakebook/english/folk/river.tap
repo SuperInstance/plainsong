@@ -1,0 +1,20 @@
+**TRACK: River**
+[MetaData]
+key: E minor | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . | Am . . | Em . . | Am . . |
+@guitar | e2-b2-e3 . . | a2-c3-e3 . . | e2-b2-e3 . . | a2-c3-e3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . | Am . . | Em . . | B7 . . |
+@guitar | e2-b2-e3 . . | a2-c3-e3 . . | e2-b2-e3 . . | b1-d#2-f#2 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . | G . . | D . . | G . . |
+@guitar | c3-e3-g3 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . | Em . . | B7 . . | Em . . |
+@guitar | a2-c3-e3 . . | e2-b2-e3 . . | b1-d#2-f#2 . . | e2-b2-e3 . . | vel: 45
