@@ -1,0 +1,22 @@
+**TRACK: Michael Finnegan**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . D4 . | B3 . G3 . |
+Lyrics: | There was an old man named Mi-chael Fin-ne-gan | He grew whisk-ers on his chin-e-gan | The wind came up and blew them in-e-gan | Poor old Mi-chael Fin-ne-gan be-gin a-gain |
+@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | G7 . . . | C . . . |
+Melody: | A3 . C4 . | C4 . E4 . | D4 . B3 . | C4 . . . |
+Lyrics: | He caught a fish and it was fin-e-gan | He put it in a tin and it fell in-e-gan | He took it out and it was thin-e-gan | Poor old Mi-chael Fin-ne-gan be-gin a-gain |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | G7 . . . | C . . . |
+Melody: | D4 . F4 . | E4 . C4 . |
+Lyrics: | Be-gin a-gain, be-gin a-gain | Poor old Mi-chael Fin-ne-gan |
+@piano | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55
