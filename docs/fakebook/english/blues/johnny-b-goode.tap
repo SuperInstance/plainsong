@@ -1,0 +1,19 @@
+**TRACK: Johnny B. Goode**
+[MetaData]
+key: Bb | tempo: 168 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 60
+
+[CH] (Chorus - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge/Instrumental - 8 Bars)
+Chords: |

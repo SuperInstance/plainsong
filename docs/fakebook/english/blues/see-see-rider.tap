@@ -1,0 +1,24 @@
+**TRACK: See See Rider**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bluesy, Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Am . . . | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Am . . . | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Am . . . | Am . . . | Am . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 50
