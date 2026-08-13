@@ -1,0 +1,24 @@
+**TRACK: The Next Episode**
+[MetaData]
+key: F#m | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Grooving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 64
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | E . . . | F#m . . . | F#m . . . |
+@guitar | d2-a2-d3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 52
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | F#m . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . .

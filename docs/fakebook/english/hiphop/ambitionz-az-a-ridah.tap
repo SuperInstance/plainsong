@@ -1,0 +1,24 @@
+**TRACK: Ambitionz az a Ridah**
+[MetaData]
+key: F#m | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | A . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | A . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | E . . . |
+@guitar | b1-d2-f#2 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | vel: 60

@@ -1,0 +1,24 @@
+**TRACK: Protect Ya Neck**
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Dm . . . | Bb . . . | Dm . . . | Bb . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Dm . . . | Bb . . . | Dm . . . | Bb . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | A . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Dm . . . | Bb . . . | Dm . . . | Bb . . . | A . . . | A . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | A . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | vel: 50
