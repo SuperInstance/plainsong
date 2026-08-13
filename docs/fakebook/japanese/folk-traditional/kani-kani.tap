@@ -1,0 +1,16 @@
+**TRACK: Kani Kani**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | C . . . |
+Melody: | A3 . C4 . | G3 . E4 . | A3 . C4 . | G3 . E4 . |
+Lyrics: | Ka - ni ka - ni | ka - ni ka - ni | ka - ni ka - ni | ka - ni ka - ni |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | Bb . . . | C . . . | F . . . |
+Melody: | A3 . F4 . | D4 . Bb3 . | C4 . E4 . | F4 . A4 . |
+Lyrics: | ka - ni ka - ni | ka - ni ka - ni | ka - ni ka - ni | ka - ni ka - ni |
+@piano | f2-a2-c3 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 55
