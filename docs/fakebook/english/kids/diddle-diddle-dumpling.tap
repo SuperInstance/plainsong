@@ -1,0 +1,22 @@
+**TRACK: Diddle, Diddle, Dumpling**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 2/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . | G . | C . | G . |
+Melody: | E4 G4 | D4 B3 | C4 E4 | D4 G3 |
+Lyrics: | Did-dle did-dle | dump-ling my | son John | went to bed |
+@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . | G . | C . | G . |
+Melody: | E4 G4 | D4 B3 | C4 E4 | D4 G3 |
+Lyrics: | with his breech-es | on, one | stock-ing off | and one |
+@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . | C . | G . | C . |
+Melody: | A4 F4 | E4 C4 | D4 B3 | C4 E4 |
+Lyrics: | stock-ing on, | did-dle did-dle | dump-ling my | son John |
+@piano | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | vel: 60

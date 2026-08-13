@@ -1,0 +1,22 @@
+**TRACK: Oh, Dear! What Can the Matter Be?**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 6/8 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . . . | G7 . . . . . |
+Melody: | E4 . G4 . C5 . | D5 . B4 . G4 . |
+Lyrics: | Oh dear what can the mat-ter be |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3-f3 . . . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . . . | G7 . . . . . |
+Melody: | E4 . G4 . A4 . | G4 . E4 . C4 . |
+Lyrics: | Dear dear what can the mat-ter be |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3-f3 . . . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . . . | C . . . . . | G7 . . . . . | C . . . . . |
+Melody: | F4 . A4 . C5 . | E5 . C5 . A4 . | D5 . B4 . G4 . | C5 . . . . . |
+Lyrics: | Oh dear what can the mat-ter be |
+@piano | f2-a2-c3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3-f3 . . . . . | c3-e3-g3 . . . . . | vel: 58
