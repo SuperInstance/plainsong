@@ -1,0 +1,20 @@
+**TRACK: Travushka**
+[MetaData]  
+key: Am | tempo: 120 | subdivision: 8th  
+time: 4/4 | mood: Driving  
+
+[V1] (Verse - 8 Bars)  
+Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |  
+Chords: | Am . . . | Dm . . . | G . . . | Am . . . |  
+@guitar | a2-e3-a3 . . . | d3-f3-a3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | vel: 55  
+@guitar | a2-e3-a3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | F . . . | G . . . | Am . . . | E7 . . . |  
+Chords: | F . . . | G . . . | C . . . | E7 . . . |  
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e3-g#3-b3 . . . | vel: 65  
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | vel: 65  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Dm . . . | Am . . . | F . . . | E7 . . . |  
+@guitar | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e3-g#3-b3 . . . | vel: 50
