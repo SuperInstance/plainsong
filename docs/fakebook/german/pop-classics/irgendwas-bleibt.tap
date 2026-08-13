@@ -1,0 +1,24 @@
+**TRACK: Irgendwas bleibt**
+[MetaData]
+key: Bb | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . | Eb . . . | Bb . . . | F . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Cm . . . | F . . . | F . . . |
+@guitar | c2-eb2-g2 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . | Eb . . . | Bb . . . | F . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 65
