@@ -1,0 +1,25 @@
+**TRACK: Povo que Lavas no Rio**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 6/8 | mood: Fado, melancholic
+
+[V1] (Verse - 4 Bars of 6/8)
+Chords: | Dm . . . . . | A7 . . . . . |
+Melody: | D4 . . A3 . . | C#4 . . E4 . . |
+Lyrics: | Po- | vo | que | la- | vas | no |
+Lyrics: | ri- | o | que | a- | le- | jas |
+@piano | d3-a3-d4 . . . . . . | a2-c#3-e3 . . . . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . . . | A7 . . . . . |
+Melody: | D4 . . F4 . . | E4 . . C#4 . . |
+Lyrics: | nos | tris- | tes | can- | tos | de |
+Lyrics: | quem | pas- | sa | e | não | fica |
+@piano | d3-a3-d4 . . . . . . | a2-c#3-e3 . . . . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . . . | Gm . . . . . | A7 . . . . . | Dm . . . . . |
+Melody: | D4 . . F4 . . | Bb3 . . D4 . . | C#4 . . E4 . . | D4 . . . . . |
+Lyrics: | la- | va | as | mi- | nhas | má- | goas | com |
+Lyrics: | o | teu | a- | gua | cor- | ren- | te | sim |
+@piano | d3-a3-d4 . . . . . . | g2-bb2-d3 . . . . . . | a2-c#3-e3 . . . . . . | d3-a3-d4 . . . . . . | vel: 50
