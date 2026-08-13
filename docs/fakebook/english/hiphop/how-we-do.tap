@@ -1,0 +1,24 @@
+**TRACK: How We Do**
+[MetaData]
+key: Cm | tempo: 92 | subdivision: 16th  
+time: 4/4 | mood: Dark, Bouncy
+
+[V1] (Verse - 8 Bars)  
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |  
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |  
+@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 60  
+@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)  
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |  
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |  
+@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 58  
+@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 52
+
+[CH] (Chorus - 4 Bars)  
+Chords: | Ab . . . | Bb . . . | Cm . . . | G . . . |  
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Fm . . . | G . . . | Ab . . . | G . . . |  
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 50

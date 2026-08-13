@@ -1,0 +1,24 @@
+**TRACK: Get at Me Dog**
+[MetaData]
+key: F#m | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | E . . . |
+@guitar | b2-d3-f#3 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65

@@ -1,0 +1,16 @@
+**TRACK: Izzo (H.O.V.A.)**
+[MetaData]
+key: F#m | tempo: 91 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | F#m . . . |
+@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | vel: 58
