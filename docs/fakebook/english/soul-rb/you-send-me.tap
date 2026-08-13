@@ -1,0 +1,24 @@
+**TRACK: You Send Me**
+[MetaData]
+key: C | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Smooth
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | F . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | F . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | F . . . | Fm . . . | C . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | C . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 45
