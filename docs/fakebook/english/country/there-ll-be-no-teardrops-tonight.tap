@@ -1,0 +1,24 @@
+**TRACK: There'll Be No Teardrops Tonight**
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Weeping
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |
+@guitar | e2-g#2-b2 . . | e2-g#2-b2 . . | a2-c#3-e3 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |
+@guitar | e2-g#2-b2 . . | e2-g#2-b2 . . | a2-c#3-e3 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . | A . . | E . . | B7 . . | E . . | A . . | B7 . . | E . . |
+@guitar | e2-g#2-b2 . . | a2-c#3-e3 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | a2-c#3-e3 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . | E . . | B7 . . | E . . |
+@guitar | a2-c#3-e3 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |
+@guitar | e2-g#2-b2 . . | e2-g#2-b2 . . | a2-c#3-e3 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | b1-d#2-f#2 . . | e2-g#2-b2 . . | vel: 55
