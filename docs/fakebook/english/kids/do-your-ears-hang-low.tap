@@ -1,0 +1,22 @@
+**TRACK: Do Your Ears Hang Low?**
+[MetaData]
+key: C | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+Melody: | E4 . G4 . | G4 . E4 . | A4 . G4 . | F4 . E4 . |
+Lyrics: | Do your ears hang low? | Do they wob-ble to and fro? | Can you tie them in a knot? | Can you tie them in a bow? |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | G4 . E4 . | E4 . G4 . | G4 . E4 . |
+Lyrics: | Can you throw them o'er your shoul-der | like a con-ti-nen-tal sol-dier? | Do your ears hang low? | Do your ears hang low? |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+Melody: | E4 . G4 . | G4 . E4 . | A4 . G4 . | F4 . E4 . |
+Lyrics: | Do your ears hang high? | Do they reach up to the sky? | Do they droop when they are wet? | Do they stiff-en when they're dry? |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
