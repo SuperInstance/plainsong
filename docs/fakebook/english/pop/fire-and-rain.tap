@@ -1,0 +1,24 @@
+**TRACK: Fire and Rain**
+[MetaData]
+key: C | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | G . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | G . . . |
+@guitar | a2-c3-e3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V3] (Verse - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55

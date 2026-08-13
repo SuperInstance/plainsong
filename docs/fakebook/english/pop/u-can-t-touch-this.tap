@@ -1,0 +1,20 @@
+**TRACK: U Can't Touch This**
+[MetaData]
+key: F#m | tempo: 102 | subdivision: 16th
+time: 4/4 | mood: Funk
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | E . . . | E . . . | D . . . | D . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | E . . . | E . . . | D . . . | D . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | Bm . . . | A . . . | A . . . |
+@guitar | b1-d2-f#2 . . . | b1-d2-f#2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | E . . . | E . . . | D . . . | D . . . | E . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60

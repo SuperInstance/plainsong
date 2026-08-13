@@ -1,0 +1,24 @@
+**TRACK: Nasty**
+[MetaData]
+key: Fm | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Fm . . . |
+@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | vel: 65
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | C7 . . . |
+@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Fm . . . |
+@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | C7 . . . | Fm . . . |
+@guitar | bb2-db3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3-bb3 . . . | f3-ab3-c4 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Fm . . . |
+@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | vel: 60

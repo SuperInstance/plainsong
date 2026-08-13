@@ -1,0 +1,24 @@
+**TRACK: Honky Tonk Women**
+[MetaData]
+key: G | tempo: 115 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | G . . . | G . . . | C . . . | C . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | G . . . | G . . . | C . . . | C . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 68
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 70
