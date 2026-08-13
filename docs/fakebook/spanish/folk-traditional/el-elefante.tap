@@ -1,0 +1,16 @@
+**TRACK: El elefante**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 2/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . | G7 . | C . | G7 . |
+Melody: | G4 E4 C4 . | G4 E4 C4 . | A4 G4 E4 . | D4 C4 . . |
+Lyrics: | El e-le-fan-te | del zo-o-lo-gi-co | se ba-lan-ce-a | en la tel-a-ra-ña |
+@piano | c3-e3-g3 . | g2-b2-d3-f3 . | c3-e3-g3 . | g2-b2-d3-f3 . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . | F . | C . | G7 C . |
+Melody: | E4 G4 C5 . | A4 F4 A4 . | G4 E4 C4 . | D4 G4 C4 . |
+Lyrics: | ¡Uy! que ca-re-ta | de gran pa-seo | ¡Uy! que ca-re-ta | de gran pa-seo |
+@piano | c3-e3-g3-c4 . | f2-a2-c3-f3 . | c3-e3-g3-c4 . | g2-b2-d3-f3 c3-e3-g3 . | vel: 60
