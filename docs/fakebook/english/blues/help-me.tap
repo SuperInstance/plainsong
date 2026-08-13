@@ -1,0 +1,30 @@
+**TRACK: Help Me**
+[MetaData]
+key: E | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Swampy
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | A . . . | B7 . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
+| e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | A . . . | B7 . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
+| e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | B7 . . . | E . . . | B7 . . . |
+@guitar | a2-e3-a3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | A . . . | B7 . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
+| e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

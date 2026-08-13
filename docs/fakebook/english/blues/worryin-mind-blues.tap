@@ -1,0 +1,20 @@
+**TRACK: Worryin' Mind Blues**
+[MetaData]
+key: E | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+@guitar | a1-c#2-e2 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | e2-g#2-b2 . . . | vel: 58
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a1-c#2
