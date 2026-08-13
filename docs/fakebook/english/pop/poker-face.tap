@@ -1,0 +1,16 @@
+**TRACK: Poker Face**
+[MetaData]
+key: Gm | tempo: 119 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | bb1-f2-bb2 . . . | f2-c3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | bb1-f2-bb2 . . . | f2-c3-f3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | D . . . | Gm . . . | D . . . |
+@guitar | c3-eb3-g3 . . . | d2-f#2-a2 . . . | g2-d3-g3 . . . | d2-f#2-a2 . . . | vel: 55

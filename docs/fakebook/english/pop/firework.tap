@@ -1,0 +1,24 @@
+**TRACK: Firework**
+[MetaData]
+key: Ab | tempo: 124 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 4 Bars)
+Chords: | Ab . . . | Db . . . | Fm . . . | Eb . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab2-db3 . . . | f2-c3-f3 . . . | eb2-bb2-eb3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Ab . . . | Db . . . | Fm . . . | Eb . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab2-db3 . . . | f2-c3-f3 . . . | eb2-bb2-eb3 . . . | vel: 45
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | Db . . . | Eb . . . |
+@guitar | db2-ab2-db3 . . . | eb2-bb2-eb3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Db . . . | Fm . . . | Eb . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab2-db3 . . . | f2-c3-f3 . . . | eb2-bb2-eb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-c3-f3 . . . | db2-ab2-db3 . . . | ab2-eb3-ab3 . . . | eb2-bb2-eb3 . . . | vel: 55

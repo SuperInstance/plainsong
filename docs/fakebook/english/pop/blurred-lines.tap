@@ -1,0 +1,20 @@
+**TRACK: Blurred Lines**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Groovy
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | C . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Dm . . . | C . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | C . . . | Bb . . . | A . . . |
+@guitar | d3-f3-a3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge/Interlude - 4 Bars)
+Chords: | Gm . . . | A . . . | Dm . . . | A . . . |
+@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50

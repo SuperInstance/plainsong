@@ -1,0 +1,20 @@
+**TRACK: See You Again**
+[MetaData]
+key: Am | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | F . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 45
+
+[CH-Outro] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 55
