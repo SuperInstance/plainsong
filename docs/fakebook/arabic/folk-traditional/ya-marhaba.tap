@@ -1,0 +1,16 @@
+**TRACK: Ya Marhaba**
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
+Lyrics: | Ya mar-ha-ba | ya mar-ha-ba | ya mar-ha-ba | bi-ka ya ha-bi |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | A . . . |
+Melody: | B3 . D4 . | A3 . C#4 . | B3 . D4 . | E4 . C#4 . |
+Lyrics: | Ya mar-ha-ba | ya mar-ha-ba | bi-ka ya ha-bi | bi-ka ya ha-bi |
+@piano | g2-b2-d3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
