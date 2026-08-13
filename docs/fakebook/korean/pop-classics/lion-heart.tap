@@ -1,0 +1,22 @@
+**TRACK: Lion Heart**
+[MetaData]
+key: F#m | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Retro Pop
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | F#m . . . | D . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 50
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | Bm . . . | E . . . | Bm . . . | E . . . |
+@guitar | b2-d3-f#3 . . . | e2-g#3-b3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | F#m . . . | D . . . |
+@guitar | a2-e3-a3 . . . | e2-b3-e3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 65
+| A . . . | E . . . | F#m . . . | D . . . |
+@guitar | a2-e3-a3 . . . | e2-b3-e3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | E . . . | F#m . . . | E . . . |
+@guitar | d2-a2-d3 . . . | e2-b3-e3 . . . | f#2-c#3-f#3 . . . | e2-b3-e3 . . . | vel: 50

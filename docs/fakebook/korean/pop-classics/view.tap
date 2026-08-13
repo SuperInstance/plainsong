@@ -1,0 +1,28 @@
+**TRACK: View**
+[MetaData]
+key: F#m | tempo: 122 | subdivision: 16th
+time: 4/4 | mood: Groovy
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e1-g#2-b2 . . . | vel: 55
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
+@guitar | b1-d2-f#2 . . . | f#2-a2-c#3 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | F#m . . . |
+@guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | f#2-a2-c#3 . . . | vel: 65
+Chords: | G . . . | D . . . | E . . . | E . . . |
+@guitar | g1-b1-d2 . . . | d2-f#2-a2 . . . | e1-g#2-b2 . . . | e1-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b1-d2-f#2 . . . | g1-b1-d2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | vel: 50
+Chords: | Bm . . . | G . . . | E . . . | F#m . . . |
+@guitar | b1-d2-f#2 . . . | g1-b1-d2 . . . | e1-g#2-b2 . . . | f#2-a2-c#3 . . . | vel: 52
