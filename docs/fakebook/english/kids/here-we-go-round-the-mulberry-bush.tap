@@ -1,0 +1,22 @@
+**TRACK: Here We Go Round the Mulberry Bush**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 6/8 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . . . | G . . . . . |
+Melody: | E4 . G4 . E4 . | D4 . E4 . C4 . |
+Lyrics: | Here we go round the | mul-ber-ry bush |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . . . | G . . . . . |
+Melody: | E4 . G4 . E4 . | D4 . C4 . C4 . |
+Lyrics: | on a cold and | frost-y morn-ing |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . . . | G . . . . . |
+Melody: | E4 . G4 . E4 . | D4 . E4 . C4 . |
+Lyrics: | Here we go round the | mul-ber-ry bush |
+@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 65

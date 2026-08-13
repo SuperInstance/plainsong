@@ -1,0 +1,28 @@
+**TRACK: Humpty Dumpty**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . D4 . | E4 . . . |
+Lyrics: | Hum-pty | Dum-pty | sat on a | wall |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . D4 . | C4 . . . |
+Lyrics: | Hum-pty | Dum-pty | had a great | fall |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . G4 . | E4 . C4 . | D4 . E4 . | C4 . . . |
+Lyrics: | All the king's | horses and | all the king's | men |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . D4 . | E4 . . . |
+Lyrics: | Could-n't put | Hum-pty to- | ge-ther a- | gain |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

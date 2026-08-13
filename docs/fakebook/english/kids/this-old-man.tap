@@ -1,0 +1,28 @@
+**TRACK: This Old Man**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . E4 . | D4 . G3 . |
+Lyrics: | This old man, he played one, | He played knick-knack on my thumb, | With a knick-knack paddy-whack, | Give the dog a bone, |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | C . . . | G . C . |
+Melody: | E4 . G4 . | D4 . C4 . |
+Lyrics: | This old man came rolling home, | |
+@piano | c3-e3-g3 . . . | g2-b2-d3 c3-e3-g3 | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . E4 . | D4 . G3 . |
+Lyrics: | This old man, he played two, | He played knick-knack on my shoe, | With a knick-knack paddy-whack, | Give the dog a bone, |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | C . . . | G . C . |
+Melody: | E4 . G4 . | D4 . C4 . |
+Lyrics: | This old man came rolling home, | |
+@piano | c3-e3-g3 . . . | g2-b2-d3 c3-e3-g3 | vel: 55

@@ -1,0 +1,22 @@
+**TRACK: Pop Goes the Weasel**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 6/8 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . . . | G7 . . . . . |
+Melody: | E4 . G4 . C5 . | B4 . G4 . E4 . |
+Lyrics: | Half a pound of tup-pen-ny rice, |
+@piano | c3-e3-g3 . . . c4 . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . . . | G7 . . . . . |
+Melody: | D4 . E4 . F4 . | E4 . D4 . C4 . |
+Lyrics: | Half a pound of trea-cle. That's the way the |
+@piano | c3-e3-g3 . . . c4 . | g2-b2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . . . | G7 . . . . . | C . . . . . | G7 . . . C . |
+Melody: | E4 . G4 . C5 . | B4 . G4 . E4 . | D4 . E4 . F4 . | E4 . D4 . C4 . |
+Lyrics: | mon-ey goes. Pop! goes the wea-sel. |
+@piano | c3-e3-g3 . . . c4 . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . c4 . | g2-b2-d3-f3 . . . c3 . | vel: 60
