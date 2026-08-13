@@ -1,0 +1,16 @@
+**TRACK: La Mazurka**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . |
+Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | C#4 . E4 . |
+Lyrics: | La ma-zur-ka | dan-cons en-semble | sous la lu-ne | qui nous res-sem-ble |
+@piano | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . | Bb . . | A7 . . | Dm . . |
+Melody: | F4 . A4 . | Bb4 . D5 . | A4 . C#5 . | D5 . F4 . |
+Lyrics: | tour-nons la ron-de | gai-ment et sans fin | la mu-sique est mon-de | pour ce soir en-fin |
+@piano | d3-f3-a3 . . | bb2-d3-f3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | vel: 55

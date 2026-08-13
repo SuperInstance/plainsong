@@ -1,0 +1,22 @@
+**TRACK: La Quadriglia**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . |
+Melody: | G4 . B4 . | D5 . . . |
+Lyrics: | la qua - dri - glia |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . |
+Melody: | E4 . G4 . | B4 . . . |
+Lyrics: | si bal - la in - sie - me |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . |
+Melody: | B4 . D5 . | A4 . F#4 . |
+Lyrics: | e - co la fi - gu - ra |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 65
