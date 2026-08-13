@@ -1,0 +1,24 @@
+**TRACK: Machi no Aruki**
+[MetaData]
+key: D | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Bouncy
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | E7 . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | A . . . | D . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | A . . . | F#m . . . | B7 . . . |
+@guitar | e2-g2-b2 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[OUT] (Outro - 2 Bars)
+Chords: | D . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 50

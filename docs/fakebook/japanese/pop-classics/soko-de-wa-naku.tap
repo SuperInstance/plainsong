@@ -1,0 +1,26 @@
+**TRACK: Soko de wa Naku**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | C . . . | F . . . |
+         | Dm . . . | Gm . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 55
+@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | C . . . | F . . . |
+         | Dm . . . | Gm . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 55
+@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+         | F . . . | Dm . . . | Gm . . . | C . . . |
+@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 65
+@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | C . . . |
+@guitar | bb2-d3-f3 . . . | bb2-b2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60

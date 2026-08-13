@@ -1,0 +1,24 @@
+**TRACK: Kōjō no Tsuki**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | A7 . . |
+@guitar | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | a2-c#3-e3 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | A7 . . |
+@guitar | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | a2-c#3-e3 . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . | F . . | Gm . . | A7 . . |
+@guitar | bb2-d3-f3 . . | f2-a2-c3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | Dm . . |
+@guitar | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . | Gm . . | A7 . . | Dm . . |
+@guitar | d3-f3-a3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | vel: 45

@@ -1,0 +1,24 @@
+**TRACK: Ue o Muite Arukō**
+[MetaData]
+key: Bb major | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Nostalgic
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 45
