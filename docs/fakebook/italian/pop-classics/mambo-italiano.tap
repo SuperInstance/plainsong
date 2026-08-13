@@ -1,0 +1,24 @@
+**TRACK: Mambo Italiano**
+[MetaData]  
+key: Cm | tempo: 168 | subdivision: 8th  
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)  
+Chords: | Cm . . . | Cm . . . | Cm . . . | G7 . . . | Cm . . . | Cm . . . | Ab . . . | G7 . . . |  
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3-f3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)  
+Chords: | Cm . . . | Cm . . . | Fm . . . | G7 . . . | Cm . . . | Cm . . . | Ab . . . | G7 . . . |  
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3-f3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)  
+Chords: | Cm . . . | Cm . . . | Cm . . . | G7 . . . | Cm . . . | Cm . . . | Ab . . . | G7 . . . |  
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3-f3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Fm . . . | Cm . . . | D7 . . . | G7 . . . |  
+@guitar | f2-ab2-c3 . . . | c3-eb3-g3 . . . | d2-f#2-a2-c3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)  
+Chords: | Cm . . . | Cm . . . | G7 . . . | Cm . . . |  
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | g2-b2-d3-f3 .
