@@ -1,0 +1,24 @@
+**TRACK: The Way You Move**
+[MetaData]
+key: Dm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Groovy
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Bb . . . | A . . . |
+@guitar | g2-bb2-d3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50

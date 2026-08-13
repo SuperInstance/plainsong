@@ -1,0 +1,24 @@
+**TRACK: 99 Problems**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . | F . . . | G . . . | Am . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 64
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 58
