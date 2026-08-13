@@ -1,0 +1,28 @@
+**TRACK: Jolene**
+[MetaData]
+key: C#m | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Pleading
+
+[V1] (Verse - 4 Bars)
+Chords: | C#m . . . | G#m . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C#m . . . | G#m . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[V3] (Verse - 4 Bars)
+Chords: | C#m . . . | G#m . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | C#m . . . |
+@guitar | c#3-e3-g#3 . . . | vel: 45

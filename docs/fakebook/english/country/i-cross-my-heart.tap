@@ -1,0 +1,24 @@
+**TRACK: I Cross My Heart**
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . |
+@guitar | g2-bb2-d3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60

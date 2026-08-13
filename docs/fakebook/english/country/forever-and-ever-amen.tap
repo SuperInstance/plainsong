@@ -1,0 +1,24 @@
+**TRACK: Forever and Ever, Amen**
+[MetaData]
+key: D | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Honky-tonk
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@ guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | g1-b1-d2 . . . | d2-f#2-a2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | A . . . |
+@ guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | D . . . |
+@ guitar | g1-b1-d2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | G . . . | A . . . | A . . . |
+@ guitar | b1-d2-f#2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | D . . . |
+@ guitar | g1-b1-d2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | vel: 60

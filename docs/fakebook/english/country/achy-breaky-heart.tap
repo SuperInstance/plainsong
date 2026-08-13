@@ -1,0 +1,23 @@
+**TRACK: Achy Breaky Heart**
+[MetaData]
+key: A | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Country Rock
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+| E . . . | E . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+| E . . . | E . . . | A . . . | A . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | A . . . |
+| D . . . | A . . . | E . . . | E . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | E . . . |
+@guitar | b2-d3-f#3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | vel: 50
