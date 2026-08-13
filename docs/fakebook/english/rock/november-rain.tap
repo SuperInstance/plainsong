@@ -1,0 +1,24 @@
+**TRACK: November Rain**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | G . . . | F . . . | G . . . | A5 . . . | A5 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 65
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a

@@ -1,0 +1,24 @@
+**TRACK: Livin' on a Prayer**
+[MetaData]
+key: Em | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | G . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | D . . . | G . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | D . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 58

@@ -1,0 +1,26 @@
+**TRACK: Walk This Way**
+[MetaData]
+key: D | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | D . . . | D . . . |
+       | D . . . | D . . . | D . . . | D . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . |
+        | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | D . . . | D . . . |
+       | G . . . | G . . . | A . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . |
+        | g2-b2-d3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | D . . . |
+       | D . . . | D . . . | A . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . |
+        | d2-f#2-a2 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | G . . . | A . . . | Bm . . . | A . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 70

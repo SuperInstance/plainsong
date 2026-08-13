@@ -1,0 +1,24 @@
+**TRACK: Nothing Else Matters**
+[MetaData]
+key: Em | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c2-g2-c3 . . . | g2-d2-g3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Am . . . | C . . . | Em . . . | D . . . |
+@guitar | a2-e2-a3 . . . | c2-g2-c3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 40
