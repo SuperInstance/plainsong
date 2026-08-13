@@ -1,0 +1,22 @@
+**TRACK: La Bamba**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Festive
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 . E4 . | F4 . E4 . | C4 . C4 . | D4 . . . |
+Lyrics: | Pa-ra bam-ba, pa-ra bam-ba, pa-ra bam-ba |
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | A4 . G4 . | E4 . C4 . | D4 . . . |
+Lyrics: | Bam-ba, bam-ba, bam-ba, bam-ba |
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 . E4 . | F4 . E4 . | C4 . C4 . | D4 . . . |
+Lyrics: | Yo no soy ma-ri-ne-ro, soy ca-pi-tán |
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
