@@ -1,0 +1,28 @@
+**TRACK: No Me Doy por Vencido**
+[MetaData]
+key: Bb | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | vel: 65
+Chords: | Eb . . . | Bb . . . | F . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | vel: 70
+Chords: | Eb . . . | Bb . . . | F . . . | F . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 70

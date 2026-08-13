@@ -1,0 +1,31 @@
+**TRACK: Valió la Pena**
+[MetaData]
+key: Bbm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+| Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . |
+| gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+| Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . |
+| gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+| Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . |
+| gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | fm2-ab2-c3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+| Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+@guitar | gb2-bb2-db
