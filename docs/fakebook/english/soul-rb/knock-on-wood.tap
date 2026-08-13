@@ -1,0 +1,26 @@
+**TRACK: Knock on Wood**
+[MetaData]
+key: C | tempo: 116 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | C . . . | G . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | F . . . | G . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | C . . . | G . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65
+
+[OUT]

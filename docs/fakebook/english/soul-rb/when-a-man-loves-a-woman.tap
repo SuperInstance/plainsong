@@ -1,0 +1,18 @@
+**TRACK: When a Man Loves a Woman**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Ab . . . | Db . . . |
+| Ab . . . | Ab . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | ab2-eb3-ab3 . . . | ab2-eb3-ab3 . . . | ab2-eb3-ab3 . . . | db3-f3-ab3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . |
+| Ab . . . | Fm7 . . . | Bbm7 . . . | Eb7 . . . |
+@guitar | ab2-eb3-ab3 . . . | ab2-eb3-ab3 . . . | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | Eb7 . . . |
+@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-eb3-ab3 . . . | eb3-g3-bb3 . . . | vel: 55

@@ -1,0 +1,20 @@
+**TRACK: Mustang Sally**
+[MetaData]
+key: C | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | F . . . | G . . . | G . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 58
