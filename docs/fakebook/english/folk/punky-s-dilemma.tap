@@ -1,0 +1,24 @@
+**TRACK: Punky's Dilemma**
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-g2-b2 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . | D . . . | C . . . | G . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | D . . . | Bm . . . | E . . . |
+@guitar | a2-c3-e3 . . . | d2-f#2-a2 . . . | b2-d3-f#3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 45

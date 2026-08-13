@@ -1,0 +1,20 @@
+**TRACK: No Man's Land (The Green Fields of France)**
+[MetaData]
+key: D | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | A . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Bm . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 50
