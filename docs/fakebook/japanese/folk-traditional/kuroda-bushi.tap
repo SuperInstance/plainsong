@@ -1,0 +1,22 @@
+**TRACK: Kuroda Bushi**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th  
+time: 4/4 | mood: Steady, folk-like
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
+Melody: | A3 . C4 . | A3 . C4 . | F4 . E4 . | D4 . E3 . |
+Lyrics: | Yo-i ya-sa | ko-ro-bu-shi | ma-tsu no | ko-no-mi yo |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | Am . . . |
+Melody: | A3 . B3 . | C4 . E4 . | D4 . B3 . | A3 . E3 . |
+Lyrics: | ka-ze ni | yu-re-ru | su-su-ki | ho no mi |
+@piano | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | E4 . C4 . | D4 . B3 . | A3 . C4 . |
+Lyrics: | So-re ga | ku-ro-da | bu-shi no | u-ta yo |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
