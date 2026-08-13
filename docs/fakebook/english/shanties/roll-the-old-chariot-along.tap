@@ -1,0 +1,16 @@
+**TRACK: Roll the Old Chariot Along**
+[MetaData]
+key: D | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . . | A . . . | D . . . | A . . . |
+Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | E4 . . . |
+Lyrics: | Oh we'll | roll the old | char-i-ot | a-long |
+@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | G . . . | D . . . | A . . . |
+Melody: | D4 . F#4 . | G4 . . . | F#4 . E4 . | D4 . . . |
+Lyrics: | We'll roll | the old | char-i-ot | a-long |
+@piano | d3-f#3-a3 . . . | g3-b3-d4 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
