@@ -1,0 +1,20 @@
+**TRACK: Lay Lady Lay**
+[MetaData]
+key: D | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Swampy
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | G . . . | D . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | A . . . | G . . . | D . . . |
+@guitar | b2-d3-f#3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 50
