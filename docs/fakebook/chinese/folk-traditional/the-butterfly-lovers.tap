@@ -1,0 +1,28 @@
+**TRACK: The Butterfly Lovers**
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Gentle, lyrical
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . | E4 . C#4 . | D4 . A3 . | A3 . . . |
+Lyrics: | but - ter - fly | love - so true | two hearts in | spring - time bloom |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | A . . . |
+Melody: | Bb3 . D4 . | A3 . C4 . | G3 . Bb3 . | A3 . C#4 . |
+Lyrics: | weep - ing wil - low | by the bridge | vows we make in | sun - set glow |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
+Melody: | D4 . F4 . A4 . | G4 . F4 . E4 . | D4 . C4 . A3 . | A3 . . . |
+Lyrics: | fly to - geth - er | through the clouds a - | bove the mor - tal | world so fair |
+@piano | d3-f3-a3-d4 . . . | g2-bb2-d3-g3 . . . | d3-f3-a3-d4 . . . | a2-c#3-e3-a3 . . . | vel: 52
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+Melody: | D4 . . . | . . . . |
+Lyrics: | rest in peace | |
+@piano | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 40
