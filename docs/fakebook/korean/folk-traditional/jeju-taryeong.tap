@@ -1,0 +1,22 @@
+**TRACK: Jeju Taryeong**
+[MetaData]
+key: Cm | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Lyrical, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . | Cm . . | Fm . . | G . . |
+Melody: | C4 . Eb4 . | D4 . C4 . | F4 . Eb4 . | D4 . C4 . |
+Lyrics: | Je - ju do | a - rin | dal - la | ne - ga |
+@piano | c3-eb3-g3 . . | c3-eb3-g3 . . | f3-ab3-c4 . . | g2-b2-d3 . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | Cm . . | Ab . . | G . . | Cm . . |
+Melody: | C4 . Eb4 . | Ab3 . C4 . | B3 . D4 . | C4 . . . |
+Lyrics: | he - eo | jin - da | ne - ga | o - ra |
+@piano | c3-eb3-g3 . . | ab2-c3-eb3 . . | g2-b2-d3 . . | c3-eb3-g3 . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . . | Cm . . | G . . | Cm . . |
+Melody: | F4 . Ab4 . | G4 . Eb4 . | D4 . B3 . | C4 . . . |
+Lyrics: | ta - ryeong | tta - ryeong | je - ju | tta - ryeong |
+@piano | f3-ab3-c4 . . | c3-eb3-g3 . . | g2-b2-d3 . . | c3-eb3-g3 . . | vel: 55
