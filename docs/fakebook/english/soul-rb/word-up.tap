@@ -1,0 +1,20 @@
+**TRACK: Word Up**
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | E7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | e2-g#2-b2-d3 . . . | vel: 55
+
+[PRE] (Pre-Chorus - 4 Bars)
+Chords: | Fmaj7 . . . | G . . . | Am . . . | E7 . . . |
+@guitar | f2-a2-c3-e3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-g#2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . | Am . . . | F . . . | G . . . | E7 . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
+@guitar | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | e2-g#2-b2-d3 . . . | vel: 55

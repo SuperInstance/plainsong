@@ -1,0 +1,24 @@
+**TRACK: I Wanna Be Your Lover**
+[MetaData]
+key: Bbm | tempo: 120 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | b2-db3-f3-b3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | db2-f2-ab2-c3 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | b2-db3-f3-b3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | db2-f2-ab2-c3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | b2-db3-f3-b3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | db2-f2-ab2-c3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb9 . . . | F7 . . . | Bbm7 . . . | Eb9 . . . |
+@guitar | gb2-bb2-db3-f3 . . . | f2-a2-c3-eb3 . . . | b2-db3-f3-b3 . . . | eb2-g2-bb2-db3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | b2-db3-f3-b3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | db2-f2-ab2-c3 . . . | vel: 55

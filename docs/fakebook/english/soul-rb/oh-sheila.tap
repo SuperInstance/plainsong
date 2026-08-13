@@ -1,0 +1,20 @@
+**TRACK: Oh Sheila**
+[MetaData]
+key: Fm | tempo: 118 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Fm . . . | Bbm . . . |
+@guitar | f2-a3-c3 . . . | bb2-d3-f3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Fm . . . | C . . . |
+@guitar | f2-a3-c3 . . . | bb2-d3-f3 . . . | f2-a3-c3 . . . | c3-e3-g3 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | C . . . |
+@guitar | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c3 . . . | c3-e3-g3 . . . | vel: 68
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | C . . . |
+@guitar | bb2-d3-f3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 58
