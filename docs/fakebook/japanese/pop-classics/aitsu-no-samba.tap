@@ -1,0 +1,24 @@
+**TRACK: Aitsu no Samba**
+[MetaData]
+key: Am | tempo: 112 | subdivision: 8th
+time: 2/2 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f3-a3-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | vel: 55
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+@guitar | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | c3-e3-g3-b3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fmaj7 . . . | E7 . . . | Am7 . . . | A7 . . . |
+@guitar | f2-a2-c3-e3 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3-g3 . . . | a2-c#3-e3-g3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm7 . . . | G7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | vel: 45

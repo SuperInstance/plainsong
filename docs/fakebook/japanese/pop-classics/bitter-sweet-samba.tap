@@ -1,0 +1,24 @@
+**TRACK: Bitter Sweet Samba**
+[MetaData]
+key: Fm | tempo: 132 | subdivision: 16th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dbmaj7 . . . | G7alt . . . | C7b9 . . . | Fm7 . . . |
+@guitar | db1-f1-ab1 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-bb2 . . . | f2-ab2-c3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | vel: 58
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dbmaj7 . . . | Db6 . . . | Cm7b5 . . . | F7b9 . . . |
+@guitar | db1-f1-ab1 . . . | db1-f1-ab1-bb1 . . . | c2-eb2-gb2 . . . | f1-a1-c2-eb2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |
+@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | f2-ab2-c3 . . . | vel: 45

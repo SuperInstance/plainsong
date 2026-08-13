@@ -1,0 +1,24 @@
+**TRACK: Nagasaki wa Kyō mo Ame Datta**
+[MetaData]
+key: Am | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . | F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . | F . . . | Dm . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . | F . . . | G . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . | Dm . . . | G7 . . . | G7 . . . | C . . . | C . . . | E7 . . . | E7 . . . |
+@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | g1-b2-d3 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | E7 . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . .

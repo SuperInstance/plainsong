@@ -1,0 +1,26 @@
+**TRACK: I Love You**
+[MetaData]
+key: Fm | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Eb . . . | Fm . . . | Db . . . |
+@guitar | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | vel: 60
+Chords: | Ab . . . | Eb . . . | Fm . . . | G7 . . . |
+@guitar | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | f2-ab2-c3 . . . | g2-b2-d3-f3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Eb . . . | Ab . . . | G7 . . . |
+@guitar | bb2-db3-f3 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 45
