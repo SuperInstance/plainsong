@@ -1,0 +1,16 @@
+**TRACK: Jetzt kommen die lustigen Tage**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 3/4 | mood: Joyful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . | G . . | C . . | G . . |
+Melody: | E4 . G4 | D4 . F4 | E4 . G4 | D4 . B3 |
+Lyrics: | Jetzt kom-men die | lus-ti-gen Ta-ge, | jetzt kom-men die | lus-ti-gen Ta-ge, |
+@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . | F . . | C . . | G . C . |
+Melody: | G4 . E4 | A4 . F4 | G4 . E4 | D4 . C4 |
+Lyrics: | ja, ja, ja, die | Freu-de ist da, | sin-gen wir froh | und lust-tig, hal-le-lu-ja! |
+@piano | c3-e3-g3 . | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . c3-e3-g3 | vel: 55

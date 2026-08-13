@@ -1,0 +1,22 @@
+**TRACK: Kommt, ihr G'spielen**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Joyful
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . | D . . | G . . | D . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . C4 . |
+Lyrics: | Kommt, ihr G'spie - len, | wir wolln uns freu'n, | Kommt, ihr G'spie - len, | wir wolln uns freu'n, |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . | G . . | D . . | G . . |
+Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . G3 . |
+Lyrics: | und sin - gen und sprin - gen, | und sin - gen und sprin - gen, | und tan - zen im Kreis, | und tan - zen im Kreis. |
+@piano | c3-e3-g3 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . | D . . | G . . | D . . |
+Melody: | D4 . B3 . | A3 . F#3 . | G3 . B3 . | A3 . D4 . |
+Lyrics: | Ei - a, ei - a, | win - ter - a - dei, | Ei - a, ei - a, | win - ter - a - dei. |
+@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 60

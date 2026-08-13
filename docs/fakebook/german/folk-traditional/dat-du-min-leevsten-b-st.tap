@@ -1,0 +1,22 @@
+**TRACK: Dat du min Leevsten büst**
+[MetaData]
+key: F | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . |
+Melody: | F4 . A4 . | G4 . E4 . |
+Lyrics: | Dat du min Leevs - ten büst, |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . |
+Melody: | D4 . F4 . | Bb3 . D4 . |
+Lyrics: | dat du min Leevs - ten büst, |
+@piano | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . |
+Melody: | G4 . E4 . | F4 . C4 . |
+Lyrics: | schallt du min Her - zen troost sünn, |
+@piano | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 55
