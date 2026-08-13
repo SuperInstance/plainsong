@@ -1,0 +1,24 @@
+**TRACK: Say You, Say Me**
+[MetaData]
+key: Db | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Ab . . . |
+@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | ab2-c3-eb3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 65

@@ -1,0 +1,20 @@
+**TRACK: Rock with You**
+[MetaData]
+key: F#m | tempo: 114 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | E . . . | F#m . . . | D . . . | A . . . | E . . . | F#m . . . | D . . . |
+@guitar | d2-f#2-a2 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | F#m . . . |
+@guitar | b1-d2-f#2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | vel: 50

@@ -1,0 +1,29 @@
+**TRACK: Nightshift**
+[MetaData]
+key: Eb | tempo: 104 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+       | Eb . . . | Ab . . . | Fm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+       | Eb . . . | Ab . . . | Fm7 . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Gm7 . . . | Cm7 . . . |
+       | Fm7 . . . | Bb . . . | Eb . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Bb . . . | Bb . . . |
+       | Gm7 . . . | Cm7 . . . | Fm7 . . . | Bb . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 58
+
+[OUT] (Outro - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+       | Eb . . . | Ab . . . | Eb . . . | Eb . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 50

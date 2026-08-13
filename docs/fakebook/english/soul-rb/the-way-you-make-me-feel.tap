@@ -1,0 +1,24 @@
+**TRACK: The Way You Make Me Feel**
+[MetaData]  
+key: C#m | tempo: 100 | subdivision: 8th  
+time: 4/4 | mood: Driving  
+
+[V1] (Verse - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | vel: 55  
+
+[V2] (Verse 2 - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | vel: 55  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |  
+@guitar | a2-c#3-e3 . . . | e3-g#3-b3 . . . | f#3-a3-c#4 . . . | c#3-e3-g#3 . . . | vel: 62  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | B . . . | A . . . | B . . . | A . . . |  
+@guitar | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | vel: 58  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | C#m . . . | A . . . | C#m . . . | A . . . |  
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | vel: 50

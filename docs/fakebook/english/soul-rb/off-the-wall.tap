@@ -1,0 +1,23 @@
+**TRACK: Off the Wall**
+[MetaData]
+key: Dm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bbmaj7 . . . | E7♭9 . . . | Am7 . . . | A7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f1-a1-c2-e2 . . . | bb1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bbmaj7 . . . | E7♭9 . . . | Am7 . . . | A7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f1-a1-c2-e2 . . . | bb1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bbmaj7 . . . | E7♭9 . . . | Am7 . . . | A7 . . . |
+@guitar | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f1-a1-c2-e2 . . . | bb1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbmaj7 . . . | E7♭9 . . . | Am7 . . . | D7 . . . |
+@guitar | bb1-d2-f2-a2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g2 . . . | d1-f#1-a1-c2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm7

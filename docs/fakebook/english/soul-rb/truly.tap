@@ -1,0 +1,26 @@
+**TRACK: Truly**
+[MetaData]
+key: Ab | tempo: 85 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Db . . . |
+| Ab . . . | Db . . . | Bbm7 . . . | Eb . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . |
+| ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | bbb2-db3-f3 . . . | eb2-bb2-eb3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Db . . . |
+| Ab . . . | Db . . . | Bbm7 . . . | Eb . . . |
+@guitar | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | db2-ab3-db3 . . . |
+| ab2-eb3-ab3 . . . | db2-ab3-db3 . . . | bbb2-db3-f3 . . . | eb2-bb2-eb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm7 . . . | Eb . . . |
+| Db . . . | Ab . . . | Bbm7 . . . | Eb . . . |
+@guitar | db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | bbb2-db3-f3 . . . | eb2-bb2-eb3 . . . |
+| db2-ab3-db3 . . . | ab2-eb3-ab3 . . . | bbb2-db3-f3 . . . | eb2-bb2-eb3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | bbb2-db3-f3 . . . | eb2-bb2-eb3 . . . | eb2-bb2-eb3 . . . | vel: 60

@@ -1,0 +1,26 @@
+**TRACK: P.Y.T. (Pretty Young Thing)**
+[MetaData]
+key: Bbm | tempo: 118 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | x1-1-2-1-x . . . | x-x-1-3-2-x . . . | x-x-1-3-1-x . . . | x-x-1-3-2-x . . . | vel: 50
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | x1-1-2-1-x . . . | x-x-1-3-2-x . . . | x-x-1-3-1-x . . . | x-x-1-3-2-x . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | x1-1-2-1-x . . . | x-x-1-3-2-x . . . | x-x-1-3-1-x . . . | x-x-1-3-2-x . . . | vel: 55
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | x1-1-2-1-x . . . | x-x-1-3-2-x . . . | x-x-1-3-1-x . . . | x-x-1-3-2-x . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+@guitar | x1-1-2-1-x . . . | x-x-1-3-2-x . . . | x-x-1-3-1-x . . . | x-x-1-3-2-x . . . | vel: 65
+Chords: | Gb7 . . . | Gb7 . . . | F7 . . . | Bbm7 . . . |
+@guitar | 2-4-2-3-x-x . . . | 2-4-2-3-x-x . . . | x-x-3-5-3-x . . . | x1-1-2-1-x . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb7 . . . | F7 . . . | Bbm7 . . . | Eb9 . . . |
+@guitar | 2-4-2-3-x-x . . . | x-x-3-5-3-x
