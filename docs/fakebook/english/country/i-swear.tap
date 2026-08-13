@@ -1,0 +1,32 @@
+**TRACK: I Swear**
+[MetaData]
+key: Bb | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@chords | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+@chords | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@chords | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 60
+Chords: | Bb . . . | F . . . | Gm . . . | F . . . |
+@chords | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | F . . . | Dm . . . | Gm . . . |
+@chords | eb2-g2-bb2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | vel: 55
+Chords: | Eb . . . | F . . . | F . . . | F . . . |
+@chords | eb2-g2-bb2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@chords | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 60
+Chords: | Bb . . . | F . . . | Gm . . . | F . . . |
+@chords | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | f2-a2-c3 . . . | vel: 60
+
+[OUT]

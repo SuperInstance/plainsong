@@ -1,0 +1,24 @@
+**TRACK: Sold (The Grundy County Auction Incident)**
+[MetaData]
+key: A | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | E . . . | F#m . . . | E . . . |
+@guitar | d2-a2-d3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50

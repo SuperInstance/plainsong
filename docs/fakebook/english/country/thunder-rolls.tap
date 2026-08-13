@@ -1,0 +1,27 @@
+**TRACK: Thunder Rolls**
+[MetaData]
+key: Bb | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
+        | Bb . . . | Bb . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | eb1-bb2-eb3 . . . | bb1-f2-bb2 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
+        | Bb . . . | Bb . . . | Eb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | eb1-bb2-eb3 . . . | bb1-f2-bb2 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | F . . . | Bb . . . | Bb . . . |
+        | Eb . . . | F . . . | Bb . . . | F . . . |
+@guitar | eb1-bb2-eb3 . . . | f1-c2-f2 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | F . . . | F . . . |
+@guitar | g1-d2-g2 . . . | eb1-bb2-eb3 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | eb1-bb2-eb3 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | vel: 45

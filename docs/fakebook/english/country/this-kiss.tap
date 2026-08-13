@@ -1,0 +1,24 @@
+**TRACK: This Kiss**
+[MetaData]
+key: Bb | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | eb1-bb1-eb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . |
+@guitar | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | eb1-bb1-eb2 . . . | vel: 50
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | Cm . . . | F . . . | Dm . . . | F . . . |
+@guitar | c2-g2-c3 . . . | f1-c2-f2 . . . | d2-a2-d3 . . . | f1-c2-f2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | Eb . . . | Bb . . . | F . . . | Gm . . . | F . . . |
+@guitar | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | eb1-bb1-eb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | f1-c2-f2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Cm . . . | F . . . | F . . . |
+@guitar | eb1-bb1-eb2 . . . | c2-g2-c3 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | vel: 55

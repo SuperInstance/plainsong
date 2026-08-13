@@ -1,0 +1,24 @@
+**TRACK: Just to See You Smile**
+[MetaData]
+key: Bb | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | F . . . | Eb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bb . . . | F . . . | Eb . . . | Bb . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Cm . . . | F . . . | Dm . . . | Gm . . . |
+@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
+@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 45
