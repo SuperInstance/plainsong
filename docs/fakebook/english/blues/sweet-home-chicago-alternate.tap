@@ -1,0 +1,24 @@
+**TRACK: Sweet Home Chicago (alternate)**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . | B7 . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

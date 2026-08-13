@@ -1,0 +1,20 @@
+**TRACK: From Four Until Late (alternate)**
+[MetaData]
+key: A | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-g3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-g3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-g3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-g3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . . | A . . . | E7 . . . | A . . . |
+@guitar | d2-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-g3 . . . | d2-f#3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a
