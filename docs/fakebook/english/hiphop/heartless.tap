@@ -1,0 +1,16 @@
+**TRACK: Heartless**
+[MetaData]
+key: F#m | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Dark, driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | C#m . . . | B . . . | B . . . |
+@guitar | c#3-g#3-c#4 . . . | c#3-g#3-c#4 . . . | b2-f#3-b3 . . . | b2-f#3-b3 . . . | vel: 45
