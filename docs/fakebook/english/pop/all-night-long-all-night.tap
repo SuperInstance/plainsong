@@ -1,0 +1,24 @@
+**TRACK: All Night Long (All Night)**
+[MetaData]
+key: F#m | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | E . . . | A . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | E . . . | A . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | F#m . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | A . . . | G . . . | E . . . |
+@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | F#m . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | vel: 50

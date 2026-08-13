@@ -1,0 +1,30 @@
+**TRACK: Rikki Don't Lose That Number**
+[MetaData]  
+key: C#m | tempo: 122 | subdivision: 8th  
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+Chords: | C#m . . . | A . . . | F#m . . . | G#7 . . . |  
+@guitar | x4-x5-x4 . . . | x0-x2-x2 . . . | x7-x9-x9 . . . | x2-x4-x4 . . . | vel: 55  
+@guitar | x4-x5-x4 . . . | x0-x2-x2 . . . | x2-x2-x2 . . . | x4-x3-x4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)  
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |  
+Chords: | A . . . | E . . . | B . . . | G#7 . . . |  
+@guitar | x0-x2-x2 . . . | x7-x9-x9 . . . | x2-x2-x2 . . . | x4-x5-x4 . . . | vel: 62  
+@guitar | x0-x2-x2 . . . | x7-x9-x9 . . . | x2-x4-x4 . . . | x4-x3-x4 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)  
+Chords: | F#m . . . | C#m . . . | D . . . | G#7 . . . |  
+@guitar | x2-x2-x2 . . . | x4-x5-x4 . . . | x5-x7-x7 . . . | x4-x3-x4 . . . | vel: 58
+
+[V2] (Verse - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+Chords: | C#m . . . | A . . . | F#m . . . | G#7 . . . |  
+@guitar | x4-x5-x4 . . . | x0-x2-x2 . . . | x7-x9-x9 . . . | x2-x4-x4 . . . | vel: 55  
+@guitar | x4-x5-x4 . . . | x0-x2-x2 . . . | x2-x2-x2 . . . | x4-x3-x4 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+@guitar | x4-x5-x4 . . . | x0-x2-x2 . . .

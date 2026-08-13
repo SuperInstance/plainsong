@@ -1,0 +1,27 @@
+**TRACK: December, 1963 (Oh What a Night)**
+[MetaData]
+key: F | tempo: 124 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | F . . . | C . . . |
+| F . . . | Bb . . . | F . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | F . . . | C . . . |
+| F . . . | Bb . . . | F . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | F . . . |
+| Bb . . . | F . . . | C . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | C . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Bb . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 50

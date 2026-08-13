@@ -1,0 +1,20 @@
+**TRACK: What's Love Got to Do with It**
+[MetaData]
+key: Bbm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | bb1-db2-f2 . . . | f1-ab1-c2 . . . | vel: 50
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | Gb . . . | Ab . . . |
+@guitar | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
+@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gb . . . | Fm . . . |
+@guitar | gb1-bb1-db2 . . . | f1-ab1-c2 . . . | vel: 50

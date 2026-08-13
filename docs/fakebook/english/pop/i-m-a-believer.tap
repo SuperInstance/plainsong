@@ -1,0 +1,24 @@
+**TRACK: I'm a Believer**
+[MetaData]
+key: G | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | g2-b3-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | g2-b3-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b3-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e3-g3-b3 . . . | c3-e3-g3 . . . | g2-b3-d3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | D . . . |
+@guitar | g2-b3-d3 . . . | g2-b3-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
