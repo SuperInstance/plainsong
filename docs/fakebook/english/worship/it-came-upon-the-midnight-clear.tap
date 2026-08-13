@@ -1,0 +1,22 @@
+**TRACK: It Came upon the Midnight Clear**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . . . |
+Lyrics: | It came up - on the mid - night clear, that glo - rious song of old |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | A4 . F4 . | E4 . C4 . | D4 . . . |
+Lyrics: | From an - gels bend - ing near the earth, to touch their harps of gold |
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | C . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | C4 . . . |
+Lyrics: | Peace on the earth, good - will to men, from heav'n's all gra - cious King |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
