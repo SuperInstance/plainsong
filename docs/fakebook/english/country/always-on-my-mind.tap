@@ -1,0 +1,28 @@
+**TRACK: Always on My Mind**
+[MetaData]
+key: A | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | A . . . | F#m . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | A . . . | F#m . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | E . . . |
+@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | D . . . | E . . . |
+@guitar | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V3] (Verse - 4 Bars)
+Chords: | A . . . | F#m . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | Bm . . . | E . . . |
+@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | e2-g#2-b2 . . . | vel: 60

@@ -1,0 +1,32 @@
+**TRACK: The Most Beautiful Girl**
+[MetaData]
+key: Db | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Ebm . . . | Ab . . . |
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Ab . . . |
+@guitar | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | gb2-bb2-db3 . . . | vel: 45
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Ebm . . . | Ab . . . |
+@guitar | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Db . . . | Ab . . . | Db . . . | Db . . . |
+@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 40
