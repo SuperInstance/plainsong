@@ -1,0 +1,20 @@
+**TRACK: Dancing in the Street**
+[MetaData]
+key: Eb | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Eb . . . | Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Bb . . . |
+@guitar | ab3-c4-eb4 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Bb . . . |
+@guitar | f3-ab3-c4 . . . | bb2-d3-f3 . . . | vel: 50

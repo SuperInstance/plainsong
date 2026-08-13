@@ -1,0 +1,20 @@
+**TRACK: Sexual Healing**
+[MetaData]
+key: Bbm | tempo: 92 | subdivision: 16th
+time: 4/4 | mood: Smooth, Sensual
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7 . . . |
+@guitar | x-bb2-db3-f3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | f2-a2-c3-eb3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7 . . . |
+@guitar | x-bb2-db3-f3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | f2-a2-c3-eb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | F7 . . . |
+@guitar | x-bb2-db3-f3 . . . | eb2-g2-bb2-db3 . . . | ab2-c3-eb3-g3 . . . | f2-a2-c3-eb3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gbmaj7 . . . | F7 . . . | Bbm7 . . . | Eb9 . . . |
+@guitar | gb2-bb2-db3-f3 . . . | f2-a2-c3-eb3 . . . | x-bb2-db3-f3 . . . | eb2-g2-bb2-db3 . . . | vel: 45

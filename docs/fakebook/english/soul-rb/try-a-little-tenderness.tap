@@ -1,0 +1,24 @@
+**TRACK: Try a Little Tenderness**
+[MetaData]
+key: F | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | F . . . | F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | F . . . | F . . . | Dm . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | Gm7 . . . | C7 . . . |
+@guitar | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm7 . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | F . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 45
