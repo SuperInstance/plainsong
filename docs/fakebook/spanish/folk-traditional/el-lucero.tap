@@ -1,0 +1,16 @@
+**TRACK: El Lucero**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . | F . . | C . . | G . . |
+Melody: | A3 . C4 | F4 . E4 | E4 . D4 | B3 . . |
+Lyrics: | El lu-ce-ro | de la ma-ña-na | me des-pier-ta | con su luz |
+@piano | a2-e3-a3 . | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . | F . . | G . . | Am . . |
+Melody: | C4 . E4 | A4 . G4 | F4 . E4 | D4 . C4 |
+Lyrics: | bri-lla en el | cie-lo a-zul | can-ta el vien-to | su can-ción |
+@piano | a2-e3-a3 . | f2-a2-c3 . | g2-b2-d3 . | a2-e3-a3 . | vel: 55

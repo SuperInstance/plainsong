@@ -1,0 +1,22 @@
+**TRACK: El Grillo**
+[MetaData]
+key: C | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . F4 . | E4 . G4 . | D4 . F4 . |
+Lyrics: | El gri-llo es buen can- | -tor, no duer-me ni | de no-che ni de | dí-a, no duer-me ni |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . F4 . | E4 . C4 . | D4 . G3 . |
+Lyrics: | de no-che ni de | dí-a, el gri-llo | can-ta con a- | -mor, can-ta con a- |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . G4 . | E4 . C4 . | D4 . E4 . | C4 . . . |
+Lyrics: | ¡Can-ta, can-ta, | gri-llo, can-ta! | ¡No te duer-mas | más, no más! |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60
