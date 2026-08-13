@@ -1,0 +1,26 @@
+**TRACK: Don’t Rain on My Parade**
+[MetaData]
+key: F | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Triumphant
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Gm7 . . . | Am7 . . . | Bb . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c3-e3 . . . | bb2-d3-f3 . . . | vel: 60
+| F . . . | Gm7 . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | c3-e3-bb3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d3-f#3-a3 . . . | vel: 70
+| Gm7 . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | vel: 70
+
+[B] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm7 . . . | C7 . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-bb3 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
+@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d3-f#3-a3 . . . | vel: 75
+| Gm7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | g2-bb2-d3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 75

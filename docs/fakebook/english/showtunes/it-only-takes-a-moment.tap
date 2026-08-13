@@ -1,0 +1,24 @@
+**TRACK: It Only Takes a Moment**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Warm
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | Dm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | d2-f2-a2 . . . | c2-e2-bb2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | Dm . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | . . . . | Bb . . . | . . . . | F . . . | C7 . . . | F . . . | . . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Dm . . . | Bb . . . | Gm . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Bb . . . | F . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | bb1-d2-f2

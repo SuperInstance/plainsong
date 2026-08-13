@@ -1,0 +1,32 @@
+**TRACK: Money, Money**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Theatrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+| Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . |
+| d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+| D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | a2-c#3-e3 . . . |
+| d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Gm . . . | A7 . . . | A7 . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+| Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . |
+| d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+| D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | a2-c#3-e3 . . . |
+| d3

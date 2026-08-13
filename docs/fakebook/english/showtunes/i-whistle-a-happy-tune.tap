@@ -1,0 +1,26 @@
+**TRACK: I Whistle a Happy Tune**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Light
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . |
+| F . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d2-f2 . . . |
+| f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . |
+| F . . . | C7 . . . | F . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d2-f2 . . . |
+| f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . |
+| F . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d2-f2 . . . |
+| f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60

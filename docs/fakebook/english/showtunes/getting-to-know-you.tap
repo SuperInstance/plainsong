@@ -1,0 +1,24 @@
+**TRACK: Getting to Know You**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Warm, Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | F . . . | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | F . . . | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 52
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G7 . . . | C . . . | F . . . | C . . . | G7 . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | C . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 48

@@ -1,0 +1,24 @@
+**TRACK: Put On Your Sunday Clothes**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . | C . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | G . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . | C . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65

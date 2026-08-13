@@ -1,0 +1,24 @@
+**TRACK: Maybe This Time**
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Building, Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | Bdim . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | b2-d3-f3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . | F . . . | Bdim . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | b2-d3-f3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . | F . . . | G . . . | C . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm . . . | G . . . | C . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | d3-a3-d4 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-a3-d4 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2
