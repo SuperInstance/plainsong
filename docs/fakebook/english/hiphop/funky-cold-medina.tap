@@ -1,0 +1,24 @@
+**TRACK: Funky Cold Medina**
+[MetaData]
+key: Am | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Groovy
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 45
