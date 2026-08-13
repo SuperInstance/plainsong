@@ -1,0 +1,16 @@
+**TRACK: El Caracol**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . E4 . . . | F4 . A4 . C5 . . . | E4 . C4 . A3 . . . | B3 . D4 . G3 . . . |
+Lyrics: | El ca-ra-col sa-lí-a del mar | con su ca-sa a cues-tas a bus-car | un lu-gar don-de po-der des-can-sar | y can-tar al vien-to sin llo-rar |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . C5 . . . | E4 . G4 . C5 . . . | D4 . B3 . G4 . . . | A3 . C4 . E4 . . . |
+Lyrics: | Can-ta ca-ra-col can-ta tu can-ción | que la luna bri-lla so-bre el ho-ri-zón | lle-va tu ca-sa con co-ra-zón | que el ca-mi-no es lar-go y lle-no de a-mor |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

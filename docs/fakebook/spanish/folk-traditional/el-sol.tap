@@ -1,0 +1,16 @@
+**TRACK: El Sol**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | D4 . B3 . |
+Lyrics: | El sol bri-lla | so-bre el mar | can-ta el vien-to | sin ce-sar |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . F4 . | E4 . C4 . | D4 . B3 . | C4 . . . |
+Lyrics: | Lu-ce el sol | con ful-gor | a-le-grí-a | en el ho-gar |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
