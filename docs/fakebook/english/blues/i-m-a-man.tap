@@ -1,0 +1,20 @@
+**TRACK: I'm a Man**
+[MetaData]
+key: E | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . | A . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 65
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2

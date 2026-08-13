@@ -1,0 +1,26 @@
+**TRACK: Backwater Blues**
+[MetaData]
+key: F | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Somber
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . |
+| C . . . | F . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . |
+| c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . |
+| C . . . | F . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . |
+| c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | vel: 52
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . |
+| C . . . | F . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . |
+| c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | vel: 50

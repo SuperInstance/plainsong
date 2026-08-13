@@ -1,0 +1,20 @@
+**TRACK: Double Trouble**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 58
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | E . . . | Am . . . | Am . . . | Dm . . . | G . . . | C . . . | E . . . |
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[SOLO] (Guitar Solo - 12 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 .

@@ -1,0 +1,24 @@
+**TRACK: Ain't No Love in the Heart of the City**
+[MetaData]
+key: Am | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Soulful
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f3-a3 . . . | g1-b2-f3 . . . | c3-e3-b3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f3-a3 . . . | g1-b2-f3 . . . | c3-e3-b3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | E7 . . . | Am7 . . . | Dm7 . . . |
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | d2-f3-a3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm7b5 . . . | E7 . . . | Am7 . . . | G7 . . . |
+@guitar | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3 . . . | g1-b2-f3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Am7 . . . |
+@guitar | a2-c3-e3 . . . | d2-f3-a3 . . . | g1-b2-f3 . . . | a2-c3-e3 . . . | vel: 45

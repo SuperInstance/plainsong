@@ -1,0 +1,20 @@
+**TRACK: I Just Want to Make Love to You**
+[MetaData]
+key: E | tempo: 82 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 65
+
+[BR] (Bridge - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | B . . . | B . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#

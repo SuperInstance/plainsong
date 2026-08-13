@@ -1,0 +1,32 @@
+**TRACK: Hear My Train A Comin'**
+[MetaData]
+key: E | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+        | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
+        | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 55
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+        | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . |
+        | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 58
+
+[BR] (Bridge - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | A . . . |
+        | C . . . | G . . . | B . . . | B . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . |
+        | c3-e3-g3 . . . | g2-b2-d3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V3] (Final Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+        | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
+        | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 62
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . .

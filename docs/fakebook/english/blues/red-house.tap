@@ -1,0 +1,20 @@
+**TRACK: Red House**
+[MetaData]
+key: A | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Slow Blues
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . | D . . . | E . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 60
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2
