@@ -1,0 +1,16 @@
+**TRACK: Benzin**
+[MetaData]
+key: Em | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b3-e3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d2-a3-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b3-e3 . . . | c3-g3-c4 . . . | g2-d3-g3 . . . | d2-a3-d3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-g3-c4 . . . | g2-d3-g3 . . . | d2-a3-d3 . . . | e2-b3-e3 . . . | vel: 50

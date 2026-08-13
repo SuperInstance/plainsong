@@ -1,0 +1,24 @@
+**TRACK: Mein Teil**
+[MetaData]
+key: Em | tempo: 94 | subdivision: 8th
+time: 4/4 | mood: Industrial
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | Em . . . | C . . . |
+@guitar | e2-b3-e3 . . . | c3-e3-g3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | vel: 70
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | B . . . |
+@guitar | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | b2-f#3-b3 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Em . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-b3-e3 . . . | d3-a3-d4 . . . | vel: 85
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | Em . . . | Em . . . |
+@guitar | e2-b3-e3 . . . | c3-e3-g3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 50
