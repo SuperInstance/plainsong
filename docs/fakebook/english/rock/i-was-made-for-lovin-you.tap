@@ -1,0 +1,24 @@
+**TRACK: I Was Made for Lovin' You**
+[MetaData]
+key: Em | tempo: 125 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | G . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | g2-d2-b2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | b1-f#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a1-e2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | b1-f#2-b2 . . . | vel: 50
