@@ -1,0 +1,24 @@
+**TRACK: Tornado of Souls**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 70
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | A . . . | B . . . |
+@guitar | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 75
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | Em . . . | B . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 65
+
+[SOLO] (Guitar Solo - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . | Em . . . | C . . . | G . . . | B . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | b2-d#3-f#3 . . . | vel: 85

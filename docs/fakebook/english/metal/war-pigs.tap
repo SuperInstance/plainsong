@@ -1,0 +1,24 @@
+**TRACK: War Pigs**
+[MetaData]
+key: Em | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Heavy, driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . | C . . . | C . . . | D . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . | C . . . | C . . . | D . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 65
+
+[BR] (Bridge/Interlude - 4 Bars)
+Chords: | Em . . . | Em . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars, fade on repeat)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

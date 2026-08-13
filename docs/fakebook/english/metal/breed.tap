@@ -1,0 +1,20 @@
+**TRACK: Breed**
+[MetaData]
+key: E | tempo: 105 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | G . . . | A . . . | G . . . |
+@guitar | e2-g#2-b2 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | G . . . | A . . . | G . . . |
+@guitar | e2-g#2-b2 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | D . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | E . . . | G . . . | A . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 65

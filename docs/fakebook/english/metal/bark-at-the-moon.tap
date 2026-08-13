@@ -1,0 +1,20 @@
+**TRACK: Bark at the Moon**
+[MetaData]
+key: Em | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | D . . . | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | c3-e3-g3 . . . | b1-f#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | A . . . | C . . . | G . . . | D . . . | B7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | b1-f#2-b2 . . . | vel: 65
+
+[B] (Bridge - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . | Em . . . | C . . . | B7 . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | b1-f#2-b2 . . . | b1-f#2-b2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 50

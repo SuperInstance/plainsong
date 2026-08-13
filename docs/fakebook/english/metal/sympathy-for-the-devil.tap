@@ -1,0 +1,24 @@
+**TRACK: Sympathy for the Devil**
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | D . . . | A . . . | E . . . | E . . . | D . . . | A . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | D . . . | A . . . | E . . . | E . . . | D . . . | A . . . |
+@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 50

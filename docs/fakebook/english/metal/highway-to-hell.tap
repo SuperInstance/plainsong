@@ -1,0 +1,24 @@
+**TRACK: Highway to Hell**
+[MetaData]
+key: A | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | A . . . | A . . . |
+@guitar | g2-b2-d3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | D . . . | E . . . |
+@guitar | d3-a3-d4 . . . | e3-b3-e4 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
