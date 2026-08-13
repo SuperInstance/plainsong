@@ -1,0 +1,27 @@
+**TRACK: Polka Dots and Moonbeams**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . |
+| Dm7 . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | vel: 50
+@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c2-e2-g2-bb2 . . . | c2-e2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . |
+| Dm7 . . . | G7 . . . | C7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | vel: 50
+@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c2-e2-g2-bb2 . . . | c2-e2-g2-bb2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbmaj7 . . . | Am7 . . . | Dm7 . . . | Gm7 . . . |
+| C7 . . . | Fmaj7 . . . | Dm7 . . . | G7 . . . |
+@guitar | bb1-d2-f2-a2 . . . | a1-c2-e2-g2 . . . | d2-f2-a2-c3 . . . | g2-bb2-d3-f3 . . . | vel: 60
+@guitar | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Dm7 . . . | G7 . . . |
+| Cm7 . . . | F7 . . . | Bbmaj7 . . . | G7 . . . |
+@guitar | eb2-g2-bb2-d3 . . . | ab1-c2-eb2-g2 . . . | d

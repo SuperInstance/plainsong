@@ -1,0 +1,20 @@
+**TRACK: Laura**
+[MetaData]
+key: Cm | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Smooth
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | Am7b5 . . . | D7 . . . | Gm7 . . . | G7 . . . |
+@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-a3 . . . | eb3-g3-bb3-d4 . . . | a2-c3-eb3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | g2-b2-d3-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | Am7b5 . . . | D7 . . . | Gm7 . . . | G7 . . . |
+@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | bb2-d3-f3-a3 . . . | eb3-g3-bb3-d4 . . . | a2-c3-eb3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | g2-b2-d3-f3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | EbMaj7 . . . | AbMaj7 . . . | Dm7b5 . . . | G7 . . . | Cm7 . . . | G7 . . . |
+@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | d2-f2-ab2-c3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | g2-b2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | AbMaj7 . . . | G7 . . . | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | Am7b5 . . . | D7 . . . |
+@guitar | ab2-c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb

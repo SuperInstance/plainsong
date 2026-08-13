@@ -1,0 +1,24 @@
+**TRACK: You'd Be So Nice to Come Home To**
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Bbm7 . . . | Fmaj7 . . . | D7 . . . |
+@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | d2-f#2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | Am7 . . . | D7 . . . |
+@guitar | g1-bb1-d2-f2 . . . | c2-e2-g2-bb2 . . . | a1-c2-e2-g2 . . . | d2-f#2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . |
+@guitar | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g1-bb1-d2-f2 . . . | c2-e2-g2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | A7 . . . | Dm7 . . . | G7 . . . | C7 . . . |
+@guitar | a1-c#2-e2-g2 . . . | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-bb2 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Bbm7 . . . | Fmaj7 . . . | D7 . . . |
+@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | d2-f#2-a2-c3 . . . | vel: 55

@@ -1,0 +1,28 @@
+**TRACK: My One and Only Love**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Em7b5 . . . | A7b9 . . . | Dm7 . . . |
+| Gm7 . . . | C7 . . . | Fmaj7 . . . | A7b9 . . . |
+@guitar | f2-a2-e3 . . . | e2-bb2-d3 . . . | a2-c3-gb3 . . . | d2-f3-c3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Gm7 . . . | C7 . . . |
+| Fmaj7 . . . | Bbmaj7 . . . | Am7 . . . | D7b9 . . . |
+@guitar | d2-f3-c3 . . . | g2-b2-f3 . . . | g2-bb2-e3 . . . | c2-e3-bb2 . . . | vel: 52
+
+[B] (Bridge - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | Am7 . . . | D7 . . . |
+| Gm7 . . . | C7 . . . | Fmaj7 . . . | E7#9 . . . |
+@guitar | g2-bb2-e3 . . . | c2-e3-bb2 . . . | a2-c3-g3 . . . | d2-f#3-c3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+| Fmaj7 . . . | Bbmaj7 . . . | Gm7 C7 . . . | Fmaj7 . . . |
+@guitar | a2-c3-g3 . . . | d2-f#3-c3 . . . | g2-bb2-e3 . . . | c2-e3-bb2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gm7 . . . | C7 . . . | Fmaj7 . . . | Fmaj7 . . . |
+@guitar | g2-bb2-e3 . . . | c2-e3-bb2 . . . | f2-a2-e3 . . . | f2-a2-e3 . . . | vel: 45

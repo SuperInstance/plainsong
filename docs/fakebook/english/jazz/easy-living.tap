@@ -1,0 +1,20 @@
+**TRACK: Easy Living**
+[MetaData]
+key: F | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | C7 . . . |
+@guitar | f1-a1-c2-e2 . . . | g1-bb1-d2-f2 . . . | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-bb1-d2-f2 . . . | c1-e1-g1-bb1 . . . | f1-a1-c2-e2 . . . | c1-e1-g1-bb1 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | C7 . . . |
+@guitar | f1-a1-c2-e2 . . . | g1-bb1-d2-f2 . . . | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-bb1-d2-f2 . . . | c1-e1-g1-bb1 . . . | f1-a1-c2-e2 . . . | c1-e1-g1-bb1 . . . | vel: 55
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bbmaj7 . . . | Eb7 . . . | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | C7 . . . |
+@guitar | bb1-d2-f2-a2 . . . | eb1-g1-bb1-d2 . . . | a1-c2-e2-g2 . . . | d1-f#1-a1-c2 . . . | g1-bb1-d2-f2 . . . | c1-e1-g1-bb1 . . . | f1-a1-c2-e2 . . . | c1-e1-g1-bb1 . . . | vel: 60
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Gm7 . . . | Am7 . . . | Dm7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | F6 . . . |
+@guitar | f1-a1-c2-e2 . . . | g1-bb1-d2-f2 . . . | a1-c2-e2-g2 . . . | d1-f1-a1-c2 . . . | g1-bb1-d2-f2 .
