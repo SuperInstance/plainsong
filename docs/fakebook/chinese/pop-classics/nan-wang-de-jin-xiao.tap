@@ -1,0 +1,24 @@
+**TRACK: Nan Wang De Jin Xiao**
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
+@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | C . . . |
+@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | C . . . |
+@guitar | d1-f1-a1 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 45
