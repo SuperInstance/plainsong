@@ -1,0 +1,24 @@
+**TRACK: Pyar Hua Ikrar Hua**
+[MetaData]
+key: Cm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Cm . . . | Cm . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . | Cm . . . | G . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Cm . . . |
+@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | c3-eb3-g3 . . . | vel: 45
