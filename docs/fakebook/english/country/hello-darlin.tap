@@ -1,0 +1,24 @@
+**TRACK: Hello Darlin'**
+[MetaData]
+key: A | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | A . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | F#m . . . | D . . . | E . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 45
