@@ -1,0 +1,20 @@
+**TRACK: Molitva**
+[MetaData]
+key: Em | tempo: 76 | subdivision: 8th
+time: 3/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . | Am . . | Em . . | B7 . . |
+@guitar | e2-b2-e3 . . | a2-c3-e3 . . | e2-b2-e3 . . | b1-f#2-a2 . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . | Am . . | C . . | B7 . . |
+@guitar | e2-b2-e3 . . | a2-c3-e3 . . | c3-e3-g3 . . | b1-f#2-a2 . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . | D . . | Em . . | C . . |
+@guitar | g2-b2-d3 . . | d2-a2-d3 . . | e2-b2-e3 . . | c3-e3-g3 . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . | B7 . . | Em . . | Em . . |
+@guitar | a2-c3-e3 . . | b1-f#2-a2 . . | e2-b2-e3 . . | e2-b2-e3 . . | vel: 45
