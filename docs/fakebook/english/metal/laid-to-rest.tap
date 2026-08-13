@@ -1,0 +1,24 @@
+**TRACK: Laid to Rest**
+[MetaData]
+key: F#m | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | F#5 . . . | D5 . . . | E5 . . . | C#5 . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c#2-g#2-c#3 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | F#5 . . . | D5 . . . | E5 . . . | C#5 . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c#2-g#2-c#3 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | B5 . . . | C#5 . . . | D5 . . . | E5 . . . |
+@guitar | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#5 . . . | E5 . . . | D5 . . . | C#5 . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | c#2-g#2-c#3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#5 . . . | D5 . . . | E5 . . . | C#5 . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c#2-g#2-c#3 . . . | vel: 75

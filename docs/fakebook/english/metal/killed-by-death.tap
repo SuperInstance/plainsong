@@ -1,0 +1,24 @@
+**TRACK: Killed by Death**
+[MetaData]
+key: E | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | A . . . | E . . . | B . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | C# . . . | B . . . | A . . . | E . . . |
+@guitar | c#3-e3-g#3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 65
+
+[SOLO] (Solo - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 70
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60

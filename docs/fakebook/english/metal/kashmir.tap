@@ -1,0 +1,24 @@
+**TRACK: Kashmir**
+[MetaData]
+key: Dm | tempo: 81 | subdivision: 8th
+time: 4/4 | mood: Driving, Hypnotic
+
+[V1] (Main Riff - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 62
+
+[V2] (Verse Variation - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 58
+
+[BR] (Bridge/Contrast - 4 Bars)
+Chords: | C . . . | C . . . | Bb . . . | Bb . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[V3] (Main Riff Return - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 65
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 50
