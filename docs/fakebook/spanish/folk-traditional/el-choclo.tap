@@ -1,0 +1,28 @@
+**TRACK: El Choclo**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Lively
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | A7 . . . |
+Melody: | D4 . F4 . | E4 . . . |
+Lyrics: | (instrumental) |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Dm . . . | G7 . . . |
+Melody: | F4 . E4 . | D4 . C#4 . |
+Lyrics: | (instrumental) |
+@piano | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | A7 . . . |
+Melody: | D4 . F4 . | A4 . . . |
+Lyrics: | (instrumental) |
+@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 65
+
+[CH2] (Chorus 2 - 4 Bars)
+Chords: | Dm . . . | A7 . Dm . |
+Melody: | B♭3 . A4 . | D4 . . . |
+Lyrics: | (instrumental) |
+@piano | d3-f3-b♭3 . . . | a2-c#3-e3 . d3-f3-a3 . | vel: 65
