@@ -1,0 +1,20 @@
+**TRACK: Girls Just Want to Have Fun**
+[MetaData]
+key: A | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Uplifting
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . | Bm . . . | Bm . . . | E . . . | E . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | E . . . | D . . . | E . . . |
+@guitar | d3-f#3-a3 . . . | e2-g#3-b3 . . . | d3-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 58

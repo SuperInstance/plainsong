@@ -1,0 +1,24 @@
+**TRACK: Bohemian Rhapsody**
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Theatrical
+
+[V1] (Intro - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 40
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 50
+
+[BR] (Ballad Bridge - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | F . . . | Bb . . . | Gm . . . | Cm . . . | F . . . |
+@guitar | eb3-g3-bb3 . . . | d3-f3-bb3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 45
+
+[CH] (Opera Section - 8 Bars)
+Chords: | Ab . . . | Eb/G . . . | F . . . | Bb . . . | Eb . . . | Ab . . . | F . . . | Bb . . . |
+@guitar | ab3-c4-eb4 . . . | g3-bb3-eb4 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | vel: 65
+
+[V3] (Rock Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | F . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 70
