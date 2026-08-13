@@ -1,0 +1,22 @@
+**TRACK: Abendlied**
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . | C . . | Dm . . | C . . |
+Melody: | F4 . A4 . | G4 . E4 . | F4 . D4 . | E4 . C4 . |
+Lyrics: | A - bend - | wird's wie - | der, ü - ber | Wald und Feld |
+@piano | f2-a2-c3 . . | c2-e2-g2 . . | d2-f2-a2 . . | c2-e2-g2 . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . | C . . | Dm . . | C . . |
+Melody: | F4 . A4 . | G4 . E4 . | F4 . D4 . | C4 . . . |
+Lyrics: | Sorgt nur, dass es | wie - der | fried - lich | wer - de |
+@piano | f2-a2-c3 . . | c2-e2-g2 . . | d2-f2-a2 . . | c2-e2-g2 . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . | F . . | C . . | F . . |
+Melody: | Bb4 . A4 . | F4 . A4 . | G4 . E4 . | F4 . . . |
+Lyrics: | A - bend - | lied, klingt | durch die | Nacht |
+@piano | bb1-d2-f2 . . | f2-a2-c3 . . | c2-e2-g2 . . | f2-a2-c3 . . | vel: 50

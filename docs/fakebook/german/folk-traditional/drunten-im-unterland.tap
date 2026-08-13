@@ -1,0 +1,22 @@
+**TRACK: Drunten im Unterland**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . | F . . | C . . | G . . |
+Melody: | E4 . G4 | A4 . G4 | E4 . C4 | D4 . . |
+Lyrics: | Drun-ten im | Un-ter-land, | drun-ten im | Un-ter-land, |
+@piano | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . | F . . | C . . | G . . | C . . |
+Melody: | E4 . G4 | A4 . G4 | E4 . C4 | D4 . B3 | C4 . . |
+Lyrics: | ist's ja so | schön, ist's ja so | schön, dort | blü-hen die | Rosen, |
+@piano | c3-e3-g3 . . | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . | C . . | G . . | C . . |
+Melody: | A4 . A4 | G4 . E4 | F4 . E4 | D4 . C4 |
+Lyrics: | die Mäd-chen sind | schön, die Mäd-chen | sind schön, im | Un-ter-land, |
+@piano | f2-a2-c3 . . | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | vel: 55

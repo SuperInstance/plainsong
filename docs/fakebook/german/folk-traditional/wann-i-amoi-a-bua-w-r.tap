@@ -1,0 +1,22 @@
+**TRACK: Wann i amoi a Bua wär**
+[MetaData]
+key: G | tempo: 90 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . . . | B3 . D4 . | A3 . . . |
+Lyrics: | Wann i amoi a Bua wär, | ja a Bua wär, | dann tät i was | Lustigs an- |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+Melody: | E4 . G4 . | C4 . . . | B3 . D4 . | A3 . . . |
+Lyrics: | fang’n, ja was | Lustigs an- | fang’n, dann tät | i was Lustigs an- |
+@piano | e2-g2-b2 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . . . |
+Lyrics: | fang’n. | Ja, wann i | amoi a | Bua wär! |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55

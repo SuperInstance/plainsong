@@ -1,0 +1,22 @@
+**TRACK: Hoch auf dem gelben Wagen**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
+Lyrics: | Hoch auf dem gel-ben Wa-gen | sitz' ich beim Schwager vorn |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | E4 . G4 . | F#4 . D4 . | B3 . A3 . |
+Lyrics: | vor-wärts die Ros-se tra-ben | lustig schmet-tert das Horn |
+@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | D4 . G4 . | F#4 . D4 . | B3 . D4 . | A3 . G3 . |
+Lyrics: | Feld-ein, wald-ein, berg-ein, tal-ein | ja, ja, ja, ja |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
