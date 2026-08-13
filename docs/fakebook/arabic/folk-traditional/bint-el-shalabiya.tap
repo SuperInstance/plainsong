@@ -1,0 +1,22 @@
+**TRACK: Bint el Shalabiya**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
+Melody: | A3 . C4 . | E4 . A3 . | F4 . E4 . | D4 . B3 . |
+Lyrics: | bin-tel sha-la- | bi-ya ya | hel-wa ya | hel-wa ya |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
+Melody: | A3 . C4 . | E4 . A3 . | F4 . E4 . | D4 . B3 . |
+Lyrics: | bin-tel sha-la- | bi-ya ya | hel-wa ya | hel-wa ya |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E7 . . . |
+Melody: | F4 . A4 . | G4 . B4 . | A4 . E4 . | D4 . B3 . |
+Lyrics: | ya-lla ha-bi- | bi ya-lla | ha-bi-bi ya | ha-bi-bi ya |
+@piano | f2-a2-c3-f3 . . . | g2-b2-d3-g3 . . . | a2-e3-a3-c4 . . . | e2-g#2-b2-e3 . . . | vel: 55

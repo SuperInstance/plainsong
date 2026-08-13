@@ -1,0 +1,16 @@
+**TRACK: Al Bosta**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
+Melody: | A3 . C4 . B3 . A3 . | G3 . A3 . B3 . C4 . | D4 . C4 . B3 . A3 . | G3 . E3 . . . |
+Lyrics: | ya bo sta ti ga na | ha bib el al bi | ya bo sta ti ga na | ha bib el al bi |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a3-d4 . . . | e2-g#3-b3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
+Melody: | F4 . E4 . D4 . C4 . | B3 . C4 . D4 . E4 . | F4 . A4 . G4 . F4 . | E4 . D4 . C4 . B3 . |
+Lyrics: | a na ha bib | ta lai ya | a na ha bib | ta lai ya |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-a3-d4 . . . | e2-g#3-b3 . . . | vel: 55
