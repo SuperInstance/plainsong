@@ -1,0 +1,24 @@
+**TRACK: Fly Away**
+[MetaData]
+key: Bm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Uplifting
+
+[V1] (Verse - 4 Bars)
+Chords: | Bm . . . | G . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bm . . . | G . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | A . . . | G . . . |
+@guitar | a2-c#3-e3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | D . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bm . . . | G . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 45

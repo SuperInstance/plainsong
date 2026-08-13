@@ -1,0 +1,24 @@
+**TRACK: Are You Gonna Go My Way**
+[MetaData]
+key: Em | tempo: 125 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 72
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | Em . . . | D . . . | D . . . | C . . . | C . . . | B7 . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | b1-f#2-b2 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | C . . . | G . . . | B7 . . . |
+@guitar | a1-e2-a2 . . . | c2-g2-c3 . . . | g1-d2-g2 . . . | b1-f#2-b2 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 60

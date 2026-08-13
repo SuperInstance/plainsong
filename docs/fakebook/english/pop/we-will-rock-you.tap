@@ -1,0 +1,20 @@
+**TRACK: We Will Rock You**
+[MetaData]
+key: C | tempo: 81 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | C . . . | G . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 45
