@@ -1,0 +1,22 @@
+**TRACK: Requiem (Lacrimosa)**
+[MetaData]
+key: Dm | tempo: 60 | subdivision: 8th
+time: 12/8 | mood: Solemn
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Melody: | D4 . F4 . A4 . | Bb4 . A4 . F4 . | A4 . G4 . F4 . | E4 . D4 . C4 . |
+Lyrics: | La . . . cri . . . mo . . . | sa . . . di . . . es . . . | qua . . . re . . . sur . . . | get . . . ex . . . fa . . . |
+@piano | d2-a2-d3-f3-a3 . . . | bb1-f2-bb2-d3-f3 . . . | f1-c2-f2-a2-c3 . . . | g1-b1-d2-g2-b2 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+Melody: | D4 . F4 . A4 . | Bb4 . A4 . F4 . | G4 . F4 . Eb4 . | E4 . C#4 . A3 . |
+Lyrics: | ju . . . di . . . can . . . | dus . . . ho . . . mo . . . | re . . . us . . . cul . . . | pam . . . re . . . us . . . |
+@piano | d2-a2-d3-f3-a3 . . . | bb1-f2-bb2-d3-f3 . . . | g1-d2-g2-bb2-d3 . . . | a1-e2-a2-c#3-e3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | Dm . . . |
+Melody: | A4 . F4 . D4 . | F4 . A4 . Bb4 . | C5 . Bb4 . A4 . | F4 . D4 . D4 . |
+Lyrics: | Hu . . . ic . . . mi . . . | se . . . par . . . de . . . | pia . . . pie . . . Je . . . | su . . . Do . . . ne . . . |
+@piano | d2-a2-d3-f3-a3 . . . | bb1-f2-bb2-d3-f3 . . . | c2-g2-c3-e3-g3 . . . | d2-a2-d3-f3-a3 . . . | vel: 55

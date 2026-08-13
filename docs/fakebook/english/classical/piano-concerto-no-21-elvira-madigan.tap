@@ -1,0 +1,16 @@
+**TRACK: Piano Concerto No. 21 (Elvira Madigan)**
+[MetaData]
+key: C | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Serene
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+Melody: | E5 . G5 . | D5 . B4 . | C5 . E5 . | A4 . C5 . |
+Lyrics: | . . . . | . . . . | . . . . | . . . . |
+@piano | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | a2-c3-e3-a3 . . . | f2-a2-c3-f3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . C5 . | G4 . E5 . | D5 . B4 . | C5 . . . |
+Lyrics: | . . . . | . . . . | . . . . | . . . . |
+@piano | f2-a2-c3-f3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | vel: 50

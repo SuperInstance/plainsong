@@ -1,0 +1,16 @@
+**TRACK: Hungarian Rhapsody No. 2**
+[MetaData]
+key: C#m | tempo: 80 | subdivision: 8th
+time: 2/4 | mood: Dramatic
+
+[V1] (Verse - 4 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Melody: | C#4 . E4 . | A3 . C#4 . | E4 . G#4 . | B3 . D#4 . |
+Lyrics: | la la la la | la la la la | la la la la | la la la la |
+@piano | c#2-e2-g#2-c#3 . . . | a1-c#2-e2-a2 . . . | e1-g#1-b1-e2 . . . | b1-d#2-f#2-b2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | C#7 . . . | F#m . . . | B7 . . . |
+Melody: | A4 . C#5 . | G#4 . B4 . | F#4 . A4 . | D#4 . F#4 . |
+Lyrics: | la la la la | la la la la | la la la la | la la la la |
+@piano | f#1-a1-c#2-f#2 . . . | c#2-e#2-g#2-c#3 . . . | f#1-a1-c#2-f#2 . . . | b1-d#2-f#2-b2 . . . | vel: 60

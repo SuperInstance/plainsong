@@ -1,0 +1,22 @@
+**TRACK: Polonaise in A-flat major "Heroic"**
+[MetaData]
+key: Ab | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Majestic
+
+[V1] (Verse - 4 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb . . . |
+Melody: | Ab4 . C5 . | Db5 . F5 . | Eb5 . C5 . | Bb4 . Eb4 . |
+Lyrics: | da da da da | da da da da | da da da da | da da da da |
+@piano | Ab2-Eb3-Ab3 . . . | Db2-Ab3-Db4 . . . | Ab2-Eb3-Ab3 . . . | Eb2-Bb3-Eb4 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Eb . . . | Ab . . . | Eb . . . |
+Melody: | Ab4 . Bb4 . | C5 . Eb5 . | D5 . C5 . | Bb4 . Ab4 . |
+Lyrics: | tra la la la | tra la la la | tra la la la | tra la la la |
+@piano | Ab2-Eb3-Ab3 . . . | Eb2-Bb3-Eb4 . . . | Ab2-Eb3-Ab3 . . . | Eb2-Bb3-Eb4 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Fm . . . | Bb7 . . . |
+Melody: | F4 . Ab4 . | Bb4 . D5 . |
+Lyrics: | ah ah ah ah | ah ah ah ah |
+@piano | f2-c3-f3 . . . | bb1-d2-f3 . . . | vel: 50

@@ -1,0 +1,32 @@
+**TRACK: Violin Concerto in E minor (Op. 64) – Allegro molto appassionato**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 16th
+time: 4/4 | mood: Passionate
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | Am . . . |
+Melody: | E4 . G4 . B4 . E5 . | A4 . C5 . B4 . A4 . |
+Lyrics: | (instrumental) . . . . | . . . . |
+@violin | e3-b3-e4 . . . | a2-c3-e3 . . . | vel: 60
+@piano | e2-g2-b2 . . . | a1-c2-e2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | B7 . . . |
+Melody: | G4 . A4 . B4 . C5 . | D5 . B4 . G4 . E4 . |
+Lyrics: | (instrumental) . . . . | . . . . |
+@violin | c3-g3-c4 . . . | b2-f#3-b3 . . . | vel: 65
+@piano | c2-e2-g2 . . . | b1-d2-f#2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | D7 . . . |
+Melody: | A4 . C5 . E5 . A5 . | F#5 . D5 . B4 . G#4 . |
+Lyrics: | (instrumental) . . . . | . . . . |
+@violin | a2-c3-e3 . . . | d2-f#3-a3 . . . | vel: 62
+@piano | a1-c2-e2 . . . | d1-f#2-a2 . . . | vel: 48
+
+[OUT] (Outro - 2 Bars)
+Chords: | Em . . . | Em . . . |
+Melody: | E5 . D5 . C5 . B4 . | A4 . G#4 . B4 . E4 . |
+Lyrics: | (instrumental) . . . . | . . . . |
+@violin | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 55
+@piano | e2-g2-b2 . . . | e2-g2-b2 . . . | vel: 40
