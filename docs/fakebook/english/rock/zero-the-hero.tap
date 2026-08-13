@@ -1,0 +1,24 @@
+**TRACK: Zero the Hero**
+[MetaData]
+key: E | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 60
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | A5 . . . | G5 . . . | F5 . . . | G5 . . . |
+@guitar | a1-e2-a2 . . . | g1-d2-g2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | C5 . . . | B5 . . . | A5 . . . | B5 . . . |
+@guitar | c2-g2-c3 . . . | b1-f#2-b2 . . . | a1-e2-a2 . . . | b1-f#2-b2 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | E5 . . . | E5 . . . | E5 . . . | E5 . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

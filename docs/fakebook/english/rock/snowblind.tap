@@ -1,0 +1,24 @@
+**TRACK: Snowblind**
+[MetaData]
+key: Em | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d3-a3-d4 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | D . . . |
+@guitar | a2-e3-a3 . . . | f2-c3-f3 . . . | g2-b2-d3 . . . | d3-a3-d4 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | vel: 50

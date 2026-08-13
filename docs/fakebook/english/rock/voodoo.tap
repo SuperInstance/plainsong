@@ -1,0 +1,24 @@
+**TRACK: Voodoo**
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Dark, Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c2-g2-c3 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | D . . . | B7 . . . |
+@guitar | a2-c3-e3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | b1-f#2-a2 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | D . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 50
