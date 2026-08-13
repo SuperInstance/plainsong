@@ -87,7 +87,7 @@ class TestActionTypes:
     def test_build_action_with_friction(self):
         e = SWMIDIEvent(
             EventType.NoteOn, 0, ActionType.BuildFailed, 50,
-            Friction.SyntaxException | Friction.TypeMismatch, 192
+            Friction.SyntaxError | Friction.TypeMismatch, 192
         )
         d = decode_event(encode_event(e))
         assert d.pitch == ActionType.BuildFailed
