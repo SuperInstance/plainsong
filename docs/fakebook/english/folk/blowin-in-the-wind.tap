@@ -1,0 +1,20 @@
+**TRACK: Blowin' in the Wind**
+[MetaData]
+key: D | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | D . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | vel: 60
+
+[IN] (Instrumental - 4 Bars)
+Chords: | G . . . | A . . . | D . . . | D . . . |
+@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 45

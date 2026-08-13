@@ -1,0 +1,24 @@
+**TRACK: This Land Is Your Land**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 58
+
+[V3] (Verse - 4 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

@@ -1,0 +1,24 @@
+**TRACK: Don't Think Twice, It's Alright**
+[MetaData]
+key: A | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | A . . . | A7 . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-g3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . |
+@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 52
+
+[V3] (Verse - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | A7 . . . |
+@guitar | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-g3 . . . | vel: 54
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | A . . . | E . . . | E . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 56
+
+[V4] (Verse - 4 Bars)
+Chords: | A . . . | A . . . | D . . . | E . . . |
+@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | vel: 50
