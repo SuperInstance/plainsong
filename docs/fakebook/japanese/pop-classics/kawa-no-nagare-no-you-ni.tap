@@ -1,0 +1,28 @@
+**TRACK: Kawa no Nagare no You ni**
+[MetaData]
+key: Am | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . |
+| F . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . |
+| F . . . | Dm . . . | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | E7 . . . |
+| F . . . | C/E . . . | Dm . . . | E7 . . . |
+@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Em . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . |
+| F . . . | E7 . . . | Am . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50

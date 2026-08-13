@@ -1,0 +1,24 @@
+**TRACK: Sotsugyo Shishin**
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Nostalgic
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Em/G . . . | F . . . | G . . . |
+@guitar | a2-c3-e3 . . . | e2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Em/G . . . | F . . . | G . . . |
+@guitar | a2-c3-e3 . . . | e2-b2-d3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+@guitar | d2-f2-a2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | vel: 45

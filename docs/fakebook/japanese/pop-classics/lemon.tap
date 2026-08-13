@@ -1,0 +1,24 @@
+**TRACK: Lemon**
+[MetaData]
+key: Ab | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 45
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | Eb . . . |
+@guitar | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | eb2-g2-bb2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Eb . . . | Ab . . . | Fm . . . |
+@guitar | bb1-db2-f2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | Eb . . . |
+@guitar | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | eb2-g2-bb2 . . . | vel: 65
