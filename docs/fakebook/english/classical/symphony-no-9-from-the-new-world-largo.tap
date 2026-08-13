@@ -1,0 +1,28 @@
+**TRACK: Symphony No. 9 "From the New World" (Largo)**
+[MetaData]
+key: Db major | tempo: 52 | subdivision: 8th
+time: 4/4 | mood: Gentle, soaring
+
+[V1] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | F7 . . . |
+Melody: | F4 . Ab4 . | Db5 . . . | C5 . Bb4 . | A4 . F4 . |
+Lyrics: | la la la la | la la la | la la la la | la la la |
+@piano | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | F7 . . . | Bbm . . . | Db . . . |
+Melody: | F4 . Ab4 . | G4 . F4 . | Eb4 . Db4 . | Db4 . . . |
+Lyrics: | la la la la | la la la la | la la la la | la la la |
+@piano | bb2-db3-f3 . . . | f2-a2-c3 . . . | bb2-db3-f3 . . . | db3-f3-ab3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Db . . . |
+Melody: | F4 . Gb4 . | Ab4 . Bb4 . | C5 . Db5 . | Db5 . . . |
+Lyrics: | la la la la | la la la la | la la la la | la la la |
+@piano | gb2-bb2-db3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | vel: 48
+
+[OUT] (Outro - 2 Bars)
+Chords: | Db . . . | Db . . . |
+Melody: | F4 . Ab4 . | Db4 . . . |
+Lyrics: | la la la | la la |
+@piano | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 40

@@ -1,0 +1,26 @@
+**TRACK: Dance of the Sugar Plum Fairy**
+[MetaData]
+key: Em | tempo: 66 | subdivision: 16th
+time: 4/4 | mood: Delicate, magical
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | B7 . . . |
+Melody: | E5 . G#5 . | B5 . . . | (pickup: D#5)
+Lyrics: | (instrumental) |
+@piano | e2-b2-e3 . . . | d#2-a#2-d#3 . . . | vel: 40
+@celesta | e5 . g#5 . b5 . . . | d#5 . f#5 . a#5 . . . | vel: 60
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | Am . . . |
+Melody: | C6 . B5 . | A5 . G#5 . |
+Lyrics: | (instrumental) |
+@piano | c2-g2-c3 . . . | a1-e2-a2 . . . | vel: 40
+@celesta | c6 . b5 . a5 . g#5 . | a5 . g#5 . f#5 . e5 . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . . | B7 . . . |
+Melody: | E5 . G#5 . B5 . D#6 . | E6 . . . . . . . |
+Lyrics: | (instrumental) |
+@piano | e2-b2-e3 . . . | d#2-a#2-d#3 . . . | vel: 45
+@celesta | e5 . g#5 . b5 . d#6 . | e6 . . . . . . . | vel: 65
+@strings | (sustained pad) e3-b3-e4 . . . | d#3-a#3-d#4 . . . | vel: 30
