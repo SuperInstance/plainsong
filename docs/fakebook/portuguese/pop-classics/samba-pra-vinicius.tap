@@ -1,0 +1,24 @@
+**TRACK: Samba pra Vinicius**
+[MetaData]
+key: Am | tempo: 88 | subdivision: 8th
+time: 2/2 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | A7 . . . | A7 . . . | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . | Am . . . | F . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
+@guitar | d3-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-b3 . . . | e2-g#2-b2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | A7 . . . | A7 . . . | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . | Am . . . | F . . . | E7 . . . | E7 . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2
