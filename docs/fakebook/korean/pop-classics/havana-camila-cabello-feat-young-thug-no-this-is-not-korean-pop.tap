@@ -1,0 +1,24 @@
+**TRACK: Havana - Camila Cabello (feat. Young Thug)**
+[MetaData]
+key: Am | tempo: 105 | subdivision: 8th
+time: 4/4 | mood: Latin Pop
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[PCH] (Pre-Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | E7 . . . | E7 . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45

@@ -1,0 +1,16 @@
+**TRACK: Good Boy**
+[MetaData]
+key: Fm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . |
+@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Db . . . | Eb . . . |
+@guitar | bb2-db3-f3 . . . | f2-ab2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | vel: 60

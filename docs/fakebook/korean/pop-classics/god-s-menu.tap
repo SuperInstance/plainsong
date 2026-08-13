@@ -1,0 +1,24 @@
+**TRACK: God’s Menu**
+[MetaData]
+key: F#m | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 70
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | Bm . . . | C#7 . . . |
+@guitar | b2-f#2-b3 . . . | c#3-e3-g#3 . . . | vel: 75
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 85
+
+[BR] (Bridge - 2 Bars)
+Chords: | Bm . . . | F#m . . . |
+@guitar | b2-f#2-b3 . . . | f#2-c#3-f#3 . . . | vel: 60
+
+[OUT] (Outro - 2 Bars)
+Chords: | F#m . . . | E . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 50
