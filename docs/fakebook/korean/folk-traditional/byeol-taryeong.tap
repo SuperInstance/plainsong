@@ -1,0 +1,22 @@
+**TRACK: Byeol Taryeong**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Gentle, lyrical
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . . . | E4 . G4 . | D4 . . . |
+Lyrics: | byeol tta ryeong | eo je bam e | byeol i tteo | neul ji |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 48
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . . . | E4 . G4 . | D4 . . . |
+Lyrics: | dal tta ryeong | eo je bam e | dal i tteo | neul ji |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 48
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . E4 . | F4 . . . | E4 . G4 . B4 . | D4 . . . |
+Lyrics: | sa rang ha neun | nim i o | myeon byeol i na | ryeo on da |
+@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f4 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g4 . . . | vel: 55

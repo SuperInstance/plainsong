@@ -1,0 +1,22 @@
+**TRACK: Kkot Taryeong**
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Gentle, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Am . . . |
+Melody: | A3 . C4 . | A3 . C4 . | F4 . E4 . | D4 . C4 . |
+Lyrics: | kkot . i . | pi . ne . | a . reum . | daun . sae . |
+@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-f3-a3 . . . | a2-e3-a3 . . . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
+Lyrics: | hyang . gi . | na . ne . | kkot . i . | yeo . . . |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | Am . . . |
+Melody: | A4 . C4 . | F4 . E4 . | D4 . B3 . | C4 . A3 . |
+Lyrics: | kkot . tta . | ryeong . a . | jeo . mul . | wi . e . |
+@piano | a2-e3-a3 . . . | d2-f3-a3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
