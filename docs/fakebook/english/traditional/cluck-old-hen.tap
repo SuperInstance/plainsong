@@ -1,0 +1,22 @@
+**TRACK: Cluck Old Hen**
+[MetaData]
+key: A minor | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | Am . . . | E7 . . . |
+Melody: | A4 . C5 . | B4 . G4 . | A4 . C5 . | B4 . E4 . |
+Lyrics: | Cluck old hen, | cluck and squall, | ain't been fed | since last fall |
+@piano | a3-c4-e4 . . . | g2-b3-d4 . . . | a3-c4-e4 . . . | e2-g#3-b3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | Am . . . | E7 . . . |
+Melody: | A4 . C5 . | B4 . G4 . | A4 . C5 . | B4 . E4 . |
+Lyrics: | Cluck old hen, | cluck and cry, | ain't laid eggs | since the fourth of July |
+@piano | a3-c4-e4 . . . | g2-b3-d4 . . . | a3-c4-e4 . . . | e2-g#3-b3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | E7 . . . |
+Melody: | F4 . A4 . | E4 . C4 . | D4 . B4 . | B3 . E4 . |
+Lyrics: | Cluck, cluck, | cluck, cluck, | old hen, | cluck and sing |
+@piano | f2-a3-c4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | e2-g#3-b3 . . . | vel: 50

@@ -1,0 +1,22 @@
+**TRACK: Oh! Susanna**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Cheerful
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . . . |
+Lyrics: | I came from A - la - | ba - ma with my | ban - jo on my | knee . . . |
+@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . . . |
+Lyrics: | I'm goin' to Lou' - si - | a - na, my | true love for to | see . . . |
+@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | G . . . |
+Melody: | D4 . . . | C4 . B3 . | A3 . B3 . | G3 . . . |
+Lyrics: | Oh! Su - san - | na, don't you cry for | me . . . | . . . |
+@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60

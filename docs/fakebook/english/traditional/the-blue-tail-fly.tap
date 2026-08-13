@@ -1,0 +1,16 @@
+**TRACK: The Blue Tail Fly**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+Melody: | E4 . G4 . | B3 . D4 . | E4 . G4 . | B3 . D4 . |
+Lyrics: | When I was young I used to wait | On mas-ter and give him his plate | And pass the bot-tle when he got dry | And brush a-way the blue tail fly |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | C . . . |
+Melody: | E4 . G4 . | B3 . D4 . | C4 . E4 . | C4 . . . |
+Lyrics: | Jim-mie crack corn and I don't care | Jim-mie crack corn and I don't care | Jim-mie crack corn and I don't care | My mas-ter's gone a-way |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
