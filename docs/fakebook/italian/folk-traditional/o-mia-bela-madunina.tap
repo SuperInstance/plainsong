@@ -1,0 +1,22 @@
+**TRACK: O mia bela Madunina**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | G4 . B4 . | A4 . . . | G4 . E4 . | D4 . . . |
+Lyrics: | O mi-a be-la Ma-du-ni-na | (inst) | che bril-la da lon-tan | (inst) |
+@piano | g2-b3-d4 . . . | d2-a3-d4 . . . | g2-b3-d4 . . . | d2-a3-d4 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | A3 . B3 . | G3 . . . |
+Lyrics: | tut-ti i no-stri a-mor | par-ti-ran da qui | ma tu re-sti sem-pre | nel mio cuor |
+@piano | c3-e3-g3 . . . | g2-b3-d4 . . . | d2-a3-d4 . . . | g2-b3-d4 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | C . . . | G . . . |
+Melody: | G4 . A4 . | B4 . D4 . | E4 . C4 . | D4 . . . |
+Lyrics: | sot-to i por-ti-ci se-re-no | (inst) | tut-to par-la d'a-mor | (inst) |
+@piano | g2-b3-d4 . . . | d2-a3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | vel: 45
