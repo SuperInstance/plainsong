@@ -1,0 +1,22 @@
+**TRACK: Thirty Days Hath September**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . E4 . | G4 . E4 . | C4 . D4 . | E4 . . . |
+Lyrics: | Thir-ty days hath | Sep-tem-ber, | A-pril, June, and | No-vem-ber. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | F . . . | G . . . |
+Melody: | F4 . A4 . | G4 . E4 . | F4 . D4 . | G4 . . . |
+Lyrics: | All the rest have | thir-ty-one, | Save Feb-ru-ary | clear. |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | C . . . | G7 . . . |
+Melody: | E4 . G4 . | C4 . . . |
+Lyrics: | Twen-ty-eight, | or more. |
+@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
