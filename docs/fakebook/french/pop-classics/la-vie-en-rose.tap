@@ -1,0 +1,29 @@
+**TRACK: La Vie en rose**
+[MetaData]
+key: C | tempo: 66 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
+@guitar | . . . . | . . . . | . . . . | . . . . | vel: 50
+Chords: | C . . . | E7 . . . | Am . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | g2-b2-f3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 52
+@guitar | . . . . | . . . . | . . . . | . . . . | vel: 52
+Chords: | Dm . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 52
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | Am . . . | Dm . . . | G7 . . . |
+@guitar | e2-g2-b2 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | g2-b2-f3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 58
+@guitar | . . . . | . . . . | . . . . | . . . . | vel: 58
+Chords: | Dm . . . | G7 . . . | C . . . | C . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 58

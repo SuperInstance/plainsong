@@ -1,0 +1,30 @@
+**TRACK: La Mer**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Gm . . . | C7 . . . | F . . . |
+@guitar | bb1-d2-f2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
+Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | F . . . |
+@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 45

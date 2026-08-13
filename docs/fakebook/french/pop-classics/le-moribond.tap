@@ -1,0 +1,28 @@
+**TRACK: Le Moribond**
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+| Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+| Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A7 . . . |
+| Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Dm . . . | Dm . . . |
+| Gm . . . | Gm . . . | A7 . . . | A7 . . . |
+@guitar | g2-bb2-d3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
+@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 45

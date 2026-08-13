@@ -1,0 +1,32 @@
+**TRACK: Douce France**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Nostalgic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+@guitar | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+@guitar | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | D7 . . . | G . . . | D7 . . . | G . . . |
+@guitar | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | B7 . . . | Em . . . | A7 . . . |
+@guitar | c3-e3-g3 . . . | b2-d#3-f#3 . . . | e2-g2-b2 . . . | a2-c#3-e3 . . . | vel: 55
+
+[V3] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+@guitar | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | D7 . . . | G . . . | D7 . . . | G . . . |
+@guitar | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | D7 . . . G . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . g2-b2-d3 . . | vel: 45
