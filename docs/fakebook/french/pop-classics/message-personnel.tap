@@ -1,0 +1,31 @@
+**TRACK: Message personnel**
+[MetaData]
+key: C | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
+        | F . . . | C/E . . . | Dm7 . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-g2-b2 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . |
+        | C . . . | G . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 60
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[B] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Em . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
+        | F . . . | C/E . . . | Dm7 . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-g2-b2 . . . | vel: 50
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . |
+        | C . . . | G . . . | C . . . | G . . . |
+@guitar | c3-e3-g3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . .

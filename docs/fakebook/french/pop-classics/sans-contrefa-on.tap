@@ -1,0 +1,26 @@
+**TRACK: Sans contrefaçon**
+[MetaData]
+key: Am | tempo: 116 | subdivision: 8th
+time: 4/4 | mood: Driving, Theatrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 70
+Chords: | F . . . | C . . . | G . . . | E . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | Dm . . . | E . . . |
+@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 50

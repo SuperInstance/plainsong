@@ -1,0 +1,20 @@
+**TRACK: Pour un flirt**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+       | F . . . | E . . . | Am . . . | E . . . |
+@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | vel: 55
+@guitar | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+       | F . . . | G . . . | Am . . . | E . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 60
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | E . . . |
+@guitar | d2-a2-d3 . . . | g2-b2-d3 . . . | c2-e2-g2 . . . | e2-g#2-b2 . . . | vel: 50

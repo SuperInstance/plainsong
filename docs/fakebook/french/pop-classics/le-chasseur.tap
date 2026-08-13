@@ -1,0 +1,24 @@
+**TRACK: Le Chasseur**
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
+@guitar | d3-a3-d4 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | g2-bb2-d3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
+@guitar | d3-a3-d4 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | g2-bb2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Gm . . . | A7 . . . |
+@guitar | g2-bb2-d3 . . . | d3-a3-d4 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 60
