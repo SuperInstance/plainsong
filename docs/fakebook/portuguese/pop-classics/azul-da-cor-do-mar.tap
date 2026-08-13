@@ -1,0 +1,20 @@
+**TRACK: Azul da Cor do Mar**
+[MetaData]
+key: F | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
+@guitar | f2-c3-f3 . . . | d2-a2-d3 . . . | bb2-f3-bb3 . . . | c3-g3-c4 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
+@guitar | f2-c3-f3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | c3-g3-c4 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | C . . . |
+@guitar | bb2-f3-bb3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | c3-g3-c4 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | F . . . |
+@guitar | d2-a2-d3 . . . | bb2-f3-bb3 . . . | c3-g3-c4 . . . | f2-c3-f3 . . . | vel: 58
