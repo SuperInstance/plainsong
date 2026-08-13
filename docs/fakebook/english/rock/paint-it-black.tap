@@ -1,0 +1,24 @@
+**TRACK: Paint It Black**
+[MetaData]
+key: Em | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-a2 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 65
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-a2 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | D . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
+@guitar | e2-b2-e3 . . . | b1-f#2-a2 . . . | e2-b2-e3 . . . | b1-f#2-a2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

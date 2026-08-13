@@ -1,0 +1,20 @@
+**TRACK: Baba O'Riley**
+[MetaData]
+key: F | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | F . . . | C . . . | F . . . | Bb . . . | F . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 65
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | C . . . |
+@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | C . . . |
+@guitar | a2-c3-e3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | F . . . | C . . . | F . . . | Bb . . . | F . . . | C . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 65

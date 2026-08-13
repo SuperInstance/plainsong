@@ -1,0 +1,24 @@
+**TRACK: Comfortably Numb**
+[MetaData]
+key: Am | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Spacious
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | F . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . | F . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Dm . . . | C . . . | G . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 45

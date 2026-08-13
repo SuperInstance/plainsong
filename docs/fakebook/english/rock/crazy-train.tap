@@ -1,0 +1,24 @@
+**TRACK: Crazy Train**
+[MetaData]
+key: F# minor | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | F#5 . . . | E5 . . . | D5 . . . | E5 . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#5 . . . | E5 . . . | D5 . . . | E5 . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 60
+
+[BR] (Bridge - 2 Bars)
+Chords: | B5 . . . | C#5 . . . |
+@guitar | b1-f#2-b2 . . . | c#2-g#2-c#3 . . . | vel: 58
+
+[V2] (Verse - 4 Bars)
+Chords: | F#5 . . . | E5 . . . | D5 . . . | E5 . . . |
+@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
+
+[OUT] (Outro - 2 Bars)
+Chords: | F#5 . . . | N.C. . . . |
+@guitar | f#2-c#3-f#3 . . . | . . . . | vel: 50
