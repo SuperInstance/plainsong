@@ -1,0 +1,20 @@
+**TRACK: Play with Me**
+[MetaData]
+key: Em | tempo: 160 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 70
+
+[PRE] (Pre-Chorus - 4 Bars)
+Chords: | C . . . | D . . . | C . . . | D . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 75
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | G . . . | C . . . | D . . . | Em . . . | G . . . | C . . . | D . . . |
+@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 65

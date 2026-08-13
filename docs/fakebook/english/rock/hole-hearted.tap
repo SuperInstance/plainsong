@@ -1,0 +1,26 @@
+**TRACK: Hole Hearted**
+[MetaData]
+key: A minor | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving, Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | F . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 65
+Chords: | C . . . | G . . . | Am . . . | G . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 68
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45

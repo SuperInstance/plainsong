@@ -1,0 +1,24 @@
+**TRACK: Now I Wanna Sniff Some Glue**
+[MetaData]
+key: E | tempo: 180 | subdivision: 8th
+time: 4/4 | mood: Raw, driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | A . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | A . . . |
+@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | B . . . |
+@guitar | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 75
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . |
+@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . |
+@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65
