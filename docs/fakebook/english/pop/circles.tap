@@ -1,0 +1,24 @@
+**TRACK: Circles**
+[MetaData]
+key: Am | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | Am . . . | C . . . | G . . . |
+@guitar | f2-a2-c3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45

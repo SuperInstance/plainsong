@@ -1,0 +1,24 @@
+**TRACK: Torn**
+[MetaData]
+key: Bm | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Brooding
+
+[V1] (Verse - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | A . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | vel: 65
+
+[BR] (Bridge - 2 Bars)
+Chords: | Em . . . | G . . . |
+@guitar | e2-g2-b2 . . . | g2-b2-d3 . . . | vel: 45
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bm . . . | Bm . . . |
+@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | vel: 40
