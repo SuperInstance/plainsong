@@ -1,0 +1,24 @@
+**TRACK: Sweet Dreams (Are Made of This) - Patsy Cline**
+[MetaData]
+key: F | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Country Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | Bb . . . | C7 . . . | F . . . |
+@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C7 . . . | C7 . . . |
+@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55

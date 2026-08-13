@@ -1,0 +1,31 @@
+**TRACK: Act Naturally**
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | G . . . | D . . . | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+Chords: | G . . . | D . . . | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | G . . . |
+@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+Chords: | G . . . | D . . . | G . . . | G . . . |
+@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
+Chords: | C . . . | D . . . | G . . . | G . . . |
+@guitar | c3-e3-g3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | G . . . | C . . . | G .
