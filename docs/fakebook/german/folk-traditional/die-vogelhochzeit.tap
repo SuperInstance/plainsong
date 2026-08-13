@@ -1,0 +1,16 @@
+**TRACK: Die Vogelhochzeit**
+[MetaData]
+key: G | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | G . . . | D . . . |
+Melody: | G4 . A4 . | B4 . A4 . | G4 . E4 . | D4 . . . |
+Lyrics: | Ein Vo-gel woll-te | Hoch-zeit hal-ten | in dem grü-nen | Wal-de. |
+@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | A4 . G4 . | E4 . D4 . | G4 . . . |
+Lyrics: | Fi-de-ral-la-la | fi-de-ral-la-la | fi-de-ral-la-la | la-la-la. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60

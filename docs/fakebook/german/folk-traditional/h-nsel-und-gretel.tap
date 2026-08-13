@@ -1,0 +1,28 @@
+**TRACK: Hänsel und Gretel**
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . |
+Melody: | F4 . G4 . | A4 . G4 . |
+Lyrics: | Hän - sel und Gre - tel | ver - irr - ten im Wald |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C7 . . . |
+Melody: | A4 . F4 . | G4 . E4 . |
+Lyrics: | es war so fin - ster | und auch so kalt |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . |
+Melody: | F4 . A4 . | C5 . A4 . |
+Lyrics: | sie ka - men an ein | Häus - chen von |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60
+
+[CH2] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . |
+Melody: | G4 . F4 . | F4 . . . |
+Lyrics: | Leb - kuchen fein | wer mag das sein? |
+@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60
