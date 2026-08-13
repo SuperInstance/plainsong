@@ -1,0 +1,24 @@
+**TRACK: Tu Cárcel**
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | A7 . . . | Dm . . . |
+@guitar | g2-bb2-d3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | vel: 50
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | Dm . . . |
+@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 45
