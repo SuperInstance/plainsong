@@ -1,0 +1,31 @@
+**TRACK: Mrs. Robinson**
+[MetaData]
+key: E major | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-a#2 . . . | vel: 55
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-a#2 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-a#2 . . . | vel: 55
+@guitar | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | b1-f#2-a#2 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | A . . . | E . . . |
+Chords: | D . . . | A . . . | B7 . . . | B7 . . . |
+@guitar | a2-c#3-e3 . . . | e2-b3-e4 . . . | a2-c#3-e3 . . . | e2-b3-e4 . . . | vel: 62
+@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | b1-f#2-a#2 . . . | b1-f#2-a#2 . . . | vel: 62
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | G#7 . . . | C#m . . . | G#7 . . . |
+@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | vel: 50
+
+[V3] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+@guitar |

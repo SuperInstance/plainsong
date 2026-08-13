@@ -1,0 +1,16 @@
+**TRACK: Le Freak**
+[MetaData]
+key: Am | tempo: 120 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 4 Bars)
+Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+@guitar | a2-c3-e3-g3 . . . | d2-f#3-a3-c3 . . . | g2-bb3-d3-f3 . . . | c2-e3-g3-bb3 . . . | vel: 65
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 70
+
+[BR] (Bridge - 2 Bars)
+Chords: | Dm . . . | G . . . |
+@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 60
