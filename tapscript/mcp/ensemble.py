@@ -34,7 +34,6 @@ import json
 import os
 import time
 import uuid
-from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -151,7 +150,17 @@ class _FileLock:
                 time.sleep(LOCK_POLL)
 
     def __exit__(self, *exc: Any) -> None:
-        self.path.unlink(missing_ok=True)
+        # Releasing must not raise. On Windows an unlink can fail transiently
+        # while a virus scanner or indexer holds the file open, and a release
+        # that throws would surface as the caller's operation failing after it
+        # had already succeeded. If it cannot be removed now, the staleness
+        # check reaps it.
+        for _attempt in range(5):
+            try:
+                self.path.unlink(missing_ok=True)
+                return
+            except OSError:
+                time.sleep(LOCK_POLL)
 
     def _is_stale(self) -> bool:
         try:
@@ -912,10 +921,3 @@ def _bar_table(score: Score) -> list[dict[str, Any]]:
             table.append(entry)
         offset += length
     return table
-
-
-def iter_sessions(root: Path | None = None, paths: Paths | None = None) -> Iterator[Session]:
-    """Every session in the workspace, as objects."""
-    base = root or ensemble_root(paths)
-    for name in list_sessions(base):
-        yield Session(base / name)

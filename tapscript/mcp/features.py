@@ -290,20 +290,6 @@ def summarise(bars: Sequence[BarFeatures]) -> dict[str, float]:
     }
 
 
-def analyse(arrangement: Any, voice: str = "") -> dict[str, Any]:
-    """Features for every bar plus the mean over the piece, ready to serialise."""
-    bars = extract(arrangement, voice=voice)
-    return {
-        "voice": voice or "(all)",
-        "bars": len(bars),
-        "beats_per_bar": bar_length(arrangement),
-        "tempo": float(arrangement.meta.tempo),
-        "feature_names": list(FEATURE_NAMES),
-        "mean": summarise(bars),
-        "per_bar": [bar.as_dict() for bar in bars],
-    }
-
-
 def format_table(bars: Sequence[BarFeatures], width: int = 6) -> str:
     """A fixed-width table, for reading in a terminal or by a model."""
     short = [name[:width].rjust(width) for name in FEATURE_NAMES]

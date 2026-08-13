@@ -634,6 +634,21 @@ def cmd_serve(args: argparse.Namespace, config: Config, out: Out) -> int:
     return serve(config, host=host, port=port, open_browser=args.open, out=out)
 
 
+def cmd_mcp(args: argparse.Namespace, config: Config, out: Out) -> int:
+    from ..mcp.server import Server, serve_http, serve_stdio
+
+    server = Server(config=config)
+    if args.list_tools:
+        for spec in sorted(server.registry.specs(), key=lambda spec: spec.name):
+            out.say(f"{spec.name:<22} {spec.description.splitlines()[0]}")
+        return 0
+    if args.http:
+        return serve_http(server, config=config, host=args.host, port=args.port, out=out)
+    # Stdout carries the protocol from here on, so nothing is printed: one
+    # stray line would desynchronise the client.
+    return serve_stdio(server)
+
+
 def cmd_tui(args: argparse.Namespace, config: Config, out: Out) -> int:
     from .tui import run_tui
 
@@ -808,6 +823,15 @@ def build_parser() -> argparse.ArgumentParser:
     serve_parser.add_argument("--port", type=int, default=0)
     serve_parser.add_argument("--open", action="store_true", help="open a browser")
     serve_parser.set_defaults(func=cmd_serve)
+
+    mcp_parser = subparsers.add_parser(
+        "mcp", help="serve over the Model Context Protocol, for agents"
+    )
+    mcp_parser.add_argument("--http", action="store_true", help="serve over HTTP instead of stdio")
+    mcp_parser.add_argument("--host", default="127.0.0.1", help="HTTP bind address (loopback)")
+    mcp_parser.add_argument("--port", type=int, default=8766, help="HTTP port")
+    mcp_parser.add_argument("--list-tools", action="store_true", help="print the tools and exit")
+    mcp_parser.set_defaults(func=cmd_mcp)
 
     tui_parser = subparsers.add_parser("tui", help="start the terminal interface")
     tui_parser.add_argument("file", nargs="?", default="", help="open this file")

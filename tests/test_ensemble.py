@@ -242,15 +242,29 @@ class TestConcurrency(SessionTest):
     def test_the_manifest_survives_a_crowd(self) -> None:
         """Twenty concurrent claims on twenty voices leave twenty owners."""
         voices = [f"v{index}" for index in range(20)]
-        threads = [
-            threading.Thread(target=self.session.join, args=(voice, f"agent-{voice}"))
-            for voice in voices
-        ]
+        # A bare Thread swallows whatever its target raises, which would make a
+        # claim that failed look exactly like a claim that was lost. Record the
+        # exceptions so a failure here names its own cause.
+        failures: dict[str, BaseException] = {}
+
+        def claim(voice: str) -> None:
+            try:
+                self.session.join(voice, f"agent-{voice}")
+            except BaseException as exc:  # noqa: BLE001 - reported below
+                failures[voice] = exc
+
+        threads = [threading.Thread(target=claim, args=(voice,)) for voice in voices]
         for thread in threads:
             thread.start()
         for thread in threads:
             thread.join()
+
+        self.assertEqual(
+            failures, {}, f"claims raised: {[(v, repr(e)) for v, e in failures.items()]}"
+        )
         manifest = self.session.manifest()
+        missing = [voice for voice in voices if voice not in manifest.voices]
+        self.assertEqual(missing, [], "voices lost from the manifest -- a write overwrote another")
         for voice in voices:
             self.assertEqual(manifest.voices[voice].owner, f"agent-{voice}")
         self.assertEqual(len(self.session.entries()), 21)
