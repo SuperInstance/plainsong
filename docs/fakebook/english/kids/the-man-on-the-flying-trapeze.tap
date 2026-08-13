@@ -1,0 +1,22 @@
+**TRACK: The Man on the Flying Trapeze**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+Melody: | E4 . G4 . | F4 . E4 . | D4 . C4 . | D4 . E4 . |
+Lyrics: | Oh the man on the fly-ing tra-peze | flies through the air with the great-est of ease |
+@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
+Melody: | E4 . G4 . | F4 . E4 . | D4 . C4 . | D4 . E4 . |
+Lyrics: | this dar-ing young man on the fly-ing tra-peze | his ac-tions are grace-ful all girls he does please |
+@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G7 . . . | C . . . |
+Melody: | A4 . G4 . | E4 . C4 . | D4 . F4 . | E4 . C4 . |
+Lyrics: | He flies through the air with the great-est of ease | this dar-ing young man on the fly-ing tra-peze |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 60

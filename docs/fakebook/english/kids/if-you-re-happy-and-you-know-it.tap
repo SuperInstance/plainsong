@@ -1,0 +1,16 @@
+**TRACK: If You're Happy and You Know It**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Bright
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . C4 E4 | G4 . . G4 | E4 . C4 A3 | G3 . . . |
+Lyrics: | If you're hap-py and you know it clap your hands | If you're hap-py and you know it clap your hands |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | C . . . |
+Melody: | G4 . G4 E4 | C4 . C4 A3 | G3 . C4 . | C4 . . . |
+Lyrics: | If you're hap-py and you know it then your face will sure-ly show it | If you're hap-py and you know it clap your hands |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55

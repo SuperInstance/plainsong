@@ -1,0 +1,22 @@
+**TRACK: Five Little Ducks**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . . . |
+Lyrics: | Five lit-tle ducks went out one day | O-ver the hills and far a-way | Moth-er duck said quack quack quack quack | But on-ly four lit-tle ducks came back |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . . . |
+Lyrics: | Four lit-tle ducks went out one day | O-ver the hills and far a-way | Moth-er duck said quack quack quack quack | But on-ly three lit-tle ducks came back |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | C . . . | G . . . |
+Melody: | E4 . C4 . | D4 . B3 . |
+Lyrics: | Sad moth-er duck went out one day | Quack quack quack quack |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45

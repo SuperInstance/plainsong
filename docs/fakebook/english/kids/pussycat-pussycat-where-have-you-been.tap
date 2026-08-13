@@ -1,0 +1,22 @@
+**TRACK: Pussycat, Pussycat, Where Have You Been?**
+[MetaData]
+key: C | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . . . |
+Lyrics: | Puss-y-cat, puss-y-cat, | where have you been? | I've been to Lon-don to | look at the queen. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 2 Bars)
+Chords: | F . . . | C . . . |
+Melody: | A4 . F4 . | E4 . C4 . |
+Lyrics: | Puss-y-cat, puss-y-cat, | what did you there? |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
+
+[V2] (Verse - 2 Bars)
+Chords: | G . . . | C . . . |
+Melody: | D4 . B3 . | C4 . . . |
+Lyrics: | I fright-ened a lit-tle mouse | un-der her chair. |
+@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50

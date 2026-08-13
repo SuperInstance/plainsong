@@ -1,0 +1,22 @@
+**TRACK: One, Two, Buckle My Shoe**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | C4 . . . | D4 . . . | E4 . . . | D4 . . . |
+Lyrics: | One two | buck-le my | shoe | three four |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . . . | F4 . . . | E4 . . . | D4 . . . |
+Lyrics: | shut the | door | five six | pick up sticks |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |
+Melody: | A4 . . . | G4 . . . | E4 . . . | C4 . . . |
+Lyrics: | sev-en eight | lay them straight | nine ten | a big fat hen |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60

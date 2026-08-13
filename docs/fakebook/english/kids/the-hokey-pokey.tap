@@ -1,0 +1,16 @@
+**TRACK: The Hokey Pokey**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | D4 . . . | E4 . G4 . | D4 . . . |
+Lyrics: | You put your right foot in, | you put your right foot out, | you put your right foot in, | and you shake it all a-bout. |
+@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . |
+Melody: | E4 . G4 . | A4 . . . | G4 . E4 . | D4 . . . |
+Lyrics: | You do the Ho-key Po-key, | and you turn your-self a-round, | that's what it's all a-bout! | Oh, the Ho-key Po-key! |
+@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
