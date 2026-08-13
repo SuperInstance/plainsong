@@ -1,0 +1,22 @@
+**TRACK: Sheila Ki Jawani**
+[MetaData]
+key: Cm | tempo: 105 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . |
+@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Bb . . . | Eb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 65
+Chords: | Cm . . . | Ab . . . | Bb . . . | G . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | g2-b2-d3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . |
+@guitar | f2-ab2-c3 . . . | g2-b2-d3 . . . | vel: 50
