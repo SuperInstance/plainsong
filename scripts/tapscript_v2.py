@@ -17,8 +17,8 @@ Format:
     @wesley | e2-a2-c3 . . | f2-a2-c3 g2-b2-d3 | vel: 60
 
 Usage:
-    python tapscript_v2.py              # start web server on port 5557
-    python tapscript_v2.py --cli file.ts --midi out.mid --wav out.wav
+    python3 tapscript_v2.py              # start web server on port 5557
+    python3 tapscript_v2.py --cli file.ts --midi out.mid --wav out.wav
 """
 
 import os
@@ -31,6 +31,7 @@ import random
 import hashlib
 import argparse
 import traceback
+import urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 from typing import List, Dict, Optional, Tuple, Any
@@ -50,7 +51,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 NOTE_TO_SEMITONE = {n: i for i, n in enumerate(NOTE_NAMES)}
 
-# Flats → sharps mapping
+# Flats -> sharps mapping
 FLATS = {'Bb': 'A#', 'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Cb': 'B', 'Fb': 'E'}
 
 # GM instrument programs
@@ -69,10 +70,7 @@ GM_PROGRAMS = {
     'harp': 46, 'drums': 0,
 }
 
-# Default instrument per player name (fallback)
-DEFAULT_PLAYER_INSTRUMENT = 'piano'
-
-# Map player names to instruments based on common names in the examples
+# Default instrument per player name
 PLAYER_INSTRUMENT_MAP = {
     'wesley': 'piano',
     'flash': 'guitar',
@@ -88,7 +86,10 @@ def load_deepseek_key():
     bashrc = os.path.expanduser("~/.bashrc")
     if not os.path.exists(bashrc):
         return os.environ.get("DEEPSEEK_API_KEY", "")
-    with open(bashrc) as f:\n        for line in f:\n            line = line.strip()\n            if line.startswith("export DEEPSEEK_API_KEY="):
+    with open(bashrc) as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith("export DEEPSEEK_API_KEY="):
                 val = line.split("=", 1)[1].strip().strip('"').strip("'")
                 if val:
                     return val
@@ -101,52 +102,42 @@ DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 # Note Parsing — Scientific Pitch Notation
 # ---------------------------------------------------------------------------
 
-def parse_absolute_note(token: str) -> Optional[int]:
+def parse_absolute_note(token):
     """
     Parse a single absolute note name to MIDI number.
-    
-    'C4' → 60, 'E4' → 64, 'a2' → 45 (lowercase = lowercase octave letter, still scientific)
-    'e2-a2-c3' → not handled here (see parse_note_token)
-    
+    'C4' -> 60, 'E4' -> 64, 'a2' -> 45
     Returns None for '.', '-', and non-note tokens.
     """
     token = token.strip()
     if not token or token == '.' or token == '-':
         return None
-    
-    # Match note name + octave: [A-Ga-g][#b]?<number>
     m = re.match(r'^([A-Ga-g])([#b]?)(\d+)$', token)
-    if not m:\n        return None\n    \n    letter = m.group(1).upper()\n    accidental = m.group(2)\n    octave = int(m.group(3))\n    \n    # Get base semitone\n    semitone = NOTE_TO_SEMITONE[letter]
-    
-    # Apply accidental
+    if not m:
+        return None
+    letter = m.group(1).upper()
+    accidental = m.group(2)
+    octave = int(m.group(3))
+    semitone = NOTE_TO_SEMITONE[letter]
     if accidental == '#':
         semitone += 1
     elif accidental == 'b':
         semitone -= 1
-    
-    # MIDI: C-1 = 0, C0 = 12, C4 = 60
     midi = 12 + octave * 12 + semitone
     return midi
 
 
-def parse_note_token(token: str) -> Dict[str, Any]:
+def parse_note_token(token):
     """
     Parse a note token from a Melody or @player line.
-    
-    Returns a dict:
-      {"type": "note", "pitches": [60, 64]}  — one or more MIDI notes
-      {"type": "sustain"}                      — dot, hold previous
-      {"type": "rest"}                         — dash, silence
+    Returns dict: {"type": "note", "pitches": [60]} / {"type": "sustain"} / {"type": "rest"}
     """
     token = token.strip()
-    
     if token == '.':
         return {"type": "sustain"}
     if token == '-':
         return {"type": "rest"}
     if not token:
         return {"type": "rest"}
-    
     # Handle chord (hyphen-separated notes): e2-a2-c3
     if '-' in token and re.search(r'[A-Ga-g]', token):
         parts = token.split('-')
@@ -161,65 +152,67 @@ def parse_note_token(token: str) -> Dict[str, Any]:
         if pitches:
             return {"type": "note", "pitches": pitches}
         return {"type": "rest"}
-    
     # Single note
     midi = parse_absolute_note(token)
     if midi is not None:
         return {"type": "note", "pitches": [midi]}
-    
     return {"type": "rest"}
 
 
-def midi_to_note_name(midi: int) -> str:
-    """Convert MIDI number to note name (e.g., 60 → 'C4')."""
+def midi_to_note_name(midi):
+    """Convert MIDI number to note name (e.g., 60 -> 'C4')."""
     octave = (midi - 12) // 12
     semitone = midi % 12
     return f"{NOTE_NAMES[semitone]}{octave}"
 
 
-def transpose_midi(midi: int, semitones: int) -> int:
+def transpose_midi(midi, semitones):
     """Transpose a MIDI note by N semitones."""
     return max(0, min(127, midi + semitones))
 
 
 # ---------------------------------------------------------------------------
-# Key Parsing (for key changes in UI)
+# Key Parsing (for transposition)
 # ---------------------------------------------------------------------------
 
-def parse_key_string(key_str: str) -> Tuple[str, str]:
+def parse_key_string(key_str):
     """
     Parse key string like 'Am', 'C', 'Dm', 'F#', 'Bbm'.
     Returns (root_note, quality) e.g. ('A', 'minor'), ('C', 'major').
     """
     key_str = key_str.strip()
     m = re.match(r'^([A-G][#b]?)(m?)$', key_str)
-    if not m:\n        return ('C', 'major')\n    root = m.group(1)\n    minor = m.group(2) == 'm'\n    quality = 'minor' if minor else 'major'\n    \n    # Normalize flats
+    if not m:
+        return ('C', 'major')
+    root = m.group(1)
+    minor = m.group(2) == 'm'
+    quality = 'minor' if minor else 'major'
     if root in FLATS:
         root = FLATS[root]
-    
     return (root, quality)
 
 
-def key_to_semitones(key_str: str) -> int:
+def key_to_semitones(key_str):
     """Get the root semitone (0-11) for a key string."""
     root, _ = parse_key_string(key_str)
     return NOTE_TO_SEMITONE.get(root, 0)
 
 
-def semitone_difference(from_key: str, to_key: str) -> int:
+def semitone_difference(from_key, to_key):
     """Calculate semitone difference between two keys."""
-    return (key_to_semitones(to_key) - key_to_semitones(from_key)) % 12
+    diff = (key_to_semitones(to_key) - key_to_semitones(from_key)) % 12
+    if diff > 6:
+        diff -= 12
+    return diff
 
 
 # ---------------------------------------------------------------------------
 # Parser — TapScript v2 Notation
 # ---------------------------------------------------------------------------
 
-def parse_tapscript(text: str) -> Dict[str, Any]:
+def parse_tapscript(text):
     """
-    Parse TapScript v2 notation into a structured composition.
-    
-    Returns a composition dictionary.
+    Parse TapScript v2 notation into a structured composition dictionary.
     """
     comp = {
         "title": "",
@@ -227,49 +220,44 @@ def parse_tapscript(text: str) -> Dict[str, Any]:
         "key_quality": "major",
         "tempo": 120,
         "swing": 0,
-        "subdivision": 16,  # default 16th notes
+        "subdivision": 16,
         "sections": [],
         "raw_text": text,
     }
-    
+
     lines = text.split('\n')
     i = 0
-    
-    # --- Parse title ---
+
+    # Parse title
     while i < len(lines):
         line = lines[i].strip()
         if not line:
             i += 1
             continue
         m = re.match(r'\*\*TRACK:\s*(.+?)\*\*', line, re.IGNORECASE)
-        if m:\n            comp["title"] = m.group(1).strip()
+        if m:
+            comp["title"] = m.group(1).strip()
             i += 1
             break
-        # If no title line, try metadata directly
         if line.startswith('[MetaData]'):
             break
         i += 1
-    
-    # --- Parse metadata block ---
+
+    # Parse metadata block
     in_metadata = False
     while i < len(lines):
         line = lines[i].strip()
         if not line:
             i += 1
             continue
-        
         if line.startswith('[MetaData]'):
             in_metadata = True
             i += 1
             continue
-        
         if in_metadata:
-            # Check if we've left metadata (hit a section header)
             if line.startswith('[') and not line.startswith('[MetaData]'):
                 break
-            
             # Parse: key: Am | tempo: 75 | swing: 10% | subdivision: 16th
-            # These can be pipe-separated on one line or on separate lines
             parts = line.split('|')
             for part in parts:
                 part = part.strip()
@@ -292,83 +280,60 @@ def parse_tapscript(text: str) -> Dict[str, Any]:
                 if subm:
                     comp["subdivision"] = int(subm.group(1))
                     continue
-            
             i += 1
             continue
-        
         i += 1
-    
-    # --- Parse sections ---
+
+    # Parse sections
     current_section = None
-    
     while i < len(lines):
-        raw_line = lines[i]
-        line = raw_line.strip()
-        
+        line = lines[i].strip()
         if not line:
             i += 1
             continue
-        
-        # Section header: [V1] (Verse - 4 Bars) or [C] (Chorus - Louder)
+        # Section header: [V1] (Verse - 4 Bars)
         sec_m = re.match(r'^\[(\w+)\](?:\s*\((.+?)\))?', line)
-        if sec_m:\n            current_section = {\n                "name": sec_m.group(1),
+        if sec_m:
+            current_section = {
+                "name": sec_m.group(1),
                 "description": sec_m.group(2) or "",
                 "bars": [],
             }
             comp["sections"].append(current_section)
             i += 1
             continue
-        
-        # Skip lines outside a section
         if current_section is None:
             i += 1
             continue
-        
-        # Parse bar content from various line types
-        # Each line type: Chords:, Melody:, Lyrics:, @player
-        
-        # Determine line type and parse bars
+        # Parse line types
         if line.startswith('Chords:'):
-            bar_data = _parse_bar_line(line, 'chords')
+            bar_data = _parse_bar_line(line)
             _assign_to_bars(current_section, bar_data, 'chords')
         elif line.startswith('Melody:'):
-            bar_data = _parse_bar_line(line, 'melody')
+            bar_data = _parse_bar_line(line)
             _assign_to_bars(current_section, bar_data, 'melody')
         elif line.startswith('Lyrics:'):
-            bar_data = _parse_bar_line(line, 'lyrics')
+            bar_data = _parse_bar_line(line)
             _assign_to_bars(current_section, bar_data, 'lyrics')
         elif line.startswith('@'):
-            # Named player track: @wesley | notes ... | vel: 60
             player_data = _parse_player_line(line)
             if player_data:
-                player_name = player_data["name"]
+                pname = player_data["name"]
                 bar_data = player_data["bars"]
                 vel = player_data["vel"]
-                _assign_player_to_bars(current_section, bar_data, player_name, vel)
-        
+                _assign_player_to_bars(current_section, bar_data, pname, vel)
         i += 1
-    
+
     return comp
 
 
-def _parse_bar_line(line: str, line_type: str) -> List[List[str]]:
-    """
-    Parse a pipe-delimited line into bar tokens.
-    
-    'Chords:  | Am    .    | F     G    |'
-    → [['Am', '.'], ['F', 'G']]
-    
-    Returns a list of bars, each bar is a list of token strings.
-    """
-    # Remove the label prefix
+def _parse_bar_line(line):
+    """Parse a pipe-delimited line into bar tokens. Returns list of bars (each = list of token strings)."""
     idx = line.find(':')
     if idx == -1:
         return []
     content = line[idx + 1:]
-    
-    # Split by pipe
     bars_raw = content.split('|')
-    
     bars = []
     for bar_str in bars_raw:
         bar_str = bar_str.strip()
@@ -376,44 +341,34 @@ def _parse_bar_line(line: str, line_type: str) -> List[List[str]]:
             continue
         tokens = bar_str.split()
         bars.append(tokens)
-    
     return bars
 
 
-def _parse_player_line(line: str) -> Optional[Dict[str, Any]]:
-    """
-    Parse a @player line.
-    
-    '@wesley | e2-a2-c3 . . | f2-a2-c3 g2-b2-d3 | vel: 60'
-    → {"name": "wesley", "bars": [[...]], "vel": 60}
-    """
-    # Extract player name
+def _parse_player_line(line):
+    """Parse a @player line. Returns dict with name, bars, vel."""
     m = re.match(r'^@(\w+)\s*(.*)', line)
-    if not m:\n        return None\n    \n    name = m.group(1)\n    rest = m.group(2)\n    \n    # Split by pipe\n    parts = rest.split('|')
-    
+    if not m:
+        return None
+    name = m.group(1)
+    rest = m.group(2)
+    parts = rest.split('|')
     bars = []
-    vel = 70  # default velocity
-    
+    vel = 70
     for part in parts:
         part = part.strip()
         if not part:
             continue
-        
-        # Check for vel: parameter
         vm = re.match(r'vel:\s*(\d+)', part, re.IGNORECASE)
         if vm:
             vel = int(vm.group(1))
             continue
-        
-        # It's a bar of notes
         tokens = part.split()
         if tokens:
             bars.append(tokens)
-    
     return {"name": name, "bars": bars, "vel": vel}
 
 
-def _assign_to_bars(section: dict, bar_data: List[List[str]], key: str):
+def _assign_to_bars(section, bar_data, key):
     """Assign parsed bar tokens to the section's bars."""
     for bar_idx, tokens in enumerate(bar_data):
         while len(section["bars"]) <= bar_idx:
@@ -421,7 +376,7 @@ def _assign_to_bars(section: dict, bar_data: List[List[str]], key: str):
         section["bars"][bar_idx][key] = tokens
 
 
-def _assign_player_to_bars(section: dict, bar_data: List[List[str]], player_name: str, vel: int):
+def _assign_player_to_bars(section, bar_data, player_name, vel):
     """Assign player track data to bars."""
     for bar_idx, tokens in enumerate(bar_data):
         while len(section["bars"]) <= bar_idx:
@@ -429,43 +384,27 @@ def _assign_player_to_bars(section: dict, bar_data: List[List[str]], player_name
         bar = section["bars"][bar_idx]
         if "players" not in bar:
             bar["players"] = {}
-        bar["players"][player_name] = {
-            "tokens": tokens,
-            "vel": vel,
-        }
+        bar["players"][player_name] = {"tokens": tokens, "vel": vel}
 
 
-def _new_bar() -> dict:
-    return {
-        "chords": [],
-        "melody": [],
-        "lyrics": [],
-        "players": {},
-    }
+def _new_bar():
+    return {"chords": [], "melody": [], "lyrics": [], "players": {}}
 
 
 # ---------------------------------------------------------------------------
 # Transposition
 # ---------------------------------------------------------------------------
 
-def transpose_text(text: str, new_key: str) -> str:
-    """
-    Transpose all absolute notes in a TapScript v2 text to a new key.
-    Returns the modified text.
-    """
-    # Find original key
+def transpose_text(text, new_key):
+    """Transpose all absolute notes in TapScript v2 text to a new key."""
     orig_key_match = re.search(r'key:\s*(\S+)', text, re.IGNORECASE)
     if not orig_key_match:
         return text
-    
     orig_key = orig_key_match.group(1)
     semis = semitone_difference(orig_key, new_key)
-    
     if semis == 0:
-        # Just update the key label
         return re.sub(r'(key:\s*)\S+', r'\g<1>' + new_key, text, count=1, flags=re.IGNORECASE)
-    
-    # Transpose all absolute notes
+
     def transpose_token(m):
         note = m.group(0)
         midi = parse_absolute_note(note)
@@ -473,29 +412,18 @@ def transpose_text(text: str, new_key: str) -> str:
             new_midi = transpose_midi(midi, semis)
             return midi_to_note_name(new_midi)
         return note
-    
-    # Replace note patterns: [A-Ga-g][#b]?\d+ but not inside chord names on Chords: lines
+
     lines = text.split('\n')
     result_lines = []
     for line in lines:
         stripped = line.strip()
-        # Skip Chords: lines — those are chord symbols, not absolute notes
-        if stripped.startswith('Chords:'):
+        if stripped.startswith('Chords:') or stripped.startswith('Lyrics:'):
             result_lines.append(line)
             continue
-        # Skip Lyrics: lines
-        if stripped.startswith('Lyrics:'):
-            result_lines.append(line)
-            continue
-        # Transpose notes in Melody: and @player lines
         transposed = re.sub(r'[A-Ga-g][#b]?\d+', transpose_token, line)
         result_lines.append(transposed)
-    
     result = '\n'.join(result_lines)
-    
-    # Update key label
     result = re.sub(r'(key:\s*)\S+', r'\g<1>' + new_key, result, count=1, flags=re.IGNORECASE)
-    
     return result
 
 
@@ -503,24 +431,19 @@ def transpose_text(text: str, new_key: str) -> str:
 # MIDI Compilation
 # ---------------------------------------------------------------------------
 
-def _get_program_for_player(player_name: str) -> int:
+def _get_program_for_player(player_name):
     """Get GM program number for a player name."""
     name_lower = player_name.lower()
-    
-    # Check direct map
     if name_lower in PLAYER_INSTRUMENT_MAP:
         inst = PLAYER_INSTRUMENT_MAP[name_lower]
         return GM_PROGRAMS.get(inst, 0)
-    
-    # Check if name contains instrument hint
     for key, prog in GM_PROGRAMS.items():
         if key in name_lower:
             return prog
-    
-    return 0  # default piano
+    return 0
 
 
-def _get_instrument_name_for_player(player_name: str) -> str:
+def _get_instrument_name_for_player(player_name):
     """Get instrument name for a player."""
     name_lower = player_name.lower()
     if name_lower in PLAYER_INSTRUMENT_MAP:
@@ -531,66 +454,93 @@ def _get_instrument_name_for_player(player_name: str) -> str:
     return 'piano'
 
 
-def _tokens_to_events(tokens: List[str]) -> List[Dict[str, Any]]:
+def _tokens_to_events(tokens):
     """Convert a list of token strings to event dicts."""
-    events = []
-    for token in tokens:
-        events.append(parse_note_token(token))
-    return events
+    return [parse_note_token(t) for t in tokens]
 
 
-def compile_to_midi(comp: Dict[str, Any], output_path: Optional[str] = None,
-                    tempo_override: Optional[int] = None,
-                    swing_override: Optional[int] = None) -> str:
-    """
-    Compile parsed composition to MIDI.
-    Returns path to MIDI file.
-    """
+# Chord shape lookup for chord symbols
+CHORD_SHAPES = {
+    '': [0, 4, 7], 'M': [0, 4, 7],
+    'm': [0, 3, 7],
+    '7': [0, 4, 7, 10],
+    'm7': [0, 3, 7, 10],
+    'maj7': [0, 4, 7, 11], 'M7': [0, 4, 7, 11],
+    'dim': [0, 3, 6], 'dim7': [0, 3, 6, 9],
+    'aug': [0, 4, 8],
+    'sus2': [0, 2, 7], 'sus4': [0, 5, 7],
+    'add9': [0, 4, 7, 14],
+    '6': [0, 4, 7, 9], 'm6': [0, 3, 7, 9],
+    '9': [0, 4, 7, 10, 14], 'm9': [0, 3, 7, 10, 14],
+}
+
+
+def _parse_chord_symbol(symbol):
+    """Parse a chord symbol like 'Am', 'F', 'Cmaj7'. Returns (root_semitone, intervals)."""
+    symbol = symbol.strip()
+    if not symbol or symbol == '.' or symbol == '-':
+        return None
+    for flat, sharp in FLATS.items():
+        if symbol.startswith(flat):
+            symbol = sharp + symbol[len(flat):]
+            break
+    m = re.match(r'^([A-G])([#b]?)(.*)$', symbol)
+    if not m:
+        return None
+    root_letter = m.group(1)
+    accidental = m.group(2)
+    quality = m.group(3).strip()
+    root = NOTE_TO_SEMITONE[root_letter]
+    if accidental == '#':
+        root += 1
+    elif accidental == 'b':
+        root -= 1
+    intervals = CHORD_SHAPES.get(quality)
+    if intervals is None:
+        if quality.lower() == 'maj7':
+            intervals = CHORD_SHAPES['maj7']
+        elif quality == '':
+            intervals = CHORD_SHAPES['']
+        else:
+            for q in sorted(CHORD_SHAPES.keys(), key=len, reverse=True):
+                if quality.startswith(q):
+                    intervals = CHORD_SHAPES[q]
+                    break
+            else:
+                intervals = CHORD_SHAPES['']
+    return (root, intervals)
+
+
+def compile_to_midi(comp, output_path=None, tempo_override=None, swing_override=None):
+    """Compile parsed composition to MIDI. Returns path to MIDI file."""
     tempo = tempo_override or comp["tempo"]
     swing = swing_override if swing_override is not None else comp["swing"]
     subdivision = comp["subdivision"]
-    
     beat_dur = 60.0 / tempo
-    
-    # Determine beats per bar — assume 4/4 by default
     beats_per_bar = 4
     bar_dur = beats_per_bar * beat_dur
-    
-    # Subdivision duration: number of slots per beat
-    # 8th = 2 slots per beat, 16th = 4 slots per beat
+
     if subdivision <= 8:
         slots_per_beat = 2
     else:
         slots_per_beat = 4
-    
     slot_dur = beat_dur / slots_per_beat
-    
-    # Apply swing factor (0-100% → 0-0.5 of slot duration offset)
     swing_amount = (swing / 100.0) * slot_dur * 0.5
-    
+
     pm = pretty_midi.PrettyMIDI(initial_tempo=float(tempo))
-    
-    # Collect all player names across all sections
+
+    # Collect all player names
     all_players = set()
     for section in comp["sections"]:
         for bar in section["bars"]:
             for pname in bar.get("players", {}):
                 all_players.add(pname)
-    
-    # Also check for chord and melody lines
-    has_chords = any(
-        bar.get("chords")
-        for section in comp["sections"]
-        for bar in section["bars"]
-    )
-    has_melody = any(
-        bar.get("melody")
-        for section in comp["sections"]
-        for bar in section["bars"]
-    )
-    
+
+    has_chords = any(bar.get("chords") for section in comp["sections"] for bar in section["bars"])
+    has_melody = any(bar.get("melody") for section in comp["sections"] for bar in section["bars"])
+
     rng = random.Random(42)
-    
+
     # Create instrument tracks
     player_instruments = {}
     for pname in sorted(all_players):
@@ -603,37 +553,26 @@ def compile_to_midi(comp: Dict[str, Any], output_path: Optional[str] = None,
             inst = pretty_midi.Instrument(program=program, name=pname)
         pm.instruments.append(inst)
         player_instruments[pname] = inst
-    
-    # Chord track (piano comping)
+
     chord_track = None
     if has_chords:
         chord_track = pretty_midi.Instrument(program=0, name="chords")
         pm.instruments.append(chord_track)
-    
-    # Melody track (lead)
+
     melody_track = None
     if has_melody:
         melody_track = pretty_midi.Instrument(program=0, name="melody")
         pm.instruments.append(melody_track)
-    
-    # Process all bars sequentially
+
     current_time = 0.0
-    
     for section in comp["sections"]:
         for bar in section["bars"]:
-            # --- Chord track ---
             if chord_track and bar.get("chords"):
-                chord_tokens = bar["chords"]
-                _render_chord_bar(chord_track, chord_tokens, current_time, bar_dur,
+                _render_chord_bar(chord_track, bar["chords"], current_time, bar_dur,
                                   beat_dur, slots_per_beat, slot_dur, swing_amount, rng)
-            
-            # --- Melody track ---
             if melody_track and bar.get("melody"):
-                melody_tokens = bar["melody"]
-                _render_melody_bar(melody_track, melody_tokens, current_time, bar_dur,
-                                    beat_dur, slots_per_beat, slot_dur, swing_amount, rng, vel_base=80)
-            
-            # --- Player tracks ---
+                _render_melody_bar(melody_track, bar["melody"], current_time, bar_dur,
+                                   beat_dur, slots_per_beat, slot_dur, swing_amount, rng, vel_base=80)
             for pname, pdata in bar.get("players", {}).items():
                 inst = player_instruments.get(pname)
                 if inst is None:
@@ -642,82 +581,19 @@ def compile_to_midi(comp: Dict[str, Any], output_path: Optional[str] = None,
                 vel = pdata.get("vel", 70)
                 _render_melody_bar(inst, tokens, current_time, bar_dur,
                                    beat_dur, slots_per_beat, slot_dur, swing_amount, rng, vel_base=vel)
-            
             current_time += bar_dur
-    
-    # Write
+
     if output_path is None:
         h = hashlib.md5(comp.get("raw_text", "").encode()).hexdigest()[:8]
         output_path = os.path.join(OUTPUT_DIR, f'tapscript_v2_{h}.mid')
-    
     pm.write(output_path)
     return output_path
-
-
-# Chord shape lookup for chord symbols
-CHORD_SHAPES = {
-    '': [0, 4, 7], 'M': [0, 4, 7],
-    'm': [0, 3, 7],
-    '7': [0, 4, 7, 10], 'dom7': [0, 4, 7, 10],
-    'm7': [0, 3, 7, 10],
-    'maj7': [0, 4, 7, 11], 'M7': [0, 4, 7, 11],
-    'dim': [0, 3, 6], 'dim7': [0, 3, 6, 9],
-    'aug': [0, 4, 8],
-    'sus2': [0, 2, 7], 'sus4': [0, 5, 7],
-    'add9': [0, 4, 7, 14],
-    '6': [0, 4, 7, 9], 'm6': [0, 3, 7, 9],
-    '9': [0, 4, 7, 10, 14], 'm9': [0, 3, 7, 10, 14],
-}
-
-
-def _parse_chord_symbol(symbol: str) -> Optional[Tuple[int, List[int]]]:
-    """
-    Parse a chord symbol like 'Am', 'F', 'Cmaj7', 'Dm7'.
-    Returns (root_semitone, intervals).
-    """
-    symbol = symbol.strip()
-    if not symbol or symbol == '.' or symbol == '-':
-        return None
-    
-    # Normalize flats
-    for flat, sharp in FLATS.items():
-        if symbol.startswith(flat):
-            symbol = sharp + symbol[len(flat):]
-            break
-    
-    m = re.match(r'^([A-G])([#b]?)(.*)$', symbol)
-    if not m:\n        return None\n    \n    root_letter = m.group(1)\n    accidental = m.group(2)\n    quality = m.group(3).strip()\n    \n    root = NOTE_TO_SEMITONE[root_letter]
-    if accidental == '#':
-        root += 1
-    elif accidental == 'b':
-        root -= 1
-    
-    intervals = CHORD_SHAPES.get(quality)
-    if intervals is None:
-        # Try common variations
-        if quality.lower() == 'maj7':
-            intervals = CHORD_SHAPES['maj7']
-        elif quality == '':
-            intervals = CHORD_SHAPES['']
-        else:
-            # Try to match prefix
-            for q in sorted(CHORD_SHAPES.keys(), key=len, reverse=True):
-                if quality.startswith(q):
-                    intervals = CHORD_SHAPES[q]
-                    break
-            else:
-                intervals = CHORD_SHAPES['']
-    
-    return (root, intervals)
 
 
 def _render_chord_bar(track, tokens, bar_start, bar_dur, beat_dur,
                       slots_per_beat, slot_dur, swing_amount, rng):
     """Render chord tokens for one bar."""
-    # Filter out dots and dashes, find chord change points
     events = []
-    current_chord = None
-    
     for idx, token in enumerate(tokens):
         if token == '.' or token == '-':
             events.append(("sustain" if token == '.' else "rest", None))
@@ -725,44 +601,34 @@ def _render_chord_bar(track, tokens, bar_start, bar_dur, beat_dur,
             chord = _parse_chord_symbol(token)
             if chord:
                 events.append(("chord", chord))
-                current_chord = chord
             else:
                 events.append(("sustain", None))
-    
     if not events:
         return
-    
-    # Group: each chord lasts until the next chord or end of bar
     idx = 0
     while idx < len(events):
         etype, chord = events[idx]
-        
         if etype == "chord":
-            # Find how long this chord lasts
             duration_slots = 1
             for j in range(idx + 1, len(events)):
                 if events[j][0] == "chord":
                     break
                 duration_slots += 1
-            
             slot_idx = idx
             time_start = bar_start + slot_idx * slot_dur
             time_end = bar_start + (slot_idx + duration_slots) * slot_dur
             dur = time_end - time_start
-            
             root, intervals = chord
-            base_midi = 12 + 4 * 12 + root  # octave 4
-            
+            base_midi = 12 + 4 * 12 + root
             for i, iv in enumerate(intervals):
                 pitch = base_midi + iv
                 vel = max(20, min(127, 70 + rng.randint(-5, 5)))
-                offset = i * 0.015  # slight strum
+                offset = i * 0.015
                 track.notes.append(pretty_midi.Note(
                     velocity=vel, pitch=pitch,
                     start=time_start + offset,
                     end=time_start + offset + dur * 0.9
                 ))
-        
         idx += 1
 
 
@@ -770,50 +636,35 @@ def _render_melody_bar(track, tokens, bar_start, bar_dur, beat_dur,
                        slots_per_beat, slot_dur, swing_amount, rng, vel_base=80):
     """Render melody/player note tokens for one bar."""
     events = _tokens_to_events(tokens)
-    
     if not events:
         return
-    
-    # Track active (sustained) notes for '.' extension
-    active_notes = []  # list of (note_obj, start_time)
-    
+    active_notes = []
     for idx, ev in enumerate(events):
         slot_time = bar_start + idx * slot_dur
-        
-        # Apply swing to odd slots (off-beats)
         if slots_per_beat > 1:
             within_beat = idx % slots_per_beat
             if within_beat > 0 and within_beat % 2 == 1:
                 slot_time += swing_amount
-        
         if ev["type"] == "rest":
-            # End any active notes
             for n in active_notes:
                 n.end = max(n.end, slot_time)
             active_notes = []
         elif ev["type"] == "sustain":
-            # Extend active notes
             for n in active_notes:
                 n.end = slot_time + slot_dur
         elif ev["type"] == "note":
-            # End previous active notes
             for n in active_notes:
                 n.end = max(n.end, slot_time)
             active_notes = []
-            
-            # Start new notes
             for pitch in ev["pitches"]:
                 vel = max(20, min(127, vel_base + rng.randint(-5, 5)))
                 note = pretty_midi.Note(
-                    velocity=vel,
-                    pitch=pitch,
+                    velocity=vel, pitch=pitch,
                     start=slot_time,
                     end=slot_time + slot_dur
                 )
                 track.notes.append(note)
                 active_notes.append(note)
-    
-    # End any remaining active notes at bar end
     bar_end = bar_start + bar_dur
     for n in active_notes:
         n.end = min(n.end, bar_end)
@@ -823,7 +674,7 @@ def _render_melody_bar(track, tokens, bar_start, bar_dur, beat_dur,
 # WAV Synthesis
 # ---------------------------------------------------------------------------
 
-def midi_freq(midi_note: int) -> float:
+def midi_freq(midi_note):
     return 440.0 * (2.0 ** ((midi_note - 69) / 12.0))
 
 
@@ -918,39 +769,32 @@ def synth_drum(dur, sr, dtype='kick'):
 
 
 SYNTH_FUNCTIONS = {
-    'piano': synth_piano,
-    'bass': synth_bass,
-    'strings': synth_strings,
-    'flute': synth_flute,
-    'guitar': synth_guitar,
+    'piano': synth_piano, 'bass': synth_bass, 'strings': synth_strings,
+    'flute': synth_flute, 'guitar': synth_guitar,
 }
 DRUM_MAP = {36: 'kick', 38: 'snare', 42: 'hat', 46: 'hat'}
 
 
-def midi_to_wav(midi_path: str, output_path: Optional[str] = None, sr: int = 44100) -> str:
+def midi_to_wav(midi_path, output_path=None, sr=44100):
     """Render a MIDI file to WAV using numpy synthesis."""
     pm = pretty_midi.PrettyMIDI(midi_path)
     end_time = pm.get_end_time() if pm.instruments else 0.0
     total_samples = int(end_time * sr) + sr
     output = np.zeros(total_samples, dtype=np.float64)
-    
+
     for inst in pm.instruments:
         is_drum = inst.is_drum
         inst_name = 'drums' if is_drum else None
-        
         if not inst_name:
-            # Identify instrument by program number
             for nm, gp in GM_PROGRAMS.items():
                 if inst.program == gp:
                     inst_name = nm
                     break
             if not inst_name:
-                # Try by track name
                 if inst.name:
                     inst_name = _get_instrument_name_for_player(inst.name)
                 else:
                     inst_name = 'piano'
-        
         for note in inst.notes:
             freq = midi_freq(note.pitch)
             dur = note.end - note.start
@@ -958,14 +802,12 @@ def midi_to_wav(midi_path: str, output_path: Optional[str] = None, sr: int = 441
                 continue
             sample_start = int(note.start * sr)
             vel = note.velocity / 127.0
-            
             if is_drum:
                 dt = DRUM_MAP.get(note.pitch, 'hat')
                 wave = synth_drum(dur, sr, dt)
             else:
                 sf = SYNTH_FUNCTIONS.get(inst_name, synth_piano)
                 wave = sf(freq, dur, sr)
-            
             wave = wave * vel
             end_sample = sample_start + len(wave)
             if end_sample > len(output):
@@ -973,22 +815,17 @@ def midi_to_wav(midi_path: str, output_path: Optional[str] = None, sr: int = 441
                 end_sample = len(output)
             if sample_start < len(output):
                 output[sample_start:end_sample] += wave[:end_sample - sample_start]
-    
-    # Normalize
+
     peak = np.max(np.abs(output))
     if peak > 0:
         output = output / peak * 0.85
-    
     if output_path is None:
         output_path = midi_path.replace('.mid', '.wav')
-    
     wav_io.write(output_path, sr, (output * 32767).astype(np.int16))
     return output_path
 
 
-def compile_to_wav(comp: Dict[str, Any], output_path: Optional[str] = None,
-                   tempo_override: Optional[int] = None,
-                   swing_override: Optional[int] = None) -> str:
+def compile_to_wav(comp, output_path=None, tempo_override=None, swing_override=None):
     """Compile composition to WAV. Returns path."""
     midi_path = compile_to_midi(comp, tempo_override=tempo_override, swing_override=swing_override)
     if output_path is None:
@@ -1113,21 +950,20 @@ Lyrics: | heave                ho | heave                ho | the tide          
 @hermes | a1    . . d1    . . . | a1    . . e1    . . . | d1    . . a1    . . . | e1    . . a1    . . . | vel: 75
 """
 
-
 EXAMPLES = {
-    'harbor_dawn': ('🌅 Harbor Dawn', EXAMPLE_HARBOR_DAWN),
-    'the_room_is_safe': ('🛏️ The Room Is Safe', EXAMPLE_THE_ROOM_IS_SAFE),
-    'creatures_of_interval': ('🌲 Creatures of Interval', EXAMPLE_CREATURES_OF_INTERVAL),
-    'neon_shadows': ('🌃 Neon Shadows', EXAMPLE_NEON_SHADOWS),
-    'deck_work': ('⚓ Deck Work', EXAMPLE_DECK_WORK),
+    'harbor_dawn': ('Harbor Dawn', EXAMPLE_HARBOR_DAWN),
+    'the_room_is_safe': ('The Room Is Safe', EXAMPLE_THE_ROOM_IS_SAFE),
+    'creatures_of_interval': ('Creatures of Interval', EXAMPLE_CREATURES_OF_INTERVAL),
+    'neon_shadows': ('Neon Shadows', EXAMPLE_NEON_SHADOWS),
+    'deck_work': ('Deck Work', EXAMPLE_DECK_WORK),
 }
 
 
 # ---------------------------------------------------------------------------
-# Web UI
+# Web UI — HTML served inline
 # ---------------------------------------------------------------------------
 
-WEB_HTML = r"""<!DOCTYPE html>
+WEB_HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1162,7 +998,6 @@ WEB_HTML = r"""<!DOCTYPE html>
     overflow: hidden;
   }
   .app { display: flex; flex-direction: column; height: 100vh; }
-  
   .topbar {
     background: var(--bg-elev);
     border-bottom: 1px solid var(--border);
@@ -1174,7 +1009,6 @@ WEB_HTML = r"""<!DOCTYPE html>
     flex-wrap: wrap;
   }
   .logo { font-size: 18px; font-weight: bold; color: var(--accent); letter-spacing: 1px; white-space: nowrap; }
-  
   .topbar select, .topbar button, .topbar input[type="number"] {
     background: var(--bg-elev2);
     color: var(--text);
@@ -1195,7 +1029,6 @@ WEB_HTML = r"""<!DOCTYPE html>
   .topbar .spacer { flex: 1; }
   .controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
   .controls label { font-size: 12px; color: var(--text-dim); white-space: nowrap; }
-  
   input[type="range"] {
     -webkit-appearance: none;
     height: 4px;
@@ -1212,7 +1045,6 @@ WEB_HTML = r"""<!DOCTYPE html>
     border-radius: 50%;
     cursor: pointer;
   }
-  
   .main { display: flex; flex: 1; overflow: hidden; }
   .panel { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
   .panel-header {
@@ -1225,7 +1057,6 @@ WEB_HTML = r"""<!DOCTYPE html>
     color: var(--text-dim);
     flex-shrink: 0;
   }
-  
   #editor {
     flex: 1;
     background: var(--bg);
@@ -1242,15 +1073,8 @@ WEB_HTML = r"""<!DOCTYPE html>
     overflow: auto;
   }
   #editor:focus { background: #0d0d14; }
-  
   .right-panel { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
-  
-  .preview-area {
-    flex: 1;
-    overflow: auto;
-    padding: 16px;
-  }
-  
+  .preview-area { flex: 1; overflow: auto; padding: 16px; }
   .parsed-info {
     padding: 12px 16px;
     background: var(--bg-elev2);
@@ -1263,14 +1087,12 @@ WEB_HTML = r"""<!DOCTYPE html>
     flex-wrap: wrap;
   }
   .parsed-info span b { color: var(--text); }
-  
   .audio-area {
     padding: 16px;
     border-top: 1px solid var(--border);
     background: var(--bg-elev);
     flex-shrink: 0;
   }
-  
   .status {
     padding: 8px 16px;
     background: var(--bg-elev);
@@ -1281,25 +1103,8 @@ WEB_HTML = r"""<!DOCTYPE html>
   }
   .status.error { color: var(--error); }
   .status.success { color: var(--success); }
-  
   audio { width: 100%; margin-top: 8px; }
-  
-  .notation-display {
-    white-space: pre-wrap;
-    font-size: 13px;
-    line-height: 1.7;
-    font-family: inherit;
-  }
-  .ts-title { color: var(--accent); font-weight: bold; }
-  .ts-meta { color: var(--header); }
-  .ts-section-label { color: var(--section); font-weight: bold; }
-  .ts-chord-line { color: var(--chord); }
-  .ts-melody-line { color: var(--note); }
-  .ts-lyric-line { color: var(--lyric); }
-  .ts-player-line { color: var(--instrument); }
-  
   .btn-group { display: flex; gap: 8px; flex-wrap: wrap; }
-  
   .download-btn {
     display: inline-block;
     padding: 6px 14px;
@@ -1314,9 +1119,7 @@ WEB_HTML = r"""<!DOCTYPE html>
   }
   .download-btn:hover { background: var(--accent); }
   .download-btn:disabled { opacity: 0.4; cursor: default; }
-  
   .loading { opacity: 0.6; pointer-events: none; }
-  
   .ai-area {
     padding: 12px 16px;
     border-top: 1px solid var(--border);
@@ -1363,18 +1166,18 @@ WEB_HTML = r"""<!DOCTYPE html>
       <label>Key:</label>
       <select id="keySelect">
         <option value="">Original</option>
-        <option value="C">C / Cm</option>
-        <option value="C#">C# / C#m</option>
-        <option value="D">D / Dm</option>
-        <option value="D#">D# / D#m</option>
-        <option value="E">E / Em</option>
-        <option value="F">F / Fm</option>
-        <option value="F#">F# / F#m</option>
-        <option value="G">G / Gm</option>
-        <option value="G#">G# / G#m</option>
-        <option value="A">A / Am</option>
-        <option value="A#">A# / A#m</option>
-        <option value="B">B / Bm</option>
+        <option value="C">C</option>
+        <option value="C#">C#/Db</option>
+        <option value="D">D</option>
+        <option value="D#">D#/Eb</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#/Gb</option>
+        <option value="G">G</option>
+        <option value="G#">G#/Ab</option>
+        <option value="A">A</option>
+        <option value="A#">A#/Bb</option>
+        <option value="B">B</option>
       </select>
       <label>Tempo:</label>
       <input type="range" id="tempoSlider" min="40" max="200" value="120">
@@ -1396,8 +1199,8 @@ WEB_HTML = r"""<!DOCTYPE html>
         <div class="preview-area">
           <div class="parsed-info" id="parsedInfo">— Load an example or start typing —</div>
           <div class="btn-group" style="margin-bottom:12px;">
-            <button class="download-btn" id="midiBtn" disabled>⬇ Download MIDI</button>
-            <button class="download-btn" id="wavBtn" disabled>⬇ Download WAV</button>
+            <button class="download-btn" id="midiBtn" disabled>⬇ MIDI</button>
+            <button class="download-btn" id="wavBtn" disabled>⬇ WAV</button>
           </div>
         </div>
         <div class="audio-area" id="audioArea">
@@ -1412,7 +1215,6 @@ WEB_HTML = r"""<!DOCTYPE html>
   </div>
   <div class="status" id="status">Ready. Load an example to begin.</div>
 </div>
-
 <script>
 const $ = id => document.getElementById(id);
 const editor = $('editor');
@@ -1425,7 +1227,6 @@ const swingSlider = $('swingSlider');
 const swingValue = $('swingValue');
 const midiBtn = $('midiBtn');
 const wavBtn = $('wavBtn');
-
 let lastRender = null;
 let debounceTimer = null;
 
@@ -1476,8 +1277,6 @@ async function updatePreview() {
 async function play() {
   let text = editor.value;
   if (!text.trim()) { setStatus('Nothing to play.', 'error'); return; }
-  
-  // Apply key transposition if selected
   const key = keySelect.value;
   if (key) {
     try {
@@ -1489,22 +1288,17 @@ async function play() {
       return;
     }
   }
-  
   const tempo = parseInt(tempoSlider.value);
   const swing = parseInt(swingSlider.value);
-  
   setStatus('Rendering audio...');
   document.body.classList.add('loading');
   try {
     const data = await api('compile', { tapscript: text, tempo: tempo, swing: swing });
-    if (data.errors && data.errors.length) {
-      setStatus('Warnings: ' + data.errors.join('; '), 'error');
-    }
     if (data.wav_path) {
       player.src = '/api/download?path=' + encodeURIComponent(data.wav_path) + '&type=wav&t=' + Date.now();
       player.style.display = 'block';
       player.play();
-      setStatus('Playing... ▶  MIDI: ' + (data.midi_path || 'N/A'), 'success');
+      setStatus('Playing... ▶', 'success');
     }
     lastRender = data;
     updatePreview();
@@ -1551,16 +1345,11 @@ async function loadExample(name) {
   } catch(e) { setStatus('Error loading example: ' + e.message, 'error'); }
 }
 
-// Event listeners
 editor.addEventListener('input', () => {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(updatePreview, 600);
 });
-
-$('exampleSelect').addEventListener('change', e => {
-  if (e.target.value) loadExample(e.target.value);
-});
-
+$('exampleSelect').addEventListener('change', e => { if (e.target.value) loadExample(e.target.value); });
 $('playBtn').addEventListener('click', play);
 $('midiBtn').addEventListener('click', downloadMidi);
 $('wavBtn').addEventListener('click', downloadWav);
@@ -1575,29 +1364,14 @@ keySelect.addEventListener('change', async () => {
     setStatus('Transposed to ' + key, 'success');
   } catch(e) { setStatus('Transpose error: ' + e.message, 'error'); }
 });
-
-tempoSlider.addEventListener('input', () => {
-  tempoValue.textContent = tempoSlider.value;
-});
-
-swingSlider.addEventListener('input', () => {
-  swingValue.textContent = swingSlider.value + '%';
-});
-
-// Keyboard shortcut: Ctrl+Enter to play
+tempoSlider.addEventListener('input', () => { tempoValue.textContent = tempoSlider.value; });
+swingSlider.addEventListener('input', () => { swingValue.textContent = swingSlider.value + '%'; });
 document.addEventListener('keydown', e => {
-  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-    e.preventDefault();
-    play();
-  }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); play(); }
 });
-
-// AI composition
-const aiBtn = $('aiBtn');
-const aiInput = $('aiInput');
 
 async function compose() {
-  const desc = aiInput.value.trim();
+  const desc = $('aiInput').value.trim();
   if (!desc) return;
   setStatus('Asking AI to compose...');
   try {
@@ -1609,20 +1383,13 @@ async function compose() {
     }
   } catch(e) { setStatus('AI error: ' + e.message, 'error'); }
 }
+$('aiBtn').addEventListener('click', compose);
+$('aiInput').addEventListener('keydown', e => { if (e.key === 'Enter') compose(); });
 
-aiBtn.addEventListener('click', compose);
-aiInput.addEventListener('keydown', e => {
-  if (e.key === 'Enter') compose();
-});
-
-// Show AI area if DeepSeek key is available
 fetch('/api/status').then(r => r.json()).then(data => {
-  if (data.deepseek) {
-    $('aiArea').style.display = 'block';
-  }
+  if (data.deepseek) { $('aiArea').style.display = 'block'; }
 }).catch(() => {});
 
-// Load default example
 loadExample('neon_shadows');
 </script>
 </body>
@@ -1656,7 +1423,10 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(b)
 
     def _send_file(self, path, mime, name=None):
-        with open(path, 'rb') as f:\n            data = f.read()\n        self.send_response(200)\n        self.send_header("Content-Type", mime)
+        with open(path, 'rb') as f:
+            data = f.read()
+        self.send_response(200)
+        self.send_header("Content-Type", mime)
         if name:
             self.send_header("Content-Disposition", f'attachment; filename="{name}"')
         self.send_header("Content-Length", str(len(data)))
@@ -1684,32 +1454,20 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         path = parsed.path
         qs = parse_qs(parsed.query)
-
         if path in ('', '/'):
             self._send_html(WEB_HTML)
-
         elif path == '/api/status':
             self._send_json({"deepseek": bool(DEEPSEEK_KEY)})
-
         elif path == '/api/examples':
-            self._send_json({
-                "examples": [{"id": k, "name": v[0]} for k, v in EXAMPLES.items()]
-            })
-
+            self._send_json({"examples": [{"id": k, "name": v[0]} for k, v in EXAMPLES.items()]})
         elif path.startswith('/api/example/'):
             name = path.split('/')[-1]
             if name in EXAMPLES:
                 title, text = EXAMPLES[name]
                 comp = parse_tapscript(text)
-                self._send_json({
-                    "name": title,
-                    "tapscript": text,
-                    "tempo": comp["tempo"],
-                    "swing": comp["swing"],
-                })
+                self._send_json({"name": title, "tapscript": text, "tempo": comp["tempo"], "swing": comp["swing"]})
             else:
-                self._send_json({"error": "Example not found"}, 404)
-
+                self._send_json({"error": "Not found"}, 404)
         elif path == '/api/download':
             file_path = qs.get('path', [''])[0]
             file_type = qs.get('type', ['wav'])[0]
@@ -1732,7 +1490,6 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         parsed = urlparse(self.path)
         path = parsed.path
-
         if path == '/api/parse':
             self._handle_parse()
         elif path == '/api/compile':
@@ -1752,7 +1509,6 @@ class Handler(BaseHTTPRequestHandler):
             return
         try:
             comp = parse_tapscript(text)
-            # Collect all player names
             players = set()
             total_bars = 0
             for section in comp["sections"]:
@@ -1760,7 +1516,6 @@ class Handler(BaseHTTPRequestHandler):
                 for bar in section["bars"]:
                     for pname in bar.get("players", {}):
                         players.add(pname)
-
             self._send_json({
                 "title": comp["title"],
                 "key": comp["key"] + ("m" if comp["key_quality"] == "minor" else ""),
@@ -1771,7 +1526,8 @@ class Handler(BaseHTTPRequestHandler):
                 "bars": total_bars,
                 "players": sorted(players),
             })
-        except Exception as e:\n            self._send_json({"error": str(e)}, 500)
+        except Exception as e:
+            self._send_json({"error": str(e)}, 500)
 
     def _handle_compile(self):
         body = self._read_body()
@@ -1780,35 +1536,19 @@ class Handler(BaseHTTPRequestHandler):
         swing_override = body.get('swing')
         midi_only = body.get('midi_only', False)
         wav_only = body.get('wav_only', False)
-
         if not text.strip():
             self._send_json({"error": "Empty input"}, 400)
             return
-
         try:
             comp = parse_tapscript(text)
             errors = []
-
-            midi_path = compile_to_midi(
-                comp,
-                tempo_override=tempo_override,
-                swing_override=swing_override,
-            )
-
+            midi_path = compile_to_midi(comp, tempo_override=tempo_override, swing_override=swing_override)
             wav_path = None
             if not midi_only:
                 wav_path = midi_to_wav(midi_path)
-
-            result = {
-                "success": True,
-                "midi_path": midi_path,
-                "wav_path": wav_path,
-                "errors": errors,
-            }
-            self._send_json(result)
-        except Exception as e:\n            self._send_json({\n                "error": str(e),
-                "trace": traceback.format_exc(),
-            }, 500)
+            self._send_json({"success": True, "midi_path": midi_path, "wav_path": wav_path, "errors": errors})
+        except Exception as e:
+            self._send_json({"error": str(e), "trace": traceback.format_exc()}, 500)
 
     def _handle_transpose(self):
         body = self._read_body()
@@ -1820,7 +1560,8 @@ class Handler(BaseHTTPRequestHandler):
         try:
             transposed = transpose_text(text, new_key)
             self._send_json({"tapscript": transposed})
-        except Exception as e:\n            self._send_json({"error": str(e)}, 500)
+        except Exception as e:
+            self._send_json({"error": str(e)}, 500)
 
     def _handle_compose(self):
         body = self._read_body()
@@ -1831,32 +1572,15 @@ class Handler(BaseHTTPRequestHandler):
         if not DEEPSEEK_KEY:
             self._send_json({"error": "DeepSeek API key not configured"}, 503)
             return
-
         try:
-            import urllib.request
-
             system_prompt = (
                 "You are a music composer. The user will describe a mood, scene, or feeling. "
-                "Respond with a TapScript v2 composition. Use this EXACT format:\n\n"
-                "**TRACK: Title**\n"
-                "[MetaData]\n"
-                "key: Am | tempo: 75 | swing: 10% | subdivision: 16th\n\n"
-                "[V1] (Verse - 4 Bars)\n"
-                "Chords:  | Am    .    | F     G    |\n"
-                "Melody: | E4    . . . | A4    . G4 E4 |\n"
-                "Lyrics: | I     . . . | write . in code |\n"
-                "@wesley | e2-a2-c3 . . | f2-a2-c3 g2-b2-d3 | vel: 60\n\n"
-                "Rules:\n"
-                "- Absolute note names: C4=middle C, E4, A4, lowercase for lower octaves (a2, e1)\n"
-                "- Dots (.) = sustain, dashes (-) = rest\n"
-                "- Pipes (|) separate bars, spaces separate subdivisions\n"
-                "- Chord symbols: Am, F, C, G, Dm7, etc.\n"
-                "- @player lines: notes, vel: N at end\n"
-                "- Hyphenated notes in @player = simultaneous (e2-a2-c3 = chord)\n"
-                "- Keep it 2-4 sections, 2-4 bars each\n"
-                "- Only output the TapScript, no explanation\n"
+                "Respond with a TapScript v2 composition using this EXACT format. "
+                "Absolute notes: C4=middle C. Dots=sustain. Dashes=rest. "
+                "Pipes separate bars. @player lines have notes and vel:N. "
+                "Hyphenated notes = chord (e2-a2-c3). 2-4 sections, 2-4 bars each. "
+                "Only output the TapScript, no explanation."
             )
-
             payload = json.dumps({
                 "model": "deepseek-chat",
                 "messages": [
@@ -1867,25 +1591,20 @@ class Handler(BaseHTTPRequestHandler):
                 "max_tokens": 1500,
                 "stream": False,
             }).encode()
-
             req = urllib.request.Request(DEEPSEEK_URL, data=payload, method="POST")
             req.add_header("Content-Type", "application/json")
             req.add_header("Authorization", f"Bearer {DEEPSEEK_KEY}")
-
             with urllib.request.urlopen(req, timeout=60) as resp:
                 data = json.loads(resp.read())
                 reply = data["choices"][0]["message"]["content"]
-
-            # Extract the tapscript from the reply
-            # It might be in a code block or raw
             ts_match = re.search(r'\*\*TRACK:.+?\n.*?(?=\n```|\Z)', reply, re.DOTALL)
             if ts_match:
                 tapscript = ts_match.group(0).strip()
             else:
                 tapscript = reply.strip()
-
             self._send_json({"tapscript": tapscript, "raw": reply})
-        except Exception as e:\n            self._send_json({"error": str(e)}, 500)
+        except Exception as e:
+            self._send_json({"error": str(e)}, 500)
 
 
 # ---------------------------------------------------------------------------
@@ -1923,7 +1642,10 @@ def cli_main():
         return
 
     if args.cli:
-        with open(args.cli) as f:\n            text = f.read()\n        comp = parse_tapscript(text)\n        if args.midi:
+        with open(args.cli) as f:
+            text = f.read()
+        comp = parse_tapscript(text)
+        if args.midi:
             print(f'MIDI: {compile_to_midi(comp, args.midi)}')
         if args.wav:
             print(f'WAV: {compile_to_wav(comp, args.wav)}')
