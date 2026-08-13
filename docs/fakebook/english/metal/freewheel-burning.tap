@@ -1,0 +1,24 @@
+**TRACK: Freewheel Burning**
+[MetaData]
+key: E minor | tempo: 180 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 75
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | A . . . | C . . . | D . . . |
+@guitar | g2-d3-g3 . . . | a2-e3-a3 . . . | c3-g3-c4 . . . | d3-a3-d4 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | E . . . | F . . . | E . . . |
+@guitar | f2-c3-f3 . . . | e2-b2-e3 . . . | f2-c3-f3 . . . | e2-b2-e3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70

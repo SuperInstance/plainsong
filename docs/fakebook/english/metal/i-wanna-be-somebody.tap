@@ -1,0 +1,24 @@
+**TRACK: I Wanna Be Somebody**
+[MetaData]
+key: A minor | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 70
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 70
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 80
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 65
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 80

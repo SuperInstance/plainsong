@@ -1,0 +1,24 @@
+**TRACK: Hot for Teacher**
+[MetaData]
+key: D | tempo: 155 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | D5 . . . | D5 . . . | D5 . . . | D5 . . . | G5 . . . | G5 . . . | A5 . . . | A5 . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | D5 . . . | D5 . . . | D5 . . . | D5 . . . | G5 . . . | G5 . . . | A5 . . . | A5 . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
+
+[CH] (Chorus - 4 Bars)
+Chords: | D5 . . . | D5 . . . | A5 . . . | A5 . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 70
+
+[BR] (Bridge - 4 Bars)
+Chords: | B5 . . . | B5 . . . | G5 . . . | A5 . . . |
+@guitar | b2-f#3-b3 . . . | b2-f#3-b3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 65
+
+[OUT] (Outro - 4 Bars)
+Chords: | D5 . . . | D5 . . . | D5 . . . | D5 . . . |
+@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 60
