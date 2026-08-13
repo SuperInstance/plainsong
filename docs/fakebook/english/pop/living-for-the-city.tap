@@ -1,0 +1,16 @@
+**TRACK: Living for the City**
+[MetaData]
+key: Ebm | tempo: 98 | subdivision: 16th
+time: 4/4 | mood: Driving, Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . | Bb7 . . . | Bb7 . . . |
+@guitar | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab7 . . . | Ab7 . . . | Bb7 . . . | Bb7 . . . | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-gb3-bb3 . . . | ab2-c3-eb3 . . . | eb3-gb3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb7 . . . | Eb7 . . . | Ab7 . . . | Bb7 . . . |
+@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 50

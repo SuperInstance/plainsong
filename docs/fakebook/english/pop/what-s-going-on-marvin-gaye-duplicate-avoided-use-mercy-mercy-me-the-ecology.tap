@@ -1,0 +1,24 @@
+**TRACK: Mercy Mercy Me (The Ecology)**
+[MetaData]
+key: Eb | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . | Bb/D . . . | Ab/C . . . | Eb/Bb . . . |
+@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Eb . . . | Bb7 . . . |
+@guitar | ab2-c3-eb3 . . . | ab2-b2-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 52
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 58
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Bb . . . | Eb . . . |
+@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Bb . . . | Eb . . . | Eb . . . |
+@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50
