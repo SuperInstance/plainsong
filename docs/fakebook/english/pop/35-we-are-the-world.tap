@@ -1,0 +1,22 @@
+**TRACK: We Are the World**
+[MetaData]
+key: D | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | Em . . . | Bm . . . |
+@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | b2-d3-f#3 . . . | vel: 60
+| C . . . | G . . . | A . . . | A . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+@guitar | e3-g3-b3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
