@@ -1,0 +1,16 @@
+**TRACK: Chalo Bulawa Aaya Hai**
+[MetaData]
+key: Cm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Devotional
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Bb . . . | Cm . . . |
+Melody: | C4 . Eb4 . | Ab3 . C4 . | Bb3 . D4 . | C4 . . . |
+Lyrics: | Cha-lo bu-la-wa aa-ya hai | ma-ta ne pu-ka-ra hai | ja-ko-ri jhu-mi jhu-mi | ga-o bha-jan pya-re |
+@piano | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . . . | Cm . . . | G . . . | Cm . . . |
+Melody: | F4 . Ab4 . | C4 . Eb4 . | G4 . B3 . | C4 . . . |
+Lyrics: | aa-ja-o aa-ja-o | bha-i-ya sa-ri | mi-la-ke ga-o | jai ma-ta ki |
+@piano | f2-ab2-c3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | vel: 50

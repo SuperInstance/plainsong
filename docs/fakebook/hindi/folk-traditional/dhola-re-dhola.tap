@@ -1,0 +1,16 @@
+**TRACK: Dhola Re Dhola**
+[MetaData]
+key: Em | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle, Folk
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+Melody: | E4 . G4 . | A4 . . . | E4 . G4 . | D4 . F#4 . |
+Lyrics: | Dho-la re dho-la | dho-la re dho-la | ba-je re ba-je | man- ki pa-ye-ri |
+@piano | e2-g2-b2 . . . | a1-c2-e2 . . . | e2-g2-b2 . . . | b1-d2-f#2 . . . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | B7 . . . |
+Melody: | G4 . E4 . | D4 . B3 . | A4 . C4 . | B3 . D4 . |
+Lyrics: | dho-la re dho-la | dho-la re dho-la | ba-je re ba-je | man- ki pa-ye-ri |
+@piano | c2-e2-g2 . . . | g1-b1-d2 . . . | a1-c2-e2 . . . | b1-d2-f#2 . . . | vel: 50
