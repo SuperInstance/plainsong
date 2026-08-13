@@ -1,0 +1,20 @@
+**TRACK: Lazy**
+[MetaData]
+key: D | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Bluesy
+
+[V1] (Verse - 12 Bars)
+Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G . . . | D . . . | G . . . | A . . . | D . . . | A . . . | Bm . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | g1-b1-d2 . . . | d2-f#2-a2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | a1-c#2-e2 . . . | vel: 60
+
+[V2] (Verse - 12 Bars)
+Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G . . . | D . . . | G . . . | A . . . | D . . . | A . . . | Bm . . . | A . . . |
+@guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | g1-b1-d2 . . . | d2-f#2-a2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | a1-c#2-e2 . . . | vel: 60
+
+[IN] (Instrumental - 8 Bars)
+Chords: | G . . . | A . . . | Bm . . . | F#m . . . | G . . . | A . . . | D . . . | A . . . |
+@guitar | g1-b1-d2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
+@guitar | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | g1-b1-d2

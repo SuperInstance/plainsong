@@ -1,0 +1,20 @@
+**TRACK: Into the Fire**
+[MetaData]
+key: Am | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | Am . . . | G . . . |
+| Am . . . | F . . . | Dm . . . | E . . . |
+@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . |
+| a2-e3-a3 . . . | f2-a2-c3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 58
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | F . . . |
+| G . . . | E . . . | Am . . . | E . . . |
+@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . |
+| g2-b2-d3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | Dm . . . | E . . . |
+@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 52

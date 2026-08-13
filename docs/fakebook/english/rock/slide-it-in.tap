@@ -1,0 +1,30 @@
+**TRACK: Slide It In**
+[MetaData]
+key: E | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | E . . . | D . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
+Chords: | E . . . | D . . . | A . . . | B . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | G . . . | D . . . | A . . . |
+@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | vel: 65
+Chords: | A . . . | G . . . | B . . . | E . . . |
+@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | b2-f#3-b3 . . . | e2-b2-e3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | B . . . | A . . . | B . . . |
+@guitar | c#3-g#3-c#4 . . . | b2-f#3-b3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 60
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | D . . . | A . . . | E . . . |
+@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 50

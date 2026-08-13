@@ -1,0 +1,30 @@
+**TRACK: Woman from Tokyo**
+[MetaData]
+key: E | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | vel: 55
+Chords: | F#m . . . | B . . . | A . . . | B . . . |
+@guitar | f#2-a2-c#3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | vel: 65
+Chords: | A . . . | B . . . | E . . . | B . . . |
+@guitar | a2-e3-a3 . . . | b2-d#3-f#3 . . . | e2-b3-e3 . . . | b2-d#3-f#3 . . . | vel: 65
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | A . . . | F#m . . . | B . . . |
+@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | b2-d#3-f#3 . . . | vel: 60
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | vel: 55
+Chords: | F#m . . . | B . . . | A . . . | B . . . |
+@guitar | f#2-a2-c#3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3
