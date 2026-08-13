@@ -1,0 +1,20 @@
+**TRACK: Fairies Wear Boots**
+[MetaData]
+key: E | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+| E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 62
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 62
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |
+| E . . . | E . . . | A . . . | B . . . |
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 68
+@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 68
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | E . . . | E . . . |
+@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 58
