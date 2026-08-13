@@ -1,0 +1,28 @@
+**TRACK: L'Internationale**
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Defiant
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | C4 . . . |
+Lyrics: | A - rise ye | pris - oners | of - star - va - | tion . . . |
+@piano | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | C4 . . . |
+Lyrics: | A - rise ye | wretches | of - the - | earth . . . |
+@piano | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | F . . . |
+Melody: | D4 . F4 . | A4 . G4 . | F4 . D4 . | C4 . . . |
+Lyrics: | 'Tis the | fi - nal | con - flict | now . . . |
+@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | f2-a2-c3 . . . | vel: 55
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | C4 . . . |
+Lyrics: | Let each | stand in | his - place . . | . . . |
+@piano | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55

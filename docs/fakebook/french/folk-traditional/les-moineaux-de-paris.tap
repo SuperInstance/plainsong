@@ -1,0 +1,22 @@
+**TRACK: Les Moineaux de Paris**
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . | G7 . | C . | G7 . |
+Melody: | E4 G4 | B3 D4 | C4 E4 | D4 B3 |
+Lyrics: | Les moi-neaux | de Pa-ris | chan-tent tout | le jour |
+@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 45
+
+[V2] (Verse - 4 Bars)
+Chords: | C . | F . | C . | G7 . |
+Melody: | E4 G4 | A4 F4 | E4 C4 | D4 B3 |
+Lyrics: | Sur les toits | gris et | sous les | cieux d’a-zur |
+@piano | c3-e3-g3 . | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 45
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . | G7 . | C . | G7 C . |
+Melody: | C5 E5 | D5 B4 | C5 E5 | D5 B4 C5 . |
+Lyrics: | Pi-pi-pi-pi | pi-pi-pi | pi-pi-pi-pi | pi-pi-pi-pi |
+@piano | c3-e3-g3-c4 . | g2-b2-d3-g3 . | c3-e3-g3-c4 . | g2-b2-d3-g3 c3-e3-g3 . | vel: 55

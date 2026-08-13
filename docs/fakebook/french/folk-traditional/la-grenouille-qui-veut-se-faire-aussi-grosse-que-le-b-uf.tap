@@ -1,0 +1,22 @@
+**TRACK: La Grenouille qui veut se faire aussi grosse que le bœuf**
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 2/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | C . | G7 . | C . | G7 . |
+Melody: | E4 G4 | D4 F4 | E4 G4 | D4 F4 |
+Lyrics: | Une gre-nouille vit | un bœuf qui lui sem-bla | de beau-é nor-me et gros, | gros, gros, gros |
+@piano | c3-e3-g3 . | g2-b2-d3-f3 . | c3-e3-g3 . | g2-b2-d3-f3 . | vel: 55
+
+[V2] (Verse - 4 Bars)
+Chords: | C . | G7 . | C . | G7 . |
+Melody: | E4 G4 | D4 F4 | E4 C4 | D4 . . |
+Lyrics: | Elle qui n'é-tait pas | plus gro-se qu'un œuf, | a-lors s'é-tend, s'en-fle, | et tra-vaill-le |
+@piano | c3-e3-g3 . | g2-b2-d3-f3 . | c3-e3-g3 . | g2-b2-d3-f3 . | vel: 55
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . | C . | G7 . | C . |
+Melody: | A3 C4 | E4 G4 | D4 F4 | E4 C4 |
+Lyrics: | En-flons-nous bien, dit-el-le, | et vous ver-rez bien-tôt | que je de-vien-drai gros-se | com-me le bœuf, com-me le bœuf |
+@piano | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3-f3 . | c3-e3-g3 . | vel: 60

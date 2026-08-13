@@ -1,0 +1,22 @@
+**TRACK: Le Loup et l'Agneau**
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . . . |
+Lyrics: | Un ag-neau se dé-salt-ait | Dans le cou-rant d'une onde | pure. | S'y la-vait |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . . . |
+Lyrics: | Un loup sur-vint à jeun | qui cher-chait a-ven-ture, | Et que la faim en ces lieux | at-ti-rait. |
+@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | A3 . . . |
+Lyrics: | Qui t'a rendu si har-di | de trou-bler mon breu-vage? | Dit cet a-ni-mal ple-in de ra-ge. | Tu ser-as châ-tié. |
+@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55
