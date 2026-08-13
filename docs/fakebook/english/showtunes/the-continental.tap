@@ -1,0 +1,24 @@
+**TRACK: The Continental**
+[MetaData]
+key: C | tempo: 140 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G7 . . . | C . . . | G7 . . . | C . . . | G7 . . . | C . . . | G7 . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . | D7 . . . | D7 . . . | G7 . . . | G7 . . . |
+@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-f3 . . . | g2-b2-f3 . . . | vel: 58
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | G7 . . . | C . . . | C . . . |
+@guitar | c3-e3-g3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | c3-e3-g3
