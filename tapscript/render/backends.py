@@ -35,6 +35,9 @@ class BackendResult:
     path: Path | None = None
     message: str = ""
 
+    def __bool__(self) -> bool:
+        return self.ok
+
 
 def _run(argv: list[str], timeout: int = 300) -> tuple[bool, str]:
     try:
