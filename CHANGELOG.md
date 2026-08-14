@@ -69,14 +69,64 @@ resolved at runtime.
 
 - A composer agent that writes and revises notation, and a build agent that
   probes the host and tailors the install to it.
-- Twelve tools, sandboxed to a workspace. Notation is parsed before it is
-  written, so invalid notation never reaches disk.
+- Twenty-seven tools, sandboxed to a workspace. Notation is parsed before it
+  is written, so invalid notation never reaches disk.
 - Runs are bounded by a step budget and emit events, which is how the CLI shows
   progress and the web interface shows what happened.
 
+### Arrival-centric timing
+
+- **A written time is when the sound should reach the listener**, not when the
+  player acts. Declare a `[Stage]` and the solver works backwards for each
+  voice: `emission = arrival - speech - propagation - p_center + feel`, where
+  speech is the instrument taking time to sound, propagation is distance over
+  the speed of sound, and p_center is the ear placing the note slightly into
+  the attack. A large organ pipe 14 m from the podium has its key pressed
+  241 ms early so that it speaks on the beat.
+- **Every listener hears something different**, and the analysis says so.
+  `tapscript ensemble` reports the spread at the conductor, at the audience, or
+  at any named player's desk. At the podium a compensated ensemble is together;
+  at the second violin's chair the timpani are late. That is why an orchestra
+  watches instead of listening.
+- **Conducting is one transform over the whole ensemble.** `conduct` consumes
+  the directive schema from fleet-jepa-midi unchanged, so the two systems speak
+  the same language. The Time/Feel family is implemented; anything else is read
+  and reported rather than silently ignored.
+- `anticipate` and `push_forward` are different operations and the model can
+  tell them apart: anticipate moves the hands and leaves the arrival on the
+  beat, push_forward moves the arrival itself. A correction versus an
+  intention.
+- **Inert without a `[Stage]`.** A file that declares no stage compiles to
+  byte-identical output. Instrument speech profiles are a model, not
+  measurements, and say so.
+
+### The Model Context Protocol server
+
+- `tapscript mcp` serves JSON-RPC 2.0 over stdio, and over loopback HTTP for
+  remote and multi-agent setups. Any MCP-capable client can drive the whole
+  system without shelling out to the CLI.
+- Tools are enumerated from the existing registry, so a tool added anywhere in
+  the codebase appears automatically rather than being maintained twice.
+  Resources cover the library, sessions, specs and capabilities; prompts expose
+  the composer and builder roles.
+- `analyze_features` computes the sixteen per-bar features fleet-jepa-midi
+  perceives, which lets a bandleader read a written score and makes the
+  repository's notation usable as a labelled corpus.
+
+### The ensemble layer
+
+- Many agents, one score. A session gives each agent a voice to own, so the
+  common case is conflict-free by construction. Writes carry the version they
+  were made against; a stale write is refused and handed the current state to
+  rebase onto, because a lock cannot be held across a model call that takes
+  seconds.
+- Parts are validated as notation before they are accepted, so invalid notation
+  never lands. Writes are atomic, the merge is deterministic, and every change
+  appends to a log a joining agent can read to find out what has happened.
+
 ### Interfaces
 
-- A CLI with fifteen commands, `--json` on all of them, and useful exit codes.
+- A CLI with nineteen commands, `--json` on all of them, and useful exit codes.
 - A terminal interface (`tapscript tui`) built on curses.
 - A web interface (`tapscript serve`) on loopback, refusing cross-origin
   requests, serving rendered files only from the output directory.
@@ -88,7 +138,7 @@ resolved at runtime.
 - `specs/` states what the system promises and names the checks that prove it.
   `tapscript spec` runs them, `tapscript doctor` reports the host, and the build
   agent runs both to verify its own changes.
-- 161 tests, plus a CI job that parses all 6,322 `.tap` files in the repository.
+- 333 tests, plus a CI job that parses all 6,322 `.tap` files in the repository.
 
 ### Moved
 
@@ -103,5 +153,7 @@ resolved at runtime.
   Install fluidsynth and a soundfont for accurate timbres.
 - Audio is mono.
 - The host bridge cannot stream and reports no token usage.
+- The MCP server's protocol is verified by hand-driven JSON-RPC. No third-party
+  MCP client has connected to it yet.
 - `docs/fakebook/` is generated material and carries about 3,800 bar-count
   warnings. It parses; it is not all well written.

@@ -127,6 +127,24 @@ tapscript agent "a slow waltz in D minor, piano and cello, sixteen bars"
 tapscript build            # tailor this install to your machine and use case
 ```
 
+## Many agents, one score
+
+`tapscript mcp` serves the whole system over the Model Context Protocol, so any
+MCP-capable client — Claude Code, an SDK client, a fleet of agents — can drive
+it without shelling out to the CLI.
+
+```bash
+tapscript mcp                 # JSON-RPC over stdio, what most clients expect
+tapscript mcp --http          # loopback HTTP, for remote and multi-agent setups
+tapscript mcp --list-tools    # what it exposes
+```
+
+On top of that sits an ensemble session: several agents working on one score at
+the same time, each owning a voice. Because the parts are disjoint the common
+case never conflicts, and a write made against a stale version is refused and
+handed the current state to rebase onto rather than overwriting somebody. See
+[docs/mcp.md](docs/mcp.md) and [docs/ensemble.md](docs/ensemble.md).
+
 ## Documentation
 
 | | |
@@ -134,6 +152,8 @@ tapscript build            # tailor this install to your machine and use case
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
 | [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
+| [MCP server](docs/mcp.md) | Driving the system from any MCP client |
+| [Ensemble sessions](docs/ensemble.md) | Several agents co-authoring one score |
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
 | [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
