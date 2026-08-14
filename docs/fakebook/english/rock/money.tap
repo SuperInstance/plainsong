@@ -1,20 +1,18 @@
 **TRACK: Money**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 126 | subdivision: 8th
 time: 7/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Bm . . . . . . | F#7 . . . . . . | Bm . . . . . . | F#7 . . . . . . |
-@guitar | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Bm . . . . . . | F#7 . . . . . . | Bm . . . . . . | F#7 . . . . . . |
-@guitar | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | vel: 55
 
 [BR] (Bridge - 2 Bars)
 Chords: | Em7 . . . . . . | A7 . . . . . . |
-@guitar | e2-g2-b2-d3 . . . . . . | a2-c#3-e3-g3 . . . . . . | vel: 50
 
 [IN] (Instrumental - 4 Bars)
 Chords: | Bm . . . . . . | F#7 . . . . . . | Bm . . . . . . | F#7 . . . . . . |
-@guitar | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | b2-d3-f#3 . . . . . . | f#2-a#2-c#3 . . . . . . | vel: 65

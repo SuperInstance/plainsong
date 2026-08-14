@@ -1,22 +1,15 @@
 **TRACK: The Water Margin**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gm | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Heroic, Melancholic
 
 [V1] (Verse - 4 Bars)
 Chords: | Gm . . . | D . . . | Gm . . . | D . . . |
-Melody: | G3 . Bb3 . D4 . . . | A3 . F#3 . A3 . . . | G3 . Bb3 . D4 . . . | A3 . F#3 . D3 . . . |
-Lyrics: | 江 湖 上 风 波 起 | 英 雄 泪 满 衣 | 山 高 水 长 路 远 | 志 在 四 方 归 |
-@piano | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | d2-f#2-a2 . . . | vel: 48
 
 [V2] (Verse - 4 Bars)
 Chords: | Cm . . . | G . . . | Cm . . . | D7 . . . |
-Melody: | C4 . Eb4 . G4 . . . | B3 . D4 . G3 . . . | C4 . Eb4 . G4 . . . | A3 . C4 . F#3 . . . |
-Lyrics: | 聚 义 厅 上 旗 飘 | 忠 义 堂 前 誓 高 | 生 死 与 共 同 行 | 天 地 为 证 不 抛 |
-@piano | c2-eb2-g2 . . . | g2-b2-d3 . . . | c2-eb2-g2 . . . | d2-f#2-a2-c3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
-Melody: | G4 . D4 . Bb3 . D4 . | Eb4 . G4 . Bb4 . . . | C4 . Eb4 . G4 . A4 . | D4 . F#4 . A4 . . . |
-Lyrics: | 水 泊 梁 山 好 汉 | 替 天 行 道 不 悔 | 千 古 流 芳 名 在 | 江 湖 永 远 相 随 |
-@piano | g2-bb2-d3-g3 . . . | eb2-g2-bb2-eb3 . . . | c2-eb2-g2-c3 . . . | d2-f#2-a2-d3 . . . | vel: 55

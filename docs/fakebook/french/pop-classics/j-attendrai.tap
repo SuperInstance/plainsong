@@ -1,24 +1,21 @@
 **TRACK: J'attendrai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Eb . . . | Eb . . . | Bb7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | D7 . . . | G7 . . . | Cm . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Ab . . . | Bb7 . . . | Bb7 . . . | Eb . . . | C7 . . . | Fm . . . | G7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | G7 . . . |
-@guitar | f2-ab2-c3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | G7 . . . Cm . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | g2-b2-d3 . . . c3-eb3-g3 . . . | vel: 45

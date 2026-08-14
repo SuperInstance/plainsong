@@ -1,16 +1,12 @@
 **TRACK: La Primavera**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Bright
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | E4 . G4 . | D4 . B3 . | A3 . C4 . | F4 . . . |
-Lyrics: | La pri-ma-ve-ra | vie-ne can-tan-do | con fio-ri e can-ti | nel sol di mag-gio |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A3 . C4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Can-ta, can-ta, | o pri-ma-ve-ra, | por-ti gio-ia | a o-gni cuor |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60

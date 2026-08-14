@@ -1,22 +1,15 @@
 **TRACK: O Mar Morreu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 96 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . | A7 . . | Dm . . | A7 . . |
-Melody: | D4 . F4 | E4 . C#4 | D4 . A3 | A3 . . |
-Lyrics: | O mar mor-reu | a-go-ra vou | can-tar a-o | meu bem |
-@piano | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . | Bb . . | A7 . . | Dm . . |
-Melody: | F4 . E4 | D4 . C4 | D4 . E4 | D4 . . |
-Lyrics: | que se foi | e não vol-tou | dei-xan-do a | tris-te-za |
-@piano | d3-f3-a3 . . | bb2-d3-f3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . | Gm . . | A7 . . | Dm . . |
-Melody: | A4 . F4 | G4 . Bb4 | A4 . E4 | D4 . . |
-Lyrics: | a-go-ra o mar | mor-reu de vez | e eu fi-co a | so-nhar |
-@piano | d3-f3-a3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | vel: 55

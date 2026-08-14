@@ -1,22 +1,15 @@
 **TRACK: El Chapecao**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 6/8 | mood: Lively, Traditional
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . . . | Am . . . . . | F . . . . . | E7 . . . . . |
-Melody: | A3 . C4 . E4 . | A3 . C4 . E4 . | F4 . E4 . D4 . | E4 . . . . . |
-Lyrics: | El cha - pe - cao bai - la | con su pa - ñue - lo al aire | y las chi - nas mi - ran | con a - le - grí - a |
-@piano | a2-e3-a3 . . . . . | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | e2-g#2-b2 . . . . . | vel: 55
 
 [V2] (Verse 2 - 4 Bars)
 Chords: | Dm . . . . . | Dm . . . . . | Am . . . . . | E7 . . . . . |
-Melody: | D4 . F4 . A4 . | D4 . F4 . A4 . | A3 . C4 . E4 . | B3 . D4 . E4 . |
-Lyrics: | Za - pa - tea - do fuer - te | el sue - lo re - tiem - bla | con el cha - pe - cao | na - die se a - bri - ga |
-@piano | d2-f2-a2 . . . . . | d2-f2-a2 . . . . . | a2-e3-a3 . . . . . | e2-g#2-b2 . . . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . . . | F . . . . . | C . . . . . | E7 . . . . . |
-Melody: | A3 . A3 . C4 . | F4 . F4 . E4 . | G4 . G4 . E4 . | E4 . D4 . B3 . |
-Lyrics: | Cha - pe - cao, cha - pe - cao | de mi tie - rra que - ri - do | to - dos bai - lan a - le - gres | con su rit - mo sen - ci - llo |
-@piano | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | c3-e3-g3 . . . . . | e2-g#2-b2 . . . . . | vel: 60

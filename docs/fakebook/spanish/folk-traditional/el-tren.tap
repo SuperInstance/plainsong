@@ -1,22 +1,15 @@
 **TRACK: El Tren**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Rhythmic, Rolling
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
-Melody: | A3 . C4 . | E4 . D4 . | F4 . E4 . | D4 . B3 . |
-Lyrics: | El tren pa-sa | por la es-ta-ción | con su ru-i-do | y su va-pór |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Am . . . | E7 . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . C4 . | B3 . D4 . | A3 . . . |
-Lyrics: | Co-rre, co-rre | va el tren ve-loz | lle-va la gen-te | a su ho-gar |
-@piano | d3-f3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
-Melody: | A3 . C4 . | E4 . D4 . | F4 . E4 . | D4 . B3 . |
-Lyrics: | Las rue-das gí-ran | sin des-can-sar | el sil-ba-to | sue-na ya |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50

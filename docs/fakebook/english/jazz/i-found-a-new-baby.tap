@@ -1,24 +1,21 @@
 **TRACK: I Found a New Baby**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 180 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | F7 . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | f2-a2-eb3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | G7 . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | g2-b2-f3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 58
 
 [V3] (Verse - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 55

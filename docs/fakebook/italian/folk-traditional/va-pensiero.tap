@@ -1,16 +1,12 @@
 **TRACK: Va, pensiero**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . D4 . |
-Lyrics: | Va pen-sie-ro sul-l'a-li do-ra-te | sul-l'a-li do-ra-te |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A4 . G4 . | E4 . F4 . | G4 . E4 . | C4 . D4 . |
-Lyrics: | O pa-tria mia sì bel-la e per-du-ta | o pa-tria mia sì bel-la |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

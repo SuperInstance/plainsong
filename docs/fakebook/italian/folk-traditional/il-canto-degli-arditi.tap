@@ -1,28 +1,18 @@
 **TRACK: Il Canto degli Arditi**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb major | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Martial, Triumphant
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Sul . . . | cam - po . | di . . . | bat - ta - glia |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | Bb . . . | Bb . . . |
-Melody: | D4 . F4 . | E4 . D4 . | D4 . C4 . | D4 . . . |
-Lyrics: | Al - l'a - | ert - a . . | si - a . . | l'It - a - lia |
-@piano | bb2-d3-f3 . . . | f2-a3-c4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Su - per - | bo . . . | no . . . | tre - ma - re |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | Bb . . . | Bb . . . |
-Melody: | D4 . F4 . | E4 . D4 . | D4 . C4 . | D4 . . . |
-Lyrics: | Al - l'a - | ert - a . . | si - a . . | l'It - a - lia |
-@piano | bb2-d3-f3 . . . | f2-a3-c4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 65

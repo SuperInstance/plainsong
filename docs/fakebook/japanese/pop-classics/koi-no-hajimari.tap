@@ -1,29 +1,23 @@
 **TRACK: Koi no Hajimari**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Bright, Flowing
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 50
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | g2-bb2-d3 . . . | c2-e2-g3 . . . | vel: 52
 Chords: | Am . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | a2-c3-e3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 60
 Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | g2-bb2-d3 . . . | c2-e2-g3 . . . | vel: 60
 Chords: | Am . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | a2-c3-e3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 60
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | c2-e2-g3 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb .

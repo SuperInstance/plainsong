@@ -1,22 +1,15 @@
 **TRACK: Yosakoi Bushi**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 112 | subdivision: 8th
 time: 2/4 | mood: Festive
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . | Am . | F . | G . |
-Melody: | A3 C4 | A3 C4 | F4 E4 | D4 C4 |
-Lyrics: | Yo- sa- | ko- i- | ko- i- | yo- sa- |
-@piano | a2-e3-a3 . | a2-e3-a3 . | f2-a2-c3 . | g2-b2-d3 . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . | Am . | F . | E7 . |
-Melody: | A3 C4 | D4 E4 | F4 A4 | G#4 E4 |
-Lyrics: | ko- i- | ko- i- | yo- sa- | ko- i- |
-@piano | a2-e3-a3 . | a2-e3-a3 . | f2-a2-c3 . | e2-g#2-b2 . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . | F . | C . | G . |
-Melody: | A4 C5 | A4 F4 | E4 G4 | D4 B3 |
-Lyrics: | ha- re- | ta- ko- | i- no- | ma- chi- |
-@piano | a2-e3-a3-c4 . | f2-a2-c3-f3 . | c3-e3-g3-c4 . | g2-b2-d3-g3 . | vel: 60

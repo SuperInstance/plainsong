@@ -1,24 +1,21 @@
 **TRACK: Harley Davidson**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | e2-b2-e3 . . . | b1-d#2-f#2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | C#m . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | c#2-e2-g#2 . . . | b1-d#2-f#2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E . . . | B . . . | E . . . |
-@guitar | a1-c#2-e2 . . . | e2-b2-e3 . . . | b1-d#2-f#2 . . . | e2-b2-e3 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | F#m . . . | B . . . |
-@guitar | f#1-a1-c#2 . . . | b1-d#2-f#2 . . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | E . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

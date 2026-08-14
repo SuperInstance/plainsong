@@ -1,22 +1,15 @@
 **TRACK: A Hundred Birds Worshipping the Phoenix**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Majestic, flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . . . | B4 . A4 . | F#4 . E4 . |
-Lyrics: | hun - dred birds | ga - ther | wor - ship | phoe - nix |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | A . . . |
-Melody: | G4 . A4 . | F#4 . D4 . | E4 . G4 . | F#4 . E4 . |
-Lyrics: | sing - ing praise | to the sky | dance in joy | phoe - nix high |
-@piano | g2-b3-d4 . . . | d3-f#3-a3 . . . | e3-g3-b3 . . . | a2-c#3-e3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | Bm . . . | G . . . | A . . . |
-Melody: | A4 . B4 . | D5 . B4 . | G4 . A4 . | F#4 . E4 . |
-Lyrics: | all birds bow | to the flame | e - ter - nal | light and name |
-@piano | d3-f#3-a3 . . . | b2-d3-f#3 . . . | g2-b3-d4 . . . | a2-c#3-e3 . . . | vel: 55

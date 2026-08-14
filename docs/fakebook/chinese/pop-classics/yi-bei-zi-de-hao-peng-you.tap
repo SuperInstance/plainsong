@@ -1,24 +1,21 @@
 **TRACK: Yi Bei Zi De Hao Peng You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 78 | subdivision: 8th  
 time: 4/4 | mood: Warm, Reflective  
 
 [V1] (Verse - 4 Bars)  
 Chords: | C . . . | G/B . . . | Am . . . | Em/G . . . |  
-@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g3-b3 . . . | vel: 50  
 
 [V2] (Verse - 4 Bars)  
 Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |  
-@guitar | f2-a2-c3 . . . | e2-g3-c3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50  
 
 [CH] (Chorus - 4 Bars)  
 Chords: | C . . . | G . . . | Am . . . | Em . . . |  
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | e2-g3-b3 . . . | vel: 65  
 
 [BR] (Bridge - 2 Bars)  
 Chords: | F . . . | G . . . |  
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55  
 
 [OUT] (Outro - 2 Bars)  
 Chords: | C . . . | C . . . |  
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 45

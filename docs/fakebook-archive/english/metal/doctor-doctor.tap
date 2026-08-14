@@ -1,24 +1,21 @@
 **TRACK: Doctor Doctor**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 130 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60

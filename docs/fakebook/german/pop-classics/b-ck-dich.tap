@@ -1,20 +1,18 @@
 **TRACK: Bück dich**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 65
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . | F . . . | C . . . | A . . . | A . . . |
-@guitar | f1-c2-f2 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | f1-c2-f2 . . . | c2-g2-c3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | Bb . . . | A . . . | A . . . |
-@guitar | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 55

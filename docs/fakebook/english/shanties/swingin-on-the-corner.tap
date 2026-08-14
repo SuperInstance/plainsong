@@ -1,16 +1,12 @@
 **TRACK: Swingin' on the Corner**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Bright
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
-Melody: | E4 . G4 . | B3 . D4 . | E4 . G4 . | B3 . D4 . |
-Lyrics: | Swing-in' on the cor-ner | watch-in' the folks go by | Swing-in' on the cor-ner | with a gleam in my eye |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G7 . . . | C . . . |
-Melody: | A4 . G4 . | E4 . C4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Oh, it's swing-in' on the cor-ner | feel the breeze so fine | Swing-in' on the cor-ner | all the time |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 65

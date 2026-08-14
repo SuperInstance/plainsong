@@ -1,23 +1,21 @@
 **TRACK: Space Oddity**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 12/8 | mood: Dreamy
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . . . | Em . . . . . | F . . . . . | G . . . . . | C . . . . . | Em . . . . . | F . . . . . | G . . . . . |
-@guitar | c3-e3-g3 . . . . . | e2-b2-e3 . . . . . | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | e2-b2-e3 . . . . . | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . . . | Em . . . . . | F . . . . . | G . . . . . | C . . . . . | Em . . . . . | F . . . . . | G . . . . . |
-@guitar | c3-e3-g3 . . . . . | e2-b2-e3 . . . . . | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | e2-b2-e3 . . . . . | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | vel: 50
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . . . | G . . . . . | C . . . . . | G . . . . . |
-@guitar | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . . . | G . . . . . | C . . . . . | G . . . . . | F . . . . . | G . . . . . | C . . . . . | G . . . . . |
-@guitar | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | f2-a2-c3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | C . . . . . | Em . . . . . | F . . . .

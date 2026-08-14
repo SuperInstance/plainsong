@@ -1,22 +1,15 @@
 **TRACK: Es zogen drei Burschen wohl über den Rhein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | D4 . B3 . |
-Lyrics: | Es zo-gen drei Bur-schen wohl ü-ber den Rhein, | bei ei-ner Frau Wirtin da kehr-ten sie ein. | "Frau Wirtin, habt ihr gut Bier und Wein? | Wo sind doch die Mädchen, die schön und fein?" |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . G4 . | D4 . B3 . |
-Lyrics: | "Mein Bier ist gut, mein Wein ist klar, | mein Töchterlein liegt auf der Totenbahr." | Und als sie die Totenbahr sahen an, | da war's ihr Herzallerliebster getan. |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
-Lyrics: | Ade, ade, ade, | du feines Mägdelein, | ade, ade, ade, | du mein Herzallerliebste fein. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

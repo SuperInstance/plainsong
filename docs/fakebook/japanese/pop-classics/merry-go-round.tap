@@ -1,28 +1,22 @@
 **TRACK: Merry-Go-Round**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 55
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | d1-f1-a1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | C . . . | F . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 65
 Chords: | Bb . . . | C . . . | F . . . | C . . . |
-@guitar | bb1-d2-f2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | C . . . |
-@guitar | d1-f1-a1 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 60
 Chords: | Dm . . . | Bb . . . | Gm . . . | C . . . |
-@guitar | d1-f1-a1 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | vel: 60

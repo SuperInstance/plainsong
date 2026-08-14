@@ -1,22 +1,15 @@
 **TRACK: Overture to "The Magic Flute"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 104 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Eb . . . | Bb . . . |
-Melody: | Eb4 . G4 . | Bb4 . . . | Eb4 . G4 . | Bb4 . . . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Ab . . . | Eb . . . | Bb . . . | Eb . . . |
-Melody: | Ab4 . C5 . | Eb5 . . . | Bb4 . D5 . | Eb5 . . . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | Fm . . . | Cm . . . | Bb . . . | Eb . . . |
-Melody: | F4 . Ab4 . | C5 . . . | Bb4 . D4 . | Eb4 . . . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | f3-ab3-c4 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 60

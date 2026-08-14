@@ -1,26 +1,21 @@
 **TRACK: Haru Haru**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 52
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 65
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | G . . . | Em . . . | D . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 58

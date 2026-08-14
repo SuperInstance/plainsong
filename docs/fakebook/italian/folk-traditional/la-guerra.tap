@@ -1,22 +1,15 @@
 **TRACK: La Guerra**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Martial
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
-Melody: | A3 . C4 E4 | A3 . C4 E4 | F4 . A4 F4 | E4 . D4 B3 |
-Lyrics: | la gue-rra, la gue-rra | los hom-bres van a lu-char | con es-pa-da y fue-go | por la pa-tria y ho-nor |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
-Melody: | A3 . C4 E4 | A3 . C4 E4 | F4 . A4 F4 | E4 . D4 B3 |
-Lyrics: | el tam-bor re-sue-na | la ban-de-ra a-lza-da | va-lien-tes sol-da-dos | de-fien-den su tie-rra |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 C5 | E4 . D4 B3 | A3 . C4 E4 | B3 . D4 E4 |
-Lyrics: | can-tad, can-tad vic-to-ria | a-le-grí-a y glo-ria | por la gue-rra san-ta | que nos da li-ber-tad |
-@piano | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 65

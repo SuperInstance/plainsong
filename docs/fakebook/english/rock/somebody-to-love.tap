@@ -1,4 +1,6 @@
 **TRACK: Somebody to Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: Em | tempo: 126 | subdivision: 8th  
 time: 4/4 | mood: Driving
@@ -6,26 +8,18 @@ time: 4/4 | mood: Driving
 [V1] (Verse - 8 Bars)  
 Chords: | Em . . . | Em . . . | C . . . | D . . . |  
 Chords: | Em . . . | Em . . . | C . . . | D . . . |  
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 55  
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)  
 Chords: | G . . . | G . . . | D . . . | D . . . |  
 Chords: | C . . . | C . . . | D . . . | D . . . |  
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 65  
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)  
 Chords: | Am . . . | Am . . . | C . . . | D . . . |  
-@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)  
 Chords: | Em . . . | Em . . . | C . . . | D . . . |  
 Chords: | Em . . . | Em . . . | C . . . | D . . . |  
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 55  
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)  
 Chords: | G . . . | G . . . | D . . . | D . . . |  
 Chords: | C . . . | C . . . | D . . . | D . . . |  
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | d3-a3-d4 . . .

@@ -1,16 +1,12 @@
 **TRACK: The General's Command**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Marching, Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | Cm . . . | G . . . | Cm . . . | G . . . |
-Melody: | C4 . Eb4 . | G3 . B3 . | C4 . Eb4 . | G3 . B3 . |
-Lyrics: | The gen-'ral gave his com-mand, | to march up-on the foe, | With drum and fife and ban-ner grand, | He bade his men to go. |
-@piano | c3-eb3-g3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Ab . . . | Eb . . . | Bb . . . | Cm . . . |
-Melody: | Ab3 . C4 . | Eb4 . G4 . | Bb3 . D4 . | C4 . Eb4 . |
-Lyrics: | For-ward, march! the trum-pets call, | Stead-y, boys, and stand tall, | Fol-low where the col-ors fall, | The Gen-'ral leads us all. |
-@piano | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | vel: 60

@@ -1,24 +1,21 @@
 **TRACK: Yi Ge Ren**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 4 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f3-a3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f3-a3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Ab . . . | Eb . . . | Fm . . . | Db . . . |
-@guitar | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | db2-f2-ab2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bbm . . . | C . . . | Fm . . . | C . . . |
-@guitar | bb2-db3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Fm . . . | Fm . . . |
-@guitar | f3-a3-c4 . . . | f3-a3-c4 . . . | vel: 45

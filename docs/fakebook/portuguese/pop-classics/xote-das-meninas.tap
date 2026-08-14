@@ -1,4 +1,6 @@
 **TRACK: Xote das Meninas**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: Dm | tempo: 88 | subdivision: 8th  
 time: 2/4 | mood: Driving  
@@ -6,23 +8,18 @@ time: 2/4 | mood: Driving
 [V1] (Verse - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
 Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55  
 
 [CH] (Chorus - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . |  
 Chords: | Dm . . . | A7 . . . | Dm . . . | Dm . . . |  
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | vel: 60  
 
 [B] (Bridge - 4 Bars)  
 Chords: | Bb . . . | Bb . . . | A7 . . . | A7 . . . |  
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50  
 
 [V2] (Verse - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
 Chords: | Dm . . . | Gm . . . | A7 . . . | A7 . . . |  
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55  
 
 [CH] (Chorus - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . |  
 Chords: | Dm . . . | A7 . . . | Dm . . . | Dm . . . |  
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | vel: 60

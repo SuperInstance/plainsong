@@ -1,22 +1,15 @@
 **TRACK: Wild and Wicked Youth**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 96 | subdivision: 8th
 time: 6/8 | mood: Wistful
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | B3 . D4 . | A3 . C4 . | G#3 . B3 . |
-Lyrics: | I am a wild and wick-ed youth, | I love my glass and gun, | I'll range the world all round and round | Till my race is run. |
-@piano | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 52
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | B3 . D4 . | C4 . E4 . | B3 . D4 . |
-Lyrics: | My fa-ther was a farm-er good, | My moth-er she was mild, | But I have left them all be-hind | To be a wan-d’ring child. |
-@piano | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | A3 . C4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
-Lyrics: | Wild and wick-ed, | wild and wick-ed, | young and free, | Oh, the road is long. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

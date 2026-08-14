@@ -1,24 +1,21 @@
 **TRACK: Through the Fire**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Fm7 . . . | Db7 . . . | Bbm7 . . . | C7sus . . . |
-@guitar | f1-c2-eb2 . . . | db1-f2-ab2 . . . | bb1-db2-f2 . . . | c1-g2-bb2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Fm7 . . . | Db7 . . . | Bbm7 . . . | C7sus . . . |
-@guitar | f1-c2-eb2 . . . | db1-f2-ab2 . . . | bb1-db2-f2 . . . | c1-g2-bb2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Db . . . | Ab/C . . . | Bbm7 . . . | Fm7 . . . |
-@guitar | db1-f2-ab2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f1-c2-eb2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Cb . . . | Fm7 . . . | C7 . . . |
-@guitar | gb1-bb2-db3 . . . | cb1-eb2-gb2 . . . | f1-c2-eb2 . . . | c1-e2-g2 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | Fm7 . . . | C7 . . . |
-@guitar | f1-c2-eb2 . . . | c1-g2-bb2 . . . | vel: 50

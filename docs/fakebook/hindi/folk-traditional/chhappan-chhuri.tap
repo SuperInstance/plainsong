@@ -1,16 +1,12 @@
 **TRACK: Chhappan Chhuri**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Playful, Folk
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E . . . |
-Melody: | A3 . C4 . E4 . A4 . | F4 . A4 . C5 . A4 . | A3 . C4 . E4 . A4 . | E4 . G#4 . B4 . E4 . |
-Lyrics: | Chhap - pan chhu - ri, ma - ro - ke | pa - ni - me, le - ke ja - o | Chhap - pan chhu - ri, ma - ro - ke | pa - ni - me, le - ke ja - o |
-@piano | a2-e3-a3-c4-e4 . . . | f2-a2-c3-f4-a4 . . . | a2-e3-a3-c4-e4 . . . | e2-g#2-b2-e3-g#4 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | E . . . |
-Melody: | F4 . A4 . C5 . A4 . | C4 . E4 . G4 . C5 . | F4 . A4 . C5 . A4 . | E4 . G#4 . B4 . E4 . |
-Lyrics: | Nai - ya - ko pa - l, le - ke | chha - di - yo, ho ra - ma | Nai - ya - ko pa - l, le - ke | chha - di - yo, ho ra - ma |
-@piano | f2-a2-c3-f4-a4-c5 . . . | c3-e3-g3-c4-e4-g4 . . . | f2-a2-c3-f4-a4-c5 . . . | e2-g#2-b2-e3-g#4-b4 . . . | vel: 50

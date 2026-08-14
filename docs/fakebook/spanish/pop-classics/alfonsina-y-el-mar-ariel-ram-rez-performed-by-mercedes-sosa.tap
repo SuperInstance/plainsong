@@ -1,24 +1,21 @@
 **TRACK: Alfonsina y el Mar - Ariel Ramírez (performed by Mercedes Sosa)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 88 | subdivision: 8th
 time: 6/8 | mood: Flowing, Melancholic
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Am . . . | F . . . | E . . . |
-@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 58
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 52
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | F . . . | E . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 45

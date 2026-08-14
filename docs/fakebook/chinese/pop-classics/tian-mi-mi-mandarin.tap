@@ -1,24 +1,21 @@
 **TRACK: Tian Mi Mi (Mandarin)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Sweet
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | Gm . . . | C . . . |
-@guitar | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | F . . . | F . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45

@@ -1,22 +1,15 @@
 **TRACK: V'là l'bon vent**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 2/4 | mood: Brisk
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . D4 . | B3 . D4 . | A3 . D4 . |
-Lyrics: | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'appelle | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'attend |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | G . . . |
-Melody: | B3 . D4 . | A3 . D4 . | G3 . B3 . | G3 . . . |
-Lyrics: | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'appelle | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'attend |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . G4 . | E4 . G4 . | D4 . G4 . |
-Lyrics: | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'appelle | V'là l'bon vent, v'là l'joli vent | V'là l'bon vent, ma mie m'attend |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

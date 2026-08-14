@@ -1,24 +1,21 @@
 **TRACK: La Marseillaise**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Gm . . . | D . . . | Gm . . . | D . . . |
-@guitar | g2-d3-g3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Gm . . . | Eb . . . | Bb . . . | D . . . |
-@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | d2-a2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gm . . . | Cm . . . | D . . . | Gm . . . |
-@guitar | g2-d3-g3 . . . | c3-eb3-g3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | D . . . |
-@guitar | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | c3-eb3-g3 . . . | d2-a2-d3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Gm . . . | D . . . | Gm . . . | Gm . . . |
-@guitar | g2-d3-g3 . . . | d2-a2-d3 . . . | g2-d3-g3 . . . | g2-d3-g3 . . . | vel: 50

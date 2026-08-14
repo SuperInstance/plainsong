@@ -1,32 +1,18 @@
 **TRACK: The Old Rugged Cross**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Reverent
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . Bb3 . | C4 . D4 . |
-Lyrics: | On a | hill far a - | way stood an | old rug - ged |
-Lyrics: | cross, the | em - blem of | suff - 'ring and | shame |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . Bb3 . | C4 . D4 . |
-Lyrics: | and I | love that old | cross where the | dear - est and |
-Lyrics: | best for a | world of lost | sin - ners was | slain |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | F4 . F4 . | G4 . F4 . | D4 . Bb3 . | C4 . D4 . |
-Lyrics: | So I'll | cher - ish the | old rug - ged | cross, till my |
-Lyrics: | tro - phies at | last I lay | down |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | F4 . F4 . | G4 . F4 . | D4 . Bb3 . | C4 . D4 . |
-Lyrics: | I will | cling to the | old rug - ged | cross, and ex - |
-Lyrics: | change it some - | day for a | crown |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 55

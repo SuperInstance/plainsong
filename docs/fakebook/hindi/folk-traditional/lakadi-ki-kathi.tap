@@ -1,16 +1,12 @@
 **TRACK: Lakadi Ki Kathi**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | C4 . E4 . | G4 . E4 . | C4 . E4 . | D4 . B3 . |
-Lyrics: | La-ka-di ki ka-thi, ka-thi pe gho-da | gho-da ki dum, dum pe jo-ka | La-ka-di ki ka-thi, ka-thi pe gho-da | gho-da ki dum, dum pe jo-ka |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A4 . F4 . | E4 . C4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Dum pe jo-ka, jo-ka pe maa | maa ne mu-jhe si-khaa-ya | Dum pe jo-ka, jo-ka pe maa | maa ne mu-jhe si-khaa-ya |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60

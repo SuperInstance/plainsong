@@ -1,24 +1,21 @@
 **TRACK: Desafinado**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 132 | subdivision: 8th
 time: 2/4 | mood: Bossa Nova
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm6 . . . | Gm7b5 . . . | C7b9 . . . | Fm6 . . . |
-@guitar | f2-ab2-c3-d3 . . . | g2-b2-db3-f3 . . . | c3-e3-bb3-db3 . . . | f2-ab2-c3-d3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm6 . . . | Gm7b5 . . . | C7b9 . . . | Fm6 . . . |
-@guitar | f2-ab2-c3-d3 . . . | g2-b2-db3-f3 . . . | c3-e3-bb3-db3 . . . | f2-ab2-c3-d3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Abmaj7 . . . | Dbmaj7 . . . | Fm6 . . . | Gm7b5 . . . | C7b9 . . . | Fm6 . . . |
-@guitar | ab2-c3-eb3-g3 . . . | db2-f3-ab3-c4 . . . | f2-ab2-c3-d3 . . . | g2-b2-db3-f3 . . . | c3-e3-bb3-db3 . . . | f2-ab2-c3-d3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . | Dbmaj7 . . . |
-@guitar | bb2-db3-f3-ab3 . . . | eb2-g3-bb3-db4 . . . | ab2-c3-eb3-g3 . . . | db2-f3-ab3-c4 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Fm6 . . . | Gm7b5 . . . | C7b9 . . . | Fm6 . . . |
-@guitar | f2-ab2-c3-d3 . . . | g2-b2-db3-f3 . . . | c3-e3-bb3-db3 . . . | f2-ab2-c3-d3 . . . | vel: 50

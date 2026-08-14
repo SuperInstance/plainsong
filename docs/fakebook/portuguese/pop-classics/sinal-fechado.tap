@@ -1,20 +1,18 @@
 **TRACK: Sinal Fechado**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 92 | subdivision: 8th
 time: 2/4 | mood: Samba
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . | A7 . . | Dm . . | Gm . . |
-@guitar | d3-f3-a3 . . | a2-c#3-e3 . . | d3-f3-a3 . . | g2-bb2-d3 . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . | A7 . . | Gm . . | A7 . . |
-@guitar | d3-f3-a3 . . | a2-c#3-e3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . | Gm . . | Dm . . | A7 . . |
-@guitar | d3-f3-a3 . . | g2-bb2-d3 . . | d3-f3-a3 . . | a2-c#3-e3 . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . | Gm . . | A7 . . | A7 . . |
-@guitar | bb2-d3-f3 . . | g2-bb2-d3 . . | a2-c#3-e3 . . | a2-c#3-e3 . . | vel: 55

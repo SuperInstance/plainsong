@@ -1,24 +1,21 @@
 **TRACK: Balet**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Dramatic
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | C . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
-@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Bb . . . | C . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 45

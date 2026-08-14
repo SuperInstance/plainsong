@@ -1,22 +1,15 @@
 **TRACK: Les Filles de la Rochelle**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . C4 . | D4 . B3 . |
-Lyrics: | Les fil-les de La Ro-chel-le | Ont des yeux qui chan-tent | Et des cœurs qui se ré-veil-lent | Quand la mer s’é-vente |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . C4 . | D4 . B3 . |
-Lyrics: | El-les dan-sent sur la grè-ve | Leurs ju-pons de lin | Et le vent qui se lè-ve | Leur ap-porte un re-frain |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
-Lyrics: | Ah les fil-les de La Ro-chel-le | Ah les fil-les du port | Leur ri-re est une é-tin-cel-le | Qui brille en-core plus fort |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

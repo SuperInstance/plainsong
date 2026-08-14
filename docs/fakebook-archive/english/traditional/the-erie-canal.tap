@@ -1,31 +1,15 @@
 **TRACK: The Erie Canal**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |
-Lyrics: | I've got a mule, her name is Sal, |
-| Fif-teen miles on the E-rie Ca-nal, |
-| She's a good old work-er and a good old pal, |
-| Fif-teen miles on the E-rie Ca-nal. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A3 . C4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Low bridge, ev-'ry-bod-y down, |
-| Low bridge, we're com-in' to a town, |
-| You'll al-ways know your neigh-bor, you'll al-ways know your pal, |
-| If you've ev-er nav-i-gat-ed on the E-rie Ca-nal. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |
-Lyrics: | We'd bet-ter get a-long on our way, old gal, |
-| Fif-teen miles on the E-rie Ca-nal, |
-| 'Cause you bet your life I'd nev-er part with Sal, |
-| Fif-teen miles on the E-rie Ca-nal. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

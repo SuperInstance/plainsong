@@ -1,24 +1,21 @@
 **TRACK: Paradise City**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A major | tempo: 125 | subdivision: 8th
 time: 4/4 | mood: Anthemic
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | E . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | E . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | D . . . | E . . . | D . . . | A . . . | D . . . | E . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | D . . . | E . . . | A . . . |
-@guitar | f#2-a2-c#3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [OUT] (Outro - 8 Bars)
 Chords: | A . . . | D . . . | E . . . | D . . . | A . . . | D . . . | E . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 65

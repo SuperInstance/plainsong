@@ -1,24 +1,21 @@
 **TRACK: Night Fever**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 104 | subdivision: 8th
 time: 4/4 | mood: Disco
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | F#7 . . . | Bm . . . | F#7 . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | g2-b3-d4 . . . | a2-c#4-e4 . . . | d3-f#3-a3 . . . | a2-c#4-e4 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bm . . . | F#7 . . . | Bm . . . | F#7 . . . | G . . . | A . . . | D . . . | F#7 . . . |
-@guitar | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | g2-b3-d4 . . . | a2-c#4-e4 . . . | d3-f#3-a3 . . . | f#2-a#3-c#4 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | F#7 . . . | Em . . . | F#7 . . . |
-@guitar | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bm . . . | F#7 . . . | Bm . . . | F#7 . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | b2-f#3-b3 . . . | f#2-a#3-c#4 . . . | g2-b3-d4 . . . | a2-c#4-e4 . . . | d3-f#3-a3 . . . | a2-c#4-e4 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bm . . . | F#7 . . . | Bm . . . | F#7 . . . | G . . . | A . . . | D . . . | F#7 . . . |
-@guitar | b2-f#3-b3 . . . | f

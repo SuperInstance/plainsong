@@ -1,22 +1,15 @@
 **TRACK: A Midsummer Night's Dream (Wedding March)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | E4 . G4 C5 | B4 . G4 E4 | A4 . C5 A4 | F4 . E4 D4 |
-Lyrics: | Here comes the bride, | fair and so wise, | with joy and pride, | her heart be - guiles |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | G4 . E4 G4 | C5 . B4 A4 | G4 . E4 G4 | D5 . C5 B4 |
-Lyrics: | All hail the day, | of joy and light, | with hearts a - flame, | in love's de - light |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A4 . C5 A4 | G4 . E4 G4 | B4 . D5 B4 | C5 . . . |
-Lyrics: | The march a - dorns, | this ho - ly morn, | with trum - pets clear, | and vows new - born |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

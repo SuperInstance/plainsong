@@ -1,28 +1,18 @@
 **TRACK: La Villanella**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . E4 . | D4 . B3 . |
-Lyrics: | Down in the val - ley | where the wild flow - ers grow | I met my true love | and she told me so |
-@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . F4 . | B3 . G#3 . |
-Lyrics: | She gave me a rose - bud | and a kiss so sweet | I’ll keep it for - ev - er | my heart still beats |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f2-a2 . . . | e2-g#2-b3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . A4 . | E4 . G4 . | B3 . G#3 . |
-Lyrics: | La vil - la - nel - la | sing your song to me | Love is the an - swer | for all e - ter - ni - ty |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | Dm . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . A4 . | D4 . F4 . | B3 . G#3 . |
-Lyrics: | Dance in the mead - ow | with the morn - ing dew | La vil - la - nel - la | I’ll al - ways love you |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b3 . . . | vel: 55

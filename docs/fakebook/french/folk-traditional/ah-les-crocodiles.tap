@@ -1,22 +1,15 @@
 **TRACK: Ah ! Les Crocodiles**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
-Melody: | C4 . E4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |
-Lyrics: | Un cro- co- di- le s'en al- lant en guer- re |
-@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
-Melody: | C4 . E4 . | D4 . B3 . | C4 . G3 . | C4 . . . |
-Lyrics: | A- vait ou- bli- é de fer- mer ses sou- liers |
-@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G7 . . . | C . . . |
-Melody: | A3 . C4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Ah! les cro- co- di- les, les cro- co- di- les |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 60

@@ -1,22 +1,15 @@
 **TRACK: Tanz, tanz, Grasmückchen**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | Tanz, tanz, Gras-mück-chen | im Gar-ten her-um | Tanz, tanz, Gras-mück-chen | im Gar-ten her-um |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | Dm . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . A3 . | D4 . . . |
-Lyrics: | Wir wol-len ja nicht tan-zen | wir wol-len ja nicht gehn | wir wol-len ja nicht tan-zen | im Gar-ten stehn |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-Melody: | A3 . C4 . | B3 . G3 . | A3 . F3 . | E3 . C#3 . |
-Lyrics: | Tanz, tanz, Gras-mück-chen | dreh dich im Kreis | Tanz, tanz, Gras-mück-chen | das ist der Preis |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60

@@ -1,24 +1,21 @@
 **TRACK: Boombayah**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 124 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | F#m . . . | D . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 55
 
 [PCH] (Pre-Chorus - 2 Bars)
 Chords: | Bm . . . | C# . . . |
-@guitar | b2-f#2-b3 . . . | c#3-e3-g#3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | D . . . | Bm . . . | C# . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | b2-f#2-b3 . . . | c#3-e3-g#3 . . . | vel: 70
 
 [BR] (Bridge - 2 Bars)
 Chords: | D . . . | C# . . . |
-@guitar | d2-a2-d3 . . . | c#3-e3-g#3 . . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 45

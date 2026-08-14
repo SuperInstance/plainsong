@@ -1,22 +1,15 @@
 **TRACK: Oborozukiyo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Gentle, Nostalgic
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
-Melody: | A3 . C4 . | D4 . . . | F4 . E4 . | D4 . C4 . |
-Lyrics: | o-bo-ro-zu-ki-yo | ko-no-yo-no | yu-me-ka | sa-to-ka |
-@piano | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-Melody: | C4 . E4 . | F4 . . . | E4 . D4 . | C4 . . . |
-Lyrics: | a-ka-ne-ga-ta | ku-mo-no | ma-yo | ni-ta-da-yo-u |
-@piano | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
-Melody: | A3 . C4 . | E4 . . . | F4 . G4 . | A4 . . . |
-Lyrics: | o-bo-ro-zu-ki-yo | sa-yo-na-ra | a-su-mo | a-i-ma-sho-u |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50

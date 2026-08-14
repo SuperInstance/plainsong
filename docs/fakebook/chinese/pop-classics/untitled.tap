@@ -1,28 +1,21 @@
 **TRACK: 月亮代表我的心**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . |
-| C . . . | G . . . | C . . . | G . . . |
-@guitar | c3-e3-g3 . . . | e2-b2-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . |
-| C . . . | G . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | e2-b2-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-| F . . . | G . . . | C . . . | G . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 
 [B] (Bridge - 4 Bars)
 Chords: | Am . . . | Em . . . | F . . . | G . . . |
-@guitar | a2-c3-e3 . . . | e2-b2-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . |
-| C . . . | G . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | e2-b2-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50

@@ -1,20 +1,18 @@
 **TRACK: Rebel Without a Pause**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 101 | subdivision: 16th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 70
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 70
 
 [BR] (Breakdown - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 60

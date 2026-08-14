@@ -1,24 +1,21 @@
 **TRACK: I Think I'll Just Stay Here and Drink**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 110 | subdivision: 8th
 time: 4/4 | mood: Slow Country Shuffle
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | E . . . | A . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars, Final)
 Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3

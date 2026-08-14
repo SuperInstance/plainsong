@@ -1,24 +1,21 @@
 **TRACK: Wanted Dead or Alive**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d3-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d3-g3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 55
 
 [SOLO] (Solo Section - 8 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d3-g3 . . . | vel: 60

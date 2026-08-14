@@ -1,28 +1,18 @@
 **TRACK: The Shaanxi Opera Tune**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Solemn, narrative
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E . . . | Am . . . | G . . . |
-Melody: | A4 . C5 . | B4 . G#4 . | A4 . E4 . | D4 . E4 . |
-Lyrics: | 秦 腔 吼 起 | 黄 土 漫 天 | 千 年 故 事 | 在 心 间 |
-@piano | a2-e3-a3-c4 . . . | e2-g#2-b3-e4 . . . | a2-e3-a3-c4 . . . | g2-b2-d3-g3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | E . . . |
-Melody: | F4 . A4 . | G4 . E4 . | D4 . F4 . | E4 . B3 . |
-Lyrics: | 锣 鼓 喧 天 | 皮 影 摇 曳 | 唱 尽 悲 欢 | 古 调 绵 绵 |
-@piano | f2-a2-c3-f3 . . . | c2-e2-g2-c3 . . . | d2-f2-a2-d3 . . . | e2-g#2-b2-e3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | E . . . |
-Melody: | A4 . C5 . | F5 . E5 . | E5 . C5 . | B4 . G#4 . |
-Lyrics: | 啊 秦 腔 啊 | 黄 河 奔 流 | 吼 出 民 魂 | 永 不 朽 |
-@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f3 . . . | c2-e2-g2-c3 . . . | e2-g#2-b2-e3 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Am . . . | E . . . | Am . . . | E . . . |
-Melody: | A4 . C5 . | B4 . G#4 . | A4 . E4 . | B3 . E4 . |
-Lyrics: | 吼 出 民 魂 | 永 不 朽 | 永 不 朽 | 永 不 朽 |
-@piano | a2-e3-a3-c4 . . . | e2-g#2-b3-e4 . . . | a2-e3-a3-c4 . . . | e2-g#2-b3-e4 . . . | vel: 55

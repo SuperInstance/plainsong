@@ -1,24 +1,21 @@
 **TRACK: Going Down Slow**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Slow Blues
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E . . . | B7 . . . | E . . . |
-@guitar | a2-e3-a3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | e2-b3-e3 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | B7 . . . | A . . . | E . . . | B7 . . . |
-@guitar | b2-f#3-a3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | a2-e3-a3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 50

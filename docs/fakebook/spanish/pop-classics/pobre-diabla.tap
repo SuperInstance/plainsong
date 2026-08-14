@@ -1,24 +1,21 @@
 **TRACK: Pobre Diabla**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 95 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | G . . . | Bm . . . | G . . . | Bm . . . | G . . . | A . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | A . . . | Bm . . . | G . . . | G . . . | A . . . | Bm . . . | Bm . . . |
-@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Bm . . . | G . . . | Bm . . . | G . . . | Bm . . . | G . . . | A . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | G . . . | Em . . . | A . . . |
-@guitar | f#2-a2-c#3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | A . . . | Bm . . . | G . . . | G . . . | A . . . | Bm . . . | Bm . . . |
-@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | a

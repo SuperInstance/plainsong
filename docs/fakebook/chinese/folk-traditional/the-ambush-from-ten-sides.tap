@@ -1,28 +1,18 @@
 **TRACK: The Ambush from Ten Sides**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Dramatic, martial
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . |
-@pipa | d3-a3-d4 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | A . . . | Dm . . . | A . . . |
-Melody: | Bb3 . D4 . | A3 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . |
-@pipa | bb2-d3-f3 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . A4 . | G4 . F4 . E4 . | D4 . F4 . A4 . | E4 . D4 . C#4 . |
-Lyrics: | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . | (instrumental) . . . |
-@pipa | d3-a3-d4-f4 . . . | g2-bb2-d3-g3 . . . | d3-a3-d4-f4 . . . | a2-c#3-e3-a3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Dm . . . | A . . . |
-Melody: | D4 . . . | A3 . C#4 . |
-Lyrics: | (instrumental) . . . | (instrumental) . . . |
-@pipa | d3-a3-d4 . . . | a2-c#3-e3 . . . | vel: 40

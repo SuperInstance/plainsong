@@ -1,24 +1,21 @@
 **TRACK: West End Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 70 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | C7 . . . | F . . . | F#dim . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | f#2-a2-c3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 52
 
 [B1] (Bridge - 4 Bars)
 Chords: | C . . . | C7 . . . | F . . . | Fm . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-bb3 . . . | f2-a2-c3 . . . | f2-ab2-c3 . . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | C . . . | A7 . . . | Dm . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-f3 . . . | vel: 54
 
 [OUT] (Outro - 2 Bars)
 Chords: | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 48

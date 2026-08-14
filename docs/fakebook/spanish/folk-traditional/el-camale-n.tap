@@ -1,22 +1,15 @@
 **TRACK: El Camaleón**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . . . A4 . | E4 . . . G4 . | D4 . . . B3 . |
-Lyrics: | El ca-ma-le-ón cam-bia de co-lor | cuan-do se a-cues-ta jun-to a la flor | no es por va-ni-dad ni por al-go-más | es por su na-tu-ra-le-za y paz |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . . . A4 . | E4 . . . G4 . | D4 . . . B3 . |
-Lyrics: | ca-ma-le-ón, ca-ma-le-ón | mu-da su piel con la can-ción | ca-ma-le-ón, ca-ma-le-ón | bai-la con-migo en el ca-ñón |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . . . A4 . | E4 . . . G4 . | D4 . . . B3 . |
-Lyrics: | En la ra-ma ver-de se po-ne a so-ñar | con los o-jos ab-ier-tos al mar | si le pre-gun-tan di-rá que sí | que el ca-mu-fla-je es su ju-gar |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

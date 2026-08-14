@@ -1,24 +1,21 @@
 **TRACK: A Banda**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 132 | subdivision: 8th
 time: 2/4 | mood: Joyful
 
 [V1] (Verse - 8 Bars)
 Chords: | F . | F . | Bb . | F . | F . | C7 . | F . | F . |
-@guitar | f1-a1-c2 . | f1-a1-c2 . | bb1-d2-f2 . | f1-a1-c2 . | f1-a1-c2 . | c2-e2-g2 . | f1-a1-c2 . | f1-a1-c2 . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | F . | F . | Bb . | F . | F . | C7 . | F . | F . |
-@guitar | f1-a1-c2 . | f1-a1-c2 . | bb1-d2-f2 . | f1-a1-c2 . | f1-a1-c2 . | c2-e2-g2 . | f1-a1-c2 . | f1-a1-c2 . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . | F . | C7 . | F . | Bb . | F . | C7 . | F . |
-@guitar | bb1-d2-f2 . | f1-a1-c2 . | c2-e2-g2 . | f1-a1-c2 . | bb1-d2-f2 . | f1-a1-c2 . | c2-e2-g2 . | f1-a1-c2 . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . | A7 . | Dm . | A7 . |
-@guitar | d2-f2-a2 . | a1-c#2-e2 . | d2-f2-a2 . | a1-c#2-e2 . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | F . | F . | Bb . | F . | F . | C7 . | F . | F . |
-@guitar | f1-a1-c2 . | f1-a1-c2 . | bb1-d2-f2 . | f1-a1-c2 . | f1-a1-c2 . | c2-e2-g2 . | f1-a1-c2 . | f1-a1-c2 . | vel: 60

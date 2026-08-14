@@ -1,24 +1,21 @@
 **TRACK: No Surprises**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Haunting
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | C . . . |
-@guitar | f1-a1-c2 . . . | a1-c2-e2 . . . | d1-f1-a1 . . . | c1-e1-g1 . . . | vel: 40
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | C . . . |
-@guitar | f1-a1-c2 . . . | a1-c2-e2 . . . | d1-f1-a1 . . . | c1-e1-g1 . . . | vel: 40
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | C . . . |
-@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | c1-e1-g1 . . . | c1-e1-g1 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d1-f1-a1 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | c1-e1-g1 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | C . . . |
-@guitar | f1-a1-c2 . . . | a1-c2-e2 . . . | d1-f1-a1 . . . | c1-e1-g1 . . . | vel: 35

@@ -1,28 +1,21 @@
 **TRACK: I’m the Greatest Star**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Defiant
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 55
-| Fm . . . | Db . . . | Bbm . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 55
 
 [PRE] (Pre-Chorus - 4 Bars)
 Chords: | Ab . . . | Eb/G . . . | Fm . . . | C7 . . . |
-@guitar | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | c3-e3-g3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 65
-| Fm . . . | Db . . . | Gb . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | gb2-bb3-db4 . . . | c3-e3-g3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Ab/C . . . | Bbm . . . | C7 . . . |
-@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | bb2-db3-f3 . . . | c3-e3-g3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | Fm . . . |
-@guitar | f3-ab3-c4 . . . | db3-f3-ab3 . . . | bb2-db3-f3 . . . | f3-ab3-c4 . . . | vel: 50

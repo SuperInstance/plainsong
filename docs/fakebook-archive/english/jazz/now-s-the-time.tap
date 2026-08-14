@@ -1,30 +1,18 @@
 **TRACK: Now's the Time**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 132 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 12 Bars)
 Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-eb2 . . . | bb1-d2-f2 . . . | bb1-b1-d2-f2 . . . |
-| f1-a1-c2 . . . | d1-f#1-a1-c2 . . . | g1-b1-d2 . . . | c1-e1-g1-bb1 . . . |
-| f1-a1-c2 . . . | d1-f#1-a1-c2 . . . | g1-b1-d2 . . . | c1-e1-g1-bb1 . . . | vel: 55
 
 [V2] (Verse - 12 Bars)
 Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-eb2 . . . | bb1-d2-f2 . . . | bb1-b1-d2-f2 . . . |
-| f1-a1-c2 . . . | d1-f#1-a1-c2 . . . | g1-b1-d2 . . . | c1-e1-g1-bb1 . . . |
-| f1-a1-c2 . . . | d1-f#1-a1-c2 . . . | g1-b1-d2 . . . | c1-e1-g1-bb1 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#dim . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | f#1-a1-c2-eb2 . . . | c1-e1-g1-bb1 . . . | f1-a1-c2 . . . | c1-e1-g1-bb1 . . . | vel: 58
 
 [V3] (Verse - 12 Bars)
 Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-| F . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | f1-a1-c2 . . . |

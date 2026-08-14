@@ -1,26 +1,18 @@
 **TRACK: Perdido**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 152 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb6 . . . | Eb9 . . . | Bb6 . . . | F7 . . . |
-| Bb6 . . . | Eb9 . . . | Bb6 . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb6 . . . | Eb9 . . . | Bb6 . . . | F7 . . . |
-| Gm7 . . . | C7 . . . | F7 . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
-| g2-bb2-d3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | D7 . . . | D7 . . . | G7 . . . | G7 . . . |
-| C7 . . . | C7 . . . | F7 . . . | F7 . . . |
-@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
-| c2-e2-g2 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Bb6 . . . | Eb9 . . . | Bb6 . . . | F7 . . . |
-| Bb6 . . . | Eb9 . . . | Bb6 . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55

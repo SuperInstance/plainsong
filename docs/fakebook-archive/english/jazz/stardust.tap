@@ -1,24 +1,21 @@
 **TRACK: Stardust**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 80 | subdivision: 8th
 time: 4/4 | mood: Dreamy
 
 [V1] (Verse - 8 Bars)
 Chords: | Abmaj7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-@guitar | ab3-c4-eb4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-@guitar | f2-ab2-c3 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Ddim7 . . . | Ab/C . . . | F7 . . . |
-@guitar | db3-f3-ab3 . . . | d3-f3-ab3 . . . | c3-e3-ab3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Bbm7 . . . | Eb7 . . . | Ab . . . | Ab7 . . . |
-@guitar | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-@guitar | f2-ab2-c3 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | vel: 50

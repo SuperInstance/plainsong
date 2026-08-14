@@ -1,28 +1,18 @@
 **TRACK: La Truite (gentille truite)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 92 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . | A . . | D . . | A . . |
-Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | A4 . . . |
-Lyrics: | La truite gen - | -tille et jo - | -li - e, que | je vois tous les |
-@piano | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . | D . . | G . . | A . . |
-Melody: | G4 . B4 . | D5 . . . | G4 . B4 . | A4 . . . |
-Lyrics: | jours dans ce ruis - | -seau clair, elle | nage et elle - | -s'élance a - |
-@piano | g3-b3-d4 . . | d3-f#3-a3 . . | g3-b3-d4 . . | a2-c#3-e3 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . | Bm . . | G . . | A . . |
-Melody: | F#4 . A4 . | B4 . . . | G4 . B4 . | A4 . . . |
-Lyrics: | Ah! que la truite est - | -gen - ti - lle, | elle fait mon bon - | -heur, mon bon - |
-@piano | d3-f#3-a3 . . | b2-d3-f#3 . . | g3-b3-d4 . . | a2-c#3-e3 . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | D . . | A . D . |
-Melody: | D4 . . . | A4 . D4 . |
-Lyrics: | heur, mon bon - | -heur. |
-@piano | d3-f#3-a3 . . | a2-c#3-e3 . d3-f#3-a3 | vel: 50

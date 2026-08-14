@@ -1,28 +1,18 @@
 **TRACK: Il Piave (La leggenda del Piave)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Solemn, marching
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . |
-Melody: | F4 . D4 . | Eb4 . . . |
-Lyrics: | Il Pia- ve . mo- ri- gi- na- va |
-@piano | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | Bb . . . |
-Melody: | A4 . F4 . | D4 . F4 . |
-Lyrics: | e- ra mu- da e do- lo- ro- sa |
-@piano | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | Eb . . . |
-Melody: | D5 . C5 . | Bb4 . A4 . |
-Lyrics: | Ma il sol- da- to nel- la not- te |
-@piano | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | F . . . | Bb . . . |
-Melody: | Bb4 . D5 . | F5 . . . |
-Lyrics: | gri- dò: "A- van- zi, o Pia- ve!" |
-@piano | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60

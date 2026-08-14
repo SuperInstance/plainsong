@@ -1,28 +1,22 @@
 **TRACK: Voce 'e notte**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Traditional
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c2-e2 . . . | e2-b2-e3 . . . | b1-d2-f#2 . . . | vel: 55
 Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c2-e2 . . . | e2-b2-e3 . . . | b1-d2-f#2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c2-e2 . . . | e2-b2-e3 . . . | b1-d2-f#2 . . . | vel: 55
 Chords: | C . . . | G . . . | B7 . . . | Em . . . |
-@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | b1-d2-f#2 . . . | e2-b2-e3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | D7 . . . | G . . . | C . . . |
-@guitar | a1-c2-e2 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | vel: 60
 Chords: | B7 . . . | Em . . . | Am . . . | B7 . . . |
-@guitar | b1-d2-f#2 . . . | e2-b2-e3 . . . | a1-c2-e2 . . . | b1-d2-f#2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@guitar | e2-b2-e3 . . . | c2-e2-g2 . . . | g1-b1-d2 . . . | d1-f#1-a1 . . . | vel: 50
 Chords: | C . . . | B7 . . . | Em . . . | Em . . . |
-@guitar | c2-e2-g2 . . . | b1-d2-f#2 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

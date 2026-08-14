@@ -1,28 +1,21 @@
 **TRACK: Hejira**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 78 | subdivision: 8th
 time: 4/4 | mood: Reflective, driving
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
-        | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
-        | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [BR] (Bridge - 6 Bars)
 Chords: | F . . . | G . . . | Em7 . . . | Am . . . |
-        | Dm7 . . . | G . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 58
 
 [V3] (Final Verse - 8 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
-        | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 52
 
 [OUT] (Outro - 4 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Am/G . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 45

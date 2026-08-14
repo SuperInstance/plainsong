@@ -1,22 +1,15 @@
 **TRACK: Romeo and Juliet Fantasy Overture**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Tragic
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E . . . | F . . . | E . . . |
-Melody: | A3 . C4 . E4 . | B3 . D4 . E4 . | F4 . E4 . D4 . | C4 . B3 . . . |
-Lyrics: | fair ve - ro - na's | tale of woe un - | folds in shad - owed | streets of stone |
-@piano | a2-e3-a3 . c3-e3-a3 . | e2-g#3-b3 . e2-g#3-b3 . | f2-a2-c3 . f2-a2-c3 . | e2-g#2-b2 . e2-g#2-b2 . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | E . . . |
-Melody: | A4 . C5 . B4 . | A4 . G4 . F4 . | F4 . E4 . D4 . | E4 . . . . . . |
-Lyrics: | star - crossed lov - ers | meet in moon - lit | sighs and part - ing | tears |
-@piano | f2-a2-c3 . f2-a2-c3 . | c3-e3-g3 . c3-e3-g3 . | d2-f2-a2 . d2-f2-a2 . | e2-g#2-b2 . e2-g#2-b2 . | vel: 55
 
 [BR] (Bridge - 2 Bars)
 Chords: | Am . . . | F . . . |
-Melody: | E4 . C4 . A3 . | F4 . E4 . . . |
-Lyrics: | death's dark em - brace | ends the fray |
-@piano | a2-e3-a3 . c3-e3-a3 . | f2-a2-c3 . f2-a2-c3 . | vel: 40

@@ -1,20 +1,18 @@
 **TRACK: I Know You Got Soul**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 92 | subdivision: 16th
 time: 4/4 | mood: Grooving
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
-@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
-@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 68

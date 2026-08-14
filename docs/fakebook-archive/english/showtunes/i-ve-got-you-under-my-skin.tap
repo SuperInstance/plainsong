@@ -1,22 +1,20 @@
 **TRACK: I’ve Got You Under My Skin**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm7 . . . | Cm6 . . . | Cm7 . . . | Fm . . . | Fm7 . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | c3-eb3-g3-a3 . . . | c3-eb3-g3-bb3 . . . | f3-ab3-c4 . . . | f3-ab3-c4-eb4 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm7 . . . | Cm6 . . . | Cm7 . . . | Ab . . . | Abmaj7 . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3-bb3 . . . | c3-eb3-g3-a3 . . . | c3-eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | ab3-c4-eb4-g4 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Bb7 . . . | Eb . . . | Eb . . . | Ab . . . | D7 . . . | G7 . . . | G7 . . . |
-@guitar | f3-ab3-c4 . . . | bb3-d4-f4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | d4-f#4-a4 . . . | g3-b3-d4 . . . | g3-b3-d4 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Cm . . . | Fm . . . | Bb7 . . . | Eb . . . | Ab . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | c3-eb3-g3 . . . | f3-ab3-c4 . . . | bb3-d4-f4 . . . | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | d4-f#4-a4 . . . | g3-b3-d4 . . . | c3-e3-g3-bb3 . . . | vel: 58
 
 [

@@ -1,24 +1,21 @@
 **TRACK: Gerua**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb minor | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Romantic, Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Bbm . . . | Gb . . . |
-@guitar | b2-d3-f3 . . . | gb2-bb2-db3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Eb . . . | F . . . |
-@guitar | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bbm . . . | F . . . |
-@guitar | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 65
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Gb . . . | Eb . . . |
-@guitar | gb2-bb2-db3 . . . | eb2-g2-bb2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
-@guitar | b2-d3-f3 . . . | gb2-bb2-db3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55

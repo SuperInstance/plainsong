@@ -1,4 +1,6 @@
 **TRACK: Fotografia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 92 | subdivision: 8th
 time: 2/2 | mood: Bossa Nova
@@ -6,21 +8,14 @@ time: 2/2 | mood: Bossa Nova
 [V1] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
 Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | C7b9 . . . |
-@guitar | f1-ab1-eb2 . . . | bb1-db2-f2 . . . | eb1-g1-bb2 . . . | ab1-c2-eb2 . . . | vel: 50
-@guitar | db1-f2-ab2 . . . | d1-f2-ab2 . . . | g1-b1-f2 . . . | c1-e1-bb2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
 Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | C7b9 . . . |
-@guitar | f1-ab1-eb2 . . . | bb1-db2-f2 . . . | eb1-g1-bb2 . . . | ab1-c2-eb2 . . . | vel: 50
-@guitar | db1-f2-ab2 . . . | d1-f2-ab2 . . . | g1-b1-f2 . . . | c1-e1-bb2 . . . | vel: 50
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dbmaj7 . . . | C7b9 . . . | Fm7 . . . | Bbm7 . . . |
 Chords: | Eb7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7b9 . . . |
-@guitar | db1-f2-ab2 . . . | c1-e1-bb2 . . . | f1-ab1-eb2 . . . | bb1-db2-f2 . . . | vel: 55
-@guitar | eb1-g1-bb2 . . . | ab1-c2-eb2 . . . | d1-f2-ab2 . . . | g1-b1-f2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |
-@guitar | f1-ab1-eb2 . . . | bb1-db2-f2 . . . | eb1-g1-bb2 . . . | f1-ab1-eb2 . . . | vel: 45

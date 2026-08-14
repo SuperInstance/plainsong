@@ -9,7 +9,6 @@ compared. On 3.10 the comparison is skipped and only the shape is checked.
 
 from __future__ import annotations
 
-import glob
 import sys
 import unittest
 from pathlib import Path
@@ -53,16 +52,30 @@ class TestMatchesTomllib(unittest.TestCase):
             with self.subTest(case=index, text=text[:40]):
                 self.assertEqual(_toml.loads(text), tomllib.loads(text))
 
+    def _repository_toml(self) -> list[Path]:
+        """Every TOML file we ship, wherever it lives.
+
+        Discovered rather than listed: this test named `specs/` explicitly and
+        broke the day those files moved inside the package, which is the wrong
+        thing for a differential test to be sensitive to.
+        """
+        return sorted(
+            path
+            for path in REPO.rglob("*.toml")
+            if "legacy" not in path.parts and ".venv" not in path.parts
+        )
+
     def test_every_toml_file_in_the_repository(self):
-        paths = sorted(glob.glob(str(REPO / "specs" / "*.toml"))) + [str(REPO / "pyproject.toml")]
+        paths = self._repository_toml()
         self.assertGreater(len(paths), 3, "expected several TOML files to check against")
         for path in paths:
-            with self.subTest(path=Path(path).name):
-                text = Path(path).read_text(encoding="utf-8")
+            with self.subTest(path=path.name):
+                text = path.read_text(encoding="utf-8")
                 self.assertEqual(_toml.loads(text), tomllib.loads(text))
 
     def test_binary_load_matches(self):
-        path = REPO / "specs" / "core-notation.toml"
+        path = REPO / "tapscript" / "spec_files" / "core-notation.toml"
+        self.assertTrue(path.is_file(), f"{path} is missing")
         with path.open("rb") as first, path.open("rb") as second:
             self.assertEqual(_toml.load(first), tomllib.load(second))
 

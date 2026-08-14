@@ -1,28 +1,18 @@
 **TRACK: Jindo Ae Ga**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Gentle, longing
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . . . |
-Lyrics: | ji - n do ae ga | ttwi - neun dal - bam | eo - du un ga - e | nal su - eop - seo |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Am . . . | F . . . | E7 . . . |
-Melody: | D4 . F4 . | E4 . C4 . | A3 . C4 . | B3 . . . |
-Lyrics: | geu - ri - un ma - eum | seul - peun no - rae | ji - n do ae ga | bo - go sip - da |
-@piano | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 52
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | C . . . | E7 . . . |
-Melody: | F4 . A4 . | G4 . E4 . | C4 . D4 . | B3 . . . |
-Lyrics: | a - reum - daun | ji - n do | ga - e | bul - leo - ra |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | E7 . . . | Am . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . B3 . | A3 . . . |
-Lyrics: | nae sa - rang | geu - dae - ye | gi - eok | a - ni - ga |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 53

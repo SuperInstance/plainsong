@@ -1,22 +1,15 @@
 **TRACK: Old King Cole**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Merry
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | G4 . A4 B4 | C5 . . B4 | A4 . G4 A4 | B4 . . . |
-Lyrics: | Old King Cole was a mer-ry old soul, and a mer-ry old soul was he |
-@piano | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | G4 . A4 B4 | C5 . . B4 | A4 . G4 A4 | G4 . . . |
-Lyrics: | He called for his pipe, and he called for his bowl, and he called for his fid-dlers three |
-@piano | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d3-f#3-a3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | E4 . G4 . | D4 . . . |
-Lyrics: | Fid-dle-dum, fid-dle-dee, fid-dle-dum, fid-dle-dee |
-@piano | c3-e3-g3 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | vel: 60

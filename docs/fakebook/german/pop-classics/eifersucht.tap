@@ -1,24 +1,21 @@
 **TRACK: Eifersucht**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . |
-@guitar | d3-a3-d4 . . . | bb2-f3-bb3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . |
-@guitar | d3-a3-d4 . . . | bb2-f3-bb3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . |
-@guitar | f2-c3-f3 . . . | c3-g3-c4 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | A . . . |
-@guitar | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Dm . . . |
-@guitar | d3-a3-d4 . . . | vel: 50

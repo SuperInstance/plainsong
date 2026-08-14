@@ -1,22 +1,15 @@
 **TRACK: Freiheit, die ich meine**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | G . . . |
-Melody: | F#4 . A4 . | E4 . F#4 . | D4 . F#4 . | B4 . A4 . |
-Lyrics: | Frei-heit die ich | mei-ne, die mein | Herz er-füllt, | komm mit dei-nem |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | F#4 . A4 . | E4 . D4 . | D4 . F#4 . | E4 . D4 . |
-Lyrics: | Schei-ne, sü-ßes | Him-mels-bild, | dass ich nicht mehr | klag-e, |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | D . . . |
-Melody: | B4 . A4 . | F#4 . D4 . | E4 . F#4 . | D4 . . . |
-Lyrics: | wenn ich nicht mehr | wei-ne, | dann bist du mir | nah. |
-@piano | g2-b3-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 55

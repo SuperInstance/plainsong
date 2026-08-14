@@ -1,20 +1,18 @@
 **TRACK: Lucille**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 58
 
 [BR] (Bridge - 8 Bars)
 Chords: | F7 . . . | F7 . . . | Bb . . . | Bb . . . | F7 . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | f2-a2-eb3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 62
 
 [OUT] (Outro - 8 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . | Bb . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | eb3-g3-b

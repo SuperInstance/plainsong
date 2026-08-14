@@ -1,26 +1,22 @@
 **TRACK: Why I Sing the Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 78 | subdivision: 8th
 time: 12/8 | mood: Swinging Blues
 
 [V1] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 12 Bars)
 Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V3] (Verse - 12 Bars)
 Chords: | F . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | f3-a3-c4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f3-a3-c4 . . . | vel: 55
 
 [V4] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50
 Chords: | F . . . | F . . . | Bb . . . | Bb . . . |
-@guitar | f3-a3-c4 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50

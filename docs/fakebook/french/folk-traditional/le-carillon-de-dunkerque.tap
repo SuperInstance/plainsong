@@ -1,22 +1,15 @@
 **TRACK: Le Carillon de Dunkerque**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: C | tempo: 100 | subdivision: 8th  
 time: 4/4 | mood: Joyful, Folk  
 
 [V1] (Verse - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | G . . . |  
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |  
-Lyrics: | Quand son - ne le ca - ril - lon | De Dun - ker - que, | Les pé - cheurs re - vien - nent | Au port, au port |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50  
 
 [V2] (Verse - 4 Bars)  
 Chords: | F . . . | C . . . | G . . . | C . . . |  
-Melody: | A3 . C4 . | G3 . E4 . | D4 . B3 . | C4 . . . |  
-Lyrics: | En - tend - ez le doux son | Qui ré - son - ne | Sur la mer et les flots | Si bleus |  
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50  
 
 [CH] (Chorus - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | G . . . |  
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . . . |  
-Lyrics: | Car - il - lon, car - il - lon, | Son - ne gai - ment | Pour tous ceux qui t'ai - ment | Tou - jours |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

@@ -1,22 +1,15 @@
 **TRACK: O Haupt voll Blut und Wunden**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | Am . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | A4 . B4 . | D4 . B3 . | G3 . B3 . |
-Lyrics: | O Haupt voll Blut und Wun - den, | voll Schmerz und vol - ler Hohn, | o Haupt, zu Spott ge - bun - den | mit ei - ner Dor - nen - kron |
-@piano | e2-b2-e3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | g1-d2-g2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Em . . . | B7 . . . |
-Melody: | B3 . D4 . | G4 . E4 . | E4 . D4 . | D4 . B3 . |
-Lyrics: | du Haupt, sonst schön ge - zie - ret | mit höch - ster Ehr und Zier, | jetzt a - ber hoch schan - die - ret, | ge - grüß - et seist du mir |
-@piano | c2-e2-g2 . . . | g1-b1-d2 . . . | e2-b2-e3 . . . | b1-d2-f#2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | Am . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | A4 . B4 . | D4 . B3 . | G3 . B3 . |
-Lyrics: | du ed - les An - ge - sich - te, | da - für sonst schrickt und scheut | das gro - ße Welt - ge - rich - te, | wie bist du so be - speit |
-@piano | e2-b2-e3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | g1-d2-g2 . . . | vel: 45

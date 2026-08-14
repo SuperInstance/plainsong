@@ -1,28 +1,18 @@
 **TRACK: Lord Thomas and Fair Ellender**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | E4 . . . |
-Lyrics: | Lord Thom - as he | rode home one | day, his | heart was full of |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | E4 . . . |
-Lyrics: | woe, for | Fair El - len - der | was a - | way, a - |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | F4 . E4 . |
-Lyrics: | Oh, | moth - er, | moth - er, | tell to |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | G . . . |
-Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . . . |
-Lyrics: | me, | which | one shall | I take? |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 55

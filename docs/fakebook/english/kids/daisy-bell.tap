@@ -1,16 +1,12 @@
 **TRACK: Daisy Bell**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
-Melody: | F4 . A4 . | C5 . . . | A4 . F4 . | E4 . . . |
-Lyrics: | Dai - sy, Dai - sy, | give me your ans - wer, do. | I'm half cra - zy, | all for the love of you. |
-@piano | f2-a2-c3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3 . . . | c2-e2-g2-bb2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
-Melody: | D5 . C5 . | A4 . F4 . | G4 . E4 . | F4 . . . |
-Lyrics: | It won't be a sty - lish mar - riage, | I can't af - ford a car - riage. | But you'll look sweet up - on the seat | of a bicy - cle built for two. |
-@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55

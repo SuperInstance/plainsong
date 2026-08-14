@@ -1,34 +1,21 @@
 **TRACK: Cielito Lindo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . |
-Melody: | E4 . G4 . | D4 . F4 . |
-Lyrics: | De la Sie- | rra Mo- |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . |
-Melody: | E4 . G4 . | C4 . E4 . |
-Lyrics: | rra vie- | nen ba- |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G7 . . . |
-Melody: | A4 . G4 . | E4 . D4 . |
-Lyrics: | Can- ta y no | llo- res, |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [CH2] (Chorus - 4 Bars)
 Chords: | C . . . | G7 . . . |
-Melody: | C4 . E4 . | G4 . C5 . |
-Lyrics: | por- que can- | tan- do a- |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | C . . . | C . . . |
-Melody: | E4 . G4 . | C4 . . . |
-Lyrics: | le- gra- | Dios. |
-@piano | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50

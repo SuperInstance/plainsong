@@ -1,22 +1,15 @@
 **TRACK: Vom Bäumlein, das andere Blätter hat**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | D4 . F4 . | E4 . C4 . |
-Lyrics: | Ich hab ein Bäum-lien | das an - dre Blät-ter | hat, das an - dre Blät - | ter hat. |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | D4 . F4 . | E4 . C4 . |
-Lyrics: | Die ei - ne Blatt | ist Sil - ber, | das an - dre ist von | Gold, das an - dre |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . |
-Melody: | Bb3 . D4 . | A3 . C4 . | G3 . E4 . | F3 . . . |
-Lyrics: | Und wer das Bäum - lien | sieht, der freut sich | al - le - zeit, | ja al - le - zeit. |
-@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 55

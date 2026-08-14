@@ -1,16 +1,12 @@
 **TRACK: Messiah, HWV 56, "Hallelujah Chorus"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-Melody: | D4 . F#4 . | A4 . . . | B4 . A4 . | G4 . F#4 . |
-Lyrics: | Hal - le - lu - jah! | Hal - le - lu - jah! | Hal - le - lu - jah! | Hal - le - lu - jah! |
-@piano | d2-f#2-a2-d3 . . . | a1-c#2-e2-a2 . . . | b1-d2-f#2-b2 . . . | g1-b1-d2-g2 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | A . . . |
-Melody: | D4 . D4 . | G4 . F#4 . | E4 . D4 . | C#4 . D4 . |
-Lyrics: | For the Lord God om - ni - po - tent reign - eth, | Hal - le - lu - jah! Hal - le - lu - jah! | Hal - le - lu - jah! Hal - le - lu - jah! | Hal - le - lu - jah! Hal - le - lu - jah! |
-@piano | d2-f#2-a2-d3 . . . | g1-b1-d2-g2 . . . | d2-f#2-a2-d3 . . . | a1-c#2-e2-a2 . . . | vel: 65

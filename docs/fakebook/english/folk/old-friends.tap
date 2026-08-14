@@ -1,24 +1,21 @@
 **TRACK: Old Friends**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
-@guitar | d3-f#3-a3 . . | a2-c#3-e3 . . | b2-d3-f#3 . . | f#2-a2-c#3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | e2-g2-b2 . . | a2-c#3-e3 . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
-@guitar | d3-f#3-a3 . . | a2-c#3-e3 . . | b2-d3-f#3 . . | f#2-a2-c#3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | e2-g2-b2 . . | a2-c#3-e3 . . | vel: 50
 
 [BR] (Bridge - 4 Bars)
 Chords: | G . . | D . . | A . . | A . . |
-@guitar | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | a2-c#3-e3 . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
-@guitar | d3-f#3-a3 . . | a2-c#3-e3 . . | b2-d3-f#3 . . | f#2-a2-c#3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | e2-g2-b2 . . | a2-c#3-e3 . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . | G . . | D . . | D . . |
-@guitar | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | d3-f#3-a3 . . | vel: 45

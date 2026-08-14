@@ -1,16 +1,12 @@
 **TRACK: The Wedding Dress**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 84 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . |
-Melody: | B3 . D4 . | A3 . . . | G3 . B3 . | E4 . . . |
-Lyrics: | She wore a white dress | on her wed-ding day | with flow-ers in her hair | and a smile so gay |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | D4 . . . | B3 . D4 . | G3 . . . |
-Lyrics: | Oh the wed-ding dress | so white and fair | she will keep it al-ways | in her mem-o-ry there |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55

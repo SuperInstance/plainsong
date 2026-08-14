@@ -1,23 +1,21 @@
 **TRACK: I Got Rhythm**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 240 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Gm . . . | Gm . . . | Cm . . . | F . . . | Bb . . . | F . . . |
-@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Gm . . . | Gm . . . | Cm . . . | F . . . | Bb . . . | F . . . |
-@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | Cm . . . | F . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | b2-d3-f3 . . . | b2-d3-f3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Gm . . . | Gm . . . | Cm . . . | F . . . | Bb . . . | F . . . |
-@guitar | b2-d3-f3 . . . | b2-d3-f3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Gm . . . | Gm . . . | Cm . . . | F . . . | Bb . . . | F .

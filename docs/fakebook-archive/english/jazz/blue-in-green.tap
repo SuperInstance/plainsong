@@ -1,23 +1,21 @@
 **TRACK: Blue in Green**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 54 | subdivision: 8th
 time: 3/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm7 . . | F7 . . | Bbmaj7 . . | Ebmaj7 . . | Am7b5 . . | D7alt . . | Dbmaj7 . . | Dm7b5 G7b9 . |
-@guitar | c4-eb4-g4-bb4 . . | f3-a3-c4-eb4 . . | bb2-d3-f3-a3 . . | eb3-g3-bb3-d4 . . | a2-c3-eb3-g3 . . | d3-f#3-a3-c4 . . | db3-f3-ab3-cb4 . . | d3-f3-ab3 . . g2-b3-d4-f4 | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm7 . . | F7 . . | Bbmaj7 . . | Ebmaj7 . . | Am7b5 . . | D7alt . . | Dbmaj7 . . | Cm7 . . |
-@guitar | c4-eb4-g4-bb4 . . | f3-a3-c4-eb4 . . | bb2-d3-f3-a3 . . | eb3-g3-bb3-d4 . . | a2-c3-eb3-g3 . . | d3-f#3-a3-c4 . . | db3-f3-ab3-cb4 . . | c3-eb3-g3-bb3 . . | vel: 45
 
 [B1] (Bridge - 4 Bars)
 Chords: | Fm7 . . | Bb7 . . | Ebmaj7 . . | Am7b5 D7alt . . |
-@guitar | f3-ab3-c4-eb4 . . | bb2-d3-f3-ab3 . . | eb3-g3-bb3-d4 . . | a2-c3-eb3-g3 . . d3-f#3-a3-c4 | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Cm7 . . | F7 . . | Bbmaj7 . . | Ebmaj7 . . | Am7b5 . . | D7alt . . | Dbmaj7 . . | Cm7 . . |
-@guitar | c4-eb4-g4-bb4 . . | f3-a3-c4-eb4 . . | bb2-d3-f3-a3 . . | eb3-g3-bb3-d4 . . | a2-c3-eb3-g3 . . | d3-f#3-a3-c4 . . | db3-f3-ab3-cb4 . . | c3-eb3-g3-bb3 . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cm7 . . | F7 . . | B

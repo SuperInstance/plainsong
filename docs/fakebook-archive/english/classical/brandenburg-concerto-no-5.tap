@@ -1,22 +1,15 @@
 **TRACK: Brandenburg Concerto No. 5 - Allegro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 16th
 time: 2/2 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | D5 . F#5 . A5 . . . | A4 . C#5 . E5 . . . |
-Lyrics: | la la la la la la la la | la la la la la la la la |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . |
-Melody: | B4 . D5 . G5 . . . | D5 . F#5 . A5 . . . |
-Lyrics: | fa la la la fa la la la | fa la la la fa la la la |
-@piano | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | Bm . . . | F# . . . |
-Melody: | F#5 . A5 . B5 . . . | C#5 . E5 . F#5 . . . |
-Lyrics: | lu lu lu lu lu lu lu lu | lu lu lu lu lu lu lu lu |
-@piano | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | vel: 60

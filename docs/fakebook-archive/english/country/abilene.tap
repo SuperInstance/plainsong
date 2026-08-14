@@ -1,26 +1,18 @@
 **TRACK: Abilene**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | C . . . | F . . . | C . . . |
-| C . . . | F . . . | G . . . | G . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
-@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | C . . . | F . . . | C . . . |
-| C . . . | F . . . | G . . . | C . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
-@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-| F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | G . . . | C . . . | G . . . |
-@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

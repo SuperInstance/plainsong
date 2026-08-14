@@ -1,16 +1,12 @@
 **TRACK: The Spring Rain**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | A3 . C4 . |
-Lyrics: | The spring rain falls soft - ly down, | On roof and field and tree, | It washes all the dust a - way, | And brings new life to me. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A4 . G4 . | E4 . C4 . | D4 . E4 . | C4 . . . |
-Lyrics: | Pitter - patter, drop by drop, | The rain sings its sweet tune, | Pitter - patter, ne - ver stop, | Till the sun comes out soon. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50

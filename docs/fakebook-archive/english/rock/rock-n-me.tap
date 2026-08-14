@@ -1,24 +1,21 @@
 **TRACK: Rock'n Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 130 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | D . . . | E . . . | E . . . |
-@guitar | d3-a3-d4 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 60

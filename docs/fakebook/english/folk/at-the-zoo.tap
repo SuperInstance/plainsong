@@ -1,27 +1,21 @@
 **TRACK: At the Zoo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Bouncy
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-       | G . . . | C . . . | G . . . | D . . . |
-@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-       | G . . . | C . . . | G . . . | D . . . |
-@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-       | D . . . | C . . . | G . . . | D . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | Am . . . | D . . . | D . . . |
-@guitar | e2-g2-b2 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | G . . . |
-@guitar | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 45

@@ -1,24 +1,21 @@
 **TRACK: Raataan Lambiyan**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 52
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [IN] (Instrumental Break - 2 Bars)
 Chords: | Gm . . . | Eb . . . |
-@guitar | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | vel: 45
 
 [BR] (Bridge - 2 Bars)
 Chords: | F . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 55

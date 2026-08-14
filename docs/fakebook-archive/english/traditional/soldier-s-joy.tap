@@ -1,16 +1,12 @@
 **TRACK: Soldier's Joy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | A4 . . . |
-Lyrics: | I'm . a . | lone . and . | far . from . | home . . . |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | G4 . B4 . | A4 . F#4 . | E4 . . . |
-Lyrics: | Sol . dier's | joy . and . | sol . dier's | glee . . . |
-@piano | d3-f#3-a3 . . . | g3-b3-d4 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65

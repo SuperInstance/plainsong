@@ -11,7 +11,7 @@ tags = ["core"]
 [[check]]
 id = "cli"
 kind = "command"
-run = "python3 -m tapscript --version"
+run = "{python} -m tapscript --version"
 description = "The CLI runs and reports its version"
 
 [[check]]

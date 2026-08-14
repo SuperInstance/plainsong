@@ -1,22 +1,15 @@
 **TRACK: Kappa Nagashi**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gm | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Gentle, Flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Gm . . | D7 . . | Gm . . | D7 . . |
-Melody: | G3 . Bb3 . | A3 . F3 . | G3 . Bb3 . | A3 . F3 . |
-Lyrics: | ka - ppa na - ga - shi | ka - ppa na - ga - shi | a - wa - ni no - re | ka - ppa na - ga - shi |
-@piano | g2-bb2-d3 . . | d2-f#2-a2-c3 . . | g2-bb2-d3 . . | d2-f#2-a2-c3 . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Eb . . | Bb . . | F . . | D7 . . |
-Melody: | Eb3 . G3 . | D3 . F3 . | C3 . A3 . | A3 . F#3 . |
-Lyrics: | yu - u - re - i no ko | ta - ma - shi - i yo | na - ga - re ni ma - ka - se | ka - ppa na - ga - shi |
-@piano | eb2-g2-bb2 . . | bb1-d2-f2 . . | f1-a1-c2 . . | d2-f#2-a2-c3 . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gm . . | Cm . . | Gm . . | D7 . . |
-Melody: | G3 . Bb3 . | C4 . Eb4 . | D4 . Bb3 . | A3 . F#3 . |
-Lyrics: | ka - ppa yo ka - ppa | na - ga - re ni no - tte | hi - ga - e - ru yu - u - hi | ka - e - ro - u yo |
-@piano | g2-bb2-d3 . . | c2-eb2-g2 . . | g2-bb2-d3 . . | d2-f#2-a2-c3 . . | vel: 52

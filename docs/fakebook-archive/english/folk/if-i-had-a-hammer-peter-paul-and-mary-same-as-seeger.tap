@@ -1,24 +1,21 @@
 **TRACK: If I Had a Hammer**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | C . . . | F . . . | C . . . | Dm . . . | C . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | C . . . | F . . . | C . . . | Dm . . . | C . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | C . . . | F . . . | C . . . | Dm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | F . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | f2-a2-c3 . . . | vel: 50

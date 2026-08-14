@@ -1,28 +1,18 @@
 **TRACK: Shenandoah (long haul)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Gentle, rolling
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | G . . . |
-Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | G4 . A4 . |
-Lyrics: | Oh Shen-an-doah, | I long to hear you | A-way you roll-ing | riv-er |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | D . . . |
-Melody: | A4 . F#4 . | E4 . D4 . | D4 . F#4 . | A4 . . . |
-Lyrics: | A-way, I'm bound to | go 'cross the wide | Mis-sou-ri | |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 52
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | G . . . |
-Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | G4 . A4 . |
-Lyrics: | Oh Shen-an-doah, | I love your daugh-ter | A-way you roll-ing | riv-er |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | g2-b3-d3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | D . . . |
-Melody: | A4 . F#4 . | E4 . D4 . | D4 . F#4 . | A4 . . . |
-Lyrics: | A-way, I'm bound to | go 'cross the wide | Mis-sou-ri | |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 52

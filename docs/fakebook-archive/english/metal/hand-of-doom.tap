@@ -1,24 +1,21 @@
 **TRACK: Hand of Doom**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 70 | subdivision: 8th
 time: 4/4 | mood: Heavy
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | C . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | E . . . | E . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | F . . . | E . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3

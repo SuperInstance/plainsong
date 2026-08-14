@@ -1,24 +1,21 @@
 **TRACK: Yellow Ledbetter**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 72 | subdivision: 8th
 time: 6/4 | mood: Melancholic
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . . . | B . . . . . | A . . . . . | E . . . . . |
-@guitar | e2-b3-e4 . . . . . | b2-f#3-b3 . . . . . | a2-e3-a3 . . . . . | e2-b3-e4 . . . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . . . | B . . . . . | A . . . . . | E . . . . . |
-@guitar | e2-b3-e4 . . . . . | b2-f#3-b3 . . . . . | a2-e3-a3 . . . . . | e2-b3-e4 . . . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C#m . . . . . | A . . . . . | E . . . . . | B . . . . . |
-@guitar | c#3-g#3-c#4 . . . . . | a2-e3-a3 . . . . . | e2-b3-e4 . . . . . | b2-f#3-b3 . . . . . | vel: 65
 
 [BR] (Bridge - 2 Bars)
 Chords: | A . . . . . | B . . . . . |
-@guitar | a2-e3-a3 . . . . . | b2-f#3-b3 . . . . . | vel: 45
 
 [OUT] (Outro - 2 Bars)
 Chords: | E . . . . . | E . . . . . |
-@guitar | e2-b3-e4 . . . . . | e2-b3-e4 . . . . . | vel: 40

@@ -1,22 +1,15 @@
 **TRACK: Lobt Gott, ihr Christen allzugleich**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G4 . A4 B4 | D5 . . B4 | G4 . A4 B4 | A4 . . G4 |
-Lyrics: | Lobt Gott, ihr Chris - ten | all - zu - gleich | in sei - nem Him - mel | reich und hoch |
-@piano | g2-b3-d4 . . . | d2-f#3-a3 . . . | g2-b3-d4 . . . | d2-f#3-a3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | D . . . |
-Melody: | E4 . G4 A4 | G4 . . E4 | E4 . G4 A4 | F#4 . . D4 |
-Lyrics: | Heut schließt er wie - der | auf die Tür | zum schö - nen Pa - ra | dies schon hier |
-@piano | c3-e3-g3 . . . | g2-b3-d4 . . . | c3-e3-g3 . . . | d2-f#3-a3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | B4 . D5 . | C5 . . A4 | B4 . D5 . | G4 . . . |
-Lyrics: | Hal - le - lu - ja | singt mit Schall | Gott dankt, er - freut | euch all |
-@piano | g2-b3-d4 . . . | c3-e3-g3 . . . | g2-b3-d4 . . . | d2-f#3-a3 . . . | vel: 60

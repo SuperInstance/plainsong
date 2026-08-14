@@ -1,22 +1,15 @@
 **TRACK: Heidenröslein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | C5 . . . | F4 . A4 . | G4 . . . |
-Lyrics: | Sah ein | Knab' ein | Rös-lein | stehn, |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | C5 . . . | B4 . A4 . | G4 . . . |
-Lyrics: | Rös-lein | auf der | Hei-den, |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | C5 . . . | D5 . C5 . | B4 . . . |
-Lyrics: | war so jung | und mor-gen-schön, |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55

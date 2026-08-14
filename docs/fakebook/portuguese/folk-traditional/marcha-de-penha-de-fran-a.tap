@@ -1,28 +1,18 @@
 **TRACK: Marcha de Penha de França**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 112 | subdivision: 8th
 time: 2/4 | mood: Joyful March
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | C#4 . E4 . |
-Lyrics: | Vou à Penha de Fran-ça | com a flor na mão | Vou à Penha de Fran-ça | com o cora-ção |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Can-to com ale-gri-a | a Deus e a São João | Pe-na de Fran-ça é mi-nha | guia e pro-te-ção |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-Melody: | A4 . A4 . | G4 . E4 . | F4 . D4 . | C#4 . E4 . |
-Lyrics: | Mar-cha-a-a, mar-cha-a-a | com fé e com a-mor | Pa-ra a Penha de Fran-ça | nos-so Sal-va-dor |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [CH2] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-Melody: | A4 . A4 . | G4 . E4 . | F4 . D4 . | C#4 . D4 . |
-Lyrics: | Mar-cha-a-a, mar-cha-a-a | com fé e com a-mor | Pe-na de Fran-ça é nos-sa | luz e res-plan-dor |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 65

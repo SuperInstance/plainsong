@@ -1,27 +1,24 @@
 **TRACK: Blue Jean**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 60
 
 [CH] (Chorus - 6 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . | D . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 70
 
 [B] (Bridge - 4 Bars)
 Chords: | Bm . . . | E . . . | Bm . . . | E . . . |
-@guitar | b1-d2-f#2 . . . | e2-g#2-b2 . . . | b1-d2-f#2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 60
 
 [CH] (Chorus - 6 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . | D . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 70
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | E

@@ -1,24 +1,21 @@
 **TRACK: Afuera**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . . | C . . . |
-@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | C . . . |
-@guitar | d2-a2-d3 . . . | c3-e3-g3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | D . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 50

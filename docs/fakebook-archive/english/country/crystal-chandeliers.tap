@@ -1,24 +1,21 @@
 **TRACK: Crystal Chandeliers**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Country Waltz
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | B7 . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [B] (Bridge - 4 Bars)
 Chords: | F#7 . . . | B7 . . . | E . . . | B7 . . . |
-@guitar | f#2-a#2-c#3-e3 . . . | b2-d#3-f#3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b2-d#3-f#3 . . . | vel: 50

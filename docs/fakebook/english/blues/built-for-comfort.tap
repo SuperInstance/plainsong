@@ -1,24 +1,21 @@
 **TRACK: Built for Comfort**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Swampy
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 52
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E . . . | A . . . | B7 . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b1-d#2-f#2 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | C#m . . . | B7 . . . |
-@guitar | c#3-e3-g#3 . . . | b1-d#2-f#2 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 58

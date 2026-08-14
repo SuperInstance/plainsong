@@ -8,8 +8,10 @@ deliver and the checks that prove it. Three things read them:
   change helped, and undo it when it did not.
 * Contributors -- adding a capability means adding a spec that fails first.
 
-Specs live in ``specs/`` in the repository and in ``<workspace>/specs`` for
-ones the build agent writes while tailoring an install.
+The specs that ship live in ``tapscript/spec_files/`` -- inside the package,
+because a wheel carries only what is under it. A project may add its own in
+``specs/``, and the build agent writes more into ``<workspace>/specs`` while
+tailoring an install.
 """
 
 from __future__ import annotations
@@ -17,6 +19,7 @@ from __future__ import annotations
 import importlib
 import shutil
 import subprocess
+import sys
 import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
@@ -98,7 +101,12 @@ class Check:
             return False, f"missing: {self.run}"
 
         if self.kind == "command":
-            argv = self.run.split()
+            # `{python}` is the interpreter actually running, not whatever
+            # `python3` happens to resolve to on PATH. A spec that shelled out to
+            # `python3` failed for everyone in a virtualenv or a pipx install,
+            # reporting "No module named tapscript" about a package that was
+            # installed perfectly well -- just not into that interpreter.
+            argv = self.run.replace("{python}", sys.executable).split()
             if not argv:
                 return False, "no command given"
             if not shutil.which(argv[0]):
@@ -208,9 +216,21 @@ def _load_spec_file(path: Path) -> Spec | None:
     )
 
 
+def builtin_spec_directory() -> Path:
+    """The specs that ship with the package.
+
+    They live inside `tapscript/` rather than in a `specs/` directory beside it
+    because a wheel only carries what is under the package. Kept outside, a
+    pip-installed `tapscript spec` found nothing and said "no specs found" --
+    the self-verification the whole design leans on, quietly doing nothing for
+    everybody who did not clone the repository.
+    """
+    return Path(__file__).resolve().parent / "spec_files"
+
+
 def spec_directories(paths: Paths | None = None) -> list[Path]:
     paths = paths or default_paths()
-    directories = []
+    directories = [builtin_spec_directory()]
     if paths.project_root:
         directories.append(paths.project_root / "specs")
     directories.append(paths.workspace / "specs")

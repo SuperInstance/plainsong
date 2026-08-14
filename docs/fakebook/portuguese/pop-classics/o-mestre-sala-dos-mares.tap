@@ -1,24 +1,21 @@
 **TRACK: O Mestre Sala dos Mares**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | C . . . | G . . . | Am . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . | F . . . | G . . . | C . . . | C . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | E7 . . . | E7 . . . | Am . . . | G . . . |
-@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | C . . . | G . . . | Am . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . .

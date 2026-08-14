@@ -1,26 +1,18 @@
 **TRACK: Ue o Muite Arukou**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
-| Gm . . . | Cm . . . | F7 . . . | F7 . . . |
-@guitar | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | eb2-g2-bb2 . . . | bb1-f2-bb2 . . . | vel: 55
-@guitar | g1-d2-g2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
-| Gm . . . | Cm . . . | F7 . . . | F7 . . . |
-@guitar | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | eb2-g2-bb2 . . . | bb1-f2-bb2 . . . | vel: 55
-@guitar | g1-d2-g2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Bb . . . | Gm . . . |
-| Cm . . . | F7 . . . | Bb . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-f2-bb2 . . . | g1-d2-g2 . . . | vel: 60
-@guitar | c2-eb2-g2 . . . | f1-a1-c2 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | Cm . . . | F7 . . . | F7 . . . |
-@guitar | g1-d2-g2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 50

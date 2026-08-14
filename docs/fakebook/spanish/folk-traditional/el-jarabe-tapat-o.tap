@@ -1,22 +1,15 @@
 **TRACK: El Jarabe Tapatío**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D major | tempo: 120 | subdivision: 8th
 time: 6/8 | mood: Festive
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . . . | A7 . . . . . |
-Melody: | D4 . . F#4 . . | A4 . . F#4 . . |
-Lyrics: | (instrumental) |
-@piano | d3-f#3-a3 . . . . . | a2-c#3-e3 . . . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . . . | A7 . . . . . |
-Melody: | D4 . . E4 . . | F#4 . . E4 . . |
-Lyrics: | (instrumental) |
-@piano | d3-f#3-a3 . . . . . | a2-c#3-e3 . . . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . . . | D . . . . . |
-Melody: | B4 . . A4 . . | F#4 . . D4 . . |
-Lyrics: | (instrumental) |
-@piano | g3-b3-d4 . . . . . | d3-f#3-a3 . . . . . | vel: 65

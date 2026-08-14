@@ -1,20 +1,18 @@
 **TRACK: Into the Groove**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 116 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Ab . . . | Eb . . . | Bb . . . |
-@guitar | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Ab . . . | Eb . . . | Bb . . . |
-@guitar | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | vel: 60

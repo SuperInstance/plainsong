@@ -1,24 +1,21 @@
 **TRACK: Tin Roof Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb7 . . . | Eb . . . | Bb . . . | Bb . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-ab3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Bb . . . | Bb7 . . . | Eb . . . | Ebm . . . | Bb . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-ab3 . . . | eb3-g3-bb3 . . . | eb3-gb3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Bb . . . | F7 . . . | Bb . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F7 . . . | Bb . . . | F7 . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F7 Bb . . |
-@guitar | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 bb2-d3-f3 . . | vel: 50

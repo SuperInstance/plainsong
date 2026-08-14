@@ -1,28 +1,21 @@
 **TRACK: Rock with You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 114 | subdivision: 8th  
 time: 4/4 | mood: Smooth Groove
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | E7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d3-f3-a3-c4 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fmaj7 . . . | G6 . . . | Em7 . . . | Am7 . . . |
-       | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | f2-a2-c3-e3 . . . | g2-b2-d3-e3 . . . | e3-g3-b3-d4 . . . | a2-c3-e3-g3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | d3-f3-a3-c4 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | e3-g#3-b3-d4 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | E7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d3-f3-a3-c4 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fmaj7 . . . | G6 . . . | Em7 . . . | Am7 . . . |
-       | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | f2-a2-c3-e3 . . . | g2-b2-d3-e3 . . . | e3-g3-b3-d4 . . . | a2-c3-e3-g3 . . . | vel: 62

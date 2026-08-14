@@ -1,28 +1,18 @@
 **TRACK: Kalinka**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | Ka-lin-ka, ka-lin-ka, ka-lin-ka mo-ya |
-@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | V sa-du ya-go-da ma-lin-ka mo-ya |
-@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | Ka-lin-ka, ka-lin-ka, ka-lin-ka mo-ya |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . . . | . . . . |
-Lyrics: | V sa-du ya-go-da ma-lin-ka mo-ya |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60

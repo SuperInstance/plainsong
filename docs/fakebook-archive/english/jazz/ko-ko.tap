@@ -1,20 +1,18 @@
 **TRACK: Ko-Ko**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 144 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Cm . . . | Cm . . . | Fm . . . | Fm . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . | Fm . . . | Fm . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 62
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Db . . . | Db . . . | G7 . . . | G7 . . . |
-@guitar | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f2-ab2 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 65
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Fm . . . | Fm . . . | G7 . . . | G7 . . . | Cm . . . | Cm . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | f2-ab2-c3 . . . | f2-ab2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 58

@@ -1,22 +1,15 @@
 **TRACK: Senhora do Almortão**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | B3 . . . |
-Lyrics: | Sen-ho-ra do Al-mor-tão | dai-me a vos-sa ben-ção | so-mos pe-re-gri-nos | em ter-ra de chão |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | B3 . . . |
-Lyrics: | U-ma luz no ho-ri-zon-te | gui-a o nos-so pas-so | can-ta o ven-to mon-te | a-bre o nos-so bra-ço |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | A3 . . . |
-Lyrics: | A-ve Ma-ri-a | chei-a de gra-ça | ro-gai por nós | nes-ta jor-na-da |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

@@ -1,20 +1,18 @@
 **TRACK: Look Over Yonder**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A minor | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving Blues Rock
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Dm . . . | E . . . | E . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
 
 [OUT] (Outro - 8 Bars)
 Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 45

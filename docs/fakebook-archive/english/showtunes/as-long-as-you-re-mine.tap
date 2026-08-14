@@ -1,29 +1,21 @@
 **TRACK: As Long as You're Mine**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb minor | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Driving, Theatrical
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
-@drums | k . . . | S . . . | k . . . | S . . . | vel: 70
-@guitar | b2-d3-f3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
-@drums | k . . . | S . . . | k . . . | S . . . | vel: 72
-@guitar | b2-d3-f3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Ab . . . | Bbm . . . | F . . . |
-@drums | k . S . | k . S . | k . S . | k . S . | vel: 85
-@guitar | d3-f3-a3 . . . | a2-c3-e3 . . . | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Eb . . . | F . . . | F . . . |
-@drums | k . . . | S . . . | k . S . | k . S . | vel: 60
-@piano | g2-b2-d3 . . . | e2-g2-b2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Ab . . . | Bbm . . . | F . . . |
-@drums | k . S . | k . S . | k . S . | k . S . | vel: 90
-@guitar | d3-f3-a3 . . . | a2-c3-e3 . . . | b2-d3-f3 . . . | f2-a2-c3 . . . | vel: 75

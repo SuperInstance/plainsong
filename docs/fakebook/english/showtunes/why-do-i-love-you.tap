@@ -1,31 +1,21 @@
 **TRACK: Why Do I Love You?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Bright
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
-| F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 60
-| F . . . | C . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | Gm . . . | C . . . | C . . . |
-@guitar | bb1-d2-f2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
-| F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 60
-| F . . . | C . . . | Gm . . .

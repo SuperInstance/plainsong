@@ -1,22 +1,15 @@
 **TRACK: Fantaisie-Impromptu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C#m | tempo: 84 | subdivision: 16th
 time: 4/4 | mood: Agitated
 
 [V1] (Verse - 4 Bars)
 Chords: | C#m . . . | A . . . |
-Melody: | C#4 . . . E4 . . . | A3 . . . C#4 . . . |
-Lyrics: | im - pro - vi - se | in dark - ness |
-@piano | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | G# . . . |
-Melody: | F#4 . . . A4 . . . | G#3 . . . B3 . . . |
-Lyrics: | light - ning - flash - es | through the storm |
-@piano | f#2-a2-c#3 . . . | g#2-b2-d#3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | C#m . . . | B . . . |
-Melody: | E4 . . . G#4 . . . | B3 . . . D#4 . . . |
-Lyrics: | waves - of - sound - crash | on the shore |
-@piano | c#3-e3-g#3 . . . | b2-d#3-f#3 . . . | vel: 58

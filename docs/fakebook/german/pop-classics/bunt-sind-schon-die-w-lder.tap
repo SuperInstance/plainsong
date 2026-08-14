@@ -1,20 +1,18 @@
 **TRACK: Bunt sind schon die Wälder**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | D . . | G . . |
-@guitar | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | D . . | G . . |
-@guitar | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . | D . . | G . . | D . . |
-@guitar | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . | G . . | D . . | G . . |
-@guitar | c2-e2-g2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | vel: 50

@@ -1,26 +1,22 @@
 **TRACK: Ienai yo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 98 | subdivision: 8th
 time: 4/4 | mood: Sophisticated Pop
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-@guitar | f3-ab3-eb4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 50
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Dbmaj7 . . . | C7 . . . | Fm7 . . . | Bbm7 . . . |
-@guitar | db3-f3-ab3 . . . | c3-e3-g3 . . . | f3-ab3-c4 . . . | bb2-db3-f3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . | Dbmaj7 . . . |
-@guitar | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | db3-f3-ab3 . . . | vel: 60
 Chords: | C7 . . . | Fm7 . . . | Dbmaj7 . . . | C7sus4 . . . |
-@guitar | c3-e3-g3 . . . | f3-ab3-c4 . . . | db3-f3-ab3 . . . | c3-f3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dbmaj7 . . . | Dbm7 . . . | C7 . . . | F7 . . . |
-@guitar | db3-f3-ab3 . . . | db3-fb3-ab3 . . . | c3-e3-g3 . . . | f3-a3-c4 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |
-@guitar | f3-ab3-eb4 . . . | bb2-db3-f3 . . . | eb3-g3-bb3 . . . | f3-ab3-c4 . . . | vel: 45

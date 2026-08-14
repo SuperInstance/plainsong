@@ -1,24 +1,17 @@
 **TRACK: Prelude in C major, BWV 846**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 66 | subdivision: 16th
 time: 4/4 | mood: Serene
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | C4 . E4 . G4 . C5 . | B3 . D4 . G4 . B4 . | A3 . C4 . E4 . A4 . | F3 . A3 . C4 . F4 . |
-Lyrics: | (instrumental) . . . . . . . . . . . . . . . . . . . . . . . . |
-@piano | c2-e2-g2-c3 . . . . . . . . . . . . | g1-b1-d2-g2 . . . . . . . . . . . . | a1-c2-e2-a2 . . . . . . . . . . . . | f1-a1-c2-f2 . . . . . . . . . . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | C4 . E4 . G4 . C5 . | B3 . D4 . G4 . B4 . | C4 . E4 . G4 . C5 . | B3 . D4 . G4 . B4 . |
-Lyrics: | (instrumental) . . . . . . . . . . . . . . . . . . . . . . . . |
-@piano | c2-e2-g2-c3 . . . . . . . . . . . . | g1-b1-d2-g2 . . . . . . . . . . . . | c2-e2-g2-c3 . . . . . . . . . . . . | g1-b1-d2-g2 . . . . . . . . . . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . A4 . | F3 . A3 . C4 . F4 . | C4 . E4 . G4 . C5 . | B3 . D4 . G4 . B4 . |
-Lyrics: | (instrumental) . . . . . . . . . . . . . . . . . . . . . . . . |
-@piano | a1-c2-e2-a2 . . . . . . . . . . . . | f1-a1-c2-f2 . . . . . . . . . . . . | c2-e2-g2-c3 . . . . . . . . . . . . | g1-b1-d2-g2 . . . . . . . . . . . . | vel: 50
 
 [OUT] (Outro

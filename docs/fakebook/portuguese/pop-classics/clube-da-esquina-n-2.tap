@@ -1,24 +1,21 @@
 **TRACK: Clube da Esquina nº 2**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D major | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A/C# . . . | Bm . . . | G . . . | D . . . | A/C# . . . | Bm . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A/C# . . . | Bm . . . | G . . . | Em . . . | A . . . | D . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 52
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | D . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [V3] (Verse - 8 Bars)
 Chords: | D . . . | A/C# . . . | Bm . . . | G . . . | D . . . | A/C# . . . | Bm . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | D . . . |
-@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 40

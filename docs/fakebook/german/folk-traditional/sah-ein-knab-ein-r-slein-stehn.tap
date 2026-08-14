@@ -1,22 +1,15 @@
 **TRACK: Sah ein Knab ein Röslein stehn**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 6/8 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . F . . | C . . C . . | F . . F . . | C . . C . . |
-Melody: | F4 . A4 . C5 . | C5 . A4 . F4 . | F4 . G4 . A4 . | G4 . . . . . |
-Lyrics: | Sah ein Knab ein Rös-lein stehn, | Rös-lein auf der Hei-den, | war so jung und mor-gen-schön, | lief er schnell es nah zu sehn, |
-@piano | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . F . . | C . . C . . | F . . F . . | C . . C . . |
-Melody: | F4 . A4 . C5 . | C5 . A4 . F4 . | F4 . G4 . A4 . | G4 . . . . . |
-Lyrics: | sah's mit vie-len Freu-den, | Rös-lein, Rös-lein, Rös-lein rot, | Rös-lein auf der Hei-den, | Rös-lein auf der Hei-den. |
-@piano | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . F . . | C . . C . . | F . . F . . | C . . C . . |
-Melody: | F4 . A4 . C5 . | C5 . A4 . F4 . | F4 . G4 . A4 . | G4 . . . . . |
-Lyrics: | Rös-lein, Rös-lein, Rös-lein rot, | Rös-lein auf der Hei-den, | Rös-lein, Rös-lein, Rös-lein rot, | Rös-lein auf der Hei-den. |
-@piano | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | f1-a2-c3 . . f1-a2-c3 . . | c2-e2-g2 . . c2-e2-g2 . . | vel: 55

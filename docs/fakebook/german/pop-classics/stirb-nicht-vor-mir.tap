@@ -1,24 +1,21 @@
 **TRACK: Stirb nicht vor mir**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Melancholic
 
 [V1] (Verse - 4 Bars)
 Chords: | Bm . . . | A . . . | G . . . | F# . . . |
-@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | f#2-c#3-f#3 . . . | vel: 50
 
 [V2] (Verse 2 - 4 Bars)
 Chords: | Bm . . . | A . . . | G . . . | A . . . |
-@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | g2-d3-g3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | G . . . | D . . . | A . . . |
-@guitar | e3-b3-e4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bm . . . | . . . . | . . . . | . . . . |
-@guitar | b2-f#3-b3 . . . | . . . . | . . . . | . . . . | vel: 45

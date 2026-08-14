@@ -1,16 +1,12 @@
 **TRACK: La Montanara**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 96 | subdivision: 8th
 time: 3/4 | mood: Gentle, pastoral
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D . | G . . |
-Melody: | G4 . B4 . | A4 . G4 . | E4 . G4 . | D4 . . . | G4 . B4 . | C5 . B4 . | A4 . G4 . | G4 . . . |
-Lyrics: | La mon-ta-na-ra | la mon-ta-na-ra | la mio bel-la | mon-ta-na-ra | la mon-ta-na-ra | la mon-ta-na-ra | la mio bel-la | mon-ta-na-ra |
-@piano | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . d3-f#3-a3 . | g2-b2-d3 . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . | G . . | C . . | G . . | D . . | G . . | D . . | G . . |
-Melody: | E5 . D5 . | C5 . B4 . | C5 . E5 . | D5 . B4 . | A4 . B4 . | G4 . D4 . | E4 . D4 . | G4 . . . |
-Lyrics: | Su per le vette | o-ve l'a-qui-la | sten-de le a-li | al sol | can-ta la mon-ta-na-ra | la sua can-zon | d'a-mor | d'a-mor |
-@piano | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | vel: 55

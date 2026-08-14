@@ -1,16 +1,12 @@
 **TRACK: Ah ! ça ira**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 6/8 | mood: Spirited
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . . . | G . . . . . |
-Melody: | C4 . E4 . G4 . | B3 . D4 . G4 . |
-Lyrics: | Ah! ça i - ra, ça i - ra, | ça i - ra, mal - gré les mu - ti - nes, |
-@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . . . | C . . . . . |
-Melody: | A3 . C4 . F4 . | E4 . G4 . C4 . |
-Lyrics: | Ah! ça i - ra, ça i - ra, | tout ça fin - i - ra bien, |
-@piano | f2-a2-c3 . . . . . | c3-e3-g3 . . . . . | vel: 65

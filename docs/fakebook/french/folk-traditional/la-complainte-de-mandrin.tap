@@ -1,31 +1,21 @@
 **TRACK: La Complainte de Mandrin**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | C#4 . E4 . |
-Lyrics: | Dans le - temps que j'é - tais | chez mon - pè - re, | Dans le - temps que j'é - tais | chez mon - pè - re, |
-@piano | d2-a2-d3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | J'é - tais gar - dé par | mon bon - mai - tre, | Mais je m'en - fui - s | par un ma - tin. |
-@piano | d2-a2-d3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . F4 . | C#4 . E4 . |
-Lyrics: | Ah! Man - drin, | ren - ds - toi, | Le roi - te | fait - mer - ci. |
-@piano | f2-c3-f3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Je ne - veux point | me ren - dre, | Je ne - veux point | me ren - dre, |
-@piano | d2-a2-d3 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |

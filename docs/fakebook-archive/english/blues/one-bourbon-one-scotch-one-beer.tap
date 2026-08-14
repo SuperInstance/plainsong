@@ -1,24 +1,21 @@
 **TRACK: One Bourbon, One Scotch, One Beer**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 110 | subdivision: 8th
 time: 12/8 | mood: Swampy
 
 [V1] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50
 
 [V2] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | A . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 52
 
 [BR] (Bridge - 8 Bars)
 Chords: | A . . . | A . . . | E . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 48
 
 [V3] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | B7 . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | e2-b2-e3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

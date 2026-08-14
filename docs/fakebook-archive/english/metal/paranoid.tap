@@ -1,20 +1,18 @@
 **TRACK: Paranoid**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 160 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | B7 . . . |
-@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-d#2-f#2 . . . | vel: 70
 
 [IN] (Interlude - 8 Bars)
 Chords: | E5 . . . | E5 . . . | E5 . . . | E5 . . . | E5 . . . | E5 . . . | E5 . . . | E5 . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65

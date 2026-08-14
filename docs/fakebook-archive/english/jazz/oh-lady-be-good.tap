@@ -1,20 +1,18 @@
 **TRACK: Oh, Lady Be Good!**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 180 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . | F7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | a2-e3-g3-c4 . . . | d2-f#3-a3-c4 . . . | g2-b3-d3-f#3 . . . | c3-e3-g3-b3 . . . | f2-a3-c3-eb4 . . . | b2-d3-f3-a3 . . . | e2-g#3-b3-d4 . . . | a2-e3-g3-c4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . | F7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | a2-e3-g3-c4 . . . | d2-f#3-a3-c4 . . . | g2-b3-d3-f#3 . . . | c3-e3-g3-b3 . . . | f2-a3-c3-eb4 . . . | b2-d3-f3-a3 . . . | e2-g#3-b3-d4 . . . | a2-e3-g3-c4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C6 . . . | Am7 . . . | Dm7 . . . | G7 . . . | C6 . . . | Am7 . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3-a3 . . . | a2-e3-g3-c4 . . . | d2-f3-a3-c4 . . . | g2-b3-d3-f3 . . . | c3-e3-g3-a3 . . . | a2-e3-g3-c4 . . . | d2-f3-a3-c4 . . . | g2-b3-d3-f3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | E7 . . . |
-@guitar | e2-g3-b3-d4 . . . | a2-c#3-e3-g3 . . . | d2-f3-a3-c4 . . . | g2-b3-d3-f3 . . . | c3-e3-g3-b3 . .

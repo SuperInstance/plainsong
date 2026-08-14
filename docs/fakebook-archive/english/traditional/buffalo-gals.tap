@@ -1,28 +1,18 @@
 **TRACK: Buffalo Gals**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | As I was walk-ing down the street, down the street, down the street, |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | G3 . B3 . |
-Lyrics: | A pret-ty girl I chanced to meet, chanced to meet, chanced to meet, |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | E4 . G4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Buf-fa-lo gals, won't you come out to-night, come out to-night, come out to-night, |
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
 
 [CH2] (Chorus - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | E4 . G4 . | B3 . D4 . | G3 . B3 . |
-Lyrics: | Buf-fa-lo gals, won't you come out to-night, and dance by the light of the moon. |
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60

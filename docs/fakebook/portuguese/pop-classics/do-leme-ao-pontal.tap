@@ -1,31 +1,25 @@
 **TRACK: Do Leme ao Pontal**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | G . . . | F . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 Chords: | Am . . . | G . . . | F . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
 Chords: | F . . . | G . . . | E7 . . . | E7 . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 62
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | G . . . | F . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 Chords: | Am . . . | G . . . | F . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
 Chords: | F . .

@@ -1,28 +1,18 @@
 **TRACK: Der Mond ist aufgegangen**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 80 | subdivision: 8th
 time: 3/4 | mood: Gentle, lullaby-like
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . | G . . | C . . | F . . |
-Melody: | E4 . G4 | D4 . E4 | C4 . E4 | A3 . C4 |
-Lyrics: | Der Mond ist | auf - ge - | gan - gen, die | gold - nen Stern - |
-@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | f2-a2-c3 . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . | G . . | C . . | G . C |
-Melody: | B3 . D4 | G3 . B3 | C4 . E4 | G3 . C4 |
-Lyrics: | lein pran - gen | am Him - mel | hell und klar, der | Wald steht schwarz und |
-@piano | g2-b2-d3 . | d3-g3-b3 . | c3-e3-g3 . | g2-b2-d3 c3 | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . | C . . | G . . | C . . |
-Melody: | A3 . C4 | E4 . G4 | D4 . B3 | C4 . E4 |
-Lyrics: | schwei - get, und | aus den Wie - sen | stei - get der | Ne - bel wun - der - |
-@piano | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | vel: 50
 
 [V3] (Verse - 4 Bars, final)
 Chords: | C . . | G . . | C . . | C . . |
-Melody: | C4 . E4 | D4 . G3 | C4 . E4 | C4 . . |
-Lyrics: | bar. | (hold) | (hold) | (hold) |
-@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | c3-e3-g3 . | vel: 40

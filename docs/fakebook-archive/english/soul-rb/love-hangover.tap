@@ -1,24 +1,18 @@
 **TRACK: Love Hangover**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Disco
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
-| Dm . . . | Gm . . . | Dm . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | C . . . | F . . . | A7 . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 60
-| Bb . . . | C . . . | Dm . . . | A7 . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | A7 . . . | Dm . . . | Gm . . . |
-@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 45

@@ -1,26 +1,21 @@
 **TRACK: But Beautiful**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Em7b5 . . . | A7b9 . . . | Dm7 . . . |
-@guitar | f2-a2-c3-e3 . . . | e2-g2-bb2-d3 . . . | a2-c#3-e3-g3 . . . | d2-f2-a2-c3 . . . | vel: 50
 Chords: | Gm7 . . . | C7 . . . | Am7b5 . . . | D7b9 . . . |
-@guitar | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | a2-c3-eb3-g3 . . . | d2-f#2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Gm7 . . . | C7 . . . | Fmaj7 . . . | F6 . . . |
-@guitar | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | f2-a2-d3 . . . | vel: 50
 Chords: | Bbmaj7 . . . | Ebmaj7 . . . | Am7b5 . . . | D7b9 . . . |
-@guitar | bb2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | a2-c3-eb3-g3 . . . | d2-f#2-a2-c3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Gm7 . . . | C7 . . . | Fmaj7 . . . | Fmaj7 . . . |
-@guitar | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | f2-a2-c3-e3 . . . | vel: 45
 Chords: | Dm7 . . . | G7 . . . | Cm7 . . . | F7 . . . |
-@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c2-eb2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Bbmaj7 . . . | Am7b5 . . . | D7b9 . . . | Gm7 . . . |
-@guitar | bb2-d3-f3-a3 . . . | a2-c3-eb3-g3 . . . | d2-f#2

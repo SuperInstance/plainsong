@@ -1,22 +1,15 @@
 **TRACK: The Gaberlunzie Man**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . D4 . |
-Lyrics: | The gab-er - lun - zie | man - came - o'er - the - | lea - and - he - did - | seek - a - char - i - |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . D4 . |
-Lyrics: | ty - and - his - pack | was - on - his - back - | he - sang - so - sweet - | and - clear - O - |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
-Lyrics: | And - he's - a - jolly | gab-er - lun - zie - | man - wi' - a - pack - | on - his - back - O - |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

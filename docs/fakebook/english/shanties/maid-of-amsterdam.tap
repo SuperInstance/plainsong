@@ -1,22 +1,15 @@
 **TRACK: Maid of Amsterdam**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . A3 . |
-Lyrics: | In Ams - ter - | dam there dwells a | maid, mark well | what I do say |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . A3 . |
-Lyrics: | And she won't | do what I | ask her, no | she won't do |
-@piano | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . A3 . |
-Lyrics: | I took her by | her lily - white | hand, mark well | what I do say |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50

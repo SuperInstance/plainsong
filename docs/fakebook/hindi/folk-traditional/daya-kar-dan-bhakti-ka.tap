@@ -1,16 +1,12 @@
 **TRACK: Daya Kar Dan Bhakti Ka**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . . . | F4 . A4 . C4 . . . | E4 . G4 . C4 . . . | D4 . B3 . G3 . . . |
-Lyrics: | Da-ya kar dan bhak-ti ka | hum-ko pa-ra-mat-ma | de-na hai kra-na ka-ran | tu hi hai sa-ha-ra-ma |
-@piano | a2-e3-a3-c4-e4 . . . | f2-a2-c3-f4-a4 . . . | c3-e3-g3-c4-e4 . . . | g2-b2-d3-g3-b3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . C5 . . . | G4 . B4 . D5 . . . | A4 . C5 . E5 . . . | E5 . D5 . B4 . . . |
-Lyrics: | bhak-ti ka kar daan | pre-m ka kar daan | jee-van ka ho ud-dhar | tu hi hai bha-g-wan |
-@piano | f2-a2-c3-f4-a4-c5 . . . | g2-b2-d3-g4-b4-d5 . . . | a2-e3-a3-c4-e4-a4 . . . | e2-g#2-b2-e3-g#3-b3 . . . | vel: 55

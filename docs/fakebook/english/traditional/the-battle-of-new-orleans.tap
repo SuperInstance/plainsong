@@ -1,32 +1,18 @@
 **TRACK: The Battle of New Orleans**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Spirited
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . . . | D4 . F#4 . | A4 . . . |
-Lyrics: | In | eigh- | teen | hun- | dred | and | four- | teen |
-| we | took | a | lit- | tle | trip | . | . |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | D . . . |
-Melody: | G4 . B4 . | D5 . . . | A4 . C#5 . | D5 . . . |
-Lyrics: | a- | long | the | Mis- | sis- | sip- | pi | down |
-| to | New | Or- | leans | . | . | . | . |
-@piano | g3-b3-d4 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . B4 . | A4 . F#4 . | D4 . . . |
-Lyrics: | And | we | fired | our | guns | and | the | Brit- |
-| ish | kept | a- | com- | in' | . | . | . |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [CH2] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | D . . . |
-Melody: | G4 . B4 . | D5 . . . | A4 . C#5 . | D5 . . . |
-Lyrics: | there | wasn't | nigh | as | man- | y | as | there |
-| was | a- | while | a- | go | . | . | . |
-@piano | g3-b3-d4 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 65

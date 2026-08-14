@@ -1,22 +1,12 @@
 **TRACK: Jeanie with the Light Brown Hair**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Tender
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | Bb . F/C C7 . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . D4 . | Bb3 . C4 . |
-Lyrics: | I dream of Jeanie with the light brown hair, |
-| Borne, like a vapor, on the summer air; |
-| I see her tripping where the bright streams play, |
-| Happy as the daisies that dance on her way. |
-@piano | f1-c2-f2 . . . | c1-e2-g2 . . . | f1-c2-f2 . . . | bb1-d2-f2 . . . c1-e2-g2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . F . . . |
-Melody: | A4 . C5 . | B4 . G4 . | A4 . F4 . | G4 . E4 . C4 . |
-Lyrics: | Many were the wild notes her merry voice would pour, |
-| Many were the blithe birds that warbled them o'er; |
-| Oh! I dream of Jeanie with the light brown hair, |
-| Floating, like a vapor, on the soft summer air. |
-@piano | f1-c2-f2 . . . | c1-e2-g2 . . . | f1-c2-f2 . . . | c1-e2-g2 . . . f1-c2-f2 . . . | vel: 50

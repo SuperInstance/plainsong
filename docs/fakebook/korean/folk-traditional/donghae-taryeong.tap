@@ -1,16 +1,12 @@
 **TRACK: Donghae Taryeong**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . | Am . . | Em . . | B7 . . |
-Melody: | E4 . G4 | A4 . G4 | E4 . D4 | B3 . . . |
-Lyrics: | dong hae mul | gwa baek du san | i ma ru go | dal do rok |
-@piano | e2-g2-b2 . . | a2-c3-e3 . . | e2-g2-b2 . . | b1-d2-f#2 . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . | C . . | G . . | D . . |
-Melody: | B3 . E4 | G4 . E4 | D4 . B3 | A3 . B3 |
-Lyrics: | ha na nim i | bo u ha sa | our na ra | man se |
-@piano | e2-g2-b2 . . | c3-e3-g3 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 50

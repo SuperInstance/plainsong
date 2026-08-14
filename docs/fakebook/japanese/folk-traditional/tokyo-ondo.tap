@@ -1,16 +1,12 @@
 **TRACK: Tokyo Ondo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 2/4 | mood: Festive
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
-Melody: | A4 . . C5 . | A4 . . E4 . | F4 . . A4 . | E4 . . . . |
-Lyrics: | To- kyo o- n- do | to- kyo o- n- do | sa- te mo sa- te mo | yo- i na- |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | Dm . . . | E7 . . . | Am . . . |
-Melody: | A4 . . C5 . | D5 . . A4 . | B4 . . G#4 . | A4 . . . . |
-Lyrics: | ha- i- ya- i- ya | sa- te mo sa- te | yo- i na- yo- i | na- |
-@piano | a2-c#3-e3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 60

@@ -1,31 +1,25 @@
 **TRACK: Saginaw, Michigan**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 3/4 | mood: Storytelling
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | C . . . | F . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 50
 Chords: | F . . . | C . . . | F . . . | C . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | F . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
 Chords: | F . . . | C . . . | F . . . | C . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | C . . . | F . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 50
 Chords: | F . . . | C . . . | F . . . | C . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | C . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | F . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
 Chords: | F . . . | C . . . | F .

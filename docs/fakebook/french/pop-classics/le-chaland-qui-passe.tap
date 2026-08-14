@@ -1,24 +1,21 @@
 **TRACK: Le Chaland qui passe**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 110 | subdivision: 8th
 time: 3/4 | mood: Nostalgic Waltz
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Db . . . | C7 . . . |
-@guitar | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 60
 
 [IN] (Instrumental - 4 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | Fm . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Eb . . . | C7 . . . | C7 . . . |
-@guitar | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 55

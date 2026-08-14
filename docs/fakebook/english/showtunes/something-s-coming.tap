@@ -1,24 +1,21 @@
 **TRACK: Something's Coming**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 144 | subdivision: 8th  
 time: 4/4 | mood: Anticipatory
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . |
-@guitar | d2-f#2-a2 . . . | a1-c#2-e2 . . . | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | A . . . | D . . . | A . . . |
-@guitar | g1-b1-d2 . . . | a1-c#2-e2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | G . . . | Em . . . | A . . . |
-@guitar | d2-f#2-a2 . . . | g1-b1-d2 . . . | e1-g#1-b1 . . . | a1-c#2-e2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
-@guitar | b1-d2-f#2 . . . | f#1-a1-c#2 . . . | g1-b1-d2 . . . | a1-c#2-e2 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | D . . . | D . . . |
-@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 50

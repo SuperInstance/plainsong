@@ -1,20 +1,18 @@
 **TRACK: Taking a Chance on Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Upbeat Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c4 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c4 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Db . . . | Bb7 . . . | Eb7 . . . |
-@guitar | db2-f3-ab3 . . . | db2-f3-ab3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 50

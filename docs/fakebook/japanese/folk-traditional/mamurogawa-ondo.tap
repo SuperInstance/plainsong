@@ -1,22 +1,15 @@
 **TRACK: Mamurogawa Ondo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 112 | subdivision: 8th
 time: 2/4 | mood: Festive
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . | Am . | F . | E7 . |
-Melody: | A3 C4 | A3 C4 | F4 E4 | D4 B3 |
-Lyrics: | Ya-re- | ton-ko- | sho-i | sho-i |
-@piano | a2-e3-a3 | a2-e3-a3 | f2-a2-c3 | e2-g#2-b2 | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . | Am . | Dm . | E7 . |
-Melody: | A3 C4 | A3 C4 | D4 F4 | E4 B3 |
-Lyrics: | Ma-mu- | ro-ga- | wa no | fu-ru- |
-@piano | a2-e3-a3 | a2-e3-a3 | d2-f2-a2 | e2-g#2-b2 | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . | F . | C . | E7 . |
-Melody: | A4 A4 | F4 A4 | G4 E4 | E4 D4 |
-Lyrics: | O-ndo | o-ndo | ya-re- | ton-ko |
-@piano | a2-e3-a3 | f2-a2-c3 | c3-e3-g3 | e2-g#2-b2 | vel: 65

@@ -1,22 +1,15 @@
 **TRACK: Canção do Mar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Gentle, longing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
-Melody: | D4 . F4 . | C#4 . E4 . | D4 . F4 . | Bb3 . D4 . |
-Lyrics: | O mar... | quan-do... | can-ção... | de a-mor... |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | F . . . | A7 . . . | Dm . . . |
-Melody: | E4 . G4 . | F4 . A4 . | E4 . C#4 . | D4 . . . |
-Lyrics: | Vem... | can-ção... | do mar... | sem fim... |
-@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | Bb3 . D4 . | C#4 . E4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | Nas on-das... | vem me... | le-var... | ao lu-ar... |
-@piano | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45

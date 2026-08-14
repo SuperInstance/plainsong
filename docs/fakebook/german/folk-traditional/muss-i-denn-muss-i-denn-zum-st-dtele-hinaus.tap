@@ -1,28 +1,18 @@
 **TRACK: Muss i denn, muss i denn zum Städtele hinaus**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Gentle, wistful
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | E4 . D4 . | A3 . B3 . | A3 . . . |
-Lyrics: | Muss i denn, muss i denn | zum Städ-te-le hi-naus, | Städ-te-le hi-naus, | und du, mein Schatz, bleibst hier? |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 48
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | A . . . |
-Melody: | F#4 . G4 . | A4 . F#4 . | E4 . D4 . | C#4 . . . |
-Lyrics: | Wenn ich komm, wenn ich komm, | wenn ich wie-der, wie-der komm, | wie-der, wie-der komm, | kehr ich ein, mein Schatz, bei dir. |
-@piano | d3-f#3-a3 . . . | g2-b3-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | A . . . |
-Melody: | A4 . F#4 . | E4 . D4 . | C#4 . D4 . | E4 . . . |
-Lyrics: | Kann ich auch, kann ich auch, | dich nicht mit-neh-men, | dich nicht mit-neh-men, | da muss ich doch al-lein. |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 52
 
 [V3] (Verse - 4 Bars, repeat melody of V1)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D4 . F#4 . | E4 . D4 . | A3 . B3 . | A3 . . . |
-Lyrics: | Und du weinst, und du weinst, | weil ich schei-den muss, | schei-den muss, | a-ber komm ja zu-rück. |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 48

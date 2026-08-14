@@ -1,24 +1,21 @@
 **TRACK: Whole Lotta Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 84 | subdivision: 8th
 time: 4/4 | mood: Heavy, Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | E . . . | A . . . | A . . . |
-@guitar | e2-b2-e3 . . . | b2-e3-g#3 . . . | a2-e3-a3 . . . | e3-a3-c#4 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | E . . . | A . . . | B . . . |
-@guitar | e2-b2-e3 . . . | b2-e3-g#3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 65
 
 [CH] (Chorus - 4 Bars)
 Chords: | E . . . | E . . . | A . . . | B . . . |
-@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | D . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | a2-d3-f#3 . . . | a2-e3-a3 . . . | e3-a3-c#4 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | E . . . | E . . . | A . . . | B . . . |
-@guitar | e2-b2-e3 . . . | b2-e3-g#3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 70

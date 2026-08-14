@@ -1,22 +1,15 @@
 **TRACK: Haneul Taryeong**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 C4 E4 . | F4 E4 C4 . | A3 C4 E4 . | B3 G#3 E3 . |
-Lyrics: | ha-neul tta-ri | geu-mul-i-yo | dal-ttae-ri geu-mul | i-yo |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | G . . . | C . . . | E7 . . . |
-Melody: | F4 A4 C5 . | B4 G4 E4 . | C5 B4 A4 . | G#4 E4 B3 . |
-Lyrics: | byeol-tta-ri geu-mul | i-yo | a-ri-rang a-ri-rang | a-ra-ri-yo |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 C4 E4 . | F4 A4 C5 . | E5 C5 A4 . | B4 G4 E4 . |
-Lyrics: | a-ri-rang a-ri-rang | a-ra-ri-yo | a-ri-rang go-gae | reul neo-meo-ga-ja |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

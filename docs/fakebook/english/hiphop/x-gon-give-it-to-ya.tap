@@ -1,24 +1,21 @@
 **TRACK: X Gon' Give It to Ya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 92 | subdivision: 16th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Eb . . . | Eb . . . |
-@guitar | f2-c3-f3 . . . | f2-c3-f3 . . . | db2-ab2-db3 . . . | db2-ab2-db3 . . . | f2-c3-f3 . . . | f2-c3-f3 . . . | eb2-bb2-eb3 . . . | eb2-bb2-eb3 . . . | vel: 70
 
 [CH] (Chorus - 4 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Eb . . . |
-@guitar | f2-c3-f3 . . . | f2-c3-f3 . . . | db2-ab2-db3 . . . | eb2-bb2-eb3 . . . | vel: 80
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Eb . . . | Eb . . . |
-@guitar | f2-c3-f3 . . . | f2-c3-f3 . . . | db2-ab2-db3 . . . | db2-ab2-db3 . . . | f2-c3-f3 . . . | f2-c3-f3 . . . | eb2-bb2-eb3 . . . | eb2-bb2-eb3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Ab . . . | Eb . . . | Fm . . . |
-@guitar | ab2-eb3-ab3 . . . | ab2-eb3-ab3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | vel: 65
 
 [CH] (Chorus - 4 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Eb . . . |
-@guitar | f2-c3-f3 . . . | f2-c3-f3 . . . | db2-ab2-db3 . . . | eb2-bb2-eb3 . . . | vel: 80

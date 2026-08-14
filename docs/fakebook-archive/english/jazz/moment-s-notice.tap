@@ -1,20 +1,18 @@
 **TRACK: Moment's Notice**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 132 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Abmaj7 . . . | Db7 . . . | Abmaj7 . . . | Dbm7 Gb7 |
-@guitar | ab2-c3-eb3-g3 . . . | db2-f2-ab2-cb3 . . . | ab2-c3-eb3-g3 . . . | db2-e2-ab2-cb3 . . . | vel: 60
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Bbm7 Eb7 . . . | Abmaj7 . . . | Bbm7 Eb7 . . . | Abmaj7 . . . |
-@guitar | bb1-db2-f2-ab2 . . . | ab2-c3-eb3-g3 . . . | bb1-db2-f2-ab2 . . . | ab2-c3-eb3-g3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dbm7 . . . | Gb7 . . . | Bmaj7 . . . | Fm7 Bb7 |
-@guitar | db2-f2-ab2-cb3 . . . | gb1-bb1-db2-f2 . . . | b1-d#2-f#2-a#2 . . . | f1-ab1-c2-eb2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ebm7 Ab7 . . . | Dbm7 Gb7 . . . | Cm7 F7 . . . | Bbm7 Eb7 . . . |
-@guitar | eb2-gb2-bb2-db3 . . . | db2-f2-ab2-cb3 . . . | c2-e2-g2-bb2 . . . | bb1-db2-f2-ab2 . . . | vel: 65

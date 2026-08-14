@@ -1,20 +1,18 @@
 **TRACK: Things Ain't What They Used To Be**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . | Bb . . . | Bb . . . | F7 . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . | Bb . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | C7 . . . | C7 . . . | F7 . . . | F7 . . . | C7 . . . | C7 . . . | F7 . . . | F7 . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . | Bb . . . | F7 . . . | Bb . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55

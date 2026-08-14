@@ -1,24 +1,18 @@
 **TRACK: As It Was**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: C#m | tempo: 101 | subdivision: 8th  
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)  
 Chords: | C#m . . . | C#m . . . | E . . . | E . . . |  
-        | A . . . | A . . . | B . . . | B . . . |  
-@guitar | x-1-2-2 . . . | x-1-2-2 . . . | 0-2-2-1 . . . | 0-2-2-1 . . . |  
-        | 0-0-2-2 . . . | 0-0-2-2 . . . | 2-4-4-2 . . . | 2-4-4-2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)  
 Chords: | F#m . . . | F#m . . . | C#m . . . | C#m . . . |  
-        | D . . . | D . . . | B . . . | B . . . |  
-@guitar | 2-4-4-2 . . . | 2-4-4-2 . . . | x-1-2-2 . . . | x-1-2-2 . . . |  
-        | x-5-4-2 . . . | x-5-4-2 . . . | 2-4-4-2 . . . | 2-4-4-2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)  
 Chords: | A . . . | E . . . | B . . . | F#m . . . |  
-@guitar | 0-0-2-2 . . . | 0-2-2-1 . . . | 2-4-4-2 . . . | 2-4-4-2 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)  
 Chords: | C#m . . . | A . . . | E . . . | B . . . |  
-@guitar | x-1-2-2 . . . | 0-0-2-2 . . . | 0-2-2-1 . . . | 2-4-4-2 . . . | vel: 40

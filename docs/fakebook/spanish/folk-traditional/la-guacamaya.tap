@@ -1,16 +1,12 @@
 **TRACK: La Guacamaya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | La gua-ca-ma-ya | can-ta en el mon-te | la gua-ca-ma-ya | can-ta en el mon-te |
-@piano | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | F4 . E4 . | D4 . B3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | ¡Ay, gua-ca-ma-ya | ver-de y a-ma-ri-lla | can-ta en el mon-te | con tu voz sen-ci-lla |
-@piano | f2-a2-c3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55

@@ -1,22 +1,15 @@
 **TRACK: Liebestraum No. 3 in A-flat major, S. 541/3**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 76 | subdivision: 8th
 time: 6/4 | mood: Dreamy
 
 [V1] (Verse - 4 Bars)
 Chords: | Ab . . . . . | Db . . . . . |
-Melody: | Ab4 . C5 . Eb5 . | F5 . . . Eb5 . |
-Lyrics: | Lie be träumt . . . | von ew ger Nacht . . . |
-@piano | ab2-c3-eb3 . . . . . | db2-f3-ab3 . . . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Bbm7 . . . . . | Eb7 . . . . . |
-Melody: | Db5 . F5 . Ab5 . | G5 . F5 . Eb5 . |
-Lyrics: | und die Ster ne . . . | wei nen still . . . |
-@piano | bbm2-db3-f3 . . . . . | eb2-g3-bb3 . . . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | Ab . . . . . | Fm7 . . . . . |
-Melody: | C5 . Eb5 . G5 . | Ab5 . . . . . |
-Lyrics: | dei ne Lie be . . . | ist mein Traum . . . |
-@piano | ab2-c3-eb3 . . . . . | f2-ab3-c4 . . . . . | vel: 52

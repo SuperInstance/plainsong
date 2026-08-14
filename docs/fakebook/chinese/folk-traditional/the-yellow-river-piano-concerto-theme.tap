@@ -1,16 +1,12 @@
 **TRACK: The Yellow River Piano Concerto (theme)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | A7 . . . |
-Melody: | D4 . F4 . A4 . . | D4 . F4 . A4 . . | C4 . E4 . G4 . . | C#4 . E4 . A4 . . |
-Lyrics: | Yellow river, rolling on | Through the plains and mountains strong | Ancient song of toil and pain | Now we rise to sing again |
-@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . Dm . . |
-Melody: | D4 . F4 . A4 . A4 | G4 . F4 . E4 . . | D4 . F4 . A4 . D5 | C#5 . D5 . . . . |
-Lyrics: | Oh Yellow River, mighty flow | Carry our hope, let our spirit glow | From the east to the western sky | Forever proud, we will not die |
-@piano | d3-f3-a3 . . . | g2-bb2-d3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . d3-f3-a3 | vel: 65

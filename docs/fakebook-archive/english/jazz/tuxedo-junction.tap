@@ -1,24 +1,21 @@
 **TRACK: Tuxedo Junction**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 148 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Ab . . . | Ab7 . . . | Db . . . | Ab . . . | Ab . . . | Ab7 . . . | Db . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | eb2-g3-bb3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Ab . . . | Ab7 . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Ab7 . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-gb3 . . . | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Db . . . | Ab . . . | Eb7 . . . |
-@guitar | db2-f3-ab3 . . . | db2-f3-ab3 . . . | ab2-c3-eb3 . . . | eb2-g3-bb3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-a3-c3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | vel: 55

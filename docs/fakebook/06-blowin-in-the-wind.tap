@@ -1,38 +1,20 @@
 **TRACK: Blowin' in the Wind**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 90 | swing: 0% | subdivision: 8th | timeSig: 3/4
 
 [Section: Intro]
 Chords: C | F | C | G
-Melody: (rest) | (rest) | (rest) | (rest)
-Lyrics: (instrumental)
-@player guitar: strum pattern: down, down-up, down-up (repeat per bar)
-@player bass: root notes: C3, F2, C3, G2 (half notes)
 
 [Section: Verse 1]
 Chords: C | F | C | C | F | C | G | G
-Melody: (C4 E4 G4) (A4 G4 E4) (C4 E4 G4) (C4 E4) | (A4 G4 E4) (C4 E4 G4) (D4 E4) (G4)
-Lyrics: "How many roads must a man walk down / Before you call him a man?"
-@player guitar: strum pattern: down, down-up, down-up (repeat per bar)
-@player bass: root notes: C3, F2, C3, C3, F2, C3, G2, G2
 
 [Section: Verse 2 (same progression)]
 Chords: C | F | C | C | F | C | G | G
-Melody: (C4 E4 G4) (A4 G4 E4) (C4 E4 G4) (C4 E4) | (A4 G4 E4) (C4 E4 G4) (D4 E4) (G4)
-Lyrics: "Yes, 'n' how many seas must a white dove sail / Before she sleeps in the sand?"
-@player guitar: strum pattern: down, down-up, down-up (repeat per bar)
-@player bass: root notes: C3, F2, C3, C3, F2, C3, G2, G2
 
 [Section: Chorus]
 Chords: F | G | C | C | F | G | C | C
-Melody: (A4 C5 A4) (G4 B4 G4) (E4 G4 C4) (C4) | (A4 C5 A4) (G4 B4 G4) (C4 E4 G4) (C4)
-Lyrics: "The answer, my friend, is blowin' in the wind / The answer is blowin' in the wind."
-@player guitar: strum pattern: down, down-up, down-up (repeat per bar)
-@player bass: root notes: F2, G2, C3, C3, F2, G2, C3, C3
 
 [Ending]
 Chords: C | F | C | G | C
-Melody: (C4 E4 G4) (A4 G4 E4) (C4 E4 G4) (G4 A4) (C4)
-Lyrics: (instrumental fade)
-@player guitar: strum pattern: down, down-up, down-up (last bar: down, hold)
-@player bass: root notes: C3, F2, C3, G2, C3 (hold)

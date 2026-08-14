@@ -1,12 +1,33 @@
 # TapScript Fake Book
 
-A collection of real songs transcribed into TapScript notation. These entries
-serve as reference material for agents learning the notation and as educational
-examples for anyone exploring TapScript Studio.
+Chord charts for well-known songs, in TapScript notation. Reference material for
+agents learning the notation, and worked examples for anyone reading the format.
 
-Each `.tap` file follows the modern `**TRACK:**` header format with metadata
-(key, tempo, swing, subdivision), section labels, chords, melody lines, lyrics,
-and `@player` performance notes.
+Each `.tap` file uses the `**TRACK:**` header with metadata (key, tempo, swing,
+subdivision), section labels, and chord rows.
+
+## Chord charts only, and why
+
+**These files carry no melody and no lyrics.** A chord progression is not
+protectable expression; a tune and its words are. Shipping thousands of
+singable, playable transcriptions of songs still in copyright would be a
+straightforward infringement, and the fact that a generator produced them
+changes nothing.
+
+The policy this project has always documented is *full melody plus lyrics only
+for public-domain works, chord charts otherwise*. It was not being met: 1,902
+files carried both, and a 1979 R. D. Burman film song sat under
+`hindi/folk-traditional` — a misfiled genre was all it took to defeat the rule.
+
+Rather than adjudicate copyright title by title across a dozen languages, where
+one wrong "this one is public domain" is the error that costs, the reduction is
+universal: 41,990 melody and lyric rows were removed from 6,309 files. If you
+want a melody here, it has to arrive with its provenance established.
+
+Two useful consequences: the bar-count warnings this directory was known for
+fell from roughly 3,800 to 2, because they came from those rows; and the charts
+still compile and still play, so they remain a real corpus to learn the notation
+from.
 
 ## Index
 
@@ -20,7 +41,6 @@ and `@player` performance notes.
 | 06 | [Blowin' in the Wind](06-blowin-in-the-wind.tap) | Bob Dylan | C | 90 | ★☆☆☆☆ |
 | 07 | [No Woman No Cry](07-no-woman-no-cry.tap) | Bob Marley | C | 76 | ★★★☆☆ |
 | 08 | [Stand By Me](08-stand-by-me.tap) | Ben E. King | A | 120 | ★★☆☆☆ |
-| 09 | [Mad World](09-mad-world.tap) | Gary Jules | F#m | 92 | ★★★☆☆ |
 | 10 | [The Sound of Silence](10-the-sound-of-silence.tap) | Simon & Garfunkel | Am | 108 | ★★☆☆☆ |
 
 ## Difficulty Guide

@@ -1,16 +1,12 @@
 **TRACK: Soldiers' Song**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: March
 
 [V1] (Verse - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
-Melody: | Eb4 . G4 . | Ab4 . G4 . | Eb4 . C4 . | D4 . Bb3 . |
-Lyrics: | We'll sing a song, a sol-dier's song, with cheer-ing cour-age bold |
-@piano | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Eb . . . | Bb . . . Eb . . . |
-Melody: | Eb4 . G4 . | Bb4 . G4 . | Eb4 . C4 . | D4 . Bb3 . Eb4 . |
-Lyrics: | Sol-diers are we, who'd rath-er die than yield to shame, for free-dom's light |
-@piano | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . eb3-g3-bb3 . . . | vel: 65

@@ -1,22 +1,15 @@
 **TRACK: Les Métamorphoses**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . E4 . D4 . | C4 . E4 . G4 . | B3 . D4 . B3 . |
-Lyrics: | Les mé - ta - mor - pho - ses | du temps qui pas - se | chan - gent nos vies en | dou - ceur et en es - pace |
-@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f4 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . E4 . D4 . | C4 . E4 . G4 . | B3 . D4 . B3 . |
-Lyrics: | Sous le ciel qui se dé - plie | les rêves se font é - cho | et la terre nous ap - pelle | à re - naître en ces mots |
-@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f4 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E . . . |
-Melody: | F4 . A4 . C5 . | B4 . G4 . D4 . | A4 . C5 . E5 . | E4 . G#4 . B4 . |
-Lyrics: | O mé - ta - mor - pho - se | douce et pro - fon - de | fais de nos cœurs u - ne | source qui ré - pond |
-@piano | f2-a2-c3-f4 . . . | g2-b2-d3-g3 . . . | a2-e3-a3-c4 . . . | e2-g#2-b2-e3 . . . | vel: 55

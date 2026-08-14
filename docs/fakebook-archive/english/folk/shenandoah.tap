@@ -1,24 +1,21 @@
 **TRACK: Shenandoah**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 80 | subdivision: 8th
 time: 3/4 | mood: Flowing
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . | G . . | D . . | A . . | D . . | G . . | D . . | A . . |
-@guitar | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . | G . . | D . . | A . . | D . . | G . . | A . . | D . . |
-@guitar | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | G . . | A . . | Bm . . | A . . |
-@guitar | g2-b2-d3 . . | a2-c#3-e3 . . | b2-d3-f#3 . . | a2-c#3-e3 . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . | G . . | D . . | A . . | D . . | G . . | D . . | A . . |
-@guitar | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . | G . . | D . . | D . . |
-@guitar | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | d3-f#3-a3 . . | vel: 45

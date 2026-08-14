@@ -1,22 +1,15 @@
 **TRACK: A Morte do Vaqueiro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Lamenting
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | Am . . . | B7 . . . | Em . . . |
-Melody: | E4 . G4 . | A4 . B4 . | B4 . A4 . | G4 . E4 . |
-Lyrics: | Mor - reu | o va - | quei - ro | tris - te |
-@piano | e2-g2-b2 . . . | a1-c2-e2 . . . | b1-d2-f#2 . . . | e2-g2-b2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | Am . . . | B7 . . . | Em . . . |
-Melody: | E4 . G4 . | A4 . B4 . | B4 . A4 . | G4 . E4 . |
-Lyrics: | sem - pre | cho - ran - | do a | dor |
-@piano | e2-g2-b2 . . . | a1-c2-e2 . . . | b1-d2-f#2 . . . | e2-g2-b2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | B7 . . . |
-Melody: | G4 . B4 . | D5 . B4 . | E4 . G4 . | F#4 . D4 . |
-Lyrics: | O va - quei - ro | já mor - reu | no ser - tão | sem a - mor |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | b1-d2-f#2 . . . | vel: 50

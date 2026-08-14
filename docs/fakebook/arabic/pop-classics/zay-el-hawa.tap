@@ -1,24 +1,21 @@
 **TRACK: Zay El Hawa**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Passionate
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | A . . . | Dm . . . | A . . . |
-@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | a2-c#3-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 65

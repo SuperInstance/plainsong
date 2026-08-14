@@ -1,22 +1,15 @@
 **TRACK: L'italiana in Algeri**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . E4 . | B3 . D4 . B3 . | A3 . C4 . E4 . | G#3 . B3 . G#3 . |
-Lyrics: | tan - ta - gen - te | che bel - l'al - ma | tan - ta - gen - te | che bel - l'al - ma |
-@piano | a2-e3-a3 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
-Melody: | F4 . A4 . C5 . | E4 . G4 . C5 . | D4 . F4 . A4 . | B3 . D4 . G#3 . |
-Lyrics: | o - ve - ro - so | che bel - l'al - ma | o - ve - ro - so | che bel - l'al - ma |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | G . . . | Am . . . |
-Melody: | A3 . C4 . E4 . | F4 . A4 . C5 . | G4 . B4 . D5 . | E4 . C4 . A3 . |
-Lyrics: | lin - gua - ric - ca | che bel - l'al - ma | lin - gua - ric - ca | che bel - l'al - ma |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50

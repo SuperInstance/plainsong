@@ -1,20 +1,18 @@
 **TRACK: Smokestack Lightning**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 82 | subdivision: 8th
 time: 12/8 | mood: Hypnotic
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | E . . . | D . . . | E . . . |
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | E . . . | D . . . | E . . . |
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | E . . . | E . . . | D . . . | E . . . |
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | vel: 50

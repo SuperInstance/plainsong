@@ -1,16 +1,12 @@
 **TRACK: Sur le pont d'Avignon**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | E4 . G4 . | D4 . B3 . |
-Lyrics: | Sur le pont d'Av-ig-non, | L'on y dan-se, l'on y dan-se, | Sur le pont d'Av-ig-non, | L'on y dan-se tout en rond. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | C . . . |
-Melody: | E4 . G4 . | D4 . B3 . | E4 . C4 . | G3 . C4 . |
-Lyrics: | Les beaux mes-sieurs font com-me çà, | Et puis en-core com-me çà. | Les bel-les dames font com-me çà, | Et puis en-core com-me çà. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55

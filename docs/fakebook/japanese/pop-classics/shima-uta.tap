@@ -1,4 +1,6 @@
 **TRACK: Shima Uta**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: Am | tempo: 100 | subdivision: 8th  
 time: 4/4 | mood: Flowing, Traditional  
@@ -6,25 +8,17 @@ time: 4/4 | mood: Flowing, Traditional
 [V1] (Verse - 8 Bars)  
 Chords: | Am . . . | F . . . | C . . . | G . . . |  
 Chords: | Am . . . | F . . . | C . . . | G . . . |  
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50  
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50  
 
 [V2] (Verse - 8 Bars)  
 Chords: | Am . . . | F . . . | C . . . | G . . . |  
 Chords: | Am . . . | F . . . | C . . . | G . . . |  
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 52  
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 52  
 
 [CH] (Chorus - 8 Bars)  
 Chords: | F . . . | G . . . | C . . . | C . . . |  
 Chords: | F . . . | G . . . | Am . . . | Am . . . |  
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 65  
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 65  
 
 [BR] (Bridge - 4 Bars)  
 Chords: | Dm . . . | Am . . . | F . . . | G . . . |  
-@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 58  
 
 [OUT] (Outro - 4 Bars)  
 Chords: | Am . . . | F . . . | C . . . | G . . . |  
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45

@@ -1,22 +1,15 @@
 **TRACK: Bright and Glorious Is the Sky**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 80 | subdivision: 8th
 time: 3/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . | C . . | G . . | D . . |
-Melody: | B3 . D4 . | E4 . G4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Bright and glo - rious | is the sky, | hear the heavens | sing a - bove |
-@piano | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . | C . . | G . . | D . . |
-Melody: | B3 . D4 . | E4 . G4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Praise the Lord with | harp and voice, | let all crea - tures | now re - joice |
-@piano | g2-b2-d3 . . | c3-e3-g3 . . | g2-b2-d3 . . | d2-f#2-a2 . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . | G . . | C . . | D . . |
-Melody: | E4 . G4 . | B3 . D4 . | E4 . G4 . | F#4 . D4 . |
-Lyrics: | Hal - le - lu - jah | sing a - gain, | glo - ry to the | King of men |
-@piano | c3-e3-g3 . . | g2-b2-d3 . . | c3-e3-g3 . . | d2-f#2-a2 . . | vel: 50

@@ -1,16 +1,12 @@
 **TRACK: Girdhar Gopal More**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 100 | subdivision: 8th
 time: 6/8 | mood: Devotional
 
 [V1] (Verse - 4 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-Melody: | C4 . Eb4 . G4 . | Ab4 . G4 . Eb4 . | C4 . Eb4 . G4 . | F4 . Eb4 . D4 . |
-Lyrics: | Gir - dhar Go - pal more | re Gir - dhar Go - pal | Gir - dhar Go - pal more | re gir - dhar go - pal |
-@piano | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Fm . . . | Cm . . . | Ab . . . | Bb . . . |
-Melody: | F4 . Ab4 . C5 . | C4 . Eb4 . G4 . | Ab4 . G4 . Eb4 . | D4 . Eb4 . Bb3 . |
-Lyrics: | Na - tha - ji mor - e | re Na - tha - ji mor - e | Gir - dhar Go - pal | more re go - pal |
-@piano | f2-ab2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 60

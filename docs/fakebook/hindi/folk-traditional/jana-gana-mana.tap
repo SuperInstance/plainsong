@@ -1,22 +1,15 @@
 **TRACK: Jana Gana Mana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cmaj | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Solemn, flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | F . . . | C . . . |
-Melody: | C4 . E4 . | D4 . B3 . | A3 . C4 . | G3 . . . |
-Lyrics: | Ja-na ga-na ma-na | a-dhi-na-ya-ka | ja-ya he | Bha-ra-ta-bha-gya |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A3 . C4 . | E4 . D4 . | B3 . G3 . | C4 . . . |
-Lyrics: | vi-dha-ta | pun-ja-ba sin-dhu | gu-ja-ra-ta ma-ra-tha | dra-vi-da u-tka-la |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | F . . . | C . . . | G . C . |
-Melody: | E4 . G4 . | A4 . F4 . | E4 . C4 . | D4 . C4 . |
-Lyrics: | ja-ya he | ja-ya he | ja-ya he | ja-ya ja-ya |
-@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 c3-e3-g3 | vel: 55

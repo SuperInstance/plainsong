@@ -1,28 +1,18 @@
 **TRACK: Chiba Ondo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Lively, traditional
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . | F4 . E4 . D4 . | C4 . E4 . G4 . | B3 . A3 . G3 . |
-Lyrics: | Chi-ba on-do yo, | o-do-re ya, | ha-ru no yo- | i ni, sa-ku |
-@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f4 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | E7 . . . |
-Melody: | A3 . C4 . E4 . | F4 . E4 . D4 . | C4 . B3 . A3 . | G#3 . B3 . E4 . |
-Lyrics: | Ha-na no ka-o- | ri yo, | ka-ze ni no- | se-te, to-be |
-@piano | a2-e3-a3-c4 . . . | f2-a2-c3-f4 . . . | c3-e3-g3-c4 . . . | e2-g#2-b3-e4 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . C5 . | B4 . A4 . G4 . | A4 . C5 . E5 . | D5 . B4 . G#4 . |
-Lyrics: | Yo-i yo-i yo-i | ya-sa-sa, | o-do-re yo | chi-ba no |
-@piano | f2-a2-c3-f4 . . . | g2-b2-d3-g4 . . . | a2-e3-a3-c5 . . . | e2-g#2-b3-e5 . . . | vel: 60
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | G . . . | Am . . . |
-Melody: | A4 . C5 . E5 . | F5 . E5 . D5 . | C5 . B4 . A4 . | G4 . A4 . B4 . |
-Lyrics: | on-do wa, | mu-ka-shi ka- | ra, u-ta- | i-tsu-gu |
-@piano | a2-e3-a3-c5 . . . | f2-a2-c3-f5 . . . | g2-b2-d3-g4 . . . | a2-e3-a3-c5 . . . |

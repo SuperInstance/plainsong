@@ -1,32 +1,18 @@
 **TRACK: South Australia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Bold
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . . . |
-Lyrics: | In South Aus - tra - lia |
-| I was born, |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | G . . . |
-Melody: | B4 . A4 . | G4 . F#4 . |
-Lyrics: | Heave a - way, |
-| heave a - way, |
-@piano | d3-f#3-a3 . . . | g2-b3-d4 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | D5 . C#5 . | B4 . A4 . |
-Lyrics: | South Aus - tra - lia's |
-| my home - land, |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [V3] (Verse - 4 Bars)
 Chords: | D . . . | D . . . |
-Melody: | F#4 . E4 . | D4 . . . |
-Lyrics: | Heave a - way, |
-| you bull - jes, |
-@piano | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 60

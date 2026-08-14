@@ -1,30 +1,24 @@
 **TRACK: Je vais t’aimer**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad, Anthemic
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 45
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 65
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | C . . . | Dm . . . | A . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars, repeat)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 70
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 70
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | d3-f

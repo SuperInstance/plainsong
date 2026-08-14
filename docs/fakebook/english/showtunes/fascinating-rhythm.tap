@@ -1,24 +1,21 @@
 **TRACK: Fascinating Rhythm**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 116 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Abm . . . | Eb . . . | Bb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Eb . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50

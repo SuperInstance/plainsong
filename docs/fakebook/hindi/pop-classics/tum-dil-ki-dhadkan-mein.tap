@@ -1,20 +1,18 @@
 **TRACK: Tum Dil Ki Dhadkan Mein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bbm | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
-@guitar | b2-d3-f3 . . . | f2-ab2-c3 . . . | b2-d3-f3 . . . | f2-ab2-c3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
-@guitar | b2-d3-f3 . . . | f2-ab2-c3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
-@guitar | b2-d3-f3 . . . | f2-ab2-c3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | b2-d3-f3 . . . | f2-ab2-c3 . . . | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
-@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | b2-d3-f3 . . . | f2-ab2-c3 . . . | vel: 55

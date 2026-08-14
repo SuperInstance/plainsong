@@ -1,20 +1,18 @@
 **TRACK: There's a Small Hotel**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | Dm7 . . . | G7 . . . | C . . . | Am . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | Dm7 . . . | G7 . . . | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | e3-g3-b3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fmaj7 . . . | Fm6 . . . | C . . . | A7 . . . |
-@guitar | f3-a3-c4 . . . | f3-ab3-c4 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Dm7 . . . | G7 . . . | C . . . | Am . . . | Dm7 . . . | G7 . . . | C . . . | C . . . |
-@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 58

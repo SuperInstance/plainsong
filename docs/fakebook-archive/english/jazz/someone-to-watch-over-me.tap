@@ -1,27 +1,21 @@
 **TRACK: Someone to Watch Over Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 8 Bars)
 Chords: | Ab . . . | Abmaj7 . . . | Ab7 . . . | Db . . . |
-| Dbmin6 . . . | Ab . . . | Bbmin7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3-g3 . . . | ab2-c3-eb3-gb3 . . . | db2-f3-ab3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Ab . . . | Abmaj7 . . . | Ab7 . . . | Db . . . |
-| Dbmin6 . . . | Ab . . . | Bbmin7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3-g3 . . . | ab2-c3-eb3-gb3 . . . | db2-f3-ab3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Dbmin6 . . . | Ab . . . | Fmin7 . . . |
-| Bbmin7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
-@guitar | db2-f3-ab3 . . . | db2-f3-ab3-b3 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bbmin7 . . . | Eb7 . . . | Ab . . . | Ab7 . . . |
-@guitar | bb2-db3-f3 . . . | eb2-g3-bb3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3-gb3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Db . . . | Bbmin7 . . . | Eb7 . . . | Ab . . . |
-@guitar | db2-f3-ab3 . . . | bb2-db3-f3 . . . | eb2-g3-bb3 . . . | ab2-c3-eb3 . . . | vel: 48

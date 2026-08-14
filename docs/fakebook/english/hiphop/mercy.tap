@@ -1,24 +1,21 @@
 **TRACK: Mercy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Dark, Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 62
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Eb . . . | Fm . . . | C . . . |
-@guitar | ab1-c2-eb2 . . . | eb1-g1-bb1 . . . | f1-ab1-c2 . . . | c1-e1-g1 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
-@guitar | f2-ab2-c3 . . . | db2-f2-ab2 . . . | bb1-db2-f2 . . . | c2-e2-g2 . . . | vel: 55

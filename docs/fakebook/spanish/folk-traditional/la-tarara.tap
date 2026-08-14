@@ -1,28 +1,18 @@
 **TRACK: La Tarara**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Gentle, folk dance
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . E4 | B3 . D4 . E4 | A3 . C4 . E4 | B3 . D4 . E4 |
-Lyrics: | La ta-ra-ra, | sí, la ta-ra-ra, | la ta-ra-ra, | sí, la ta-ra-ra, |
-@piano | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . E4 | B3 . D4 . E4 | A3 . C4 . E4 | E4 . D4 . B3 |
-Lyrics: | La ta-ra-ra, | sí, la ta-ra-ra, | la ta-ra-ra, | sí, la ta-ra-ra, |
-@piano | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . C5 | E4 . G#4 . B4 | A4 . C5 . E5 | E4 . D4 . B3 |
-Lyrics: | Que la ta-ra-ra, | que la ta-ra-ra, | que la ta-ra-ra, | sí, la ta-ra-ra, |
-@piano | f2-a2-c3-f4 . . . | e2-g#3-b3-d4 . . . | a2-e3-a3-c4 . . . | e2-g#3-b3-d4 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | F . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . C5 | E4 . G#4 . B4 | A4 . C5 . E5 | E4 . C5 . A4 |
-Lyrics: | Que la ta-ra-ra, | que la ta-ra-ra, | que la ta-ra-ra, | sí, la ta-ra-ra, |
-@piano | f2-a2-c3-f4 . . . | e2-g#3-b3-d4 . . . | a2-e3-a3-c4 . . . | e2-g#

@@ -1,24 +1,21 @@
 **TRACK: Bang Bang Bang**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 135 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | F#m . . . | D . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | F#m . . . | D . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 60
 
 [PC] (Pre-Chorus - 4 Bars)
 Chords: | Bm . . . | C# . . . |
-@guitar | b2-f#3-b3 . . . | c#3-g#3-c#4 . . . | vel: 65
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | D . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | C# . . . |
-@guitar | b2-f#3-b3 . . . | c#3-g#3-c#4 . . . | vel: 70

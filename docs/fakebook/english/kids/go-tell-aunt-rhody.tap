@@ -1,22 +1,15 @@
 **TRACK: Go Tell Aunt Rhody**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | Go tell Aunt Rho - dy | Go tell Aunt Rho - dy | Go tell Aunt Rho - dy | The old grey goose is dead |
-@piano | a2-e3-a3 . . . | g#2-d#3-g#3 . . . | a2-e3-a3 . . . | g#2-d#3-g#3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | D4 . F4 . | E4 . C4 . | B3 . G#3 . |
-Lyrics: | The one she's been a - sav - ing | To make a fea - ther bed | She died in the mill - pond | Stand - ing on her head |
-@piano | a2-e3-a3 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | g#2-d#3-g#3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | D4 . B3 . |
-Lyrics: | Go tell Aunt Rho - dy | Go tell Aunt Rho - dy | Go tell Aunt Rho - dy | The old grey goose is dead |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

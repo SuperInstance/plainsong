@@ -1,20 +1,18 @@
 **TRACK: Mit 66 Jahren**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Uptempo
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Bb . . . | C7 . . . | F . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Bb . . . | C7 . . . | F . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | F . . . | C7 . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | C7 . . . | C7 . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 50

@@ -1,22 +1,15 @@
 **TRACK: Komm, lieber Mai, und mache**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . C4 . |
-Lyrics: | Komm, lie-ber Mai, und ma-che | die Bäu-me wie-der grün, | und lass mir an dem Ba-che | die klei-nen Veil-chen blühn! |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | A7 . . . | D . . . | D7 . . . |
-Melody: | G3 . B3 . | C#4 . E4 . | D4 . F#4 . | A3 . C#4 . |
-Lyrics: | Wie möcht ich doch bei Son-nen-schein, | o Mai, mit dir spa-ziern! | Und in den Wald hin-ein, | und al-les froh und tiersch! |
-@piano | e2-g2-b2 . . . | a2-c#3-e3 . . . | d2-f#2-a2 . . . | d2-f#2-a2-c#3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C#4 . | G3 . B3 . | F#3 . A3 . |
-Lyrics: | O Mai, o Mai, so grün und frisch, | bring Blu-men auf das Feld! | O Mai, o Mai, wie schön du bist, | du lieb-lich-ster der Welt! |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | d2-f#2-a2 . . . | vel: 55

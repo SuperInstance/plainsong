@@ -1,26 +1,21 @@
 **TRACK: Careless Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Bluesy
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | C7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | vel: 50
 Chords: | F . . . | F . . . | G7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c2-e2-bb2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | C7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | vel: 55
 Chords: | F . . . | F . . . | G7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c2-e2-bb2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | Bb . . . | F . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
 Chords: | G7 . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | g2-b2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | F . . . |
-@guitar | f2-a2-c3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45

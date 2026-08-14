@@ -1,16 +1,12 @@
 **TRACK: La Furlana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . E4 . . . | F4 . A4 . C5 . . . | E4 . G4 . C5 . . . | D4 . B3 . G3 . . . |
-Lyrics: | La fur - la - na dan - za | nel pra - to fio - ri - to | la gio - ia nel cuor | can - tia - mo an - cor |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | A4 . C5 . F5 . . . | E5 . G4 . C5 . . . | D5 . B4 . G4 . . . | A4 . E4 . C4 . . . |
-Lyrics: | Oh dan - za, dan - za | con leg - gia - dria | la not - te bril - la | sot - to la lu - na |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

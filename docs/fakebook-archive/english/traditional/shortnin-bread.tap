@@ -1,22 +1,15 @@
 **TRACK: Shortnin' Bread**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G3 . A3 B3 . | A3 . G3 . | G3 . A3 B3 . | A3 . G3 . |
-Lyrics: | put on the skil - let | put on the lid | mam - ma's gon - na make | short - nin' bread |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . D4 C4 . | B3 . G3 . | A3 . B3 C4 . | B3 . G3 . |
-Lyrics: | short - nin' bread, short - nin' bread | mam - ma's lit - tle ba - by | loves short - nin' bread | short - nin' bread |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G3 . A3 B3 . | A3 . G3 . | G3 . A3 B3 . | A3 . G3 . |
-Lyrics: | three lit - tle chil - dren | lyin' in bed | all of them sick | and near - ly dead |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50

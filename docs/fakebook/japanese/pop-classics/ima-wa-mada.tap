@@ -1,28 +1,22 @@
 **TRACK: Ima wa Mada**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | E/G# . . . | F#m . . . | D . . . |
-@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | vel: 50
 Chords: | A . . . | E/G# . . . | F#m . . . | E . . . |
-@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | e2-b2-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A/C# . . . | Bm . . . | E . . . |
-@guitar | d2-f#2-a2 . . . | a2-c#2-e2 . . . | b2-d2-f#2 . . . | e2-g#2-b2 . . . | vel: 52
 Chords: | A . . . | E/G# . . . | F#m . . . | E . . . |
-@guitar | a2-e3-a3 . . . | e2-g#2-b2 . . . | f#2-a2-c#3 . . . | e2-b2-e3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | vel: 65
 Chords: | A . . . | E . . . | F#m . . . | E . . . |
-@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | f#2-a2-c#3 . . . | e2-b2-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | E . . . | A . . . | F#m . . . |
-@guitar | b2-d2-f#2 . . . | e2-g#2-b2 . . . | a2-c#2-e2 . . . | f#2-a2-c#3 . . . | vel: 55
 Chords: | Bm . . . | E . . . | A . . . | E . . . |
-@guitar | b2-d2-f#2 . . . | e2-g#2-b2 . . . | a2-c#2-e2 . .

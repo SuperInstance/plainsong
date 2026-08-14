@@ -1,28 +1,18 @@
 **TRACK: Water Music, Suite No. 2 in D major, HWV 349 - Allegro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . F#4 . |
-Lyrics: | la la la la | la la la la |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Bm . . . | F# . . . |
-Melody: | B4 . A4 . | F#4 . D4 . |
-Lyrics: | la la la la | la la la la |
-@piano | b2-d3-f#3 . . . | f#2-a#3-c#3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | G . . . |
-Melody: | D5 . C#5 . | B4 . A4 . |
-Lyrics: | la la la la | la la la la |
-@piano | d3-f#3-a3 . . . | g2-b3-d3 . . . | vel: 65
 
 [IN] (Instrumental - 4 Bars)
 Chords: | A . . . | D . . . |
-Melody: | A4 . B4 . | C#5 . D5 . |
-Lyrics: | (instrumental) | (instrumental) |
-@piano | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 55

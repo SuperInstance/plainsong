@@ -1,24 +1,21 @@
 **TRACK: Walk On By**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | E . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | E . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . | A . . . | D . . . | E . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | D . . . | E . . . | E . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | A . . . | D . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | e3-g#3-b3 . . . | vel: 50

@@ -1,16 +1,12 @@
 **TRACK: The Rio Grande**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Sea Shanty
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | The Ri - o Grande, | I am bound a - way, | The Ri - o Grande, | I am bound a - way, |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | C . . . | Dm . . . | A . . . |
-Melody: | F4 . E4 . | D4 . C4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | And a - way, my boys, | and a - way, my boys, | The Ri - o Grande, | I am bound a - way, |
-@piano | d3-f3-a3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50

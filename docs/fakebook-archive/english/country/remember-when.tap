@@ -1,24 +1,21 @@
 **TRACK: Remember When**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | G . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . | Em . . . | A . . . | G . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | A . . . | D . . . | Bm . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | Em . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | A . . . | D . . . | Bm . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . .

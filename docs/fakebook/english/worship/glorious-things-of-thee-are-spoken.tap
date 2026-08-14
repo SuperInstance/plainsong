@@ -1,22 +1,15 @@
 **TRACK: Glorious Things of Thee Are Spoken**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . F#3 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Glo-rious things of thee are spo-ken, Zi-on ci-ty of our God |
-@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | D . . . |
-Melody: | E4 . G4 . | B3 . D4 . | E4 . G4 . | F#3 . A3 . |
-Lyrics: | He whose word can-not be bro-ken, formed thee for His own a-bode |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . G . . . |
-Melody: | B3 . D4 . | A3 . F#3 . | B3 . D4 . | A3 . G3 . |
-Lyrics: | On the Rock of A-ges found-ed, what can shake thy sure re-pose? |
-@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . g2-b2-d3 . . . | vel: 55

@@ -1,34 +1,21 @@
 **TRACK: Great Is Thy Faithfulness**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Reverent
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . |
-Melody: | B3 . D4 . | A3 . B3 . | G3 . B3 . | E4 . . . |
-Lyrics: | Great is Thy | faith-ful-ness, | O God my | Fa-ther, |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-Melody: | B3 . D4 . | A3 . B3 . | C4 . B3 . | G3 . . . |
-Lyrics: | There is no | shad-ow of | turn-ing with | Thee; |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | A3 . B3 . | G3 . . . |
-Lyrics: | Great is Thy | faith-ful-ness! | Great is Thy | faith-ful-ness! |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | A3 . B3 . | G3 . . . |
-Lyrics: | Morn-ing by | morn-ing new | mer-cies I | see; |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . |
-Melody: | B3 . D4 . | A3 . B3 . | G3 . B3 . | E4 . . . |
-Lyrics: | All I have | need-ed Thy | hand hath pro | -vid-ed— |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | e

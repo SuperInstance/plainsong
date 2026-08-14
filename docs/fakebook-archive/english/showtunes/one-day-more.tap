@@ -1,24 +1,21 @@
 **TRACK: One Day More**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb minor | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm . . . | Gb . . . | Bbm . . . | F . . . |
-@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm . . . | Gb . . . | Bbm . . . | F . . . |
-@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Ab . . . | Bbm . . . | F . . . |
-@guitar | db2-f2-ab2 . . . | ab1-c2-eb2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Db . . . | Eb . . . | F . . . |
-@guitar | gb1-bb1-db2 . . . | db2-f2-ab2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bbm . . . | Gb . . . | F . . . | Bbm . . . |
-@guitar | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | vel: 50

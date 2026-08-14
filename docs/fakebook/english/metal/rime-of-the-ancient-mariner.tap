@@ -1,24 +1,21 @@
 **TRACK: Rime of the Ancient Mariner**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 80 | subdivision: 8th
 time: 4/4 | mood: Epic, Building
 
 [V1] (Intro/Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | Am . . . | F . . . | F . . . | G . . . | G . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | C . . . | F . . . | F . . . | G . . . | G . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [B] (Bridge - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Am . . . | Am . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | F . . . | G . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a

@@ -1,22 +1,15 @@
 **TRACK: La Spagnola**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A4 . C5 . | B4 . G#4 . | A4 . C5 . | B4 . G#4 . |
-Lyrics: | La spa-gno-la | sa l'a-mo-re | la spa-gno-la | sa l'a-mo-re |
-@piano | a2-c3-e3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A4 . C5 . | B4 . G#4 . | A4 . C5 . | B4 . G#4 . |
-Lyrics: | con gli oc-chi | ne-ri, con gli oc-chi | ne-ri, con gli oc-chi | ne-ri |
-@piano | a2-c3-e3 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | E7 . . . |
-Melody: | F4 . A4 . | E4 . G4 . | F4 . A4 . | G#4 . B4 . |
-Lyrics: | e ti fa morir | e ti fa morir | e ti fa morir | d'a-mo-re |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 60

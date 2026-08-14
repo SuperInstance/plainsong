@@ -1,22 +1,15 @@
 **TRACK: Lamma Bada Yatathanna**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Gentle, flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | G4 . A4 . |
-Lyrics: | lam-ma ba-da ya-ta-than-na | hus-nu-hu zaa-da | la-ma ba-da ya-ta-than-na | hus-nu-hu zaa-da |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | F4 . E4 . | D4 . C#4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | 'a-ja-bun mal-lahu min-hu | ya la-hu min qad-din | wa la-zi la-hu | wa la-zi la-hu |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | G4 . A4 . | C#4 . E4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | wa 'a-lay-ya min bah-ri | hus-ni-hi a-lam | ya layl la layl | ya 'ayn ya layl |
-@piano | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50

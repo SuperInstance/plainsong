@@ -1,28 +1,21 @@
 **TRACK: One Mic**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bbm | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Dark, Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
-        | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
-@guitar | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . |
-        | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
-        | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
-@guitar | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . |
-        | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
-@guitar | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Ab . . . | Bbm . . . | Bbm . . . |
-@guitar | gb2-bb2-db3 . . . | ab2-c3-eb3 . . . | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | Bbm . . . | Bbm . . . |
-@guitar | bbm2-db3-f3 . . . | bbm2-db3-f3 . . . | vel: 40

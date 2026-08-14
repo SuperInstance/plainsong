@@ -1,22 +1,15 @@
 **TRACK: Leise rieselt der Schnee**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . | C7 . . | F . . | C7 . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . |
-Lyrics: | Lei - se rie - selt der Schnee, | still und starr ist der See, | weih - nacht - lich glän - zet der Wald, | freu - e dich,'s Christ - kind kommt bald. |
-@piano | f2-a2-c3 . . | c2-e2-g2 . . | f2-a2-c3 . . | c2-e2-g2 . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . | C7 . . | F . . | C7 . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . |
-Lyrics: | In den Her - zen ist's hell, | in den Stu - ben ist's warm, | Mut - ter schaut auf das Kind, | und der Him - mel ist mild. |
-@piano | f2-a2-c3 . . | c2-e2-g2 . . | f2-a2-c3 . . | c2-e2-g2 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . | C7 . . | F . . | C7 . . F . . |
-Melody: | Bb4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . F4 . . |
-Lyrics: | Bald ist die hei - li - ge Nacht, | Stern - lein leuch - ten so sacht, | al - le sin - gen ein Lied, | das das Kind - lein be - hüt'. |
-@piano | bb2-d3-f3 . . | c2-e2-g2 . . | f2-a2-c3 . . | c2-e2-g2 . f2-a2-c3 . . | vel: 55

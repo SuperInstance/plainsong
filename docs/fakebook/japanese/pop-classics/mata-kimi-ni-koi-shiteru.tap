@@ -1,26 +1,22 @@
 **TRACK: Mata Kimi ni Koi Shiteru**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 82 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | A . . . | Bm . . . | G . . . |
-@guitar | g2-b3-d3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 65
 Chords: | Em . . . | F# . . . | Bm . . . | A . . . |
-@guitar | e3-g#3-b3 . . . | f#2-a#2-c#3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | D . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b3-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b3-d3 . . . | vel: 50

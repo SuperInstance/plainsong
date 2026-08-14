@@ -1,30 +1,24 @@
 **TRACK: Aquarela do Brasil**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 92 | subdivision: 8th
 time: 2/4 | mood: Samba
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | C#dim . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c#3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 Chords: | C . . . | C#dim . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c#3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | C#dim . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c#3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 Chords: | C . . . | A7 . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | F#dim . . . | C/G . . . | G7 . . . |
-@guitar | f2-a2-c3 . . . | f#2-a2-c3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | C . . . | C#dim . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c#3-e3-g3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 Chords: | C . . . | A7 . . . | Dm7 . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | C . . . | G7 . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3

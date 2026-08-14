@@ -1,16 +1,12 @@
 **TRACK: Il Canto degli Italiani**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | Bb3 . D4 . | Eb4 . F4 . | G4 . F4 . | D4 . F4 . |
-Lyrics: | Fratel - li d'I - | ta - lia, l'I - | ta - lia s'è de - | sta - ta, dell' |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | Bb . . . | Bb . . . |
-Melody: | D4 . F4 . | A4 . F4 . | G4 . F4 . | D4 . Bb3 . |
-Lyrics: | Stringhiam - ci in co - | or - te, siam | pron - ti alla mor - | te, l'Ita - lia chia - |
-@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-g3 . . . | bb2-d3-f3 . . . | vel: 60

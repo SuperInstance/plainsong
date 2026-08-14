@@ -1,24 +1,21 @@
 **TRACK: San Antonio Rose**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 116 | subdivision: 8th
 time: 4/4 | mood: Western Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | G . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | C . . . | A7 . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | F . . . | C . . . | A7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | C . . . | A7 . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | g

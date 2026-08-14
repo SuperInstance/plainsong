@@ -1,24 +1,21 @@
 **TRACK: Don’t Cry for Me Argentina**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Anthemic
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . | Eb . . . | Bb . . . | F . . . | F . . . |
-@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Gm . . . | Dm . . . | Eb . . . | F . . . | Gm . . . | Dm . . . | Eb . . . | F . . . |
-@guitar | g2-bb2-d3 . . . | d2-f2-a2 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | d2-f2-a2 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . | Bb . . . | Gm . . . | Cm . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | vel: 52
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | bb2-d3

@@ -1,26 +1,18 @@
 **TRACK: Hungarian Rhapsody No. 2 in C-sharp minor, S. 244/2**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C#m | tempo: 80 (Lassan) then 140 (Friska) | subdivision: 16th
 time: 2/4 (Lassan) then 4/4 (Friska) | mood: Dramatic, Gypsy
 
 [V1] (Lassan - 4 Bars)
 Chords: | C#m . . . | G#7 . . . | C#m . . . | G#7 . . . |
-Melody: | C#4 . E4 . | G#3 . B3 . | C#4 . E4 . | G#3 . B3 . |
-Lyrics: | (instrumental) | (instrumental) | (instrumental) | (instrumental) |
-@piano | c#2-e2-g#2-c#3 . . . | g#1-b1-d#2-g#2 . . . | c#2-e2-g#2-c#3 . . . | g#1-b1-d#2-g#2 . . . | vel: 45
 
 [V2] (Lassan - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | E7 . . . |
-Melody: | A3 . C#4 . | B3 . D#4 . | A3 . C#4 . | B3 . D#4 . |
-Lyrics: | (instrumental) | (instrumental) | (instrumental) | (instrumental) |
-@piano | a1-c#2-e2-a2 . . . | e1-g#1-b1-e2 . . . | a1-c#2-e2-a2 . . . | e1-g#1-b1-e2 . . . | vel: 50
 
 [CH] (Friska - 4 Bars)
 Chords: | C#m . . . | G#7 . . . | C#m . . . | G#7 . . . |
-Melody: | C#5 . D#5 . E5 . F#5 . | G#5 . . . . . . . | C#5 . D#5 . E5 . F#5 . | G#5 . . . . . . . |
-Lyrics: | (instrumental) | (instrumental) | (instrumental) | (instrumental) |
-@piano | c#2-g#2-c#3-e3-g#3-c#4 . . . | g#1-d#2-g#2-b2-d#3-g#3 . . . | c#2-g#2-c#3-e3-g#3-c#4 . . . | g#1-d#2-g#2-b2-d#3-g#3 . . . | vel: 70
 
 [CH2] (Friska - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | E7 . . . |
-Melody: | A4 . B4 . C#5 . D#5 . | E5 .

@@ -1,28 +1,18 @@
 **TRACK: The Peacock Flies Southeast**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Elegiac, Flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | C4 . D4 . | B3 . . . |
-Lyrics: | The pea - cock flies | south - east, oh | my love is gone | a - way |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Dm . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . A3 . |
-Lyrics: | Five steps I turn, | one look back, | my heart is torn | in two |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | e2-g#2-b2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A4 . C5 . | A4 . F4 . | G4 . E4 . | D4 . B3 . |
-Lyrics: | Oh, my love, | do not for - get | the vows we swore | be - neath the moon |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Am . . . | F . . . |
-Melody: | A3 . C4 . | F4 . . . |
-Lyrics: | fly east, fly | south - east |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 40

@@ -1,24 +1,21 @@
 **TRACK: Naima**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bbm | tempo: 58 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbmaj7 . . . | Ebmaj7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
-@guitar | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | vel: 40
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbmaj7 . . . | Ebmaj7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
-@guitar | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | vel: 45
 
 [B1] (Bridge - 8 Bars)
 Chords: | D7alt . . . | G7alt . . . | Cm7 . . . | F7 . . . |
-@guitar | d2-f#2-a2-c3 . . . | g2-b2-d3-f3 . . . | c2-eb2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Bbmaj7 . . . | Ebmaj7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
-@guitar | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | vel: 42
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bbmaj7 . . . | Ebmaj7 . . . | Bbmaj7 . . . | . . . . |
-@guitar | b2-d3-f3-a3 . . . | eb2-g2-bb2-d3 . . . | b2-d3-f3-a3 . . . | . . . . | vel: 35

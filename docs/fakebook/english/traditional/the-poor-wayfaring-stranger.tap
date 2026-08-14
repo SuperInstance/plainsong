@@ -1,20 +1,12 @@
 **TRACK: The Poor Wayfaring Stranger**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Solemn
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . | C . . | G . . | D . . | Em . . | C . . | B7 . . | Em . . |
-Melody: | E4 . G4 . | B4 . G4 . | A4 . G4 . | F#4 . D4 . | E4 . G4 . | B4 . C5 . | B4 . A4 . | G4 . E4 . |
-Lyrics: | I'm a poor | way-far-ing | stran-ger, while | trav-ling | through this | world of | woe, yet there's | no sick- |
-| ness, toil, nor | dan-ger in | that bright | world to | which I | go. I'm | go-ing | home to |
-| see my | moth-er, I'm | go-ing | home no | more to | roam. I'm | just a | go-ing |
-| o-ver | Jor-dan, I'm | just a | go-ing | o-ver | home. |
-@piano | e2-b2-e3 . | c2-g2-c3 . | g2-b2-d3 . | d2-a2-d3 . | e2-b2-e3 . | c2-g2-c3 . | b1-f#2-b2 . | e2-b2-e3 . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . | C . . | G . . | D . . |
-Melody: | B4 . C5 . | B4 . A4 . | G4 . F#4 . | E4 . D4 . |
-Lyrics: | I'm just a | go-ing | o-ver | Jor-dan, |
-| I'm just a | go-ing | o-ver | home. |
-@piano | e2-b2-e3 . | c2-g2-c3 . | g2-b2-d3 . | d2-a2-d3 . | vel: 50

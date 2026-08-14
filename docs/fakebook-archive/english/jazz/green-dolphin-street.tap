@@ -1,20 +1,18 @@
 **TRACK: Green Dolphin Street**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Cmaj7 . . . | Cm7 . . . | Cm6 . . . | D7 . . . | Dbmaj7 . . . | Dbm7 . . . | Dbm6 . . . | Eb7 . . . |
-@guitar | c3-e3-g3-b3 . . . | c3-eb3-g3-bb3 . . . | c3-eb3-g3-a3 . . . | d3-f#3-a3-c4 . . . | db3-f3-ab3-c4 . . . | db3-e3-ab3-b3 . . . | db3-e3-ab3-cb4 . . . | eb3-g3-bb3-db4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Abmaj7 . . . | Abm7 . . . | Abm6 . . . | Bb7 . . . | Ebmaj7 . . . | Ab7 . . . | Dbmaj7 . . . | Db7 . . . |
-@guitar | ab3-c4-eb4-g4 . . . | ab3-b3-eb4-gb4 . . . | ab3-b3-eb4-f4 . . . | bb3-d4-f4-ab4 . . . | eb3-g3-bb3-d4 . . . | ab3-c4-eb4-gb4 . . . | db3-f3-ab3-c4 . . . | db3-f3-ab3-cb4 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | G7 . . . | Gb7 . . . | F7 . . . | E7 . . . | Eb7 . . . | D7 . . . | Db7 . . . | Cmaj7 . . . |
-@guitar | g3-b3-d4-f4 . . . | gb3-bb3-db4-e4 . . . | f3-a3-c4-eb4 . . . | e3-g#3-b3-d4 . . . | eb3-g3-bb3-db4 . . . | d3-f#3-a3-c4 . . . | db3-f3-ab3-cb4 . . . | c3-e3-g3-b3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cmaj7 . . . | Cm7 . . . | Cm6 . . . | D7 . . . |
-@guitar | c3-e3-g3-b3 . . . | c3-eb3-g3-bb3 . . . | c3-eb3-g3-a3 . . . | d3-f#3-a3-c4 . . . | vel: 50

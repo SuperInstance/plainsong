@@ -1,28 +1,21 @@
 **TRACK: Mera Dil Bhi Kitna Pagal Hai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
-       | Em . . . | Am . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | e2-b2-e3 . . . | b1-f#2-b2 . . . | vel: 50
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Am . . . | D . . . | G . . . | C . . . |
-       | Am . . . | B7 . . . | Em . . . | Em . . . |
-@guitar | a2-c3-e3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60
-@guitar | a2-c3-e3 . . . | b1-f#2-b2 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | B7 . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | b1-f#2-b2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | Am . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | c3-e3-g3 . . . | d2-a2-d3 . . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | Em . . . | Em . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 45

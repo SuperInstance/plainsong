@@ -1,24 +1,21 @@
 **TRACK: If I Had Possession Over Judgment Day (alternate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | E . . . | A . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50

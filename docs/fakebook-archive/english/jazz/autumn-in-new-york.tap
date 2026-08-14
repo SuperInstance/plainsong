@@ -1,26 +1,18 @@
 **TRACK: Autumn in New York**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . | Abmaj7 . . . | Dbm7 Gb7 . . |
-| Fm7 . . . | Bb7 . . . | Gm7 . . . | C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | ab1-c2-eb2-ab2 . . . | db2-f2-ab2-cb3 . . . | vel: 55
-@guitar | f1-ab1-c2-eb2 . . . | bb1-d2-f2-ab2 . . . | g1-bb1-d2-f2 . . . | c2-e2-g2-bb2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . | Abmaj7 . . . | Dbm7 Gb7 . . |
-| Fm7 . . . | Bb7 . . . | Gm7 C7 . . | Fmaj7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | ab1-c2-eb2-ab2 . . . | db2-f2-ab2-cb3 . . . | vel: 55
-@guitar | f1-ab1-c2-eb2 . . . | bb1-d2-f2-ab2 . . . | g1-bb1-d2-f2 . . . | c2-e2-g2-bb2 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | F7 . . . |
-| Bbmaj7 . . . | Ebmaj7 . . . | Am7b5 . . . | D7 . . . |
-@guitar | d2-f2-a2-c3 . . . | g1-b1-d2-f2 . . . | c2-e2-g2-b2 . . . | f1-a1-c2-eb2 . . . | vel: 60
-@guitar | bb1-d2-f2-ab2 . . . | eb1-g1-bb1-d2 . . . | a1-c2-eb2-g2 . . . | d1-f#1-a1-c2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . | Abmaj7 . . . | Dbm7 Gb7 . . |
-| Fm7 . . . | Bb7 . . . | Gm7 C7 . . | Fmaj7 . . . |

@@ -1,22 +1,15 @@
 **TRACK: The Legend of the White Snake**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Plaintive, flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Em . . . | F . . . | G . . . |
-Melody: | A3 . C4 . | B3 . G3 . | F4 . A3 . | B3 . D4 . |
-Lyrics: | White snake she waits | by the West Lake shore | a thousand years | of love and lore |
-@piano | a2-e3-a3 . . . | e2-b2-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 48
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Em . . . | F . . . | G . . . |
-Melody: | A3 . C4 . | B3 . G3 . | F4 . A3 . | B3 . D4 . |
-Lyrics: | The scholar comes | with umbrella bright | their fates entwine | in moonlit night |
-@piano | a2-e3-a3 . . . | e2-b2-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | E7 . . . |
-Melody: | A4 . C5 . | G4 . E4 . | F4 . A4 . | B3 . D4 . |
-Lyrics: | O white snake, white snake | your heart is true | but monk's bell tolls | to part you two |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 55

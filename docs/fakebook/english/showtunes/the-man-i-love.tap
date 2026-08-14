@@ -1,24 +1,21 @@
 **TRACK: The Man I Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Fmaj7 . . . | Bb . . . | Bbm . . . | F . . . | D7 . . . | Gm7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-e3 . . . | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | Fmaj7 . . . | Bb . . . | Bbm . . . | F . . . | D7 . . . | Gm7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-e3 . . . | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Abm . . . | Eb . . . | C7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb2-g2-bb2 . . . | c2-e2-g2 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Fmaj7 . . . | Bb . . . | Bbm . . . | F . . . | D7 . . . | Gm7 . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-e3 . . . | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | F . . . | Bb . . . | F . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 50

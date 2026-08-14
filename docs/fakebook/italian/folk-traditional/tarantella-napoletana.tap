@@ -1,27 +1,18 @@
 **TRACK: Tarantella Napoletana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 6/8 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . . . | E7 . . . . . | Am . . . . . | E7 . . . . . |
-Melody: | A4 . . . C5 . | B4 . . . G#4 . | A4 . . . C5 . | B4 . . . G#4 . |
-Lyrics: | ta - ran - tel - la | na - po - le - ta - na | ta - ran - tel - la | na - po - le - ta - na |
-@piano | a2-e3-a3 . . . . . | e2-g#3-b3 . . . . . | a2-e3-a3 . . . . . | e2-g#3-b3 . . . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . . . | A7 . . . . . | Dm . . . . . | E7 . . . . . |
-Melody: | D5 . . . F5 . | E5 . . . C#5 . | D5 . . . F5 . | E5 . . . B4 . |
-Lyrics: | o - hi - o - hi | o - hi - o - hi | o - hi - o - hi | o - hi - o - hi |
-@piano | d3-f3-a3 . . . . . | a2-c#3-e3 . . . . . | d3-f3-a3 . . . . . | e2-g#3-b3 . . . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . . . | F . . . . . | C . . . . . | E7 . . . . . |
-Melody: | A4 . . . C5 . | F5 . . . E5 . | E5 . . . D5 . | C5 . . . B4 . |
-Lyrics: | man - ma - mia | che bel - la | tar - an - tel - la | dan - za - mo |
-@piano | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | c3-e3-g3 . . . . . | e2-g#3-b3 . . . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . . . | A7 . . . . . | Dm . . . . . | E7 . . . . . |
-Melody: | D5 . . . F5 . | E5 . . . C#5 . | D5 . . . F5 . | E5 . . . B4 . |
-Lyrics: | o - hi - o - hi | o - hi - o - hi | o - hi - o - hi | o - hi -

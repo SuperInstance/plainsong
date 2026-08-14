@@ -1,20 +1,18 @@
 **TRACK: What a Fool Believes**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 118 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m7 . . . | Bm7 . . . | E9 . . . | A maj7 . . . | D maj7 . . . | Dm7 . . . | A/C# . . . | B7 . . . |
-@guitar | f#2-a2-c#3-e3 . . . | b1-d2-f#2-a2 . . . | e2-g#2-b2-d3 . . . | a1-c#2-e2-g#2 . . . | d2-f#2-a2-c#3 . . . | d2-f2-a2-c3 . . . | a1-c#2-e2-a2 . . . | b1-d2-f#2-a2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F#m7 . . . | Bm7 . . . | E9 . . . | A maj7 . . . | D maj7 . . . | Dm7 . . . | A/C# . . . | B7 . . . |
-@guitar | f#2-a2-c#3-e3 . . . | b1-d2-f#2-a2 . . . | e2-g#2-b2-d3 . . . | a1-c#2-e2-g#2 . . . | d2-f#2-a2-c#3 . . . | d2-f2-a2-c3 . . . | a1-c#2-e2-a2 . . . | b1-d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D maj7 . . . | C#m7 . . . | F#7 . . . | Bm7 . . . | E9 . . . | A maj7 . . . | Dm7 . . . | E7 . . . |
-@guitar | d2-f#2-a2-c#3 . . . | c#2-e2-g#2-b2 . . . | f#1-a#1-c#2-e2 . . . | b1-d2-f#2-a2 . . . | e2-g#2-b2-d3 . . . | a1-c#2-e2-g#2 . . . | d2-f2-a2-c3 . . . | e1-g#1-b1-d2 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | F maj7 . . . | E7 . . . | Am7 . . . | D7 . . . | G maj7 . . . | C maj7 . . . | F#m7 . . . | B7 . . . |
-@guitar | f1-a1-c2-e2 . . . | e1-g#1-b1-d2 . . . | a1-c2-e2-g

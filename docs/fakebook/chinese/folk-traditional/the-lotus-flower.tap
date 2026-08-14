@@ -1,16 +1,12 @@
 **TRACK: The Lotus Flower**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-Melody: | F4 . A4 . | C5 . . . | A4 . F4 . | D4 . . . |
-Lyrics: | The lo - tus blooms | in si - lent pond | its pet - als soft | in morn - ing light |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . |
-Melody: | D5 . C5 . | A4 . F4 . | G4 . A4 . | F4 . . . |
-Lyrics: | O lo - tus fair | in wa - ters clear | your grace I hold | so dear |
-@piano | bb1-d2-f2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 50

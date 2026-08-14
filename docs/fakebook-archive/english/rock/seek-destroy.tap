@@ -1,27 +1,21 @@
 **TRACK: Seek & Destroy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 144 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-        | C . . . | D . . . | Em . . . | Em . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-        | C . . . | D . . . | Em . . . | Em . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Em . . . | C . . . | D . . . | Em . . . |
-        | Em . . . | C . . . | D . . . | Em . . . |
-@guitar | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 50

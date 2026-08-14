@@ -1,16 +1,12 @@
 **TRACK: The Sweepers**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | Sweep - ers, sweep - ers, | sweep the streets so clean, | Sweep - ers, sweep - ers, | sweep the streets so clean. |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | A . . . | Dm . . . |
-Melody: | Bb3 . D4 . | A3 . C4 . | C#4 . E4 . | D4 . F4 . |
-Lyrics: | Sweep - ing, sweep - ing, | all the dust a - way, | Sweep - ing, sweep - ing, | for a bright - er day. |
-@piano | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | vel: 55

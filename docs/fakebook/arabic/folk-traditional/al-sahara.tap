@@ -1,16 +1,12 @@
 **TRACK: Al Sahara**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle, Flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . F4 . | E4 . C#4 . |
-Lyrics: | sah - ha - ra | sah - ha - ra | sah - ha - ra | sah - ha - ra |
-@piano | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | A7 . . . |
-Melody: | D4 . F4 . | A4 . G4 . | F4 . E4 . | D4 . C#4 . |
-Lyrics: | al - sah - ha - ra | al - sah - ha - ra | al - sah - ha - ra | al - sah - ha - ra |
-@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 55

@@ -1,22 +1,15 @@
 **TRACK: The Small Bridge and Flowing Water**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | A . . . |
-Melody: | D4 . F#4 . | A4 . . . | B4 . A4 . | F#4 . E4 . |
-Lyrics: | small bridge flow- ing | wa- ter | un- der- neath | the sky so blue |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | A . . . |
-Melody: | G4 . A4 . | F#4 . D4 . | E4 . G4 . | F#4 . E4 . |
-Lyrics: | wil- low trees a- | long the banks | gen- tle breeze | car- ries my song |
-@piano | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-g2-b2 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | A . . . |
-Melody: | A4 . B4 . | C#5 . A4 . | D5 . . . | C#5 . B4 . |
-Lyrics: | oh the small bridge | and the wa- ter | flow on | flow on for- ev- er |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | a2-c#3-e3 . . . | vel: 55

@@ -1,20 +1,18 @@
 **TRACK: So What**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Modal
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm7 . . . | Dm7 . . . | Dm7 . . . | Dm7 . . . | Ebm7 . . . | Ebm7 . . . | Dm7 . . . | Dm7 . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | eb2-gb2-bb2 . . . | eb2-gb2-bb2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 60
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Dm7 . . . | Dm7 . . . | Dm7 . . . | Dm7 . . . | Ebm7 . . . | Ebm7 . . . | Dm7 . . . | Dm7 . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | eb2-gb2-bb2 . . . | eb2-gb2-bb2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dm7 . . . | Dm7 . . . | Dm7 . . . | Dm7 . . . | Ebm7 . . . | Ebm7 . . . | Dm7 . . . | Dm7 . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | eb2-gb2-bb2 . . . | eb2-gb2-bb2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm7 . . . | Dm7 . . . | Dm7 . . . | Dm7 . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 50

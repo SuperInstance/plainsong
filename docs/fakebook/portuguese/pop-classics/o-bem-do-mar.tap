@@ -1,20 +1,18 @@
 **TRACK: O Bem do Mar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 2/4 | mood: Flowing
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . | Dm . | Am . | E7 . | Am . | Dm . | B7 . | E7 . |
-@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d3-a3-d4 . | b2-f#3-a3 . | e2-g#3-b3 . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . | Dm . | Am . | E7 . | F . | Dm . | E7 . | E7 . |
-@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | f2-a3-c4 . | d3-a3-d4 . | e2-g#3-b3 . | e2-g#3-b3 . | vel: 52
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . | B7 . | E7 . | E7 . |
-@guitar | d3-a3-d4 . | b2-f#3-a3 . | e2-g#3-b3 . | e2-g#3-b3 . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | Am . | Dm . | Am . | E7 . | Am . | Dm . | E7 . | Am . |
-@guitar | a2-e3-a3 . | d3-a3-d4 . | a2-e3-a3 . | e2-g#3-b3 . | a2-e3-a3 . | d3-a3-d4 . | e2-g#3-b3 . | a2-e3-a3 . | vel: 50

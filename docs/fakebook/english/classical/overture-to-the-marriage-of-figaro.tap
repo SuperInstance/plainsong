@@ -1,22 +1,15 @@
 **TRACK: Overture to "The Marriage of Figaro"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 140 | subdivision: 16th
 time: 4/4 | mood: Spirited
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | D5 . F#5 . | A5 . . . |
-Lyrics: | da da da da | da da da da |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . |
-Melody: | G5 . E5 . | D5 . F#5 . |
-Lyrics: | da da da da | da da da da |
-@piano | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A7 . . . |
-Melody: | A5 . C#6 . | D6 . . . |
-Lyrics: | la la la la | la la la la |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3-g3 . . . | vel: 65

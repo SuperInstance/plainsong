@@ -1,30 +1,21 @@
 **TRACK: Sayonara no Natsu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Nostalgic, Flowing
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Dm . . . | G . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Dm . . . | E7 . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Dm . . . | G . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Dm . . . | E7 . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 52
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fmaj7 . . . | G . . . | Em7 . . . | Am . . . |
-       | Dm7 . . . | G . . . | Cmaj7 . . . | E7 . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | vel: 62
-@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | E7 . . . | Am . . . | F . . . |
-@guitar | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | E7 . . . | Am . . . | Am . . . |
-@guitar | d2-f2-a2 . . . | e2-g#2-b2 . . . | a2-e3-a3 . .

@@ -1,16 +1,12 @@
 **TRACK: We Love the Place, O God**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | F . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | A3 . C4 . |
-Lyrics: | We love the place, O God, | Wherein Thine honor dwells; | The joy of Thine abode | All other joy excels. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A3 . C4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | We love the place, O God, | Wherein Thy honor dwells; | The joy of Thine abode | All other joy excels. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

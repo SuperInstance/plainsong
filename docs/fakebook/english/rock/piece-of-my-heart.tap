@@ -1,20 +1,17 @@
 **TRACK: Piece of My Heart**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 55
 Chords: | A . . . | A . . . | E . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | A . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
 Chords: | E . . . | E . . . | D . . . | E . . . |
-@guitar | e2-g#2-b2 . . . | e2-g#2-b2 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | F#m . . . | D . . . | E . . . |
-@guitar | f#2-a2-c#3 . . . | f#2-a2-c#3 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | vel: 50

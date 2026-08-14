@@ -1,24 +1,21 @@
 **TRACK: Phantom 309**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Storytelling, Country
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | F#m . . . | E . . . | D . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | f#2-c#3-f#3 . . . | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | a2-e3-a3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | D . . . | E . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d3-a3-d4 . . . | e3-b3-e4 . . . | e3-b3-e4 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | A . . . |
-@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 45

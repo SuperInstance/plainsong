@@ -1,22 +1,15 @@
 **TRACK: Chhaila Ki Doli Mein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | chhai-la ki do-li mein | bai-thi jaaye | mo-he pi-ya ki yaad | a-aye re |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Am . . . | Dm . . . | E7 . . . |
-Melody: | D4 . F4 . | A3 . C4 . | D4 . F4 . | B3 . G#3 . |
-Lyrics: | na-in se nii-nd hai | kha-ii aaj | dil mein u-ja-la | sa-jaaye re |
-@piano | d2-f2-a2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | E7 . . . |
-Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | ho ra-ma re ra-ma | dho-lin ba-jaye | chhai-la ki do-li | le jaaye re |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55

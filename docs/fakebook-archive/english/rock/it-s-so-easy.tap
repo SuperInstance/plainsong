@@ -1,20 +1,18 @@
 **TRACK: It's So Easy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Swaggering
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | b2-f#3-b3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | A . . . | B . . . |
-@guitar | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | C#m . . . | G#m . . . | A . . . | B . . . |
-@guitar | c#3-g#3-c#4 . . . | g#2-d#3-g#3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 55

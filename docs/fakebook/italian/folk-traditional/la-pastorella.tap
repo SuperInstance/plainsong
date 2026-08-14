@@ -1,28 +1,18 @@
 **TRACK: La Pastorella**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 96 | subdivision: 8th
 time: 6/8 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . . . | D . . . . . |
-Melody: | B3 . D4 . G4 . | A3 . F#3 . D3 . |
-Lyrics: | La pa - sto - rel - la | sul mon - te va |
-@piano | g2-b2-d3 . . . . . | d2-f#2-a2 . . . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . C5 . | B3 . G3 . D3 . |
-Lyrics: | con le sue pe - co - rel - le | can - tan - do va |
-@piano | c2-e2-g2 . . . . . | g2-b2-d3 . . . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . . . | D . . . . . |
-Melody: | B3 . D4 . G4 . | A3 . F#3 . D3 . |
-Lyrics: | o - ve - ro bel - la | la pri - ma - ve - ra |
-@piano | g2-b2-d3 . . . . . | d2-f#2-a2 . . . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . C5 . | D4 . B3 . G3 . |
-Lyrics: | fio - ri - sce o - gni | pra - to e sie - pe |
-@piano | c2-e2-g2 . . . . . | g2-b2-d3 . . . . . | vel: 55

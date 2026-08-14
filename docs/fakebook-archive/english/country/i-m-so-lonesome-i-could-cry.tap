@@ -1,24 +1,21 @@
 **TRACK: I'm So Lonesome I Could Cry**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Mournful
 
 [V1] (Verse - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | E7 . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | E7 . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-d3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | A . . . | E7 . . . | A . . . |
-@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | vel: 52
 
 [V3] (Verse - 4 Bars)
 Chords: | A . . . | E7 . . . | A . . . | E7 . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-d3 . . . | a2-c#3-e3 . . . | e2-g#2-d3 . . . | vel: 48

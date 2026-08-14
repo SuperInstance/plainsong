@@ -1,4 +1,6 @@
 **TRACK: Take Me as I Am (Jekyll & Hyde)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 68 | subdivision: 8th
 time: 4/4 | mood: Ballad
@@ -6,23 +8,15 @@ time: 4/4 | mood: Ballad
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
 Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
-@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 45
-@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | c1-g2-c2 . . . | f1-c2-f2 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
 Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
-@guitar | bb1-f2-bb2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | f1-c2-f2 . . . | vel: 50
-@guitar | d1-a2-d2 . . . | g1-d2-g2 . . . | c1-g2-c2 . . . | f1-c2-f2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | F/A . . . | Gm . . . | Eb . . . |
 Chords: | Bb . . . | F . . . | Bb . . . | F . . . |
-@guitar | bb1-f2-bb2 . . . | f1-a2-f2 . . . | g1-d2-g2 . . . | eb1-bb2-eb2 . . . | vel: 65
-@guitar | bb1-f2-bb2 . . . | f1-c2-f2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb . . . | Bb/D . . . | Cm . . . | F . . . |
 Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
-@guitar | eb1-bb2-eb2 . . . | bb1-d2-bb2 . . . | c1-g2-c2 . . . | f1-c2-f2 . . . | vel: 55
-@guitar | d1-a2-d2 . . . | g1-d2-g2 . . . | c1-g2-c2 . . . | f1-c2-f2 . . .

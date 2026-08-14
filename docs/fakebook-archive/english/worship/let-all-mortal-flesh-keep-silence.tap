@@ -1,30 +1,20 @@
 **TRACK: Let All Mortal Flesh Keep Silence**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | B7 . . . | Em . . . | Am . . . |
-Melody: | E4 . G4 . | F#4 . D4 . | E4 . B3 . | A3 . C4 . |
-Lyrics: | Let all mor-tal flesh keep si-lence, | and with fear and trem-bling stand; | Pon-der no-thing earth-ly mind-ed, | for with bless-ing in His hand, |
-@piano | e2-b2-e3 . . . | b1-f#2-b2 . . . | e2-b2-e3 . . . | a1-e2-a2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | B7 . . . |
-Melody: | G4 . E4 . | D4 . B3 . | C4 . A3 . | B3 . D4 . |
-Lyrics: | Christ our God to earth de-scend-eth, | our full hom-age to de-mand; | King of kings, yet born of Mar-y, | as of old on earth He stood, |
-@piano | c2-e2-g2 . . . | g1-b1-d2 . . . | a1-c2-e2 . . . | b1-f#2-b2 . . . | vel: 45
 
 [V3] (Verse - 4 Bars)
 Chords: | Em . . . | B7 . . . | Em . . . | Am . . . |
-Melody: | E4 . G4 . | F#4 . D4 . | E4 . B3 . | A3 . C4 . |
-Lyrics: | Lord of lords, in hu-man ves-ture, | in the bod-y and the blood; | He will give to all the faith-ful | His own self for heaven-ly food. |
-@piano | e2-b2-e3 . . . | b1-f#2-b2 . . . | e2-b2-e3 . . . | a1-e2-a2 . . . | vel: 45
 
 [V4] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | B7 . . . |
-Melody: | G4 . E4 . | D4 . B3 . | C4 . A3 . | B3 . D4 . |
-Lyrics: | Rank on rank the host of heav-en | spreads its van-guard on the way, | As the Light of light de-scend-eth | from the realms of end-less day, |
-@piano | c2-e2-g2 . . . | g1-b1-d2 . . . | a1-c2-e2 . . . | b1-f#2-b2 . . . | vel: 45
 
 [V5] (Verse - 4 Bars

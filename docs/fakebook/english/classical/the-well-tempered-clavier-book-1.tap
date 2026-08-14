@@ -1,22 +1,15 @@
 **TRACK: The Well-Tempered Clavier, Book 1 - Prelude No. 1 in C Major**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 66 | subdivision: 16th
 time: 4/4 | mood: Contemplative
 
 [V1] (Prelude - 4 Bars)
 Chords: | C . . . | Am . . . |
-Melody: | C4 E4 G4 C5 | A3 C4 E4 A4 |
-Lyrics: | (instrumental) |
-@piano | c2-e2-g2-c3 . . . | a1-c2-e2-a2 . . . | vel: 45
 
 [V2] (Prelude - 4 Bars)
 Chords: | F . . . | G . . . |
-Melody: | F4 A4 C5 F5 | G3 B3 D4 G4 |
-Lyrics: | (instrumental) |
-@piano | f1-a1-c2-f2 . . . | g1-b1-d2-g2 . . . | vel: 45
 
 [CH] (Prelude - 4 Bars)
 Chords: | C . . . | G . . . |
-Melody: | E4 G4 C5 E5 | D4 F#4 A4 D5 |
-Lyrics: | (instrumental) |
-@piano | c2-e2-g2-c3 . . . | g1-b1-d2-g2 . . . | vel: 50

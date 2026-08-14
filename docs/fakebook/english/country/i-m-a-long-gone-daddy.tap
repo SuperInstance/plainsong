@@ -1,32 +1,21 @@
 **TRACK: I'm a Long Gone Daddy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . |
-        | A . . . | A . . . | E . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-f#3-a3 . . . | a2-e3-a3 . . . |
-        | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . |
-        | A . . . | A . . . | E . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-f#3-a3 . . . | a2-e3-a3 . . . |
-        | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | A . . . | A . . . |
-        | A . . . | A . . . | E . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . |
-        | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-e3-a3 . . . | d3-f#3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . |
-        | A . . . | A . . . | E . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-f#3-a3 . . . | a2-e3-a3 . . . |
-        | a2-e3-a3 . . . | a2-e3-a3 . . .

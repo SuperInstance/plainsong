@@ -1,16 +1,12 @@
 **TRACK: The High Mountain and Flowing Water**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Serene, flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
-Melody: | D4 . F4 . | A4 . . . | C4 . E4 . | E4 . . . |
-Lyrics: | 高 山 巍 峨 | 流 水 潺 潺 | 知 音 难 觅 | 琴 韵 悠 扬 |
-@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gm . . . | Dm . . . | C . . . | Dm . . . |
-Melody: | Bb3 . D4 . | A3 . F4 . | G3 . E4 . | D4 . . . |
-Lyrics: | 山 高 水 长 | 千 古 流 芳 | 伯 牙 子 期 | 心 心 相 印 |
-@piano | g2-bb2-d3 . . . | d3-f3-a3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 50

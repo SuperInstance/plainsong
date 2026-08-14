@@ -1,30 +1,24 @@
 **TRACK: Automatic**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bbm | tempo: 94 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
-@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | bb1-db2-f2 . . . | f1-ab1-c2 . . . | vel: 50
 Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
-@guitar | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f1-ab1-c2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
-@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | vel: 65
 Chords: | Bbm . . . | Fm . . . | Gb . . . | F . . . |
-@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | gb1-bb1-db2 . . . | f1-a1-c2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gb . . . | Ab . . . | Bbm . . . | Gb . . . |
-@guitar | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | gb1-bb1-db2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
-@guitar | bb1-db2-f2 . . . | f1-ab1-c2 . . . | bb1-db2-f2 . . . | f1-ab1-c2 . . . | vel: 50
 Chords: | Gb . . . | Ab . . . | Bbm . . . | F . . . |
-@guitar | gb1-bb1-db2 . . . | ab1-c2-eb2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
-@guitar | bb1-db2-f2 . . . | f1-ab

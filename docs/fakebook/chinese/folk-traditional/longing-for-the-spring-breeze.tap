@@ -1,16 +1,12 @@
 **TRACK: Longing for the Spring Breeze**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Gentle, wistful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . |
-Melody: | B3 . D4 . | A3 . . . | G3 . B3 . | E4 . . . |
-Lyrics: | 春 风 吹 过 | 花 香 飘 远 | 心 中 思 念 | 何 时 归 来 |
-@piano | g2-b2-d3 . . . | d2-a2-d3 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | D . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | B3 . . . |
-Lyrics: | 春 风 啊 春 风 | 带 我 回 家 | 春 风 啊 春 风 | 拂 我 面 颊 |
-@piano | c2-e2-g2 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 55

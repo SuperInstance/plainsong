@@ -1,24 +1,21 @@
 **TRACK: The Devil Went Down to Georgia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 116 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Dm . . . | Dm . . . | Bb . . . | Bb . . . | A . . . | A . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . |

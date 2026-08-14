@@ -1,30 +1,21 @@
 **TRACK: Jinsei Iroiro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Db . . . | Eb . . . | Cm . . . |
-| Fm . . . | Db . . . | Eb . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | c2-eb2-g2 . . . | vel: 55
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | c2-e2-g2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Db . . . | Eb . . . | Cm . . . |
-| Fm . . . | Db . . . | Eb . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | c2-eb2-g2 . . . | vel: 55
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Eb . . . | Fm . . . | Db . . . |
-| Ab . . . | Eb . . . | Fm . . . | C7 . . . |
-@guitar | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | db2-f2-ab2 . . . | vel: 65
-@guitar | ab2-c3-eb3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Db . . . | Eb . . . | Fm . . . | C7 . . . |
-@guitar | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm . . . | Db . . . | Eb . . . | Fm . . . |
-@guitar | f2-a2-c3 . . . | db2-f2-ab2 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 50

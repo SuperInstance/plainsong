@@ -1,27 +1,18 @@
 **TRACK: Casey Jones**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | G4 . B4 . | C5 . . . | B4 . G4 . | A4 . F#4 . |
-Lyrics: | Come all you round-ers, if you want to hear | The story of a brave en-gin-eer | Old Casey Jones was the round-er's name | On a big eight-wheel-er of a no-ble fame |
-@piano | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | d2-f#2-a2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | G . . . | C . . . | D . . . |
-Melody: | G4 . G4 . | G4 . E4 . | C5 . B4 . | A4 . G4 . |
-Lyrics: | Ca-sey Jones, mount-ed to the cab-in | Ca-sey Jones, with his hand up-on the throt-tle | Ca-sey Jones, mount-ed to the cab-in | And he said to his fire-man, "Just let her go" |
-@piano | g2-b2-d3-g3 . . . | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | d2-f#2-a2-d3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | G4 . B4 . | C5 . . . | B4 . G4 . | A4 . F#4 . |
-Lyrics: | The rain was a-fall-in, the night was dark | The train was a-speed-in, through the night so stark | He pulled the whistle, blew the bell | "I'll get her in on time, or I'll go to hell" |
-@piano | g2-b2-d3-g3 . . . | c3-e3-g3-c4 . . . | g2-b2-d3-g3 . . . | d2-f#2-a2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | G . . . | C . . . | D . . . |
-Melody: | G4 . G4 . | G4 . E4 . | C5 . B4 . | A4 . G4 . |
-Lyrics: | Ca-sey Jones, mount-ed to the cab-in | Ca-sey Jones, with his hand up-on the throt-tle | Ca-sey Jones, mount-ed to the cab-in | And he said to his fire-man, "Just let her go"

@@ -1,30 +1,24 @@
 **TRACK: New Kid in Town**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 108 | subdivision: 8th
 time: 4/4 | mood: Laid-back country rock
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | g2-d3-g3 . . . | vel: 50
 Chords: | D . . . | A . . . | G . . . | A . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | D . . . | Em . . . | A . . . |
-@guitar | g2-d3-g3 . . . | d3-a3-d4 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . | vel: 60
 Chords: | G . . . | D . . . | A . . . | D . . . |
-@guitar | g2-d3-g3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
-@guitar | b2-f#3-b3 . . . | f#2-c#3-f#3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | g2-d3-g3 . . . | vel: 50
 Chords: | D . . . | A . . . | G . . . | A . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | A . . . |
-@guitar | d3-a3-d4 . . . | g2-d3-g3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 45

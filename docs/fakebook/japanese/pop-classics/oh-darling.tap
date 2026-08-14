@@ -1,26 +1,21 @@
 **TRACK: Oh! Darling**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | vel: 55
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | vel: 55
 Chords: | Bb . . . | Eb . . . | Gm . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | g1-bb1-d2 . . . | f1-a1-c2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | vel: 60
 Chords: | Eb . . . | Bb . . . | F . . . | F . . . |
-@guitar | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
-@guitar | g1-bb1-d2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | vel: 50

@@ -1,22 +1,15 @@
 **TRACK: The Four Seasons, Op. 8, Concerto No. 1 in E major, RV 269 "Spring" - Allegro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 96 | subdivision: 16th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | B . . . |
-Melody: | E5 . G#5 . | B5 . . . |
-Lyrics: | la la la la | la la la la |
-@piano | e2-g#2-b2-e3 . . . | b1-d#2-f#2-b2 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | A . . . | E . . . |
-Melody: | A5 . C#6 . | E6 . . . |
-Lyrics: | tra la la la | tra la la la |
-@piano | a1-c#2-e2-a2 . . . | e2-g#2-b2-e3 . . . | vel: 62
 
 [CH] (Chorus - 4 Bars)
 Chords: | E . . . | B . . . |
-Melody: | E6 . D#6 . | C#6 . B5 . |
-Lyrics: | spring is here now | birds are sing - ing |
-@piano | e2-g#2-b2-e3 . . . | b1-d#2-f#2-b2 . . . | vel: 65

@@ -1,30 +1,23 @@
 **TRACK: Where Is Love?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 3/4 | mood: Tender
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . | Dm . . | Bb . . | C7 . . |
-@guitar | f1-a1-c2 . . | d1-f1-a1 . . | bb1-d2-f2 . . | c2-e2-g2 . . | vel: 45
 Chords: | F . . | A7 . . | Dm . . | G7 . . C7 . . |
-@guitar | f1-a1-c2 . . | a1-c#2-e2 . . | d1-f1-a1 . . | g1-b1-d2 . . c2-e2-g2 . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . | Dm . . | Bb . . | C7 . . |
-@guitar | f1-a1-c2 . . | d1-f1-a1 . . | bb1-d2-f2 . . | c2-e2-g2 . . | vel: 48
 Chords: | F . . | A7 . . | Dm . . | Bb . . C7 . . |
-@guitar | f1-a1-c2 . . | a1-c#2-e2 . . | d1-f1-a1 . . | bb1-d2-f2 . . c2-e2-g2 . . | vel: 48
 
 [BR] (Bridge - 8 Bars)
 Chords: | Gm7 . . | C7 . . | Am7 . . | D7 . . |
-@guitar | g1-bb1-d2 . . | c2-e2-g2 . . | a1-c2-e2 . . | d1-f#2-a2 . . | vel: 50
 Chords: | Gm7 . . | C7 . . | F . . | C7 . . |
-@guitar | g1-bb1-d2 . . | c2-e2-g2 . . | f1-a1-c2 . . | c2-e2-g2 . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | F . . | Dm . . | Bb . . | C7 . . |
-@guitar | f1-a1-c2 . . | d1-f1-a1 . . | bb1-d2-f2 . . | c2-e2-g2 . . | vel: 52
 Chords: | F . . | A7 . . | Dm . . | Bb . . C7 . . |
-@guitar | f1-a1-c2 . . | a1-c#2-e2 . . | d1-f1-a1 . . | bb1-d2-f2 . . c2-e2-g2 . . | vel: 52
 Chords: | F . . | Dm . . | Gm7 . . | C7 . . F . . |
-@guitar |

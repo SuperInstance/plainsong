@@ -1,22 +1,12 @@
 **TRACK: La Ronde des moissons**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Quand l'é - té vient, les blés sont mûrs, |
-| On fau - che, on lie, c'est la moisson. |
-| Les filles chantent, les gars sont sûrs, |
-| Pour la ronde au son du violon. |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | D7 . . . |
-Melody: | E4 . G4 . | D4 . F#4 . | E4 . G4 . | C4 . E4 . |
-Lyrics: | Ron - de, ron - de, la moisson tourne, |
-| Les gerbes dansent sous le ciel bleu. |
-| Ron - de, ron - de, chacun retourne, |
-| Au rythme gai de ces lieux joyeux. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d2-f#2-a2-c3 . . . | vel: 60

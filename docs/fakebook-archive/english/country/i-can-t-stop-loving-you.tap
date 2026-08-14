@@ -1,24 +1,21 @@
 **TRACK: I Can't Stop Loving You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Soulful
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Bb . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Bb . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | C7 . . . | Bb . . . | C7 . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | Bb . . . | F . . . | F . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 45

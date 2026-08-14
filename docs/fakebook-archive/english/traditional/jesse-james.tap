@@ -1,32 +1,18 @@
 **TRACK: Jesse James**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . . . |
-Lyrics: | Jes-se | James was a | lad who | killed man-y a |
-| man. He | robbed the | Glendale | train. |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Poor Jes-se | James, how they | laid him to | rest. |
-| They laid him in the | grave, in the | grave, in the | grave. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . . . |
-Lyrics: | It was | Robert Ford, that | dirty little | coward, |
-| who | shot Mr. | Howard and | laid him in his | grave. |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Poor Jes-se | James, how they | laid him to | rest. |
-| They laid him in the | grave, in the | grave, in the | grave. |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

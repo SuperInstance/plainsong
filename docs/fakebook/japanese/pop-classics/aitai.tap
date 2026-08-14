@@ -1,28 +1,22 @@
 **TRACK: Aitai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 78 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 45
 Chords: | Eb . . . | Bb/D . . . | Cm . . . | Bb . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | bb2-d3-f3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 48
 Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Bb . . . |
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 48
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Bb . . . | Cm . . . | Ab . . . |
-@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 60
 Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Bb . . . |
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Ab . . . | Abm . . . | Eb/Bb . . . | Bb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-b3-eb3 . . . | bb2-eb3-g3 . . . | bb2-d3-f3-ab3 . . . | vel: 50
 Chords: | Cm . . . | Fm7 . . . | Bb7sus4 . . . | Bb7 . . . |
-@guitar | c3-eb3-g3 . . . | f2-ab2

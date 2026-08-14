@@ -1,22 +1,15 @@
 **TRACK: Where Has My Little Dog Gone?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . | G . . | C . . | G . . |
-Melody: | E4 . G4 | D4 . . | C4 . E4 | D4 . . |
-Lyrics: | Where has my | lit-tle dog gone? | Oh where, oh | where can he |
-@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | g2-b2-d3 . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . | G . . | C . . | C . . |
-Melody: | E4 . G4 | D4 . . | C4 . E4 | C4 . . |
-Lyrics: | be? With his | tail cut short and his | ears cut long, oh | where can he |
-@piano | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | c3-e3-g3 . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . | C . . | G . . | C . . |
-Melody: | A4 . G4 | E4 . C4 | D4 . B3 | C4 . . |
-Lyrics: | Where, oh where | can he be? | Where, oh where | can he be? |
-@piano | f2-a2-c3 . | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | vel: 55

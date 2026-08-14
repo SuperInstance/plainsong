@@ -1,27 +1,21 @@
 **TRACK: Koi no Yoroshiku**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 118 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-| Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
-| Fm . . . | G . . . | Cm . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Eb . . . | Bb . . . | Cm . . . |
-| Ab . . . | Eb . . . | Bb . . . | G7 . . . |
-@guitar | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | Cm . . . | D7 . . . | G . . . |
-@guitar | f2-ab2-c3 . . . | c3-eb3-g3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cm . . . | Ab . . . | Eb . . . | Cm . . . |
-@guitar | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-eb3-g3 . . . | vel: 50

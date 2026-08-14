@@ -1,22 +1,12 @@
 **TRACK: La Parisienne**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Patriotic
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Peo - ple of Pa - ris, a - wake to glo - ry, |
-Lyrics: | The trum - pet sounds, the day is come. |
-Lyrics: | Your walls re - sound with tri - umph's sto - ry, |
-Lyrics: | O - pen your gates to free - dom's sun. |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | D . . . |
-Melody: | E4 . G4 . | D4 . B3 . | E4 . G4 . | D4 . F#3 . |
-Lyrics: | La Pa - ri - sienne, our ban - ner waves, |
-Lyrics: | In tri - color, the brave - ly fight. |
-Lyrics: | La Pa - ri - sienne, the world she saves, |
-Lyrics: | With lib - er - ty and truth and light. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d2-f#2-a2 . . . | vel: 65

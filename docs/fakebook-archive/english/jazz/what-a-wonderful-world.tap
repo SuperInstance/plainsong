@@ -1,28 +1,24 @@
 **TRACK: What a Wonderful World**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 70 | subdivision: 8th
 time: 4/4 | mood: Smooth
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bbm . . . | F . . . | D7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-b2-d3 . . . | f2-a2-c3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | g2-bb2-d3 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | c2-e2-bb2 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | F . . . | Am . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | F . . . | F . . . | F . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 40

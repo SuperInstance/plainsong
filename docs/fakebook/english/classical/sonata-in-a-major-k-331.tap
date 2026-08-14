@@ -1,22 +1,15 @@
 **TRACK: Sonata in A major, K. 331**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 120 | subdivision: 16th
 time: 6/8 | mood: Graceful
 
 [V1] (Theme - 4 Bars)
 Chords: | A . . . . . | D . . . . . |
-Melody: | A4 . C#5 E5 . A5 . | F#5 . D5 . A4 . |
-Lyrics: | la la la la la la | la la la la la la |
-@piano | a2-c#3-e3 . . . . . | d2-f#3-a3 . . . . . | vel: 45
 
 [V2] (Variation - 4 Bars)
 Chords: | A . . . . . | E . . . . . |
-Melody: | A4 B4 C#5 D5 E5 . | E5 . D5 C#5 B4 A4 . |
-Lyrics: | da da da da da da | da da da da da da |
-@piano | a2-c#3-e3 . . . . . | e2-g#3-b3 . . . . . | vel: 50
 
 [CH] (Minuet - 4 Bars)
 Chords: | D . . . . . | A . . . . . |
-Melody: | D5 . F#5 A5 . D6 . | C#5 . B4 . A4 . |
-Lyrics: | tra la la la la la | la la la la la la |
-@piano | d2-f#3-a3 . . . . . | a2-c#3-e3 . . . . . | vel: 55

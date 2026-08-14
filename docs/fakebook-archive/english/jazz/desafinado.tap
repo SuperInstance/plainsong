@@ -1,20 +1,18 @@
 **TRACK: Desafinado**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 72 | subdivision: 8th
 time: 2/4 | mood: Bossa Nova
 
 [Intro] (4 Bars)
 Chords: | Fmaj7 . | Gm7 . | Am7 . | Abm7 . |
-@guitar | f2-a2-e3 . | g2-bb2-f3 . | a2-c3-e3 . | ab2-c3-gb3 . | vel: 45
 
 [V1] (Verse - 8 Bars)
 Chords: | Fmaj7 . | Gm7 . | Am7 . | Abm7 . | Fmaj7 . | Gm7 . | Am7 . | Abm7 . |
-@guitar | f2-a2-e3 . | g2-bb2-f3 . | a2-c3-e3 . | ab2-c3-gb3 . | f2-a2-e3 . | g2-bb2-f3 . | a2-c3-e3 . | ab2-c3-gb3 . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm7 . | G7 . | Gm7 . | C7 . | Fmaj7 . | Bbmaj7 . | Am7 . | Abm7 . |
-@guitar | d2-f2-c3 . | g2-b2-f3 . | g2-bb2-f3 . | c2-e2-bb2 . | f2-a2-e3 . | bb2-d3-f3 . | a2-c3-e3 . | ab2-c3-gb3 . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bbm7 . | Eb7 . | Abmaj7 . | Abm7 . |
-@guitar | bb2-db3-f3 . | eb2-g3-bb3 . | ab2-c3-eb3 . | ab2-cb3-gb3 . | vel: 50

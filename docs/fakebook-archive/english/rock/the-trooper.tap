@@ -1,24 +1,21 @@
 **TRACK: The Trooper**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 136 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Em . . . | C . . . | D . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 65
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Em . . . | Em . . . | C . . . | D . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 70
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-b3-e3 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | D . . . | D . . . |
-@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 50

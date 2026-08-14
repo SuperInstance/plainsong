@@ -1,34 +1,21 @@
 **TRACK: The Demon Lover**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Haunting
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | E4 . . . | F4 . E4 . | D4 . B3 . |
-Lyrics: | Well met, well met, | my own true love, | well met, well met, | cried he |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#3-b3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | E4 . . . | F4 . E4 . | D4 . B3 . |
-Lyrics: | I've just returned | from the salt sea foam, | I've come for thee, | my dear |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#3-b3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Am . . . | F . . . | E . . . |
-Melody: | D4 . F4 . | A4 . . . | F4 . E4 . | D4 . B3 . |
-Lyrics: | Oh, don't you re-mem-ber | the ship I command, | and the gold I gave | to thee |
-@piano | d2-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#3-b3 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | E4 . . . | F4 . E4 . | D4 . B3 . |
-Lyrics: | Then she took up | her little baby, | and kissed it on | the cheek |
-@piano | a2-e3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#3-b3 . . . | vel: 45
 
 [V4] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E . . . |
-Melody: | A3 . C4 . | E4 . . . | F4 . E4 . | D4 . B3 . |
-Lyrics: | And she followed him | down to the strand, | where the waves did | loudly speak |
-@piano | a2

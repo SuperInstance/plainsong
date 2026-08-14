@@ -1,20 +1,18 @@
 **TRACK: One Note Samba**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 84 | subdivision: 8th
 time: 2/2 | mood: Bossa Nova
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Dm . . . | A7 . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | D7 . . . | D7 . . . | Gm . . . | Gm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | vel: 52
 
 [BR] (Bridge - 8 Bars)
 Chords: | A7 . . . | A7 . . . | Dm . . . | Dm . . . | Gm . . . | Gm . . . | A7 . . . | A7 . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 54
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | A7 . . . | A7 . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 50

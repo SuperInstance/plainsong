@@ -1,24 +1,21 @@
 **TRACK: Another Suitcase in Another Hall**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-f3-bb3 . . . | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-f3-bb3 . . . | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | F . . . |
-@guitar | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | c3-g3-c4 . . . | f2-c3-f3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | Eb . . . | F . . . | Bb . . . |
-@guitar | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | bb2-f3-bb3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | F . . . |
-@guitar | eb2-bb2-eb3 . . . | bb2-f3-bb3 . . . | c3-g3-c4 . . . | f2-c3-f3 . . . | vel: 60

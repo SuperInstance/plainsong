@@ -1,16 +1,12 @@
 **TRACK: Amapola**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . E4 . | B3 . D4 . E4 . | A3 . C4 . E4 . | B3 . D4 . B3 . |
-Lyrics: | A - ma - po - la | lind - a flor de a - mor | A - ma - po - la | di - vi - na flor |
-@piano | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | G7 . . . | C . . . | E7 . . . |
-Melody: | F4 . A4 . C5 . | B4 . A4 . G4 . | E4 . G4 . C5 . | B4 . G#4 . B4 . |
-Lyrics: | A - mor, a - mor | que me has he - chi - zo | dul - ce a - mor | de mi vi - da |
-@piano | d3-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | e2-g#3-b3 . . . | vel: 55

@@ -1,24 +1,21 @@
 **TRACK: Kill This Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C#m | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | C#m . . . | A . . . | E . . . | B . . . |
-@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | C#m . . . | G# . . . | G# . . . |
-@guitar | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | g#2-c3-d#3 . . . | g#2-c3-d#3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | A . . . | E . . . | F#m . . . | G# . . . |
-@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | f#2-a2-c#3 . . . | g#2-c3-d#3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | C#m . . . | A . . . | E . . . | B . . . |
-@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | C#m . . . | G# . . . | G# . . . |
-@guitar | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | g#2-c3-d#3 . . . | g#2-c3-d#3 . . . | vel: 65

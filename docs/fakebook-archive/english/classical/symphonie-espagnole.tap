@@ -1,22 +1,15 @@
 **TRACK: Symphonie Espagnole**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Passionate
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A7 . . . |
-Melody: | D5 . F5 . A5 . | C#5 . E5 . G5 . |
-Lyrics: | ah . . . la . . . | ah . . . la . . . |
-@piano | d3-f3-a3 . . . | a2-c#3-e3-g3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . |
-Melody: | Bb4 . D5 . F5 . | A4 . C5 . E5 . |
-Lyrics: | ah . . . la . . . | ah . . . la . . . |
-@piano | bb2-d3-f3 . . . | f2-a2-c3-e3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | Gm . . . | A7 . . . |
-Melody: | G4 . Bb4 . D5 . | C#5 . E5 . G5 . |
-Lyrics: | ah . . . la . . . | ah . . . la . . . |
-@piano | g2-bb2-d3 . . . | a2-c#3-e3-g3 . . . | vel: 60

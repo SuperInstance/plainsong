@@ -1,22 +1,15 @@
 **TRACK: Les Sabots de la mariée**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | D4 . F4 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | Ma - ri - ée, prends tes sa - bots, | Les che - mins sont pleins de boue, | Ma - ri - ée, prends tes sa - bots, | Pour al - ler dan - ser chez nous. |
-@piano | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | D4 . F4 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | Re - gar - dez les pe - tits clo - chets, | Qu'ils son - nent gai - ment sous vos pas, | Re - gar - dez les pe - tits clo - chets, | Ils vous di - ront tout bas. |
-@piano | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | E4 . G4 . | D4 . B3 . |
-Lyrics: | Sa - bots, sa - bots, dan - sez, | Sur la pail - le et sur le blé, | Sa - bots, sa - bots, dan - sez, | Pour la ma - ri - ée. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55

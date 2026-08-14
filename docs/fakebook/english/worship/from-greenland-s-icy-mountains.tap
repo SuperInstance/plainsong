@@ -1,22 +1,15 @@
 **TRACK: From Greenland's Icy Mountains**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Majestic
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . C4 . |
-Lyrics: | From Green-land's i - cy moun-tains, | From In-dia's cor - al strand, | Where Af - ric's sun - ny foun-tains | Roll down their gold - en sand. |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . C4 . |
-Lyrics: | From many an an - cient riv - er, | From many a pal - my plain, | They call us to de - liv - er | Their land from er - ror's chain. |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | A4 . F4 . | G4 . E4 . | F4 . D4 . | C4 . . . |
-Lyrics: | What though the spi - cy breeze - es | Blow soft o'er Cey - lon's isle, | Though ev - 'ry pros - pect pleas - es, | And on - ly man is vile. |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 60

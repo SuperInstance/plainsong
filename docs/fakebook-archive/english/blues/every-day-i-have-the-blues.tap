@@ -1,24 +1,15 @@
 **TRACK: Every Day I Have the Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 72 | subdivision: 8th
 time: 12/8 | mood: Swinging Blues
 
 [V1] (Verse - 12 Bars)
 Chords: | Eb7 . . . | Eb7 . . . | Eb7 . . . | Eb7 . . . |
-| Ab7 . . . | Ab7 . . . | Eb7 . . . | Eb7 . . . |
-| Bb7 . . . | Ab7 . . . | Eb7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
-| ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
-| bb2-d3-f3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | Eb7 . . . | Eb7 . . . | Eb7 . . . | Eb7 . . . |
-| Ab7 . . . | Ab7 . . . | Eb7 . . . | Eb7 . . . |
-| Bb7 . . . | Ab7 . . . | Eb7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
-| ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . |
-| bb2-d3-f3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 62
 
 [BR] (Turnaround/Bridge - 4 Bars)
 Chords: | Eb7 . . . | Ab7 . . . | Eb7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab3-c4-eb4 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 58

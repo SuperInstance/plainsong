@@ -1,34 +1,21 @@
 **TRACK: Grün, grün sind alle meine Kleider**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . | F . . | C . . | C . . |
-Melody: | F4 . A4 . | F4 . A4 . | G4 . E4 . | G4 . E4 . |
-Lyrics: | Grün, grün, | grün sind | al - le | mei - ne |
-@piano | f1-a2-c3 . . | f1-a2-c3 . . | c2-e2-g2 . . | c2-e2-g2 . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . | F . . | C . . | C . . |
-Melody: | F4 . A4 . | G4 . F4 . | E4 . C4 . | C4 . . . |
-Lyrics: | Klei - der, | grün, grün, | grün sind | al - le |
-@piano | f1-a2-c3 . . | f1-a2-c3 . . | c2-e2-g2 . . | c2-e2-g2 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . | C . . | F . . | C . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . C4 . | C4 . . . |
-Lyrics: | mei - ne | Klei - der, | ja, das | lieb' ich |
-@piano | f1-a2-c3 . . | c2-e2-g2 . . | f1-a2-c3 . . | c2-e2-g2 . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | F . . | F . . | C . . | C . . |
-Melody: | F4 . A4 . | F4 . A4 . | G4 . E4 . | G4 . E4 . |
-Lyrics: | Grün, grün, | grün sind | al - le | mei - ne |
-@piano | f1-a2-c3 . . | f1-a2-c3 . . | c2-e2-g2 . . | c2-e2-g2 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . | C . . | F . . | C . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . C4 . | C4 . . . |
-Lyrics: | Klei - der, | ja, das | lieb' ich | sehr. |
-@piano | f1-a2-c3 . . | c2-e2-g2 . . | f1-a2-c3 . . | c2-e2-g2 . . | vel: 55

@@ -1,20 +1,18 @@
 **TRACK: Água de Beber**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 132 | subdivision: 8th
 time: 2/4 | mood: Bossa Nova
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | x-0-2-0-1-0 . . . | x-5-7-5-6-5 . . . | x-3-2-0-0-1 . . . | x-3-2-0-0-0 . . . | 1-3-3-2-1-1 . . . | x-2-3-2-3-2 . . . | 0-2-0-1-0-0 . . . | x-0-2-0-1-0 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | x-0-2-0-1-0 . . . | x-5-7-5-6-5 . . . | x-3-2-0-0-1 . . . | x-3-2-0-0-0 . . . | 1-3-3-2-1-1 . . . | x-2-3-2-3-2 . . . | 0-2-0-1-0-0 . . . | x-0-2-0-1-0 . . . | vel: 50
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | x-5-7-5-6-5 . . . | x-3-2-0-0-1 . . . | x-3-2-0-0-0 . . . | 0-2-0-1-0-0 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | x-0-2-0-1-0 . . . | x-5-7-5-6-5 . . . | x-3-2-0-0-1 . . . | x-3-2-0-0-0 . . . | 1-3-3-2

@@ -1,24 +1,21 @@
 **TRACK: I Wish**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bbm | tempo: 105 | subdivision: 16th
 time: 4/4 | mood: Funky
 
 [V1] (Verse - 8 Bars)
 Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Gb9 . . . |
-@guitar | x1-bb2-db3-f3 . . . | x1-eb2-gb3-bb3 . . . | x1-ab2-c3-eb3 . . . | x1-db2-f3-ab3 . . . | (repeat) | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Gb9 . . . |
-@guitar | x1-bb2-db3-f3 . . . | x1-eb2-gb3-bb3 . . . | x1-ab2-c3-eb3 . . . | x1-db2-f3-ab3 . . . | (repeat) | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Gb9 . . . |
-@guitar | x1-bb2-db3-f3 . . . | x1-eb2-gb3-bb3 . . . | x1-ab2-c3-eb3 . . . | x1-db2-f3-ab3 . . . | (repeat) | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Ab9 . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Gb9 . . . |
-@guitar | x1-f2-ab3-c4 . . . | x1-bb2-d3-f3 . . . | x1-eb2-g3-bb3 . . . | x1-ab2-c4-eb4 . . . | (repeat) | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Gb9 . . . |
-@guitar | x1-bb2-db3-f3 . . . | x1-eb2-gb3-bb3 . . . | x1-ab2-c3-eb3 . . . | x1-gb2-bb3-db4 . . . | vel: 50

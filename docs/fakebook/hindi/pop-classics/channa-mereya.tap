@@ -1,24 +1,21 @@
 **TRACK: Channa Mereya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C#m | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Emotional
 
 [V1] (Verse - 8 Bars)
 Chords: | C#m . . . | G#m . . . | A . . . | E . . . |
-@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C#m . . . | G#m . . . | A . . . | E . . . |
-@guitar | c#3-e3-g#3 . . . | g#2-b2-d#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | C#m . . . |
-@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | f#2-a2-c#3 . . . | c#3-e3-g#3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | G#m . . . | A . . . | G#7 . . . |
-@guitar | f#2-a2-c#3 . . . | g#2-b2-d#3 . . . | a2-c#3-e3 . . . | g#2-b2-d#3-f#3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | C#m . . . | A . . . | E . . . | C#m . . . |
-@guitar | c#3-e3-g#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | c#3-e3-g#3 . . . | vel: 45

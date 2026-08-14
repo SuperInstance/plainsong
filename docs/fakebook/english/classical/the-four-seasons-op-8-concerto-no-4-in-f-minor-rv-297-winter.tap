@@ -1,22 +1,15 @@
 **TRACK: The Four Seasons, Op. 8, Concerto No. 4 in F minor, RV 297 "Winter" - I. Allegro non molto**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Bitter
 
 [V1] (Verse - 4 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | C7 . . . |
-Melody: | F4 . . . . . . . | E4 . . . . . . . | F4 . . . . . . . | E4 . . . . . . . |
-Lyrics: | shiv-er-ing . . . . | in the frost . . . . | teeth are chat-ter-ing . | wind bites raw . . . |
-@piano | f2-a2-c3-f3 . . . | c2-e2-g2-c3 . . . | f2-a2-c3-f3 . . . | c2-e2-g2-c3 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bbm . . . | Fm . . . | C7 . . . | Fm . . . |
-Melody: | Bb4 . . . A4 . . . | F4 . . . . . . . | E4 . . . D4 . . . | C4 . . . . . . . |
-Lyrics: | tramp-le on the ice . | slip and fall a-down | winds blow fierce and cold | win-ter's grip a-round |
-@piano | bb1-db2-f2-bb2 . . . | f1-a1-c2-f2 . . . | c2-e2-g2-c3 . . . | f1-a1-c2-f2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Fm . . . | Db . . . | C7 . . . | Fm . . . |
-Melody: | F4 . . . G4 . . . | Ab4 . . . . . . . | E4 . . . . . . . | F4 . . . . . . . |
-Lyrics: | run and stamp the feet | to keep the warmth in-side | hail-stones rat-tle hard | on the roof so wide |
-@piano | f2-a2-c3-f3 . . . | db2-f2-ab2-db3 . . . | c2-e2-g2-c3 . . . | f2-a2-c3-f3 . . . | vel: 50

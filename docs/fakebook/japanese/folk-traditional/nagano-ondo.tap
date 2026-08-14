@@ -1,16 +1,12 @@
 **TRACK: Nagano Ondo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
-Melody: | A3 . C4 . E4 . . | A3 . C4 . E4 . . | F4 . A4 . C5 . . | E4 . D4 . B3 . . |
-Lyrics: | Na-ga-no wa fu-ru-sa-to yo | Na-ga-no wa fu-ru-sa-to yo | a-ki no yo-ake no | so-ra ni ta-tsu |
-@piano | a2-e3-a3-c4-e4 . . | a2-e3-a3-c4-e4 . . | f2-a2-c3-f4-a4 . . | e2-g#2-b3-e4-d4 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | A4 . C5 . A4 . F4 | E4 . G4 . E4 . C4 | D4 . B3 . D4 . G4 | E4 . C4 . A3 . . |
-Lyrics: | yo-i yo-i yo-i ya-sa- | no-ka-wa na-ga-re-te | ka-wa-ra-nu mi-zu no | o-ndo no fu-ru-sa-to |
-@piano | f2-a2-c3-f4-a4-c5 . | c3-e3-g3-c4-e4-g4 . | g2-b2-d3-g4-b3-d4 . | a2-e3-a3-c4-e4-a4 . | vel: 55

@@ -1,16 +1,12 @@
 **TRACK: Ya Hala**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E . . . | Am . . . | E . . . |
-Melody: | A3 . C4 . | E4 . . . | A3 . C4 . | B3 . . . |
-Lyrics: | ya ha - la | ya ha - la | ya ha - la | bi - kum |
-@piano | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Am . . . | E . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . C4 . | B3 . D4 . | A3 . . . |
-Lyrics: | ya ha - la | ya ha - la | bi - kum | ya ha - la |
-@piano | d3-f3-a3 . . . | a2-e3-a3 . . . | e2-g#3-b3 . . . | a2-e3-a3 . . . | vel: 65

@@ -1,34 +1,21 @@
 **TRACK: Waltz in D-flat major "Minute"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Db | tempo: 138 | subdivision: 8th
 time: 3/4 | mood: Light and playful
 
 [V1] (Verse - 4 Bars)
 Chords: | Db . . . | Db . . . |
-Melody: | F4 . F4 . F4 . | F4 . Eb4 . Db4 . |
-Lyrics: | la la la la la la | la la la la la la |
-@piano | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Db . . . | Ab . . . |
-Melody: | F4 . Gb4 . F4 . | Eb4 . Db4 . C4 . |
-Lyrics: | la la la la la la | la la la la la la |
-@piano | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Db . . . | Ab . . . |
-Melody: | Db5 . C5 . Bb4 . | Ab4 . Bb4 . C5 . |
-Lyrics: | da da da da da da | da da da da da da |
-@piano | db3-f3-bb3 . . . | ab2-c3-eb3 . . . | vel: 60
 
 [V3] (Verse - 4 Bars)
 Chords: | Db . . . | Db . . . |
-Melody: | F4 . F4 . F4 . | F4 . Eb4 . Db4 . |
-Lyrics: | la la la la la la | la la la la la la |
-@piano | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Db . . . | Db . . . |
-Melody: | Db4 . . . | . . . . |
-Lyrics: | rest | rest |
-@piano | db3-f3-ab3 . . . | db3-f3-ab3 . . . | vel: 50

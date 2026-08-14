@@ -1,16 +1,12 @@
 **TRACK: Summer (L’Estate) - Allegro non molto**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gm | tempo: 160 | subdivision: 16th
 time: 3/4 | mood: Intense, driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Gm . . . | D . . . | Gm . . . | D . . . |
-Melody: | G4 . . Bb4 . . | A4 . . F#4 . . | G4 . . Bb4 . . | A4 . . F#4 . . |
-Lyrics: | la la la la la la | la la la la la la | la la la la la la | la la la la la la |
-@piano | g2-bb2-d3 . . . | d2-f#2-a2 . . . | g2-bb2-d3 . . . | d2-f#2-a2 . . . | vel: 70
 
 [CH] (Chorus - 4 Bars)
 Chords: | Cm . . . | G . . . | Cm . . . | D7 . . . |
-Melody: | Eb4 . . G4 . . | B3 . . D4 . . | Eb4 . . G4 . . | F#4 . . A4 . . |
-Lyrics: | ah ah ah ah ah ah | ah ah ah ah ah ah | ah ah ah ah ah ah | ah ah ah ah ah ah |
-@piano | c3-eb3-g3 . . . | g2-b2-d3 . . . | c3-eb3-g3 . . . | d2-f#2-a2 . . . | vel: 75

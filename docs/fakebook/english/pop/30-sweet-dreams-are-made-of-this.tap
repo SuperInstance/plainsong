@@ -1,24 +1,21 @@
 **TRACK: 30 Sweet Dreams (Are Made of This)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 126 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
-@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
-@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Fm . . . | Cm . . . | Ab . . . | G . . . |
-@guitar | f2-ab2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Bb . . . | Cm . . . | G . . . |
-@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Cm . . . | Cm . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 45

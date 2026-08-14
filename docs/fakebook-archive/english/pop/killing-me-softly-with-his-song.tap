@@ -1,24 +1,21 @@
 **TRACK: Killing Me Softly with His Song**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 74 | subdivision: 8th
 time: 4/4 | mood: Smooth
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | G . . . | G . . . | C . . . | E7 . . . |
-@guitar | a2-e3-c4 . . . | a2-e3-c4 . . . | d3-a3-f4 . . . | d3-a3-f4 . . . | g2-d3-b3 . . . | g2-d3-b3 . . . | c3-g3-e4 . . . | e2-b2-g#3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | G . . . | G . . . | C . . . | E7 . . . |
-@guitar | a2-e3-c4 . . . | a2-e3-c4 . . . | d3-a3-f4 . . . | d3-a3-f4 . . . | g2-d3-b3 . . . | g2-d3-b3 . . . | c3-g3-e4 . . . | e2-b2-g#3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | F . . . | G . . . | G . . . | C . . . | C . . . | E7 . . . | E7 . . . |
-@guitar | f2-c3-a3 . . . | f2-c3-a3 . . . | g2-d3-b3 . . . | g2-d3-b3 . . . | c3-g3-e4 . . . | c3-g3-e4 . . . | e2-b2-g#3 . . . | e2-b2-g#3 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
-@guitar | d3-a3-f4 . . . | d3-a3-f4 . . . | e2-b2-g#3 . . . | e2-b2-g#3 . . . | vel: 50
 
 [OUT] (Outro - 8 Bars)
 Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | G . . . | G . . . | C . . . | E7 . . . |
-@guitar | a2-e3-c4 . . . | a2-e3-c4 . . . | d3-a3-f4 . . . | d3-a3-f4 . . . | g2-d3-b3 . . . | g2-d3-b3 . . . | c3-g

@@ -1,22 +1,15 @@
 **TRACK: The Four Seasons (Spring) - Mvt. 1 (Allegro)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E major | tempo: 96 | subdivision: 16th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | B . . . |
-Melody: | E4 . G#4 . B4 . E5 . | D#5 . B4 . D#5 . B4 . |
-Lyrics: | la la la la la la la la | la la la la la la la la |
-@piano | e2-g#2-b2-e3 . . . . . . . . | b1-d#2-f#2-b2 . . . . . . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | A . . . | E . . . |
-Melody: | C#5 . B4 . A4 . G#4 . | F#4 . E4 . F#4 . G#4 . |
-Lyrics: | tra la la la la la la la | tra la la la la la la la |
-@piano | a1-c#2-e2-a2 . . . . . . . . | e2-g#2-b2-e3 . . . . . . . . | vel: 58
 
 [CH] (Chorus - 4 Bars)
 Chords: | E . . . | B . . . | E . . . | B . . . |
-Melody: | E4 . G#4 . B4 . E5 . | D#5 . B4 . F#5 . D#5 . | E5 . B4 . G#4 . E4 . | B3 . D#4 . F#4 . B4 . |
-Lyrics: | spring is here birds sing cheer | flow-ers bloom fill the air | dance and play joy-ful day | sun-beams bright all de-light |
-@piano | e2-g#2-b2-e3 . . . . . . . . | b1-d#2-f#2-b2 . . . . . . . . | e2-g#2-b2-e3 . . . . . . . . | b1-d#2-f#2-b2 . . . . . . . . | vel: 65

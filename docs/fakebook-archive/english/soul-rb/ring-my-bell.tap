@@ -1,30 +1,24 @@
 **TRACK: Ring My Bell**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 118 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Bbm . . . | Fm . . . | Bbm . . . |
-@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | f3-ab3-c4 . . . | bb2-db3-f3 . . . | vel: 55
 Chords: | Fm . . . | Bbm . . . | C7 . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | c3-e3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Bbm . . . | Fm . . . | Bbm . . . |
-@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | f3-ab3-c4 . . . | bb2-db3-f3 . . . | vel: 55
 Chords: | Fm . . . | Bbm . . . | C7 . . . | C7 . . . |
-@guitar | f3-ab3-c4 . . . | bb2-db3-f3 . . . | c3-e3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Bbm . . . | Bbm . . . |
-@guitar | f3-ab3-c4 . . . | f3-ab3-c4 . . . | bb2-db3-f3 . . . | bb2-db3-f3 . . . | vel: 65
 Chords: | Eb . . . | Eb . . . | C7 . . . | C7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Ab . . . | Bbm . . . | C7 . . . |
-@guitar | ab3-c4-eb4 . . . | ab3-c4-eb4 . . . | bb2-db3-f3 . . . | c3-e3-g3-bb3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Bbm . . . | Bbm . . . |
-@guitar | f3-ab3-c4

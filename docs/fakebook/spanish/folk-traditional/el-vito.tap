@@ -1,16 +1,12 @@
 **TRACK: El Vito**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | E7 . . . | Am . . . | E7 . . . |
-Melody: | A4 . C5 . | B4 . G#4 . | A4 . C5 . | B4 . G#4 . |
-Lyrics: | Con el vi - to, vi - to, vi - to, | con el vi - to, vi - to, va, | con el vi - to, vi - to, vi - to, | con el vi - to, vi - to, va. |
-@piano | a2-e3-a3 . . . | e2-g#2-b3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | Am . . . | E7 . . . | Am . . . |
-Melody: | D5 . C5 . | B4 . A4 . | G#4 . B4 . | A4 . . . |
-Lyrics: | Yo no soy de es - ta tie - rra, | ni soy de es - ta re - gión, | si soy del a - mor per - di - do, | que vi - ve en co - ra - zón. |
-@piano | d2-f2-a3 . . . | a2-c3-e3 . . . | e2-g#2-b3 . . . | a2-c3-e3 . . . | vel: 60

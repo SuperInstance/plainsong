@@ -1,22 +1,15 @@
 **TRACK: The White Snow in Early Spring**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 80 | subdivision: 8th
 time: 4/4 | mood: Gentle, Flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | A7 . . . |
-Melody: | D4 . F4 . | A4 . Bb4 . | A4 . F4 . | E4 . C#4 . |
-Lyrics: | white snow falls soft | on the branch-es bare | the spring wind stirs | the cold air still |
-@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
-Melody: | D4 . F4 . | A4 . Bb4 . | G4 . Bb4 . | A4 . G4 . |
-Lyrics: | the jade-like flakes | cling to the pine | the earth is white | in the early light |
-@piano | d3-f3-a3 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | e2-g#2-b2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | F . . . | Dm . . . | A7 . . . |
-Melody: | E4 . G4 . | A4 . C5 . | D5 . C5 . | B4 . A4 . |
-Lyrics: | oh snow so white | melt in the sun | bring us the spring | and the flowers to come |
-@piano | c3-e3-g3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | e2-g#2-b2 . . . | vel: 55

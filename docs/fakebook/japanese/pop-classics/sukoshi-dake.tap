@@ -1,24 +1,21 @@
 **TRACK: Sukoshi dake**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Bbm . . . | Bbm . . . | Fm . . . | Fm . . . | C . . . | C . . . |
-@guitar | f3-a3-c4 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f3-a3-c4 . . . | f3-a3-c4 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Bbm . . . | Bbm . . . | C . . . | C . . . |
-@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | Bbm . . . | Eb . . . | C . . . |
-@guitar | f3-a3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Bbm . . . | Bbm . . . | Fm . . . | Fm . . . | C . . . | C . . . |
-@guitar | f3-a3-c4 . . . | f3-a3-c4 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f3-a3-c4 . . . | f3-a3-c4 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Bbm . . . | Bbm . . . | C . . . | C . . . |
-@guitar | db3-f3-ab3 . . . | db3-f3-ab3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | c3-e

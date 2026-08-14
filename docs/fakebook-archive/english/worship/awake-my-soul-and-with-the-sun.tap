@@ -1,28 +1,18 @@
 **TRACK: Awake, My Soul, and with the Sun**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . D4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | A - wake, my soul, and with the sun | Thy dai - ly stage of du - ty run | Shake off dull sloth, and joy - ful rise | To pay the morn - ing sac - ri - fice |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . | A3 . F#3 . | G3 . D4 . |
-Lyrics: | Thy pre - cious time mis - spend re - new | And wake to hear the call of true | Re - deem the day, thy zeal em - ploy | And all thy powers to God em - ploy |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 52
 
 [V3] (Verse - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | E4 . C4 . | D4 . B3 . | A3 . D4 . |
-Lyrics: | Di - rect, con - trol, sug - gest, this day | All I de - sign, or do, or say | That all my powers, with all their might | In thy sole glo - ry may u - nite |
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [V4] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | G . . . |
-Melody: | B3 . D4 . | A3 . F#3 . | G3 . B3 . | G3 . . . |
-Lyrics: | Praise God, from whom all bless - ings flow | Praise him, all crea - tures here be - low | Praise him a - bove, ye heaven - ly host | Praise Fa - ther, Son, and Ho - ly Ghost |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . |

@@ -1,24 +1,21 @@
 **TRACK: Just to See Her**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Smooth
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 52
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | C . . . | F . . . | Dm . . . |
-@guitar | bb1-d2-f2 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | C . . . | Am . . . | Dm . . . |
-@guitar | g1-bb1-d2 . . . | c2-e2-g2 . . . | a1-c2-e2 . . . | d2-f2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | C . . . | F . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60

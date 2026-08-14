@@ -175,13 +175,24 @@ reading is better: put it behind a setting and default to the old behaviour.
 
 ## Content directories
 
-`docs/fakebook/` (~3,800 generated `.tap` transcriptions across a dozen
-languages), `docs/songs/`, `docs/prose/`, `docs/traditions/`, `docs/training/`,
-`academy/`. Generated material -- it parses, but it is not all well written, and
-it accounts for ~3,800 bar-count warnings. The old generator in
-`legacy/scripts/fakebook_generator.py` enforced a copyright policy (full
-melody+lyrics only for public-domain works, chord charts otherwise). Keep that
-policy if you regenerate anything.
+`docs/fakebook/` and `docs/fakebook-archive/` (6,308 generated `.tap` files
+across a dozen languages), `docs/songs/`, `docs/prose/`, `docs/traditions/`,
+`docs/training/`, `academy/`. Generated material: it parses, but it is not all
+well written.
+
+**The fakebook is chord charts only, and must stay that way.** Melody and lyric
+rows were stripped from all 6,309 files -- 41,990 rows -- because the documented
+policy (full melody plus lyrics only for public-domain works) was not being met
+and could not be enforced per title: nothing in the files records provenance,
+and the genre directories lie. A 1979 R. D. Burman film song was filed under
+`hindi/folk-traditional`. A chord progression is not protectable expression; a
+tune and its words are. If you regenerate anything here, emit chords only, and
+do not restore a melody without provenance to go with it.
+
+Two side effects worth knowing: the ~3,800 bar-count warnings this directory was
+famous for came from those rows and are now 2, and `academy/` teaches a syntax
+that never existed -- see B4 in `SHIPPING.md`. Do not treat academy content as a
+reference for the notation.
 
 ## Rough edges
 

@@ -1,28 +1,24 @@
 **TRACK: Lick It Up**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | A . . . | B . . . |
-@guitar | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | Em . . . | Em . . . |
-@guitar | e2-g2-b2 . . . | e2-g2-b2 . . . | vel: 45

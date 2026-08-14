@@ -1,29 +1,21 @@
 **TRACK: Natural Mystic**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 78 | subdivision: 8th
 time: 4/4 | mood: Mystical, Steady
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
-@bass | a1 . . . | f1 . . . | c2 . . . | g1 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 52
-@bass | a1 . . . | f1 . . . | c2 . . . | g1 . . . | vel: 47
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
-@bass | a1 . . . | f1 . . . | c2 . . . | g1 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Am . . . | Dm . . . | E . . . |
-@guitar | d2-f2-a2 . . . | a2-e3-a3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 55
-@bass | d1 . . . | a1 . . . | d1 . . . | e1 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 48
-@bass | a1 . . . | f1 . . . | c2 . . . | g1 . . . | vel: 42

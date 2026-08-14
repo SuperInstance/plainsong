@@ -1,31 +1,24 @@
 **TRACK: Koi no Aji**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | A7 . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 65
 Chords: | Gm . . . | C . . . | F . . . | C . . . |
-@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | C . . . |
-@guitar | d2-f2-a2 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | F . . . | Dm . . . | Gm . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | A7 . . . | Dm . . . | Bb . . . |
-@guitar | f2-a2-c3 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | vel: 65
-Chords

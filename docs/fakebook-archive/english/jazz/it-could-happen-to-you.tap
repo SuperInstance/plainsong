@@ -1,24 +1,21 @@
 **TRACK: It Could Happen to You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Ab . . . | Abm . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Eb . . . |
-@guitar

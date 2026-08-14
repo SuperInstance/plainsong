@@ -1,22 +1,15 @@
 **TRACK: The God of Abraham Praise**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 84 | subdivision: 8th
 time: 3/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . | C7 . . | F . . | Bb . F . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . C4 . | D4 . C4 . |
-Lyrics: | The God of A-braham | praise, who reigns en-throned a- | bove, An-cient of | ev-er-last-ing days, and |
-@piano | f1-a1-c2 . . | c1-e1-g1 . . | f1-a1-c2 . . | bb1-d2-f2 . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . | C7 . . | F . . | Bb . C7 . F . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . C4 . | D4 . E4 . F4 . |
-Lyrics: | God of love, his | pow'r and truth a- | lone, who made the | earth and heaven by his word. |
-@piano | f1-a1-c2 . . | c1-e1-g1 . . | f1-a1-c2 . . | bb1-d2-f2 . . c1-e1-g1 . f1-a1-c2 . | vel: 50
 
 [CH] (Chorus - 2 Bars)
 Chords: | C7 . . | F . . |
-Melody: | G4 . E4 . | F4 . . . |
-Lyrics: | Hallelu-jah! | Hallelujah! |
-@piano | c1-e1-g1 . . | f1-a1-c2 . . | vel: 55

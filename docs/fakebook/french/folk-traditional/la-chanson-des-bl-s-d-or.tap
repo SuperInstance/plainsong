@@ -1,28 +1,18 @@
 **TRACK: La Chanson des blés d'or**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 96 | subdivision: 8th
 time: 3/4 | mood: Gentle, pastoral
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . C4 . | B3 . D4 . | A3 . F#3 . |
-Lyrics: | Quand les blés d'or | sous le vent | se balan-cent | dans les champs |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . G3 . |
-Lyrics: | Chan-tez, chan-tez | la chan-son | des blés d'or | doux et ten-dres |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | B7 . . . | Em . . . | B7 . . . |
-Melody: | E4 . G4 . | D4 . F#4 . | E4 . G4 . | D4 . B3 . |
-Lyrics: | Les mois-son-neurs | sous le so-leil | cou-pent les tiges | avec or-gueil |
-@piano | e2-g2-b2 . . . | b1-d2-f#2 . . . | e2-g2-b2 . . . | b1-d2-f#2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | B3 . D4 . | A3 . C4 . | B3 . G3 . |
-Lyrics: | Chan-tez, chan-tez | la chan-son | des blés d'or | doux et ten-dres |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 50

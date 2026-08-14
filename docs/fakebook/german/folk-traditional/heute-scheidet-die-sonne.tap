@@ -1,28 +1,18 @@
 **TRACK: Heute scheidet die Sonne**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . . . | E4 . G4 . | B3 . D4 . |
-Lyrics: | Heu - te schei - det | die Son - ne, | bald ist der Tag | vor - bei, |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . . . | E4 . G4 . | B3 . D4 . |
-Lyrics: | nimmt Ab - schied von | den Ber - gen, | und senkt sich in | das Meer. |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E . . . |
-Melody: | F4 . A4 . | B4 . D4 . | C4 . E4 . | B3 . D4 . |
-Lyrics: | Schei - de, schei - de, | Son - ne, schei - de, | mor - gen kommt sie | wie - der - her, |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 . | F4 . . . | E4 . G4 . | B3 . D4 . |
-Lyrics: | und wenn sie un - ter | geht, so folgt | ein neu - er | Tag. |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50

@@ -1,22 +1,15 @@
 **TRACK: The Little Birch Tree (Vo pole beryozka stoyala)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | D4 . F4 . | E4 . C4 . | B3 . D4 . |
-Lyrics: | Vo po-le be- | ryo-za sto- | ya-la, vo | po-le ku-drya- |
-@piano | a2-e3-a3 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | D4 . F4 . | E4 . C4 . | B3 . D4 . |
-Lyrics: | ya sta-ya- | la, vo po-le | ku-drya-ya | sta-ya-la. |
-@piano | a2-e3-a3 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | E7 . . . |
-Melody: | E4 . G4 . | D4 . B3 . | C4 . E4 . | B3 . D4 . |
-Lyrics: | Lyu-li, lyu-li, | sta-ya-la, | lyu-li, lyu-li, | sta-ya-la. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55

@@ -1,24 +1,18 @@
 **TRACK: Family Affair**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Funky
 
 [V1] (Verse - 8 Bars)
 Chords: | Em7 . . . | A7 . . . | Em7 . . . | A7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#3-e3 . . . | e2-b2-e3 . . . | a1-c#3-e3 . . . | vel: 50
-| Em7 . . . | A7 . . . | Em7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#3-e3 . . . | e2-b2-e3 . . . | b1-d#3-f#3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Em7 . . . | A7 . . . | Em7 . . . | A7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#3-e3 . . . | e2-b2-e3 . . . | a1-c#3-e3 . . . | vel: 55
-| Em7 . . . | A7 . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#3-e3 . . . | c2-e2-g2 . . . | b1-d#3-f#3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am7 . . . | D7 . . . | G . . . | B7 . . . |
-@guitar | a1-c2-e2 . . . | d1-f#2-a2 . . . | g1-b1-d2 . . . | b1-d#3-f#3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em7 . . . | A7 . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#3-e3 . . . | c2-e2-g2 . . . | b1-d#3-f#3 . . . | vel: 65

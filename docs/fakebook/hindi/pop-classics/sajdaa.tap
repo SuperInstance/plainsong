@@ -1,24 +1,21 @@
 **TRACK: Sajdaa**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Devotional
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | A . . . | G . . . | A . . . |
-@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 50
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Bm . . . | A . . . | G . . . | F#m . . . |
-@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | f#2-c#3-f#3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | G . . . | A . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | F#m . . . | G . . . | A . . . |
-@guitar | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | g2-d3-g3 . . . | a2-e3-a3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bm . . . | A . . . | G . . . | Bm . . . |
-@guitar | b2-f#3-b3 . . . | a2-e3-a3 . . . | g2-d3-g3 . . . | b2-f#3-b3 . . . | vel: 45

@@ -1,24 +1,21 @@
 **TRACK: November Rain (duplicate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 70 | subdivision: 8th
 time: 6/4 | mood: Epic Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . . . | Eb . . . . . | Bb . . . . . | F . . . . . |
-@guitar | bb1-f2-bb2 . . . . . | eb1-bb2-eb3 . . . . . | bb1-f2-bb2 . . . . . | f1-c2-f2 . . . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . . . | Eb . . . . . | Bb . . . . . | F . . . . . |
-@guitar | bb1-f2-bb2 . . . . . | eb1-bb2-eb3 . . . . . | bb1-f2-bb2 . . . . . | f1-c2-f2 . . . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . . . | Bb . . . . . | Cm . . . . . | F . . . . . |
-@guitar | eb1-bb2-eb3 . . . . . | bb1-f2-bb2 . . . . . | c2-g2-c3 . . . . . | f1-c2-f2 . . . . . | vel: 65
 
 [B] (Bridge - 8 Bars)
 Chords: | Gm . . . . . | Eb . . . . . | Bb . . . . . | F . . . . . |
-@guitar | g1-d2-g2 . . . . . | eb1-bb2-eb3 . . . . . | bb1-f2-bb2 . . . . . | f1-c2-f2 . . . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bb . . . . . | Eb . . . . . | Bb . . . . . | Bb . . . . . |
-@guitar | bb1-f2-bb2 . . . . . | eb1-bb2-eb3 . . . . . | bb1-f2-bb2 . . . . . | bb1-f2-bb2 . . . . . | vel: 45

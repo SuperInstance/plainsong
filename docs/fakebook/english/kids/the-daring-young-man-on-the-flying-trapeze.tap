@@ -1,22 +1,12 @@
 **TRACK: The Daring Young Man on the Flying Trapeze**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . | C . . . | G7 . . . |
-Melody: | E4 . G4 . | D4 . F4 . | E4 . G4 . | D4 . F4 . |
-Lyrics: | Oh the | dar-ing young | man on the | fly-ing tra- |
-| -peze, he | flies through the | air with the | great-est of |
-| ease, the | dar-ing young | man on the | fly-ing tra- |
-| -peze, that | per-form-ance | pleases the | crowd. |
-@piano | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G7 . . . | C . . . |
-Melody: | A4 . F4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | He'd | fly through the | air with the | great-est of |
-| ease, the | dar-ing young | man on the | fly-ing tra- |
-| -peze, his | move-ments are | grace-ful, all | girls he does |
-| please, and | my love he | stole a- | way. |
-@piano | f2-a2-c3-f3 . . . | c3-e3-g3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3 . . . | vel: 55

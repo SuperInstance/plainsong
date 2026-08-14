@@ -1,20 +1,18 @@
 **TRACK: I' te vurria vasà**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Lyrical
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-bb2 . . . | f2-a2-c3 . . . | c3-e3-bb2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | D7 . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | d3-f#3-a3 . . . | g2-bb2-d3 . . . | c3-e3-bb2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-bb2 . . . | f2-a2-c3 . . . | c3-e3-bb2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50

@@ -1,22 +1,15 @@
 **TRACK: Die Wacht am Rhein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Solemn, martial
 
 [V1] (Verse - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
-Melody: | Eb4 . G4 . | Ab4 . . . | G4 . F4 . | Eb4 . . . |
-Lyrics: | Es braust ein Ruf wie Don - ner - hall, wie Schwert - ge - klirr und Wo - gen - prall: |
-@piano | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
-Melody: | Eb4 . G4 . | Ab4 . . . | G4 . F4 . | Eb4 . . . |
-Lyrics: | Zum Rhein, zum Rhein, zum deut - schen Rhein, wer will des Stro - mes Hü - ter sein? |
-@piano | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . Eb . |
-Melody: | Eb4 . G4 . | Ab4 . G4 . | F4 . Eb4 . | D4 . Eb4 . |
-Lyrics: | Lieb Va - ter - land, magst ru - hig sein, fest steht und treu die Wacht, die Wacht am Rhein! |
-@piano | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . eb3-g3-bb3 . | vel: 60

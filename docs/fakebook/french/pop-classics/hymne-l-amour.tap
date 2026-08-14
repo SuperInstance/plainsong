@@ -1,24 +1,21 @@
 **TRACK: Hymne à l'amour**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 70 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | Db . . . |
-@guitar | f2-c3-f3 . . . | c2-e2-bb2 . . . | f2-c3-f3 . . . | db2-f2-ab3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
-@guitar | f2-c3-f3 . . . | c2-e2-bb2 . . . | f2-c3-f3 . . . | bb1-db2-f3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |
-@guitar | db2-f2-ab3 . . . | ab2-c3-eb3 . . . | bb1-db2-f3 . . . | f2-c3-f3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | C7 . . . | Fm . . . | C7 . . . | Fm . . . |
-@guitar | c2-e2-bb2 . . . | f2-c3-f3 . . . | c2-e2-bb2 . . . | f2-c3-f3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm . . . | Db . . . | C7 . . . | Fm . . . |
-@guitar | f2-c3-f3 . . . | db2-f2-ab3 . . . | c2-e2-bb2 . . . | f2-c3-f3 . . . | vel: 40

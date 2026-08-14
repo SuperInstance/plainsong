@@ -1,28 +1,18 @@
 **TRACK: The Alphabet Song (ABC)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 2/4 | mood: Cheerful
 
 [V1] (Verse - 8 Bars)
 Chords: | C . | C . | F . | C . | C . | G . | C . | C . |
-Melody: | C4 . | C4 . | C4 . | D4 . | E4 . | E4 . | D4 . | E4 . |
-Lyrics: | A . | B . | C . | D . | E . | F . | G . | (rest) |
-@piano | c3-e3-g3 . | c3-e3-g3 . | f2-a2-c3 . | c3-e3-g3 . | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | c3-e3-g3 . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . | F . | C . | C . | G . | G . | C . | C . |
-Melody: | F4 . | F4 . | E4 . | E4 . | D4 . | D4 . | C4 . | (rest) |
-Lyrics: | H . | I . | J . | K . | L . | M . | N . | O . |
-@piano | f2-a2-c3 . | f2-a2-c3 . | c3-e3-g3 . | c3-e3-g3 . | g2-b2-d3 . | g2-b2-d3 . | c3-e3-g3 . | c3-e3-g3 . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . | C . | F . | C . | C . | G . | C . | C . |
-Melody: | G4 . | G4 . | E4 . | E4 . | D4 . | D4 . | C4 . | (rest) |
-Lyrics: | P . | Q . | R . | S . | T . | U . | V . | W . |
-@piano | c3-e3-g3 . | c3-e3-g3 . | f2-a2-c3 . | c3-e3-g3 . | c3-e3-g3 . | g2-b2-d3 . | c3-e3-g3 . | c3-e3-g3 . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | F . | F . | C . | C . | G . | G . | C . | C . |
-Melody: | E4 . | E4 . | D4 . | D4 . | C4 . | C4 . | C4 . | (rest) |
-Lyrics: | X . | Y . | Z . | (rest) | Now . | I . | know . | (rest) |
-@piano | f2-a2-c3 . | f2-a2-c3 . | c3-e3-g3 .

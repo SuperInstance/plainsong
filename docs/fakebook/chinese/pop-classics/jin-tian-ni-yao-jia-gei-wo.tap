@@ -1,24 +1,21 @@
 **TRACK: Jin Tian Ni Yao Jia Gei Wo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th  
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Em/G . . . | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g3-b3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Em/G . . . | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g3-b3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d2-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | Em . . . | Am . . . | F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm7 . . . | G . . . | C . . . | C . . . |
-@guitar | d2-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 40

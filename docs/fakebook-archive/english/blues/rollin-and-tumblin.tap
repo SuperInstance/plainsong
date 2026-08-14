@@ -1,20 +1,18 @@
 **TRACK: Rollin' and Tumblin'**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | a2-c3-e3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | a2-c3-e3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | A . . . | E . . . | B7 . . . | E . . . |
-@guitar | a2-c3-e3 . . . | e2-b3-e3 . . . | b2-f#3-a3 . . . | e2-b3-e3 . . . | vel: 58
 
 [V3] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | e2-b3-e3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | e2-b3-e3 . . . | e2-b3-e

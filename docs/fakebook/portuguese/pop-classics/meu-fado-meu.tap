@@ -1,24 +1,21 @@
 **TRACK: Meu Fado Meu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Fado
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . | Bb . . . | F . . . | Gm . . . | A . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | A . . . | Dm . . . | E . . . |
-@guitar | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-a3-d4 . . . | e3-g#3-b3 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 40

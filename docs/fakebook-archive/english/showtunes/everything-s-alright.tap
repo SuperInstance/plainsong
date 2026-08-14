@@ -1,30 +1,21 @@
 **TRACK: Everything’s Alright**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . |
-| A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
-| a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . |
-| F#m . . . | D . . . | A . . . | E . . . |
-@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . |
-| f#2-c#3-f#3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . |
-| D . . . | A . . . | E . . . | E . . . |
-@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | a2-e3-a3 . . . |
-| d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | D . . . | E . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | A . . . |
-@guitar | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50

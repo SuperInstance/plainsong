@@ -1,22 +1,15 @@
 **TRACK: El Pescador**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 E4 | F4 . E4 D4 | C4 . E4 G4 | B3 . D4 . |
-Lyrics: | El pes-ca-dor | va por el mar | con su ca-noa | y su can-tar |
-@piano | a2-e3-a3 . c3-e3 | f2-a2-c3 . e3-c3 | c3-e3-g3 . e3-g3 | g2-b2-d3 . d3-b2 | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-Melody: | A3 . C4 E4 | F4 . E4 D4 | C4 . E4 G4 | B3 . D4 . |
-Lyrics: | Las o-las le | can-tan a él | con voz de a-gua | y de a-zul |
-@piano | a2-e3-a3 . c3-e3 | f2-a2-c3 . e3-c3 | c3-e3-g3 . e3-g3 | g2-b2-d3 . d3-b2 | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 A4 | G4 . E4 G4 | B3 . D4 D4 | C4 . A3 C4 |
-Lyrics: | Y el vien-to gri-ta | ¡le-van-ta el an-cla! | que el sol ya bri-lla | en el ho-ri-zon-te |
-@piano | f2-a2-c3 . a2-c3 | c3-e3-g3 . e3-g3 | g2-b2-d3 . b2-d3 | a2-e3-a3 . c3-e3 | vel: 55

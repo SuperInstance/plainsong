@@ -1,34 +1,21 @@
 **TRACK: A Praça**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | A pra - ça é va - | zi - a, a noi - | te cai, o ven - | to so - pra a - |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Dm . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . E4 . | D4 . C4 . | B3 . G#3 . |
-Lyrics: | qui, sem nin - guém | pa - ra me a - | co - lhe - r, só a | som - bra do meu |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | d2-f2-a2 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . | G4 . B4 . | A4 . C5 . | B4 . G#4 . |
-Lyrics: | a - mor, que se | foi, que se per - | deu na es - qui - | na, na es - qui - |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH2] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E7 . . . |
-Melody: | F4 . A4 . | G4 . B4 . | A4 . C5 . | B3 . G#3 . |
-Lyrics: | na, sem vol - | ta, sem fim, a | pra - ça fi - cou | tão so - zi - |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Am . . . | Am . . . |
-Melody: | A3 . . . | . . . . |
-Lyrics: | nha... | (fade) |
-@piano

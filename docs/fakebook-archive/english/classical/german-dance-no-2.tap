@@ -1,16 +1,12 @@
 **TRACK: German Dance No. 2**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . | A . . | D . . | A . . | D . . | A . . | D . A | D . . |
-Melody: | D4 . F#4 . A4 . | A3 . C#4 . E4 . | D4 . F#4 . A4 . | A3 . C#4 . E4 . | D4 . F#4 . A4 . | A3 . C#4 . E4 . | D4 . F#4 . A3 . C#4 | D4 . . . |
-Lyrics: | dance . and . turn . | step . and . sway . | dance . and . turn . | step . and . sway . | twirl . a - round . | light . as . air . | now . to . the . left | and . . . |
-@piano | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 a2-c#3 | d3-f#3-a3 . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | A . . | D . . | A . . | D . . |
-Melody: | B3 . D4 . G4 . | A3 . F#4 . D4 . | B3 . D4 . G4 . | A3 . F#4 . D4 . | C#4 . E4 . A4 . | D4 . F#4 . A4 . | C#4 . E4 . A3 . C#4 | D4 . . . |
-Lyrics: | join . the . dance . | all . in . a ring . | join . the . dance . | all . in . a ring . | clap . your . hands . | stamp . your . feet . | turn . and . bow . | smile . . . |
-@piano | g2-b2-d3 . . | d3-f#3-a3 . . | g2-b2-d3 . . | d3-f#3-a3 . . | a2-c#3-e3 . . | d3-f#3-a3 . . | a2-c#3-e3 a2-c#3 | d3-f#3-a3 . . | vel: 60

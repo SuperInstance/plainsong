@@ -1,20 +1,18 @@
 **TRACK: Rainbow in the Dark**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 118 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-b2-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | G . . . | B7 . . . |
-@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | b1-f#2-a2 . . . | vel: 60

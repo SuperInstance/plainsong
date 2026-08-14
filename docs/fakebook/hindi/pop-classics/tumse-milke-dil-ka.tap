@@ -1,26 +1,22 @@
 **TRACK: Tumse Milke Dil Ka**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Ab . . . | Bb . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm . . . | Ab . . . | Bb . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Cm . . . | Cm . . . |
-@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 65
 Chords: | Ab . . . | Bb . . . | Cm . . . | G . . . |
-@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | g2-b2-d3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | Bb . . . | Eb . . . | G . . . |
-@guitar | f2-ab2-c3 . . . | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | g2-b2-d3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cm . . . | Fm . . . | Cm . . . | Cm . . . |
-@guitar | c3-eb3-g3 . . . | f2-ab2-c3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 45

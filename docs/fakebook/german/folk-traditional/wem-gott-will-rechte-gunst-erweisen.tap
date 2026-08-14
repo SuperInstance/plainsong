@@ -1,22 +1,15 @@
 **TRACK: Wem Gott will rechte Gunst erweisen**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G4 . B4 . | A4 . F#4 . | G4 . B4 . | A4 . G4 . |
-Lyrics: | Wem Gott will rech-te Gunst er- | wei-sen, den schickt er in die | wei-te Welt, dem will er | sei-ne Wun-der wei-sen |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B4 . | A4 . F#4 . | G4 . . . |
-Lyrics: | in Berg und Tal, in | Strom und Feld, in | Berg und Tal, in | Strom und Feld |
-@piano | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 2 Bars)
 Chords: | G . . . | D . . . |
-Melody: | G4 . B4 . | D5 . . . |
-Lyrics: | Dem schickt er | in die Welt |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60

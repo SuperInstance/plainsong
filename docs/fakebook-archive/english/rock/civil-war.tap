@@ -1,26 +1,21 @@
 **TRACK: Civil War**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Dark, Brooding
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50
 Chords: | F . . . | F . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 62
 Chords: | F . . . | F . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 64
 
 [BR] (Bridge - 8 Bars)
 Chords: | Bb . . . | Bb . . . | F . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 58
 Chords: | C . . . | C . . . | Dm . . . | Dm . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | bb2-d3-f3 . . . | d3-f3-a3 . . . | vel: 45

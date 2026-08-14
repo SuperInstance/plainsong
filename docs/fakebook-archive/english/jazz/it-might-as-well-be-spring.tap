@@ -1,20 +1,18 @@
 **TRACK: It Might as Well Be Spring**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | C7 . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Bb . . . | Bbm . . . | F . . . | F . . . | D7 . . . | D7 . . . | G7 . . . | C7 . . . |
-@guitar | bb1-d2-f2 . . . | bb1-db2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | d1-f#1-a1 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | c2-e2-g2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | F . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 55

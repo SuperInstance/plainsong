@@ -1,24 +1,21 @@
 **TRACK: Moon River**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 92 | subdivision: 8th
 time: 3/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . | C . . . | Em . . . | Dm . . . | G . . . |
-@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . | C . . . | Em . . . | Dm . . . | G . . . |
-@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [BR] (Bridge - 8 Bars)
 Chords: | F . . . | Fm . . . | C . . . | C . . . | Am . . . | D7 . . . | G . . . | G . . . |
-@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | C . . . | Em . . . | Am . . . | F . . . | C . . . | Em . . . | Dm . . . | G . . . |
-@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | C . . . | F . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3

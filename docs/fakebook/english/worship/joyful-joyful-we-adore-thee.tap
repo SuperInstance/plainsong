@@ -1,28 +1,18 @@
 **TRACK: Joyful, Joyful, We Adore Thee**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Triumphant
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Joy - ful, joy - ful, | we a - dore Thee, | God of glo - ry, | Lord of love; |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | A4 . G4 . | F4 . D4 . | E4 . C4 . |
-Lyrics: | Hearts un - fold like | flow'rs be - fore Thee, | op' - ning to the | sun a - bove, |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 58
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . F4 . | E4 . D4 . |
-Lyrics: | Melt the clouds of | sin and sad - ness; | drive the dark of | doubt a - way; |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 52
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | A4 . G4 . | F4 . D4 . | E4 . C4 . |
-Lyrics: | Giv - er of im - | mor - tal glad - ness, | fill us with the | light of day! |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60

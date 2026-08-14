@@ -1,22 +1,15 @@
 **TRACK: Le Chêne et le Roseau**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 84 | subdivision: 8th
 time: 3/4 | mood: Reflective
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | C . . . |
-Melody: | F4 . A4 . | C5 . . . | A4 . F4 . | G4 . . . |
-Lyrics: | Le chê-ne un jour | par-la au ro-seau | Vous a-vez bien su- | jet le faix |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | C . . . |
-Melody: | A4 . C5 . | B4 . G4 . | A4 . F4 . | G4 . . . |
-Lyrics: | Du vent, mais vous | pliez, je ne romps | pas, je suis ro- | buste et fier |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . |
-Melody: | Bb3 . D4 . | F4 . . . | E4 . C4 . | F4 . . . |
-Lyrics: | Le vent souf-fla | fort, le chê-ne | tom-ba, le ro-seau | res-ta |
-@piano | bb1-f2-bb2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | vel: 50

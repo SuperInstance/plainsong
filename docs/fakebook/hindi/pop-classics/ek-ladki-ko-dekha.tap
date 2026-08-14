@@ -1,28 +1,23 @@
 **TRACK: Ek Ladki Ko Dekha**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Romantic
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Bb . . . | C . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | C . . . | Am . . . | Dm . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 60
 Chords: | Gm . . . | C . . . | F . . . | F . . . |
-@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | C . . . | C . . . |
-@guitar | d2-f2-a2 . . . | bb2-d3-f3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | C . . . | Am . . . | Dm . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d2-f2-a2 . . . | vel: 60
 Chords: | Gm . . . | C . . . | F . . . | F . . . |
-@guitar | g2-bb2-d3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 60

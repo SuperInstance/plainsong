@@ -1,24 +1,21 @@
 **TRACK: Solitude**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 68 | subdivision: 8th
 time: 4/4 | mood: Melancholic
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
-@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 40
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
-@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 40
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | Eb . . . | Db . . . | G . . . |
-@guitar | f2-ab2-c3 . . . | eb2-g2-bb2 . . . | db2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 35
 
 [V3] (Verse - 8 Bars)
 Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
-@guitar | c3-eb3-g3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | vel: 40
 
 [OUT] (Outro - 4 Bars)
 Chords: | Cm . . . | Cm . . . | Cm . . . | Cm . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | c3-eb3-g3 . . . | vel: 30

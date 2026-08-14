@@ -1,22 +1,15 @@
 **TRACK: Entre le bœuf et l'âne gris**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 80 | subdivision: 8th
 time: 6/8 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . . . | C7 . . . . . |
-Melody: | F4 . A4 . C5 . | E4 . G4 . C5 . |
-Lyrics: | En - tre le bœuf | et l'â - ne gris |
-@piano | f2-a2-c3 . . . . . | c2-e2-g2 . . . . . | vel: 45
 
 [V2] (Verse 2 - 4 Bars)
 Chords: | F . . . . . | C7 . . . . . |
-Melody: | A4 . G4 . F4 . | E4 . D4 . C4 . |
-Lyrics: | Dor - ment le fils | de Ma - ri - e |
-@piano | f2-a2-c3 . . . . . | c2-e2-g2 . . . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . . . | F . . . . . | C7 . . . . . | F . . . . . |
-Melody: | D4 . F4 . A4 . | F4 . A4 . C5 . | E4 . G4 . B4 . | C5 . A4 . F4 . |
-Lyrics: | Pe - tit, pe - tit, | pe - tit, pe - tit, | Pe - tit, pe - tit, | doux en - fant - là |
-@piano | bb2-d3-f3 . . . . . | f2-a2-c3 . . . . . | c2-e2-g2 . . . . . | f2-a2-c3 . . . . . | vel: 50

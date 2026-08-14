@@ -1,30 +1,24 @@
 **TRACK: Leily Nahary**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-c3-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-c3-f3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | vel: 65
 Chords: | F . . . | C . . . | Gm . . . | A . . . |
-@guitar | f2-c3-f3 . . . | c3-e3-g3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . |
-@guitar | bb2-d3-f3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 60
 
 [V2] (Verse - 8 Bars, same as V1)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | f2-c3-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
-@guitar | d3-a3-d4 . . . | bb2-d3-f3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
-@guitar | f2-c3-f3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | bb2-d3-f3 . . . | vel

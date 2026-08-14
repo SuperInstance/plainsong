@@ -1,16 +1,12 @@
 **TRACK: Shanties of the Sea**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Rousing
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | A . . . | Dm . . . | C . . . |
-Melody: | D4 . F4 . | E4 . C#4 . | D4 . A3 . | G3 . A3 . |
-Lyrics: | The wind was blow-ing | out of the west, | The sea ran high and | the waves did crest |
-@piano | d2-a2-d3 . . . | a1-c#2-e2 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-Melody: | A3 . C4 . | B3 . G3 . | A3 . F4 . | E4 . C#4 . |
-Lyrics: | Heave ho, my lads, | the tide is turn-ing, | Heave ho, the wind | blows free |
-@piano | f1-a1-c2 . . . | c2-e2-g2 . . . | d2-a2-d3 . . . | a1-c#2-e2 . . . | vel: 60

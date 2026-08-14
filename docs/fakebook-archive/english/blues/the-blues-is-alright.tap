@@ -1,24 +1,19 @@
 **TRACK: The Blues Is Alright**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 110 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 12 Bars)
 Chords: | A7 . . . | D7 . . . | A7 . . . | A7 . . . |
-@guitar | a2-c#3-e3-g3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | a2-c#3-e3-g3 . . . | vel: 60
 Chords: | D7 . . . | D7 . . . | A7 . . . | A7 . . . |
-@guitar | d2-f#3-a3-c3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | a2-c#3-e3-g3 . . . | vel: 60
 Chords: | E7 . . . | D7 . . . | A7 . . . | E7 . . . |
-@guitar | e2-g#3-b3-d3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | e2-g#3-b3-d3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | A7 . . . | D7 . . . | A7 . . . | A7 . . . |
-@guitar | a2-c#3-e3-g3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | a2-c#3-e3-g3 . . . | vel: 60
 Chords: | D7 . . . | D7 . . . | A7 . . . | A7 . . . |
-@guitar | d2-f#3-a3-c3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | a2-c#3-e3-g3 . . . | vel: 60
 Chords: | E7 . . . | D7 . . . | A7 . . . | E7 . . . |
-@guitar | e2-g#3-b3-d3 . . . | d2-f#3-a3-c3 . . . | a2-c#3-e3-g3 . . . | e2-g#3-b3-d3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | F#7 . . . | B7 . . . | E7 . . . | E7 . . . |
-@guitar | f#2-a#3-c#3-e3 . . . | b2-d#3-f#3-a3 . . . | e2-g#3-b3-d3 . . . | e2-g#3-b3-d3 . . . | vel: 65

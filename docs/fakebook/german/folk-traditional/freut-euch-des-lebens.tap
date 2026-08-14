@@ -1,22 +1,15 @@
 **TRACK: Freut euch des Lebens**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . B3 . |
-Lyrics: | Freut euch des Le - | bens, weil noch das |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . |
-Melody: | G4 . F#4 . | D4 . . . |
-Lyrics: | Lamp - chen glüht, | pflückt die |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . |
-Lyrics: | Ro - se, eh' sie | ver - blüht. |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65

@@ -1,48 +1,20 @@
 **TRACK: Stand By Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 key: A | tempo: 120 | swing: 0% | subdivision: 8th
 style: doo-wop, iconic bassline, 4/4
 
 [Intro - 4 bars]
 Chords: A F#m | D E | A F#m | D E
-Bassline (8th notes): A2 E3 A2 E3 | F#2 C#3 F#2 C#3 | D2 A2 D2 A2 | E2 B2 E2 B2
-@bass: A2 E3 A2 E3 | F#2 C#3 F#2 C#3 | D2 A2 D2 A2 | E2 B2 E2 B2
-@keys: [A] [F#m] | [D] [E] | [A] [F#m] | [D] [E]
 
 [Verse 1 - 8 bars]
 Chords: A F#m | D E | A F#m | D E | A F#m | D E | A | E
-Melody (8th): C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | A3 A3 B3 C#4 | B3 A3
-Lyrics:
-When the night has come and the land is dark
-And the moon is the only light we'll see
-No I won't be afraid, no I won't be afraid
-Just as long as you stand, stand by me
-@vocals: C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | A3 A3 B3 C#4 | B3 A3
-@bass: (continue pattern) A2 E3 A2 E3 | F#2 C#3 F#2 C#3 | D2 A2 D2 A2 | E2 B2 E2 B2 | A2 E3 A2 E3 | F#2 C#3 F#2 C#3 | D2 A2 D2 A2 | E2 B2 E2 B2
 
 [Chorus - 8 bars]
 Chords: D E | A F#m | D E | A | D E | A F#m | D E | A
-Melody (8th): E4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 E4 | D4 C#4 B3 A3
-Lyrics:
-Oh stand by me, won't you stand by me
-Oh stand by me, stand by me
-Oh stand by me, won't you stand by me
-Oh stand by me, stand by me
-@vocals: E4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 G#4 | A4 G#4 F#4 E4 | D4 E4 F#4 E4 | D4 C#4 B3 A3
-@bass: D2 A2 D2 A2 | A2 E3 A2 E3 | E2 B2 E2 B2 | A2 E3 A2 E3 | D2 A2 D2 A2 | A2 E3 A2 E3 | E2 B2 E2 B2 | A2 E3 A2 E3
 
 [Verse 2 - 8 bars] (shortened for educational)
 Chords: A F#m | D E | A F#m | D E | A F#m | D E | A | E
-Melody (8th): C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | C#4 C#4 D4 E4 | D4 C#4 B3 | A3 A3 B3 C#4 | B3 A3
-Lyrics:
-If the sky that we look upon should tumble and fall
-And the mountains should crumble to the sea
-I won't cry, no I won't shed a tear
-Just as long as you stand, stand by me
-@vocals: (same as verse 1 melody)
-@bass: (same as verse 1 pattern)
 
 [Outro - 4 bars]
 Chords: D E | A F#m | D E | A (hold)
-Melody: (hum, no lyrics) E4 D4 C#4 B3 | A3 G#3 F#3 E3 | D4 E4 F#4 G#4 | A4 (hold)
-@vocals: (hum) E4 D4 C#4 B3 | A3 G#3 F#3 E3 | D4 E4 F#4 G#4 | A4 (hold)
-@bass: D2 A2 D2 A2 | A2 E3 A2 E3 | E2 B2 E2 B2 | A2 (hold)

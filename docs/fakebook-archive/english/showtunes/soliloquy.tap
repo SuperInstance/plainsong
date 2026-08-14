@@ -1,24 +1,21 @@
 **TRACK: Soliloquy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Reflective, building
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Eb . . . | Gm . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | eb2-g2-bb2 . . . | g2-bb2-d3 . . . | f2-a2-c3 . . . | vel: 48
 
 [BR] (Bridge - 8 Bars)
 Chords: | Cm . . . | F . . . | Dm . . . | Gm . . . |
-@guitar | c3-eb3-g3 . . . | f2-a2-c3 . . . | d3-f3-a3 . . . | g2-bb2-d3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | eb2-g2-bb2 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 50

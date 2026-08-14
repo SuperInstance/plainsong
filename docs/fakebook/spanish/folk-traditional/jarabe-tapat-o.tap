@@ -1,22 +1,15 @@
 **TRACK: Jarabe Tapatío**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 6/8 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . . . | Am . . . . . | F . . . . . | F . . . . . |
-Melody: | A3 . C4 . E4 . | A3 . C4 . E4 . | F4 . A4 . C5 . | F4 . A4 . C5 . |
-Lyrics: | la la la la la | la la la la la | la la la la la | la la la la la |
-@piano | a2-e3-a3 . . . . . | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | f2-a2-c3 . . . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . . . | C . . . . . | G . . . . . | G . . . . . |
-Melody: | E4 . G4 . C5 . | E4 . G4 . C5 . | D4 . B3 . G4 . | D4 . B3 . G4 . |
-Lyrics: | tra la la la la | tra la la la la | tra la la la la | tra la la la la |
-@piano | c3-e3-g3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | g2-b2-d3 . . . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . . . | F . . . . . | C . . . . . | G . . . . . |
-Melody: | A3 . C4 . E4 . | F4 . A4 . C5 . | E4 . G4 . C5 . | D4 . B3 . G4 . |
-Lyrics: | (instrumental) | (instrumental) | (instrumental) | (instrumental) |
-@piano | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 55

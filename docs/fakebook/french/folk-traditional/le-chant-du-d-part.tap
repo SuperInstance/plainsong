@@ -1,16 +1,12 @@
 **TRACK: Le chant du départ**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Martial
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
-Melody: | D4 . F4 . | G4 . F4 . | D4 . Bb3 . | C4 . D4 . |
-Lyrics: | La vic-toire en chan-tant | nous ou-vre la bar-riè-re | La Li-ber-té gui-de nos pas | Et du nord au midi |
-@piano | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | f2-a3-c4 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | F . . . |
-Melody: | G4 . F4 . | D4 . Bb3 . | A3 . C4 . | F4 . F4 . |
-Lyrics: | La Ré-pu-bli-que nous ap-pel-le | Sachons vain-cre ou sach-ons pé-rir | Un Fran-çais doit vi-vre pour el-le | Pour el-le un Fran-çais doit mou-rir |
-@piano | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | f2-a3-c4 . . . | vel: 65

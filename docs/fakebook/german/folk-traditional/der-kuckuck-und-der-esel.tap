@@ -1,22 +1,15 @@
 **TRACK: Der Kuckuck und der Esel**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 6/8 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . . . | G . . . . . | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . E4 . | D4 . B3 . D4 . | C4 . E4 . G4 . | D4 . B3 . D4 . |
-Lyrics: | Der Ku- ckuck und der E- sel, | die hat- ten gro- ßen Streit, | weil je- der, der ihn kann- te, | ihn lob- te und be- geit. |
-@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . . . | G . . . . . | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . E4 . | D4 . B3 . D4 . | C4 . E4 . G4 . | D4 . B3 . D4 . |
-Lyrics: | Der Ku- ckuck sprach: "Das kann ich!" | und hub zu sin- gen an. | Der E- sel stimm- te kräf- tig | mit sei- nem Es- els- schrei. |
-@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 50
 
 [CH] (Chorus - 2 Bars)
 Chords: | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . C5 . | B4 . G4 . D4 . |
-Lyrics: | Ku- ckuck, Ku- ckuck, ia- ia! | Ku- ckuck, Ku- ckuck, ia- ia! |
-@piano | c3-e3-g3-c4 . . . . . | g2-b2-d3-g3 . . . . . | vel: 55

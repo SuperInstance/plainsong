@@ -1,22 +1,15 @@
 **TRACK: El Chinito**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E . . . |
-Melody: | A3 . C4 E4 | A4 . G4 E4 | C4 . A3 C4 | B3 . G#3 B3 |
-Lyrics: | El chi - ni - to | se fue a ven - der | su ma - no - pla | y su ta - rro |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E . . . |
-Melody: | A3 . C4 E4 | A4 . G4 E4 | C4 . A3 C4 | B3 . G#3 B3 |
-Lyrics: | ven - dió to - do | y com - pró un ca - | ba - llo blan - co | pa - ra pa - se - ar |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 C5 | E4 . G4 C5 | D4 . B3 D4 | C4 . A3 E4 |
-Lyrics: | chi - ni - to a - le - | gre can - ta y | bai - la sin pe - | na, no llo - res más |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 55

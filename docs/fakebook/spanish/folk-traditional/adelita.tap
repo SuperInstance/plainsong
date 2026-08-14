@@ -1,34 +1,21 @@
 **TRACK: Adelita**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A minor | tempo: 100 | subdivision: 8th
 time: 3/4 | mood: Gentle waltz
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . | E7 . . | Am . . | E7 . . |
-Melody: | A3 . C4 . | B3 . G#3 . | A3 . C4 . | B3 . G#3 . |
-Lyrics: | A-de-li-ta | se lla-ma la | joven que yo | quie-ro, |
-@piano | a2-e3-a3 . . | e2-g#2-b2 . . | a2-e3-a3 . . | e2-g#2-b2 . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . | F . . | C . . | E7 . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . G#3 . |
-Lyrics: | por e-lla yo | pier-do la | fe y la es-pe | ran-za, |
-@piano | a2-e3-a3 . . | f2-a2-c3 . . | c3-e3-g3 . . | e2-g#2-b2 . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . | Dm . . | E7 . . | Am . . |
-Melody: | A3 . C4 . | D4 . F4 . | E4 . D4 . | C4 . A3 . |
-Lyrics: | y por e-lla | mi co-ra-zón | se con-su-me | en llan-to, |
-@piano | a2-e3-a3 . . | d2-f2-a2 . . | e2-g#2-b2 . . | a2-e3-a3 . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | Am . . | F . . | C . . | E7 . . |
-Melody: | A3 . C4 . | F4 . E4 . | E4 . D4 . | B3 . G#3 . |
-Lyrics: | y por e-lla | yo pier-do la | pa-cien-cia y | vi-da, |
-@piano | a2-e3-a3 . . | f2-a2-c3 . . | c3-e3-g3 . . | e2-g#2-b2 . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | Am . . | E7 . . |
-Melody: | A3 . . . | E3 . . . |
-Lyrics: | (hum) | (hum) |
-@piano | a2-e3-a3 . . | e2-g#2-b2 . . | vel: 45

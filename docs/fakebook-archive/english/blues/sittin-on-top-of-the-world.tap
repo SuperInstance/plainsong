@@ -1,24 +1,21 @@
 **TRACK: Sittin' on Top of the World**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E . . . | B7 . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | e2-g#2-b2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | B7 . . . | E . . . | A . . . | B7 . . . |
-@guitar | b1-d#2-f#2 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | b1-d#2-f#2 . . . | vel: 58
 
 [V3] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B7 . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | vel: 60

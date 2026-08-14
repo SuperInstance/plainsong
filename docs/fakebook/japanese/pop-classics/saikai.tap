@@ -1,24 +1,21 @@
 **TRACK: Saikai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 98 | subdivision: 8th
 time: 4/4 | mood: Driving, Nostalgic
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . . | D/F# . . . | Em . . . | C . . . | G . . . | D/F# . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 50
 
 [PRE] (Pre-Chorus - 4 Bars)
 Chords: | C . . . | D . . . | Bm7 . . . | E7 . . . |
-@guitar | c2-e2-g2 . . . | d2-f#2-a2 . . . | b1-d2-f#2-a2 . . . | e1-g#2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . | G . . . | D . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Cmaj7 . . . | Bm7 . . . | Am7 . . . | D7sus4 . . . |
-@guitar | c2-e2-g2-b2 . . . | b1-d2-f#2-a2 . . . | a1-c2-e2-g2 . . . | d2-g2-a2-c3 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | G . . . | Em . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | e2-g2-b2 . . . | c2-e2-g2 . . . | d2-f#2-a2 . . . | vel: 40

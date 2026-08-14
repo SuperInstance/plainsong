@@ -1,16 +1,12 @@
 **TRACK: La Rana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . F4 . | E4 . G4 . | D4 . F4 . |
-Lyrics: | Es - ta - ba la ra - na | sen - ta - da can - tan - do | de - ba - jo del a - gua | can - tan - do a - mor |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | A4 . F4 . | E4 . G4 . | D4 . B3 . | C4 . . . |
-Lyrics: | pa - sa - ba u - na lan - cha | re - me - ro que re - ma | la ra - na se a - ho - ga | a - diós a - mor |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 55

@@ -1,22 +1,15 @@
 **TRACK: Pohang Taryeong**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | Am . . . | E7 . . . |
-Melody: | A3 . C4 . | F4 . . . | A3 . C4 . | G#3 . B3 . |
-Lyrics: | 동 해 물 과 백 두 산 이 | 마 르 고 닳 도 록 | 하 나 님 이 보 우 하 사 | 우 리 나 라 만 세 |
-@piano | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | Am . . . |
-Melody: | F4 . A4 . | E4 . G4 . | D4 . B3 . | C4 . A3 . |
-Lyrics: | 무 궁 화 삼 천 리 | 화 려 강 산 | 대 한 사 람 대 한 으 로 | 길 이 보 전 하 세 |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | C . . . | E7 . . . |
-Melody: | F4 . A4 . | G4 . B4 . | C5 . G4 . | B3 . D4 . |
-Lyrics: | 아 리 랑 아 리 랑 | 아 라 리 요 | 아 리 랑 고 개 로 | 넘 어 간 다 |
-@piano | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 55

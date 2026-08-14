@@ -1,20 +1,18 @@
 **TRACK: Hot House**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 160 | subdivision: 8th
 time: 4/4 | mood: Bebop, Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bb7 . . . | E7 . . . | E7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | bb1-d2-f2-ab2 . . . | e2-g#2-b2-d3 . . . | e2-g#2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bb7 . . . | E7 . . . | E7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-e3 . . . | bb1-d2-f2-ab2 . . . | e2-g#2-b2-d3 . . . | e2-g#2-b2-d3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Ebm7 . . . | Ab7 . . . | Dbmaj7 . . . | Db6 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . |
-@guitar | eb2-gb2-bb2-db3 . . . | ab1-c2-eb2-gb2 . . . | db2-f2-ab2-c3 . . . | db2-f2-ab2-bb2 . . . | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | c2-e2-g2-b2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bb7 . . . | E7 . . . | E7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | f2-a2-c

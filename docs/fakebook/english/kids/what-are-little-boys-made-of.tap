@@ -1,22 +1,15 @@
 **TRACK: What Are Little Boys Made Of?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . |
-Lyrics: | What are lit - tle boys | made of? made of? |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G7 . . . |
-Melody: | E4 . G4 . | F4 . D4 . |
-Lyrics: | Snips and snails and | pup - py dogs' tails |
-@piano | c3-e3-g3 . . . | g2-b2-f3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . |
-Melody: | E4 . G4 . | D4 . B3 . |
-Lyrics: | That's what lit - tle | boys are made of |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60

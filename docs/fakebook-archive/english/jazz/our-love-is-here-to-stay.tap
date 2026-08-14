@@ -1,24 +1,21 @@
 **TRACK: Our Love Is Here to Stay**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Ab . . . | Eb . . . | Eb . . . | F7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | C7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
-@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | eb3-g

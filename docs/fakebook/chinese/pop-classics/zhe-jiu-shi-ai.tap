@@ -1,24 +1,21 @@
 **TRACK: Zhe Jiu Shi Ai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
-@guitar | f2-a2-c3 . . . | e2-g2-c3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | b2-d3-g3 . . . | a2-c3-e3 . . . | e2-g2-b2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | G . . . | Em . . . | Am . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g2-b2 . . . | a2-c3-e3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | F . . . | G . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 45

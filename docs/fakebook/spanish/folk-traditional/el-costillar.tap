@@ -1,16 +1,12 @@
 **TRACK: El Costillar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 3/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | F . . . | E7 . . . |
-Melody: | A3 . C4 . E4 . | A3 . C4 . E4 . | F4 . A4 . C5 . | E4 . D4 . B3 . |
-Lyrics: | El cos-ti-llar del buey | El cos-ti-llar del buey | Pa-lo-ma ne-gra | Y_a-zul |
-@piano | a2-e3-a3 . c3-e3-a3 . | a2-e3-a3 . c3-e3-a3 . | f2-a2-c3 . f2-a2-c3 . | e2-g#2-b2 . e2-g#2-b2 . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Dm . . . | G7 . . . | C . . . | E7 . . . |
-Melody: | D4 . F4 . A4 . | G4 . B3 . D4 . | C4 . E4 . G4 . | E4 . D4 . B3 . |
-Lyrics: | Y_a-que-llos o-jos ne-gros | Que me mi-ran con a-mor | Me di-cen que me quie-ren | Y me ro-ban el co-ra-zón |
-@piano | d2-a2-d3 . d2-a2-d3 . | g2-b2-d3 . g2-b2-d3 . | c2-e2-g2 . c2-e2-g2 . | e2-g#2-b2 . e2-g#2-b2 . | vel: 60

@@ -1,28 +1,24 @@
 **TRACK: House of the Rising Sun**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | C . . . | D . . . | F . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | C . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . | C . . . | D . . . | F . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | e3-g#3-b3 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | Am . . . | C . . . | D . . . | F . . . |
-@guitar | a2-e3-a3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | f2-a2-c3 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Am . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 45

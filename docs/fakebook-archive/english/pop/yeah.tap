@@ -1,24 +1,21 @@
 **TRACK: Yeah!**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 105 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Db . . . | Db . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | db1-f1-ab1 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | db1-f1-ab1 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . | Fm . . . | Db . . . | Ab . . . | Eb . . . |
-@guitar | f1-a1-c2 . . . | db1-f1-ab1 . . . | ab1-c2-eb2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | ab1-c2-eb2 . . . | eb1-g1-bb1 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Db . . . | Db . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | db1-f1-ab1 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | db1-f1-ab1 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Eb . . . | Fm . . . | Db . . . |
-@guitar | ab1-c2-eb2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm . . . | Db . . . | Ab . . . | Eb . . . | Fm . . . | Db . . . | Ab . . . | Eb . . . |
-@guitar | f1-a1-c2 . . . | db1-f1-ab1 . . . | ab1-c2-eb2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | db1-f1-ab1 . . . | ab1-c2-eb2

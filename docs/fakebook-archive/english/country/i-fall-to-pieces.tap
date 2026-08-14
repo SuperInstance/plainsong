@@ -1,4 +1,6 @@
 **TRACK: I Fall to Pieces**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: A | tempo: 100 | subdivision: 8th  
 time: 4/4 | mood: Country Ballad  
@@ -6,24 +8,17 @@ time: 4/4 | mood: Country Ballad
 [V1] (Verse - 8 Bars)  
 Chords: | A . . . | F#m . . . | D . . . | E . . . |  
 Chords: | A . . . | F#m . . . | D . . . | E . . . |  
-@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50  
-@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50  
 
 [V2] (Verse - 8 Bars)  
 Chords: | A . . . | F#m . . . | D . . . | E . . . |  
 Chords: | A . . . | F#m . . . | D . . . | E . . . |  
-@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50  
-@guitar | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | vel: 50  
 
 [CH] (Chorus - 8 Bars)  
 Chords: | D . . . | A . . . | E . . . | A . . . |  
 Chords: | D . . . | A . . . | E . . . | A . . . |  
-@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 60  
-@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 60  
 
 [BR] (Bridge - 4 Bars)  
 Chords: | Bm . . . | E . . . | Bm . . . | E . . . |  
-@guitar | b2-d3-f#3 . . . | e2-g#2-b2 . . . | b2-d3-f#3 . . . | e2-g#2-b2 . . . | vel: 55  
 
 [V3] (Verse - 8 Bars, instrumental feel)  
 Chords: | A . . . | F#m . . . | D . . . | E . . . |  

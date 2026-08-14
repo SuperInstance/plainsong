@@ -1,20 +1,18 @@
 **TRACK: A Night in Tunisia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bb7 . . . | Ebmaj7 . . . | Ab7 . . . |
-@guitar | a2-e3-g3-c4 . . . | d2-f#3-a3-c4 . . . | g2-f3-bb3-d4 . . . | c2-e3-g3-bb3 . . . | f2-a3-c4-e4 . . . | bb1-d3-f3-ab3 . . . | eb2-g3-bb3-d4 . . . | ab1-c3-f3-g3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Db7 . . . | Gb7 . . . | B7 . . . | E7 . . . | A7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
-@guitar | db2-f3-ab3-cb4 . . . | gb2-bb3-db4-f4 . . . | b1-d#3-f#3-a#3 . . . | e2-g#3-b3-d4 . . . | a2-c#3-e3-g3 . . . | d2-f#3-a3-c4 . . . | g2-f3-bb3-d4 . . . | c2-e3-g3-bb3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bb7 . . . | Ebmaj7 . . . | Ab7 . . . |
-@guitar | a2-e3-g3-c4 . . . | d2-f#3-a3-c4 . . . | g2-f3-bb3-d4 . . . | c2-e3-g3-bb3 . . . | f2-a3-c4-e4 . . . | bb1-d3-f3-ab3 . . . | eb2-g3-bb3-d4 . . . | ab1-c3-f3-g3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am7 . . . | Bb7 . . . | Ebmaj7 . . . | Am7 . . . |
-@guitar | a2-e3-g3-c4 . . . | bb1-d3-f3-ab3 . . . | eb2-g3-bb3-d4 . . . | a2-e3-g3-c4 . . . | vel: 50

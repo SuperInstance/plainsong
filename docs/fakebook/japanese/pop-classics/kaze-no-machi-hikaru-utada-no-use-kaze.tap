@@ -1,27 +1,21 @@
 **TRACK: Kaze (Tatsuro Yamashita)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb major | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Breezy, Nostalgic
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm7 . . . | Eb . . . | F . . . |
-       | Bb . . . | Gm7 . . . | Cm7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm7 . . . | Eb . . . | F . . . |
-       | Dm7 . . . | Gm7 . . . | Cm7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm7 . . . | F . . . |
-       | Dm7 . . . | Gm7 . . . | Cm7 . . . | F . . . |
-@guitar | eb1-g1-bb1 . . . | bb1-d2-f2 . . . | c1-eb1-g1 . . . | f1-a1-c2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab . . . | Eb/G . . . | Fm7 . . . | Bb . . . |
-@guitar | ab1-c1-eb1 . . . | eb1-g1-bb1 . . . | f1-ab1-c2 . . . | bb1-d2-f2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Cm7 . . . | F . . . |
-@guitar | eb1-g1-bb1 . . . | bb1-d2-f2 . . . | c1-eb1-g1 . . . | f1-a1-c2 . . . | vel: 45

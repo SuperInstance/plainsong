@@ -1,20 +1,18 @@
 **TRACK: Blind Man**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Heavy, Swaggering
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@chords: em3-g3-b3, c3-e3-g3, g2-b2-d3, d2-f#2-a2 | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@chords: em3-g3-b3, c3-e3-g3, g2-b2-d3, d2-f#2-a2 | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@chords: c3-e3-g3, g2-b2-d3, d2-f#2-a2, em3-g3-b3 | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@chords: a2-c3-e3, c3-e3-g3, g2-b2-d3, d2-f#2-a2 | vel: 45

@@ -1,24 +1,21 @@
 **TRACK: Stone Cold Crazy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 168 | subdivision: 8th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | e2-b2-e3 . . . | vel: 70
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | B . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | b2-f#3-b3 . . . | vel: 72
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | G . . . | D . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | d2-a3-d4 . . . | e2-b2-e3 . . . | vel: 78
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | B . . . | A . . . | E . . . |
-@guitar | c3-e3-g3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 75
 
 [OUT] (Outro - 2 Bars)
 Chords: | E . . . | E . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 80

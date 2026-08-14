@@ -1,28 +1,21 @@
 **TRACK: The Weight**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A minor | tempo: 108 | subdivision: 8th
 time: 4/4 | mood: Folk Rock
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | G . . . |
-        | Dm . . . | Am . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . |
-        | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | G . . . |
-        | Dm . . . | Am . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . |
-        | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | C . . . | E . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | Am . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 55

@@ -1,22 +1,15 @@
 **TRACK: Ragtime Annie**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 8th
 time: 2/4 | mood: Lively
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A7 . . . | D . . . | A7 . . . |
-Melody: | D4 . F#4 . | A4 . G4 . | F#4 . E4 . | D4 . C#4 . |
-Lyrics: | Oh the rag-time an-nie plays | a tune so sweet and gay |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A7 . . . | D . . . |
-Melody: | B4 . A4 . | G4 . F#4 . | E4 . D4 . | C#4 . D4 . |
-Lyrics: | dance and swing, let voic-es ring | for rag-time an-nie’s song |
-@piano | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | vel: 65
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | A7 . . . | D . . . | A7 . . . |
-Melody: | D4 . F#4 . | A4 . G4 . | F#4 . E4 . | D4 . C#4 . |
-Lyrics: | with a fid-dle and a ban-jo | they keep the beat a-long |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60

@@ -1,24 +1,21 @@
 **TRACK: m.A.A.d city**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 84 | subdivision: 16th
 time: 4/4 | mood: Menacing
 
 [V1] (Verse 1 - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 60
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Gm . . . | Gm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | g1-d2-g2 . . . | g1-d2-g2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | C . . . | Dm . . . | A . . . |
-@guitar | f1-c2-f2 . . . | c2-g2-c3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 50
 
 [V3] (Verse 3 - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Bb . . . | A . . . | Dm . . . |
-@guitar | d2-a2-d3 . . . | bb1-f2-bb2 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | vel: 45

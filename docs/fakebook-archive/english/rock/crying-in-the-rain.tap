@@ -1,24 +1,21 @@
 **TRACK: Crying in the Rain**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | G . . . | D . . . | A . . . |
-@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | G . . . | D . . . | A . . . |
-@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | A . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | Em . . . | F . . . | G . . . |
-@guitar | a2-c3-e3 . . . | e2-b2-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | A . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65

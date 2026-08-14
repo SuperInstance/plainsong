@@ -1,22 +1,15 @@
 **TRACK: La Gallina**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 110 | subdivision: 8th
 time: 6/8 | mood: Playful
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . . . | F . . . . . |
-Melody: | A3 . C4 . E4 . | F4 . . A3 . . |
-Lyrics: | La ga-lli-na di-ce "co-co-co" |
-@piano | a2-e3-a3 . . . . . | f2-a2-c3 . . . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . . . | G . . . . . |
-Melody: | E4 . G4 . C5 . | B3 . D4 . G3 . |
-Lyrics: | y el po-llo res-pon-de "pio-pio" |
-@piano | c3-e3-g3 . . . . . | g2-b2-d3 . . . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Am . . . . . | E7 . . . . . |
-Melody: | A4 . A4 . G4 . | E4 . E4 . D4 . |
-Lyrics: | can-ta la ga-lli-na, can-ta el ga-llo |
-@piano | a2-e3-a3 . . . . . | e2-g#2-b2 . . . . . | vel: 60

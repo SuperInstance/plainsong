@@ -1,22 +1,12 @@
 **TRACK: Nun ade, du mein lieb Heimatland**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 80 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C7 . . . | F . . . | C7 . . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . D4 . | C4 . . . |
-Lyrics: | Nun a - de, du mein lieb Hei - mat - land, |
-| lieb Hei - mat - land, a - de! |
-| Es geht jetzt fort zum frem - den Strand, |
-| lieb Hei - mat - land, a - de! |
-@piano | f1-a1-c2 . . . | c1-e1-g1 . . . | f1-a1-c2 . . . | c1-e1-g1 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | Bb . . . | F . . . | C7 . F . |
-Melody: | A4 . C5 . | Bb4 . G4 . | A4 . F4 . | E4 . C4 . |
-Lyrics: | So sing ich denn mit hei - term Mut, |
-| lieb Hei - mat - land, a - de! |
-| Und wer da weint, der wei - ne gut, |
-| lieb Hei - mat - land, a - de! |
-@piano | f1-a1-c2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | c1-e1-g1 . f1-a1-c2 . | vel: 50

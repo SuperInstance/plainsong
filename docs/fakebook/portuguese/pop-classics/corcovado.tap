@@ -1,20 +1,18 @@
 **TRACK: Corcovado**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Bossa Nova
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Am7/G . . . | Am7/F# . . . | Am7/F . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Bm7b5 E7 . . . |
-@guitar | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | d3-f3-a3-c4 . . . | g2-f3-b3-d4 . . . | c3-e3-g3-b3 . . . | b2-d3-f3-a3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | Am7/G . . . | Am7/F# . . . | Am7/F . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | d3-f3-a3-c4 . . . | g2-f3-b3-d4 . . . | c3-e3-g3-b3 . . . | e2-g#3-b3-d4 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | f2-a2-c3-e3 . . . | b2-d3-f3-a3 . . . | e2-g#3-b3-d4 . . . | a2-e3-g3-c4 . . . | d3-f3-a3-c4 . . . | g2-f3-b3-d4 . . . | c3-e3-g3-b3 . . . | e2-g#3-b3-d4 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Am7 . . . | Am7/G . . . | Am7/F# . . . | Am7/F . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Bm7b5 E7 . . . |
-@guitar | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . | a2-e3-g3-c4 . . . |

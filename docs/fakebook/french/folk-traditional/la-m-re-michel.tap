@@ -1,22 +1,15 @@
 **TRACK: La Mère Michel**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 96 | subdivision: 8th
 time: 6/8 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . . . | C7 . . . . . |
-Melody: | F4 . . A4 . . | G4 . . E4 . . |
-Lyrics: | La mère Mi-chel a per-du son chat, |
-@piano | f1-a2-c3 . . . f1-a2-c3 . . . | c2-e2-g2 . . . c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . . . | C7 . . . . . |
-Melody: | F4 . . A4 . . | G4 . . F4 . . |
-Lyrics: | qui crie par la fe-nê-tre, qui l’ap-pel-le? |
-@piano | f1-a2-c3 . . . f1-a2-c3 . . . | c2-e2-g2 . . . c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . . . | C7 . . . . . | F . . . . . | C7 . . . . . |
-Melody: | A4 . . G4 . . | F4 . . E4 . . | D4 . . E4 . . | F4 . . . . . |
-Lyrics: | C’est le pè-re Lus-tu-cru qui lui dit: “Mi-chel, |
-@piano | f1-a2-c3 . . . f1-a2-c3 . . . | c2-e2-g2 . . . c2-e2-g2 . . . | f1-a2-c3 . . . f1-a2-c3 . . . | c2-e2-g2 . . . c2-e2-g2 . . . | vel: 55

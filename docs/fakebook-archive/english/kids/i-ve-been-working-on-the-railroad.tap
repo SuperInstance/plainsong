@@ -1,28 +1,18 @@
 **TRACK: I've Been Working on the Railroad**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: G | tempo: 104 | subdivision: 8th  
 time: 4/4 | mood: Lively  
 
 [V1] (Verse - 4 Bars)  
 Chords: | G . . . | C . . . | G . . . | D . . . |  
-Melody: | G3 . A3 B3 | C4 . . . | B3 . A3 G3 | A3 . B3 . |  
-Lyrics: | I've been | work-ing on the | rail-road | all the | live-long | day. |  
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55  
 
 [V2] (Verse - 4 Bars)  
 Chords: | G . . . | C . . . | G . . . | D . . . |  
-Melody: | G3 . A3 B3 | C4 . . . | B3 . A3 G3 | D4 . . . |  
-Lyrics: | I've been | work-ing on the | rail-road | just to | pass the | time a-way. |  
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55  
 
 [CH] (Chorus - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | G . . . |  
-Melody: | E4 . E4 . | D4 . B3 . | C4 . C4 . | B3 . G3 . |  
-Lyrics: | Din-nah, won't you | blow, | Din-nah, won't you | blow, |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60  
 
 [CH2] (Chorus - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | G . . . |  
-Melody: | E4 . E4 . | D4 . B3 . | C4 . D4 . | G3 . . . |  
-Lyrics: | Din-nah, won't you | blow | your | horn? |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60

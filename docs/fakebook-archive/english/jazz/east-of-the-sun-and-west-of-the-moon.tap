@@ -1,24 +1,21 @@
 **TRACK: East of the Sun (and West of the Moon)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 130 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb6 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-c4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb6 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-c4 . . . | f3-ab3-c4 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Gm7 . . . | C7 . . . | F7 . . . |
-@guitar | eb3-g3-bb3 . . . | g3-bb3-d4 . . . | c3-e3-bb3 . . . | f3-a3-c4 . . . | vel: 60
 
 [B] (Bridge - 8 Bars)
 Chords: | Ab . . . | Abm6 . . . | Eb . . . | C7 . . . |
-@guitar | ab3-c4-eb4 . . . | ab3-cb4-eb4 . . . | eb3-g3-bb3 . . . | c3-e3-bb3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Eb . . . |
-@guitar | f3-ab3-c4 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | vel: 50

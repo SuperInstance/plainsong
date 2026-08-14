@@ -1,24 +1,21 @@
 **TRACK: Fortunate Son**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | D . . . |
-@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | d2-f#2-a2 . . . | vel: 70
 
 [BR] (Bridge - 2 Bars)
 Chords: | Em . . . | D . . . |
-@guitar | e2-g2-b2 . . . | d2-f#2-a2 . . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-@guitar | g2-b2-d3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 60
