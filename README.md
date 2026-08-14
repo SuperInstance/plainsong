@@ -74,6 +74,10 @@ tapscript serve                       # web interface at localhost:8765
 
 All three drive the same compiler and see the same library and settings.
 
+The terminal interface needs Python's `curses`, which Linux and macOS have and
+stock Python on Windows does not — `pip install windows-curses` there, or use
+the web interface, which needs nothing.
+
 ## Timing that models the room
 
 A score usually says "this note is at beat 4.5" without saying where that

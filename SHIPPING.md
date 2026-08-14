@@ -1,6 +1,6 @@
 # Shipping audit
 
-State of the branch as of `33090ae`. Written from inspection, not memory --
+State of the branch as of `3487a35`. Items are struck through as they close. Written from inspection, not memory --
 every claim below was checked against the working tree.
 
 ## Verified
@@ -18,27 +18,27 @@ These have been proven, not assumed.
 | No hardcoded paths | A test greps the package for `~/.openclaw`, `/home/eileen`, `/Users/`. |
 | Nothing half-written | No TODO, FIXME, XXX, HACK or `NotImplementedError` anywhere in `tapscript/`. |
 
-333 tests, 7 specs, ruff clean.
+412 tests, 7 specs, ruff clean.
 
 ## Blockers
 
 Must be closed before this ships.
 
-### B1. The changelog does not mention the three new features
+### B1. The changelog does not mention the three new features — CLOSED
 
 `CHANGELOG.md` contains zero references to arrival-centric timing, the MCP
 server, or the ensemble layer. `CONTRIBUTING.md` states that a notation change
 requires a changelog entry, and the `[Stage]` block is a notation change. The
 project is currently in breach of its own documented rule.
 
-### B2. The README does not mention MCP or the ensemble
+### B2. The README does not mention MCP or the ensemble — CLOSED
 
 `docs/mcp.md` and `docs/ensemble.md` exist but are linked from nowhere, and the
 README's documentation table predates both. The headline capability -- many
 agents co-authoring one score -- is undiscoverable by a reader of the front
 page.
 
-### B3. The TUI has never been executed
+### B3. The TUI has never been executed — CLOSED
 
 `tapscript/interfaces/tui.py` is 429 lines. No test imports it. Its only spec
 check is `check_importable`, which is marked `optional` and `requires =
@@ -46,16 +46,26 @@ check is `check_importable`, which is marked `optional` and `requires =
 of the three advertised interfaces is entirely unverified. A syntax-level
 mistake in a draw routine would ship undetected.
 
+**Closed** by 35 tests covering everything reachable without a terminal. Running
+them on Windows CI immediately found that stock Python there ships no
+`curses` at all, so the TUI does not run on Windows — now documented and
+reported at runtime with the fix.
+
 ## Should fix
 
 Not ship-blocking, but each is a real gap.
 
-### S1. `docs/mcp.md` and `docs/ensemble.md` are unreviewed
+### S1. `docs/mcp.md` and `docs/ensemble.md` are unreviewed — AUDITED, two fixes outstanding
 
 Written by the agent that built the feature and never checked against what it
 actually built. The agent was killed by a spend limit before its own final
 verification pass, so its documentation is the least-trustworthy artefact in
 the tree.
+
+Audited. Two things to fix: `ensemble.md`'s rebase example shows 3 of the 7
+fields actually returned, and the `record_decision` tool is not documented.
+Everything else checked out, including all 16 feature names and the protocol
+version negotiation.
 
 ### S2. `ensemble.py` and `server.py` have not been read end to end
 
@@ -63,11 +73,14 @@ The protocol behaviour is now verified by handshake and the locking was read
 closely while fixing two bugs in it. The rest -- merge determinism, the log,
 part validation, resource templates -- has been tested but not read.
 
-### S3. `render/backends.py` is untested
+### S3. `render/backends.py` is untested — CLOSED
 
 The fluidsynth, ffmpeg, playback and MIDI-port wrappers have no test. They all
 shell out and all claim to degrade gracefully; none of that is proven. Lower
 risk than it sounds, because the built-in path never touches them.
+
+**Closed** by 44 tests with the tools mocked absent. Writing them found that
+`BackendResult` had no `__bool__`, so every failure was truthy.
 
 ### S4. Two different things are called "ensemble"
 
@@ -75,10 +88,11 @@ risk than it sounds, because the built-in path never touches them.
 `ensemble_*` tools manage a shared multi-agent session. Unrelated concepts,
 same word, both user-facing. Worth renaming one before the vocabulary sets.
 
-### S5. Windows lock contention is awaiting confirmation
+### S5. Windows lock contention — SETTLED
 
 Two fixes landed (release no longer raises; acquisition treats a delete-pending
-`PermissionError` as contention). CI has not yet reported on `33090ae`.
+`PermissionError` as contention). `test_the_manifest_survives_a_crowd` now
+passes on Windows across 3.10 through 3.13.
 
 ## Known limitations -- ship with these, documented
 
@@ -88,6 +102,9 @@ Two fixes landed (release no longer raises; acquisition treats a delete-pending
 - `docs/fakebook/` is generated material carrying ~3,800 bar-count warnings. It
   parses; it is not all well written.
 - `legacy/` is dead weight kept for reference and can be deleted.
+- The TUI needs `curses`, which stock Python on Windows does not ship. It
+  reports this and points at `windows-curses` or the web interface. Found by
+  the new TUI tests running on Windows CI for the first time.
 - The MCP server has never had a real MCP client connect to it. The protocol is
   verified by hand-driven JSON-RPC, which is strong evidence but not the same
   thing as Claude Desktop or an SDK client connecting.

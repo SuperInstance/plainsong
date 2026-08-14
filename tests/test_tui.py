@@ -43,10 +43,24 @@ class TestCheckImportable(unittest.TestCase):
         self.assertIsInstance(result[0], bool)
         self.assertIsInstance(result[1], str)
 
-    def test_reports_success_when_curses_available(self):
-        """When curses can be imported, report success."""
+    def test_reports_accurately_whether_curses_is_there(self):
+        """The report must match reality, which is platform-dependent.
+
+        Stock Python on Windows ships no curses module -- it needs the
+        windows-curses package -- so this cannot assert availability. What it
+        can assert is that the answer agrees with whether the import works,
+        because a spec check that lies is worse than one that reports a
+        missing capability.
+        """
+        try:
+            import curses  # noqa: F401
+
+            available = True
+        except ImportError:
+            available = False
+
         ok, message = check_importable()
-        self.assertTrue(ok)
+        self.assertEqual(ok, available)
         self.assertIn("curses", message.lower())
 
 

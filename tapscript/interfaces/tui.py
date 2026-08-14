@@ -11,6 +11,7 @@ for moving between pieces and hearing them.
 
 from __future__ import annotations
 
+import os
 import threading
 from typing import Any
 
@@ -100,7 +101,9 @@ def run_tui(config: Config | None = None, path: str = "") -> int:
         import curses
     except ImportError:
         print("The terminal interface needs the curses module, which is not available here.")
-        print("Use `tapscript serve` for the web interface instead.")
+        if os.name == "nt":
+            print("Stock Python on Windows does not ship it: pip install windows-curses")
+        print("Or use `tapscript serve` for the web interface, which needs nothing.")
         return 1
 
     config = config or load_config()
