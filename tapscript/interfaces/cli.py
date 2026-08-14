@@ -293,6 +293,7 @@ def cmd_stage(args: argparse.Namespace, config: Config, out: Out) -> int:
 
 
 def cmd_transpose(args: argparse.Namespace, config: Config, out: Out) -> int:
+    from ..notation.theory import TheoryError
     from ..transform import transpose
 
     source = _resolve_notation(args.file, config, out)
@@ -301,7 +302,12 @@ def cmd_transpose(args: argparse.Namespace, config: Config, out: Out) -> int:
     target_key: str | int = args.key
     if args.key.lstrip("+-").isdigit():
         target_key = int(args.key)
-    moved = transpose(source.read_text(encoding="utf-8"), target_key)
+    try:
+        moved = transpose(source.read_text(encoding="utf-8"), target_key)
+    except TheoryError as exc:
+        out.fail(str(exc))
+        out.dim("give a key such as Dm, F#, Bb or 'A minor', or semitones such as -3")
+        return 2
 
     if args.output:
         target = Path(args.output)

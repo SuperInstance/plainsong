@@ -89,12 +89,22 @@ def transpose_score(score: Score, semitones: int) -> Score:
 
 
 def transpose(text: str, target: str | int, dialect: str = "auto") -> str:
-    """Transpose notation to a key, or by a number of semitones."""
+    """Transpose notation to a key, or by a number of semitones.
+
+    An unreadable target raises rather than being guessed at. ``parse_key`` is
+    forgiving by design -- a ``Key:`` header must not stop a file loading -- but
+    that forgiveness reads ``"banana"`` as B major, and silently transposing
+    somebody's score by a semitone because they mistyped a key is worse than
+    refusing to.
+    """
     score = parse(text, dialect=dialect)
     if isinstance(target, int):
         semitones = target
     else:
-        semitones = theory.transpose_interval(score.meta.key, theory.parse_key(str(target)))
+        name = str(target)
+        if not theory.names_a_key(name):
+            raise theory.TheoryError(f"not a key: {name!r}")
+        semitones = theory.transpose_interval(score.meta.key, theory.parse_key(name))
     return to_text(transpose_score(score, semitones))
 
 

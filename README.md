@@ -149,6 +149,12 @@ case never conflicts, and a write made against a stale version is refused and
 handed the current state to rebase onto rather than overwriting somebody. See
 [docs/mcp.md](docs/mcp.md) and [docs/ensemble.md](docs/ensemble.md).
 
+That half of the system now has a repository of its own,
+[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp), which is where
+it will be developed and where a client should install it from. It depends on
+this package. The copy shipped here still works and is what `tapscript mcp`
+runs, but it is on its way out — build against the sibling repository.
+
 ## Documentation
 
 | | |
@@ -191,6 +197,7 @@ with nothing installed, which is what keeps the no-dependencies promise honest.
 
 | Component | Relationship |
 |---|---|
+| [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp) | This compiler over the Model Context Protocol, plus the ensemble session several agents share |
 | [tapscript-worker](https://github.com/SuperInstance/tapscript-worker) | Cloudflare Worker version of this compiler — runs TapScript on the edge |
 | [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript conduct` speaks. |
 | [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders TapScript scores as agentic performances |
@@ -200,6 +207,27 @@ with nothing installed, which is what keeps the no-dependencies promise honest.
 
 Version 1.0. The notation, the CLI surface and the provider catalogue format are
 stable; changes to them will go through a deprecation cycle.
+
+This release is a rebuild rather than an increment. The previous engine assumed
+a particular machine — it wrote into a fixed home directory, required numpy,
+scipy, pretty_midi and flask, and kept several copies of the General MIDI table
+that had come to disagree with each other. What is here now has no required
+dependencies, resolves every path at runtime, and treats model providers as
+catalogue entries rather than code, so a new service that speaks an existing API
+shape is a JSON edit. Arrival-centric timing and the MCP surface are new in this
+version.
+
+What that claim rests on: the full suite runs on Python 3.10 through 3.13 across
+Linux, macOS and Windows with nothing installed; 6,322 `.tap` files in this
+repository parse without error; and `tapscript spec` checks the system's
+promises against the machine it is on, so you can confirm the above rather than
+take it on trust.
+
+Known limits, in the open: the built-in synthesiser is a preview renderer and
+its audio is mono, the host bridge cannot stream, `docs/fakebook/` is generated
+material that parses but is not all well written, and no third-party MCP client
+has connected to the server yet — its protocol behaviour is verified against the
+specification instead.
 
 `legacy/` holds the two earlier engines this replaced, along with the image
 gallery, the MIDI studio and a set of unrelated Rust-to-Python ports. Nothing

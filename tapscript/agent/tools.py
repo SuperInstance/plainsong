@@ -420,12 +420,16 @@ class ToolRegistry:
         return "\n".join(lines)
 
     def _transpose_score(self, path: str, key: str) -> str:
+        from ..notation.theory import TheoryError
         from ..transform import transpose
 
         source = self.sandbox.resolve(path)
         if not source.is_file():
             return f"error: {path} does not exist"
-        moved = transpose(source.read_text(encoding="utf-8"), key)
+        try:
+            moved = transpose(source.read_text(encoding="utf-8"), key)
+        except TheoryError as exc:
+            return f"error: {exc}; give a key such as Dm, F#, Bb or 'A minor'"
         target = self.sandbox.resolve(
             f"{Path(path).stem}-{key.replace('#', 'sharp')}.tap", for_write=True
         )

@@ -17,7 +17,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from ...runtime.config import Config, load_config
 from ...version import __version__
@@ -248,7 +248,9 @@ def build_handler(config: Config):
                 return
 
             if route.startswith("/files/"):
-                self._serve_output(route[len("/files/") :])
+                # Percent-decoded: a rendered file whose name has a space in it
+                # arrives here as `my%20song.wav` and is otherwise unreachable.
+                self._serve_output(unquote(route[len("/files/") :]))
                 return
 
             self._json({"error": "not found"}, status=404)
@@ -278,6 +280,10 @@ def build_handler(config: Config):
 
         def _serve_output(self, name: str) -> None:
             """Serve a rendered file, and only from the output directory."""
+            if "\x00" in name:
+                # A null byte makes every path call below raise ValueError.
+                self._json({"error": "not found"}, status=404)
+                return
             safe = Path(name).name  # no traversal
             target = (config.paths.output_dir / safe).resolve()
             if config.paths.output_dir.resolve() not in target.parents or not target.is_file():

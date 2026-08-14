@@ -2,6 +2,35 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### Fixed
+
+- **A transpose target that names no key is refused.** `parse_key` is forgiving
+  on purpose — a hand-typed `Key:` header must not stop a file loading — but it
+  reads `"banana"` as B major, so `tapscript transpose song.tap banana` quietly
+  moved the whole score down a semitone, and `Z` reformatted it in place while
+  appearing to work. `transform.transpose` now raises `TheoryError` for a target
+  it cannot read, and the CLI, the web interface, the TUI and the agent tool all
+  report it. Notation parsing is unchanged: a `Key:` header still falls back to
+  C major as it always has, and all 6,322 `.tap` files in the repository parse
+  identically. `tapscript spec` checks the refusal.
+- **The web interface percent-decodes `/files/`.** A rendered file whose name
+  contained a space arrived as `my%20song.wav` and was served as a 404. Names
+  produced by `slugify` were never affected, which is why this went unseen; the
+  TUI and the connectors write names that are not slugged. A null byte in the
+  name is now a 404 rather than an unhandled `ValueError`.
+
+### Tests
+
+- The web interface, the HTTP transport and the connector layer had no tests at
+  all. They now have 102 between them, taking the suite to 514.
+- The traversal, body-limit and same-origin tests drive the server over a raw
+  connection. Sent through `urllib` they proved nothing: the client normalises
+  `..` out of the path before the request leaves the process, and recomputes
+  Content-Length from the body it was actually given, so neither guard was ever
+  reached. Removing either guard now fails the suite.
+
 ## 1.0.0 — 2026-08-13
 
 A rebuild. One engine replaces the two that had drifted apart, and everything

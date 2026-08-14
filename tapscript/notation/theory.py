@@ -389,6 +389,31 @@ def parse_key(text: str) -> Key:
     return Key(tonic, mode, text=cleaned)
 
 
+#: Mode suffixes that are recognised without being spelled out in full: `Am`,
+#: `Amin`, `Am7`, `Cmaj7`. Anything else after the tonic is not a mode.
+_MODE_SUFFIX = re.compile(r"^(m|min|maj|major|minor)\d*$")
+
+
+def names_a_key(text: str) -> bool:
+    """Whether *text* actually names a key, rather than merely being readable as one.
+
+    :func:`parse_key` never fails, because a ``Key:`` header in a file somebody
+    typed by hand must not stop the file loading -- it reads what it can and
+    falls back to C major. That forgiveness is wrong when the key is a *request*
+    rather than a header: ``parse_key("banana")`` is B major, so a mistyped
+    transpose target silently produces a real and wrong transposition instead of
+    an error. Callers taking a key from a user check this first.
+    """
+    cleaned = text.strip()
+    if not cleaned:
+        return False
+    match = re.match(r"^([A-Ga-g])([#b♯♭]*)\s*(.*)$", cleaned)
+    if not match:
+        return False
+    remainder = match.group(3).strip().lower()
+    return remainder in MODE_WORDS or bool(_MODE_SUFFIX.match(remainder))
+
+
 def parse_roman(token: str, key: Key) -> Chord:
     """Resolve a roman-numeral chord such as ``iv``, ``bVII`` or ``V7``."""
     text = token.strip()

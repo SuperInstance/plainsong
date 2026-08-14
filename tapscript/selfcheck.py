@@ -185,7 +185,21 @@ def check_transpose() -> tuple[bool, str]:
     ]
     if wrong:
         return False, f"{len(wrong)} chord tone(s) did not move by 3 semitones"
-    return True, "melody and chord row both moved Am -> C"
+
+    # A target we cannot read is refused rather than guessed at. `parse_key` is
+    # forgiving so a hand-typed header cannot stop a file loading, and it reads
+    # "banana" as B major -- which as a transpose target would quietly move the
+    # whole score by a semitone.
+    from .notation.theory import TheoryError
+
+    for bad in ("banana", "Z", "hello world"):
+        try:
+            transpose(SAMPLE, bad)
+        except TheoryError:
+            continue
+        return False, f"{bad!r} was accepted as a key"
+
+    return True, "melody and chord row both moved Am -> C; an unreadable key is refused"
 
 
 def check_providers() -> tuple[bool, str]:
