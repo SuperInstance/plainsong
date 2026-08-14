@@ -271,6 +271,30 @@ class TestCli(unittest.TestCase):
         self.assertEqual(run_cli("config", "get", "core.bar_fill")[1].strip(), "rescale")
         self.assertIn("[render]", run_cli("config", "list")[1])
 
+    def test_the_two_version_numbers_agree(self):
+        """`version.py` calls itself the single source of truth; packaging duplicates it.
+
+        A release is a pushed tag, and the number in the wheel comes from
+        `pyproject.toml` while everything a user sees at runtime comes from
+        `version.py`. If they drift, `tapscript --version` reports one thing and
+        `pip show` another, and the release that revealed it is already published.
+        """
+        import re
+        from pathlib import Path
+
+        from tapscript.version import __version__
+
+        pyproject = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(
+            encoding="utf-8"
+        )
+        declared = re.search(r'(?m)^version\s*=\s*"([^"]+)"', pyproject)
+        self.assertIsNotNone(declared, "pyproject.toml has no version")
+        self.assertEqual(
+            declared.group(1),
+            __version__,
+            "pyproject.toml and tapscript/version.py disagree",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
