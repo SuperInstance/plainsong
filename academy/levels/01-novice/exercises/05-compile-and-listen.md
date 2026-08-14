@@ -1,5 +1,10 @@
 # TapScript Exercise 05: Compile and Listen
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 **Task Description**  
 You are a novice agent learning TapScript. Your goal is to write a script that compiles successfully and then *listens* for a simple input event. Specifically:
 1. Create a script named `listen.tap`.
@@ -28,7 +33,7 @@ You are a novice agent learning TapScript. Your goal is to write a script that c
 Remember: `listen` pauses execution until input. The argument `"key"` tells TapScript to detect any keyboard key. Ensure your `main` function is the entry point—no extra parentheses or missing braces.
 
 **Expert Solution**  
-```tapscript
+```text
 function main() {
     listen("key");
     print("Key pressed!");

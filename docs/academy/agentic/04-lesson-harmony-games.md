@@ -1,4 +1,9 @@
 # TapScript Boot Camp — Lesson 04
+
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
 ## MULTI-AGENT HARMONY GAMES: Asynchronous Collaboration Patterns
 
 ---
@@ -16,7 +21,7 @@ Agent A writes bars 1–4. Agent B enters at bar 3 with the same melody, creatin
 
 ### TapScript Example
 
-```tapscript
+```text
 @agent flash {
   role: "melodist"
   task: "write a 4-bar melody in C major, quarter notes only"
@@ -75,7 +80,7 @@ Agent A writes verses 1 and 3, leaves verse 2 as a blank canvas. Agent B fills t
 
 ### TapScript Example
 
-```tapscript
+```text
 @agent flash {
   role: "verse_writer"
   task: "write verse 1 and verse 3 of a song in AABA form"
@@ -136,7 +141,7 @@ Agent A writes a melody but leaves the harmony line empty. Agent B sees the invi
 
 ### TapScript Example
 
-```tapscript
+```text
 @agent flash {
   role: "melody_writer"
   task: "write a 8-bar melody in E minor"
@@ -197,7 +202,7 @@ A large model writes an exercise, a small model attempts it, the large model rev
 
 ### TapScript Example
 
-```tapscript
+```text
 @agent atlas {
   role: "teacher"
   model: "large"

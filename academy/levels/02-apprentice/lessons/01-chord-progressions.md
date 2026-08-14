@@ -1,12 +1,17 @@
 # TapScript Lesson 01: Chord Progressions — Apprentice Level
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 **Concept: The "Function Ladder"**  
 A chord progression is a sequence of harmonies that create tension and release. At apprentice level, you move beyond memorizing I–IV–V and learn **functional roles**: Tonic (T, home), Subdominant (S, departure), Dominant (D, tension). The golden rule: **T → S → D → T** (with any step skippable, but never D → S directly — that’s a "retrograde" that sounds weak unless intentional).
 
 **TapScript Example**  
 TapScript uses `prog` blocks with `chord` atoms. Each chord gets a `func` tag and a `beat` duration.
 
-```tapscript
+```text
 prog "Apprentice_01" {
   key: C major
   meter: 4/4

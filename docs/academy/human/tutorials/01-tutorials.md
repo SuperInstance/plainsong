@@ -4,6 +4,11 @@ Here are five practical TapScript tutorials, designed for human musicians and wr
 
 ### Tutorial 1: Transcribing a Song from Your Head
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 **Goal:** Capture the melody and chords of a tune you hear internally, without an instrument.
 
 **Step 1: Hum and Find the Melody’s Rhythm.**
@@ -100,7 +105,7 @@ If your composition is long, add a line with `---` inside the block. When printi
 ```markdown
 # My Song
 
-```tapscript
+```text
 // ============ VERSE 1 ============
 B: C2 - G2 - | A2 - E2 - | F2 - C2 - | G2 - - - |
 P: [CEG] - [GBD] - | [ACE] - [EGB] - | [FAC] - [CEG] - | [GBD] - - - |
@@ -110,7 +115,7 @@ D: K - S - | K - S - | K - S - | K - S - |
 
 <!-- PAGE BREAK -->
 
-```tapscript
+```text
 // ============ CHORUS ============
 B: C2 - C2 - | A2 - A2 - | F2 - F2 - | G2 - G2 - |
 P: [CEG]4 - [CEG]4 - | [ACE]4 - [ACE]4 - | [FAC]4 - [FAC]4 - | [GBD]4 - [GBD]4 - |

@@ -252,5 +252,48 @@ class TestArrange(unittest.TestCase):
         self.assertEqual(pitches, [60, 64, 67, 72])
 
 
+class TestDocumentedNotation(unittest.TestCase):
+    """Every example in the prose must be notation this compiler accepts.
+
+    The academy shipped for months teaching a language that did not exist -- one
+    lesson on "dynamics and velocity" was a bouncing-ball physics simulation,
+    because a generator saw the word velocity. Nothing caught it: `tapscript
+    check` walked only `.tap` files, and the academy contains none, so pointing
+    the check at it passed while every lesson in it was wrong.
+
+    A block tagged ```tapscript is a promise. Syntax that is only proposed goes
+    in a ```tapscript-proposed block, and anything that is not TapScript at all
+    should not claim to be.
+    """
+
+    def _blocks(self):
+        import re
+        from pathlib import Path
+
+        fence = re.compile(r"^```(?:tapscript|tap)[ \t]*$(.*?)^```", re.S | re.M)
+        root = Path(__file__).resolve().parent.parent
+        for markdown in sorted(root.rglob("*.md")):
+            if "legacy" in markdown.parts or "node_modules" in markdown.parts:
+                continue
+            text = markdown.read_text(encoding="utf-8", errors="replace")
+            for match in fence.finditer(text):
+                line = text.count("\n", 0, match.start()) + 1
+                yield f"{markdown.relative_to(root)}:{line}", match.group(1)
+
+    def test_every_documented_example_compiles(self):
+        for label, block in self._blocks():
+            with self.subTest(example=label):
+                score = parse(block)
+                self.assertEqual(
+                    [diagnostic.format() for diagnostic in score.errors()], [], label
+                )
+
+    def test_every_documented_example_makes_a_sound(self):
+        """Parsing is not enough: a block that yields no notes teaches nothing."""
+        for label, block in self._blocks():
+            with self.subTest(example=label):
+                self.assertGreater(arrange(parse(block)).note_count, 0, label)
+
+
 if __name__ == "__main__":
     unittest.main()

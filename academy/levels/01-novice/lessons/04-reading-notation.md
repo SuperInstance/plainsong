@@ -1,11 +1,16 @@
 ### TapScript Lesson 04: Reading Notation (Novice)
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 **(1) Before you start:** You know what a TapScript file looks like (`.tap`), can run it at `http://localhost:5557`, and understand that a script is a list of instructions executed top-to-bottom.
 
 **(2) The concept simply:** TapScript reads like a recipe. Each line is a **step**. The **ingredients** are *variables* (like `x`), the **actions** are *commands* (like `print`), and the **seasoning** is *syntax* (symbols like `=`, `+`, `;`). Reading notation means: identify what is a *variable*, what is a *value*, and what is an *operator*—before you even run it.
 
 **Example (paste into http://localhost:5557):**
-```tap
+```text
 // A simple notation read
 let myNumber = 5;   // 'myNumber' is a variable, '5' is a literal value
 let myText = "hello"; // 'myText' is a variable, "hello" is a string literal

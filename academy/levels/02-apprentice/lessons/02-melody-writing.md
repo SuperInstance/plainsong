@@ -1,12 +1,17 @@
 # TapScript Lesson 02: Melody Writing (APPRENTICE)
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 ## Concept: Motif → Phrase → Period
 
 A melody is not random notes—it’s a **conversation**. At apprentice level, you build from a **motif** (2–4 note rhythmic/interval cell) into a **phrase** (4 bars) and then a **period** (8 bars, antecedent–consequent). The antecedent ends *unresolved* (often on scale degree 2 or 5), the consequent *resolves* (degree 1 or 3). Use **stepwise motion** as default, leap only for emphasis, and keep a **single climax** (highest note) around 75% of the melody’s length.
 
 ## TapScript Example
 
-```tapscript
+```text
 // Melody builder: C major, 4/4, 8 bars
 Key: C
 Meter: 4/4

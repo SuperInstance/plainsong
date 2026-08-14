@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -224,25 +225,67 @@ def cmd_info(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 0
 
 
+NOTATION_FENCE = re.compile(r"^```(tapscript|tap)[ \t]*$(.*?)^```", re.S | re.M)
+"""A fenced block claiming to be notation. Only these two tags are checked, so a
+proposal for syntax that does not exist yet can use ```tapscript-proposed and be
+left alone."""
+
+
+def _notation_blocks(path: Path) -> list[tuple[str, str]]:
+    """Every ```tapscript block in a markdown file, labelled with its line."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return []
+    blocks = []
+    for match in NOTATION_FENCE.finditer(text):
+        line = text.count("\n", 0, match.start()) + 1
+        blocks.append((f"{path}:{line}", match.group(2)))
+    return blocks
+
+
+def _check_targets(names: list[str]) -> list[tuple[str, str]]:
+    """Everything to check, as (label, notation) pairs.
+
+    Markdown is included because it is where the teaching material lives, and an
+    example that does not compile teaches a language nobody can use. Checking
+    only `.tap` files meant `check academy` passed while every lesson in it was
+    wrong, which is worse than not checking at all.
+    """
+    sources: list[tuple[str, str]] = []
+    for name in names:
+        path = Path(name)
+        if path.is_dir():
+            paths = sorted(path.rglob("*.tap")) + sorted(path.rglob("*.md"))
+        else:
+            paths = [path]
+        for item in paths:
+            if item.suffix == ".md":
+                sources.extend(_notation_blocks(item))
+            else:
+                try:
+                    sources.append((str(item), item.read_text(encoding="utf-8")))
+                except OSError as exc:
+                    sources.append((str(item), f"\x00unreadable: {exc}"))
+    return sources
+
+
 def cmd_check(args: argparse.Namespace, config: Config, out: Out) -> int:
     from ..notation import arrange, parse
 
-    targets: list[Path] = []
-    for name in args.files:
-        path = Path(name)
-        targets.extend(sorted(path.rglob("*.tap")) if path.is_dir() else [path])
+    targets = _check_targets(args.files)
     if not targets:
         out.fail("nothing to check")
         return 2
 
     failures = warnings = 0
-    for target in targets:
-        try:
-            score = parse(target.read_text(encoding="utf-8"), path=str(target))
-        except OSError as exc:
-            out.fail(f"{target}: {exc}")
+    for label, text in targets:
+        if text.startswith("\x00"):
+            out.fail(f"{label}: {text[1:]}")
             failures += 1
             continue
+        target = label
+        score = parse(text, path=label)
         if score.has_errors:
             failures += 1
             _diagnostics(out, score.errors(), str(target))

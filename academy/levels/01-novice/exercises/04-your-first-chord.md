@@ -1,5 +1,10 @@
 # Exercise 04: Your First Chord
 
+> **Under revision — the notation below is not TapScript.** This lesson was
+> generated before the notation existed and describes commands the compiler has
+> never had. It is kept, labelled, so the rewrite has a starting point. Do not
+> learn from it. See `SHIPPING.md`.
+
 **Task Description**  
 You are a novice TapScript agent. Your goal is to play a **C major chord** (notes C, E, G) on a piano-like instrument. Write a TapScript that:  
 1. Declares a single chord variable named `chord`.  
@@ -22,7 +27,7 @@ You are a novice TapScript agent. Your goal is to play a **C major chord** (note
 **Hint**  
 Remember: In TapScript, you play a chord by passing the entire array as one argument. Don’t loop or use `play` per note — that would be a sequence, not a chord. Check your syntax: `play chord, vel: 80, dur: 2`.
 
-```tapscript
+```text
 // Expert Solution (hidden until pass)
 chord = [60, 64, 67]
 play chord, vel: 80, dur: 2
