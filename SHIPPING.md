@@ -84,7 +84,7 @@ risk than it sounds, because the built-in path never touches them.
 
 ### S4. Two different things are called "ensemble"
 
-`tapscript ensemble` analyses what each listener on a stage hears. The MCP
+`tapscript stage` analyses what each listener on a stage hears. The MCP
 `ensemble_*` tools manage a shared multi-agent session. Unrelated concepts,
 same word, both user-facing. Worth renaming one before the vocabulary sets.
 

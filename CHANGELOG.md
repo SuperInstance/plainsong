@@ -84,7 +84,7 @@ resolved at runtime.
   the attack. A large organ pipe 14 m from the podium has its key pressed
   241 ms early so that it speaks on the beat.
 - **Every listener hears something different**, and the analysis says so.
-  `tapscript ensemble` reports the spread at the conductor, at the audience, or
+  `tapscript stage` reports the spread at the conductor, at the audience, or
   at any named player's desk. At the podium a compensated ensemble is together;
   at the second violin's chair the timpani are late. That is why an orchestra
   watches instead of listening.

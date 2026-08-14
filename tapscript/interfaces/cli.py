@@ -266,7 +266,7 @@ def cmd_check(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 0
 
 
-def cmd_ensemble(args: argparse.Namespace, config: Config, out: Out) -> int:
+def cmd_stage(args: argparse.Namespace, config: Config, out: Out) -> int:
     from ..notation import parse
     from ..notation.arrange import ArrangeOptions, arrange
     from ..perform.solve import analyse, format_report
@@ -724,16 +724,16 @@ def build_parser() -> argparse.ArgumentParser:
     )
     compile_parser.set_defaults(func=cmd_compile)
 
-    ensemble_parser = subparsers.add_parser(
-        "ensemble", help="report what each listener on the stage actually hears"
+    stage_parser = subparsers.add_parser(
+        "stage", help="report what each listener on the stage actually hears"
     )
-    ensemble_parser.add_argument("file", help="a .tap file with a [Stage] block")
-    ensemble_parser.add_argument(
+    stage_parser.add_argument("file", help="a .tap file with a [Stage] block")
+    stage_parser.add_argument(
         "--frame", default="", metavar="LISTENER", help="conductor, audience, player:<name>, score"
     )
-    ensemble_parser.add_argument("--no-compensate", action="store_true", help="report the raw errors")
-    ensemble_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
-    ensemble_parser.set_defaults(func=cmd_ensemble)
+    stage_parser.add_argument("--no-compensate", action="store_true", help="report the raw errors")
+    stage_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
+    stage_parser.set_defaults(func=cmd_stage)
 
     play_parser = subparsers.add_parser("play", help="compile and play")
     play_parser.add_argument("file", help="a .tap file or a library entry")

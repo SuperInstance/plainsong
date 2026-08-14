@@ -93,7 +93,7 @@ listener: conductor
 ```
 
 ```
-$ tapscript ensemble orchestra.tap
+$ tapscript stage orchestra.tap
   voice    distance  onset   travel  p-centre  act
   timpani  9.8 m     0 ms    29 ms   1 ms      -30 ms
   organ    14.0 m    140 ms  41 ms   60 ms     -241 ms

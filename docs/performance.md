@@ -142,7 +142,7 @@ When you know better, say so: `speech: 62ms`.
 
 ## Reference frames
 
-`tapscript ensemble` and `tapscript compile` both take `--frame`:
+`tapscript stage` and `tapscript compile` both take `--frame`:
 
 | Frame | Means |
 |---|---|
@@ -155,7 +155,7 @@ The same performance has a different arrival pattern at each of them, and being
 able to say so is the point of the whole feature:
 
 ```
-$ tapscript ensemble processional.tap
+$ tapscript stage processional.tap
 
 Processional  --  4 voices at 96 bpm
 written for conductor, listening at conductor, 20 C, sound at 343.21 m/s
@@ -187,7 +187,7 @@ there.
 Now stand behind the drums:
 
 ```
-$ tapscript ensemble processional.tap --frame player:timpani
+$ tapscript stage processional.tap --frame player:timpani
 
 what player:timpani hears, against the written beat
   spread 35 ms
