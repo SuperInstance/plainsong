@@ -168,16 +168,99 @@ worth nothing until the three below it are solid.
   pipeline with no test is not something this project ships.
 - Whether stage 3 is worth building at all, given fluidsynth exists and is good.
 
+## What a first survey found
+
+Two scouts, one over the SuperInstance account and one over the literature.
+Treat the counts below as leads, not as an inventory: only the sizes were
+verified, and reading any of these repositories properly needs them added to a
+session's scope first.
+
+### Already in the account
+
+- **A t-minus family of about twelve repositories**, and they are not empty:
+  `tminus-music` is 24 MB of Rust, `t-minus-rs` 8 MB, `tminus-os` 1.2 MB of
+  Python. `swarm-tminus` advertises stdlib-only coordination primitives —
+  deadlines, BPM clocks, predict-and-confirm — which is the same discipline and
+  the same dependency posture as this project. There is also a
+  `tminus-ecosystem-review` described as heavy architectural documentation of
+  the whole set. **Read that first**; it is likely worth more than re-deriving
+  the landscape.
+- **About ninety `fleet-midi-*` repositories**, one per concern:
+  `fleet-midi-tempo`, `-dynamics`, `-cc`, `-vel`, `-gliss`, `-harmonizer`,
+  `-text2midi`, and so on. Be skeptical here. Every one carries a last-updated
+  timestamp inside the same few minutes on 12 July 2026, which is a bulk touch
+  rather than ninety separately developed services, and a good number have
+  filler descriptions ("Fleet service for SuperInstance"). Some are certainly
+  real; the split is unknown and worth ten minutes before anyone plans around
+  them.
+- **`fleet-jepa-midi`** — "LLM thinks in phrasing, JEPA feels in pulse,
+  algorithms execute in samples". This one was read earlier and is real: 41
+  directive actions and a bar-feature schema. It is an attempt at stage 2 from
+  the other direction, learning the pulse rather than solving for it. Whether it
+  competes with the solver or feeds it is the first real design question.
+- **Embedded precedent already exists**: `grand-pattern-embedded` (Rust,
+  `no_std`, fixed memory, ESP32/Arduino/ARM) and `bare-metal-plato` (C, ESP32
+  and RP2040). The runtime tier does not start from nothing.
+
+### In the literature
+
+- **Expressive performance rendering is a mature field.** VirtuosoNet
+  (ISMIR 2019) takes MusicXML and emits expressive MIDI; MIDI-VALLE (ISMIR 2025)
+  does it through neural codec language modelling; MAESTRO and ASAP are the
+  standard datasets; the Vienna/JKU "Con Espressione" line is decades deep. Any
+  plan that ignores this rediscovers it badly.
+- **RenderBox (Feb 2025) is the closest existing thing to stages 2 and 3**: a
+  diffusion transformer taking a MIDI score *plus a natural-language
+  description* and producing expressive performance audio. The example in the
+  paper is close enough to the one at the top of this document to be
+  uncomfortable. It is a research prototype, not a product, and is bounded by
+  its training instruments. Read it before building.
+- **The composition/performance split is real and recognised.** Nearly all
+  language-model work on symbolic music generates notes. Applying a model to
+  *interpretation of an existing score* is the thin part of the literature,
+  partly because standard MIDI tokenisation drops velocity, articulation and
+  pedal — the very channels expression lives in. That is the gap this proposal
+  aims at, and it appears to still be open.
+- **No format carries a performer description.** MusicXML, MNX and LilyPond
+  carry score intent — articulations, dynamics, phrasing. MIDI CC carries a
+  narrow slice of expression. Nothing carries "who is playing this and how".
+
+### One conclusion to correct
+
+The embedded scout reports ESP32 timing jitter in the millisecond range and
+concludes it "precludes expressive micro-timing". That is the right measurement
+and the wrong conclusion *for this system*, and the difference matters enough to
+write down.
+
+Every quantity the solver deals in is tens to hundreds of milliseconds: 29 ms of
+travel across a stage, 140 ms for a large organ pipe to speak, 60 ms of
+perceptual attack, a −241 ms emission. Human sensitivity to rhythmic
+displacement sits around 10–20 ms. A microcontroller with roughly 1 ms of jitter
+is therefore an order of magnitude inside the tolerance this model needs. Expressive
+timing here is not a microsecond problem, and the ESP32 tier survives.
+
+What the scout's number does rule out is sample-accurate *audio* on the same
+chip — which is why stage 3 belongs on the Pi tier or on the Yamaha at the end
+of the MIDI cable, exactly as proposed.
+
+It also confirms the language call with specifics: Rust `no_std` has
+`embedded-midi`, `usbd-midi` and RTIC; TinyGo's ESP32 support is incomplete
+(no WiFi, Bluetooth or ADC); MicroPython's collector makes deterministic timing
+impractical.
+
 ## Order of work
 
 Nothing here starts until `tapscript-studio` and `tapscript-mcp` are merged,
 released and announced. This document is the placeholder for that conversation,
 not a plan of record.
 
-1. Survey the prior art properly, especially the expressive-performance
-   literature — this is a forty-year-old research field and it would be foolish
-   to rediscover it badly.
-2. Prove stage 2 as a script against the existing solver, with no new
+1. Read `tminus-ecosystem-review`, and read RenderBox. Both are somebody's
+   finished thinking about a problem in this document, and both are cheaper than
+   the equivalent week.
+2. Establish how much of the `fleet-midi-*` set is real. Ninety repositories
+   either changes the plan completely or is noise, and the difference is a
+   morning's work.
+3. Prove stage 2 as a script against the existing solver, with no new
    repository. If a prose performer description cannot set those parameters
    convincingly, the whole plan is wrong and it is cheap to find out.
-3. Only then split the runtime out and put it on hardware.
+4. Only then split the runtime out and put it on hardware.
