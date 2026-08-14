@@ -18,7 +18,9 @@ These have been proven, not assumed.
 | No hardcoded paths | A test greps the package for `~/.openclaw`, `/home/eileen`, `/Users/`. |
 | Nothing half-written | No TODO, FIXME, XXX, HACK or `NotImplementedError` anywhere in `tapscript/`. |
 
-412 tests, 7 specs, ruff clean.
+| The new tests would catch a regression | Each guard was removed and the suite confirmed to go red: retryable statuses, the `[DONE]` stream terminator, the User-Agent and header merge, the same-origin refusal, the `/files/` basename and containment guards together, the null-byte guard, percent-decoding, the `MAX_BODY` limit, `ConnectorResult.__bool__`, the broken-connector skip, and the availability check in `run()`. |
+
+514 tests, 7 specs, ruff clean.
 
 ## Blockers
 
@@ -101,6 +103,30 @@ same word, both user-facing.
 
 **Closed.** The analysis is now `tapscript stage`, and the MCP server and
 ensemble layer have moved to their own repository, `tapscript-mcp`.
+
+### S6. Three surfaces had no tests at all — CLOSED
+
+`interfaces/web/server.py` (343 lines), `llm/transport.py` (146) and
+`connectors/` (289) were never executed by the suite. This is the same gap as
+B3, and closing B3 immediately found a Windows bug, so it was worth closing
+these too.
+
+**Closed** by 102 tests. Two real defects came out of it:
+
+- `transform.transpose` accepted a target that names no key. `parse_key` is
+  forgiving by design and reads `"banana"` as B major, so a mistyped key
+  silently moved a whole score by a semitone rather than failing. Now refused,
+  with the refusal checked by `tapscript spec`.
+- The web interface never percent-decoded `/files/`, so a rendered file with a
+  space in its name 404'd. Latent for compile output, which is always slugged;
+  live for what the TUI and the connectors write.
+
+Worth recording: the first versions of the traversal, `MAX_BODY` and
+same-origin tests all passed against a deliberately broken server. `urllib`
+normalises `..` out of a path before the request is sent and recomputes
+Content-Length from the body it was handed, so the guards were never reached
+and the 404s came from elsewhere. They now go over a raw `http.client`
+connection. A security test that has never seen the code fail is not evidence.
 
 ### S5. Windows lock contention — SETTLED
 

@@ -171,11 +171,36 @@ def serve_stdio(dispatcher: Dispatcher, reader: Iterable[str], writer: Any) -> i
 
     Flushed per message: a client that is waiting for a reply before sending the
     next request would otherwise wait forever behind a buffer.
+
+    A client that closes the pipe has disconnected, which is how an MCP session
+    ends -- the host exits, the user closes the window. That is a clean stop, not
+    a failure: there is nobody left to report it to, and a traceback on stderr
+    plus a non-zero exit makes a normal disconnect look like a crash to whatever
+    launched the server.
     """
-    for line in reader:
-        answer = dispatcher.handle_text(line)
-        if answer is None:
-            continue
-        writer.write(answer + "\n")
-        writer.flush()
+    try:
+        for line in reader:
+            answer = dispatcher.handle_text(line)
+            if answer is None:
+                continue
+            writer.write(answer + "\n")
+            writer.flush()
+    except BrokenPipeError:
+        _silence_stdout()
     return 0
+
+
+def _silence_stdout() -> None:
+    """Point stdout at the void so interpreter shutdown does not retry the write.
+
+    Without this, Python flushes stdout on the way out, hits the same dead pipe
+    and prints `Exception ignored in: <_io.TextIOWrapper name='<stdout>'>` --
+    after we have already decided the disconnect was clean.
+    """
+    import os
+    import sys
+
+    try:
+        os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
+    except (OSError, ValueError, AttributeError):
+        pass  # not a real file descriptor; nothing to protect

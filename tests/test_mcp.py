@@ -265,6 +265,28 @@ class TestStdioTransport(unittest.TestCase):
             self.assertEqual(len(lines), 2, "the notification and the blank line were answered")
             self.assertEqual([json.loads(line)["id"] for line in lines], [1, 2])
 
+    def test_a_client_that_closes_the_pipe_is_a_clean_stop(self) -> None:
+        """A disconnect is how a session ends, not a crash.
+
+        The host exits, the user closes the window, or something downstream has
+        read all it wanted. The server must return 0 and say nothing rather than
+        raising BrokenPipeError out of the serve loop -- there is nobody left to
+        report it to, and a traceback makes a normal disconnect look like a
+        failure to whatever launched the server. Found by tapscript-mcp's CI:
+        `| grep -q` under `pipefail` closes the pipe on its first match.
+        """
+
+        class ClosedPipe(io.StringIO):
+            def write(self, text: str) -> int:
+                raise BrokenPipeError(32, "Broken pipe")
+
+        with tempfile.TemporaryDirectory() as directory:
+            server = build_server(Path(directory))
+            reader = io.StringIO(
+                message("initialize", {"protocolVersion": PROTOCOL_VERSION}, 1) + "\n"
+            )
+            self.assertEqual(protocol.serve_stdio(server.dispatcher, reader, ClosedPipe()), 0)
+
 
 class TestHttpTransport(unittest.TestCase):
     def setUp(self) -> None:
