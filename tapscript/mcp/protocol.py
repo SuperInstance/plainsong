@@ -186,21 +186,5 @@ def serve_stdio(dispatcher: Dispatcher, reader: Iterable[str], writer: Any) -> i
             writer.write(answer + "\n")
             writer.flush()
     except BrokenPipeError:
-        _silence_stdout()
+        pass
     return 0
-
-
-def _silence_stdout() -> None:
-    """Point stdout at the void so interpreter shutdown does not retry the write.
-
-    Without this, Python flushes stdout on the way out, hits the same dead pipe
-    and prints `Exception ignored in: <_io.TextIOWrapper name='<stdout>'>` --
-    after we have already decided the disconnect was clean.
-    """
-    import os
-    import sys
-
-    try:
-        os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
-    except (OSError, ValueError, AttributeError):
-        pass  # not a real file descriptor; nothing to protect
