@@ -1,6 +1,6 @@
 # Shipping audit
 
-State of the branch as of `3487a35`. Items are struck through as they close. Written from inspection, not memory --
+State of the branch as of `e4f15e1`. Items are struck through as they close. Written from inspection, not memory --
 every claim below was checked against the working tree.
 
 ## Verified
@@ -55,7 +55,7 @@ reported at runtime with the fix.
 
 Not ship-blocking, but each is a real gap.
 
-### S1. `docs/mcp.md` and `docs/ensemble.md` are unreviewed — AUDITED, two fixes outstanding
+### S1. `docs/mcp.md` and `docs/ensemble.md` are unreviewed — CLOSED
 
 Written by the agent that built the feature and never checked against what it
 actually built. The agent was killed by a spend limit before its own final
@@ -67,11 +67,22 @@ fields actually returned, and the `record_decision` tool is not documented.
 Everything else checked out, including all 16 feature names and the protocol
 version negotiation.
 
-### S2. `ensemble.py` and `server.py` have not been read end to end
+**Closed.** Both fixes applied: the conflict example now shows all seven
+fields the code returns, and `record_decision` is documented.
 
-The protocol behaviour is now verified by handshake and the locking was read
-closely while fixing two bugs in it. The rest -- merge determinism, the log,
-part validation, resource templates -- has been tested but not read.
+### S2. `ensemble.py` and `server.py` have not been read end to end — CLOSED
+
+**Closed.** Read end to end. The write_part critical section is correct, merge
+determinism holds (three write orders, identical bytes -- checked, not assumed),
+and the validator refuses a part that speaks for a voice other than its own.
+
+Found and fixed: the server set `isError` by reading the result text while the
+registry, which knows when it could not run something, said nothing. The
+registry now reports it.
+
+Found and left: `protocol.py` answers a parse error carrying no id but stays
+silent on an invalid request carrying no id. Defensible -- a request without an
+id is a notification -- but the two paths disagree.
 
 ### S3. `render/backends.py` is untested — CLOSED
 
@@ -82,11 +93,14 @@ risk than it sounds, because the built-in path never touches them.
 **Closed** by 44 tests with the tools mocked absent. Writing them found that
 `BackendResult` had no `__bool__`, so every failure was truthy.
 
-### S4. Two different things are called "ensemble"
+### S4. Two different things are called "ensemble" — CLOSED
 
 `tapscript stage` analyses what each listener on a stage hears. The MCP
 `ensemble_*` tools manage a shared multi-agent session. Unrelated concepts,
-same word, both user-facing. Worth renaming one before the vocabulary sets.
+same word, both user-facing.
+
+**Closed.** The analysis is now `tapscript stage`, and the MCP server and
+ensemble layer have moved to their own repository, `tapscript-mcp`.
 
 ### S5. Windows lock contention — SETTLED
 
