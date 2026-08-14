@@ -167,7 +167,12 @@ class Resources:
     def _notation_reference(self) -> str:
         from pathlib import Path
 
-        reference = Path(__file__).resolve().parent.parent / "agent" / "prompts" / "notation.md"
+        # Ask the package where it lives rather than walking up from this file.
+        # Walking up is correct only while this module sits inside tapscript/,
+        # which stopped being true when the server was also packaged on its own.
+        import tapscript
+
+        reference = Path(tapscript.__file__).resolve().parent / "agent" / "prompts" / "notation.md"
         try:
             return reference.read_text(encoding="utf-8")
         except OSError as exc:
