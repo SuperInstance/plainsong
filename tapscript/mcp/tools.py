@@ -13,7 +13,6 @@ to read and act on; an exception would end its turn instead.
 
 from __future__ import annotations
 
-import json
 from typing import Any
 
 from . import ensemble as ens
@@ -34,25 +33,6 @@ def _integer(description: str) -> dict[str, str]:
 
 def _boolean(description: str) -> dict[str, str]:
     return {"type": "boolean", "description": description}
-
-
-def looks_like_failure(text: str) -> bool:
-    """Whether a tool result is a failure the model should recover from.
-
-    Tools report trouble in the result rather than by raising, so the transport
-    has to recognise it to set ``isError``. Two forms count: a line that starts
-    with ``error:``, and a JSON object with an ``error`` key.
-    """
-    stripped = text.lstrip()
-    if stripped[:6].lower() == "error:":
-        return True
-    if stripped[:1] != "{":
-        return False
-    try:
-        decoded = json.loads(stripped)
-    except (json.JSONDecodeError, ValueError):
-        return False
-    return isinstance(decoded, dict) and bool(decoded.get("error"))
 
 
 def register(registry: Any, session_root: Any = None) -> None:

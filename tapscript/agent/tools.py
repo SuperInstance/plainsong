@@ -95,6 +95,27 @@ def _string(description: str) -> dict[str, str]:
     return {"type": "string", "description": description}
 
 
+def _reads_as_failure(text: str) -> bool:
+    """Whether a handler's own result announces a failure.
+
+    Handlers report trouble by returning it rather than raising, so that a
+    model can read what went wrong and try something else. Two forms are used:
+    a line beginning ``error:``, and a JSON object carrying an ``error`` key --
+    the second is how a refused ensemble write hands back the state to rebase
+    onto, which has to stay machine-readable.
+    """
+    stripped = text.lstrip()
+    if stripped[:6].lower() == "error:":
+        return True
+    if stripped[:1] != "{":
+        return False
+    try:
+        decoded = json.loads(stripped)
+    except (json.JSONDecodeError, ValueError):
+        return False
+    return isinstance(decoded, dict) and bool(decoded.get("error"))
+
+
 class ToolRegistry:
     """The set of tools available to one agent session."""
 
@@ -137,25 +158,43 @@ class ToolRegistry:
         ]
 
     def call(self, name: str, arguments: dict[str, Any]) -> str:
+        """Run a tool and return what it said. Failures are text, not exceptions."""
+        return self.call_result(name, arguments)[0]
+
+    def call_result(self, name: str, arguments: dict[str, Any]) -> tuple[str, bool]:
+        """Run a tool, returning (text, failed).
+
+        The registry knows perfectly well when it could not run something -- no
+        such tool, wrong arguments, the handler raised -- so it says so instead
+        of leaving a caller to infer it from the words. A transport that has to
+        set an error flag should use this rather than reading the text.
+
+        A handler that returns an ``error:`` line of its own is still reported
+        as a failure by convention, which is the one case that remains a guess:
+        a tool returning file content that happens to begin with ``error:``
+        would be reported as having failed when it did not.
+        """
         tool = self.tools.get(name)
         if tool is None:
             available = ", ".join(sorted(self.tools))
-            return f"error: no tool named {name!r}. Available tools: {available}"
+            return (f"error: no tool named {name!r}. Available tools: {available}", True)
         if tool.dangerous and not self.allow_dangerous:
-            return f"error: {name} needs approval and this session is running unattended"
+            return (f"error: {name} needs approval and this session is running unattended", True)
         try:
             result = tool.handler(**arguments)
         except TypeError as exc:
-            return f"error: wrong arguments for {name}: {exc}"
+            return (f"error: wrong arguments for {name}: {exc}", True)
         except SandboxError as exc:
-            return f"error: {exc}"
+            return (f"error: {exc}", True)
         except Exception as exc:
             detail = traceback.format_exc(limit=3)
-            return f"error: {name} failed: {type(exc).__name__}: {exc}\n{detail}"
+            return (f"error: {name} failed: {type(exc).__name__}: {exc}\n{detail}", True)
         text = result if isinstance(result, str) else json.dumps(result, indent=2, default=str)
         if len(text) > MAX_RESULT_CHARS:
             text = text[:MAX_RESULT_CHARS] + f"\n... (truncated, {len(text)} characters total)"
-        return text
+        # The handler ran. Whether what it said counts as a failure is its own
+        # convention, and the only part of this still inferred from the text.
+        return text, _reads_as_failure(text)
 
     # -- built-in tools ------------------------------------------------------
 

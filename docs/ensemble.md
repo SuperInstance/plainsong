@@ -163,7 +163,8 @@ read:
   "session": "harbour", "voice": "@violin1", "agent": "bob", "base_version": 0, "…": "…"}}
 // -> isError, and:
 // {"error": "@violin1 has moved on: you wrote against version 0, it is now at 5. …",
-//  "rebase": {"voice_version": 5, "owner": "bob", "content": "[A]\n@violin1 | e4 …"}}
+//  "rebase": {"session": "harbour", "version": 5, "voice": "@violin1", "voice_version": 5,
+//             "owner": "bob", "yours": true, "content": "[A]\n@violin1 | e4 …"}}
 ```
 
 He writes again with `base_version: 5` and it lands. Alice never noticed.

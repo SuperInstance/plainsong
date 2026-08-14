@@ -168,11 +168,11 @@ class Server:
         # The registry is not built for two callers at once, and a tool that
         # writes files is not something to run twice over.
         with self.lock:
-            text = self.registry.call(name, arguments)
+            text, failed = self.registry.call_result(name, arguments)
 
         result: dict[str, Any] = {
             "content": [{"type": "text", "text": text}],
-            "isError": mcp_tools.looks_like_failure(text),
+            "isError": failed,
         }
         structured = _structured(text)
         if structured is not None and not result["isError"]:

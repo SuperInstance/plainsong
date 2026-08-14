@@ -57,7 +57,7 @@ That means the tool surface is roughly:
 - **Notation** — `notation_reference`, `write_score`, `compile_score`,
   `transpose_score`, `search_library`, `read_library`
 - **Machine** — `probe_host`, `verify_specs`, `list_files`, `read_file`,
-  `write_file`
+  `write_file`, `record_decision`
 - **Ensemble** — `ensemble_open`, `ensemble_join`, `ensemble_leave`,
   `ensemble_read`, `ensemble_write_part`, `ensemble_render`, `ensemble_log`,
   `ensemble_status` (see [ensemble.md](ensemble.md))
