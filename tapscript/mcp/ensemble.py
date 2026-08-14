@@ -133,19 +133,30 @@ class _FileLock:
 
     def __enter__(self) -> _FileLock:
         deadline = time.monotonic() + self.timeout
+        contended: OSError | None = None
         while True:
             try:
                 handle = os.open(self.path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
                 os.write(handle, f"{os.getpid()} {now()}\n".encode())
                 os.close(handle)
                 return self
-            except FileExistsError:
+            except (FileExistsError, PermissionError) as exc:
+                # FileExistsError is the ordinary "somebody holds it" case.
+                # Windows raises PermissionError instead whenever the lock file
+                # has a delete pending -- which is exactly what the previous
+                # holder's release looks like from here -- so both mean
+                # contention and both are worth waiting out. A directory that
+                # is genuinely unwritable also lands here, and is reported when
+                # the deadline passes rather than being mistaken for a lock.
+                contended = exc
                 if self._is_stale():
                     self.path.unlink(missing_ok=True)
                     continue
                 if time.monotonic() > deadline:
                     raise EnsembleError(
-                        "the session is locked by another writer; try again in a moment"
+                        f"could not take the session lock within {self.timeout:g}s "
+                        f"({type(contended).__name__}: {contended}). Another writer may be "
+                        "stuck, or the session directory may not be writable."
                     ) from None
                 time.sleep(LOCK_POLL)
 

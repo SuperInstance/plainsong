@@ -9,10 +9,12 @@ told what to rebase onto.
 from __future__ import annotations
 
 import json
+import os
 import tempfile
 import threading
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from tapscript.agent.tools import Sandbox, ToolRegistry
 from tapscript.mcp import ensemble
@@ -161,6 +163,47 @@ class TestWriting(SessionTest):
     def test_line_endings_do_not_change_the_bytes(self) -> None:
         self.session.write_part("bass", "alice", BASS.replace("\n", "\r\n"), 0)
         self.assertEqual(self.session.part("bass"), BASS)
+
+
+class TestLockAcquisition(SessionTest):
+    """Taking the lock has to survive what the platform actually raises."""
+
+    def test_a_delete_pending_lock_is_waited_out_not_raised(self) -> None:
+        """Windows reports a delete-pending file as PermissionError.
+
+        When one writer releases the lock while another is taking it, Windows
+        raises PermissionError from os.open rather than FileExistsError. Both
+        mean "somebody has it, wait"; treating only the latter as contention
+        made a concurrent claim fail outright.
+        """
+        real_open = os.open
+        calls = {"n": 0}
+
+        def flaky_open(path, flags, *args, **kwargs):
+            if str(path).endswith(ensemble.LOCK):
+                calls["n"] += 1
+                if calls["n"] <= 3:
+                    raise PermissionError(13, "Permission denied")
+            return real_open(path, flags, *args, **kwargs)
+
+        with mock.patch.object(os, "open", flaky_open):
+            self.session.join("cello", "agent-cello")
+
+        self.assertGreater(calls["n"], 3, "the lock should have been retried")
+        self.assertEqual(self.session.manifest().voices["cello"].owner, "agent-cello")
+
+    def test_an_unwritable_directory_is_reported_not_disguised(self) -> None:
+        """A real permission problem must not masquerade as contention."""
+
+        def always_denied(path, flags, *args, **kwargs):
+            raise PermissionError(13, "Permission denied")
+
+        with mock.patch.object(os, "open", always_denied):
+            with self.assertRaises(ensemble.EnsembleError) as caught:
+                ensemble._FileLock(self.session.directory, timeout=0.05).__enter__()
+        message = str(caught.exception)
+        self.assertIn("PermissionError", message)
+        self.assertIn("writable", message)
 
 
 class TestConcurrency(SessionTest):
