@@ -19,7 +19,7 @@ pip install -e ".[dev]"
 ```bash
 python3 -m tapscript spec                        # the system's own checks
 python3 -m unittest discover -s tests -v         # the test suite
-python3 -m tapscript check docs examples academy # the notation library still parses
+python3 -m tapscript check docs examples         # the notation library still parses
 ruff check tapscript tests                       # if you installed it
 ```
 
@@ -61,7 +61,7 @@ The notation is used by several thousand files in this repository and by files
 we cannot see. A change to it needs:
 
 1. A spec that fails before the change and passes after.
-2. `tapscript check docs examples academy` still clean.
+2. `tapscript check docs examples` still clean.
 3. A note in `CHANGELOG.md` under the right heading.
 
 If existing notation would parse differently after your change, that is a

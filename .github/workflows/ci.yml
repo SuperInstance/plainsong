@@ -71,4 +71,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check every .tap file in the repository
-        run: python -m tapscript check docs examples academy tapscript/songbook README.md
+        run: python -m tapscript check docs examples tapscript/songbook README.md

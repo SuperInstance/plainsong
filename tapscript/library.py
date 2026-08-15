@@ -22,7 +22,7 @@ from typing import Any
 from .notation.ir import Score
 from .runtime.paths import Paths, default_paths
 
-SEARCH_DIRECTORIES = ("library", "docs/songs", "examples", "academy")
+SEARCH_DIRECTORIES = ("library", "docs/songs", "examples")
 """Places to look under the project root, for people working from a clone."""
 
 BUNDLED_SONGBOOK = "songbook"

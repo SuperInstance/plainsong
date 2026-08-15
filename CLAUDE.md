@@ -36,7 +36,7 @@ python3 -m pytest tests -q                    # works too, if pytest is installe
 # The system's checks on itself -- run these before and after any change
 python3 -m tapscript spec                     # exits non-zero on failure
 python3 -m tapscript doctor --specs
-python3 -m tapscript check docs examples academy tapscript/songbook   # every source, prose included
+python3 -m tapscript check docs examples tapscript/songbook README.md   # every source, prose included
 
 # Working with notation
 python3 -m tapscript new "Title" -o song.tap
@@ -204,18 +204,10 @@ and compiles them, with file:line reporting, and
 `tests/test_notation.py::TestDocumentedNotation` fails if any documented example
 stops compiling or stops making a sound.
 
-This exists because it did not. `check` walked only `.tap` files, `academy/`
-contains none, so `tapscript check ... academy` passed vacuously and reported
-"ok 6322 files checked" while fourteen of the seventeen documented examples in
-the repository compiled to **zero notes** — in four unrelated invented
-languages. A lesson on "dynamics and velocity" was a bouncing-ball physics
-simulation. A check that cannot fail is worse than no check, because it gets
-quoted as evidence.
-
-So: a block tagged ```` ```tapscript ```` is a promise. Syntax that is only
+A block tagged ```` ```tapscript ```` is a promise. Syntax that is only
 proposed goes in ```` ```tapscript-proposed ````, and anything that is not
-TapScript should not claim to be. The three tutorials are held to this, which is
-what stops them rotting the way the academy did.
+TapScript should not claim to be. The three tutorials (`docs/tutorial-*.md` and
+`docs/integration.md`) are held to this standard.
 
 ## Diagnostics come from two places
 
@@ -243,8 +235,8 @@ reading is better: put it behind a setting and default to the old behaviour.
 
 `tapscript/songbook/` (3,824 chord charts across a dozen languages, packaged and
 shipped), `docs/fakebook-archive/` (2,484 more, not packaged), `docs/songs/`,
-`docs/prose/`, `docs/traditions/`, `docs/training/`, `academy/`. Generated
-material: it parses, but it is not all well written.
+`docs/prose/`, `docs/traditions/`, `docs/training/`. Generated material: it
+parses, but it is not all well written.
 
 **The songbook is chord charts only, and must stay that way.** Melody and lyric
 rows were stripped from all 6,309 files -- 41,990 rows -- because the documented
@@ -260,9 +252,7 @@ It lives inside the package because `tapscript library` and
 `tapscript play stand-by-me` found nothing for anyone who had not cloned.
 
 Two side effects worth knowing: the ~3,800 bar-count warnings this directory was
-famous for came from those rows and are now 2, and `academy/` teaches a syntax
-that never existed -- see B4 in `SHIPPING.md`. Do not treat academy content as a
-reference for the notation.
+famous for came from those rows and are now 2.
 
 ## Rough edges
 

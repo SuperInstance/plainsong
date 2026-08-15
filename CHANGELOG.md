@@ -4,6 +4,23 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### Removed
+
+- **`academy/` and `docs/academy/` are deleted.** Extending `tapscript check` to
+  fenced markdown blocks found that fourteen of the seventeen documented
+  examples in the repository compiled to zero notes, and they were not
+  near-misses: the lesson on dynamics and velocity taught a bouncing-ball
+  physics simulation, the lesson on reading notation taught variables and
+  operators, and one exercise instructed the reader to build with a bytecode
+  compiler that has never existed. `check` walked only `.tap` files and the
+  academy contains none, so aiming the check at it passed vacuously and was
+  quoted as evidence. The material is deleted rather than repaired;
+  `docs/tutorial-first-song.md`, `docs/tutorial-arranging.md` and
+  `docs/integration.md` cover the same ground and are held to compiling by
+  `tests/test_notation.py::TestDocumentedNotation`. The directory is also gone
+  from `library.SEARCH_DIRECTORIES`, from CI, and from every documented `check`
+  invocation.
+
 ### Fixed
 
 - **A transpose target that names no key is refused.** `parse_key` is forgiving

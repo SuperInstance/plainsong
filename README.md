@@ -338,7 +338,7 @@ Every command takes `--json`. Use it when parsing output.
 ```bash
 python3 -m unittest discover -s tests              # the test suite
 python3 -m tapscript spec                          # the system's checks on itself
-python3 -m tapscript check docs examples academy   # every example still compiles
+python3 -m tapscript check docs examples           # every example still compiles
 ```
 
 CI runs all three on Python 3.10 through 3.13 across Linux, macOS and Windows
@@ -384,9 +384,6 @@ Known limits, in the open:
   from all 6,309 files. A chord progression is not protectable expression; a tune
   and its words are, and nothing in those generated files recorded provenance.
   See [docs/songbook.md](docs/songbook.md).
-- `academy/` teaches a syntax that never existed and is being rewritten. Do not
-  learn the notation from it — use this page, `tapscript new`, and
-  [docs/notation.md](docs/notation.md).
 - `legacy/` holds the two earlier engines this replaced. Nothing imports them and
   they are not maintained.
 

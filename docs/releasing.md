@@ -14,7 +14,7 @@ A release is a pushed tag. Everything after that is automatic.
 # 3. Prove it before tagging.
 python3 -m unittest discover -s tests
 python3 -m tapscript spec
-python3 -m tapscript check docs examples academy
+python3 -m tapscript check docs examples tapscript/songbook README.md
 
 # 4. Tag and push.
 git tag -a v1.1.0 -m "1.1.0"

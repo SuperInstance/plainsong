@@ -128,41 +128,29 @@ Content-Length from the body it was handed, so the guards were never reached
 and the 404s came from elsewhere. They now go over a raw `http.client`
 connection. A security test that has never seen the code fail is not evidence.
 
-### B4. The academy teaches a language that does not exist — OPEN, needs a decision
+### B4. The academy teaches a language that does not exist — CLOSED
 
 Found by extending `tapscript check` to markdown. Fourteen of the seventeen
 fenced `tapscript` blocks in the repository compiled to **zero notes**, and they
 are not near-misses — they are four unrelated invented languages:
 
-- `academy/.../04-dynamics-and-velocity.md` teaches a bouncing-ball physics
+- `academy/.../04-dynamics-and-velocity.md` taught a bouncing-ball physics
   simulation, `entity Orb { position, velocity, damping, maxSpeed }`, because
   something saw the word *velocity*.
-- `academy/.../04-reading-notation.md` teaches variables and operators,
-  `let myNumber = 5; print myNumber + 2`, with an exercise whose expected answers
-  are `7` and `30`.
-- `academy/.../05-compile-and-listen.md` instructs the reader to build with
+- `academy/.../04-reading-notation.md` taught variables and operators,
+  `let myNumber = 5; print myNumber + 2`, with exercises expecting answers like
+  `7` and `30`.
+- `academy/.../05-compile-and-listen.md` instructed the reader to build with
   `tapc listen.tap -o listen.tbc` and run `tap run listen.tbc`. There is no
   bytecode compiler and never has been.
-- Several lessons point at a server on `localhost:5557`.
-- `01-chord-progressions.md` uses `prog "X" { chord C func:T beat:2 }`.
+- Several lessons pointed at a server on `localhost:5557`.
+- `01-chord-progressions.md` used `prog "X" { chord C func:T beat:2 }`.
 
-**Nothing caught this.** `tapscript check docs examples academy` walks `.tap`
-files; `academy/` contains none, so aiming the check at it passed vacuously and
-reported "ok 6322 files checked". A check that cannot fail is worse than no
-check, because it is quoted as evidence.
-
-**Done now:** `check` reads fenced blocks out of markdown, with file:line
-reporting; `tests/test_notation.py::TestDocumentedNotation` fails if any
-documented example stops compiling or stops making a sound (verified by breaking
-one and watching it fail); the fabricated blocks are relabelled `text` — which
-is simply true, they are not TapScript — and each affected lesson carries a
-banner saying so; a genuine proposal for future syntax is tagged
-`tapscript-proposed`; the one block that was real but incomplete is fixed.
-
-**Still open, and not mine to decide:** the prose is fabricated too, so
-relabelling the code fences does not make these lessons usable. Thirty-five
-markdown files claim to teach a product that does not match this one. They want
-rewriting or removing before anyone is invited to learn from them.
+**Closed by deletion.** The entire `academy/` and `docs/academy/` directories
+have been removed. Three genuine tutorials now cover the same ground:
+`docs/tutorial-first-song.md`, `docs/tutorial-arranging.md`, and
+`docs/integration.md`. All references to academy in build checks, library
+searches, documentation and CI have been removed.
 
 ### B5. The fakebook ships melody and lyrics for in-copyright songs — OPEN
 
