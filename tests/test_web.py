@@ -116,6 +116,34 @@ class TestApiSameOrigin(unittest.TestCase):
 
         self.assertNotEqual(status, 403)
 
+    def test_a_rebound_hostname_is_refused_even_though_origin_matches_host(self):
+        """DNS rebinding defeats an Origin-against-Host check on its own.
+
+        An attacker points `evil.example` at 127.0.0.1. A page served from that
+        domain then sends Origin and Host both reading `evil.example` -- they
+        match perfectly, and the old check waved it through to a tool that
+        writes files. Requiring Host to name this machine breaks it, because a
+        rebound request always carries the attacker's hostname.
+        """
+        handler_class = build_handler(self.config)
+        server = ThreadingHTTPServer(("127.0.0.1", 0), handler_class)
+        self.addCleanup(server.server_close)
+        port = server.server_port
+        threading.Thread(target=server.handle_request, daemon=True).start()
+
+        connection = http.client.HTTPConnection("127.0.0.1", port, timeout=5)
+        self.addCleanup(connection.close)
+        body = json.dumps({"content": VALID_NOTATION}).encode()
+        connection.putrequest("POST", "/api/compile", skip_host=True, skip_accept_encoding=True)
+        connection.putheader("Host", "evil.example")
+        connection.putheader("Origin", "http://evil.example")
+        connection.putheader("Content-Type", "application/json")
+        connection.putheader("Content-Length", str(len(body)))
+        connection.endheaders()
+        connection.send(body)
+
+        self.assertEqual(connection.getresponse().status, 403)
+
     def test_mismatched_origin_gets_403_on_post(self):
         """A POST with a mismatched Origin should return 403."""
         handler_class = build_handler(self.config)

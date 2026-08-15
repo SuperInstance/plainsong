@@ -194,8 +194,26 @@ def build_handler(config: Config):
             body = json.dumps(payload, default=str).encode("utf-8")
             self._send(status, body, "application/json; charset=utf-8")
 
+        def _host_is_local(self) -> bool:
+            """Whether the Host header names this machine rather than a domain.
+
+            Comparing Origin against Host alone is defeated by DNS rebinding: an
+            attacker points `evil.example` at 127.0.0.1, and a page on that
+            domain then sends Origin and Host both reading `evil.example`, which
+            match perfectly. Requiring the Host to be a loopback name breaks
+            that, because a rebound request always carries the attacker's
+            hostname in Host.
+            """
+            host = self.headers.get("Host", "")
+            name = host.rsplit(":", 1)[0].strip("[]").lower() if host else ""
+            return name in {"localhost", "127.0.0.1", "::1", "0.0.0.0", ""} or name.startswith(
+                "127."
+            )
+
         def _same_origin(self) -> bool:
             """Reject cross-origin writes; this is a local tool, not an API."""
+            if not self._host_is_local():
+                return False
             origin = self.headers.get("Origin")
             if origin is None:
                 return True

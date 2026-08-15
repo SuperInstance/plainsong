@@ -280,8 +280,24 @@ def build_http_handler(server: Server):
             if self.command != "HEAD":
                 self.wfile.write(body)
 
+        def _host_is_local(self) -> bool:
+            """Whether Host names this machine rather than a domain.
+
+            Origin-against-Host alone is defeated by DNS rebinding: point
+            `evil.example` at 127.0.0.1 and both headers read `evil.example`,
+            matching perfectly. A rebound request always carries the attacker's
+            hostname, so requiring a loopback Host breaks it.
+            """
+            host = self.headers.get("Host", "")
+            name = host.rsplit(":", 1)[0].strip("[]").lower() if host else ""
+            return name in {"localhost", "127.0.0.1", "::1", "0.0.0.0", ""} or name.startswith(
+                "127."
+            )
+
         def _same_origin(self) -> bool:
             """Refuse cross-origin calls. This is a local tool, not a service."""
+            if not self._host_is_local():
+                return False
             origin = self.headers.get("Origin")
             if origin is None:
                 return True
