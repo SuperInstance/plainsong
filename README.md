@@ -14,6 +14,18 @@ Lyrics: | the tide  came | in  before  dawn | and  left  a | line  of  salt |
 That is the whole idea. Four rows that line up, bars separated by `|`, and a
 file any editor, any diff tool and any language model can read.
 
+## Try it without installing anything
+
+`docs/demo/index.html` is a working compiler in one file — parser, arranger, MIDI
+writer, a player and three interactive simulations. Save it and open it; it runs
+from `file://` with no server, no build step and no network.
+
+The simulations are there because two of this system's ideas are hard to believe
+from prose. One shows a bar subdividing as you change how many events it holds.
+The other puts four players and a listener on a stage you can drag: move the ear
+onto the podium and the four sounds land **0 ms** apart, move it anywhere else
+and they do not.
+
 ## Hello world
 
 Python 3.10 or newer. Nothing else to install.

@@ -1,150 +1,114 @@
 <title>TapScript Playground</title>
 <style>
-  /* Light is the base. Every colour is a token so both themes resolve as a set. */
   :root {
-    --ink:        #14181F;
-    --ink-soft:   #4A5260;
-    --ink-faint:  #8C93A1;
-    --ground:     #F6F4EF;
-    --panel:      #FFFFFF;
-    --rule:       #DFDBD1;
-    --rule-soft:  #ECE8E0;
-    --amber:      #B4761A;
-    --amber-lit:  #E8A33D;
-    --teal:       #2E7F78;
-    --shadow:     0 1px 2px rgba(20, 24, 31, .06), 0 8px 24px rgba(20, 24, 31, .05);
-    --mono: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
-    --serif: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    --ink:#14181F; --ink-soft:#4A5260; --ink-faint:#8C93A1;
+    --ground:#F6F4EF; --panel:#FFFFFF; --rule:#DFDBD1; --rule-soft:#ECE8E0;
+    --amber:#B4761A; --amber-lit:#E8A33D; --teal:#2E7F78; --teal-lit:#3FA79E;
+    --warn:#C0392B;
+    --shadow:0 1px 2px rgba(20,24,31,.06), 0 8px 24px rgba(20,24,31,.05);
+    --mono: ui-monospace,"SF Mono",SFMono-Regular,"Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+    --serif: ui-serif, Georgia,"Iowan Old Style","Palatino Linotype",serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --ink:       #E8E6E1;
-      --ink-soft:  #A0A6B2;
-      --ink-faint: #6B7280;
-      --ground:    #0E1116;
-      --panel:     #161A22;
-      --rule:      #2A303B;
-      --rule-soft: #1E232C;
-      --amber:     #E8A33D;
-      --amber-lit: #FFC46B;
-      --teal:      #5FBDB3;
-      --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+      --ink:#E8E6E1; --ink-soft:#A0A6B2; --ink-faint:#6B7280;
+      --ground:#0E1116; --panel:#161A22; --rule:#2A303B; --rule-soft:#1E232C;
+      --amber:#E8A33D; --amber-lit:#FFC46B; --teal:#5FBDB3; --teal-lit:#7FD6CC;
+      --warn:#F0776A;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
     }
   }
   :root[data-theme="dark"] {
-    --ink:       #E8E6E1;
-    --ink-soft:  #A0A6B2;
-    --ink-faint: #6B7280;
-    --ground:    #0E1116;
-    --panel:     #161A22;
-    --rule:      #2A303B;
-    --rule-soft: #1E232C;
-    --amber:     #E8A33D;
-    --amber-lit: #FFC46B;
-    --teal:      #5FBDB3;
-    --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+    --ink:#E8E6E1; --ink-soft:#A0A6B2; --ink-faint:#6B7280;
+    --ground:#0E1116; --panel:#161A22; --rule:#2A303B; --rule-soft:#1E232C;
+    --amber:#E8A33D; --amber-lit:#FFC46B; --teal:#5FBDB3; --teal-lit:#7FD6CC;
+    --warn:#F0776A;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
   }
 
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--serif);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ground); color:var(--ink); font-family:var(--serif);
+         font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:1160px; margin:0 auto; padding:0 24px; }
+  .rule-top { border-top:1px solid var(--rule); }
 
-  /* The bar line is the motif: a hairline rule that runs the page. */
-  .rule-top { border-top: 1px solid var(--rule); }
+  header { padding:64px 0 40px; }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+             color:var(--amber); margin:0 0 20px; }
+  h1 { font-family:var(--mono); font-weight:500; font-size:clamp(34px,6vw,62px); line-height:1.04;
+       letter-spacing:-.02em; margin:0 0 20px; text-wrap:balance; }
+  h1 .bar { color:var(--amber); font-weight:400; }
+  .lede { font-size:clamp(18px,2vw,21px); color:var(--ink-soft); max-width:62ch; margin:0; }
 
-  header { padding: 64px 0 40px; }
-  .eyebrow {
-    font-family: var(--mono); font-size: 12px; letter-spacing: .16em;
-    text-transform: uppercase; color: var(--amber); margin: 0 0 20px;
-  }
-  h1 {
-    font-family: var(--mono); font-weight: 500;
-    font-size: clamp(34px, 6vw, 62px); line-height: 1.04;
-    letter-spacing: -.02em; margin: 0 0 20px; text-wrap: balance;
-  }
-  h1 .bar { color: var(--amber); font-weight: 400; }
-  .lede { font-size: clamp(18px, 2vw, 21px); color: var(--ink-soft); max-width: 62ch; margin: 0; }
+  h2 { font-family:var(--mono); font-weight:500; font-size:13px; letter-spacing:.16em;
+       text-transform:uppercase; color:var(--ink-faint); margin:0 0 8px;
+       padding-left:14px; border-left:2px solid var(--amber); }
+  .sub { color:var(--ink-soft); max-width:70ch; margin:0 0 22px; padding-left:16px; }
+  h3 { font-family:var(--mono); font-weight:500; font-size:16px; margin:0 0 8px; letter-spacing:-.01em; }
+  section { padding:44px 0; }
 
-  h2 {
-    font-family: var(--mono); font-weight: 500; font-size: 13px;
-    letter-spacing: .16em; text-transform: uppercase; color: var(--ink-faint);
-    margin: 0 0 18px; padding-left: 14px; border-left: 2px solid var(--amber);
-  }
-  h3 { font-family: var(--mono); font-weight: 500; font-size: 16px; margin: 0 0 8px; letter-spacing: -.01em; }
+  .studio { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; align-items:start; }
+  @media (max-width:900px){ .studio{ grid-template-columns:minmax(0,1fr);} }
 
-  section { padding: 44px 0; }
+  .panel { background:var(--panel); border:1px solid var(--rule); border-radius:4px;
+           box-shadow:var(--shadow); overflow:hidden; }
+  .panel-head { display:flex; align-items:center; justify-content:space-between; gap:12px;
+                padding:10px 14px; border-bottom:1px solid var(--rule-soft); font-family:var(--mono);
+                font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
 
-  .studio { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: start; }
-  @media (max-width: 900px) { .studio { grid-template-columns: minmax(0,1fr); } }
+  textarea { width:100%; min-height:330px; border:0; resize:vertical; display:block; padding:16px;
+             background:transparent; color:var(--ink); font-family:var(--mono); font-size:13.5px;
+             line-height:1.75; tab-size:2; }
+  textarea:focus { outline:2px solid var(--amber); outline-offset:-2px; }
+  canvas { display:block; width:100%; background:transparent; touch-action:none; }
+  #roll { height:250px; }
+  #stage { height:420px; cursor:grab; }
+  #stage.dragging { cursor:grabbing; }
+  #divide { height:150px; }
+  #layers { height:170px; }
 
-  .panel {
-    background: var(--panel); border: 1px solid var(--rule);
-    border-radius: 4px; box-shadow: var(--shadow); overflow: hidden;
-  }
-  .panel-head {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    padding: 10px 14px; border-bottom: 1px solid var(--rule-soft);
-    font-family: var(--mono); font-size: 12px; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--ink-faint);
-  }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center;
+              padding:12px 14px; border-top:1px solid var(--rule-soft); }
+  button { font-family:var(--mono); font-size:13px; padding:9px 15px; border-radius:3px;
+           border:1px solid var(--rule); background:transparent; color:var(--ink); cursor:pointer;
+           transition:background .14s ease, border-color .14s ease, color .14s ease; }
+  button:hover:not(:disabled){ border-color:var(--amber); color:var(--amber); }
+  button:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  button.primary { background:var(--amber); border-color:var(--amber); color:var(--ground); font-weight:500; }
+  button.primary:hover:not(:disabled){ background:var(--amber-lit); border-color:var(--amber-lit); }
+  button[aria-pressed="true"] { background:var(--teal); border-color:var(--teal); color:var(--ground); }
 
-  textarea {
-    width: 100%; min-height: 340px; border: 0; resize: vertical; display: block;
-    padding: 16px; background: transparent; color: var(--ink);
-    font-family: var(--mono); font-size: 13.5px; line-height: 1.75; tab-size: 2;
-  }
-  textarea:focus { outline: 2px solid var(--amber); outline-offset: -2px; }
+  .readout { padding:12px 14px; border-top:1px solid var(--rule-soft); font-family:var(--mono);
+             font-size:12.5px; color:var(--ink-soft); }
+  .readout b { color:var(--ink); font-weight:500; font-variant-numeric:tabular-nums; }
+  .diag { color:var(--amber); display:block; margin-top:6px; }
+  .diag.err { color:var(--warn); }
+  .presets { display:flex; flex-wrap:wrap; gap:6px; }
+  .presets button { padding:5px 11px; font-size:12px; }
 
-  canvas { display: block; width: 100%; height: 260px; background: transparent; }
+  label.field { font-family:var(--mono); font-size:12px; color:var(--ink-faint);
+                display:flex; align-items:center; gap:8px; }
+  input[type=range]{ accent-color:var(--amber); vertical-align:middle; }
 
-  .controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 14px; border-top: 1px solid var(--rule-soft); }
-  button {
-    font-family: var(--mono); font-size: 13px; letter-spacing: .02em;
-    padding: 9px 15px; border-radius: 3px; border: 1px solid var(--rule);
-    background: transparent; color: var(--ink); cursor: pointer;
-    transition: background .14s ease, border-color .14s ease, color .14s ease;
-  }
-  button:hover:not(:disabled) { border-color: var(--amber); color: var(--amber); }
-  button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
-  button:disabled { opacity: .45; cursor: not-allowed; }
-  button.primary { background: var(--amber); border-color: var(--amber); color: var(--ground); font-weight: 500; }
-  button.primary:hover:not(:disabled) { background: var(--amber-lit); border-color: var(--amber-lit); color: var(--ground); }
+  .cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:28px; }
+  .cols p { color:var(--ink-soft); margin:0; }
+  code { font-family:var(--mono); font-size:.88em; background:var(--rule-soft);
+         padding:.12em .38em; border-radius:3px; color:var(--ink); }
+  pre { font-family:var(--mono); font-size:13px; line-height:1.7; margin:0; background:var(--panel);
+        border:1px solid var(--rule); border-radius:4px; padding:16px; overflow-x:auto; color:var(--ink); }
+  .grid-note { color:var(--teal); }
+  .stagegrid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:24px; align-items:start; }
+  .stagenotes { display:grid; gap:22px; }
+  .stagenotes p { color:var(--ink-soft); margin:0; }
+  @media (max-width:900px){ .stagegrid{ grid-template-columns:minmax(0,1fr);} }
+  .steps { counter-reset:step; padding:0; list-style:none; margin:0; display:grid; gap:18px; }
+  .steps li { counter-increment:step; }
+  .steps li h3::before { content:counter(step) ". "; color:var(--amber); }
 
-  .readout { padding: 12px 14px; border-top: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); }
-  .readout b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
-  .diag { color: var(--amber); display: block; margin-top: 6px; }
-  .diag.err { color: #C0392B; }
-  :root[data-theme="dark"] .diag.err, :root:not([data-theme="light"]) .diag.err { color: #F0776A; }
-  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .diag.err { color: #C0392B; } }
-
-  .presets { display: flex; flex-wrap: wrap; gap: 6px; }
-  .presets button { padding: 5px 11px; font-size: 12px; }
-
-  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; }
-  .cols p { color: var(--ink-soft); margin: 0; }
-  code {
-    font-family: var(--mono); font-size: .88em;
-    background: var(--rule-soft); padding: .12em .38em; border-radius: 3px; color: var(--ink);
-  }
-  pre {
-    font-family: var(--mono); font-size: 13px; line-height: 1.7; margin: 0;
-    background: var(--panel); border: 1px solid var(--rule); border-radius: 4px;
-    padding: 16px; overflow-x: auto; color: var(--ink);
-  }
-  .grid-note { color: var(--teal); }
-
-  footer { padding: 40px 0 72px; color: var(--ink-faint); font-family: var(--mono); font-size: 12.5px; }
-  a { color: var(--amber); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  footer { padding:40px 0 72px; color:var(--ink-faint); font-family:var(--mono); font-size:12.5px; }
+  a { color:var(--amber); text-decoration-thickness:1px; text-underline-offset:2px; }
+  @media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
 </style>
 
 <div class="wrap">
@@ -152,9 +116,10 @@
     <p class="eyebrow">Plain-text music notation</p>
     <h1>Write a lead sheet<span class="bar"> | </span>hear a band</h1>
     <p class="lede">
-      TapScript is notation you can type in any editor, diff in git, and compile to
-      MIDI. This whole page is the compiler — it runs in your browser, offline,
-      with nothing installed and nothing sent anywhere.
+      TapScript is notation you type in any editor, diff in git, and compile to MIDI.
+      This page is the compiler — it runs in your browser, offline, with nothing
+      installed and nothing sent anywhere. Everything below is live: edit it, drag it,
+      break it.
     </p>
   </header>
 </div>
@@ -162,6 +127,7 @@
 <div class="wrap">
   <section class="rule-top">
     <h2>Playground</h2>
+    <p class="sub">Type notation on the left, hear it on the right. It recompiles as you type.</p>
     <div class="studio">
       <div class="panel">
         <div class="panel-head">
@@ -169,11 +135,15 @@
           <span class="presets">
             <button data-preset="ocean">Ocean Diner</button>
             <button data-preset="blues">12-bar blues</button>
-            <button data-preset="waltz">Waltz in 3/4</button>
+            <button data-preset="waltz">Waltz 3/4</button>
             <button data-preset="triplets">Bar division</button>
           </span>
         </div>
         <textarea id="source" spellcheck="false" aria-label="TapScript notation"></textarea>
+        <div class="controls">
+          <button id="generate">Generate a chart</button>
+          <button id="share">Copy share link</button>
+        </div>
       </div>
 
       <div class="panel">
@@ -182,7 +152,9 @@
         <div class="controls">
           <button id="play" class="primary">Play</button>
           <button id="stop" disabled>Stop</button>
-          <button id="midi">Download MIDI</button>
+          <button id="midi">MIDI file</button>
+          <button id="wav">Render WAV</button>
+          <button id="midiout" hidden>Send to MIDI device</button>
         </div>
         <div class="readout" id="readout">Compiling…</div>
       </div>
@@ -190,83 +162,124 @@
   </section>
 
   <section class="rule-top">
-    <h2>How it reads</h2>
-    <div class="cols">
-      <div>
-        <h3>Rows are voices</h3>
-        <p><code>Chords:</code>, <code>Melody:</code> and any <code>@name</code> row play
-        <em>together</em>. Four rows of four bars is one four-bar passage by a band,
-        not sixteen bars in sequence.</p>
-      </div>
-      <div>
-        <h3>Bars divide themselves</h3>
-        <p>You never write durations. <code>| A4 C5 E5 |</code> is three tokens in one
-        bar, so it is a triplet. Six tokens are eighth notes. A bar is one bar long
-        and its contents share it out.</p>
-      </div>
-      <div>
-        <h3>Dots are silence, dashes are chords</h3>
-        <p><code>.</code> means nothing new starts here. <code>c4-e4-g4</code> stacks
-        pitches that sound at the same instant. Pitches carry an octave — a bare
-        <code>A</code> is the chord, not the note.</p>
+    <h2>Simulation · the bar divides itself</h2>
+    <p class="sub">
+      You never write durations in TapScript. You write how many things happen in a bar,
+      and the bar shares itself out between them. Drag the slider and watch the same bar
+      hold a different number of events — the bar never changes length.
+    </p>
+    <div class="panel">
+      <canvas id="divide" aria-label="One bar subdividing into a variable number of events"></canvas>
+      <div class="controls">
+        <label class="field">tokens in the bar
+          <input type="range" id="tokens" min="1" max="16" value="4" aria-label="tokens in the bar">
+        </label>
+        <button id="hearDivide">Hear it</button>
+        <span class="readout" style="border:0;padding:0" id="divideOut"></span>
       </div>
     </div>
   </section>
 
   <section class="rule-top">
-    <h2>A written time is an arrival time</h2>
-    <div class="cols">
-      <div style="grid-column: span 1">
-        <p>The idea the rest of the system is built on, and the one thing here with
-        no equivalent elsewhere. A score says “beat three” without saying <em>where</em>
-        beat three happens — at the player's hands, at the instrument, or at the ear
-        it was written for.</p>
-        <p style="margin-top: 14px">Declare a stage and TapScript reads written times as the moment sound should
-        <span class="grid-note">arrive</span>, then solves backwards for when each player must move. An organ
-        14&nbsp;m away, whose pipe takes 140&nbsp;ms to speak, has to be played
-        241&nbsp;ms early to land on the beat.</p>
+    <h2>Simulation · a written time is an arrival time</h2>
+    <p class="sub">
+      The idea the whole system rests on. A score says “beat one” without saying <em>where</em>
+      that happens. TapScript reads a written beat as the moment sound should
+      <span class="grid-note">reach a listener</span>, then solves backwards for when each player
+      must physically move. <strong>Drag the players. Drag the ear.</strong> Watch what changes.
+    </p>
+    <div class="stagegrid">
+    <div class="panel">
+      <canvas id="stage" aria-label="Overhead view of a stage with draggable players and a draggable listener"></canvas>
+      <div class="controls">
+        <button id="beat" class="primary">Play the beat</button>
+        <button id="compensate" aria-pressed="true">Compensated</button>
+        <button id="resetStage">Reset positions</button>
+        <label class="field">air
+          <input type="range" id="temp" min="-10" max="40" value="20" aria-label="air temperature in Celsius">
+          <span id="tempOut">20&nbsp;°C</span>
+        </label>
+      </div>
+      <div class="readout" id="stageOut"></div>
+    </div>
+    <div class="stagenotes">
+      <div>
+        <h3>What to try</h3>
+        <p>Drag the ear onto the organ. The spread stops being zero — because the organ now
+        reaches you before the timpani does, and the score was never compensated for
+        <em>your</em> chair.</p>
       </div>
       <div>
-<pre>[Stage]
-listener: conductor
-@timpani: pos 4,-9  | speech: percussion
-@organ:   pos 0,-14 | speech: organ-large
+        <h3>Turn compensation off</h3>
+        <p>Everyone plays exactly on the written beat, and the sound smears by the width of
+        the stage. That is what a score without a stage actually asks for.</p>
+      </div>
+      <div>
+        <h3>Why orchestras watch</h3>
+        <p>Every player hears a different performance, and each is right about what they hear.
+        The eyes carry the intention; the ears only carry history.</p>
+      </div>
+    </div>
+    </div>
+  </section>
 
-  voice    distance  travel  act
-  timpani  9.8 m     29 ms   -30 ms
-  organ    14.0 m    41 ms   -241 ms
-
-  spread at the podium   0 ms
-  spread at organ's desk  non-zero</pre>
-        <p style="margin-top: 14px; font-size: 15px">Which is why an orchestra watches
-        the conductor rather than listening to each other. The eyes carry intention;
-        the ears only carry history. Solving stages needs the full compiler — this
-        page compiles notation, not rooms.</p>
+  <section class="rule-top">
+    <h2>Simulation · rows stack, repeats follow on</h2>
+    <p class="sub">
+      Rows of different kinds sound together. Two rows of the <em>same</em> kind run one after
+      the other. Toggle the second melody row between the two readings.
+    </p>
+    <div class="panel">
+      <canvas id="layers" aria-label="Diagram of rows stacking or running in sequence"></canvas>
+      <div class="controls">
+        <button id="layerMode" aria-pressed="false">Show a repeated row</button>
+        <span class="readout" style="border:0;padding:0" id="layerOut"></span>
       </div>
     </div>
   </section>
 
   <section class="rule-top">
-    <h2>Take it further</h2>
-    <div class="cols">
-      <div>
-        <h3>Install it</h3>
+    <h2>Run it yourself</h2>
+    <p class="sub">This page is one file with no dependencies, no build step and no network calls.</p>
+    <ol class="steps cols">
+      <li>
+        <h3>Save the page</h3>
+        <p>Save this HTML anywhere and open it. It works from <code>file://</code> — offline,
+        on a plane, on a machine with nothing installed.</p>
+      </li>
+      <li>
+        <h3>Or serve it</h3>
+        <pre>python3 -m http.server 8000</pre>
+        <p style="margin-top:10px">Any static host works: GitHub Pages, Netlify, a Raspberry Pi
+        on your desk. There is no backend to run.</p>
+      </li>
+      <li>
+        <h3>Then take the full version</h3>
         <pre>pip install tapscript
-tapscript new "My Song" -o s.tap
-tapscript compile s.tap --play</pre>
-        <p style="margin-top: 12px">Python 3.10+. No dependencies at all — the parser,
-        the MIDI writer and the synthesiser are standard library only.</p>
+tapscript serve</pre>
+        <p style="margin-top:10px">Adds the stage solver, soundfont rendering, 3,800 chord charts,
+        an agent, and an MCP server so several agents can write one score at once.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="rule-top">
+    <h2>What this page leaves out</h2>
+    <div class="cols">
+      <div>
+        <h3>A faithful subset</h3>
+        <p>The browser engine is checked note-for-note against the reference compiler across
+        triplets, 3/4, 6/8, chord qualities, stacks, sustains and repeated rows. Where it is
+        smaller, it is smaller on purpose — it does not solve stages, only draws them.</p>
       </div>
       <div>
-        <h3>What this page leaves out</h3>
-        <p>The browser engine is a faithful subset, checked note-for-note against the
-        reference compiler. The full version adds the stage solver, a soundfont
-        renderer, several thousand chord charts, an embedded agent, and an MCP server
-        so any number of agents can write one score at once.</p>
+        <h3>Sound</h3>
+        <p>Oscillators with an envelope. The installed version renders through a soundfont, which
+        is the difference between a sketch and something you would play to somebody.</p>
       </div>
       <div>
         <h3 id="ai-head">Agentic compiling</h3>
-        <p id="ai-note">Checking whether your browser has a built-in model…</p>
+        <p id="ai-note">Checking for a built-in model…</p>
       </div>
     </div>
   </section>
@@ -282,7 +295,9 @@ tapscript compile s.tap --play</pre>
 <script type="application/json" id="parity">
 {"ocean": 61, "blues": 93, "waltz": 48, "triplets": 15}
 </script>
+
 <script type="module">
+/* ===================== engine ===================== */
 const LETTER_PC={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
 const REST=new Set([".","-","_","rest","x"]);
 const SUSTAIN=new Set(["~","..","hold"]);
@@ -322,7 +337,7 @@ const row=parseRow(line,i+1);if(row)sec.lines.push(row);});
 if(!s.sections.length)s.diagnostics.push({severity:"error",line:1,message:"no sections yet — open one with a header such as [V1]"});
 return s;}
 const DEF_OCT={melody:4,chords:3,player:3},DEF_VEL={melody:88,chords:64,player:76};
-function voice(ch,oct){const base=(oct+1)*12+ch.root;const ps=ch.intervals.slice(0,4).map(i=>base+i);
+function voiceOf(ch,oct){const base=(oct+1)*12+ch.root;const ps=ch.intervals.slice(0,4).map(i=>base+i);
 if(ch.bass){const b=pitchClass(ch.bass);if(b)ps.unshift(oct*12+b.pc);}return ps.filter(p=>p>=0&&p<=127);}
 function layRow(row,start,barBeats,notes,voices,diags){const oct=DEF_OCT[row.role]??3;const vel=row.velocity??DEF_VEL[row.role]??76;
 if(!voices.has(row.name))voices.set(row.name,row.role);const bad=new Set();
@@ -330,11 +345,10 @@ row.bars.forEach((toks,bi)=>{if(!toks.length)return;const barStart=start+bi*barB
 const slots=toks.map(t=>resolve(t,row.role,oct));
 slots.forEach((sl,i)=>{if(sl.unreadable)bad.add(sl.unreadable);if(sl.kind==="rest"||sl.kind==="sustain")return;
 let len=step;for(let j=i+1;j<slots.length&&slots[j].kind==="sustain";j++)len+=step;
-const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voice(sl.chord,oct);
+const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voiceOf(sl.chord,oct);
 for(const p of ps)notes.push({beat:at,beats:len,pitch:p,velocity:vel,voice:row.name,role:row.role});});});
 if(bad.size)diags.push({severity:"warning",line:row.lineNumber,
-message:`${row.role} row: nothing understood ${[...bad].slice(0,3).join(", ")} — silence there instead`,
-hint:"chords look like Am, F#m7, Bb; pitches carry an octave, as in A4"});}
+message:`${row.role} row: nothing understood ${[...bad].slice(0,3).join(", ")} — silence there instead`});}
 function arrange(score){const notes=[],voices=new Map();const barBeats=score.beats*(4/score.unit);
 let cursor=0;const diags=[...score.diagnostics];
 for(const sec of score.sections){if(sec.stage)continue;let widest=0;const groups=new Map();
@@ -365,7 +379,7 @@ let last=0;for(const e of ev){b.push(...varlen(e.t-last),e.k|(ch&0x0f),e.p&0x7f,
 b.push(...varlen(0),0xff,0x2f,0x00);chunks.push(chunkOf(b));ch=ch===8?10:ch+1;}
 return new Uint8Array(chunks.flat());}
 
-/* ---- presets ---- */
+/* ===================== presets ===================== */
 const PRESETS={
 ocean:`**TRACK: Ocean Diner**
 [MetaData]
@@ -407,56 +421,60 @@ Melody: | C4 . . . | C4 E4 G4 | C4 . E4 . G4 . | C4 D4 E4 F4 G4 A4 B4 C5 |
 // One bar each: four beats, a triplet, six eighths, then eight notes.
 // Nothing declares a duration. The bar is always one bar long.`};
 
-/* ---- wiring ---- */
+/* ===================== shared audio ===================== */
 const $=(id)=>document.getElementById(id);
+let audio=null;
+function ac(){ audio=audio||new (window.AudioContext||window.webkitAudioContext)();
+  if(audio.state==="suspended")audio.resume(); return audio; }
+function tone(ctx,dest,pitch,at,dur,vel,type){
+  const osc=ctx.createOscillator(),g=ctx.createGain();
+  osc.type=type||"sawtooth";
+  osc.frequency.value=440*Math.pow(2,(pitch-69)/12);
+  const peak=(vel/127)*0.5;
+  g.gain.setValueAtTime(0,at);
+  g.gain.linearRampToValueAtTime(peak,at+0.012);
+  g.gain.exponentialRampToValueAtTime(0.0008,at+Math.max(dur,0.06));
+  osc.connect(g); g.connect(dest);
+  osc.start(at); osc.stop(at+Math.max(dur,0.06)+0.02);
+  return osc;
+}
+const TYPE={chords:"triangle",player:"sine",melody:"sawtooth"};
+
+/* ===================== playground ===================== */
 const source=$("source"), roll=$("roll"), readout=$("readout");
-let current=null, audio=null, playing=false, started=0, raf=0;
+let current=null, playing=false, started=0, raf=0;
 
 function compileNow(){
-  const a=arrange(parse(source.value));
-  current=a;
-  const errors=a.diagnostics.filter(d=>d.severity==="error");
-  const warnings=a.diagnostics.filter(d=>d.severity==="warning");
-  const voices=a.voices.length?a.voices.join(", "):"none yet";
-  let html=`<b>${a.notes.length}</b> notes · <b>${a.voices.length}</b> voice${a.voices.length===1?"":"s"} (${voices}) · <b>${a.seconds.toFixed(1)}s</b> · ${a.score.tempo} bpm · ${a.score.beats}/${a.score.unit}`;
-  for(const d of errors.slice(0,2)) html+=`<span class="diag err">line ${d.line}: ${d.message}</span>`;
-  for(const d of warnings.slice(0,2)) html+=`<span class="diag">line ${d.line}: ${d.message}</span>`;
+  const a=arrange(parse(source.value)); current=a;
+  const errs=a.diagnostics.filter(d=>d.severity==="error");
+  const warns=a.diagnostics.filter(d=>d.severity==="warning");
+  let html=`<b>${a.notes.length}</b> notes · <b>${a.voices.length}</b> voice${a.voices.length===1?"":"s"}`
+    +` (${a.voices.join(", ")||"none yet"}) · <b>${a.seconds.toFixed(1)}s</b> · ${a.score.tempo} bpm · ${a.score.beats}/${a.score.unit}`;
+  for(const d of errs.slice(0,2)) html+=`<span class="diag err">line ${d.line}: ${d.message}</span>`;
+  for(const d of warns.slice(0,2)) html+=`<span class="diag">line ${d.line}: ${d.message}</span>`;
   readout.innerHTML=html;
-  $("play").disabled=a.notes.length===0;
-  $("midi").disabled=a.notes.length===0;
-  draw(-1);
+  for(const id of ["play","midi","wav"]) $(id).disabled=a.notes.length===0;
+  drawRoll(-1);
 }
+function fit(cv){ const dpr=window.devicePixelRatio||1,w=cv.clientWidth,h=cv.clientHeight;
+  cv.width=w*dpr; cv.height=h*dpr; const g=cv.getContext("2d"); g.setTransform(dpr,0,0,dpr,0,0);
+  g.clearRect(0,0,w,h); return {g,w,h}; }
+function tok(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
 
-function draw(now){
-  const dpr=window.devicePixelRatio||1;
-  const w=roll.clientWidth, h=roll.clientHeight;
-  roll.width=w*dpr; roll.height=h*dpr;
-  const g=roll.getContext("2d"); g.scale(dpr,dpr); g.clearRect(0,0,w,h);
-  const css=getComputedStyle(document.documentElement);
-  const rule=css.getPropertyValue("--rule-soft").trim();
-  const amber=css.getPropertyValue("--amber").trim();
-  const lit=css.getPropertyValue("--amber-lit").trim();
-  const teal=css.getPropertyValue("--teal").trim();
-  if(!current||!current.notes.length){
-    g.fillStyle=css.getPropertyValue("--ink-faint").trim();
-    g.font='13px ui-monospace, monospace';
-    g.fillText("nothing to play yet",16,26); return;
-  }
-  const pitches=current.notes.map(n=>n.pitch);
-  const lo=Math.min(...pitches)-2, hi=Math.max(...pitches)+2;
-  const span=Math.max(hi-lo,6), total=Math.max(current.beats,1);
-  const pad=10, rowH=(h-pad*2)/span;
-
-  // Bar lines: the motif, and genuinely informative here.
+function drawRoll(now){
+  const {g,w,h}=fit(roll);
+  if(!current||!current.notes.length){ g.fillStyle=tok("--ink-faint"); g.font="13px "+tok("--mono");
+    g.fillText("nothing to play yet",16,26); return; }
+  const ps=current.notes.map(n=>n.pitch);
+  const lo=Math.min(...ps)-2, hi=Math.max(...ps)+2, span=Math.max(hi-lo,6);
+  const total=Math.max(current.beats,1), pad=10, rowH=(h-pad*2)/span;
   const barBeats=current.score.beats*(4/current.score.unit);
-  g.strokeStyle=rule; g.lineWidth=1;
-  for(let b=0;b<=total;b+=barBeats){
-    const x=(b/total)*(w-pad*2)+pad;
-    g.beginPath(); g.moveTo(x,pad); g.lineTo(x,h-pad); g.stroke();
-  }
+  g.strokeStyle=tok("--rule-soft"); g.lineWidth=1;
+  for(let b=0;b<=total;b+=barBeats){ const x=(b/total)*(w-pad*2)+pad;
+    g.beginPath(); g.moveTo(x,pad); g.lineTo(x,h-pad); g.stroke(); }
+  const amber=tok("--amber"), lit=tok("--amber-lit"), teal=tok("--teal");
   for(const n of current.notes){
-    const x=(n.beat/total)*(w-pad*2)+pad;
-    const wd=Math.max((n.beats/total)*(w-pad*2)-1.5,2);
+    const x=(n.beat/total)*(w-pad*2)+pad, wd=Math.max((n.beats/total)*(w-pad*2)-1.5,2);
     const y=h-pad-((n.pitch-lo)/span)*(h-pad*2)-rowH;
     const on=now>=0&&now>=n.time&&now<n.time+n.seconds;
     g.fillStyle=on?lit:(n.role==="chords"?teal:amber);
@@ -464,86 +482,343 @@ function draw(now){
     g.fillRect(x,y,wd,Math.max(rowH-1.5,2.5));
   }
   g.globalAlpha=1;
-  if(now>=0){
-    const x=(now/(current.seconds||1))*(w-pad*2)+pad;
-    g.strokeStyle=lit; g.lineWidth=1.5;
-    g.beginPath(); g.moveTo(x,pad*.5); g.lineTo(x,h-pad*.5); g.stroke();
-  }
+  if(now>=0){ const x=(now/(current.seconds||1))*(w-pad*2)+pad;
+    g.strokeStyle=lit; g.lineWidth=1.5; g.beginPath(); g.moveTo(x,pad*.5); g.lineTo(x,h-pad*.5); g.stroke(); }
 }
-
 function play(){
   if(!current||!current.notes.length)return;
-  audio=audio||new (window.AudioContext||window.webkitAudioContext)();
-  if(audio.state==="suspended")audio.resume();
-  stop(true);
+  const ctx=ac(); stopAll(true);
   playing=true; $("play").disabled=true; $("stop").disabled=false;
-  const t0=audio.currentTime+0.08; started=t0;
-  const master=audio.createGain(); master.gain.value=0.22; master.connect(audio.destination);
-  for(const n of current.notes){
-    const osc=audio.createOscillator(), gain=audio.createGain();
-    osc.type=n.role==="chords"?"triangle":(n.role==="player"?"sine":"sawtooth");
-    osc.frequency.value=440*Math.pow(2,(n.pitch-69)/12);
-    const at=t0+n.time, dur=Math.max(n.seconds*0.92,0.06), peak=(n.velocity/127)*0.5;
-    gain.gain.setValueAtTime(0,at);
-    gain.gain.linearRampToValueAtTime(peak,at+0.012);
-    gain.gain.exponentialRampToValueAtTime(0.0008,at+dur);
-    osc.connect(gain); gain.connect(master);
-    osc.start(at); osc.stop(at+dur+0.02);
-    n._osc=osc;
-  }
-  const tick=()=>{
-    if(!playing)return;
-    const now=audio.currentTime-started;
-    $("clock").textContent=Math.max(now,0).toFixed(1)+"s";
-    draw(now);
-    if(now>current.seconds+0.25){stop();return;}
-    raf=requestAnimationFrame(tick);
-  };
+  const t0=ctx.currentTime+0.08; started=t0;
+  const master=ctx.createGain(); master.gain.value=0.22; master.connect(ctx.destination);
+  for(const n of current.notes) n._osc=tone(ctx,master,n.pitch,t0+n.time,n.seconds*0.92,n.velocity,TYPE[n.role]);
+  const tick=()=>{ if(!playing)return;
+    const now=ctx.currentTime-started;
+    $("clock").textContent=Math.max(now,0).toFixed(1)+"s"; drawRoll(now);
+    if(now>current.seconds+0.25){stopAll();return;} raf=requestAnimationFrame(tick); };
   raf=requestAnimationFrame(tick);
 }
+function stopAll(quiet){ playing=false; cancelAnimationFrame(raf);
+  if(current)for(const n of current.notes){ try{n._osc&&n._osc.stop();}catch(e){} n._osc=null; }
+  if(!quiet){ $("play").disabled=false; $("stop").disabled=true; $("clock").textContent="0.0s"; drawRoll(-1);} }
 
-function stop(quiet){
-  playing=false; cancelAnimationFrame(raf);
-  if(current)for(const n of current.notes){try{n._osc&&n._osc.stop();}catch(e){}n._osc=null;}
-  if(!quiet){$("play").disabled=false; $("stop").disabled=true; $("clock").textContent="0.0s"; draw(-1);}
+function download(bytes,name,mime){
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([bytes],{type:mime}));
+  a.download=name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+function slug(){ return (current?.score.title||"tapscript").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"tapscript"; }
+
+/* Offline render: the page makes a real WAV, not a recording of playback. */
+async function renderWav(){
+  if(!current||!current.notes.length)return;
+  const rate=44100, len=Math.ceil((current.seconds+1.2)*rate);
+  const off=new OfflineAudioContext(1,len,rate);
+  const master=off.createGain(); master.gain.value=0.22; master.connect(off.destination);
+  for(const n of current.notes) tone(off,master,n.pitch,n.time,n.seconds*0.92,n.velocity,TYPE[n.role]);
+  const buf=await off.startRendering();
+  const pcm=buf.getChannelData(0), bytes=new DataView(new ArrayBuffer(44+pcm.length*2));
+  const put=(o,s)=>{for(let i=0;i<s.length;i++)bytes.setUint8(o+i,s.charCodeAt(i));};
+  put(0,"RIFF"); bytes.setUint32(4,36+pcm.length*2,true); put(8,"WAVEfmt ");
+  bytes.setUint32(16,16,true); bytes.setUint16(20,1,true); bytes.setUint16(22,1,true);
+  bytes.setUint32(24,rate,true); bytes.setUint32(28,rate*2,true); bytes.setUint16(32,2,true);
+  bytes.setUint16(34,16,true); put(36,"data"); bytes.setUint32(40,pcm.length*2,true);
+  for(let i=0;i<pcm.length;i++){ const s=Math.max(-1,Math.min(1,pcm[i]));
+    bytes.setInt16(44+i*2,s<0?s*0x8000:s*0x7fff,true); }
+  download(new Uint8Array(bytes.buffer),slug()+".wav","audio/wav");
+}
+
+/* Automation: a chart built from real harmony, not random notes. */
+const DEGREES=[[0,"","I"],[2,"m","ii"],[4,"m","iii"],[5,"","IV"],[7,"","V"],[9,"m","vi"]];
+const NAMES=["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"];
+const SHAPES=[[0,3,4,0],[0,5,3,4],[5,3,0,4],[0,4,5,3],[5,4,0,0]];
+function generate(){
+  const rootPc=Math.floor(Math.random()*12), tempo=72+Math.floor(Math.random()*11)*6;
+  const shape=SHAPES[Math.floor(Math.random()*SHAPES.length)];
+  const chordAt=(i)=>{const[st,q]=DEGREES[i];return NAMES[(rootPc+st)%12]+q;};
+  const scale=[0,2,4,5,7,9,11].map(s=>(rootPc+s)%12);
+  const pitchIn=(deg,oct)=>((oct+1)*12)+scale[((deg%7)+7)%7]+(deg>=7?12:0);
+  const bars=shape.map(i=>chordAt(i));
+  const mel=bars.map((_,b)=>{const base=[0,2,4,1][b%4];
+    return [0,1,2,1].map((step,j)=>j%2?".":noteName(pitchIn(base+step,4))).join(" ");});
+  const bass=shape.map(i=>{const n=NAMES[(rootPc+DEGREES[i][0])%12].toLowerCase();return `${n}2 . ${n}2 .`;});
+  source.value=`**TRACK: ${["Late","Slow","Blue","Quiet","Half"][Math.floor(Math.random()*5)]} ${["Harbour","Signal","Ferry","Tide","Window"][Math.floor(Math.random()*5)]}**
+key: ${NAMES[rootPc]} | tempo: ${tempo}
+time: 4/4
+
+[V1] (Verse - 4 Bars)
+Chords: | ${bars.map(c=>c+" . . .").join(" | ")} |
+Melody: | ${mel.join(" | ")} |
+@bass   | ${bass.join(" | ")} | vel: 70`;
+  compileNow();
+}
+function noteName(p){ return NAMES[p%12].replace("b","b")+(Math.floor(p/12)-1); }
+
+/* Share: the song travels in the URL, nothing is stored anywhere. */
+function shareLink(){
+  const data=btoa(unescape(encodeURIComponent(source.value)));
+  const url=location.origin+location.pathname+"#s="+data;
+  navigator.clipboard?.writeText(url).then(
+    ()=>{ $("share").textContent="Copied"; setTimeout(()=>$("share").textContent="Copy share link",1400); },
+    ()=>{ location.hash="s="+data; });
+}
+function readHash(){
+  const m=/[#&]s=([^&]+)/.exec(location.hash);
+  if(!m)return false;
+  try{ source.value=decodeURIComponent(escape(atob(m[1]))); return true; }catch(e){ return false; }
 }
 
 $("play").addEventListener("click",play);
-$("stop").addEventListener("click",()=>stop());
-$("midi").addEventListener("click",()=>{
-  if(!current)return;
-  const blob=new Blob([toMidi(current)],{type:"audio/midi"});
-  const a=document.createElement("a");
-  a.href=URL.createObjectURL(blob);
-  a.download=(current.score.title||"tapscript").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")+".mid";
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
-});
-for(const b of document.querySelectorAll("[data-preset]")){
-  b.addEventListener("click",()=>{stop();source.value=PRESETS[b.dataset.preset];compileNow();});
+$("stop").addEventListener("click",()=>stopAll());
+$("midi").addEventListener("click",()=>current&&download(toMidi(current),slug()+".mid","audio/midi"));
+$("wav").addEventListener("click",renderWav);
+$("generate").addEventListener("click",generate);
+$("share").addEventListener("click",shareLink);
+for(const b of document.querySelectorAll("[data-preset]"))
+  b.addEventListener("click",()=>{stopAll();source.value=PRESETS[b.dataset.preset];compileNow();});
+let deb=0; source.addEventListener("input",()=>{clearTimeout(deb);deb=setTimeout(compileNow,180);});
+
+/* ===================== sim 1: the bar divides itself ===================== */
+const tokens=$("tokens");
+function drawDivide(){
+  const {g,w,h}=fit($("divide"));
+  const n=+tokens.value, pad=26, bw=w-pad*2, y=h/2-26, bh=52;
+  g.strokeStyle=tok("--rule"); g.lineWidth=1; g.strokeRect(pad,y,bw,bh);
+  g.fillStyle=tok("--ink-faint"); g.font="11px "+tok("--mono");
+  g.fillText("one bar",pad,y-10);
+  g.fillText("← always the same length →",pad+bw/2-72,y+bh+22);
+  for(let i=0;i<n;i++){
+    const x=pad+(i/n)*bw, cw=bw/n;
+    g.fillStyle=tok("--amber"); g.globalAlpha=.78;
+    g.fillRect(x+1.5,y+1.5,Math.max(cw-3,1),bh-3);
+    g.globalAlpha=1;
+    if(cw>22){ g.fillStyle=tok("--ground"); g.font="11px "+tok("--mono");
+      g.fillText(String(i+1),x+cw/2-3,y+bh/2+4); }
+  }
+  g.strokeStyle=tok("--rule")||"#000";
+  const label={1:"a whole bar",2:"halves",3:"a triplet",4:"quarter notes",6:"sixths",
+               8:"eighth notes",12:"twelve — triplet eighths",16:"sixteenths"}[n]||`${n} even divisions`;
+  $("divideOut").innerHTML=`<b>${n}</b> token${n===1?"":"s"} → ${label} · each lasts <b>${(4/n).toFixed(2)}</b> beats`;
 }
-let debounce=0;
-source.addEventListener("input",()=>{clearTimeout(debounce);debounce=setTimeout(compileNow,180);});
-window.addEventListener("resize",()=>draw(playing&&audio?audio.currentTime-started:-1));
+tokens.addEventListener("input",drawDivide);
+$("hearDivide").addEventListener("click",()=>{
+  const ctx=ac(), n=+tokens.value, t0=ctx.currentTime+0.05, barSeconds=2;
+  const master=ctx.createGain(); master.gain.value=0.22; master.connect(ctx.destination);
+  const scale=[60,62,64,65,67,69,71,72,74,76,77,79,81,83,84,86];
+  for(let i=0;i<n;i++) tone(ctx,master,scale[i%scale.length],t0+(i/n)*barSeconds,(barSeconds/n)*0.85,92,"sawtooth");
+});
 
-source.value=PRESETS.ocean;
-compileNow();
+/* ===================== sim 2: the stage ===================== */
+const SPEECH={percussion:[0,1],piano:[8,6],plucked:[3,4],bowed:[45,25],voice:[45,30],"organ-large":[140,60],brass:[25,15]};
+const START=[
+  {name:"timpani", profile:"percussion", x:4,  y:-5, colour:"--amber"},
+  {name:"piano",   profile:"piano",      x:-4, y:-2, colour:"--amber"},
+  {name:"violin",  profile:"bowed",      x:-2, y:2,  colour:"--teal"},
+  {name:"organ",   profile:"organ-large",x:0,  y:-9, colour:"--teal"},
+];
+let players=START.map(p=>({...p}));
+let ear={x:1,y:-7}, compensated=true, beatAt=null, dragging=null, stageRaf=0;
+const conductor={x:0,y:5};
 
-/* Built-in browser models, honestly reported. A page cannot reach the Gemini or
-   Copilot side panels -- those are extension surfaces with no page-facing API.
-   Chrome's Prompt API is the only in-page option, and it is trial-gated. */
+function speedOfSound(){ return 331.3+0.606*(+$("temp").value); }
+function dist(a,b){ return Math.hypot(a.x-b.x,a.y-b.y); }
+function solve(){
+  const c=speedOfSound();
+  return players.map(p=>{
+    const [speechMs,pcMs]=SPEECH[p.profile];
+    const speech=speechMs/1000, pc=pcMs/1000;
+    const travelRef=dist(p,conductor)/c, travelEar=dist(p,ear)/c;
+    const emission = compensated ? -(speech+pc+travelRef) : 0;
+    return {...p, speech, pc, travelRef, travelEar,
+            emission, arrival: emission+speech+pc+travelEar,
+            atConductor: emission+speech+pc+travelRef};
+  });
+}
+function toScreen(w,h){
+  // The room runs x -13..13 and y -11..9. Fit all of it: putting the origin at a
+  // fixed fraction of the height pushed the back row off the bottom of the
+  // canvas, where it could be neither seen nor dragged.
+  const s=Math.min(w/28, h/22);
+  return {s, ox:w/2, oy:h/2 - s};
+}
+function drawStage(){
+  const cv=$("stage"), {g,w,h}=fit(cv);
+  const {s,ox,oy}=toScreen(w,h);
+  const P=(p)=>({x:ox+p.x*s, y:oy-p.y*s});
+  g.strokeStyle=tok("--rule-soft"); g.lineWidth=1;
+  for(let m=-14;m<=14;m+=2){ const a=P({x:m,y:-12}),b=P({x:m,y:10});
+    g.beginPath(); g.moveTo(a.x,a.y); g.lineTo(b.x,b.y); g.stroke(); }
+  for(let m=-12;m<=10;m+=2){ const a=P({x:-14,y:m}),b=P({x:14,y:m});
+    g.beginPath(); g.moveTo(a.x,a.y); g.lineTo(b.x,b.y); g.stroke(); }
+
+  const solved=solve();
+  const now=beatAt===null?null:(ac().currentTime-beatAt);
+  const c=speedOfSound();
+
+  if(now!==null){
+    for(const p of solved){
+      const age=now-(p.emission+p.speech);
+      if(age<=0) continue;
+      const r=age*c*s;
+      if(r>60*s) continue;
+      g.strokeStyle=tok(p.colour); g.globalAlpha=Math.max(0,.55-age*0.35);
+      g.lineWidth=2; const q=P(p);
+      g.beginPath(); g.arc(q.x,q.y,r,0,Math.PI*2); g.stroke();
+      g.globalAlpha=1;
+    }
+  }
+  const eP=P(ear);
+  g.setLineDash([3,4]); g.lineWidth=1;
+  for(const p of solved){ const q=P(p);
+    g.strokeStyle=tok("--rule"); g.beginPath(); g.moveTo(eP.x,eP.y); g.lineTo(q.x,q.y); g.stroke(); }
+  g.setLineDash([]);
+
+  for(const p of solved){
+    const q=P(p), moving = now!==null && now>=p.emission && now<p.emission+0.12;
+    g.fillStyle=tok(p.colour); g.globalAlpha=moving?1:.85;
+    g.beginPath(); g.arc(q.x,q.y,11,0,Math.PI*2); g.fill(); g.globalAlpha=1;
+    if(moving){ g.strokeStyle=tok("--amber-lit"); g.lineWidth=2.5;
+      g.beginPath(); g.arc(q.x,q.y,16,0,Math.PI*2); g.stroke(); }
+    g.fillStyle=tok("--ink"); g.font="11px "+tok("--mono");
+    g.fillText(p.name,q.x+15,q.y+4);
+    g.fillStyle=tok("--ink-faint");
+    g.fillText(`${(p.emission*1000).toFixed(0)} ms`,q.x+15,q.y+17);
+  }
+  const cd=P(conductor);
+  g.strokeStyle=tok("--ink-faint"); g.lineWidth=1.5;
+  g.beginPath(); g.arc(cd.x,cd.y,9,0,Math.PI*2); g.stroke();
+  g.fillStyle=tok("--ink-faint"); g.font="11px "+tok("--mono"); g.fillText("podium",cd.x+13,cd.y+4);
+
+  const e=P(ear);
+  const hit = now!==null && solved.some(p=>Math.abs(now-p.arrival)<0.03);
+  g.fillStyle=hit?tok("--amber-lit"):tok("--ink");
+  g.beginPath(); g.moveTo(e.x,e.y-11); g.lineTo(e.x+11,e.y); g.lineTo(e.x,e.y+11); g.lineTo(e.x-11,e.y);
+  g.closePath(); g.fill();
+  g.fillStyle=tok("--ink"); g.font="11px "+tok("--mono"); g.fillText("the ear",e.x+15,e.y+4);
+  g.fillStyle=tok("--ink-faint"); g.fillText("drag me",e.x+15,e.y+17);
+
+  const arrivals=solved.map(p=>p.arrival);
+  const spread=(Math.max(...arrivals)-Math.min(...arrivals))*1000;
+  const atCond=solved.map(p=>p.atConductor);
+  const condSpread=(Math.max(...atCond)-Math.min(...atCond))*1000;
+  $("stageOut").innerHTML =
+    `at the podium the four sounds land <b>${condSpread.toFixed(1)} ms</b> apart`
+    + ` &nbsp;·&nbsp; where the ear is now, <b>${spread.toFixed(1)} ms</b> apart`
+    + (compensated ? "" : ` <span class="diag">compensation off — everyone is playing exactly on the written beat</span>`)
+    + `<br><span style="opacity:.75">sound at ${c.toFixed(1)} m/s · distance to the ear: `
+    + solved.map(p=>`${p.name} ${dist(p,ear).toFixed(1)} m`).join(" · ") + `</span>`;
+}
+function stageLoop(){ drawStage(); stageRaf=requestAnimationFrame(stageLoop); }
+function stagePoint(ev){
+  const cv=$("stage"), r=cv.getBoundingClientRect();
+  const {s,ox,oy}=toScreen(r.width,r.height);
+  return { x:((ev.clientX-r.left)-ox)/s, y:(oy-(ev.clientY-r.top))/s };
+}
+$("stage").addEventListener("pointerdown",(ev)=>{
+  const p=stagePoint(ev);
+  let best=null,bd=1.6;
+  for(const pl of players){ const d=Math.hypot(pl.x-p.x,pl.y-p.y); if(d<bd){bd=d;best=pl;} }
+  const de=Math.hypot(ear.x-p.x,ear.y-p.y); if(de<bd){ best=ear; }
+  if(best){ dragging=best; $("stage").classList.add("dragging"); $("stage").setPointerCapture(ev.pointerId); }
+});
+$("stage").addEventListener("pointermove",(ev)=>{
+  if(!dragging)return;
+  const p=stagePoint(ev);
+  dragging.x=Math.max(-13,Math.min(13,p.x)); dragging.y=Math.max(-11,Math.min(9,p.y));
+});
+for(const e of ["pointerup","pointercancel"])
+  $("stage").addEventListener(e,()=>{ dragging=null; $("stage").classList.remove("dragging"); });
+
+$("beat").addEventListener("click",()=>{
+  const ctx=ac(); const solved=solve();
+  const master=ctx.createGain(); master.gain.value=0.3; master.connect(ctx.destination);
+  const lead=0.35; beatAt=ctx.currentTime+lead;
+  const PITCH={timpani:41,piano:60,violin:76,organ:48};
+  for(const p of solved)
+    tone(ctx,master,PITCH[p.name]||60,beatAt+Math.max(p.arrival,-lead+0.01),0.5,90,
+         p.profile==="organ-large"?"triangle":"sine");
+  setTimeout(()=>{beatAt=null;},2600);
+});
+$("compensate").addEventListener("click",()=>{
+  compensated=!compensated;
+  $("compensate").setAttribute("aria-pressed",String(compensated));
+  $("compensate").textContent=compensated?"Compensated":"As written";
+});
+$("resetStage").addEventListener("click",()=>{ players=START.map(p=>({...p})); ear={x:1,y:-7}; });
+$("temp").addEventListener("input",()=>{ $("tempOut").innerHTML=$("temp").value+"&nbsp;°C"; });
+
+/* ===================== sim 3: rows stack or sequence ===================== */
+let repeated=false;
+function drawLayers(){
+  const {g,w,h}=fit($("layers"));
+  const pad=24, bw=(w-pad*2), rows=repeated?3:3, rowH=34, gap=12;
+  const bars=repeated?8:4;
+  g.fillStyle=tok("--ink-faint"); g.font="11px "+tok("--mono");
+  const defs = repeated
+    ? [["Chords:",0,4,"--teal"],["Melody:",0,4,"--amber"],["Melody:",4,4,"--amber"]]
+    : [["Chords:",0,4,"--teal"],["Melody:",0,4,"--amber"],["@bass",0,4,"--amber"]];
+  defs.forEach(([label,from,len,colour],i)=>{
+    const y=20+i*(rowH+gap);
+    g.fillStyle=tok("--ink-faint"); g.fillText(label,pad-4,y-5);
+    for(let b=0;b<len;b++){
+      const x=pad+((from+b)/bars)*bw, cw=bw/bars;
+      g.fillStyle=tok(colour); g.globalAlpha=.75;
+      g.fillRect(x+2,y,cw-4,rowH-8); g.globalAlpha=1;
+    }
+  });
+  g.strokeStyle=tok("--rule-soft"); g.lineWidth=1;
+  for(let b=0;b<=bars;b++){ const x=pad+(b/bars)*bw;
+    g.beginPath(); g.moveTo(x,12); g.lineTo(x,h-12); g.stroke(); }
+  $("layerOut").innerHTML = repeated
+    ? `two <b>Melody:</b> rows → <b>8</b> bars, one after the other`
+    : `three different rows → <b>4</b> bars, played together`;
+}
+$("layerMode").addEventListener("click",()=>{
+  repeated=!repeated;
+  $("layerMode").setAttribute("aria-pressed",String(repeated));
+  $("layerMode").textContent=repeated?"Show different rows":"Show a repeated row";
+  drawLayers();
+});
+
+/* ===================== boot ===================== */
+if(!readHash()) source.value=PRESETS.ocean;
+compileNow(); drawDivide(); drawLayers(); stageLoop();
+window.addEventListener("resize",()=>{ drawRoll(playing?ac().currentTime-started:-1); drawDivide(); drawLayers(); });
+
+/* WebMIDI, if the browser and the user allow it. */
+if(navigator.requestMIDIAccess){
+  navigator.requestMIDIAccess().then((access)=>{
+    const outs=[...access.outputs.values()];
+    if(!outs.length)return;
+    const b=$("midiout"); b.hidden=false;
+    b.addEventListener("click",()=>{
+      if(!current)return;
+      const port=outs[0], t=performance.now()+100;
+      for(const n of current.notes){
+        port.send([0x90,n.pitch,n.velocity], t+n.time*1000);
+        port.send([0x80,n.pitch,0], t+(n.time+n.seconds)*1000);
+      }
+      b.textContent="Sent to "+port.name;
+    });
+  }).catch(()=>{});
+}
+
+/* Built-in browser models. A page cannot reach the Gemini or Copilot side panels --
+   those are extension surfaces with no page-facing API. Chrome's Prompt API is the
+   only in-page option and is trial-gated, so this reports what it actually finds. */
 (async()=>{
-  const head=$("ai-note");
+  const note=$("ai-note");
   const api=self.LanguageModel||(self.ai&&self.ai.languageModel);
   if(!api){
-    head.innerHTML=`Your browser has no built-in model, so this page compiles notation and nothing more. Browser AI side panels can't be reached from a page — they're extension surfaces. The full version connects to any provider you like, or borrows the model from an agent you're already running.`;
+    note.innerHTML="No built-in model in this browser, so the page compiles and nothing more. "
+      +"Browser AI side panels cannot be reached from a page — they are extension surfaces. "
+      +"The installed version connects to any provider you like, or borrows the model from an agent you already run.";
     return;
   }
   try{
     const ready=await(api.availability?api.availability():Promise.resolve("readily"));
-    head.innerHTML=`Your browser exposes a built-in model (<code>${String(ready)}</code>). In the installed version this is one of seventeen providers that can write and revise notation for you — describe a feel, get a chart back.`;
-  }catch(e){
-    head.textContent="A built-in model was detected but could not be queried from this page.";
-  }
+    note.innerHTML=`Your browser exposes a built-in model (<code>${String(ready)}</code>). `
+      +"In the installed version this is one of seventeen providers that can write and revise notation for you.";
+  }catch(e){ note.textContent="A built-in model was detected but could not be queried from this page."; }
 })();
 </script>
