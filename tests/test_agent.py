@@ -263,5 +263,63 @@ class TestPrompts(unittest.TestCase):
         self.assertEqual(load_prompt("nonexistent"), "")
 
 
+class TestDangerousToolGate(unittest.TestCase):
+    """`allow_dangerous` gates tools marked `dangerous`. Today nothing is marked.
+
+    That is a trap rather than a bug: the flag is offered on the MCP server as
+    `--allow-dangerous` ("offer tools that need approval"), so the next person to
+    add a destructive tool will reasonably assume it is guarded. These two tests
+    make the mechanism proven and the policy deliberate -- adding a dangerous
+    tool has to be a conscious, reviewed change rather than a silent one.
+    """
+
+    def _registry(self, allow: bool):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        return ToolRegistry(
+            sandbox=Sandbox(root=Path(directory.name)),
+            config=load_config(),
+            allow_dangerous=allow,
+        )
+
+    def test_a_dangerous_tool_is_refused_unless_it_is_allowed(self):
+        """The gate actually gates. Registered here rather than shipped."""
+        for allowed in (False, True):
+            with self.subTest(allow_dangerous=allowed):
+                registry = self._registry(allowed)
+                registry.add(
+                    "detonate", "test-only", {"type": "object", "properties": {}},
+                    lambda: "boom", dangerous=True,
+                )
+                text, failed = registry.call_result("detonate", {})
+                if allowed:
+                    self.assertEqual(text, "boom")
+                    self.assertFalse(failed)
+                else:
+                    self.assertTrue(failed)
+                    self.assertIn("needs approval", text)
+                    self.assertNotIn("boom", text)
+
+    def test_a_dangerous_tool_is_not_even_listed_without_the_flag(self):
+        """A model must not be told about a tool it will then be refused."""
+        registry = self._registry(False)
+        registry.add(
+            "detonate", "test-only", {"type": "object", "properties": {}},
+            lambda: "boom", dangerous=True,
+        )
+        self.assertNotIn("detonate", [spec.name for spec in registry.specs()])
+
+    def test_no_shipped_tool_is_marked_dangerous(self):
+        """Pins the current policy so that changing it is a decision, not a drift.
+
+        If you are here because this failed, you added a tool that needs
+        approval. That is fine -- confirm the gate is what you wanted, then name
+        it below.
+        """
+        registry = self._registry(False)
+        marked = sorted(name for name, tool in registry.tools.items() if tool.dangerous)
+        self.assertEqual(marked, [], "a shipped tool is now gated; see this test's docstring")
+
+
 if __name__ == "__main__":
     unittest.main()
