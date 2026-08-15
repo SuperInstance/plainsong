@@ -9,7 +9,9 @@ A release is a pushed tag. Everything after that is automatic.
 #    tapscript/version.py   __version__ = "1.1.0"
 #    pyproject.toml         version = "1.1.0"
 
-# 2. Move the Unreleased section of CHANGELOG.md under the new number and date.
+# 2. Move the Unreleased section of CHANGELOG.md under the new number, and set
+#    the date to the day you actually tag. A version that has not shipped has no
+#    date worth trusting.
 
 # 3. Prove it before tagging.
 python3 -m unittest discover -s tests
