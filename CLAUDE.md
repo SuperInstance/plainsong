@@ -44,6 +44,9 @@ python3 -m tapscript compile song.tap -o out.mid --audio out.wav
 python3 -m tapscript info song.tap --verbose  # every diagnostic
 python3 -m tapscript transpose song.tap Dm
 
+# The browser demo -- open it, no server needed
+#   docs/demo/index.html
+
 # Interfaces
 python3 -m tapscript tui
 python3 -m tapscript serve --port 8765
@@ -134,6 +137,19 @@ three interfaces call `pipeline.compile_text`. The version this replaced kept
 four copies of the GM table that had drifted apart. If you are about to copy a
 table between files, don't.
 
+There are exactly two live exceptions, both deliberate and both carrying a guard:
+
+- `tapscript/mcp/` also exists in the sibling repository (see Rough edges).
+- `docs/demo/index.html` carries its own parser, arranger and MIDI writer in
+  JavaScript, because the landing page has to run with nothing installed. It is
+  a faithful subset, verified note-for-note against this compiler across
+  triplets, 3/4, 6/8, chord qualities, stacks, sustains and repeated rows. The
+  page states the note count it produces for each preset, and
+  `tests/test_demo.py` compiles the same notation with the real compiler and
+  requires the same answer — so a change to the arranger that moves a count
+  fails in CI rather than making the demo quietly lie. If you change the
+  arranger, expect that test and re-check the page.
+
 **3.10 is a supported version, and it does not have `tomllib`.** That is why
 `runtime/_toml.py` exists. Do not delete it as dead code and do not `import
 tomllib` at module scope anywhere — the CLI would stop importing on the oldest
@@ -160,34 +176,88 @@ than asserted around.
 
 ## Specs
 
-`specs/*.toml` state what the system promises; `tapscript/selfcheck.py` holds the
-checks. They are separate from the tests because a user runs them to find out
-what works on their machine, and the build agent runs them to verify its own
-changes. A new capability wants a spec as well as a test.
+`tapscript/spec_files/*.toml` state what the system promises;
+`tapscript/selfcheck.py` holds the checks. They are separate from the tests
+because a user runs them to find out what works on their machine, and the build
+agent runs them to verify its own changes. A new capability wants a spec as well
+as a test.
+
+A `kind = "command"` check must write `{python}`, not `python3` — it substitutes
+the interpreter actually running. Hardcoding `python3` passes in a checkout and
+fails in every virtualenv and pipx install, reporting "No module named tapscript"
+about a package that installed perfectly well.
+
+**Anything read at runtime must live inside `tapscript/`.** A wheel carries only
+what is under the package, and `[tool.setuptools.package-data]` must list it.
+This is not theoretical: the specs sat in a top-level `specs/` directory and
+`tapscript spec` reported "no specs found" to everybody who installed rather than
+cloned — the self-verification the whole design leans on, quietly doing nothing.
+The songbook had the same fault. Both now live in the package. If you add a new
+kind of data file, add it to `package-data` and then prove it by installing the
+built wheel into a fresh venv *outside the source tree* and running
+`tapscript spec` there; see `docs/releasing.md`.
+
+## `check` reads the prose, not just the `.tap` files
+
+`tapscript check` extracts fenced ```` ```tapscript ```` blocks out of markdown
+and compiles them, with file:line reporting, and
+`tests/test_notation.py::TestDocumentedNotation` fails if any documented example
+stops compiling or stops making a sound.
+
+This exists because it did not. `check` walked only `.tap` files, `academy/`
+contains none, so `tapscript check ... academy` passed vacuously and reported
+"ok 6322 files checked" while fourteen of the seventeen documented examples in
+the repository compiled to **zero notes** — in four unrelated invented
+languages. A lesson on "dynamics and velocity" was a bouncing-ball physics
+simulation. A check that cannot fail is worse than no check, because it gets
+quoted as evidence.
+
+So: a block tagged ```` ```tapscript ```` is a promise. Syntax that is only
+proposed goes in ```` ```tapscript-proposed ````, and anything that is not
+TapScript should not claim to be. The three tutorials are held to this, which is
+what stops them rotting the way the academy did.
+
+## Diagnostics come from two places
+
+The parser produces some and the **arranger** produces others — an unreadable
+chord becoming silence is found while arranging, not while parsing. Anything
+reporting to a user has to ask for both. `cmd_check` showed only the parser's
+for a long time, so the arranger's never reached anybody.
+
+Related, and the reason that matters: an unrecognised token silently became a
+rest. `Xm9` compiled "ok, 0 warnings" and produced a bar of nothing. It now
+warns. Turning that on immediately found that `EbMaj7`, `G7alt` and `CM7` are
+legitimate spellings the chord parser does not accept and has been quietly
+dropping — still open, and it wants a spec and a changelog entry because it
+changes how existing notation compiles.
 
 ## Changing the notation
 
 Several thousand `.tap` files in this repository depend on it, plus files we
 cannot see. A change needs a failing-then-passing spec, a clean
-`tapscript check docs examples academy`, and a `CHANGELOG.md` entry. If existing
+a clean `tapscript check` over every source, and a `CHANGELOG.md` entry. If existing
 notation would parse differently afterwards, that is breaking even if the new
 reading is better: put it behind a setting and default to the old behaviour.
 
 ## Content directories
 
-`docs/fakebook/` and `docs/fakebook-archive/` (6,308 generated `.tap` files
-across a dozen languages), `docs/songs/`, `docs/prose/`, `docs/traditions/`,
-`docs/training/`, `academy/`. Generated material: it parses, but it is not all
-well written.
+`tapscript/songbook/` (3,824 chord charts across a dozen languages, packaged and
+shipped), `docs/fakebook-archive/` (2,484 more, not packaged), `docs/songs/`,
+`docs/prose/`, `docs/traditions/`, `docs/training/`, `academy/`. Generated
+material: it parses, but it is not all well written.
 
-**The fakebook is chord charts only, and must stay that way.** Melody and lyric
+**The songbook is chord charts only, and must stay that way.** Melody and lyric
 rows were stripped from all 6,309 files -- 41,990 rows -- because the documented
 policy (full melody plus lyrics only for public-domain works) was not being met
 and could not be enforced per title: nothing in the files records provenance,
 and the genre directories lie. A 1979 R. D. Burman film song was filed under
 `hindi/folk-traditional`. A chord progression is not protectable expression; a
 tune and its words are. If you regenerate anything here, emit chords only, and
-do not restore a melody without provenance to go with it.
+do not restore a melody without provenance to go with it. See
+`docs/songbook.md`.
+
+It lives inside the package because `tapscript library` and
+`tapscript play stand-by-me` found nothing for anyone who had not cloned.
 
 Two side effects worth knowing: the ~3,800 bar-count warnings this directory was
 famous for came from those rows and are now 2, and `academy/` teaches a syntax
@@ -211,6 +281,18 @@ reference for the notation.
 - The MCP server has never had a third-party MCP client connect to it. Its
   protocol behaviour is verified by hand-driven JSON-RPC against the
   specification, which is strong evidence and not the same thing.
+
+## Emitting notation must round-trip
+
+`transform.to_text` writes notation that `parse` has to read back to the same
+shape. It did not: a player row with options closed with `|` and then appended
+` | vel: 70`, so the text carried `... | | vel: 70`, and the empty cell was read
+as a real bar. Every transpose pushed each `@player` row one bar further out of
+step with its section, and the resulting warning looked like the user's mistake.
+
+`tests/test_notation.py::TestRoundTrip` holds the invariant: repeated
+transposition does not change any row's width, and emitted text parses back to
+the shape it came from. If you touch the emitter, that is the test to watch.
 
 ## Two words that used to be one
 

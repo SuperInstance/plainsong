@@ -1,0 +1,549 @@
+<title>TapScript Playground</title>
+<style>
+  /* Light is the base. Every colour is a token so both themes resolve as a set. */
+  :root {
+    --ink:        #14181F;
+    --ink-soft:   #4A5260;
+    --ink-faint:  #8C93A1;
+    --ground:     #F6F4EF;
+    --panel:      #FFFFFF;
+    --rule:       #DFDBD1;
+    --rule-soft:  #ECE8E0;
+    --amber:      #B4761A;
+    --amber-lit:  #E8A33D;
+    --teal:       #2E7F78;
+    --shadow:     0 1px 2px rgba(20, 24, 31, .06), 0 8px 24px rgba(20, 24, 31, .05);
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --serif: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink:       #E8E6E1;
+      --ink-soft:  #A0A6B2;
+      --ink-faint: #6B7280;
+      --ground:    #0E1116;
+      --panel:     #161A22;
+      --rule:      #2A303B;
+      --rule-soft: #1E232C;
+      --amber:     #E8A33D;
+      --amber-lit: #FFC46B;
+      --teal:      #5FBDB3;
+      --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink:       #E8E6E1;
+    --ink-soft:  #A0A6B2;
+    --ink-faint: #6B7280;
+    --ground:    #0E1116;
+    --panel:     #161A22;
+    --rule:      #2A303B;
+    --rule-soft: #1E232C;
+    --amber:     #E8A33D;
+    --amber-lit: #FFC46B;
+    --teal:      #5FBDB3;
+    --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+  /* The bar line is the motif: a hairline rule that runs the page. */
+  .rule-top { border-top: 1px solid var(--rule); }
+
+  header { padding: 64px 0 40px; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--amber); margin: 0 0 20px;
+  }
+  h1 {
+    font-family: var(--mono); font-weight: 500;
+    font-size: clamp(34px, 6vw, 62px); line-height: 1.04;
+    letter-spacing: -.02em; margin: 0 0 20px; text-wrap: balance;
+  }
+  h1 .bar { color: var(--amber); font-weight: 400; }
+  .lede { font-size: clamp(18px, 2vw, 21px); color: var(--ink-soft); max-width: 62ch; margin: 0; }
+
+  h2 {
+    font-family: var(--mono); font-weight: 500; font-size: 13px;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--ink-faint);
+    margin: 0 0 18px; padding-left: 14px; border-left: 2px solid var(--amber);
+  }
+  h3 { font-family: var(--mono); font-weight: 500; font-size: 16px; margin: 0 0 8px; letter-spacing: -.01em; }
+
+  section { padding: 44px 0; }
+
+  .studio { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: start; }
+  @media (max-width: 900px) { .studio { grid-template-columns: minmax(0,1fr); } }
+
+  .panel {
+    background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 4px; box-shadow: var(--shadow); overflow: hidden;
+  }
+  .panel-head {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 10px 14px; border-bottom: 1px solid var(--rule-soft);
+    font-family: var(--mono); font-size: 12px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-faint);
+  }
+
+  textarea {
+    width: 100%; min-height: 340px; border: 0; resize: vertical; display: block;
+    padding: 16px; background: transparent; color: var(--ink);
+    font-family: var(--mono); font-size: 13.5px; line-height: 1.75; tab-size: 2;
+  }
+  textarea:focus { outline: 2px solid var(--amber); outline-offset: -2px; }
+
+  canvas { display: block; width: 100%; height: 260px; background: transparent; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 14px; border-top: 1px solid var(--rule-soft); }
+  button {
+    font-family: var(--mono); font-size: 13px; letter-spacing: .02em;
+    padding: 9px 15px; border-radius: 3px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); cursor: pointer;
+    transition: background .14s ease, border-color .14s ease, color .14s ease;
+  }
+  button:hover:not(:disabled) { border-color: var(--amber); color: var(--amber); }
+  button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary { background: var(--amber); border-color: var(--amber); color: var(--ground); font-weight: 500; }
+  button.primary:hover:not(:disabled) { background: var(--amber-lit); border-color: var(--amber-lit); color: var(--ground); }
+
+  .readout { padding: 12px 14px; border-top: 1px solid var(--rule-soft); font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); }
+  .readout b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .diag { color: var(--amber); display: block; margin-top: 6px; }
+  .diag.err { color: #C0392B; }
+  :root[data-theme="dark"] .diag.err, :root:not([data-theme="light"]) .diag.err { color: #F0776A; }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .diag.err { color: #C0392B; } }
+
+  .presets { display: flex; flex-wrap: wrap; gap: 6px; }
+  .presets button { padding: 5px 11px; font-size: 12px; }
+
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; }
+  .cols p { color: var(--ink-soft); margin: 0; }
+  code {
+    font-family: var(--mono); font-size: .88em;
+    background: var(--rule-soft); padding: .12em .38em; border-radius: 3px; color: var(--ink);
+  }
+  pre {
+    font-family: var(--mono); font-size: 13px; line-height: 1.7; margin: 0;
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 16px; overflow-x: auto; color: var(--ink);
+  }
+  .grid-note { color: var(--teal); }
+
+  footer { padding: 40px 0 72px; color: var(--ink-faint); font-family: var(--mono); font-size: 12.5px; }
+  a { color: var(--amber); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Plain-text music notation</p>
+    <h1>Write a lead sheet<span class="bar"> | </span>hear a band</h1>
+    <p class="lede">
+      TapScript is notation you can type in any editor, diff in git, and compile to
+      MIDI. This whole page is the compiler — it runs in your browser, offline,
+      with nothing installed and nothing sent anywhere.
+    </p>
+  </header>
+</div>
+
+<div class="wrap">
+  <section class="rule-top">
+    <h2>Playground</h2>
+    <div class="studio">
+      <div class="panel">
+        <div class="panel-head">
+          <span>song.tap</span>
+          <span class="presets">
+            <button data-preset="ocean">Ocean Diner</button>
+            <button data-preset="blues">12-bar blues</button>
+            <button data-preset="waltz">Waltz in 3/4</button>
+            <button data-preset="triplets">Bar division</button>
+          </span>
+        </div>
+        <textarea id="source" spellcheck="false" aria-label="TapScript notation"></textarea>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><span>Arrangement</span><span id="clock">0.0s</span></div>
+        <canvas id="roll" aria-label="Piano roll of the compiled arrangement"></canvas>
+        <div class="controls">
+          <button id="play" class="primary">Play</button>
+          <button id="stop" disabled>Stop</button>
+          <button id="midi">Download MIDI</button>
+        </div>
+        <div class="readout" id="readout">Compiling…</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top">
+    <h2>How it reads</h2>
+    <div class="cols">
+      <div>
+        <h3>Rows are voices</h3>
+        <p><code>Chords:</code>, <code>Melody:</code> and any <code>@name</code> row play
+        <em>together</em>. Four rows of four bars is one four-bar passage by a band,
+        not sixteen bars in sequence.</p>
+      </div>
+      <div>
+        <h3>Bars divide themselves</h3>
+        <p>You never write durations. <code>| A4 C5 E5 |</code> is three tokens in one
+        bar, so it is a triplet. Six tokens are eighth notes. A bar is one bar long
+        and its contents share it out.</p>
+      </div>
+      <div>
+        <h3>Dots are silence, dashes are chords</h3>
+        <p><code>.</code> means nothing new starts here. <code>c4-e4-g4</code> stacks
+        pitches that sound at the same instant. Pitches carry an octave — a bare
+        <code>A</code> is the chord, not the note.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top">
+    <h2>A written time is an arrival time</h2>
+    <div class="cols">
+      <div style="grid-column: span 1">
+        <p>The idea the rest of the system is built on, and the one thing here with
+        no equivalent elsewhere. A score says “beat three” without saying <em>where</em>
+        beat three happens — at the player's hands, at the instrument, or at the ear
+        it was written for.</p>
+        <p style="margin-top: 14px">Declare a stage and TapScript reads written times as the moment sound should
+        <span class="grid-note">arrive</span>, then solves backwards for when each player must move. An organ
+        14&nbsp;m away, whose pipe takes 140&nbsp;ms to speak, has to be played
+        241&nbsp;ms early to land on the beat.</p>
+      </div>
+      <div>
+<pre>[Stage]
+listener: conductor
+@timpani: pos 4,-9  | speech: percussion
+@organ:   pos 0,-14 | speech: organ-large
+
+  voice    distance  travel  act
+  timpani  9.8 m     29 ms   -30 ms
+  organ    14.0 m    41 ms   -241 ms
+
+  spread at the podium   0 ms
+  spread at organ's desk  non-zero</pre>
+        <p style="margin-top: 14px; font-size: 15px">Which is why an orchestra watches
+        the conductor rather than listening to each other. The eyes carry intention;
+        the ears only carry history. Solving stages needs the full compiler — this
+        page compiles notation, not rooms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top">
+    <h2>Take it further</h2>
+    <div class="cols">
+      <div>
+        <h3>Install it</h3>
+        <pre>pip install tapscript
+tapscript new "My Song" -o s.tap
+tapscript compile s.tap --play</pre>
+        <p style="margin-top: 12px">Python 3.10+. No dependencies at all — the parser,
+        the MIDI writer and the synthesiser are standard library only.</p>
+      </div>
+      <div>
+        <h3>What this page leaves out</h3>
+        <p>The browser engine is a faithful subset, checked note-for-note against the
+        reference compiler. The full version adds the stage solver, a soundfont
+        renderer, several thousand chord charts, an embedded agent, and an MCP server
+        so any number of agents can write one score at once.</p>
+      </div>
+      <div>
+        <h3 id="ai-head">Agentic compiling</h3>
+        <p id="ai-note">Checking whether your browser has a built-in model…</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer class="rule-top">
+    Runs entirely in your browser · no network, no analytics, nothing uploaded ·
+    <a href="https://github.com/SuperInstance/tapscript-studio">github.com/SuperInstance/tapscript-studio</a>
+  </footer>
+</div>
+
+<script type="application/json" id="parity">
+{"ocean": 61, "blues": 93, "waltz": 48, "triplets": 15}
+</script>
+<script type="module">
+const LETTER_PC={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
+const REST=new Set([".","-","_","rest","x"]);
+const SUSTAIN=new Set(["~","..","hold"]);
+const QUALITIES=[["maj7",[0,4,7,11]],["maj9",[0,4,7,11,14]],["m7b5",[0,3,6,10]],["m7",[0,3,7,10]],["m9",[0,3,7,10,14]],["m6",[0,3,7,9]],["m",[0,3,7]],["min",[0,3,7]],["dim7",[0,3,6,9]],["dim",[0,3,6]],["aug",[0,4,8]],["sus4",[0,5,7]],["sus2",[0,2,7]],["sus",[0,5,7]],["6",[0,4,7,9]],["9",[0,4,7,10,14]],["7",[0,4,7,10]],["",[0,4,7]]];
+function pitchClass(t){const m=/^([A-Ga-g])([#b♯♭]*)/.exec(t);if(!m)return null;let pc=LETTER_PC[m[1].toUpperCase()];for(const c of m[2])pc+=(c==="#"||c==="♯")?1:-1;return{pc:((pc%12)+12)%12,rest:t.slice(m[0].length)};}
+function parsePitch(t,oct){const h=pitchClass(t);if(!h)return null;const m=/^(-?\d+)$/.exec(h.rest);if(!m&&h.rest!=="")return null;const o=m?parseInt(m[1],10):oct;const v=(o+1)*12+h.pc;return v>=0&&v<=127?v:null;}
+function parseChord(t){const h=pitchClass(t);if(!h)return null;let tail=h.rest,bass=null;const s=tail.indexOf("/");if(s>=0){bass=tail.slice(s+1);tail=tail.slice(0,s);}for(const[n,iv]of QUALITIES){if(tail===n)return{root:h.pc,intervals:iv,bass};}return null;}
+function resolve(tok,role,oct){const b=tok.trim(),l=b.toLowerCase();if(SUSTAIN.has(l))return{kind:"sustain"};if(REST.has(l))return{kind:"rest"};
+if(role==="chords"){const c=parseChord(b);return c?{kind:"chord",chord:c}:{kind:"rest",unreadable:b};}
+const parts=b.split("-").filter(Boolean),ps=[];for(const p of parts){const v=parsePitch(p,oct);if(v===null){ps.length=0;break;}ps.push(v);}
+if(ps.length)return{kind:"note",pitches:ps};const c=parseChord(b);if(c)return{kind:"chord",chord:c};return{kind:"rest",unreadable:b};}
+const META=/^([A-Za-z_]+)\s*:\s*(.+)$/;
+function applyMeta(s,pair){const m=META.exec(pair.trim());if(!m)return;const k=m[1].toLowerCase(),v=m[2].trim();
+if(k==="key")s.key=v;else if(k==="tempo")s.tempo=parseFloat(v)||s.tempo;
+else if(k==="time"||k==="meter"||k==="metre"){const t=/^(\d+)\s*\/\s*(\d+)$/.exec(v);if(t){s.beats=+t[1];s.unit=+t[2];}}}
+function parseRow(line,ln){let role=null,name="",body=line;
+const pl=/^@([A-Za-z][\w-]*)\s*(.*)$/.exec(line);
+if(pl&&!/^@[A-Za-z][\w-]*\s*:/.test(line)){role="player";name=pl[1];body=pl[2];}
+else{const nm=/^([A-Za-z][\w ]*?)\s*:\s*(.*)$/.exec(line);if(!nm)return null;const lb=nm[1].trim().toLowerCase();
+if(lb.startsWith("chord"))role="chords";else if(lb.startsWith("melody"))role="melody";else return null;name=role;body=nm[2];}
+let vel=null;const cells=body.split("|").map(c=>c.trim());
+if(cells.length&&/^vel\s*:/i.test(cells[cells.length-1]))vel=parseInt(cells.pop().split(":")[1],10);
+while(cells.length&&cells[0]==="")cells.shift();while(cells.length&&cells[cells.length-1]==="")cells.pop();
+if(!cells.length)return null;
+return{role,name,lineNumber:ln,velocity:vel,bars:cells.map(c=>c.split(/\s+/).filter(Boolean))};}
+function parse(text){const s={title:"",key:"C",tempo:100,beats:4,unit:4,sections:[],diagnostics:[]};let sec=null;
+text.split(/\r?\n/).forEach((raw,i)=>{const line=raw.trim();if(!line||line.startsWith("//")||line.startsWith("#"))return;
+const tr=/^\*\*TRACK:\s*(.+?)\*\*$/.exec(line);if(tr){s.title=tr[1].trim();return;}
+if(/^\[MetaData\]$/i.test(line))return;
+const hd=/^\[([^\]]+)\]\s*(?:\(([^)]*)\))?\s*$/.exec(line);
+if(hd){if(/^stage$/i.test(hd[1])){sec={stage:true,lines:[]};s.sections.push(sec);return;}
+sec={tag:hd[1].trim(),label:(hd[2]||"").trim(),lines:[]};s.sections.push(sec);return;}
+if(!line.includes("|")&&META.test(line)){for(const p of line.split("|"))applyMeta(s,p);return;}
+if(line.includes("|")&&!sec&&META.test(line.split("|")[0].trim())){for(const p of line.split("|"))applyMeta(s,p);return;}
+if(sec&&sec.stage)return;if(!sec)return;
+const row=parseRow(line,i+1);if(row)sec.lines.push(row);});
+if(!s.sections.length)s.diagnostics.push({severity:"error",line:1,message:"no sections yet — open one with a header such as [V1]"});
+return s;}
+const DEF_OCT={melody:4,chords:3,player:3},DEF_VEL={melody:88,chords:64,player:76};
+function voice(ch,oct){const base=(oct+1)*12+ch.root;const ps=ch.intervals.slice(0,4).map(i=>base+i);
+if(ch.bass){const b=pitchClass(ch.bass);if(b)ps.unshift(oct*12+b.pc);}return ps.filter(p=>p>=0&&p<=127);}
+function layRow(row,start,barBeats,notes,voices,diags){const oct=DEF_OCT[row.role]??3;const vel=row.velocity??DEF_VEL[row.role]??76;
+if(!voices.has(row.name))voices.set(row.name,row.role);const bad=new Set();
+row.bars.forEach((toks,bi)=>{if(!toks.length)return;const barStart=start+bi*barBeats;const step=barBeats/toks.length;
+const slots=toks.map(t=>resolve(t,row.role,oct));
+slots.forEach((sl,i)=>{if(sl.unreadable)bad.add(sl.unreadable);if(sl.kind==="rest"||sl.kind==="sustain")return;
+let len=step;for(let j=i+1;j<slots.length&&slots[j].kind==="sustain";j++)len+=step;
+const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voice(sl.chord,oct);
+for(const p of ps)notes.push({beat:at,beats:len,pitch:p,velocity:vel,voice:row.name,role:row.role});});});
+if(bad.size)diags.push({severity:"warning",line:row.lineNumber,
+message:`${row.role} row: nothing understood ${[...bad].slice(0,3).join(", ")} — silence there instead`,
+hint:"chords look like Am, F#m7, Bb; pitches carry an octave, as in A4"});}
+function arrange(score){const notes=[],voices=new Map();const barBeats=score.beats*(4/score.unit);
+let cursor=0;const diags=[...score.diagnostics];
+for(const sec of score.sections){if(sec.stage)continue;let widest=0;const groups=new Map();
+for(const row of sec.lines){const k=`${row.role}:${row.name}`;const seen=groups.get(k)||0;
+groups.set(k,seen+row.bars.length);layRow(row,cursor+seen*barBeats,barBeats,notes,voices,diags);
+widest=Math.max(widest,seen+row.bars.length);}cursor+=widest*barBeats;}
+const spb=60/score.tempo;
+for(const n of notes){n.time=n.beat*spb;n.seconds=n.beats*spb;}
+notes.sort((a,b)=>a.beat-b.beat||a.pitch-b.pitch);
+return{notes,voices:[...voices.keys()],beats:cursor,seconds:cursor*spb,diagnostics:diags,score};}
+function varlen(v){const b=[v&0x7f];v>>=7;while(v>0){b.unshift((v&0x7f)|0x80);v>>=7;}return b;}
+function chunkOf(b){const n=b.length;return[0x4d,0x54,0x72,0x6b,(n>>24)&0xff,(n>>16)&0xff,(n>>8)&0xff,n&0xff,...b];}
+const PROGRAM={melody:0,chords:24,bass:33,piano:0,horns:61,strings:48,rhythm:26};
+function toMidi(a){const TPQ=480;const byVoice=new Map();
+for(const n of a.notes){if(!byVoice.has(n.voice))byVoice.set(n.voice,[]);byVoice.get(n.voice).push(n);}
+const chunks=[[0x4d,0x54,0x68,0x64,0,0,0,6,0,1,0,byVoice.size+1,(TPQ>>8)&0xff,TPQ&0xff]];
+const us=Math.round(60000000/a.score.tempo);
+chunks.push(chunkOf([...varlen(0),0xff,0x51,0x03,(us>>16)&0xff,(us>>8)&0xff,us&0xff,...varlen(0),0xff,0x2f,0x00]));
+let ch=0;
+for(const[name,notes]of byVoice){const ev=[];
+for(const n of notes){ev.push({t:Math.round(n.beat*TPQ),k:0x90,p:n.pitch,v:n.velocity});
+ev.push({t:Math.round((n.beat+n.beats)*TPQ),k:0x80,p:n.pitch,v:0});}
+ev.sort((x,y)=>x.t-y.t||x.k-y.k);const b=[];
+const label=`TapScript ${name}`;
+b.push(...varlen(0),0xff,0x03,label.length,...[...label].map(c=>c.charCodeAt(0)&0x7f));
+b.push(...varlen(0),0xc0|(ch&0x0f),(PROGRAM[name]??0)&0x7f);
+let last=0;for(const e of ev){b.push(...varlen(e.t-last),e.k|(ch&0x0f),e.p&0x7f,e.v&0x7f);last=e.t;}
+b.push(...varlen(0),0xff,0x2f,0x00);chunks.push(chunkOf(b));ch=ch===8?10:ch+1;}
+return new Uint8Array(chunks.flat());}
+
+/* ---- presets ---- */
+const PRESETS={
+ocean:`**TRACK: Ocean Diner**
+[MetaData]
+key: Am | tempo: 96
+time: 4/4
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
+@bass   | a1 . e2 . | f1 . c2 . | c1 . g1 . | g1 . d2 . | vel: 70
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+Melody: | F4 . A4 C5 | G4 . B4 D5 | A4 . C5 E5 | A4 . . . |
+@bass   | f1 . c2 . | g1 . d2 . | a1 . e2 . | a1 . . . | vel: 74`,
+blues:`**TRACK: 12-Bar Blues in G**
+key: G | tempo: 104
+time: 4/4
+
+[Blues] (12 Bars)
+Chords: | G7 . . . | G7 . . . | G7 . . . | G7 . . . | C7 . . . | C7 . . . | G7 . . . | G7 . . . | D7 . . . | C7 . . . | G7 . . . | D7 . . . |
+Melody: | G4 B4 D5 B4 | D5 . B4 G4 | A4 B4 D5 . | B4 A4 G4 . | C5 . . . | B4 C5 B4 A4 | G4 B4 D5 B4 | D5 . B4 . | D5 . . . | C5 . B4 A4 | G4 B4 D5 B4 | D5 . . . |
+@bass   | g2 . . . | g2 . . . | g2 . . . | g2 . . . | c3 . . . | c3 . . . | g2 . . . | g2 . . . | d3 . . . | c3 . . . | g2 . . . | d3 . . . | vel: 72`,
+waltz:`**TRACK: Waltz**
+key: C | tempo: 132
+time: 3/4
+
+[A] (8 Bars)
+Chords: | C . . | F . . | C . . | G . . | C . . | Am . . | Dm . . | G . . |
+Melody: | C4 D4 E4 | F4 G4 A4 | E4 . . | G4 . . | E5 D5 C5 | A4 . . | F4 G4 A4 | G4 . . |
+@bass   | c2 . . | f2 . . | c2 . . | g2 . . | c2 . . | a1 . . | d2 . . | g2 . . | vel: 66`,
+triplets:`**TRACK: The Bar Divides Itself**
+key: C | tempo: 100
+time: 4/4
+
+[A] (4 Bars)
+Melody: | C4 . . . | C4 E4 G4 | C4 . E4 . G4 . | C4 D4 E4 F4 G4 A4 B4 C5 |
+
+// One bar each: four beats, a triplet, six eighths, then eight notes.
+// Nothing declares a duration. The bar is always one bar long.`};
+
+/* ---- wiring ---- */
+const $=(id)=>document.getElementById(id);
+const source=$("source"), roll=$("roll"), readout=$("readout");
+let current=null, audio=null, playing=false, started=0, raf=0;
+
+function compileNow(){
+  const a=arrange(parse(source.value));
+  current=a;
+  const errors=a.diagnostics.filter(d=>d.severity==="error");
+  const warnings=a.diagnostics.filter(d=>d.severity==="warning");
+  const voices=a.voices.length?a.voices.join(", "):"none yet";
+  let html=`<b>${a.notes.length}</b> notes · <b>${a.voices.length}</b> voice${a.voices.length===1?"":"s"} (${voices}) · <b>${a.seconds.toFixed(1)}s</b> · ${a.score.tempo} bpm · ${a.score.beats}/${a.score.unit}`;
+  for(const d of errors.slice(0,2)) html+=`<span class="diag err">line ${d.line}: ${d.message}</span>`;
+  for(const d of warnings.slice(0,2)) html+=`<span class="diag">line ${d.line}: ${d.message}</span>`;
+  readout.innerHTML=html;
+  $("play").disabled=a.notes.length===0;
+  $("midi").disabled=a.notes.length===0;
+  draw(-1);
+}
+
+function draw(now){
+  const dpr=window.devicePixelRatio||1;
+  const w=roll.clientWidth, h=roll.clientHeight;
+  roll.width=w*dpr; roll.height=h*dpr;
+  const g=roll.getContext("2d"); g.scale(dpr,dpr); g.clearRect(0,0,w,h);
+  const css=getComputedStyle(document.documentElement);
+  const rule=css.getPropertyValue("--rule-soft").trim();
+  const amber=css.getPropertyValue("--amber").trim();
+  const lit=css.getPropertyValue("--amber-lit").trim();
+  const teal=css.getPropertyValue("--teal").trim();
+  if(!current||!current.notes.length){
+    g.fillStyle=css.getPropertyValue("--ink-faint").trim();
+    g.font='13px ui-monospace, monospace';
+    g.fillText("nothing to play yet",16,26); return;
+  }
+  const pitches=current.notes.map(n=>n.pitch);
+  const lo=Math.min(...pitches)-2, hi=Math.max(...pitches)+2;
+  const span=Math.max(hi-lo,6), total=Math.max(current.beats,1);
+  const pad=10, rowH=(h-pad*2)/span;
+
+  // Bar lines: the motif, and genuinely informative here.
+  const barBeats=current.score.beats*(4/current.score.unit);
+  g.strokeStyle=rule; g.lineWidth=1;
+  for(let b=0;b<=total;b+=barBeats){
+    const x=(b/total)*(w-pad*2)+pad;
+    g.beginPath(); g.moveTo(x,pad); g.lineTo(x,h-pad); g.stroke();
+  }
+  for(const n of current.notes){
+    const x=(n.beat/total)*(w-pad*2)+pad;
+    const wd=Math.max((n.beats/total)*(w-pad*2)-1.5,2);
+    const y=h-pad-((n.pitch-lo)/span)*(h-pad*2)-rowH;
+    const on=now>=0&&now>=n.time&&now<n.time+n.seconds;
+    g.fillStyle=on?lit:(n.role==="chords"?teal:amber);
+    g.globalAlpha=on?1:(n.role==="chords"?.42:.72);
+    g.fillRect(x,y,wd,Math.max(rowH-1.5,2.5));
+  }
+  g.globalAlpha=1;
+  if(now>=0){
+    const x=(now/(current.seconds||1))*(w-pad*2)+pad;
+    g.strokeStyle=lit; g.lineWidth=1.5;
+    g.beginPath(); g.moveTo(x,pad*.5); g.lineTo(x,h-pad*.5); g.stroke();
+  }
+}
+
+function play(){
+  if(!current||!current.notes.length)return;
+  audio=audio||new (window.AudioContext||window.webkitAudioContext)();
+  if(audio.state==="suspended")audio.resume();
+  stop(true);
+  playing=true; $("play").disabled=true; $("stop").disabled=false;
+  const t0=audio.currentTime+0.08; started=t0;
+  const master=audio.createGain(); master.gain.value=0.22; master.connect(audio.destination);
+  for(const n of current.notes){
+    const osc=audio.createOscillator(), gain=audio.createGain();
+    osc.type=n.role==="chords"?"triangle":(n.role==="player"?"sine":"sawtooth");
+    osc.frequency.value=440*Math.pow(2,(n.pitch-69)/12);
+    const at=t0+n.time, dur=Math.max(n.seconds*0.92,0.06), peak=(n.velocity/127)*0.5;
+    gain.gain.setValueAtTime(0,at);
+    gain.gain.linearRampToValueAtTime(peak,at+0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0008,at+dur);
+    osc.connect(gain); gain.connect(master);
+    osc.start(at); osc.stop(at+dur+0.02);
+    n._osc=osc;
+  }
+  const tick=()=>{
+    if(!playing)return;
+    const now=audio.currentTime-started;
+    $("clock").textContent=Math.max(now,0).toFixed(1)+"s";
+    draw(now);
+    if(now>current.seconds+0.25){stop();return;}
+    raf=requestAnimationFrame(tick);
+  };
+  raf=requestAnimationFrame(tick);
+}
+
+function stop(quiet){
+  playing=false; cancelAnimationFrame(raf);
+  if(current)for(const n of current.notes){try{n._osc&&n._osc.stop();}catch(e){}n._osc=null;}
+  if(!quiet){$("play").disabled=false; $("stop").disabled=true; $("clock").textContent="0.0s"; draw(-1);}
+}
+
+$("play").addEventListener("click",play);
+$("stop").addEventListener("click",()=>stop());
+$("midi").addEventListener("click",()=>{
+  if(!current)return;
+  const blob=new Blob([toMidi(current)],{type:"audio/midi"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download=(current.score.title||"tapscript").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")+".mid";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+});
+for(const b of document.querySelectorAll("[data-preset]")){
+  b.addEventListener("click",()=>{stop();source.value=PRESETS[b.dataset.preset];compileNow();});
+}
+let debounce=0;
+source.addEventListener("input",()=>{clearTimeout(debounce);debounce=setTimeout(compileNow,180);});
+window.addEventListener("resize",()=>draw(playing&&audio?audio.currentTime-started:-1));
+
+source.value=PRESETS.ocean;
+compileNow();
+
+/* Built-in browser models, honestly reported. A page cannot reach the Gemini or
+   Copilot side panels -- those are extension surfaces with no page-facing API.
+   Chrome's Prompt API is the only in-page option, and it is trial-gated. */
+(async()=>{
+  const head=$("ai-note");
+  const api=self.LanguageModel||(self.ai&&self.ai.languageModel);
+  if(!api){
+    head.innerHTML=`Your browser has no built-in model, so this page compiles notation and nothing more. Browser AI side panels can't be reached from a page — they're extension surfaces. The full version connects to any provider you like, or borrows the model from an agent you're already running.`;
+    return;
+  }
+  try{
+    const ready=await(api.availability?api.availability():Promise.resolve("readily"));
+    head.innerHTML=`Your browser exposes a built-in model (<code>${String(ready)}</code>). In the installed version this is one of seventeen providers that can write and revise notation for you — describe a feel, get a chart back.`;
+  }catch(e){
+    head.textContent="A built-in model was detected but could not be queried from this page.";
+  }
+})();
+</script>
