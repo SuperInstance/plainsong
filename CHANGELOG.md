@@ -146,8 +146,10 @@ resolved at runtime.
   that prove it. `tapscript spec` runs them, `tapscript doctor` reports the
   host, and the build agent runs both to verify its own changes. The specs used
   to live beside the package in a top-level `specs/`; a wheel carries only what
-  is under the package, so `tapscript spec` printed "no specs found" to every
-  `pip install` user rather than to nobody. They are packaged now, and a
+  is under the package, so `tapscript spec` reported "no specs found" to
+  everybody who installed rather than cloned — the self-verification the whole
+  design leans on, quietly doing nothing for exactly the people least able to
+  notice. They are packaged now, and a
   `kind = "command"` check substitutes `{python}` for the interpreter actually
   running instead of hardcoding `python3` — the old form broke in every
   virtualenv and pipx install, reporting "No module named tapscript" about a
@@ -195,7 +197,12 @@ resolved at runtime.
   disagree on the version, since one feeds the wheel and the other feeds
   `--version`.
 - `.github/workflows/release.yml`: tag → test → build → publish to PyPI via
-  trusted publishing → GitHub release.
+  trusted publishing → GitHub release. The first step refuses a tag that
+  disagrees with `tapscript/version.py`, because the tag is the only thing that
+  says which version a release is and nothing in the tree knows about it — a
+  `v1.1.0` tag on a tree still saying 1.0.0 would publish 1.0.0 under a release
+  page claiming otherwise, and PyPI will not accept that filename twice to let
+  you correct it.
 - **A browser demo that compiles for real**, at `docs/demo/index.html`: a
   parser, arranger, MIDI writer and WebAudio player in one self-contained file
   with no network, no build step and no dependencies. It is a second
