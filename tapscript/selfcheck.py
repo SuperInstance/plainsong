@@ -149,6 +149,71 @@ def check_round_trip() -> tuple[bool, str]:
     return True, f"{first.note_count} notes preserved"
 
 
+def check_chord_vocabulary() -> tuple[bool, str]:
+    """Chord symbols are read by rule, so compound spellings work unenumerated.
+
+    Each case here fails under a lookup table. `C7b9#11` and `F13#11` are not
+    in any table because nobody types every combination; `C7M` is how Brazil
+    writes a major seventh and was the largest group of unreadable chords in
+    the bundled songbook; `G7alt` names a scale rather than a note set.
+    """
+    from .notation.theory import TheoryError, parse_chord
+
+    expected = {
+        # symbol      -> semitones above the root
+        "C7b9#11": (0, 4, 7, 10, 13, 18),
+        "F13#11": (0, 4, 7, 10, 14, 18, 21),
+        "C7M": (0, 4, 7, 11),        # sétima maior
+        "EbMaj7": (0, 4, 7, 11),     # capitalised, which used to refuse
+        "C13": (0, 4, 7, 10, 14, 21),  # no eleventh: it fights the major third
+        "Cm13": (0, 3, 7, 10, 14, 17, 21),  # minor third, so the eleventh stays
+        "C9sus4": (0, 5, 7, 10, 14),   # no third, so nothing to avoid
+        "Bb-7": (0, 3, 7, 10),       # a minus before a seven is minor
+    }
+    for symbol, intervals in expected.items():
+        try:
+            got = parse_chord(symbol).intervals()
+        except TheoryError as error:
+            return False, f"{symbol} was refused: {error}"
+        if got != intervals:
+            return False, f"{symbol} gave {got}, expected {intervals}"
+
+    # `alt` subtracts. The altered scale has no natural fifth and no natural
+    # ninth, and a chord that grew them would be the wrong chord entirely.
+    alt = parse_chord("C7alt")
+    if 7 in alt.intervals():
+        return False, "C7alt kept its natural fifth"
+    if 14 in alt.intervals():
+        return False, "C7alt kept its natural ninth"
+
+    # Reading more spellings must not change one already understood.
+    if parse_chord("Cmaj7").intervals() != (0, 4, 7, 11):
+        return False, "the common vocabulary moved"
+
+    return True, f"{len(expected)} compound spellings derived, none enumerated"
+
+
+def check_chord_transposition() -> tuple[bool, str]:
+    """A chord the quality names cannot express still survives a transpose.
+
+    No quality string can carry `b9#11`, so reconstructing the symbol from one
+    would drop the alterations silently. The suffix is carried verbatim and
+    only the root is respelled, which this checks by going round the circle.
+    """
+    from .notation.theory import parse_chord
+
+    for symbol in ("C7b9#11", "G7alt", "C7M", "C6/9", "Cø", "Bb-7", "Cm/Bb"):
+        start = parse_chord(symbol)
+        here = start
+        for _ in range(12):
+            here = parse_chord(here.transpose(1).name())
+        if {(start.root_pc + i) % 12 for i in start.intervals()} != {
+            (here.root_pc + i) % 12 for i in here.intervals()
+        }:
+            return False, f"{symbol} did not survive twelve transpositions"
+    return True, "seven symbols round the circle unchanged"
+
+
 def check_transpose() -> tuple[bool, str]:
     """Transposing moves every voice, including the chord row."""
     from .notation import arrange, parse

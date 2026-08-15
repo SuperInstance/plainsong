@@ -2,6 +2,52 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### Chord symbols are read by a grammar
+
+- **Compound spellings work without being enumerated.** The chord parser held a
+  table of about thirty spellings, so `C7b9` worked and `C7b9#11` did not --
+  not because anyone disagreed about what the second one means, but because
+  nobody had typed that combination in. Symbols are now parsed into a root, a
+  core quality, a stack height and a list of modifications, and the notes are
+  derived from those. `C7b9#11`, `F13#11`, `Bbmaj7#5`, `Cadd11`, `G7#11` and
+  `C9sus4` all read now, and none of them appears in any table.
+- **`C7M` is a major seventh.** Standard in Brazil, from *sétima maior*, and
+  the largest single group of unreadable chords in the bundled songbook -- 39
+  of them. `C7M` and `Cm7` differ only in the order of two characters and are
+  different chords, so an `M` counts as a major seventh only when a `7`
+  immediately precedes it.
+- **`G7alt` reads, and subtracts rather than adds.** The altered scale contains
+  no natural fifth and no natural ninth, so a chord that grew them would be the
+  wrong chord. 35 occurrences, previously silence.
+- **Capitalisation and Unicode no longer refuse a chord.** `EbMaj7` (22
+  occurrences) failed on a capital M alone. `E7♭9` failed because the root
+  accepted a Unicode flat and the suffix did not. Both triangles are accepted:
+  `Δ` is U+0394 and `∆` is U+2206, they are indistinguishable on screen, and
+  both are in real charts.
+- **Three rules now hold that a table could not express.** An alteration
+  displaces its natural form, so `C7b9` has a D♭ and no D. An extension implies
+  the odd degrees below it except the eleventh over a major third, so `C13` is
+  7-9-13 while `Cm13` keeps its eleventh and `C13#11` gets a raised one.
+  Removing a note removes what depended on it, so `C9sus4` needs no special
+  case -- with no third, the fourth is simply a note.
+- **`tapscript chord SYMBOL --explain`** reads a symbol out loud: every degree,
+  what bent it, the MIDI numbers, and what is deliberately absent. `--json`
+  for anything parsing it. The absences matter as much as the notes; `C7alt`
+  reports `no fifth`.
+- Documented in `docs/chords.md`, and the table of accepted spellings in that
+  document is held to parsing by a test, because a table of promises in prose
+  does not fail to compile on its own.
+
+  **Nothing that compiled before compiles differently.** Every chord token in
+  the repository was parsed with both engines and compared: 181,276 identical,
+  136 newly readable, 0 changed. That result is why the richer vocabulary is
+  the default rather than something to opt into. It was not zero on the first
+  attempt -- the diff caught `Bb-7` turning into a dominant, which would have
+  moved 22 minor chords in this repository and sounded wrong without looking
+  wrong. Warnings from `tapscript check` over every source fell from 185 to 87.
+
 ## 1.0.0 — 2026-08-15
 
 A rebuild. One engine replaces the two that had drifted apart, and everything

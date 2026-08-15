@@ -409,6 +409,84 @@ def cmd_transpose(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 0
 
 
+def cmd_chord(args: argparse.Namespace, config: Config, out: Out) -> int:
+    """Read a chord symbol out loud.
+
+    This exists so nobody has to guess. A chord symbol names an intent, and the
+    rules that turn it into notes are the sort of thing you either know cold or
+    cannot check at all -- which is how `EbMaj7` came to compile to silence for
+    months without anyone noticing. Asking is now cheaper than being sure.
+    """
+    from ..notation.chordsymbol import ChordSymbolError, parse_symbol
+    from ..notation.theory import NOTE_NAMES_FLAT, NOTE_NAMES_SHARP, pitch_name
+
+    #: Which degree is which, in words, so the explanation reads like a
+    #: musician talking rather than like a table dump.
+    labels = {1: "root", 3: "third", 5: "fifth", 6: "sixth", 7: "seventh",
+              9: "ninth", 11: "eleventh", 13: "thirteenth", 2: "second", 4: "fourth"}
+    natural = {1: 0, 2: 2, 3: 4, 4: 5, 5: 7, 6: 9, 7: 11, 9: 14, 11: 17, 13: 21}
+
+    results = []
+    failed = False
+    for symbol in args.symbol:
+        try:
+            parsed = parse_symbol(symbol)
+        except ChordSymbolError as exc:
+            out.fail(f"{symbol}: {exc}")
+            failed = True
+            continue
+
+        names = NOTE_NAMES_FLAT if args.flats else NOTE_NAMES_SHARP
+        offsets = sorted(set(parsed.degrees.values()))
+        spelling = [names[(parsed.root_pc + offset) % 12] for offset in offsets]
+        midi = [(args.octave + 1) * 12 + parsed.root_pc + offset for offset in offsets]
+
+        record = {
+            "symbol": symbol,
+            "root": names[parsed.root_pc],
+            "core": parsed.core,
+            "notes": spelling,
+            "midi": midi,
+            "intervals": list(offsets),
+            "bass": names[parsed.bass_pc] if parsed.bass_pc is not None else None,
+        }
+        if args.explain:
+            steps = []
+            for degree in sorted(parsed.degrees):
+                offset = parsed.degrees[degree]
+                shift = offset - natural.get(degree, offset)
+                mark = "" if shift == 0 else (" flattened" if shift < 0 else " raised")
+                if abs(shift) == 2:
+                    mark += " twice"
+                steps.append(
+                    f"{labels.get(degree, degree)}{mark}: "
+                    f"{names[(parsed.root_pc + offset) % 12]} ({offset:+d} semitones)"
+                )
+            record["explain"] = steps
+            missing = [labels[d] for d in (3, 5, 7) if d in labels and d not in parsed.degrees]
+            record["absent"] = missing
+        results.append(record)
+
+        if not out.json_mode:
+            head = f"{symbol}  --  {' '.join(spelling)}"
+            if parsed.bass_pc is not None:
+                head += f"   over {names[parsed.bass_pc]}"
+            out.ok(head)
+            if args.explain:
+                for step in record["explain"]:
+                    out.dim(f"    {step}")
+                if record["absent"]:
+                    # Saying what is *not* there matters more than it sounds.
+                    # `C7alt` has no fifth and no natural ninth, and that
+                    # absence is most of what makes it sound the way it does.
+                    out.dim(f"    no {', no '.join(record['absent'])}")
+                out.dim(f"    midi at octave {args.octave}: {midi}")
+                out.dim(f"    lowest note {pitch_name(midi[0])}")
+
+    out.data({"chords": results})
+    return 2 if failed else 0
+
+
 def cmd_new(args: argparse.Namespace, config: Config, out: Out) -> int:
     title = args.title or "New Piece"
     target = Path(args.output) if args.output else Path(f"{title.lower().replace(' ', '-')}.tap")
@@ -882,6 +960,18 @@ def build_parser() -> argparse.ArgumentParser:
     transpose_parser.add_argument("-o", "--output", metavar="PATH")
     transpose_parser.add_argument("-i", "--in-place", action="store_true")
     transpose_parser.set_defaults(func=cmd_transpose)
+
+    chord_parser = subparsers.add_parser(
+        "chord", help="read a chord symbol and say what is in it"
+    )
+    chord_parser.add_argument("symbol", nargs="+", help="one or more chord symbols")
+    chord_parser.add_argument(
+        "--explain", action="store_true",
+        help="show every degree, what bent it, and what is deliberately absent",
+    )
+    chord_parser.add_argument("--octave", type=int, default=3, help="octave for MIDI numbers")
+    chord_parser.add_argument("--flats", action="store_true", help="spell with flats")
+    chord_parser.set_defaults(func=cmd_chord)
 
     new_parser = subparsers.add_parser("new", help="start a new piece from a template")
     new_parser.add_argument("title", nargs="?", help="what to call it")

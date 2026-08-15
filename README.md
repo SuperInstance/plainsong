@@ -327,6 +327,7 @@ Every command takes `--json`. Use it when parsing output.
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
 | [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
+| [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |
 | [Specs](docs/specs.md) | The checks the system runs against itself |

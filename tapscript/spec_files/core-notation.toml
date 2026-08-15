@@ -36,3 +36,15 @@ id = "transpose"
 kind = "python"
 run = "tapscript.selfcheck:check_transpose"
 description = "Transposition moves the chord row as well as the melody"
+
+[[check]]
+id = "chord-vocabulary"
+kind = "python"
+run = "tapscript.selfcheck:check_chord_vocabulary"
+description = "Chord symbols are derived by rule, so compound spellings need no table entry"
+
+[[check]]
+id = "chord-transposition"
+kind = "python"
+run = "tapscript.selfcheck:check_chord_transposition"
+description = "A chord carrying alterations no quality name can hold survives a transpose"

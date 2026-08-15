@@ -225,19 +225,44 @@ def normalise_quality(suffix: str) -> str | None:
 
 
 class Chord:
-    """A resolved chord: a root pitch class, a quality, an optional bass."""
+    """A resolved chord: a root pitch class, a quality, an optional bass.
 
-    __slots__ = ("root_pc", "quality", "bass_pc", "text")
+    `intervals` and `suffix` are set when the chord came from a written symbol.
+    They exist because a symbol carries more than a quality name can hold:
+    `C7b9#11` has no entry in any table, and reconstructing its spelling from
+    a quality string would lose the alterations. Carrying the suffix verbatim
+    is also what keeps transposition honest -- a suffix says nothing about the
+    root, so moving the chord is a matter of respelling one letter and leaving
+    the rest exactly as written.
+    """
 
-    def __init__(self, root_pc: int, quality: str, bass_pc: int | None = None, text: str = "") -> None:
+    __slots__ = ("root_pc", "quality", "bass_pc", "text", "_intervals", "suffix")
+
+    def __init__(
+        self,
+        root_pc: int,
+        quality: str,
+        bass_pc: int | None = None,
+        text: str = "",
+        intervals: tuple[int, ...] | None = None,
+        suffix: str | None = None,
+    ) -> None:
         self.root_pc = root_pc % 12
         self.quality = quality
         self.bass_pc = bass_pc % 12 if bass_pc is not None else None
         self.text = text
+        self._intervals = intervals
+        self.suffix = suffix
+
+    def intervals(self) -> tuple[int, ...]:
+        """Semitones above the root, including the root itself."""
+        if self._intervals is not None:
+            return self._intervals
+        return CHORD_INTERVALS.get(self.quality, CHORD_INTERVALS["maj"])
 
     def notes(self, octave: int = 3, spread: bool = True) -> list[int]:
         """MIDI notes for this chord, root position, bass note first if given."""
-        intervals = CHORD_INTERVALS.get(self.quality, CHORD_INTERVALS["maj"])
+        intervals = self.intervals()
         root = (octave + 1) * 12 + self.root_pc
         notes = [root + interval for interval in intervals]
         if self.bass_pc is not None and self.bass_pc != self.root_pc:
@@ -255,12 +280,22 @@ class Chord:
             self.quality,
             None if self.bass_pc is None else self.bass_pc + semitones,
             self.text,
+            intervals=self._intervals,
+            suffix=self.suffix,
         )
 
     def name(self, prefer_flats: bool = False) -> str:
         names = NOTE_NAMES_FLAT if prefer_flats else NOTE_NAMES_SHARP
-        suffix = {"maj": "", "min": "m", "dim": "dim", "aug": "aug"}.get(self.quality, self.quality)
-        label = f"{names[self.root_pc]}{suffix}"
+        if self.suffix is not None:
+            # Re-emit what was written, with only the root respelled. A chord
+            # suffix is defined relative to the root and says nothing about
+            # which root it sits on, so this is exact rather than a best
+            # effort -- and it is the only way `C7b9#11` survives a transpose,
+            # since no quality name can carry those alterations.
+            label = f"{names[self.root_pc]}{self.suffix}"
+        else:
+            legacy = {"maj": "", "min": "m", "dim": "dim", "aug": "aug"}
+            label = f"{names[self.root_pc]}{legacy.get(self.quality, self.quality)}"
         if self.bass_pc is not None and self.bass_pc != self.root_pc:
             label += f"/{names[self.bass_pc]}"
         return label
@@ -275,28 +310,65 @@ class Chord:
 
 
 def parse_chord(token: str) -> Chord:
-    """Parse an absolute chord symbol such as ``Am``, ``Cmaj7`` or ``D/F#``."""
+    """Parse an absolute chord symbol such as ``Am``, ``Cmaj7`` or ``C7b9#11``.
+
+    The reading is done by :mod:`.chordsymbol`, which derives the notes from a
+    grammar rather than looking the spelling up. This function is the stable
+    surface over it: everything in the package parses chords through here.
+
+    Lowercase roots are read as major, not minor. German and Nordic charts do
+    use lowercase for minor, and it is tempting to accept that, but this corpus
+    writes voicings in lowercase and several thousand files would change
+    meaning. The convention we have wins over the one we do not.
+    """
+    from .chordsymbol import ChordSymbolError, parse_symbol
+
     text = token.strip()
     if not text:
         raise TheoryError("empty chord")
-    bass_pc: int | None = None
-    if "/" in text:
-        text, _, bass_text = text.partition("/")
-        bass_match = _CHORD_RE.match(bass_text.strip())
-        if bass_match:
-            bass_pc = LETTER_PC[bass_match.group(1).upper()] + _accidental_shift(bass_match.group(2))
-    match = _CHORD_RE.match(text)
-    if not match:
-        raise TheoryError(f"not a chord: {token!r}")
-    letter, accidentals, suffix = match.groups()
-    # A bare uppercase letter with an octave digit is a pitch, not a chord.
-    quality = normalise_quality(suffix)
-    if quality is None:
-        raise TheoryError(f"unknown chord quality: {suffix!r} in {token!r}")
-    root_pc = LETTER_PC[letter.upper()] + _accidental_shift(accidentals)
-    # Lowercase root with a minor-ish suffix is still that root; lowercase alone
-    # is treated as major because the corpus writes voicings in lowercase.
-    return Chord(root_pc, quality, bass_pc, text=token.strip())
+    try:
+        parsed = parse_symbol(text)
+    except ChordSymbolError as error:
+        raise TheoryError(str(error)) from None
+
+    # A legacy quality name, kept because roman numerals, the transposer and
+    # the older tests all speak it. It is a label, not the source of truth --
+    # `intervals` is.
+    return Chord(
+        parsed.root_pc,
+        _legacy_quality(parsed),
+        parsed.bass_pc,
+        text=text,
+        intervals=parsed.intervals(),
+        suffix=parsed.suffix,
+    )
+
+
+_LEGACY_BY_CORE = {
+    "maj": "maj", "dom": "7", "min": "min", "minmaj": "minmaj7",
+    "halfdim": "min7b5", "dim": "dim", "aug": "aug",
+    "sus4": "sus4", "sus2": "sus2", "power": "5",
+}
+
+
+def _legacy_quality(parsed: object) -> str:
+    """Best-effort quality label for a parsed symbol.
+
+    Only used for display and for the handful of places that still branch on a
+    quality string. Anything that needs the actual notes asks for intervals.
+    """
+    core = getattr(parsed, "core", "maj")
+    degrees = getattr(parsed, "degrees", {})
+    base = _LEGACY_BY_CORE.get(core, "maj")
+    if core == "maj" and 7 in degrees:
+        return "maj7"
+    if core == "min" and 7 in degrees:
+        return "min7"
+    if core == "dom" and 7 not in degrees:
+        return "maj"
+    if core == "dim" and 7 in degrees:
+        return "dim7"
+    return base
 
 
 def is_chord(token: str) -> bool:
