@@ -51,6 +51,7 @@ tapscript = [
     "agent/prompts/*.md",
     "interfaces/web/*.html",
     "spec_files/*.toml",
+    "songbook/**/*.tap",
 ]
 
 [tool.pytest.ini_options]

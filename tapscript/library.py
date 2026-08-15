@@ -22,7 +22,22 @@ from typing import Any
 from .notation.ir import Score
 from .runtime.paths import Paths, default_paths
 
-SEARCH_DIRECTORIES = ("library", "docs/fakebook", "docs/songs", "examples", "academy")
+SEARCH_DIRECTORIES = ("library", "docs/songs", "examples", "academy")
+"""Places to look under the project root, for people working from a clone."""
+
+BUNDLED_SONGBOOK = "songbook"
+"""The chord charts that ship with the package.
+
+They live inside `tapscript/` for the same reason the specs do: a wheel carries
+only what is under the package. Kept in `docs/`, the whole library was invisible
+to anyone who installed rather than cloned -- `tapscript library "waltz"` said
+"nothing found" and `tapscript play stand-by-me`, which the README advertises,
+could not work at all.
+"""
+
+
+def bundled_songbook() -> Path:
+    return Path(__file__).resolve().parent / BUNDLED_SONGBOOK
 INDEX_VERSION = 2
 
 HEADER_RE = re.compile(
@@ -77,13 +92,37 @@ class Library:
     def index_file(self) -> Path:
         return self.paths.cache_dir / "library-index.json"
 
+    def _collection_for(self, path: Path, directory: Path) -> str:
+        """A short label for where an entry came from.
+
+        Relative to the project root for a clone, and to the bundled songbook
+        otherwise -- the bundled files sit inside site-packages, so relating
+        them to the root either raises or prints an absolute path nobody wants
+        to read in a table.
+        """
+        assert self.root is not None
+        bundled = bundled_songbook()
+        if directory == bundled:
+            # Name it for what it is, not for where pip happened to put it. The
+            # alternative is a site-packages path in every row of the table.
+            try:
+                return f"{BUNDLED_SONGBOOK}/{path.parent.relative_to(bundled)}".rstrip("/.")
+            except ValueError:
+                return BUNDLED_SONGBOOK
+        try:
+            return str(path.parent.relative_to(self.root))
+        except ValueError:
+            return path.parent.name
+
     def _scan(self) -> list[LibraryEntry]:
         entries: list[LibraryEntry] = []
         assert self.root is not None
-        for relative in SEARCH_DIRECTORIES:
-            directory = self.root / relative
-            if not directory.is_dir():
+        directories = [bundled_songbook()] + [self.root / name for name in SEARCH_DIRECTORIES]
+        seen: set[Path] = set()
+        for directory in directories:
+            if not directory.is_dir() or directory in seen:
                 continue
+            seen.add(directory)
             for path in sorted(directory.rglob("*.tap")):
                 try:
                     head = path.read_text(encoding="utf-8", errors="replace")[:600]
@@ -100,7 +139,7 @@ class Library:
                         title=title_match.group("title").strip() if title_match else path.stem,
                         key=key_match.group("key").split("|")[0].strip() if key_match else "",
                         tempo=int(tempo_match.group("tempo")) if tempo_match else 0,
-                        collection=str(path.parent.relative_to(self.root)),
+                        collection=self._collection_for(path, directory),
                         size=size,
                     )
                 )

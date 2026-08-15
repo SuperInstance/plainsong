@@ -279,29 +279,65 @@ def cmd_check(args: argparse.Namespace, config: Config, out: Out) -> int:
         return 2
 
     failures = warnings = 0
+    reports: list[dict[str, Any]] = []
     for label, text in targets:
         if text.startswith("\x00"):
             out.fail(f"{label}: {text[1:]}")
             failures += 1
+            reports.append({"source": label, "status": "unreadable", "detail": text[1:]})
             continue
         target = label
         score = parse(text, path=label)
+        notes = 0
+        # Arranging produces diagnostics of its own -- an unreadable chord
+        # becoming silence is found here, not by the parser -- and reporting
+        # only the parser's meant those never reached anybody.
+        row_warnings = list(score.warnings())
         if score.has_errors:
             failures += 1
+            status = "error"
             _diagnostics(out, score.errors(), str(target))
         else:
             arrangement = arrange(score)
-            if arrangement.note_count == 0:
+            notes = arrangement.note_count
+            row_warnings = [
+                diagnostic
+                for diagnostic in arrangement.diagnostics
+                if diagnostic.severity == "warning"
+            ]
+            if notes == 0:
                 warnings += 1
+                status = "silent"
                 out.warn(f"{target}: parses, but produces no notes")
-            elif args.verbose:
-                out.ok(f"{target}: {arrangement.note_count} notes")
-        warnings += len(score.warnings())
+            else:
+                status = "ok"
+                if args.verbose:
+                    out.ok(f"{target}: {notes} notes")
+        warnings += len(row_warnings)
         if args.strict:
-            _diagnostics(out, score.warnings(), str(target), limit=5)
+            _diagnostics(out, row_warnings, str(target), limit=5)
+        reports.append(
+            {
+                "source": label,
+                "status": status,
+                "notes": notes,
+                "errors": [diagnostic.format() for diagnostic in score.errors()],
+                "warnings": [diagnostic.format() for diagnostic in row_warnings],
+            }
+        )
+
+    checked = len(targets)
+    out.data(
+        {
+            "checked": checked,
+            "failures": failures,
+            "warnings": warnings,
+            "ok": failures == 0,
+            "sources": reports,
+        }
+    )
 
     out.say()
-    checked = len(targets)
     if failures:
         out.fail(f"{failures} of {checked} files have errors ({warnings} warnings)")
         return 1
@@ -352,16 +388,24 @@ def cmd_transpose(args: argparse.Namespace, config: Config, out: Out) -> int:
         out.dim("give a key such as Dm, F#, Bb or 'A minor', or semitones such as -3")
         return 2
 
+    written: str | None = None
     if args.output:
         target = Path(args.output)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(moved, encoding="utf-8")
+        written = str(target)
         out.ok(f"wrote {target}")
     elif args.in_place:
         source.write_text(moved, encoding="utf-8")
+        written = str(source)
         out.ok(f"rewrote {source}")
-    else:
+    elif not out.json_mode:
+        # The notation itself is the output here, so it goes to stdout raw --
+        # except under --json, where raw notation on stdout is what made
+        # `tapscript --json transpose` emit something no parser could read.
         print(moved)
+
+    out.data({"source": str(source), "target": args.key, "written": written, "content": moved})
     return 0
 
 
@@ -822,6 +866,9 @@ def build_parser() -> argparse.ArgumentParser:
     info_parser = subparsers.add_parser("info", help="summarise a piece")
     info_parser.add_argument("file")
     info_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
+    info_parser.add_argument(
+        "--verbose", action="store_true", help="show every diagnostic, not the first ten"
+    )
     info_parser.set_defaults(func=cmd_info)
 
     check_parser = subparsers.add_parser("check", help="check notation for problems")

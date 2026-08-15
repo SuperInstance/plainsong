@@ -36,7 +36,7 @@ python3 -m pytest tests -q                    # works too, if pytest is installe
 # The system's checks on itself -- run these before and after any change
 python3 -m tapscript spec                     # exits non-zero on failure
 python3 -m tapscript doctor --specs
-python3 -m tapscript check docs examples academy   # 6,322 .tap files must still parse
+python3 -m tapscript check docs examples academy tapscript/songbook   # every source, prose included
 
 # Working with notation
 python3 -m tapscript new "Title" -o song.tap
@@ -51,7 +51,7 @@ python3 -m tapscript mcp --list-tools        # see also the tapscript-mcp repo
 
 # Timing
 python3 -m tapscript stage orchestra.tap     # what each listener actually hears
-python3 -m tapscript conduct song.tap --gesture lift
+# there is no `conduct` subcommand -- gestures are `tapscript.perform.conduct`
 
 # The agent, offline
 python3 -m tapscript agent --provider echo "write something in D minor"

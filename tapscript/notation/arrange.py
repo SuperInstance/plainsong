@@ -91,6 +91,7 @@ class Arranger:
         self.score = score
         self.options = options or ArrangeOptions()
         self.diagnostics: list[Diagnostic] = []
+        self._unreadable: set[str] = set()
         self._rng = random.Random(self.options.humanize_seed)
         self._tracks: dict[str, Track] = {}
         self._channel_cursor = 0
@@ -141,6 +142,7 @@ class Arranger:
             chord = self._resolve_chord(bare)
             if chord is not None:
                 return Slot(kind="chord", weight=weight, chord=chord, text=bare)
+            self._unreadable.add(bare)
             return Slot(kind="rest", weight=weight, text=bare)
 
         pitches = self._resolve_pitches(bare, octave)
@@ -151,6 +153,11 @@ class Arranger:
         chord = self._resolve_chord(bare)
         if chord is not None:
             return Slot(kind="chord", weight=weight, chord=chord, text=bare)
+        # Nothing understood this token, and it is about to become silence.
+        # Saying so matters: `Xm9` and `A B C D` (pitches with no octave) both
+        # compiled clean and produced nothing, so the first a writer knew about
+        # it was a bar of unexplained silence.
+        self._unreadable.add(bare)
         return Slot(kind="rest", weight=weight, text=bare)
 
     def _resolve_chord(self, token: str) -> theory.Chord | None:
@@ -430,7 +437,23 @@ class Arranger:
             groups = [(origin, [token for cell in line.cells for token in cell.tokens])]
 
         for group_start, tokens in groups:
+            self._unreadable.clear()
             slots = [self._resolve_token(token, line.role, octave) for token in tokens]
+            if self._unreadable:
+                shown = ", ".join(sorted(self._unreadable)[:4])
+                more = len(self._unreadable) - 4
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"{line.role} row: nothing understood "
+                        f"{shown}{f' and {more} more' if more > 0 else ''}; "
+                        "silence there instead",
+                        line=line.line_number,
+                        hint="chords look like Am, F#m7, Bb; pitches carry an octave, "
+                        "as in A4 or c3 -- a bare A is not a pitch",
+                        source=line.raw,
+                    )
+                )
             if line.barred:
                 placed = self._slot_positions(slots, group_start, bar_beats, line)
             else:

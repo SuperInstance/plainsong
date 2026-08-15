@@ -290,7 +290,6 @@ it is developed and where a client should install it from.
 | `transpose` | move a piece to another key or by semitones |
 | `library` | browse the bundled notation |
 | `stage` | what each listener on a stage actually hears |
-| `conduct` | apply a gesture across the ensemble |
 | `doctor` | what this machine can do |
 | `spec` | verify the system's promises |
 | `providers` / `setup` | list and connect model providers |
@@ -338,7 +337,7 @@ in the documentation that stopped compiling would fail the build.
 |---|---|
 | [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp) | This compiler over the Model Context Protocol, plus the ensemble session several agents share |
 | [tapscript-worker](https://github.com/SuperInstance/tapscript-worker) | Cloudflare Worker version of this compiler — runs TapScript on the edge |
-| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript conduct` speaks. |
+| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript.perform.conduct` speaks. |
 | [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders TapScript scores as agentic performances |
 
 ## Status
