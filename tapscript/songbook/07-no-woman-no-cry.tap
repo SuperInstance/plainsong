@@ -1,6 +1,6 @@
 **TRACK: No Woman No Cry**
 // Chord chart only. The melody and the words are the protected expression
-// of a song; a chord progression is not. See docs/fakebook/README.md.
+// of a song; a chord progression is not. See docs/songbook.md.
 key: C | tempo: 76 | swing: 0% | subdivision: 8th
 
 [intro]

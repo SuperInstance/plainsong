@@ -304,6 +304,9 @@ Every command takes `--json`. Use it when parsing output.
 
 | | |
 |---|---|
+| [Your first song](docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
+| [Arranging](docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
+| [Integration](docs/integration.md) | Driving TapScript from other software |
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
 | [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
@@ -365,10 +368,10 @@ Known limits, in the open:
 - The TUI needs `curses`, which stock Python on Windows does not ship.
 - No third-party MCP client has connected to the server yet; its protocol
   behaviour is verified against the specification instead.
-- `docs/fakebook/` is **chord charts only** — melody and lyric rows were removed
+- The bundled songbook (`tapscript/songbook/`) is **chord charts only** — melody and lyric rows were removed
   from all 6,309 files. A chord progression is not protectable expression; a tune
   and its words are, and nothing in those generated files recorded provenance.
-  See [docs/fakebook/README.md](docs/fakebook/README.md).
+  See [docs/songbook.md](docs/songbook.md).
 - `academy/` teaches a syntax that never existed and is being rewritten. Do not
   learn the notation from it — use this page, `tapscript new`, and
   [docs/notation.md](docs/notation.md).

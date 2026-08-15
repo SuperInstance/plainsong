@@ -190,7 +190,7 @@ passes on Windows across 3.10 through 3.13.
 - The built-in synthesiser is a preview renderer. Mono, approximate timbres.
   fluidsynth with a soundfont is the quality path.
 - The host bridge cannot stream and reports no token usage.
-- `docs/fakebook/` is generated material carrying ~3,800 bar-count warnings. It
+- The bundled songbook is generated material. It
   parses; it is not all well written.
 - `legacy/` is dead weight kept for reference and can be deleted.
 - The TUI needs `curses`, which stock Python on Windows does not ship. It
