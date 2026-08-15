@@ -15,11 +15,30 @@ jobs:
         with:
           python-version: "3.12"
 
+      # The tag is the only thing that says which version this is, and nothing
+      # else in the repository knows about it. Without this a `v1.1.0` tag on a
+      # tree still saying 1.0.0 publishes 1.0.0 -- under a release page claiming
+      # otherwise, and unfixably, because PyPI will not accept that filename
+      # twice. A test already holds pyproject and version.py to each other; this
+      # holds the tag to both.
+      - name: The tag must match the version in the tree
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          version="$(python -c 'import tapscript.version as v; print(v.__version__)')"
+          if [ "$tag" != "$version" ]; then
+            echo "tag $GITHUB_REF_NAME says $tag, tapscript/version.py says $version" >&2
+            exit 1
+          fi
+          echo "releasing $version"
+
       - name: Run the tests
         run: python -m unittest discover -s tests -v
 
       - name: Verify the specs
         run: python -m tapscript spec
+
+      - name: Every documented example still compiles
+        run: python -m tapscript check docs examples tapscript/songbook README.md
 
   build:
     name: Build distribution

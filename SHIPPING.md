@@ -1,7 +1,9 @@
 # Shipping audit
 
-State of the branch as of `e4f15e1`. Items are struck through as they close. Written from inspection, not memory --
-every claim below was checked against the working tree.
+State of the branch. Items are marked closed as they close, and the reasoning is
+kept rather than deleted -- the fault each one describes is the reason a rule in
+`CLAUDE.md` exists. Written from inspection, not memory: every claim below was
+checked against the working tree.
 
 ## Verified
 
@@ -13,18 +15,20 @@ These have been proven, not assumed.
 | Works on Python 3.10 | Hid `tomllib` entirely and ran the CLI (`info`, `compile`) and all specs through the fallback reader. |
 | The TOML fallback matches the real one | Differential test: every TOML file in the repo plus 17 edge cases parsed by both readers and compared. |
 | Arrival timing is arithmetically right | Hand-checked a three-voice stage: 14 m at 343.21 m/s is 40.8 ms, plus 140 ms pipe speech and 60 ms perceptual attack gives the organ's -241 ms. Spread is 0 ms at the podium and non-zero at every player's desk. |
-| Notation compatibility held | 6,322 `.tap` files parse with 0 errors. |
+| Notation compatibility held | 6,333 sources compile with 0 errors, including every fenced `tapscript` block in the prose. |
 | No hidden dependencies | CI installs nothing on 4 Python versions x 3 operating systems. |
 | No hardcoded paths | A test greps the package for `~/.openclaw`, `/home/eileen`, `/Users/`. |
 | Nothing half-written | No TODO, FIXME, XXX, HACK or `NotImplementedError` anywhere in `tapscript/`. |
-
+| The browser demo agrees with the compiler | `docs/demo/index.html` carries its own parser and arranger in JavaScript. It states the note count it produces for each preset, and `tests/test_demo.py` compiles the same notation with the real compiler and requires the same answer -- so a change to the arranger that moves a count fails CI rather than making the page quietly lie. |
+| A wheel actually works | Built, installed into a clean venv outside the source tree, and exercised there. This is the only way the two packaging faults were visible: `tapscript spec` and `tapscript library` both did nothing for anyone who installed rather than cloned. |
 | The new tests would catch a regression | Each guard was removed and the suite confirmed to go red: retryable statuses, the `[DONE]` stream terminator, the User-Agent and header merge, the same-origin refusal, the `/files/` basename and containment guards together, the null-byte guard, percent-decoding, the `MAX_BODY` limit, `ConnectorResult.__bool__`, the broken-connector skip, and the availability check in `run()`. |
 
-514 tests, 7 specs, ruff clean.
+527 tests, 7 specs, 6,333 sources checked including every fenced example in the
+prose, ruff clean.
 
 ## Blockers
 
-Must be closed before this ships.
+All closed. Kept here because the reasoning is the useful part.
 
 ### B1. The changelog does not mention the three new features — CLOSED
 
@@ -152,20 +156,34 @@ have been removed. Three genuine tutorials now cover the same ground:
 `docs/integration.md`. All references to academy in build checks, library
 searches, documentation and CI have been removed.
 
-### B5. The fakebook ships melody and lyrics for in-copyright songs — OPEN
+### B5. The fakebook shipped melody and lyrics for in-copyright songs — CLOSED
 
-1,902 of the 6,309 `.tap` files carry both a `Melody:` row and a `Lyrics:` row.
-The policy this project documents is full melody plus lyrics only for
+1,902 of the 6,309 `.tap` files carried both a `Melody:` row and a `Lyrics:`
+row. The policy this project documents is full melody plus lyrics only for
 public-domain works, chord charts otherwise.
 
-It is not being met. `docs/fakebook/hindi/folk-traditional/tere-bina-jiya-jaye-na.tap`
-carries a full melody and three verses of lyrics for a 1979 R. D. Burman /
-Gulzar film song. The directory name is what defeated the policy: it is filed
-under `folk-traditional`, and it is not folk.
+It was not being met, and it could not be enforced per title:
+`hindi/folk-traditional/tere-bina-jiya-jaye-na.tap` carried a full melody and
+three verses of lyrics for a 1979 R. D. Burman / Gulzar film song. The
+directory name is what defeated the policy — it is filed under
+`folk-traditional`, and it is not folk. Nothing in the files records
+provenance, so no rule could separate the public-domain works from the rest.
 
-The exposure is at its worst on announcement day, when attention is highest.
-Needs a decision: reclassify and downgrade to chord charts, strip the lyric rows
-across the set, or restrict what ships to verified public domain.
+**Closed** by stripping the set to chord charts: 41,990 rows removed from 6,309
+files, across `tapscript/songbook/` (3,824 files, packaged) and
+`docs/fakebook-archive/` (2,484, not packaged). Neither directory now contains
+a single `Melody:` or `Lyrics:` row — checked, not assumed. A chord progression
+is not protectable expression; a tune and its words are.
+
+The stripping is whitelist-based rather than blacklist-based. The first attempt
+matched `Melody:` and `Lyrics:` literally and missed `Melody (8th):` and bare
+lyric lines carrying no row label at all. Policy and rationale are in
+`docs/songbook.md`.
+
+Two side effects worth knowing: the ~3,800 bar-count warnings this corpus was
+famous for came from those rows and are now 2, and the directory moved inside
+the package — kept in `docs/`, it was invisible to anyone who installed rather
+than cloned.
 
 ### S5. Windows lock contention — SETTLED
 
@@ -187,6 +205,17 @@ passes on Windows across 3.10 through 3.13.
 - The MCP server has never had a real MCP client connect to it. The protocol is
   verified by hand-driven JSON-RPC, which is strong evidence but not the same
   thing as Claude Desktop or an SDK client connecting.
+- **The chord parser drops `EbMaj7`, `G7alt` and `CM7`.** All three are
+  legitimate spellings. They became silent rests, which is why nobody found
+  them: it took making an unreadable token warn to surface the gap at all.
+  Deliberately not fixed here — accepting them changes how existing notation
+  compiles, so it needs its own spec, its own changelog entry, and a decision
+  about whether it goes behind a setting.
+- **`tapscript/mcp/` also exists in `SuperInstance/tapscript-mcp`.** The one
+  open violation of "one of everything", and it is temporary: the extraction
+  happened while this branch was in review. Until the copy here is removed, a
+  change to one must be made to the other or they drift — precisely the failure
+  the rule exists to prevent.
 
 ## Not blocking, worth knowing
 

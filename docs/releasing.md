@@ -25,8 +25,13 @@ git push origin v1.1.0
 
 `.github/workflows/release.yml` triggers on any tag matching `v*`:
 
-1. **test** — runs the suite and the specs. Nothing downstream runs if this fails,
-   so a tag on a broken tree publishes nothing.
+1. **test** — checks the tag against `tapscript/version.py`, then runs the suite,
+   the specs and `check` over every source. Nothing downstream runs if any of it
+   fails, so a tag on a broken tree publishes nothing. The tag check is there
+   because the tag is the only thing that says which version a release is, and
+   nothing in the tree knows about it: a `v1.1.0` tag on a tree still saying
+   1.0.0 would publish 1.0.0 under a release page claiming otherwise, and PyPI
+   will not accept that filename a second time to let you correct it.
 2. **build** — `python -m build`, producing a wheel and an sdist.
 3. **publish** — uploads to PyPI using
    [Trusted Publishing](https://docs.pypi.org/trusted-publishers/). There is no

@@ -336,9 +336,9 @@ Every command takes `--json`. Use it when parsing output.
 ## Testing
 
 ```bash
-python3 -m unittest discover -s tests              # the test suite
-python3 -m tapscript spec                          # the system's checks on itself
-python3 -m tapscript check docs examples           # every example still compiles
+python3 -m unittest discover -s tests   # the test suite
+python3 -m tapscript spec               # the system's checks on itself
+python3 -m tapscript check docs examples tapscript/songbook README.md
 ```
 
 CI runs all three on Python 3.10 through 3.13 across Linux, macOS and Windows
