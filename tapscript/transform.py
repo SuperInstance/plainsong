@@ -119,7 +119,13 @@ def _format_row(line: Line) -> str:
         prefix = f"@{line.name} "
         suffix = ""
         if "velocity" in line.options:
-            suffix = f" | vel: {line.options['velocity']}"
+            # `body` already ends in the closing `|`, and that same bar line is
+            # what separates the last cell from the options. Adding another
+            # produced `... | | vel: 70`, an empty cell the parser then read as
+            # a real bar -- so every transpose grew each player row by one bar,
+            # and the row drifted further from the rest of the section each time.
+            separator = "" if body.rstrip().endswith("|") else " |"
+            suffix = f"{separator} vel: {line.options['velocity']}"
         return f"{prefix}{body}{suffix}"
     return f"{ROLE_PREFIX.get(line.role, line.role.title() + ':')} {body}"
 

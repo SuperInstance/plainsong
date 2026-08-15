@@ -252,6 +252,44 @@ class TestArrange(unittest.TestCase):
         self.assertEqual(pitches, [60, 64, 67, 72])
 
 
+class TestRoundTrip(unittest.TestCase):
+    """Emitting notation and reading it back must give the same music."""
+
+    def test_transposing_repeatedly_does_not_grow_the_bars(self):
+        """A player row with options used to gain an empty bar every transpose.
+
+        `_format_row` closed the row with `|` and then wrote ` | vel: 70`, so the
+        text carried `... | | vel: 70`. Reading that back saw the empty cell as a
+        real bar, so each round trip pushed the player row one bar further out of
+        step with the rest of its section -- silent corruption of a file the user
+        thought they had only changed the key of.
+        """
+        from tapscript.transform import transpose
+
+        text = BASIC
+        for key in ("D", "E", "F", "G"):
+            text = transpose(text, key)
+            widths = {
+                line.role: len(line.cells)
+                for section in parse(text).sections
+                for line in section.lines
+            }
+            self.assertEqual(
+                set(widths.values()), {2}, f"a row changed width after transposing to {key}"
+            )
+
+    def test_emitted_player_rows_read_back_identically(self):
+        """The text a transpose writes must parse to the same shape it came from."""
+        from tapscript.transform import to_text
+
+        original = parse(BASIC)
+        reparsed = parse(to_text(original))
+        self.assertEqual(
+            [(line.role, len(line.cells)) for line in original.sections[0].lines],
+            [(line.role, len(line.cells)) for line in reparsed.sections[0].lines],
+        )
+
+
 class TestDocumentedNotation(unittest.TestCase):
     """Every example in the prose must be notation this compiler accepts.
 
