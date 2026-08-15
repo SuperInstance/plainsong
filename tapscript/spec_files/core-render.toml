@@ -1,0 +1,27 @@
+[spec]
+id = "core.render"
+title = "A clean checkout renders MIDI and audio with nothing installed"
+why = """
+The promise is that `git clone` then `python -m tapscript` produces sound. No
+pip install, no soundfont, no build step. If these checks need an optional
+dependency, that promise is broken.
+"""
+tags = ["core", "fast"]
+
+[[check]]
+id = "midi"
+kind = "python"
+run = "tapscript.selfcheck:check_midi_bytes"
+description = "The MIDI writer emits a valid format-1 file"
+
+[[check]]
+id = "audio"
+kind = "python"
+run = "tapscript.selfcheck:check_audio"
+description = "The built-in synthesiser produces audible output"
+
+[[check]]
+id = "python-version"
+kind = "capability"
+run = "python"
+description = "Python 3.10 or newer"

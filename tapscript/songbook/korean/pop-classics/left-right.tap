@@ -1,0 +1,20 @@
+**TRACK: Left & Right**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | G . . . |
+Chords: | F . . . | G . . . | C . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | G . . . |
+Chords: | F . . . | G . . . | C . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |

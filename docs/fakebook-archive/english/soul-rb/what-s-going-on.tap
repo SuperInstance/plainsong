@@ -1,22 +1,20 @@
 **TRACK: What's Going On**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 96 | subdivision: 16th
 time: 4/4 | mood: Soulful
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm7 . . . | F7 . . . | Cm7 . . . | F7 . . . | Cm7 . . . | F7 . . . | Cm7 . . . | G7 . . . |
-@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | g2-b2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm7 . . . | F7 . . . | Cm7 . . . | F7 . . . | Cm7 . . . | F7 . . . | Abmaj7 . . . | G7 . . . |
-@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | ab2-c3-eb3-g3 . . . | g2-b2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Cm7 . . . | F7 . . . | Cm7 . . . | F7 . . . | Abmaj7 . . . | Bb7 . . . | Eb7 . . . | G7 . . . |
-@guitar | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | c3-eb3-g3-bb3 . . . | f2-a2-c3-eb3 . . . | ab2-c3-eb3-g3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-db4 . . . | g2-b2-d3-f3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Abmaj7 . . . | Bb7 . . . | Cm7 . . . | G7 . . . |
-@guitar | ab2-c3-eb3-g3 . . . | bb2-d3-f3-ab3 . . . | c3-eb3-g3-bb3 . . . | g2-b2-d3-f3 . . . | vel: 58
 
 [OUT] (Outro - 4

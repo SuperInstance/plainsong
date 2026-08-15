@@ -1,19 +1,18 @@
 **TRACK: Have You Met Miss Jones?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 160 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . . | Fmaj7 . . . | Dm7 G7 . . . | Gm7 C7 . . . | Fmaj7 . . . | Am7 D7 . . . | Gm7 C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g1-bb1-d2-f2 . . . | f2-a2-c3-e3 . . . | a1-c2-e2-g2 . . . | g1-bb1-d2-f2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . . | Fmaj7 . . . | Dm7 G7 . . . | Gm7 C7 . . . | Fmaj7 . . . | Am7 D7 . . . | Gm7 C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | d2-f2-a2-c3 . . . | g1-bb1-d2-f2 . . . | f2-a2-c3-e3 . . . | a1-c2-e2-g2 . . . | g1-bb1-d2-f2 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Abmaj7 . . . | Dbm7 Gb7 . . . | Abmaj7 . . . | Fm7 Bb7 . . . | Ebm7 Ab7 . . . | Dbm7 Gb7 . . . | Cm7 F7 . . . | Bbm7 Eb7 . . . |
-@guitar | ab1-c2-eb2-g2 . . . | db1-fb1-ab1-cb2 . . . | ab1-c2-eb2-g2 . . . | f1-ab1-c2-eb2 . . . | eb1-gb1-bb1-db2 . . . | db1-fb1-ab1-cb2 . . . | c1-eb1-g1-bb1 . . . | bb1-db2-f2-ab2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars, return)
 Chords: | Fmaj7 . . . | Bbm7 Eb7 . . . | Fmaj7 . . . | Dm7 G7 . . . | Gm7 C7 . . . | Fmaj7 . . . | Am7 D7 . . . | Gm

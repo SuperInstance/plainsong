@@ -1,0 +1,21 @@
+**TRACK: Culpable o No**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic Bolero
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gb . . . | F . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bbm . . . | Bbm . . . |

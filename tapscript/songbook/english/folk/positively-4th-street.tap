@@ -1,0 +1,21 @@
+**TRACK: Positively 4th Street**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C major | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Bitter, driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | F . . . | G . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | C . . . |

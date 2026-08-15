@@ -1,24 +1,21 @@
 **TRACK: Boom Boom Pow**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 130 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Fm . . . | Db . . . |
-@guitar | f2-c3-f3 . . . | db2-ab2-db3 . . . | vel: 55
 
 [V2] (Verse 2 - 4 Bars)
 Chords: | Fm . . . | Db . . . |
-@guitar | f2-c3-f3 . . . | db2-ab2-db3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Fm . . . | Db . . . |
-@guitar | f2-c3-f3 . . . | db2-ab2-db3 . . . | vel: 65
 
 [BR] (Bridge - 2 Bars)
 Chords: | Bbm . . . | C . . . |
-@guitar | bb2-db3-f3 . . . | c2-e3-g3 . . . | vel: 50
 
 [OUT] (Outro - 2 Bars)
 Chords: | Fm . . . | Db . . . |
-@guitar | f2-c3-f3 . . . | db2-ab2-db3 . . . | vel: 45

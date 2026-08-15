@@ -1,0 +1,21 @@
+**TRACK: A Fine Romance**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |

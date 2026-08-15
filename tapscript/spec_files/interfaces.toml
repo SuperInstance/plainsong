@@ -1,0 +1,29 @@
+[spec]
+id = "core.interfaces"
+title = "Every interface starts"
+why = """
+The CLI, the TUI and the web interface are three doors onto the same system. A
+door that does not open is worse than one that is not there, because the user
+has to find out the hard way.
+"""
+tags = ["core"]
+
+[[check]]
+id = "cli"
+kind = "command"
+run = "{python} -m tapscript --version"
+description = "The CLI runs and reports its version"
+
+[[check]]
+id = "web-imports"
+kind = "python"
+run = "tapscript.interfaces.web.server:check_importable"
+description = "The web interface builds its application object"
+
+[[check]]
+id = "tui-imports"
+kind = "python"
+run = "tapscript.interfaces.tui:check_importable"
+description = "The TUI loads and finds a usable terminal library"
+optional = true
+requires = "terminal"

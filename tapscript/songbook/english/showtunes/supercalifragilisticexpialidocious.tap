@@ -1,0 +1,18 @@
+**TRACK: Supercalifragilisticexpialidocious**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 144 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . | C . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . | C . . . | G . . . | C . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |

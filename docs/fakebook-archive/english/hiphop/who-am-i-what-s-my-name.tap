@@ -1,20 +1,18 @@
 **TRACK: Who Am I (What's My Name)?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: G-Funk Swagger
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | C . . . | C . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | C . . . | C . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . | Bb . . . | C . . . | Dm . . . | Dm . . . |
-@guitar | bb1-d2-f2 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | d2-f2-a2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | C . . . | Bb . . . | A . . . |
-@guitar | f1-a1-c2 . . . | c2-e2-g2 . . . | bb1-d2-f2 . . . | a1-c#2-e2 . . . | vel: 55

@@ -1,0 +1,18 @@
+**TRACK: Sehnsucht**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | F . . . | C . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | A . . . |

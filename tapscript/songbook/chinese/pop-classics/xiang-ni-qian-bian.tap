@@ -1,0 +1,21 @@
+**TRACK: Xiang Ni Qian Bian**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em/G . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm7 . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+
+[CH2] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm7 . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |

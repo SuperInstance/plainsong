@@ -1,16 +1,12 @@
 **TRACK: Symphony No. 4 in A major "Italian" - I. Allegro vivace**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 132 | subdivision: 8th
 time: 6/8 | mood: Joyful
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . . . | D . . . . . | A . . . . . | E7 . . . . . |
-Melody: | A4 . . C#5 . . | D5 . . . . . | A4 . . C#5 . . | B4 . . E5 . . |
-Lyrics: | la la la la la la | la la la la la la | la la la la la la | la la la la la la |
-@piano | a2-e3-a3 . . . . . | d2-f#3-a3 . . . . . | a2-e3-a3 . . . . . | e2-g#3-b3 . . . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F#m . . D . . | A . . E . . | F#m . . D . . | E7 . . A . . |
-Melody: | A4 . . F#4 . . | E4 . . C#4 . . | D4 . . F#4 . . | B4 . . A4 . . |
-Lyrics: | tra la la la la la | tra la la la la la | tra la la la la la | tra la la la la la |
-@piano | f#2-a2-c#3 . . . . . | d2-f#3-a3 . . . . . | a2-e3-a3 . . . . . | e2-g#3-b3 . . . . . | vel: 60

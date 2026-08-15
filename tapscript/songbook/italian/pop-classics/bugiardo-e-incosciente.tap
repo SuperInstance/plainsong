@@ -1,0 +1,18 @@
+**TRACK: Bugiardo e incosciente**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Dramatic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Fm . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Eb . . . | Cm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | G . . . | G7 . . . |

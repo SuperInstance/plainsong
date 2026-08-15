@@ -1,0 +1,21 @@
+**TRACK: You Don't Know Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Ab . . . | Eb . . . | Bb7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | C7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |

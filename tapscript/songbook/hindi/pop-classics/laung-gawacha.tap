@@ -1,0 +1,18 @@
+**TRACK: Laung Gawacha**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Dance
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Fm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Fm . . . | Bbm . . . | Gb . . . | Ab . . . | Fm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Ab . . . | Fm . . . | Bbm . . . | Gb . . . | Ab . . . | Fm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |

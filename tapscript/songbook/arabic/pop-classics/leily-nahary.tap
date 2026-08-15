@@ -1,0 +1,24 @@
+**TRACK: Leily Nahary**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+Chords: | F . . . | C . . . | Gm . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . |
+
+[V2] (Verse - 8 Bars, same as V1)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |

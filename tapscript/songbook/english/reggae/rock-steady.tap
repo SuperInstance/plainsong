@@ -1,0 +1,21 @@
+**TRACK: Rock Steady**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: A | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Laid-back
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . | D . . . | D . . . | E . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | E . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | E . . . |

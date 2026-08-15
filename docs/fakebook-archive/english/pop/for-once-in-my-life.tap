@@ -1,24 +1,21 @@
 **TRACK: For Once in My Life**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . | Bb . . . | Gm . . . | C7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . | Bb . . . | Gm . . . | C7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | F . . . | Bb . . . | F . . . | Bb . . . | Gm . . . | C7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Eb . . . | Bb . . . | C7 . . . | F . . . |
-@guitar | eb1-g1-bb1 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bb . . . | Gm . . . | C7 . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 45

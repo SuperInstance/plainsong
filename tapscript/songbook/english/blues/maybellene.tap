@@ -1,0 +1,18 @@
+**TRACK: Maybellene**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: A | tempo: 168 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+
+[CH] (Chorus - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
+
+[BR] (Bridge/Solo - 12 Bars)
+Chords: | A . . . | A . . . | A . . . | A . . . | D . . . | D . . . | A . . .

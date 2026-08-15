@@ -1,0 +1,18 @@
+**TRACK: Ue o Muite Arukou**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Bb . . . | Gm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Cm . . . | F7 . . . | F7 . . . |

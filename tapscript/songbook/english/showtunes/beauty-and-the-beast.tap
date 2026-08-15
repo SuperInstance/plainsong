@@ -1,0 +1,21 @@
+**TRACK: Beauty and the Beast**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 69 | subdivision: 8th
+time: 3/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | G/B . . | Am . . | Em/G . . | F . . | C/E . . | Dm7 . . | G . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . | G/B . . | Am . . | Em/G . . | F . . | C/E . . | Dm7 . . | G . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | G . . | C . . | C . . | F . . | G . . | Am . . | G . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . | G . . | C . . | C . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | G . . | C . . | C . . | F . . | G . . | C . . | C . . |

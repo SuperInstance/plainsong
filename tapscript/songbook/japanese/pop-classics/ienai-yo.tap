@@ -1,0 +1,22 @@
+**TRACK: Ienai yo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Sophisticated Pop
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Dbmaj7 . . . | C7 . . . | Fm7 . . . | Bbm7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . | Dbmaj7 . . . |
+Chords: | C7 . . . | Fm7 . . . | Dbmaj7 . . . | C7sus4 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dbmaj7 . . . | Dbm7 . . . | C7 . . . | F7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |

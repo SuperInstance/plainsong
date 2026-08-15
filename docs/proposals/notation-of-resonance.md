@@ -27,7 +27,7 @@ This allows us to communicate casually in music and sign, turning a conversation
 
 Currently, `mermaid` tells you *what* the structure is. TapScript should tell you *how the structure feels*.
 
-```tapscript
+```tapscript-proposed
 [resonance: high-entropy, jagged]
 temp: 4.2
 beat: 140bpm

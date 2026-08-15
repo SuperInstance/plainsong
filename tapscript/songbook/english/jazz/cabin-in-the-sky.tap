@@ -1,0 +1,22 @@
+**TRACK: Cabin in the Sky**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | C7 . . . |
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Eb . . . | Ab . . . | Eb . . . |
+Chords: | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab7 . . . | Db . . . | Ab7 . . . | Db . . . |
+Chords: | Eb7 . . . | Ab . . . | Bb7 . . . | Bb7 . . . |

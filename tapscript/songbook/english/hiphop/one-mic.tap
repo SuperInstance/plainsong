@@ -1,0 +1,21 @@
+**TRACK: One Mic**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Dark, Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Bbm . . . | Bbm . . . | Bbm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Bbm . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bbm . . . | Bbm . . . |

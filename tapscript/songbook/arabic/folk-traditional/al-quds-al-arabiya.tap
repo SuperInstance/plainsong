@@ -1,0 +1,15 @@
+**TRACK: Al Quds al Arabiya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Solemn, proud
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A7 . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |

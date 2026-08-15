@@ -1,0 +1,21 @@
+**TRACK: Pu Yang Zai Hou**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Gm . . . | Eb . . . | Bb . . . | Cm . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | F . . . | Dm . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | Bb . . . |

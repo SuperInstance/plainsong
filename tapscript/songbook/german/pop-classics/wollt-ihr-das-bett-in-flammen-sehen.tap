@@ -1,0 +1,18 @@
+**TRACK: Wollt ihr das Bett in Flammen sehen?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E minor | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . | Em . . . | C . . . | G . . . | D . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | Em . . . | B . . . |

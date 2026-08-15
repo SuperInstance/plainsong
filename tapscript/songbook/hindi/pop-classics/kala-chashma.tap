@@ -1,0 +1,21 @@
+**TRACK: Kala Chashma**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 128 | subdivision: 16th
+time: 4/4 | mood: Energetic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . | Cm . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |

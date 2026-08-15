@@ -1,0 +1,18 @@
+**TRACK: Speak Low**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bittersweet Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | AbMaj7 . . . | Dm7b5 . . . | G7 . . . | Cm7 . . . |
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | AbMaj7 . . . | Dm7b5 . . . | G7 . . . | Cm7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | AbMaj7 . . . | Dm7b5 . . . | G7b9 . . . | Cm7 . . . | G7b9 . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | BbMaj7 . . . | EbMaj7 . . . | AbMaj7 . . . | Dm7b5 . . . | G7 . . . | Cm7 . . . |

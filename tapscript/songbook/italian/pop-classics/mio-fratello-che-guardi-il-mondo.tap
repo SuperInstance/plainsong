@@ -1,0 +1,21 @@
+**TRACK: Mio fratello che guardi il mondo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Contemplative
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |

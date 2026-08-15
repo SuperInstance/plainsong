@@ -1,27 +1,22 @@
 **TRACK: All the Things You Are (alternate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Flowing
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-@guitar | f1-ab1-eb2 . . . | bb1-db2-f2 . . . | eb1-g1-bb1 . . . | ab1-c2-eb2 . . . | vel: 50
 Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7 . . . | Cmaj7 . . . |
-@guitar | db1-f1-ab1 . . . | d1-f1-ab1 . . . | g1-b1-d2 . . . | c1-e1-g1 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7b5 . . . | D7 . . . | Gmaj7 . . . | Gm7 . . . |
-@guitar | a1-c1-eb1 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | g1-bb1-d2 . . . | vel: 55
 Chords: | C7 . . . | Fmaj7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | c1-e1-bb1 . . . | f1-a1-c2 . . . | f1-ab1-c2 . . . | bb1-d1-f2 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Ebmaj7 . . . | Abmaj7 . . . | Dbmaj7 . . . | G7b9 . . . |
-@guitar | eb1-g1-bb1 . . . | ab1-c2-eb2 . . . | db1-f1-ab1 . . . | g1-b1-d2-f2 . . . | vel: 60
 Chords: | Cmaj7 . . . | Cm7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | c1-e1-g1 . . . | c1-eb1-g1 . . . | f1-ab1-c2 . . . | bb1-d1-f2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Ebmaj7 . . . | Abmaj7 . . . | Dbmaj7 . . . | G7 . . . |
-@guitar | eb1-g1-bb1 . . . | ab1-c2-eb2 . . . | db1-f1-ab1 . . . | g1-b1-d2 . . . | vel: 50
 Chords: | Cmaj7 . . . | Am7b5 . . . | D

@@ -1,24 +1,21 @@
 **TRACK: I Get a Kick Out of You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [B1] (Bridge - 8 Bars)
 Chords: | Ab . . . | Bb7 . . . | Eb . . . | C7 . . . |
-@guitar | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | c3-e3-g3 . . . | vel: 58
 
 [V3] (Verse - 8 Bars)
 Chords: | F7 . . . | Bb7 . . . | Eb . . . | Bb7 . . . |
-@guitar | f2-a2-c3 . . . | bb2-d3-f3 . . . | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | vel: 55

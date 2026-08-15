@@ -1,0 +1,21 @@
+**TRACK: 19 Stayin' Alive**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 104 | subdivision: 16th
+time: 4/4 | mood: Disco
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | Am . . . | E7 . . . | E7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |

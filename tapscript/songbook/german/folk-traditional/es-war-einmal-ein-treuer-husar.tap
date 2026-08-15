@@ -1,0 +1,15 @@
+**TRACK: Es war einmal ein treuer Husar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | G . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Fm . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | G . . . |

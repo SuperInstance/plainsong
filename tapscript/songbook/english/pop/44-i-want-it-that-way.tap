@@ -1,0 +1,21 @@
+**TRACK: I Want It That Way**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: B | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | B . . . | F# . . . | G#m . . . | E . . . | B . . . | F# . . . | G#m . . . | F# . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | B . . . | F# . . . | G#m . . . | E . . . | B . . . | F# . . . | G#m . . . | F# . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | B . . . | F# . . . | G#m . . . | E . . . | B . . . | F# . . . | F# . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | G#m . . . | A . . . | F# . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | B . . . | F# . . . | G#m . . . | E . . . | B . . . | F# . . . | F# . . . |

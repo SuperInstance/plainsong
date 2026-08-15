@@ -1,0 +1,18 @@
+**TRACK: Fine and Mellow**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Bluesy, laid-back
+
+[V1] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | Bb . . . | F . . . | D7 . . . | G7 . . . | C7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | Bb . . . | F . . . | D7 . . . | G7 . . . | C7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F7 . . . | Bb7 . . . | F7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . | C7 . . . | C7 . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | Bb . . . | F . . . | D7 . . . | G7 . . . | C7 .

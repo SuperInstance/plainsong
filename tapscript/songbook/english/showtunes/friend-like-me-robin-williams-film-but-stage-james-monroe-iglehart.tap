@@ -1,0 +1,22 @@
+**TRACK: Friend Like Me (James Monroe Iglehart)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Fm . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Eb . . . |
+Chords: | Fm . . . | G . . . | Cm . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Bb . . . | Cm . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Cm . . . |

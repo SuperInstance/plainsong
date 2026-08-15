@@ -1,0 +1,12 @@
+**TRACK: Allah Tero Naam**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Devotional
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . |

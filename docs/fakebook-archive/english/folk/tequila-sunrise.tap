@@ -1,31 +1,25 @@
 **TRACK: Tequila Sunrise**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Laid-back
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | A7 . . . | Em . . . | A7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | e2-b2-e3 . . . | a1-c#2-e2 . . . | vel: 50
 Chords: | C . . . | G . . . | D . . . | D . . . |
-@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | d1-f#1-a1 . . . | d1-f#1-a1 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | A7 . . . | Em . . . | A7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | e2-b2-e3 . . . | a1-c#2-e2 . . . | vel: 52
 Chords: | C . . . | G . . . | D . . . | D . . . |
-@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | d1-f#1-a1 . . . | d1-f#1-a1 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-@guitar | g1-b1-d2 . . . | c2-e2-g2 . . . | g1-b1-d2 . . . | d1-f#1-a1 . . . | vel: 60
 Chords: | Em . . . | A7 . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | c2-e2-g2 . . . | d1-f#1-a1 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | D . . . | G . . . | Em . . . |
-@guitar | a1-c2-e2 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | e2-b2-e3 . . . | vel: 45
 Chords: | Am . . . | D . . . | G . . . | G . . . |
-@guitar | a1-c2-e2 . . . | d1-f#1-a1 . . . | g1-b1-d2 . . . | g1-b1-d2 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords:

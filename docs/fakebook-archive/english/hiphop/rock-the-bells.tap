@@ -1,27 +1,21 @@
 **TRACK: Rock the Bells**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 98 | subdivision: 16th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | Bm . . . | G . . . | A . . . |
-       | Bm . . . | Bm . . . | G . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 70
 
 [V2] (Verse - 8 Bars)
 Chords: | Bm . . . | Bm . . . | G . . . | A . . . |
-       | Bm . . . | Bm . . . | G . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 72
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bm . . . | Bm . . . | G . . . | A . . . |
-       | Bm . . . | Bm . . . | G . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 80
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | F# . . . | G . . . | A . . . |
-@guitar | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bm . . . | Bm . . . | G . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 60

@@ -1,22 +1,15 @@
 **TRACK: Symphony No. 6 "Pathétique" (2nd Movement - main theme)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D major (relative of B minor) | tempo: 54 (in 2) | subdivision: 8th
 time: 5/4 | mood: Sorrowful, waltz-like
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . . | A/C# . . . . | Bm . . . . | G . . . . |
-Melody: | D4 . F#4 . A4 . | F#4 . E4 . D4 . | B3 . D4 . F#4 . | G4 . F#4 . E4 . |
-Lyrics: | (instrumental) . . . . | . . . . . | . . . . . | . . . . . |
-@piano | d2-a2-d3-f#3 . . . . | a1-c#2-e2-a2 . . . . | b1-d2-f#2-b2 . . . . | g2-b2-d3-g3 . . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . . | A/C# . . . . | Bm . . . . | A7 . . . . |
-Melody: | D4 . F#4 . A4 . | F#4 . E4 . D4 . | B3 . D4 . F#4 . | A3 . C#4 . E4 . |
-Lyrics: | (instrumental) . . . . | . . . . . | . . . . . | . . . . . |
-@piano | d2-a2-d3-f#3 . . . . | a1-c#2-e2-a2 . . . . | b1-d2-f#2-b2 . . . . | a1-c#2-e2-g#2 . . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . . | D/F# . . . . | Bm . . . . | A . . . . |
-Melody: | G4 . B4 . D5 . | D5 . C#5 . B4 . | B4 . A4 . F#4 . | A4 . G4 . F#4 . |
-Lyrics: | (instrumental) . . . . | . . . . . | . . . . . | . . . . . |
-@piano | g2-b2-d3-g3 . . . . | d2-f#2-a2-d3 . . . . | b1-d2-f#2-b2 . . . . | a1-c#2-e2-a2 . . . . | vel: 50

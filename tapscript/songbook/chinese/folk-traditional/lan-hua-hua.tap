@@ -1,0 +1,15 @@
+**TRACK: Lan Hua Hua**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 72 | subdivision: 8th
+time: 2/4 | mood: Wistful, Folk
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . | Fm . | Cm . | G . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Cm . | Fm . | Cm . | G7 . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . | Cm . | G7 . | Cm . |

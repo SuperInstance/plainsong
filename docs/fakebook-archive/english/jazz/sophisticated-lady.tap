@@ -1,24 +1,18 @@
 **TRACK: Sophisticated Lady**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Sophisticated Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Abmaj7 . . . | Abmaj7 . . . | Fm7 . . . | Bb7 . . . |
-| Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7b9 . . . |
-@guitar | x-1-3-1-2-1 . . . | x-1-3-1-2-1 . . . | x-1-3-1-1-1 . . . | x-1-3-1-2-1 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm7 . . . | F7 . . . | Bbm7 . . . | Eb7 . . . |
-| Abmaj7 . . . | Fm7 . . . | Bb7 . . . | G7b9 . . . |
-@guitar | x-3-5-3-4-3 . . . | x-3-5-3-4-3 . . . | x-1-3-1-2-1 . . . | x-1-3-1-2-1 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dbmaj7 . . . | Dbmaj7 . . . | Db7 . . . | Gb7 . . . |
-| Cm7 . . . | F7 . . . | Bbm7 . . . | Eb7 . . . |
-@guitar | x-4-6-4-5-4 . . . | x-4-6-4-5-4 . . . | x-4-6-4-5-4 . . . | x-4-6-4-5-4 . . . | vel: 60
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Abmaj7 . . . | Abmaj7 . . . | Fm7 . . . | Bb7 . . . |
-| Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7b9 . . . |
-@guitar | x-1-3-1-2-1 . . . | x-1-3-1-2-1 . . . | x-1-3-1-1-1 . . . | x-1-3-1-2-1 . . . | vel: 55

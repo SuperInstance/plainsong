@@ -1,24 +1,21 @@
 **TRACK: The Wind Cries Mary**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Bluesy, relaxed
 
 [V1] (Verse - 4 Bars)
 Chords: | Em7 . . . | D/F# . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-f#2-a2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | Em7 . . . | D/F# . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Cmaj7 . . . | G . . . | Am7 . . . | B7 . . . |
-@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | a1-e2-a2 . . . | b1-f#2-a2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em7 . . . | A7 . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | a1-c#2-e2 . . . | c2-e2-g2 . . . | b1-f#2-a2 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em7 . . . | D/F# . . . | Cmaj7 . . . | B7 . . . |
-@guitar | e2-b2-e3 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | b1-f#2-a2 . . . | vel: 45

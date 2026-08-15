@@ -1,0 +1,21 @@
+**TRACK: Hier encore**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | Am . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | A7 . . . | Dm . . . | G7 . . . | C . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . .

@@ -1,0 +1,15 @@
+**TRACK: Heartless**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Dark, driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | C#m . . . | B . . . | B . . . |

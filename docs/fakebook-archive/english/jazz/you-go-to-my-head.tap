@@ -1,24 +1,21 @@
 **TRACK: You Go to My Head**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 . . . | Fmaj7 . . . | Gm7 C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | g2-bb2-d3 . . . c2-e2-g2-bb2 . . . | vel: 55
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Fmaj7 . . . | Bbm7 . . . | Fmaj7 . . . | Gm7 C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | g2-bb2-d3 . . . c2-e2-g2-bb2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm7 . . . | G7 . . . | Gm7 . . . | C7 . . . |
-@guitar | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f#2-a2-c3 . . . | g2-bb2-d3-f3 . . . | c2-e2-g2-bb2 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fmaj7 . . . | Bbm7 . . . | Fmaj7 . . . | Gm7 C7 . . . |
-@guitar | f2-a2-c3-e3 . . . | bb1-db2-f2-ab2 . . . | f2-a2-c3-e3 . . . | g2-bb2-d3 . . . c2-e2-g2-bb2 . . . | vel: 50

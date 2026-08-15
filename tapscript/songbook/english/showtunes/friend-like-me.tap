@@ -1,0 +1,21 @@
+**TRACK: Friend Like Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . | F . . . | C . . . | Dm . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | C . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | F . . . |

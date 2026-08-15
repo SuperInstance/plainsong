@@ -1,24 +1,21 @@
 **TRACK: Think About You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A minor | tempo: 126 | subdivision: 8th
 time: 4/4 | mood: Driving Rock
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 58
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | G . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Am . . . | F . . . | G . . . |
-@guitar | d3-f3-a3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | Am . . . | F . . . |
-@guitar | a2-e3-a3 . . . | f2-a2-c3 . . . | vel: 55

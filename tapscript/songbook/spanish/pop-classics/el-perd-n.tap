@@ -1,0 +1,21 @@
+**TRACK: El Perdón**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Reggaeton
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+
+[PRE] (Pre-Chorus - 4 Bars)
+Chords: | Em . . . | G . . . | A . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | F# . . . | Bm . . . | A . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |

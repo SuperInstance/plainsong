@@ -1,0 +1,21 @@
+**TRACK: Suave**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | F . . . | Bbm . . . | F . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Eb . . . | F . . . |

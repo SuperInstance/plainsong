@@ -1,0 +1,21 @@
+**TRACK: Como É Grande o Meu Amor por Você**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | Em . . . | F . . . | G . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Am . . . | Em . . . | F . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | G . . . |

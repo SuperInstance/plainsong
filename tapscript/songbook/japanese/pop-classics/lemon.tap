@@ -1,0 +1,21 @@
+**TRACK: Lemon**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Ab . . . | Fm . . . | Db . . . | Eb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | Eb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Eb . . . | Ab . . . | Fm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm . . . | Eb . . . |

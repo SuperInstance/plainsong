@@ -1,0 +1,18 @@
+**TRACK: L'important c'est la rose**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Waltz-like yet driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | G . . . |

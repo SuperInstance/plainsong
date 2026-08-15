@@ -1,0 +1,18 @@
+**TRACK: Amor Eterno**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Solemn
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | G . . . | C . . . | F . . . | E7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . | F . . . | E7 . . . | Am . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G . . . | C . . . | E7 . . . |

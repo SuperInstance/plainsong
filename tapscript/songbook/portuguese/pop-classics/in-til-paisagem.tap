@@ -1,0 +1,18 @@
+**TRACK: Inútil Paisagem**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm7 . . . | F7 . . . | Bbmaj7 . . . | Ebmaj7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Abmaj7 . . . | Dbmaj7 . . . | Gm7b5 . . . | C7b9 . . . |
+
+[V3] (Final Verse - 4 Bars)
+Chords: | Cm7 . . . | F7 . . . | Bbmaj7 . . . | G7b9 . . . |

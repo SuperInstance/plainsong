@@ -1,0 +1,18 @@
+**TRACK: Potato Head Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+
+[V2] (Verse Variation - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C7 . . . | F7 . . . | Bb . . . | F7 . . . |
+
+[V3] (Final Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |

@@ -1,24 +1,21 @@
 **TRACK: Sweet Home Alabama**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 98 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | C . . . | G . . . | D . . . |
-@guitar | d2-a2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | C . . . | G . . . | D . . . |
-@guitar | d2-a2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | C . . . |
-@guitar | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | vel: 58
 
 [V3] (Verse - 8 Bars)
 Chords: | D . . . | C . . . | G . . . | D . . . |
-@guitar | d2-a2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55

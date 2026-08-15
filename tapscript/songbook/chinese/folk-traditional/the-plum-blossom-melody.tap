@@ -1,0 +1,18 @@
+**TRACK: The Plum Blossom Melody**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Gentle, flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Gm . . . | C . . . | A . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+
+[OUTRO] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |

@@ -1,0 +1,17 @@
+**TRACK: Iron Maiden**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | D . . . |
+Chords: | Em . . . | D . . . | C . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+Chords: | Am . . . | C . . . | G . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | Em . . . | D . . . | D . . . |

@@ -1,19 +1,18 @@
 **TRACK: Laundromat Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Slow Blues
 
 [V1] (Verse - 12 Bars)
 Chords: | E7 . . . | A7 . . . | E7 . . . | E7 . . . | A7 . . . | A7 . . . | E7 . . . | E7 . . . | B7 . . . | A7 . . . | E7 . . . | B7 . . . |
-@guitar | e3-g#3-b3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | vel: 58
 
 [V2] (Verse - 12 Bars)
 Chords: | E7 . . . | A7 . . . | E7 . . . | E7 . . . | A7 . . . | A7 . . . | E7 . . . | E7 . . . | B7 . . . | A7 . . . | E7 . . . | B7 . . . |
-@guitar | e3-g#3-b3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | vel: 58
 
 [BR] (Bridge - 8 Bars)
 Chords: | A7 . . . | A7 . . . | E7 . . . | E7 . . . | B7 . . . | A7 . . . | E7 . . . | B7 . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e3-g#3-b3 . . . | b2-d#3-f#3 . . . | vel: 62
 
 [SOLO] (Guitar Solo - 12 Bars)
 Chords: | E7 . . . | A7 . . . | E7 . . . | E7

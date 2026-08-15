@@ -1,0 +1,21 @@
+**TRACK: Nadezhda**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | B7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | Em . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | G . . . | B7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | D . . . | G . . . | C . . . | B7 . . . | Em . . . | B7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | B7 . . . | Em . . . | Em . . . |

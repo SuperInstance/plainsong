@@ -1,333 +1,392 @@
-# 🎵 TapScript Studio
+# TapScript
 
-**Plain-text music notation that looks like a lead sheet when printed, compiles to MIDI/WAV when rendered. Embeds in markdown like [mermaid](https://mermaid.js.org/) diagrams.**
+Music notation you can write in any text editor, read like a lead sheet, keep in
+version control, and compile to MIDI and audio.
 
-> *Write music the way you write code — in plain text, in your editor, with version control.*
+```tapscript
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
+Lyrics: | the tide  came | in  before  dawn | and  left  a | line  of  salt |
+@bass   | a1 . e2 . | f1 . c2 . | c1 . g1 . | g1 . d2 . | vel: 70
+```
 
----
+That is the whole idea. Four rows that line up, bars separated by `|`, and a
+file any editor, any diff tool and any language model can read.
 
-## Table of Contents
+## Try it without installing anything
 
-- [Vision](#vision)
-- [Quick Start](#quick-start)
-- [The Notation](#the-notation)
-- [Architecture](#architecture)
-- [Key Concepts](#key-concepts)
-- [Components](#components)
-- [Documentation](#documentation)
-- [Testing](#testing)
-- [Further Reading](#further-reading)
-- [Relation to the Fleet](#relation-to-the-fleet)
+`docs/demo/index.html` is a working compiler in one file — parser, arranger, MIDI
+writer, a player and three interactive simulations. Save it and open it; it runs
+from `file://` with no server, no build step and no network.
 
----
+The simulations are there because two of this system's ideas are hard to believe
+from prose. One shows a bar subdividing as you change how many events it holds.
+The other puts four players and a listener on a stage you can drag: move the ear
+onto the podium and the four sounds land **0 ms** apart, move it anywhere else
+and they do not.
 
-## Vision
+## Hello world
 
-Music notation software is bloated. [MuseScore](https://musescore.org/), [Sibelius](https://www.avid.com/sibelius), [Finale](https://www.finalemusic.com/) — they're powerful, but they're GUI-first tools that produce binary files. You can't diff a `.sib` file in git. You can't embed sheet music in a README. You can't generate music from a script.
-
-[ABC Notation](https://abcnotation.com/) and [LilyPond](https://lilypond.org/) proved that plain-text music notation works. But ABC is folk-centric (jigs and reels), and LilyPond is a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) with a steep learning curve. Neither feels like writing a [lead sheet](https://en.wikipedia.org/wiki/Lead_sheet) — the chord-chart-plus-melody format that working musicians actually use.
-
-**TapScript is plain-text lead sheet notation.** It looks like music when you read it. It compiles to [MIDI](https://en.wikipedia.org/wiki/MIDI) and [WAV](https://en.wikipedia.org/wiki/WAV) when you run it. It handles chords, melody, lyrics, multiple players, swing, and micro-timing — all in a format that fits in a markdown code block.
-
-### Design Philosophy
-
-TapScript follows three principles (see [Founding Philosophy](proposals/00-FOUNDING-PHILOSOPHY.md)):
-
-1. **[Plain text is the source of truth](https://en.wikipedia.org/wiki/Plain_text)** — not a GUI, not a binary format. Text diffs cleanly, merges cleanly, and lives in git.
-2. **[Lead sheet, not full score](https://en.wikipedia.org/wiki/Lead_sheet)** — chord symbols + melody + lyrics. The format working musicians use, not orchestral notation.
-3. **[Compile, don't interpret](https://en.wikipedia.org/wiki/Compiler)** — TapScript compiles to standard MIDI, which any DAW or player can read. No runtime dependency on TapScript itself.
-
----
-
-## Quick Start
+Python 3.10 or newer. Nothing else to install.
 
 ```bash
-# Clone the repo
-git clone https://github.com/SuperInstance/tapscript-studio.git
+git clone https://github.com/SuperInstance/tapscript-studio
 cd tapscript-studio
-
-# Start the web studio (port 5557)
-python3 scripts/tapscript_v2.py
-
-# Or compile from the command line
-python3 scripts/tapscript_v2.py --cli mysong.tap --midi out.mid --wav out.wav
-
-# Try a built-in example
-python3 scripts/tapscript_v2.py --example harbor_dawn --wav harbor.wav
+pip install -e .
 ```
 
-### Components
+Now make a piece and listen to it:
 
-| Component | Port | Purpose |
-|-----------|------|---------|
-| [Image Gallery](scripts/gallery_v4.py) | 5555 | [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) + [FLUX](https://blackforestlabs.ai/) image generation, img2img, albums |
-| [MIDI Studio](scripts/midi_studio.py) | 5556 | Multi-track MIDI generation with [DeepSeek](https://www.deepseek.com) composer |
-| [TapScript Studio](scripts/tapscript_v2.py) | 5557 | Plain-text notation → MIDI → WAV compiler |
+```bash
+tapscript new "My First Song" -o first.tap
+tapscript compile first.tap -o first.mid --audio first.wav --play
+```
 
-Each component is a standalone Python web server. Run them independently — they share no code, only the filesystem.
+```
+My First Song  --  Am, 96 bpm, 4/4
+2 sections, dialect: absolute
+61 notes across chords (24), melody (22), bass (15)
+length 20s
+midi  first.mid
+audio first.wav  [builtin/python]
+```
 
----
+You now have a MIDI file any DAW will open and a WAV you can play anywhere. If
+`--play` says it cannot find an audio player, the files were still written — open
+`first.wav` however you normally would.
 
-## The Notation
-
-### v2 Format (Absolute Pitch)
+Open `first.tap` in your editor. It is a complete, working piece, and it is the
+fastest way to learn the format:
 
 ```tapscript
-**TRACK: Neon Shadows**
+**TRACK: My First Song**
 [MetaData]
-key: Am | tempo: 75 | swing: 10% | subdivision: 16th
+key: Am | tempo: 96 | swing: 0% | subdivision: 8th
+time: 4/4 | mood: Open
 
 [V1] (Verse - 4 Bars)
-Chords:  | Am    .    | F     G    |
-Melody: | E4    . . . | A4    . G4 E4 |
-Lyrics: | I     . . . | write . in code |
-@wesley | e2-a2-c3 . . | f2-a2-c3 g2-b2-d3 | vel: 60
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
+Lyrics: | write the words | one bar at a time | the bar divides | itself |
+@bass   | a1 . e2 . | f1 . c2 . | c1 . g1 . | g1 . d2 . | vel: 70
 
-[C] (Chorus - Louder)
-Chords:  | Am    F     C     G    |
-Melody: | A4    C5    A4    G4   |
-@flash  | a2    f2    c2    g2   | vel: 80
-@hermes | a1    .     a1    .    | vel: 75
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+Melody: | F4 . A4 C5 | G4 . B4 D5 | A4 . C5 E5 | A4 . . . |
+@bass   | f1 . c2 . | g1 . d2 . | a1 . e2 . | a1 . . . | vel: 74
 ```
 
-### v1 Format (Roman Numeral / Scale Degree)
+Change one chord. Recompile. Listen again. That loop is the entire workflow.
+
+## Reading the notation
+
+**The header.** `**TRACK:**` names the piece. `[MetaData]` sets key, tempo, time
+signature and feel. Everything in it has a sensible default, so you can delete
+any line you do not care about.
+
+**Sections.** `[V1] (Verse - 4 Bars)` opens a section. The tag is yours — `V1`,
+`CH`, `Bridge`, `Solo`. The parenthetical is a comment for humans; the compiler
+counts the bars it actually finds.
+
+**Rows.** A row is a voice. `Chords:`, `Melody:` and `Lyrics:` are built in, and
+`@anything` is a named player — `@bass`, `@piano`, `@horns`. Rows of different
+kinds sound *together*, so the four lines above are one four-bar passage played
+by everybody, not sixteen bars in sequence.
+
+**Bars and tokens.** `|` separates bars. Inside a bar, tokens are separated by
+spaces and `.` means "no new note here". Pitches are scientific — `A4` is A above
+middle C, `a1` an octave-and-a-bit below.
+
+**Options** come after the last `|`: `vel: 70` sets velocity for that row.
+
+### The one rule that surprises people
+
+**A bar is one bar long, and the tokens inside it divide it.**
+
+```
+Chords: | Am . . . |        four tokens  -> four quarter notes
+Melody: | A4 C5 E5 |        three tokens -> a triplet
+Melody: | A4 . C5 . E5 . |  six tokens   -> six eighth notes
+```
+
+You do not declare durations. You write how many events happen in the bar and
+the bar divides itself. Twelve tokens are triplets; a seventeenth cannot spill
+into the next bar. This is why the lyric row in the starter file says *the bar
+divides itself*.
+
+If you want the older fixed-slot behaviour, set `core.bar_fill = "grid"` — it
+will tell you what it had to drop.
+
+### Two rows of the same kind run in sequence
 
 ```tapscript
-Key: Am
-Tempo: 120
-Swing: 0
-Time: 4/4
-
-[Intro]
-| i . . . | i . . . | VI . . . | VII . . . |
-
-[Verse]
-| i  5 . 4 | 3 . 2 . | VI  1 . 7 | i . . . |
+[V1] (Verse - 8 Bars)
+Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
+Melody: | C5 . E5 G5 | A4 . C5 E5 | F4 . A4 C5 | E4 . . . |
 ```
 
-### Notation Elements
+Two `Melody:` rows in one section are eight bars of melody, not four bars played
+twice. Different kinds stack; the same kind continues.
 
-| Element | Syntax | Example | Meaning |
-|---------|--------|---------|---------|
-| **Chord** | Root + quality | `Am`, `F`, `G7`, `Cmaj9` | Standard [chord symbols](https://en.wikipedia.org/wiki/Chord_(music)) |
-| **Melody note** | Pitch + octave | `E4`, `a2`, `C#5` | [Scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation) |
-| **Chord (melody)** | Hyphen-separated | `e2-a2-c3` | Multiple simultaneous pitches |
-| **Sustain** | `.` | `| Am . . . |` | Hold previous event |
-| **Rest** | `-` | `| Am - - - |` | Explicit silence |
-| **Player line** | `@name` | `@wesley ...` | A named player's part |
-| **Velocity** | `vel: N` | `vel: 80` | [MIDI velocity](https://en.wikipedia.org/wiki/MIDI#Messages) (1-127) |
-| **Section** | `[Name]` | `[V1]`, `[C]`, `[Bridge]` | Named section header |
-| **Bar separator** | `\|` | `\| Am  F  \| C  G  \|` | Bar line |
+## Building from there
 
----
+Everything below works on the file you just made.
 
-## Architecture
+**Look at it.**
 
-TapScript Studio is **three independent processes** — not a monolith. They share the filesystem but no code:
-
-```
-┌─────────────────────────────────────────────────────┐
-│                 TapScript Studio                      │
-│                                                       │
-│  ┌─────────────────┐  ┌─────────────────┐           │
-│  │  Image Gallery   │  │  MIDI Studio    │           │
-│  │  (port 5555)     │  │  (port 5556)    │           │
-│  │                  │  │                  │           │
-│  │  SD 1.5 + FLUX   │  │  DeepSeek        │           │
-│  │  img2img         │  │  multi-track     │           │
-│  │  albums          │  │  composition     │           │
-│  └────────┬────────┘  └────────┬────────┘           │
-│           │                     │                     │
-│           ▼                     ▼                     │
-│  ┌────────────────────────────────────────┐          │
-│  │         Filesystem (shared)             │          │
-│  │  ~/.openclaw/workspace/output/          │          │
-│  │    images/gallery/                      │          │
-│  │    audio/                               │          │
-│  └────────────────────────────────────────┘          │
-│           ▲                                           │
-│           │                                           │
-│  ┌────────┴────────┐                                 │
-│  │  TapScript v2    │                                 │
-│  │  (port 5557)     │                                 │
-│  │                  │                                 │
-│  │  .tap → MIDI →   │                                 │
-│  │  WAV compiler    │                                 │
-│  └─────────────────┘                                 │
-└─────────────────────────────────────────────────────┘
+```bash
+tapscript info first.tap            # key, tempo, sections, bars, length
+tapscript info first.tap --verbose  # every diagnostic it can give you
+tapscript check first.tap           # is anything wrong?
 ```
 
-### Source Files
+**Move it to another key.**
 
-| File | Purpose |
-|------|---------|
-| [`scripts/tapscript_v2.py`](scripts/tapscript_v2.py) | v2 engine (absolute pitch notation) — the primary parser and compiler |
-| [`scripts/tapscript.py`](scripts/tapscript.py) | v1 engine (Roman numeral notation) — legacy |
-| [`scripts/midi_studio.py`](scripts/midi_studio.py) | Multi-track MIDI generation with AI composer |
-| [`scripts/gallery_v4.py`](scripts/gallery_v4.py) | Image generation gallery |
-| `scripts/generate_image*.py` | Image generation variants |
-| `scripts/fakebook_generator.py` | [Fake book](https://en.wikipedia.org/wiki/Fake_book) generator |
+```bash
+tapscript transpose first.tap C          # print it
+tapscript transpose first.tap C -o c.tap # write it
+tapscript transpose first.tap -- -3      # or by semitones
+```
 
-### Python Modules (in `src/`)
+Transposition moves the tonic and keeps the mode, so `Am` transposed to `C` is
+`Cm`, not C major. It rewrites the chord row too, which the notation's ancestors
+did not.
 
-| Module | Purpose |
-|--------|---------|
-| [`pulse_grid.py`](src/pulse_grid.py) | [Pulse-based timing grid](https://en.wikipedia.org/wiki/Pulse_(music)) — subdivides beats into slots |
-| [`groove_tracker.py`](src/groove_tracker.py) | [Groove](https://en.wikipedia.org/wiki/Groove_(music)) analysis and swing computation |
-| [`counterpoint_analyzer.py`](src/counterpoint_analyzer.py) | [Counterpoint](https://en.wikipedia.org/wiki/Counterpoint) rule checking |
-| [`tradition_dna.py`](src/tradition_dna.py) | Musical tradition fingerprints ([stylistic DNA](https://en.wikipedia.org/wiki/Style_(music))) |
-| [`genome.py`](src/genome.py) | Musical genome — genetic algorithm for variation |
-| `swmidi8.py` | [Swing](https://en.wikipedia.org/wiki/Swing_(jazz_performance_style))-weighted MIDI 8th-note processor |
+**Add a player.** Any `@name` row becomes its own MIDI track:
 
----
+```
+@horns | c4-e4-g4 . . . | f4-a4-c5 . . . | vel: 88
+```
 
-## Key Concepts
+Dashes make a chord out of simultaneous pitches.
 
-### Scientific Pitch Notation
+**Change the feel.** In `[MetaData]`, `swing: 62%` gives a jazz eighth-note
+feel; `time: 3/4` and `6/8` work as you would expect.
 
-TapScript uses [scientific pitch notation (SPN)](https://en.wikipedia.org/wiki/Scientific_pitch_notation) for melody notes: a letter (A-G), optional accidental (# or b), and an octave number. `C4` is middle C (MIDI note 60). `A4` is 440 Hz. `E2` is the low E on a guitar.
+**Browse the bundled library** — several thousand chord charts, across a dozen
+languages:
 
-### Chord Symbols
+```bash
+tapscript library "waltz"
+tapscript play stand-by-me
+```
 
-Chords use standard [jazz/pop chord notation](https://en.wikipedia.org/wiki/Chord_(music)#Symbols):
-- `Am` = A minor (A, C, E)
-- `F` = F major (F, A, C)
-- `G7` = G dominant 7th (G, B, D, F)
-- `Cmaj9` = C major 9th (C, E, G, B, D)
+## Three ways in
 
-### Swing
+```bash
+tapscript compile song.tap --play   # command line
+tapscript tui                       # terminal interface
+tapscript serve                     # web interface at localhost:8765
+```
 
-[Swing](https://en.wikipedia.org/wiki/Swing_(jazz_performance_style)) is the asymmetric subdivision of [eighth notes](https://en.wikipedia.org/wiki/Eighth_note) — the first eighth is longer than the second. TapScript's `swing: 10%` means the first eighth gets 55% of the beat and the second gets 45%. At `swing: 0%`, eighths are even (straight). At higher values, the feel becomes more [laid-back](https://en.wikipedia.org/wiki/Groove_(music)#Laid_back).
+All three drive the same compiler and see the same library and settings. Nothing
+is available in one and missing from another.
 
-### Subdivision
+The terminal interface needs Python's `curses`, which Linux and macOS ship and
+stock Python on Windows does not — `pip install windows-curses` there, or use the
+web interface, which needs nothing.
 
-The `subdivision` parameter determines the smallest rhythmic unit per beat:
-- `8th` = 2 slots per beat (eighth notes)
-- `16th` = 4 slots per beat (sixteenth notes)
+## Where your files go
 
-More slots = more rhythmic detail possible in the melody.
+`tapscript compile` writes MIDI beside your `.tap` file when you pass `-o`. If
+you do not, it writes into the workspace instead, and tells you the full path.
+`tapscript doctor` prints the locations:
 
-### General MIDI
+```
+config_file   ~/.config/tapscript/config.toml
+workspace     ~/.local/share/tapscript/workspace
+output_dir    ~/.local/share/tapscript/workspace/output
+```
 
-TapScript maps instrument names to [General MIDI](https://en.wikipedia.org/wiki/General_MIDI) program numbers. `@wesley` defaults to piano (program 0), `@flash` to guitar (program 24), `@hermes` to bass (program 33). These can be overridden in the notation.
+Nothing is hardcoded and nothing is written outside these unless you ask.
 
----
+## What your machine can do
+
+```bash
+tapscript doctor    # what is installed, and what each missing piece would add
+tapscript spec      # verify the system's promises against this machine
+```
+
+There are no required dependencies. The parser, the MIDI writer, the
+synthesiser, the web interface and every model provider adapter are written
+against the standard library. Optional extras — NumPy for faster synthesis,
+fluidsynth for soundfont-quality audio, ffmpeg for mp3, mido for hardware MIDI —
+are detected when present and never required.
+
+## Timing that models the room
+
+A score usually says "this note is at beat 4.5" without saying *where* that
+happens — at the player's hands, at the instrument, or at the ear it is written
+for. Declare a stage and TapScript treats written times as **arrival** times and
+solves backwards for when each player has to act:
+
+```
+[Stage]
+listener: conductor
+@timpani: pos 4,-9  | speech: percussion
+@organ:   pos 0,-14 | speech: organ-large
+```
+
+```
+$ tapscript stage orchestra.tap
+  voice    distance  onset   travel  p-centre  act
+  timpani  9.8 m     0 ms    29 ms   1 ms      -30 ms
+  organ    14.0 m    140 ms  41 ms   60 ms     -241 ms
+
+what conductor hears, against the written beat
+  spread 0 ms
+```
+
+The organist's key goes down 241 ms early so the pipe speaks on the beat. At the
+podium everything lands together; at any player's desk it does not, which is why
+an orchestra watches rather than listens. See
+[docs/performance.md](docs/performance.md).
+
+Without a `[Stage]` block none of this applies and written times are taken at
+face value, exactly as before.
+
+## Connect a model, if you want one
+
+The compiler does not need a model. Adding one gives you an agent that writes
+and revises notation, and a build agent that adapts the install to your setup.
+
+```bash
+tapscript setup
+tapscript agent "a slow waltz in D minor, piano and cello, sixteen bars"
+tapscript build            # tailor this install to your machine and use case
+```
+
+It works with hosted APIs (Anthropic, OpenAI, DeepSeek, OpenRouter, Gemini, xAI,
+Groq, Mistral, Together, Fireworks, Cerebras, Azure), with local servers (Ollama,
+LM Studio, vLLM, llama.cpp), and with **no key at all** when you are already
+running inside another agent such as Claude Code — it borrows the model that is
+already there. Providers are catalogue entries rather than code, so adding one is
+a JSON file. See [docs/providers.md](docs/providers.md).
+
+Try it with no key and no network at all:
+
+```bash
+tapscript agent --provider echo "write something in D minor"
+```
+
+## Many agents, one score
+
+`tapscript mcp` serves the whole system over the Model Context Protocol, so any
+MCP-capable client can drive it without shelling out to the CLI.
+
+```bash
+tapscript mcp                 # JSON-RPC over stdio, what most clients expect
+tapscript mcp --http          # loopback HTTP, for remote and multi-agent setups
+tapscript mcp --list-tools    # what it exposes
+```
+
+On top of that sits an ensemble session: several agents working on one score at
+once, each owning a voice. Because the parts are disjoint the common case never
+conflicts, and a write made against a stale version is refused and handed the
+current state to rebase onto rather than overwriting somebody.
+
+That half of the system now has a repository of its own,
+[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp), which is where
+it is developed and where a client should install it from.
+
+## Every command
+
+| | |
+|---|---|
+| `compile` | notation to MIDI and audio |
+| `play` | compile and play in one step |
+| `new` | start a piece from a template |
+| `info` | summarise a piece, with every diagnostic under `--verbose` |
+| `check` | check notation, including examples inside markdown |
+| `transpose` | move a piece to another key or by semitones |
+| `library` | browse the bundled notation |
+| `stage` | what each listener on a stage actually hears |
+| `doctor` | what this machine can do |
+| `spec` | verify the system's promises |
+| `providers` / `setup` | list and connect model providers |
+| `config` | read and write settings |
+| `agent` / `build` | the composer and build agents |
+| `serve` / `tui` / `mcp` | the web, terminal and protocol interfaces |
+| `bridge` | answer model requests on behalf of a host agent |
+
+Every command takes `--json`. Use it when parsing output.
+
+## Documentation
+
+| | |
+|---|---|
+| [Your first song](docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
+| [Arranging](docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
+| [Integration](docs/integration.md) | Driving TapScript from other software |
+| [Getting started](docs/getting-started.md) | From clone to a finished piece |
+| [Notation reference](docs/notation.md) | The whole language |
+| [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
+| [MCP server](docs/mcp.md) | Driving the system from any MCP client |
+| [Ensemble sessions](docs/ensemble.md) | Several agents co-authoring one score |
+| [Providers](docs/providers.md) | Connecting a model, adding your own |
+| [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
+| [Agents](docs/agents.md) | The composer and build agents, and their tools |
+| [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
+| [Architecture](docs/architecture.md) | How it fits together, and why |
+| [Specs](docs/specs.md) | The checks the system runs against itself |
+| [Releasing](docs/releasing.md) | How a version is cut |
+| [Contributing](CONTRIBUTING.md) | Getting involved |
 
 ## Testing
 
 ```bash
-# Run the SWMIDI8 tests (swing-weighted MIDI processing)
-python3 src/test_swmidi8.py
-
-# Test the v2 parser with examples
-python3 scripts/tapscript_v2.py --example neon_shadows --midi /tmp/test.mid
-python3 scripts/tapscript_v2.py --example harbor_dawn --wav /tmp/test.wav
-
-# Test the v1 parser
-python3 scripts/tapscript.py --example creatures_of_interval
+python3 -m unittest discover -s tests   # the test suite
+python3 -m tapscript spec               # the system's checks on itself
+python3 -m tapscript check docs examples tapscript/songbook README.md
 ```
 
-### Test Compositions
+CI runs all three on Python 3.10 through 3.13 across Linux, macOS and Windows
+with nothing installed, which is what keeps the no-dependencies promise honest.
+`check` reads the examples inside markdown as well as `.tap` files, so a snippet
+in the documentation that stopped compiling would fail the build.
 
-The repo includes [8 example compositions](examples/) covering different styles and notation features:
-- `creatures_of_interval.tap` — v1 Roman numeral notation
-- `the_room_is_safe.tap` — Lullaby in E minor
-- `hermes_blues.tap` — 12-bar blues
-- `neon_shadows.tap` — Multi-player v2 with chords, melody, lyrics
-- `deck_work.tap` — Multi-section composition
-- Spacing tests (`spacing-*.tap`) — Edge cases for melody duration algorithm
-
----
-
-## Documentation
-
-### Core Docs
-
-| Document | Description |
-|----------|-------------|
-| **[Getting Started](docs/01-getting-started.md)** | Complete notation guide, CLI flags, and first composition |
-| **[Architecture](docs/02-architecture.md)** | How the three processes work (and don't), notation grammar, file formats |
-| **[API Reference](docs/03-api-reference.md)** | HTTP endpoints for the web studio |
-| **[Creative Guide](docs/04-creative-guide.md)** | How to compose with TapScript — form, harmony, melody, groove |
-
-### Design Proposals
-
-| Document | Description |
-|----------|-------------|
-| **[Founding Philosophy](proposals/00-FOUNDING-PHILOSOPHY.md)** | Why plain-text notation, why lead sheets, why compile |
-| **[Claude's Architecture Proposal](proposals/claude-architecture.md)** | Design session with Claude for the v2 format |
-| **[Print Refinements](proposals/tapscript-print-refinements.md)** | Making the notation look better on paper |
-| **[Plugin Architecture](proposals/tapscript-plugin-architecture.md)** | Future plugin system design |
-| **[Melody Duration Spacing](proposals/melody-duration-spacing.md)** | The algorithm for note durations from sparse tokens |
-| **[Examples](proposals/tapscript-examples.md)** | Annotated compositions |
-
-### Academy
-
-The [`academy/`](academy/) directory contains a structured curriculum for learning TapScript:
-- [`exercises/`](academy/exercises/) — graded exercises
-- [`assessments/`](academy/assessments/) — self-evaluation rubrics
-- [`knowledge-base/`](academy/knowledge-base/) — concept deep-dives
-- [`levels/`](academy/levels/) — progressive skill levels
-- [`certifications/`](academy/certifications/) — completion badges
-
----
-
-## Further Reading
-
-### For Developers
-
-- [TapScript Getting Started](docs/01-getting-started.md) — the complete notation guide
-- [TapScript Architecture](docs/02-architecture.md) — how the compiler works
-- [MIDI Specification](https://www.midi.org/specifications-old/item/the-midi-1-0-specification) — the binary format TapScript compiles to
-- [Standard MIDI File Format](https://www.cs.cmu.edu/~music/cmsip/readings/Standard-MIDI-file-format-updated.pdf) — SMF spec (PDF)
-- [pretty_midi Documentation](https://craffel.github.io/pretty-midi/) — the Python MIDI library used
-- [SciPy WAV I/O](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.wavfile.write.html) — WAV file writing
-
-### For Musicians
-
-- [Lead Sheet (Wikipedia)](https://en.wikipedia.org/wiki/Lead_sheet) — the format TapScript implements
-- [Chord Symbol Notation (Wikipedia)](https://en.wikipedia.org/wiki/Chord_(music)#Symbols) — how chords are written
-- [Scientific Pitch Notation (Wikipedia)](https://en.wikipedia.org/wiki/Scientific_pitch_notation) — the note naming system
-- [Swing (Jazz Performance Style)](https://en.wikipedia.org/wiki/Swing_(jazz_performance_style)) — what the swing parameter controls
-- [The Real Book](https://en.wikipedia.org/wiki/Real_Book) — the canonical jazz lead sheet collection
-- [Fake Book (Wikipedia)](https://en.wikipedia.org/wiki/Fake_book) — the tradition TapScript extends
-
-### For Educators
-
-- [ABC Notation](https://abcnotation.com/) — alternative plain-text notation (folk-centric)
-- [LilyPond](https://lilypond.org/) — engraving-quality music typography from text
-- [MusicXML](https://www.w3.org/2021/06/musicxml40/) — W3C standard for music notation interchange
-- [Humdrum](https://www.humdrum.org/) — musicology toolkit for computational music analysis
-- [Music21](https://web.mit.edu/music21/) — MIT's toolkit for computer-aided musicology
-
-### For Mathematicians
-
-- [Equal Temperament (Wikipedia)](https://en.wikipedia.org/wiki/Equal_temperament) — the tuning system MIDI uses
-- [Set Theory in Music (Wikipedia)](https://en.wikipedia.org/wiki/Set_theory_(music)) — analyzing pitch collections
-- [Allen Forte's Pitch-Class Set Theory](https://en.wikipedia.org/wiki/Pitch_class) — mathematical music theory
-- [The Geometry of Musical Chords](https://en.wikipedia.org/wiki/Chord_(music)#Geometry) — Dmitri Tymoczko's work
-- [Schenkerian Analysis](https://en.wikipedia.org/wiki/Schenkerian_analysis) — deep structure of tonal music
-
-### For Engineers
-
-- [Python `http.server` Module](https://docs.python.org/3/library/http.server.html) — how the web studio serves itself
-- [NumPy Audio Processing](https://numpy.org/doc/stable/reference/generated/numpy.sin.html) — waveform generation
-- [Digital Audio (Wikipedia)](https://en.wikipedia.org/wiki/Digital_audio) — sampling, quantization, Nyquist
-- [ADSR Envelope (Wikipedia)](https://en.wikipedia.org/wiki/Envelope_(music)) — Attack, Decay, Sustain, Release
-
----
-
-## Relation to the Fleet
+## Relation to the fleet
 
 | Component | Relationship |
 |---|---|
-| **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)** | Cloudflare Worker version of this compiler — runs TapScript on the edge |
-| **[fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi)** | Uses TapScript notation as input; JEPA perceives the feel |
-| **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** | Renders TapScript scores as agentic performances |
-| **[fleet-gateway](https://github.com/SuperInstance/fleet-gateway)** | Routes the AI composer calls (MIDI Studio uses DeepSeek) |
+| [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp) | This compiler over the Model Context Protocol, plus the ensemble session several agents share |
+| [tapscript-worker](https://github.com/SuperInstance/tapscript-worker) | Cloudflare Worker version of this compiler — runs TapScript on the edge |
+| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript.perform.conduct` speaks. |
+| [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders TapScript scores as agentic performances |
 
----
+## Status
 
-## License
+Version 1.0. The notation, the CLI surface and the provider catalogue format are
+stable; changes to them will go through a deprecation cycle.
 
-MIT — part of the [SuperInstance](https://github.com/SuperInstance) fleet.
+This release is a rebuild rather than an increment. The previous engine assumed a
+particular machine — it wrote into a fixed home directory, required numpy, scipy,
+pretty_midi and flask, and kept several copies of the General MIDI table that had
+come to disagree with each other. What is here now has no required dependencies,
+resolves every path at runtime, and treats model providers as catalogue entries
+rather than code.
+
+What that claim rests on: the suite runs on Python 3.10 through 3.13 across three
+operating systems with nothing installed; 6,325 notation sources in this
+repository compile; and `tapscript spec` checks the promises against the machine
+in front of you, so you can confirm the above rather than take it on trust.
+
+Known limits, in the open:
+
+- The built-in synthesiser is a preview renderer. Mono, approximate timbres.
+  fluidsynth with a soundfont is the quality path.
+- The host bridge cannot stream and reports no token usage.
+- The TUI needs `curses`, which stock Python on Windows does not ship.
+- No third-party MCP client has connected to the server yet; its protocol
+  behaviour is verified against the specification instead.
+- The bundled songbook (`tapscript/songbook/`) is **chord charts only** — melody and lyric rows were removed
+  from all 6,309 files. A chord progression is not protectable expression; a tune
+  and its words are, and nothing in those generated files recorded provenance.
+  See [docs/songbook.md](docs/songbook.md).
+- `legacy/` holds the two earlier engines this replaced. Nothing imports them and
+  they are not maintained.
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).

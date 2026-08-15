@@ -1,26 +1,18 @@
 **TRACK: Skylark**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Lyrical
 
 [V1] (Verse - 8 Bars)
 Chords: | Ebmaj7 . . . | Abmaj7 . . . | Gm7 . . . | C7 . . . |
-| Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | g2-bb2-d3-f3 . . . | c3-e3-g3-bb3 . . . | vel: 50
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | bb2-d3-f3-ab3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Ebmaj7 . . . | Abmaj7 . . . | Gm7 . . . | C7 . . . |
-| Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3-d4 . . . | ab2-c3-eb3-g3 . . . | g2-bb2-d3-f3 . . . | c3-e3-g3-bb3 . . . | vel: 50
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | bb2-d3-f3-ab3 . . . | vel: 50
 
 [BR] (Bridge - 8 Bars)
 Chords: | Abmaj7 . . . | Abm7 . . . | Db7 . . . | Gbmaj7 . . . |
-| Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Bb7 . . . |
-@guitar | ab2-c3-eb3-g3 . . . | ab2-b3-eb3-gb3 . . . | db3-f3-ab3-b3 . . . | gb2-bb2-db3-f3 . . . | vel: 55
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb3-d4 . . . | bb2-d3-f3-ab3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Ebmaj7 . . . |
-@guitar | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | eb3-g3-bb

@@ -1,0 +1,21 @@
+**TRACK: Corazón Partío**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | A . . . | D . . . | F# . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | A . . . |

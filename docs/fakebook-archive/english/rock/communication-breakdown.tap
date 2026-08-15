@@ -1,20 +1,18 @@
 **TRACK: Communication Breakdown**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 148 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | A . . . | A . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 60
 
 [V2] (Verse Variation - 4 Bars)
 Chords: | A . . . | G . . . |
-@guitar | a2-e3-a3 . . . | g2-d3-g3 . . . | vel: 62
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . |
-@guitar | d3-a3-d4 . . . | a2-e3-a3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e3-b3-e4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e3-b3-e4 . . . | vel: 65

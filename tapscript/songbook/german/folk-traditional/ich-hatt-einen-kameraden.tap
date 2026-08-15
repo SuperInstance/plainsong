@@ -1,0 +1,15 @@
+**TRACK: Ich hatt einen Kameraden**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Solemn
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . | C . . | F . . | C . . | F . . | Bb . . | C . . | F . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . | C . . | F . . | C . . | F . . | Bb . . | C . . | F . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . | C . . | F . . | C . . | F . . | Bb . . | C . . | F . . |

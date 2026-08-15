@@ -1,0 +1,21 @@
+**TRACK: Hoshwalon Ko Khabar Kya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+Chords: | F . . . | E . . . | Am . . . | E . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+Chords: | F . . . | E . . . | Am . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Chords: | Dm . . . | E . . . | Am . . . | E . . . |

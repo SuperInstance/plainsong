@@ -1,0 +1,18 @@
+**TRACK: Triste**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | A7 . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |

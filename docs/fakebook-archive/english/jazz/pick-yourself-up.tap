@@ -1,29 +1,21 @@
 **TRACK: Pick Yourself Up**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
-| Ab . . . | Db . . . | Ab . Eb7 . | Ab . . . |
-@guitar | a2-c3-f3 . . . | d2-f2-b2 . . . | a2-c3-f3 . . . | e2-g2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
-| Ab . . . | Db . . . | Ab . Eb7 . | Ab . . . |
-@guitar | a2-c3-f3 . . . | d2-f2-b2 . . . | a2-c3-f3 . . . | e2-g2-b2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Fm . . . | Bb7 . . . | Eb7 . . . |
-| Ab . . . | Fm . . . | Bb7 . . . | Eb7 . . . |
-@guitar | a2-c3-f3 . . . | f2-a2-c3 . . . | b2-d3-g3 . . . | e2-g2-b2 . . . | vel: 60
 
 [B] (Bridge - 8 Bars)
 Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . |
-| Db . . . | Db . . . | Eb7 . . . | Eb7 . . . |
-@guitar | d2-f2-b2 . . . | d2-f2-b2 . . . | a2-c3-f3 . . . | a2-c3-f3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Ab . . . | Fm . . . | Bb7 . . . | Eb7 . . . |
-| Ab . . . | Fm . . . | Bb7 . . . | Eb7 . . . |
-@guitar | a2-c3-f3 . . . | f2-a2-c3 . . . | b2-d3-g3 . . . | e2-g2-b2 . . . | vel: 60

@@ -1,22 +1,15 @@
 **TRACK: Swan Lake (Scene)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | Bm . . . | G . . . |
-Melody: | B3 . D4 . | G4 . . . |
-Lyrics: | (instrumental) |
-@piano | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | D . . . | A . . . |
-Melody: | F#4 . A4 . | E4 . F#4 . |
-Lyrics: | (instrumental) |
-@piano | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . . | A . . . |
-Melody: | G4 . B4 . | C#5 . A4 . |
-Lyrics: | (instrumental) |
-@piano | e3-g3-b3 . . . | a2-c#3-e3 . . . | vel: 55

@@ -1,0 +1,25 @@
+**TRACK: Vola colomba**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G7 . . . | C . . . | C . . . |
+Chords: | F . . . | G7 . . . | C . . . | G7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | G7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | Dm . . . | G7 . . . |
+Chords: | C . .

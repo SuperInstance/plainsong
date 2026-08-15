@@ -1,24 +1,21 @@
 **TRACK: Breathe**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Uplifting
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | E/G# . . . | F#m . . . | D . . . |
-@guitar | a2-e3-a3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | d2-a3-d4 . . . | vel: 50
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | A . . . | E/G# . . . | F#m . . . | D . . . |
-@guitar | a2-e3-a3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | d2-a3-d4 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | E . . . | F#m . . . |
-@guitar | d2-a3-d4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | f#2-a3-c#4 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | D . . . | A . . . | E . . . |
-@guitar | b2-d3-f#3 . . . | d2-a3-d4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . |
-@guitar | d2-a3-d4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | a2-e3-a3 . . . | vel: 50

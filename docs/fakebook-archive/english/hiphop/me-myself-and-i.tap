@@ -1,24 +1,21 @@
 **TRACK: Me Myself and I**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: G#m | tempo: 98 | subdivision: 8th  
 time: 4/4 | mood: Laid-back Funk
 
 [V1] (Verse - 8 Bars)  
 Chords: | G#m . . . | E . . . | B . . . | F# . . . |  
-@guitar | g#2-b2-d#3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | f#1-a#1-c#2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)  
 Chords: | G#m . . . | E . . . | B . . . | F# . . . |  
-@guitar | g#2-b2-d#3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | f#1-a#1-c#2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)  
 Chords: | E . . . | B . . . | F# . . . | G#m . . . |  
-@guitar | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | f#1-a#1-c#2 . . . | g#2-b2-d#3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)  
 Chords: | C#m . . . | G#m . . . | A . . . | B . . . |  
-@guitar | c#2-e2-g#2 . . . | g#2-b2-d#3 . . . | a1-c#2-e2 . . . | b1-d#2-f#2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)  
 Chords: | G#m . . . | E . . . | B . . . | F# . . . |  
-@guitar | g#2-b2-d#3 . . . | e2-g#2-b2 . . . | b1-d#2-f#2 . . . | f#1-a#1-c#2 . . . | vel: 45

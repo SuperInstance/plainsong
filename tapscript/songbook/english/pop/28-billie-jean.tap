@@ -1,0 +1,21 @@
+**TRACK: 28 Billie Jean**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 117 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | Bm . . . | Bm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | Bm . . . | Bm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | E . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . |

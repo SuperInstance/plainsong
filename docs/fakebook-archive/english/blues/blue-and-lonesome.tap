@@ -1,30 +1,18 @@
 **TRACK: Blue and Lonesome**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Slow Blues
 
 [V1] (Verse - 12 Bars)
 Chords: | A7 . . . | D7 . . . | A7 . . . | A7 . . . |
-| D7 . . . | D7 . . . | A7 . . . | E7 . . . |
-| D7 . . . | E7 . . . | A7 . . . | E7 . . . |
-@guitar | a1-c#2-e2-g2 . . . | d1-f#2-a2-c3 . . . | a1-c#2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 55
-@bass | a1 . . . | d2 . . . | a1 . . . | a1 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | A7 . . . | D7 . . . | A7 . . . | A7 . . . |
-| D7 . . . | D7 . . . | A7 . . . | E7 . . . |
-| D7 . . . | E7 . . . | A7 . . . | E7 . . . |
-@guitar | a1-c#2-e2-g2 . . . | d1-f#2-a2-c3 . . . | a1-c#2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 55
-@bass | a1 . . . | d2 . . . | a1 . . . | a1 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | D7 . . . | E7 . . . | A7 . . . | E7 . . . |
-@guitar | d1-f#2-a2-c3 . . . | e1-g#2-b2-d3 . . . | a1-c#2-e2-g2 . . . | e1-g#2-b2-d3 . . . | vel: 60
-@bass | d2 . . . | e2 . . . | a1 . . . | e2 . . . | vel: 65
 
 [V3] (Verse - 12 Bars)
 Chords: | A7 . . . | D7 . . . | A7 . . . | A7 . . . |
-| D7 . . . | D7 . . . | A7 . . . | E7 . . . |
-| D7 . . . | E7 . . . | A7 . . . | E7 . . . |
-@guitar | a1-c#2-e2-g2 . . . | d1-f#2-a2-c3 . . . | a1-c#2-e2-g2 . . . | a1-c#2-e2-g2 . . . | vel: 55
-@bass | a1 . . . | d

@@ -1,24 +1,21 @@
 **TRACK: C.R.E.A.M.**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 91 | subdivision: 8th
 time: 4/4 | mood: Gritty
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | E . . . | E . . . | F#m . . . | F#m . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | F#m . . . | F#m . . . | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | f#2-c

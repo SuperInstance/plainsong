@@ -1,0 +1,21 @@
+**TRACK: I'll Follow the Sun**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]  
+key: G | tempo: 120 | subdivision: 8th  
+time: 4/4 | mood: gentle
+
+[V1] (Verse - 8 Bars)  
+Chords: | G . . . | Em . . . | C . . . | D . . . |  
+
+[V2] (Verse - 8 Bars)  
+Chords: | G . . . | Em . . . | C . . . | D . . . |  
+
+[CH] (Chorus - 4 Bars)  
+Chords: | C . . . | G . . . | Am . . . | D . . . |  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Em . . . | Bm . . . | C . . . | D . . . |  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | G . . . | Em . . . | C . . . | D . . . |  

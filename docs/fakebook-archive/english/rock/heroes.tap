@@ -1,24 +1,21 @@
 **TRACK: Heroes**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 105 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | D . . . | G . . . | D . . . | D . . . | D . . . | G . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | D . . . | G . . . | D . . . | D . . . | D . . . | G . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | G . . . | D . . . | Bm . . . | G . . . | D . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | D . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | D . . . | G . . . | D . . . | D . . . |
-@guitar | d3-f#3-a3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | vel: 45

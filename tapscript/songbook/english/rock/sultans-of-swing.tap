@@ -1,0 +1,21 @@
+**TRACK: Sultans of Swing**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 148 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | F . . . | C . . . | C . . . | D . . . | D . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | F . . . | C . . . | C . . . | D . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | D . . . | D . . . | F . . . | C . . . | G . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | E . . . |
+
+[OUT] (Outro - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | D . . . | Am . . . | F . . . | C . . . | E . . . |

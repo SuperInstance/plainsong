@@ -1,24 +1,21 @@
 **TRACK: Rocket Queen - Guns N' Roses (duplicate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 136 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d3-f3-a3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 62
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | d3-f3-a3 . . . | vel: 68
 
 [BR] (Bridge - 2 Bars)
 Chords: | Am . . . | E . . . |
-@guitar | a2-c3-e3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [OUT] (Outro - 2 Bars)
 Chords: | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 50

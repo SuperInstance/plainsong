@@ -1,0 +1,21 @@
+**TRACK: Fakarouny**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]  
+key: Em | tempo: 100 | subdivision: 8th  
+time: 4/4 | mood: Majestic  
+
+[V1] (Verse - 8 Bars)  
+Chords: | Em . . . | B7 . . . | Em . . . | Am . . . |  
+
+[V2] (Verse - 8 Bars)  
+Chords: | Em . . . | B7 . . . | Em . . . | Am . . . |  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | C . . . | G . . . | Am . . . | Em . . . |  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | Am . . . | D . . . | G . . . | B7 . . . |  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | Em . . . | C . . . | B7 . . . | Em . . . |  

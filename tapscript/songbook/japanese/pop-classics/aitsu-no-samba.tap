@@ -1,0 +1,21 @@
+**TRACK: Aitsu no Samba**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 112 | subdivision: 8th
+time: 2/2 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fmaj7 . . . | E7 . . . | Am7 . . . | A7 . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm7 . . . | G7 . . . |

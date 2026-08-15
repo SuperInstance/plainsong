@@ -1,0 +1,21 @@
+**TRACK: Rang Wo Huan Le Yi Xia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 126 | subdivision: 8th
+time: 4/4 | mood: Upbeat
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | D . . . | C . . . | D . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | D . . . | G . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Em . . . | C . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | G . . . | G . . . |

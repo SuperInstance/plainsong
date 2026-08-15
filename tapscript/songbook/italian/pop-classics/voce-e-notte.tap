@@ -1,0 +1,22 @@
+**TRACK: Voce 'e notte**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Traditional
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | Am . . . | Em . . . | B7 . . . |
+Chords: | C . . . | G . . . | B7 . . . | Em . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | D7 . . . | G . . . | C . . . |
+Chords: | B7 . . . | Em . . . | Am . . . | B7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+Chords: | C . . . | B7 . . . | Em . . . | Em . . . |

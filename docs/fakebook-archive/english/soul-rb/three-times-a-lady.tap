@@ -1,23 +1,21 @@
 **TRACK: Three Times a Lady**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 82 | subdivision: 8th
 time: 4/4 | mood: Smooth Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G . . . | D . . . | Em . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Em . . . | A . . . | F#m . . . | Bm . . . | G . . . | A . . . | D . . . | A . . . |
-@guitar | e2-g#2-b2 . . . | a2-c#3-e3 . . . | f#2-a2-c#3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G . . . | D . . . | Em . . . | A . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 45
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . | G .

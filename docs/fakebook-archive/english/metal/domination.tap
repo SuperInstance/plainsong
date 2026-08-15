@@ -1,24 +1,21 @@
 **TRACK: Domination**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 94 | subdivision: 8th
 time: 4/4 | mood: Heavy
 
 [V1] (Verse - 4 Bars)
 Chords: | Eb5 . . . | Db5 . . . | C5 . . . | B5 . . . |
-@guitar | eb2-bb2-eb3 . . . | db2-ab2-db3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
 
 [V2] (Verse - 4 Bars)
 Chords: | Eb5 . . . | Db5 . . . | C5 . . . | B5 . . . |
-@guitar | eb2-bb2-eb3 . . . | db2-ab2-db3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb5 . . . | C5 . . . | Db5 . . . | B5 . . . |
-@guitar | eb2-bb2-eb3 . . . | c2-g2-c3 . . . | db2-ab2-db3 . . . | b1-f#2-b2 . . . | vel: 80
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ab5 . . . | Bb5 . . . | C5 . . . | B5 . . . |
-@guitar | ab1-eb2-ab2 . . . | bb1-f2-bb2 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 75
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb5 . . . | Db5 . . . | C5 . . . | B5 . . . |
-@guitar | eb2-bb2-eb3 . . . | db2-ab2-db3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 65

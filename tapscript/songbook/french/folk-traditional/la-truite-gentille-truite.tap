@@ -1,0 +1,18 @@
+**TRACK: La Truite (gentille truite)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: D | tempo: 92 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | D . . | A . . | D . . | A . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . | D . . | G . . | A . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . | Bm . . | G . . | A . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | D . . | A . D . |

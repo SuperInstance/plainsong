@@ -1,0 +1,23 @@
+**TRACK: Umi yori mo Fukaku**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | F . . . |
+Chords:

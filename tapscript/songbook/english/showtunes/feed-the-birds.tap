@@ -1,0 +1,21 @@
+**TRACK: Feed the Birds**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Tender
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . | Bb . . | F . . | C . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . | Bb . . | Gm . . | A7 . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . | Bb . . | F . . | C . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . | A7 . . | Dm . . | A7 . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . | Gm . . | Dm . . | Dm . . |

@@ -1,0 +1,22 @@
+**TRACK: Hallelujah**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/songbook.md.
+key: C | tempo: 60 | swing: 0% | subdivision: 8th
+
+[intro]
+Chords: C | Am | C | Am | F | G | C | G
+
+[verse1]
+Chords: C | Am | C | Am | F | G | C | G
+
+[chorus]
+Chords: F | G | C | Am | F | G | E7 | Am
+
+[verse2]
+Chords: C | Am | C | Am | F | G | C | G
+
+[chorus2]
+Chords: F | G | C | Am | F | G | E7 | Am
+
+[outro]
+Chords: C | Am | C | Am | F | G | C | (rest)

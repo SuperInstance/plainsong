@@ -1,24 +1,21 @@
 **TRACK: (I Can't Get No) Satisfaction**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 136 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a2-e3-a3 . . . | e2-b3-e4 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | E . . . | E . . . | D . . . | A . . . |
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a2-e3-a3 . . . | vel: 70
 
 [B] (Bridge - 4 Bars)
 Chords: | C . . . | D . . . | C . . . | D . . . |
-@guitar | c3-e3-g3 . . . | d2-a3-d4 . . . | c3-e3-g3 . . . | d2-a3-d4 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | E . . . | E . . . | E . . . | E . . . |
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 55

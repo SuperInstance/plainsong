@@ -1,0 +1,18 @@
+**TRACK: Mein Herz brennt**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 128 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . | Dm . . . | Dm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Gm . . . | A . . . | A . . . |

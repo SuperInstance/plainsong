@@ -1,0 +1,24 @@
+**TRACK: A Flor e o Espinho**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+Chords: | G7 . . . | G7 . . . | C7M . . . | C7M . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F7M . . . | F7M . . . | E7 . . . | E7 . . . |
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C7M . . . | E7 . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+Chords: | G7 . . . | G7 . . . | C7M . . . | E7 . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |

@@ -1,0 +1,12 @@
+**TRACK: Oshōgatsu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Festive, Gentle
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . F . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . |

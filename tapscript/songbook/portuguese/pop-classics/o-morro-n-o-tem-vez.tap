@@ -1,0 +1,21 @@
+**TRACK: O Morro Não Tem Vez**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 82 | subdivision: 8th
+time: 2/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Am6 . . . | Dm7 . . . | G7 . . . | C7M . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F7M . . . | Bm7b5 . . . | E7 . . . | Am6 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | C7M . . . | C6 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F7M . . . | E7 . . . | Am7 . . . | D7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm7b5 . . . | G7 . . . | C7M . . . | Am6 . . . |

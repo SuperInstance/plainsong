@@ -1,0 +1,21 @@
+**TRACK: Sayonara no Mukougawa**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Cm7 . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm7 . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F/A . . . | Gm . . . | Eb . . . |
+Chords: | Bb . . . | F/A . . . | Cm7 . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Cm7 . . . | F . . . |

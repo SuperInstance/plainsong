@@ -1,24 +1,21 @@
 **TRACK: Gimme All Your Lovin'**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 116 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | D . . . | A . . . |
-@guitar | a1-e3-a4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | E . . . |
-@guitar | g2-d3-g4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a4 . . . | e2-b3-e4 . . . | vel: 50

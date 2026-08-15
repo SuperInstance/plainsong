@@ -1,0 +1,12 @@
+**TRACK: La Montanara**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Gentle, pastoral
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D . | G . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . | G . . | C . . | G . . | D . . | G . . | D . . | G . . |

@@ -1,0 +1,18 @@
+**TRACK: Tell Me Something Good**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 108 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cmaj7 . . . | B7 . . . | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . | B7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |

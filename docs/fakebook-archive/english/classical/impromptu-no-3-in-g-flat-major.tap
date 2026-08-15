@@ -1,28 +1,18 @@
 **TRACK: Impromptu No. 3 in G-flat major**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gb | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Serene
 
 [V1] (Verse - 4 Bars)
 Chords: | Gb . . . | Eb7 . . . | Abm . . . | Db7 . . . |
-Melody: | Gb4 . . . | F4 . Eb4 . | Db4 . . . | C4 . Db4 . |
-Lyrics: | ah . . . | ah . ah . | ah . . . | ah . ah . |
-@piano | gb2-b2-db3-gb3 . . . | eb2-g2-bb2-eb3 . . . | ab2-cb3-eb3-ab3 . . . | db2-f2-ab2-db3 . . . | vel: 45
 
 [V2] (Verse - 4 Bars)
 Chords: | Gb . . . | Eb7 . . . | Abm . . . | Db7 . . . Gb . |
-Melody: | Bb4 . Ab4 . | Gb4 . F4 . | Eb4 . Db4 . | C4 . Db4 . Bb3 . |
-Lyrics: | la . la . | la . la . | la . la . | la . la . la . |
-@piano | gb2-bb2-db3-gb3 . . . | eb2-g2-bb2-eb3 . . . | ab2-cb3-eb3-ab3 . . . | db2-f2-ab2-db3 . gb2-bb2-db3-gb3 | vel: 48
 
 [CH] (Chorus - 4 Bars)
 Chords: | Gb . . . | Db7 . . . | Gb . . . | Eb7 . . . |
-Melody: | Gb4 . Ab4 . | Bb4 . Ab4 . | Gb4 . F4 . | Eb4 . Db4 . |
-Lyrics: | oh . oh . | oh . oh . | oh . oh . | oh . oh . |
-@piano | gb2-bb2-db3-gb3 . . . | db2-f2-ab2-db3 . . . | gb2-bb2-db3-gb3 . . . | eb2-g2-bb2-eb3 . . . | vel: 52
 
 [CH2] (Chorus - 4 Bars)
 Chords: | Abm . . . | Db7 . . . | Gb . . . | Gb . . . |
-Melody: | C4 . Db4 . | Eb4 . F4 . | Gb4 . . . | Gb4 . . . |
-Lyrics: | ah . ah . | ah . ah . | ah . . . | ah . . . |
-@piano | ab2-cb3-eb3-ab3 . . . | db2-f2-ab2-db3 . . . | gb2-bb2-db3-gb3 . . . | gb2-bb

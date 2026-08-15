@@ -1,0 +1,21 @@
+**TRACK: Hanamizuki**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 94 | subdivision: 8th
+time: 4/4 | mood: Gentle, Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . | G . . . | D/F# . . . | C . . . | D . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . | G . . . | D/F# . . . | C . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . | F . . . | C . . . | D . . . | D . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | Em/G . . . | F . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . | F . . . | C . . . | D . . . | D . . . |

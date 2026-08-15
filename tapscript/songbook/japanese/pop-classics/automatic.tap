@@ -1,0 +1,24 @@
+**TRACK: Automatic**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 94 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Fm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |
+Chords: | Bbm . . . | Fm . . . | Gb . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+Chords: | Gb . . . | Ab . . . | Bbm . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm . . . | Fm . . . | Gb . . . | Ab . . . |

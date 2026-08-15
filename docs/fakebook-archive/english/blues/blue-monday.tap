@@ -1,30 +1,21 @@
 **TRACK: Blue Monday**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 116 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | F7 . . . |
-         | Bb . . . | Bb . . . | Bb . . . | F7 . . . |
-         | Bb . . . | Bb . . . | F7 . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | Bb . . . | Bb . . . | Bb . . . | F7 . . . |
-         | Bb . . . | Bb . . . | Bb . . . | F7 . . . |
-         | Bb . . . | Bb . . . | F7 . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | f2-a2-eb3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . |
-         | Bb . . . | F7 . . . | Bb . . . | F7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | vel: 65
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . |
-         | F7 . . . | F7 . . . | Bb . . . | Bb . . . |
-@guitar | eb2-g3-bb3 . . . | eb2-g3-bb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Bb . . . | F7 . . . | Bb . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 55

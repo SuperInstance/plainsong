@@ -1,0 +1,21 @@
+**TRACK: Volozhka**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Lyrical, Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | A . . . | A . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | Dm . . . |

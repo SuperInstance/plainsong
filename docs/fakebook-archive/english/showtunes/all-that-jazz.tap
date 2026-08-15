@@ -1,24 +1,21 @@
 **TRACK: All That Jazz**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 168 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm7 . . . | F7 . . . | F7 . . . | Cm . . . | Ab7 . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb . . . | G7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | g2-b2-d3 . . . | vel: 65
 
 [B] (Bridge - 4 Bars)
 Chords: | Ab . . . | Abm . . . | Eb . . . | G7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb2-g2-bb2 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Cm . . . | Cm7 . . . | F7 . . . | F7 . . . | Cm . . . | Ab7 . . . | G7 . . . | G7 . . . |
-@guitar | c3-eb3-g3 . . . | c3-eb3-bb3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Ab . . . | Fm7 . . . | Bb7 . . . | Eb . . . | G7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab2

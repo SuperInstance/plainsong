@@ -1,0 +1,21 @@
+**TRACK: Mi Corazoncito**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 125 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | Bbm . . . | Fm . . . |
+
+[PRE] (Pre-Chorus - 2 Bars)
+Chords: | Eb . . . | F . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | F . . . | Eb . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Bbm . . . | Eb . . . | F . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bbm . . . | F . . . |

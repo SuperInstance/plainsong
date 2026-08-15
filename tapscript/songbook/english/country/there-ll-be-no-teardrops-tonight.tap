@@ -1,0 +1,21 @@
+**TRACK: There'll Be No Teardrops Tonight**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Weeping
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . | A . . | E . . | B7 . . | E . . | A . . | B7 . . | E . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . | E . . | B7 . . | E . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | E . . | E . . | A . . | E . . | B7 . . | E . . | B7 . . | E . . |

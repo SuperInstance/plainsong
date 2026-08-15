@@ -1,30 +1,24 @@
 **TRACK: Heat of the Moment**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 110 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | E . . . | D . . . | A . . . |
-@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 55
 Chords: | F#m . . . | E . . . | D . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a1-e2-a2 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | vel: 65
 Chords: | A . . . | E . . . | F#m . . . | E . . . |
-@guitar | a1-e2-a2 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 65
 
 [V2] (Verse - 8 Bars)
 Chords: | F#m . . . | E . . . | D . . . | A . . . |
-@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | vel: 55
 Chords: | F#m . . . | E . . . | D . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | A . . . | G . . . | E . . . |
-@guitar | b1-f#2-b2 . . . | a1-e2-a2 . . . | g1-d2-g2 . . . | e2-b2-e3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a1-e2-a2 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . .

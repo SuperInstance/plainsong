@@ -1,0 +1,21 @@
+**TRACK: Azzurro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | E7 . . . | E7 . . . | F . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | E7 . . . | E7 . . . | F . . . | F . . . | C . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | Dm . . . | Dm . . . | G . . . | G . . . | C . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | F . . . | C . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | C . . . | C . . . | C . . . |

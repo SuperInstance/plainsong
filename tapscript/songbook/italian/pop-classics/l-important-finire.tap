@@ -1,0 +1,24 @@
+**TRACK: L'importante è finire**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | C7 . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |
+Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Eb . . . | Cm . . . | F . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |

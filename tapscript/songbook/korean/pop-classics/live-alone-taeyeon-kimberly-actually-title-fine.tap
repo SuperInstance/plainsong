@@ -1,0 +1,21 @@
+**TRACK: Fine**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Emotional, Building
+
+[V1] (Verse - 4 Bars)
+Chords: | Fm . . . | C# . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Bbm . . . | Fm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C# . . . | C . . . | Fm . . . | Bbm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C# . . . | Bbm . . . | C . . . | Fm . . . |
+
+[CH] (Final Chorus - 8 Bars)
+Chords: | C# . . . | C . . . | Fm . . . | Bbm . . . |

@@ -1,0 +1,21 @@
+**TRACK: Shuo Hao De Xing Fu?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 74 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | D . . . | G . . . | D . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . . | D/F# . . . | Em . . . | C . . . |

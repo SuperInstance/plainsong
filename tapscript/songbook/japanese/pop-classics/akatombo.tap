@@ -1,0 +1,21 @@
+**TRACK: Akatombo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | E . . . | E . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |

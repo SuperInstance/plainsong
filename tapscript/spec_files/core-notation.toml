@@ -1,0 +1,38 @@
+[spec]
+id = "core.notation"
+title = "Notation parses, arranges and survives a round trip"
+why = """
+The compiler is the product. Everything else is an interface onto it, so these
+checks run first and a failure here means nothing else is worth looking at.
+"""
+tags = ["core", "fast"]
+
+[[check]]
+id = "parse"
+kind = "python"
+run = "tapscript.selfcheck:check_parse"
+description = "Header, sections, rows and players read correctly"
+
+[[check]]
+id = "arrange"
+kind = "python"
+run = "tapscript.selfcheck:check_arrange"
+description = "Rows resolve to timed notes in the right voices"
+
+[[check]]
+id = "bar-fill"
+kind = "python"
+run = "tapscript.selfcheck:check_bar_fill"
+description = "An unusual token count divides its bar instead of spilling over"
+
+[[check]]
+id = "round-trip"
+kind = "python"
+run = "tapscript.selfcheck:check_round_trip"
+description = "Emitting and reparsing notation preserves the music"
+
+[[check]]
+id = "transpose"
+kind = "python"
+run = "tapscript.selfcheck:check_transpose"
+description = "Transposition moves the chord row as well as the melody"

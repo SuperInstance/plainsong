@@ -1,16 +1,12 @@
 **TRACK: Turkey in the Straw**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 120 | subdivision: 8th
 time: 2/4 | mood: Lively
 
 [V1] (Verse - 8 Bars)
 Chords: | G . | D . | G . | D . | G . | C . | G . D . | G . |
-Melody: | G4 A4 B4 D5 | B4 A4 G4 E4 | G4 A4 B4 D5 | B4 G4 E4 . | G4 A4 B4 D5 | E5 D5 C5 A4 | B4 G4 A4 F#4 | G4 . . . |
-Lyrics: | As I was a - goin' down | the road, | With a tired team and a | heav - y load, | I cracked my whip and the | lead - er sprung, | Says I day - day to the | wag - on tongue. |
-@piano | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | c2-e2-g2 . | g2-b2-d2-f#2 . | g2-b2-d3 . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . | D . | G . | D . | G . | C . | G . D . | G . |
-Melody: | B4 D5 G5 D5 | B4 G4 D4 . | B4 D5 G5 D5 | B4 G4 E4 . | G4 A4 B4 D5 | E5 D5 C5 A4 | B4 G4 A4 F#4 | G4 . . . |
-Lyrics: | Tur-key in the straw, tur-key in the | hay, | Roll 'em up and twist 'em up a | high tuck - a - hay, | And hit 'em on the head with a | heel and a toe, | Do - si - do and a - | a - way we go. |
-@piano | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | d2-f#2-a2 . | g2-b2-d3 . | c2-e2-g2 . | g2-b2-d2-f#2 . | g2-b2-d3 . | vel: 65

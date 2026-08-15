@@ -1,0 +1,21 @@
+**TRACK: Pyar Hua Ikrar Hua**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Ab . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Cm . . . | Cm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . | Cm . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Cm . . . | Ab . . . | Cm . . . |

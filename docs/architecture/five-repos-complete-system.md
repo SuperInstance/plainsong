@@ -116,6 +116,12 @@ TapScript compositions can declare their tradition:
 **TRACK: Harbor Dawn**
 [MetaData]
 key: Am | tempo: 60 | tradition: Phantom Harbor | subdivision: 8th
+time: 4/4 | mood: Still
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+Melody: | A3 . . C4 | E4 . . D4 | C4 . A3 . | B3 . . . |
+@bass   | a1 . e2 . | a1 . e2 . | f1 . c2 . | g1 . d2 . | vel: 62
 ```
 
 The compiler reads the tradition, looks up (or computes) the genome, and uses the dial positions to influence:

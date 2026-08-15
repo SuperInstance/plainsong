@@ -1,0 +1,21 @@
+**TRACK: Kōjō no Tsuki**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | A7 . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | A7 . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . | F . . | Gm . . | A7 . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Dm . . | A7 . . | Dm . . | A7 . . | Dm . . | Gm . . | A7 . . | Dm . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . | Gm . . | A7 . . | Dm . . |

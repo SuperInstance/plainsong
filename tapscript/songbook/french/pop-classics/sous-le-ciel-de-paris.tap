@@ -1,0 +1,21 @@
+**TRACK: Sous le ciel de Paris**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Romantic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | G7 . . . | G7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | G7 . . . | G7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | Am . . . | Dm . . . | G7 . . . | C . . . | G7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | Am . . . | Am . . . | Dm . . . | G7 . . . | C . . . | C . . . |

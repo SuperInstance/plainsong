@@ -1,0 +1,21 @@
+**TRACK: Je t’aime… moi non plus**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Sensual
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | Am . . . | Am . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Am . . . | Am . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | E . . . | Am . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | E . . . | Am . . . |

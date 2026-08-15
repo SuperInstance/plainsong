@@ -1,0 +1,21 @@
+**TRACK: Tintarella di luna**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Dm . . . | G7 . . . | G7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | F . . . | Bb . . . | F . . . | C7 . . . | C7 . . . | F . . . | F . . . |

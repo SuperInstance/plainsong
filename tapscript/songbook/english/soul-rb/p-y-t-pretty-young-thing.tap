@@ -1,0 +1,21 @@
+**TRACK: P.Y.T. (Pretty Young Thing)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 118 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbm7 . . . | Eb9 . . . | Abmaj7 . . . | Db9 . . . |
+Chords: | Gb7 . . . | Gb7 . . . | F7 . . . | Bbm7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb7 . . . | F7 . . . | Bbm7 . . . | Eb9 . . . |

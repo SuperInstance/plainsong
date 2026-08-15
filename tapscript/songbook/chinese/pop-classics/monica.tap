@@ -1,0 +1,21 @@
+**TRACK: Monica**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb major | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Energetic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | F . . . | Bb . . . |

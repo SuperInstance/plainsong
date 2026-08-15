@@ -1,24 +1,21 @@
 **TRACK: If 6 Was 9**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving, Psychedelic
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | A . . . |
-@guitar | e2-b3-e3 . . . | a2-e3-a3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | B . . . |
-@guitar | e2-b3-e3 . . . | b2-f#3-b3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | C#m . . . | G# . . . |
-@guitar | c#3-e3-g#3 . . . | g#2-c#3-e3 . . . | vel: 55
 
 [V3] (Verse - 4 Bars)
 Chords: | E . . . | A . . . |
-@guitar | e2-b3-e3 . . . | a2-e3-a3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | E . . . | E . . . |
-@guitar | e2-b3-e3 . . . | e2-b3-e3 . . . | vel: 50

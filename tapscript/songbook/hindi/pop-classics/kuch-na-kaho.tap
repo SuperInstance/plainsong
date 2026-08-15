@@ -1,0 +1,24 @@
+**TRACK: Kuch Na Kaho**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C#m | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Romantic
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | C#m . . . | A . . . | F#m . . . | G#7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | F#m . . . | G#7 . . . | C#m . . . | G#7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |
+Chords: | D . . . | A . . . | B . . . | G#7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | C#m . . . | D . . . | B . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C#m . . . | A . . . | F#m

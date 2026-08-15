@@ -1,24 +1,21 @@
 **TRACK: Someone Like You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 135 | subdivision: 8th
 time: 4/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | d2-f#3-a3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | d2-f#3-a3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F#m . . . | D . . . | A . . . | E . . . |
-@guitar | f#2-a3-c#4 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | A . . . | E . . . | F#m . . . |
-@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | E . . . | F#m . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | f#2-a3-c#4 . . . | d2-f#3-a3 . . . | vel: 45

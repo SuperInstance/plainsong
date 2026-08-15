@@ -1,31 +1,25 @@
 **TRACK: Cherry Bomb**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | D . . . | D . . . | D . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
 Chords: | G . . . | G . . . | A . . . | A . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | G . . . | G . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 75
 Chords: | D . . . | D . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | A . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | D . . . | D . . . | D . . . | D . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 65
 Chords: | G . . . | G . . . | A . . . | A . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 65
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | G . . . | G . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 75
 Chords: | D . . . | D . . . | A

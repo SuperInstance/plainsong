@@ -1,0 +1,18 @@
+**TRACK: Tarantella Calabrese**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 132 | subdivision: 8th
+time: 6/8 | mood: Lively, Dance-like
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . . . | E7 . . . . . | Am . . . . . | E7 . . . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . . . | C . . . . . | Dm . . . . . | E7 . . . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . . . | F . . . . . | C . . . . . | E7 . . . . . |
+
+[CH2] (Chorus Repeat - 4 Bars)
+Chords: | Am . . . . . | F . . . . . | C . . . . . | E7 . . . . . |

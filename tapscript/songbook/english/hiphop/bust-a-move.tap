@@ -1,0 +1,18 @@
+**TRACK: Bust a Move**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 110 | subdivision: 16th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm7 . . . | Eb7 . . . | D7 . . . | Gm7 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Gm7 . . . | Eb7 . . . | D7 . . . | Gm7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C7 . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A7 . . . | D7 . . . | G7 . . . | C7 . . . |

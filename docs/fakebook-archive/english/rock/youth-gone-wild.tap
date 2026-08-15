@@ -1,24 +1,21 @@
 **TRACK: Youth Gone Wild**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 126 | subdivision: 8th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | G . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | g2-d2-g3 . . . | vel: 70
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | D . . . | C . . . | B . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | c2-g2-c3 . . . | b1-f#2-b2 . . . | vel: 70
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | Em . . . |
-@guitar | c3-g3-c4 . . . | g2-d3-g3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | vel: 85
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | Em . . . | D . . . |
-@guitar | a2-e3-a3 . . . | c3-g3-c4 . . . | e2-b2-e3 . . . | d2-a2-d3 . . . | vel: 60
 
 [OUT] (Outro - 2 Bars)
 Chords: | Em . . . | Em . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

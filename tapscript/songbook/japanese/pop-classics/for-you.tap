@@ -1,0 +1,21 @@
+**TRACK: For You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Em . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . |

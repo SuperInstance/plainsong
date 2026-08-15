@@ -1,20 +1,18 @@
 **TRACK: Body and Soul**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Db | tempo: 78 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Dbmaj7 . . . | Db6 . . . | Dbmaj7 . . . | Db6 . . . | Ebm7 . . . | Ab7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | db3-f3-ab3-c4 . . . | db3-f3-ab3-bb3 . . . | db3-f3-ab3-c4 . . . | db3-f3-ab3-bb3 . . . | eb3-gb3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Ebm7 . . . | Ab7 . . . | Dbmaj7 . . . | Dbmaj7 . . . | Gm7b5 . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-gb3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | db3-f3-ab3-c4 . . . | db3-f3-ab3-c4 . . . | g2-bb2-db3-f3 . . . | c3-e3-g3-bb3 . . . | f2-ab2-c3-eb3 . . . | bb2-d3-f3-ab3 . . . | vel: 52
 
 [B] (Bridge - 8 Bars)
 Chords: | Gb maj7 . . . | Gbm6 . . . | Abm7 . . . | Db7 . . . | Gb maj7 . . . | Gbm6 . . . | Ebm7 . . . | Ab7 . . . |
-@guitar | gb2-bb2-db3-f3 . . . | gb2-bb2-db3-eb3 . . . | ab2-b3-db3-f3 . . . | db3-f3-ab3-cb4 . . . | gb2-bb2-db3-f3 . . . | gb2-bb2-db3-eb3 . . . | eb3-gb3-bb3-db4 . . . | ab2-c3-eb3-gb3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | Dbmaj7 . . . | Db6 . . . | Dbmaj7 . . . | Db6 . . . | Ebm7 . . . | Ab7 . . . | Dbmaj7 . . . | Db6 . . . |
-@guitar | db3-f3-ab3-c4 . . . | db3-f3-ab3-bb3 . .

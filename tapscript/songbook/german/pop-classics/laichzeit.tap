@@ -1,0 +1,21 @@
+**TRACK: Laichzeit**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | G . . . | A . . . | B . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | G . . . | A . . . | B . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | D . . . | E . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | E . . . | F# . . . | G . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | E . . . | E . . . |

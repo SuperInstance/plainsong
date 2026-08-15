@@ -1,0 +1,24 @@
+**TRACK: Stompin' at the Savoy**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 165 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab6 . . . | Db9 . . . | Ab6 . . . | Eb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab6 . . . | Db9 . . . | Ab6 . . . | Eb7 . . . |
+
+[B1] (Bridge - 8 Bars)
+Chords: | Bb7 . . . | Eb7 . . . | Ab6 . . . | F7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab6 . . . | Db9 . . . | Ab6 . . . | Eb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab6 . . . | Db9 . . . | Ab6 . . . | Eb7 . . . |
+
+[Outro] (Tag - 4 Bars)
+Chords: | Ab6 . . . | Db9 . . . | Ab6 . . . | Eb7 . . . |

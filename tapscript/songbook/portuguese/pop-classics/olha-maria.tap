@@ -1,0 +1,21 @@
+**TRACK: Olha Maria**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm9 . . . | G13 . . . | Cmaj9 . . . | F#m7b5 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am7 . . . | Dm7 . . . | E7 . . . | Am7 . . . |

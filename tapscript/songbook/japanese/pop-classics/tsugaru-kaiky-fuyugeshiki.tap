@@ -1,0 +1,21 @@
+**TRACK: Tsugaru Kaikyō Fuyugeshiki**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Melancholic, Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+
+[BR] (Bridge - 6 Bars)
+Chords: | Dm . . . | E7 . . . | F . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |

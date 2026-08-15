@@ -1,0 +1,25 @@
+**TRACK: Xote das Meninas**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]  
+key: Dm | tempo: 88 | subdivision: 8th  
+time: 2/4 | mood: Driving  
+
+[V1] (Verse - 8 Bars)  
+Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
+Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . |  
+Chords: | Dm . . . | A7 . . . | Dm . . . | Dm . . . |  
+
+[B] (Bridge - 4 Bars)  
+Chords: | Bb . . . | Bb . . . | A7 . . . | A7 . . . |  
+
+[V2] (Verse - 8 Bars)  
+Chords: | Dm . . . | Dm . . . | A7 . . . | A7 . . . |  
+Chords: | Dm . . . | Gm . . . | A7 . . . | A7 . . . |  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . |  
+Chords: | Dm . . . | A7 . . . | Dm . . . | Dm . . . |  

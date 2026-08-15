@@ -1,24 +1,21 @@
 **TRACK: Great White Buffalo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | G . . . | Am . . . | F . . . | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | G . . . | Am . . . | F . . . | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | f2-a2-c3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 62
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | G . . . | D . . . | A . . . | C . . . | G . . . | F . . . | E . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 68
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | G . . . | E . . . | E . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50

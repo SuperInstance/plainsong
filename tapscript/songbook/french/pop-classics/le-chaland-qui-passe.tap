@@ -1,0 +1,21 @@
+**TRACK: Le Chaland qui passe**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 110 | subdivision: 8th
+time: 3/4 | mood: Nostalgic Waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Ab . . . | Db . . . | C7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C7 . . . |
+
+[IN] (Instrumental - 4 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Fm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Db . . . | Eb . . . | C7 . . . | C7 . . . |

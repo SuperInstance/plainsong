@@ -1,24 +1,21 @@
 **TRACK: Maria**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-d3-f3 . . . | g2-bb2-d3 . . . | eb2-g2-bb2 . . . | f2-a2-c3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | Eb . . . | F . . . | Bb . . . | F . . . |
-@guitar | eb2-g2-bb2 . . . | f2-a2-c3 . . . | bb2-d3-f3 . . . | f2-a2-c3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
-@guitar | g2-bb2-d3 . . . | c2-eb2-g2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 58
 
 [OUT] (Outro - 2 Bars)
 Chords: | Bb . . . | Bb . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 50

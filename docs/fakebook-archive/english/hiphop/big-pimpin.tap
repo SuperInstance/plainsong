@@ -1,16 +1,15 @@
 **TRACK: Big Pimpin'**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 92 | subdivision: 16th
 time: 4/4 | mood: Swaggering
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | D . . . | E . . . | C#7 . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c#3-e#3-g#3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F#m . . . | D . . . | E . . . | C#7 . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | c#3-e#3-g#3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | A . . . | G#7 . . . | C#7 . . . |
-@guitar | b1-f#2-b2 . . . | a1-e2-a2 . . . | g#1-d#2-g#2 . . . | c#2-e#2-g#2 . . . | vel: 45

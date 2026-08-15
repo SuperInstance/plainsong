@@ -1,0 +1,21 @@
+**TRACK: Two of Us**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: D | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | D . . . | G . . . | A . . . | D . . . | D . . . | G . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | G . . . | A . . . | D . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | Bm . . . | A . . . | G . . . | A . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | D . . . | G . . . | A . . . | D . . . |

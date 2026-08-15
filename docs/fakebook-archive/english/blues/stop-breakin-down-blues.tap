@@ -1,20 +1,18 @@
 **TRACK: Stop Breakin' Down Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Brooding
 
 [V1] (Verse - 12 Bars)
 Chords: | A . . . | A . . . | A . . . | A7 . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 58
 
 [V2] (Verse - 12 Bars)
 Chords: | A . . . | A . . . | A . . . | A7 . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3-g3 . . . | d3-f#3-a3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | D . . . | E . . . | A . . . | E . . . |
-@guitar | d3-f#3-a3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 62
 
 [V3] (Verse - 12 Bars)
 Chords: | A . . . | A . . . | A . . . | A7 . . . | D . . . | D . . . | A . . . | A . . . | E . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | a2-c#3-e3-g3 . . . | d3-f#3-a3

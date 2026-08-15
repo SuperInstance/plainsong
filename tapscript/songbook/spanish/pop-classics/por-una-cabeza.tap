@@ -1,0 +1,24 @@
+**TRACK: Por Una Cabeza**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Passionate
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+Chords: | G . . . | G . . . | C . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | Dm . . . |
+Chords: | G . . . | G . . . | C . . . | E7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . |
+Chords: | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A7 . . . | A7 . . . | Dm . . . | Dm . . . |
+Chords: | G7 . . . | G7 . . . | C . . . | E7 . . . |
+
+[OUT] (Outro -

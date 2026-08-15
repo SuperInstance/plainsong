@@ -1,0 +1,21 @@
+**TRACK: Arouh Le Min**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Lyrical, Building
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A . . . |
+
+[CH] (Climax - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Gm . . . | A . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |

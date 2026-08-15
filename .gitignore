@@ -1,5 +1,14 @@
-*.pyc
 __pycache__/
+*.pyc
 .venv/
+venv/
+*.egg-info/
+build/
+dist/
+.tapscript/
 *.log
-output/
+*.mid
+*.wav
+!docs/**/*.wav
+.pytest_cache/
+.ruff_cache/

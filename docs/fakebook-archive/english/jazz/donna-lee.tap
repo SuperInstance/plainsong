@@ -1,24 +1,21 @@
 **TRACK: Donna Lee**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 240 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F- . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Db7 . . . | G7 . . . | C7 . . . | F- . . . |
-@guitar | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | f2-ab2-c3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F- . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Db7 . . . | G7 . . . | C7 . . . | F- . . . |
-@guitar | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | f2-ab2-c3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | F- . . . | F- . . . | Bb7 . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Db7 . . . | G7 . . . |
-@guitar | f2-ab2-c3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | g1-b2-d3 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | C7 . . . | F- . . . | Bb7 . . . | Eb7 . . . | Ab7 . . . | Db7 . . . | G7 . . . | C7 . . . |
-@guitar | c2-e2-g2 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | ab1-c2-eb2 . . . | db2-f2-ab2 . . . | g1-b2-d3 . . . | c2-e2-g2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | F- . . . | Bb7 . . . | Eb7 . . . | F- . . . |
-@guitar

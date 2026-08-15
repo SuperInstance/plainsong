@@ -1,0 +1,24 @@
+**TRACK: Tera Ban Jaunga**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C#m | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | C#m . . . |
+Chords: | A . . . | E . . . | B . . . | C#m . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m . . . | G#m . . . | A . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | C#m . . . |

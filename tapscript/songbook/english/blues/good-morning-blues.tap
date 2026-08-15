@@ -1,0 +1,18 @@
+**TRACK: Good Morning Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | F . . . | F7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | F . . . | F7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | F . . . | F . . . | F . . . | F7 . . . |

@@ -1,0 +1,22 @@
+**TRACK: Aitai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Cm . . . | Ab . . . |
+Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Bb . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Ab . . . | Abm . . . | Eb/Bb . . . | Bb7 . . . |
+Chords: | Cm . . . | Fm7 . . . | Bb7sus4 . . . | Bb7 . . . |

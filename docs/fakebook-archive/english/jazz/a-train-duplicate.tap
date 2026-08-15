@@ -1,32 +1,21 @@
 **TRACK: A Train (duplicate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
-| C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | Am . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | vel: 65
-| Dm . . . | G . . . | C . . . | G . . . |
-@guitar | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | E . . . |
-@guitar | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
-| C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | Am . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | vel: 65
-| Dm . . . | G . . . | C . . . | G . . . |
-@guitar | d3

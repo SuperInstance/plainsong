@@ -1,24 +1,18 @@
 **TRACK: Sexual Healing**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Gm | tempo: 98 | subdivision: 8th
 time: 4/4 | mood: Groovy
 
 [V1] (Verse - 8 Bars)
 Chords: | Gm7 . . . | Gm7 . . . | Eb7 . . . | Eb7 . . . |
-@chords | g1-bb1-d2-f2 . . . | g1-bb1-d2-f2 . . . | eb1-g1-bb1-db2 . . . | eb1-g1-bb1-db2 . . . | vel: 50
-@guitar | x-10-10-10-8-8 . . . | x-10-10-10-8-8 . . . | x-6-6-6-4-4 . . . | x-6-6-6-4-4 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Gm7 . . . | Gm7 . . . | Eb7 . . . | Eb7 . . . |
-@chords | g1-bb1-d2-f2 . . . | g1-bb1-d2-f2 . . . | eb1-g1-bb1-db2 . . . | eb1-g1-bb1-db2 . . . | vel: 50
-@bass | g1 . . . | g1 . . . | eb1 . . . | eb1 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | Cm7 . . . | Cm7 . . . | F7 . . . | F7 . . . |
-@chords | c2-eb2-g2-bb2 . . . | c2-eb2-g2-bb2 . . . | f1-a1-c2-eb2 . . . | f1-a1-c2-eb2 . . . | vel: 60
-@guitar | x-3-5-3-4-3 . . . | x-3-5-3-4-3 . . . | x-8-10-8-9-8 . . . | x-8-10-8-9-8 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | Bb . . . | Ab . . . | Ab . . . |
-@chords | bb1-d2-f2 . . . | bb1-d2-f2 . . . | ab1-c2-eb2 . . . | ab1-c2-eb2 . . . | vel: 55
-@piano | bb2-d3-f3 . . . | bb2-d3-f3 . . . | ab2-c3-eb3 . . . | ab2-c3-eb3 . . . | vel: 50

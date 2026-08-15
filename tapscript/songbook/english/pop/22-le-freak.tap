@@ -1,0 +1,21 @@
+**TRACK: 22 Le Freak**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Funky
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | D9 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | D9 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G7 . . . | G7 . . . | C7 . . . | C7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am7 . . . | D9 . . . | Am7 . . . | G7 . . . |

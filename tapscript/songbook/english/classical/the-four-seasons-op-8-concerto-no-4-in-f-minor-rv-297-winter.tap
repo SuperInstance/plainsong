@@ -1,0 +1,15 @@
+**TRACK: The Four Seasons, Op. 8, Concerto No. 4 in F minor, RV 297 "Winter" - I. Allegro non molto**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Bitter
+
+[V1] (Verse - 4 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | C7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bbm . . . | Fm . . . | C7 . . . | Fm . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Fm . . . | Db . . . | C7 . . . | Fm . . . |

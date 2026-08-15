@@ -1,0 +1,24 @@
+**TRACK: Baba O’Riley**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[INTRO] (Intro - 4 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . |
+
+[V1] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | F . . . | F . . . | F . . . |

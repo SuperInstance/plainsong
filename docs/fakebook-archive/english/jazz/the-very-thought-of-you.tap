@@ -1,28 +1,22 @@
 **TRACK: The Very Thought of You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Romantic Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Gm7 . . . | Cm7 . . . | F7 . . . |
-@guitar | eb3-g3-bb3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 50
 Chords: | Bb7 . . . | Eb . . . | Abmaj7 . . . | Bb7 . . . |
-@guitar | bb2-d2-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d2-f3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Gm7 . . . | Cm7 . . . | F7 . . . |
-@guitar | eb3-g3-bb3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 55
 Chords: | Bb7 . . . | Eb . . . | Ab . . . | Bb7 . . . |
-@guitar | bb2-d2-f3 . . . | eb3-g3-bb3 . . . | ab2-c3-eb3 . . . | bb2-d2-f3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Abmaj7 . . . | Abm . . . | Eb . . . | C7 . . . |
-@guitar | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c2-e2-g2 . . . | vel: 45
 Chords: | F7 . . . | Fm7 . . . | Bb7 . . . | Bb7 . . . |
-@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | bb2-d2-f3 . . . | bb2-d2-f3 . . . | vel: 45
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Gm7 . . . | Cm7 . . . | F7 . . . |
-@guitar | eb3-g3-bb3 . . . | g2-bb2-d3 . . . | c3-eb3-g3 . . . | f2-a2-c3 . . . | vel: 50
 Chords: | Bb7 . . . | Eb . . . | Abmaj7 . . . | Bb7 . . . |
-@guitar | bb2-d2-f3 . . . | eb3-g3-bb3 .

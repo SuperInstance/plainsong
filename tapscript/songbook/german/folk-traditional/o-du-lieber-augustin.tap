@@ -1,0 +1,12 @@
+**TRACK: O du lieber Augustin**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | C . . | G . . | G . . | C . . | C . . | G . C | C . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | C . . | G . . | C . . | F . . | C . . | G . C | C . . |

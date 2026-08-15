@@ -1,20 +1,18 @@
 **TRACK: Blue Bossa**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Cm | tempo: 130 | subdivision: 8th
 time: 4/4 | mood: Bossa Nova
 
 [V1] (Verse - 8 Bars)
 Chords: | Cm7 . . . | Fm7 . . . | Dm7b5 . . . | G7alt . . . |
-@guitar | c3-eb3-g3 . . . | f2-ab2-c3 . . . | d2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Cm7 . . . | Fm7 . . . | Dm7b5 . . . | G7alt . . . |
-@guitar | c3-eb3-g3 . . . | f2-ab2-c3 . . . | d2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Eb7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7alt . . . |
-@guitar | eb2-g2-bb2 . . . | ab2-c3-eb3 . . . | d2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 58
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Cm7 . . . | Fm7 . . . | Dm7b5 . . . | G7alt . . . |
-@guitar | c3-eb3-g3 . . . | f2-ab2-c3 . . . | d2-f2-ab2 . . . | g2-b2-d3 . . . | vel: 62

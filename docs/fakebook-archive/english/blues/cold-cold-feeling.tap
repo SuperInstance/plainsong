@@ -1,24 +1,21 @@
 **TRACK: Cold, Cold Feeling**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 95 | subdivision: 8th
 time: 12/8 | mood: Slow Blues
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | F . . . | E7 . . . | E7 . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | Am . . . | Dm . . . | Dm . . . | Am . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | Dm . . . | Am . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | d3-a3-d4 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 50

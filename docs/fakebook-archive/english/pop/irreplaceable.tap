@@ -1,24 +1,21 @@
 **TRACK: Irreplaceable**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Confident
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fm . . . | Ab . . . | Bb . . . | Bb . . . |
-@guitar | f2-ab2-c3 . . . | ab2-c3-eb3 . . . | bb2-d3-f3 . . . | bb2-d3-f3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Eb . . . | Bb . . . | Cm . . . | Ab . . . |
-@guitar | eb3-g3-bb3 . . . | bb2-d3-f3 . . . | c3-eb3-g3 . . . | ab2-c3-eb3 . . . | vel: 45

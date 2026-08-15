@@ -1,0 +1,21 @@
+**TRACK: Fascinação**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 108 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Ab7M . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Db7M . . . | G7alt . . . | C7 . . . | Fm7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7 . . . | C7sus4 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Ab7M . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Db7M . . . | C7 . . . | Fm7 . . . | Fm7 . . . |

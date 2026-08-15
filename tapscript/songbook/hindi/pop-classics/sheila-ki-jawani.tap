@@ -1,0 +1,19 @@
+**TRACK: Sheila Ki Jawani**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 105 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Ab . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Bb . . . | Eb . . . |
+Chords: | Cm . . . | Ab . . . | Bb . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . |

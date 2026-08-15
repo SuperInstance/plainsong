@@ -1,24 +1,21 @@
 **TRACK: Sitting on the Dock of the Bay**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 103 | subdivision: 8th
 time: 4/4 | mood: Laid-back
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . . | G . . . | C . . . | G . . . | G . . . | G . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | G . . . | G . . . | C . . . | G . . . | G . . . | G . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . . | G . . . | C . . . | G . . . | G . . . | G . . . | C . . . | D . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | D . . . |
-@guitar | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | G . . . | G . . . | G . . . | G . . . |
-@guitar | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 45

@@ -1,28 +1,24 @@
 **TRACK: Bohemian Rhapsody**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: Bb major | tempo: 72 | subdivision: 8th  
 time: 4/4 | mood: Theatrical, shifting
 
 [V1] (Intro a cappella - 2 Bars)  
 Chords: | Bb . . . | Eb . . . |  
-@guitar | bb1-d2-f2 . . . | eb1-g2-bb2 . . . | vel: 45
 
 [V2] (Ballad Verse - 4 Bars)  
 Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |  
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | vel: 50
 
 [V3] (Ballad Verse 2 - 4 Bars)  
 Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |  
-@guitar | bb1-d2-f2 . . . | g1-bb1-d2 . . . | c2-eb2-g2 . . . | f1-a1-c2 . . . | vel: 50
 
 [CH] (Guitar Solo / Opera Build - 4 Bars)  
 Chords: | Eb . . . | Bb . . . | C7 . . . | F7 . . . |  
-@guitar | eb1-g1-bb1 . . . | bb1-d2-f2 . . . | c2-e2-g2-bb2 . . . | f1-a1-c2-eb2 . . . | vel: 65
 
 [BR] (Hard Rock Bridge - 4 Bars)  
 Chords: | Bb . . . | Bb . . . | Eb . . . | F . . . |  
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb1-g1-bb1 . . . | f1-a1-c2 . . . | vel: 70
 
 [OUT] (Outro - 2 Bars)  
 Chords: | Bb . . . | Bb . . . |  
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | vel: 40

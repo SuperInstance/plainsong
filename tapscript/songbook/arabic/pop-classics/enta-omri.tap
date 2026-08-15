@@ -1,0 +1,24 @@
+**TRACK: Enta Omri**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: D minor | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Majestic
+
+[INTRO] (Instrumental - 8 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | Gm . . . |
+Chords: | Dm . . . | A7 . . . | Bb . . . | A7 . . . |
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | F . . . | Dm . . . |
+Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Bb . . . | A7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Gm . . . | Dm . . . | A7 Dm . . . |

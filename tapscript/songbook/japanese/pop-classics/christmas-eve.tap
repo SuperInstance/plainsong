@@ -1,0 +1,21 @@
+**TRACK: Christmas Eve**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 76 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Em7 . . . | Dm7 . . . | Bbmaj7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | Em7 . . . | Dm7 . . . | Bbmaj7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bbmaj7 . . . | Am7 . . . | Gm7 . . . | C7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | A7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fmaj7 . . . | Em

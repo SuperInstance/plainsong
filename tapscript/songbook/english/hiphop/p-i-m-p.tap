@@ -1,0 +1,18 @@
+**TRACK: P.I.M.P.**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 85 | subdivision: 16th
+time: 4/4 | mood: Gritty
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | C . . . | Dm . . . | Dm . . . |

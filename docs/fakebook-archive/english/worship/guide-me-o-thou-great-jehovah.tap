@@ -1,22 +1,15 @@
 **TRACK: Guide Me, O Thou Great Jehovah**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 90 | subdivision: 8th
 time: 3/4 | mood: Gentle
 
 [V1] (Verse - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D | G . . |
-Melody: | B3 . D4 . | A3 . D4 . | G3 . B3 . | A3 . D4 . | B3 . D4 . | E4 . C4 . | B3 . A3 . | G3 . . . |
-Lyrics: | Guide me O Thou | great Je - ho - | vah, Pil - grim | through this bar - ren | land. I am weak, but | Thou art migh - ty, | Hold me with Thy | power - ful hand. |
-@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | g2-b2-d3 . d2-f#2-a2 | g2-b2-d3 . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D | G . . |
-Melody: | D4 . D4 . | B3 . D4 . | G4 . G4 . | F#4 . D4 . | E4 . E4 . | C4 . E4 . | D4 . B3 . | G3 . . . |
-Lyrics: | Bread of hea - ven, | Bread of hea - ven, | Feed me till I | want no more; | Feed me till I | want no more, | Feed me till I | want no more. |
-@piano | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | d2-f#2-a2 . . | g2-b2-d3 . . | c2-e2-g2 . . | g2-b2-d3 . d2-f#2-a2 | g2-b2-d3 . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | G . . | D . . | G . . | D . . | G . . | C . . | G . D | G . . |
-Melody: | B3 . D4 . | A3 . D4 . | G3 . B3 . | A3 . D4 . | B3 . D4 . | E4 . C4 . | B3 . A3 . | G3 . . . |
-Lyrics: | Open Thou the | crys - tal foun - tain, Whence the heal - ing | stream doth flow; | Let the fi - ery | cloud - y pil - lar | Lead me all my | jour - ney through. |
-@piano |

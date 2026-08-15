@@ -1,0 +1,21 @@
+**TRACK: Say You, Say Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Db | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gb . . . | Ab . . . | Bbm . . . | Ab . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . | Db . . . | Ab . . . | Bbm . . . | Gb . . . |

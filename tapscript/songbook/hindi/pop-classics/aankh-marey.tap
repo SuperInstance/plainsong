@@ -1,0 +1,21 @@
+**TRACK: Aankh Marey**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 112 | subdivision: 16th
+time: 4/4 | mood: Dance
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Fm . . . | G . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Cm . . . | Cm . . . |

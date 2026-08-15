@@ -1,0 +1,20 @@
+**TRACK: Saudade de Itapuã**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bossa, Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
+
+[V3] (Verse - 8 Bars

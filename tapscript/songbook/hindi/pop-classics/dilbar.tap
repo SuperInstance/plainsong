@@ -1,0 +1,20 @@
+**TRACK: Dilbar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 112 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | F#m . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |

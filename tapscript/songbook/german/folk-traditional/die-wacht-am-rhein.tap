@@ -1,0 +1,15 @@
+**TRACK: Die Wacht am Rhein**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Solemn, martial
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb . Eb . |

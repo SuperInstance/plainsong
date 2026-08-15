@@ -1,0 +1,21 @@
+**TRACK: El Hob El Hakiki**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Bb . . . | A . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Dm . . . | Dm . . . |

@@ -1,0 +1,21 @@
+**TRACK: I Won’t Dance**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am7 . . . | Dm7 . . . | G7 . . . | C . . . | Am7 . . . | Dm7 . . . | G7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | D7 . . . | Dm7 . . . | G7 . . . | C . . . | G7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Fm . . . | C . . . | A7 . . . | Dm7 . . . | G7 . . . | C . . . | G7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Cmaj7 . . . | Dm7 . . . | G7 . . . | C . . . | G7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | F . . . | C . . . | G7 C . . |

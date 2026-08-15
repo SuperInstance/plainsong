@@ -1,0 +1,21 @@
+**TRACK: Skazhi Mne Pravdu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |

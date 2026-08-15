@@ -1,0 +1,21 @@
+**TRACK: Orange Blossom Special**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: A | tempo: 132 | subdivision: 8th
+time: 2/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | D . . . | A . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | D . . . | A . . . | E . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | A . . . | A . . . | E . . . | A . . . |

@@ -1,0 +1,21 @@
+**TRACK: Mi sono innamorato di te**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | A7 . . . | Dm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | F . . . | Dm . . . |
+Chords: | Gm . . . | A7 . . . | Dm . . . | A7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | C . . . | F . . . | E7 . . . |

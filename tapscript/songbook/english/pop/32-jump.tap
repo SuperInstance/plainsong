@@ -1,0 +1,18 @@
+**TRACK: 32 Jump**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 128 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . |
+
+[PC] (Pre-Chorus - 4 Bars)
+Chords: | A . . . | B . . . | C#m . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . | A . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | B . . . | A . . . | B . . . |

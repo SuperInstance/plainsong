@@ -1,0 +1,18 @@
+**TRACK: Non ho l'età**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Gentle, Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am . . . | F . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | C . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Dm . . . | G . . . |

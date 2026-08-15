@@ -1,0 +1,21 @@
+**TRACK: Elli Tmana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 98 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Eb . . . | Ab . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Bbm . . . | Eb . . . | Ab . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Eb . . . | Ab . . . | C7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | Eb . . . | C7 . . . |

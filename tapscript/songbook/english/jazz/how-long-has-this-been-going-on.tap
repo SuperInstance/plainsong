@@ -1,0 +1,23 @@
+**TRACK: How Long Has This Been Going On?**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Ab . . . | Fm7 . . . | Bbm7 . . . | Eb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Fm7 . . . | Bb7 . . . |
+Chords: | Eb7 . . . | Ab . . . | Bbm7 . . . | Eb7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Ab . . . |
+Chords: | Fm7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Db . . . | Ab . . . | Eb7 . . . |

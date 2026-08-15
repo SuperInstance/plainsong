@@ -1,0 +1,21 @@
+**TRACK: Hello**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 80 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | Em . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | G . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | C . . . | C . . . |

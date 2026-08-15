@@ -1,0 +1,20 @@
+**TRACK: Three O’Clock Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 72 | subdivision: 8th
+time: 12/8 | mood: Slow blues
+
+[V1] (Verse - 12 Bars)
+Chords: | Bb7 . . . | Bb7 . . . | Bb7 . . . | Bb7 . . . |
+Chords: | Eb7 . . . | Eb7 . . . | Bb7 . . . | Bb7 . . . |
+Chords: | F7 . . . | Eb7 . . . | Bb7 . . . | F7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | Bb7 . . . | Bb7 . . . | Bb7 . . . | Bb7 . . . |
+Chords: | Eb7 . . . | Eb7 . . . | Bb7 . . . | Bb7 . . . |
+Chords: | F7 . . . | Eb7 . . . | Bb7 . . . | F7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F7 . . . | F7 . . . | Bb7 . . . | Bb7 . . . |
+Chords: | Eb7 . . . | Eb7 . . . | Bb7 . . . | F7 . . . |

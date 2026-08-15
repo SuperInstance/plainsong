@@ -1,0 +1,18 @@
+**TRACK: Forgot About Dre**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 134 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Gm . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |

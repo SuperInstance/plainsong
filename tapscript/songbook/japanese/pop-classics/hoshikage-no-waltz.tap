@@ -1,0 +1,21 @@
+**TRACK: Hoshikage no Waltz**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Waltz
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . | D7 . . | Gm . . | D7 . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . | Cm . . | D7 . . | D7 . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . | Eb . . | Cm . . | D7 . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb . . | F7 . . | Eb . . | D7 . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Gm . . | Cm . . | D7 . . | Gm . . |

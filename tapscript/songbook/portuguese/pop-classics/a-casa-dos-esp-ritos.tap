@@ -1,0 +1,21 @@
+**TRACK: A Casa dos Espíritos**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Dramatic
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+Chords: | Gm . . . | A . . . | Dm . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Dm . . . | A . . . |

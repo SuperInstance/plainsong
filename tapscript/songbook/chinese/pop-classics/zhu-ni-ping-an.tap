@@ -1,0 +1,25 @@
+**TRACK: Zhu Ni Ping An**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G/B . . . | Am . . . | Em . . . |
+Chords: | F . . . | C/E . . . | Dm7 . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | Em . . . | Am . . . |
+Chords: | Dm7 . . . | G . . . | C . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: |

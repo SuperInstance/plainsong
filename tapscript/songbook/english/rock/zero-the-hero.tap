@@ -1,0 +1,21 @@
+**TRACK: Zero the Hero**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | E5 . . . | D5 . . . | C5 . . . | D5 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A5 . . . | G5 . . . | F5 . . . | G5 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C5 . . . | B5 . . . | A5 . . . | B5 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | E5 . . . | E5 . . . | E5 . . . | E5 . . . |

@@ -1,23 +1,21 @@
 **TRACK: Yesterdays**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Melancholic
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm(maj7) . . . | Dm7 . . . | Dm6 . . . | Gm7 . . . | A7 . . . | Dm . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | d3-f#3-a3 . . . | d3-f3-c4 . . . | d3-f3-b3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm(maj7) . . . | Dm7 . . . | Dm6 . . . | Gm7 . . . | E7 . . . | A7 . . . | A7 . . . |
-@guitar | d3-f3-a3 . . . | d3-f#3-a3 . . . | d3-f3-c4 . . . | d3-f3-b3 . . . | g2-bb2-d3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Bb . . . | Bbm . . . | F . . . | A7 . . . | Dm . . . | A7 . . . | Dm . . . | A7 . . . |
-@guitar | bb2-d3-f3 . . . | bb2-db3-f3 . . . | f2-a2-c3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | a2-c#3-e3 . . . | vel: 50
 
 [V3] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm(maj7) . . . | Dm7 . . . | Dm6 . . . | Gm7 . . . | A7 . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f#3-a3 . . . | d3-f3-c4 . . . | d3-f3-b3 . . . | g2-bb2-d3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Gm7 . .

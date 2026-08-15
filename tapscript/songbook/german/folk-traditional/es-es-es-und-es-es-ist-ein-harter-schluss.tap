@@ -1,0 +1,12 @@
+**TRACK: Es, es, es und es, es ist ein harter Schluss**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 3/4 | mood: Wistful
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . | A . . | Dm . . | C . . | F . . | Dm . . | A . . | Dm . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . . | A . . | Dm . . | . . . |

@@ -1,24 +1,21 @@
 **TRACK: Diggin' Up Bones**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | A . . . | D . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | e2-g#3-b3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | D . . . | A . . . |
-@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [CH2] (Chorus - 4 Bars)
 Chords: | E . . . | A . . . |
-@guitar | e2-g#3-b3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [BR] (Bridge - 2 Bars)
 Chords: | D . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | e2-g#3-b3 . . . | vel: 50

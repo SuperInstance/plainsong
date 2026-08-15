@@ -1,0 +1,21 @@
+**TRACK: Deutschland**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Bm . . . | A . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | A . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | G . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Bm . . . |

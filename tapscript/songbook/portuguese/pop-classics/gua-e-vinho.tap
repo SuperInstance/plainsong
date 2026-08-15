@@ -1,0 +1,21 @@
+**TRACK: Água e Vinho**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am/G . . . | F#m7b5 . . . | Fmaj7 . . . |
+
+[V2] (Verse Variation - 8 Bars)
+Chords: | Cmaj7 . . . | B7 . . . | E7#9 . . . | Am . . . |
+
+[B1] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Fmaj7 . . . |
+
+[B2] (Bridge Turnaround - 4 Bars)
+Chords: | Bm7b5 . . . | E7 . . . | Am . . . | Am . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | Fmaj7 . . . | Am . . . | Am . . . |

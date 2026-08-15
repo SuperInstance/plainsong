@@ -1,24 +1,21 @@
 **TRACK: Superstition**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ebm | tempo: 100 | subdivision: 16th
 time: 4/4 | mood: Funky
 
 [V1] (Verse - 8 Bars)
 Chords: | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . |
-@guitar | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | vel: 50
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . |
-@guitar | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bbm7 . . . | Ab7 . . . | Gb7 . . . | F7 . . . |
-@guitar | bb2-db3-f3-ab3 . . . | ab2-c3-eb3-gb3 . . . | gb2-bb2-db3-e3 . . . | f2-a2-c3-eb3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Ebm7 . . . | Ebm7 . . . | Ab7 . . . | Ab7 . . . |
-@guitar | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | ab2-c3-eb3-gb3 . . . | ab2-c3-eb3-gb3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . | Ebm7 . . . |
-@guitar | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | eb3-gb3-b3-db4 . . . | vel: 45

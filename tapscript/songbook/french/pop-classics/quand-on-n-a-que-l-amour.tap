@@ -1,0 +1,21 @@
+**TRACK: Quand on n'a que l'amour**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | C . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | Bb . . . | C . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | F . . . |

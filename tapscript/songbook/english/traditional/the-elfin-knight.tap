@@ -1,0 +1,12 @@
+**TRACK: The Elfin Knight**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Mystical
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | D . . . | Em . . . |

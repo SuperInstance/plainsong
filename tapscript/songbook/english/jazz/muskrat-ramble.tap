@@ -1,0 +1,21 @@
+**TRACK: Muskrat Ramble**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 184 | subdivision: 8th
+time: 2/2 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Bb . . . | F . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C7 . . . | C7 . . . | F . . . | F . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | G7 . . . | C7 . . . | F . . . | C7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | C7 . . . | F . . . | F . . . |

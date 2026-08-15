@@ -1,0 +1,21 @@
+**TRACK: Y’a d’la joie**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | D . . . | D . . . | G . . . | G . . . | D . . . | D . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | D . . . | D . . . | G . . . | G . . . | D . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | G . . . | G . . . | C . . . | C . . . | D . . . | D . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | Em . . . | A . . . | D . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | G . . . | G . . . | D . . . | D . . . | G . . . | G . . . | D . . . | D . . . |

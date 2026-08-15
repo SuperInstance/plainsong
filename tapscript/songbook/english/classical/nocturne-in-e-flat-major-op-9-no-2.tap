@@ -1,0 +1,15 @@
+**TRACK: Nocturne in E-flat major, Op. 9 No. 2**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 69 | subdivision: 8th
+time: 12/8 | mood: Lyrical, Flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Eb . . . . . | Bb7 . . . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Eb . . . . . | Ab . . . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb7 . . . . . | Eb . . . . . |

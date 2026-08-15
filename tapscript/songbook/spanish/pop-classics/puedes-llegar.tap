@@ -1,0 +1,21 @@
+**TRACK: Puedes Llegar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Anthemic
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | C . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Eb . . . | Bb . . . | F . . . | F . . . |

@@ -1,0 +1,18 @@
+**TRACK: Cirandeiro**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | C . . . | F . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | A7 . . . | Dm . . . | E7 . . . |

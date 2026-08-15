@@ -1,0 +1,21 @@
+**TRACK: Old Friends**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: D | tempo: 72 | subdivision: 8th
+time: 3/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | G . . | D . . | A . . | A . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | D . . | A . . | Bm . . | F#m . . | G . . | D . . | Em . . | A . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | D . . | G . . | D . . | D . . |

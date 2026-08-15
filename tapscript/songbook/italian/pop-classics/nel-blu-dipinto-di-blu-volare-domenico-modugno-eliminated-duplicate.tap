@@ -1,0 +1,21 @@
+**TRACK: Nel blu dipinto di blu (Volare)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Joyful
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Cm . . . | F . . . | F . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | Bb . . . |

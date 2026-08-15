@@ -1,0 +1,24 @@
+**TRACK: Aatini El Nay**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Flowing
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Bb . . . | A7 . . . |
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | A7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Gm . . . | A7 . . . | A7 . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+Chords: | Dm . . . | Bb . . . | A7 . . . | Dm . . . |

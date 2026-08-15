@@ -1,0 +1,21 @@
+**TRACK: Xue Hua Piao Piao Bei Feng Xiao Xiao**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Cinematic
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | C . . . | Dm . . . |

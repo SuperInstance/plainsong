@@ -1,0 +1,21 @@
+**TRACK: Hoochie Coochie Man (cover)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Swaggering
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | B7 . . . |
+
+[BR] (Bridge / Turnaround - 4 Bars)
+Chords: | A . . . | A . . . | E . . . | B7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | A . . . | E . . . | E . . . |

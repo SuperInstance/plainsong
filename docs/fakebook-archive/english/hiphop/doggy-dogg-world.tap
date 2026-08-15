@@ -1,24 +1,21 @@
 **TRACK: Doggy Dogg World**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: Dm | tempo: 92 | subdivision: 8th  
 time: 4/4 | mood: G-funk, laid-back
 
 [V1] (Verse - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |  
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)  
 Chords: | Bb . . . | F . . . | C . . . | Dm . . . |  
-@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)  
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | C . . . | C . . . |  
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 50
 
 [BR] (Bridge - 4 Bars)  
 Chords: | Gm . . . | Gm . . . | A . . . | A . . . |  
-@guitar | g1-bb1-d2 . . . | g1-bb1-d2 . . . | a1-c#2-e2 . . . | a1-c#2-e2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)  
 Chords: | Bb . . . | F . . . | C . . . | Dm . . . |  
-@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | d2-f2-a2 . . . | vel: 60

@@ -1,0 +1,21 @@
+**TRACK: Io mi fermo qui**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 88 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | G . . . | F . . . | E7 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Am . . . | G . . . | F . . . | E7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Dm . . . | Am . . . | E7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | Am . . . |

@@ -1,0 +1,21 @@
+**TRACK: Mein Teil**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 94 | subdivision: 8th
+time: 4/4 | mood: Industrial
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | C . . . | Em . . . | C . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | B . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Em . . . | D . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | Am . . . | E . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | Em . . . | Em . . . |

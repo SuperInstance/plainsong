@@ -1,0 +1,21 @@
+**TRACK: As Mãos Que Trago**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[Intro] (4 Bars)
+Chords: | Dm . . . | A . . . | Dm . . . | A . . . |
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Bb . . . | F . . . | A . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | C . . . | F . . . | Bb . . . | Gm . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Bb . . . | Gm . . . | A . . . |

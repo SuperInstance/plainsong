@@ -1,0 +1,21 @@
+**TRACK: When It's Sleepy Time Down South**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 82 | subdivision: 8th
+time: 4/4 | mood: Laid-back Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bb . . . | Bbm . . . | F . . . | C7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | F7 . . . | Bb . . . | Bbm . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | F . . . | F . . . |

@@ -1,0 +1,21 @@
+**TRACK: Ju Hua Tai**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Cm . . . | Ab . . . | Bb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Eb . . . | Fm . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |

@@ -1,16 +1,12 @@
 **TRACK: Canon in D**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 60 | subdivision: 8th
 time: 4/4 | mood: Solemn
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | Bm . . . | F#m . . . |
-Melody: | D4 . F#4 . | A4 . . . | B4 . D5 . | F#4 . . . |
-Lyrics: | dawn . . . | light . . . | falls . . . | soft . . . |
-@piano | d2-a2-d3-f#3 . . . | a1-e2-a3-c#3 . . . | b1-f#2-b2-d3 . . . | f#1-c#2-f#2-a2 . . . | vel: 45
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | D . . . |
-Melody: | G4 . B4 . | D5 . . . | A4 . C#5 . | D5 . . . |
-Lyrics: | peace . . . | flows . . . | deep . . . | home . . . |
-@piano | g1-d2-g2-b2 . . . | d2-a2-d3-f#3 . . . | a1-e2-a3-c#3 . . . | d2-a2-d3-f#3 . . . | vel: 50

@@ -1,0 +1,18 @@
+**TRACK: Hana no Uta**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | D7 . . . | Gm . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | Gm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | D7 . . . | Gm . . . | D7 . . . |

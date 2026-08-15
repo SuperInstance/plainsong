@@ -1,24 +1,21 @@
 **TRACK: Might Just Take Your Life**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 128 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | D . . . | A . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . |
-@guitar | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | a2-c#3-e3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | F#m . . . | D . . . | E . . . | E . . . |
-@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 50

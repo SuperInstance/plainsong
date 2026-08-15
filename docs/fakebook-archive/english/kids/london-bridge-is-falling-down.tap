@@ -1,22 +1,15 @@
 **TRACK: London Bridge Is Falling Down**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: C | tempo: 100 | subdivision: 8th  
 time: 4/4 | mood: Playful  
 
 [V1] (Verse - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | G . . . |  
-Melody: | E4 . G4 . | G4 . A4 . | G4 . F4 . | E4 . D4 . |  
-Lyrics: | Lon-don Bridge is | fall-ing down, | fall-ing down, | fall-ing down, |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55  
 
 [V2] (Verse - 4 Bars)  
 Chords: | C . . . | G . . . | C . . . | C . . . |  
-Melody: | E4 . G4 . | G4 . A4 . | G4 . F4 . | E4 . D4 . |  
-Lyrics: | Lon-don Bridge is | fall-ing down, | my fair | la-dy. |  
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55  
 
 [CH] (Chorus - 4 Bars)  
 Chords: | F . . . | C . . . | G . . . | C . . . |  
-Melody: | F4 . E4 . | D4 . C4 . | D4 . E4 . | C4 . . . |  
-Lyrics: | Build it up with | wood and clay, | wood and clay, | wood and clay, |  
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 50

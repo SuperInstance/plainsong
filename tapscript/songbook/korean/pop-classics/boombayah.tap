@@ -1,0 +1,21 @@
+**TRACK: Boombayah**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 124 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | F#m . . . | D . . . |
+
+[PCH] (Pre-Chorus - 2 Bars)
+Chords: | Bm . . . | C# . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | Bm . . . | C# . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | D . . . | C# . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | F#m . . . | F#m . . . |

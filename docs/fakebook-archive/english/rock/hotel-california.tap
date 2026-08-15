@@ -1,24 +1,21 @@
 **TRACK: Hotel California**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 74 | subdivision: 8th
 time: 4/4 | mood: Mysterious
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | F# . . . | Bm . . . | Em . . . | F# . . . |
-@guitar | f#2-a#2-c#3 . . . | b2-d3-f#3 . . . | e2-g2-b2 . . . | f#2-a#2-c#3 . . . | vel: 58
 
 [OUT] (Outro - 8 Bars)
 Chords: | Bm . . . | F# . . . | A . . . | E . . . | G . . . | D . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | f#2-a#2-c#3 . . . | a2-c#3-e3 . . . |

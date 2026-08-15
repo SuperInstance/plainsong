@@ -1,0 +1,21 @@
+**TRACK: Parlez-moi d’amour**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Tender
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . | C . . . | G7 . . . | C . . . | G7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | F . . . | C . . . | G7 . . . | C . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | Fm . . . | C . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | G7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | E7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F . . . | Fm . . . | C . . . | G7 . . . C . . . |

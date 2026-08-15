@@ -1,0 +1,17 @@
+**TRACK: Knockin on Heaven's Door**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/songbook.md.
+[MetaData]
+key: G | tempo: 70 | swing: 0% | subdivision: 8th
+
+[Intro]
+Chords: | G . | D . | Am . | Am . | G . | D . | C . | C . |
+
+[V1]
+Chords: | G . | D . | Am . | Am . | G . | D . | C . | C . |
+
+[C]
+Chords: | G . | D . | Am . | Am . | G . | D . | C . | C . |
+
+[Outro]
+Chords: | G . | D . | Am . | Am . | G . | D . | C . | C . |

@@ -1,28 +1,22 @@
 **TRACK: Just One of Those Things**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3 . . . | d2-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | f2-a2-c3 . . . | b2-d3-f3 . . . | e2-g#3-b3 . . . | a2-c3-e3 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | Am7 . . . |
-@guitar | d2-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | vel: 60
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | d2-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | e2-g#3-b3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Fmaj7 . . . | Fm6 . . . | Em7 . . . | A7 . . . |
-@guitar | f2-a2-c3 . . . | f2-ab2-d3 . . . | e2-g2-b3 . . . | a2-c#3-e3 . . . | vel: 50
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | d2-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | e2-g#3-b3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3 . . . | d2-f3-a3 . . . | g2-b2-f3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | f2-a2-c3 . . . | b2-d3

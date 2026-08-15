@@ -1,24 +1,21 @@
 **TRACK: Overkill**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 94 | subdivision: 8th
 time: 4/4 | mood: Relentless
 
 [V1] (Verse - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | vel: 70
 
 [V2] (Verse - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | vel: 70
 
 [CH] (Chorus - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | vel: 80
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | A . . . |
-@guitar | c3-g3-c4 . . . | g2-d3-g3 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | vel: 60
 
 [IN] (Instrumental - 8 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | a1-e3-a3 . . . | e2-b3-e4 . . . | vel: 75

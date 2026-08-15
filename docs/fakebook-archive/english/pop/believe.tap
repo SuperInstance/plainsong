@@ -1,20 +1,18 @@
 **TRACK: Believe**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 133 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | F#m . . . | D . . . | D . . . | F#m . . . | F#m . . . | E . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55
 
 [PC] (Pre-Chorus - 4 Bars)
 Chords: | Bm . . . | Bm . . . | E . . . | E . . . |
-@guitar | b2-f#2-b3 . . . | b2-f#2-b3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | F#m . . . | F#m . . . | D . . . | D . . . | E . . . | E . . . | F#m . . . | F#m . . . |
-@guitar | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | f#2-c#3-f#3 . . . | f#2-c#3-f#3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | D . . . | E . . . | E . . . |
-@guitar | b2-f#2-b3 . . . | d2-a2-d3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 60

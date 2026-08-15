@@ -1,26 +1,18 @@
 **TRACK: Livin' for the City**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 100 | subdivision: 16th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | Bbm7 . . . | C7sus . . . | C7 . . . |
-@guitar | f1-a1-c2-eb2 . . . | bb1-db2-f2-ab2 . . . | eb1-g1-bb1-db2 . . . | ab1-c2-eb2-g2 . . . | vel: 55
-@guitar | db1-f1-ab1-cb2 . . . | bb1-db2-f2-ab2 . . . | c1-f1-bb1-db2 . . . | c1-e1-bb1-c2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | Bbm7 . . . | C7sus . . . | C7 . . . |
-@guitar | f1-a1-c2-eb2 . . . | bb1-db2-f2-ab2 . . . | eb1-g1-bb1-db2 . . . | ab1-c2-eb2-g2 . . . | vel: 60
-@guitar | db1-f1-ab1-cb2 . . . | bb1-db2-f2-ab2 . . . | c1-f1-bb1-db2 . . . | c1-e1-bb1-c2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dbmaj7 . . . | C7 . . . | Fm7 . . . | G7alt . . . |
-@guitar | db1-f1-ab1-cb2 . . . | c1-e1-bb1-c2 . . . | f1-a1-c2-eb2 . . . | g1-b1-d2-f2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | Bbm7 . . . | C7sus . . . | C7 . . . |
-@guitar | f1-a1-c2-eb2 . . . | bb1-db2-f2-ab2 . . . | eb1-g1-bb1-db2 . . . | ab1-c2-eb2-g2 . . . | vel: 55
-@guitar | db1-f1-ab1-cb2 . . . | bb1-db2-f2-ab2 . . . |

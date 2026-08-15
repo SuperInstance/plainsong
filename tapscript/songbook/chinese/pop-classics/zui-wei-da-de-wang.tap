@@ -1,0 +1,21 @@
+**TRACK: Zui Wei Da De Wang**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Triumphant
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Am . . . | F . . . | Dm . . . | E . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | Am . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | E . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |

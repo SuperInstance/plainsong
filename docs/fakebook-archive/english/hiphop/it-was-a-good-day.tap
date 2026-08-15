@@ -1,4 +1,6 @@
 **TRACK: It Was a Good Day**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 85 | subdivision: 8th
 time: 4/4 | mood: Laid-back
@@ -6,19 +8,13 @@ time: 4/4 | mood: Laid-back
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | Bb . . . | F . . . |
 Chords: | F . . . | F . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | vel: 50
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | F . . . | Bb . . . | F . . . |
 Chords: | F . . . | F . . . | Bb . . . | C . . . |
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | vel: 52
-@guitar | f1-a1-c2 . . . | f1-a1-c2 . . . | bb1-d2-f2 . . . | c2-e2-g2 . . . | vel: 52
 
 [CH] (Chorus - 4 Bars)
 Chords: | Bb . . . | F . . . | C . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | f1-a1-c2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Bb . . . | F . . . | C . . . |
-@guitar | d2-f2-a2 . . . | bb1-d2-f2 . . . | f1-a1-c2 . . . | c2-e2-g2 . . . | vel: 55

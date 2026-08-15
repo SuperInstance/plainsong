@@ -1,27 +1,18 @@
 **TRACK: I'll Remember April**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 180 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Bm7b5 . . . | E7b9 . . . | Am . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . |
-       | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-       | Fmaj7 . . . | Bm7b5 . . . | E7b9 . . . | Am . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . |
-       | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | Fmaj7 . . . | Bm7b5 . . . | E7b9 . . . | Am . . . |
-       | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | f2-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e2-g#2-b2-d3 . . . | a2-c3-e3 . . . |
-       | d2-f2-a2-c3 . . . | g2-b2-d3-f3 . . . | c3-e3-g3-b3 . . . | e2-g#2-b2-d3 . . . | vel: 62
 
 [BR] (Bridge - 8 Bars)
 Chords: | Fm6 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . |
-       | Dm7b5 . . . | G7b9 . . . | Cmaj7 . . . | E7b9 . . . |
-@guitar | f2-ab2-c3-d3 . . . | bb1-d2-f2-ab2 . . . | eb2-g2-bb2-d3 . . . |

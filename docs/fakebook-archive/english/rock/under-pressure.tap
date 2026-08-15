@@ -1,20 +1,18 @@
 **TRACK: Under Pressure**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: D | tempo: 88 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse 2 - 8 Bars)
 Chords: | D . . . | A . . . | Bm . . . | G . . . |
-@guitar | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | Bm . . . |
-@guitar | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | b2-d3-f#3 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | D . . . | A . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | a2-c#3-e3 . . . | vel: 60

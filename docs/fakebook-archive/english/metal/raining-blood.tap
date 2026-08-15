@@ -1,23 +1,21 @@
 **TRACK: Raining Blood**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 100 | subdivision: 16th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 70
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | F . . . | F . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | f1-c2-f2 . . . | f1-c2-f2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 70
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |
-@guitar | d2-a2-d3 . . . | d2-a2-d3 . . . | bb1-f2-bb2 . . . | bb1-f2-bb2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | vel: 80
 
 [BR] (Bridge - 8 Bars)
 Chords: | F . . . | F . . . | G . . . | G . . . | A . . . | A . . . | Dm . . . | Dm . . . |
-@guitar | f1-c2-f2 . . . | f1-c2-f2 . . . | g1-d2-g2 . . . | g1-d2-g2 . . . | a1-e2-a2 . . . | a1-e2-a2 . . . | d2-a2-d3 . . . | d2-a2-d3 . . . | vel: 75
 
 [OUT] (Outro - 12 Bars)
 Chords: | Dm . . . | Dm . . . | Bb . . . | Bb . . . | Dm . . . | Dm . . . | A . . . | A . . . |

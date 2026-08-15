@@ -1,0 +1,12 @@
+**TRACK: Symphony No. 8 in B minor, D. 759 "Unfinished"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 70 | subdivision: 8th
+time: 3/4 | mood: Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Em . . . | A . . . | D . . . | Bm . . . |

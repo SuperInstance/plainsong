@@ -1,20 +1,18 @@
 **TRACK: Satisfaction**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 138 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-b2-e3 . . . | d2-a2-d3 . . . | a1-e2-a2 . . . | e2-b2-e3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | E . . . | D . . . | A . . . | E . . . |
-@guitar | e2-g#2-b2 . . . | d2-f#2-a2 . . . | a1-c#2-e2 . . . | e2-g#2-b2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | A . . . |
-@guitar | c2-e2-g2 . . . | g1-b1-d2 . . . | d1-f#1-a1 . . . | a1-c#2-e2 . . . | vel: 60

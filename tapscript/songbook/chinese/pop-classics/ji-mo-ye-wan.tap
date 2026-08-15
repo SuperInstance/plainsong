@@ -1,0 +1,25 @@
+**TRACK: Ji Mo Ye Wan**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+Chords: | Am . . . | F . . . | C . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | F . . . |
+Chords: | C . . . | G . . . | Am . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | F . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | Am . . . | F . . . |
+Chords: | C . . . | G . . . | Am . . .

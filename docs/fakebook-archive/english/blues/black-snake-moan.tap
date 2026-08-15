@@ -1,20 +1,18 @@
 **TRACK: Black Snake Moan**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 80 | subdivision: 8th
 time: 4/4 | mood: Mournful
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | E7 . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | E7 . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55
 
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Am . . . | E7 . . . |
-@guitar | d2-f2-a2 . . . | d2-f2-a2 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | Am . . . | Am . . . | E7 . . . | E7 . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | e2-g#2-b3 . . . | e2-g#2-b3 . . . | vel: 55

@@ -1,0 +1,21 @@
+**TRACK: Call Me Maybe**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Bouncy
+
+[V1] (Verse - 8 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Db . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Db . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Db . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm . . . | Db . . . | Ab . . . | Db . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Gb . . . | Db . . . | Ab . . . | Db . . . |

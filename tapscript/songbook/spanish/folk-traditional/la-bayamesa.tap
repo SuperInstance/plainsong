@@ -1,0 +1,15 @@
+**TRACK: La Bayamesa**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 92 | subdivision: 8th
+time: 3/4 | mood: Gentle, Patriotic
+
+[V1] (Verse - 4 Bars of 3/4)
+Chords: | G . . | D . . | G . . | D . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . | G . . | Am . . | D . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . | D . . | G . . | G . . |

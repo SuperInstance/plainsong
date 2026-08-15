@@ -1,0 +1,21 @@
+**TRACK: Bitter Sweet Samba**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 132 | subdivision: 16th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dbmaj7 . . . | G7alt . . . | C7b9 . . . | Fm7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dbmaj7 . . . | Db6 . . . | Cm7b5 . . . | F7b9 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |

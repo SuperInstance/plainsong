@@ -1,0 +1,24 @@
+**TRACK: Koi no Yukue**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 112 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |
+Chords: | Db . . . | Ab . . . | Bbm . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Fm . . . |

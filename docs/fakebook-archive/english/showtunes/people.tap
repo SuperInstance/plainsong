@@ -1,31 +1,25 @@
 **TRACK: People**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 Chords: | F . . . | G . . . | C . . . | G . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | Am . . . | Em . . . | F . . . | C . . . |
-@guitar | a2-c3-e3 . . . | e2-g#2-b2 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | vel: 55
 Chords: | Dm . . . | G . . . | C . . . | G . . . |
-@guitar | d2-f2-a2 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
 Chords: | C . . . | Am . . . | F . . . | G . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | g2-b2-d3 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | G . . . | C . . . | C . . .

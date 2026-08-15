@@ -1,0 +1,21 @@
+**TRACK: Yi Qian Nian Yi Hou**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: D | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Reflective
+
+[V1] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | G . . . | A . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | A . . . | Bm . . . | G . . . | D . . . | A . . . | Bm . . . | A . . . |

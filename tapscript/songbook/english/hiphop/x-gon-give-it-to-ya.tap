@@ -1,0 +1,21 @@
+**TRACK: X Gon' Give It to Ya**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 92 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Eb . . . | Eb . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . . . | Fm . . . | Db . . . | Eb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | Fm . . . | Db . . . | Db . . . | Fm . . . | Fm . . . | Eb . . . | Eb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Ab . . . | Eb . . . | Fm . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Fm . . . | Fm . . . | Db . . . | Eb . . . |

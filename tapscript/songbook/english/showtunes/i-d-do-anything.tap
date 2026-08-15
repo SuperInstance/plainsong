@@ -1,0 +1,18 @@
+**TRACK: I'd Do Anything**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Lively
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | C . . . | Dm . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C . . . | F . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | C . . . |

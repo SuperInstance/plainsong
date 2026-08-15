@@ -1,0 +1,21 @@
+**TRACK: Amsterdam**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Brooding, theatrical
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | F . . . | E7 . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | F . . . | E7 . . . | Am . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | E7 . . . | Am . . . | G . . . |
+
+[V3] (Final Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | Dm . . . | E7 . . . | Am . . . | F . . . | E7 . . . | Am . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | E7 . . . | Am . . . | E7 . . . | Am . . . |

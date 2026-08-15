@@ -1,0 +1,18 @@
+**TRACK: Since I’ve Been Loving You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Bluesy, heavy
+
+[V1] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | G . . . | Am . . . | Am . . . | Am . . . | F . . . | G . . . | Am . . . | Am . . . | Dm . . . | E . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | G . . . | Am . . . | Am . . . | Am . . . | F . . . | G . . . | Am . . . | Am . . . | Dm . . . | E . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | G . . . | F . . . | C . . . | Dm . . . | E . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | Am . . . | Am . . . | G . . . | Am . . . | Am . . . | Am . . . | F . . . | G . . . | Am . . . | Am . . . | Dm . . . | E . . . |

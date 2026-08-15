@@ -1,24 +1,21 @@
 **TRACK: Salt Peanuts**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 176 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | vel: 70
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | F . . . | Bb . . . | F . . . |
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | vel: 75
 
 [BR] (Bridge - 4 Bars)
 Chords: | C7 . . . | C7 . . . | F7 . . . | F7 . . . |
-@guitar | c2-e2-g2-bb2 . . . | c2-e2-g2-bb2 . . . | f2-a2-c3-eb3 . . . | f2-a2-c3-eb3 . . . | vel: 68
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Bb . . . | Eb . . . | Eb . . . | Bb . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | bb1-d2-f2 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | bb1-d2-f2 . . . | bb1-d2-f2 . . . | f2-a2-c3 . . . | bb1-d2-f2 . . . | vel: 72
 
 [OUT] (Outro - 4 Bars)
 Chords: | F7 . . . | Bb . . . | F7 . . . | Bb . . . |
-@guitar | f2-a2-c3-eb3 . . . | bb1-d2-f2 . . . | f2-a2-c3-eb3 . . . | bb1-d2-f2 . . . | vel: 65

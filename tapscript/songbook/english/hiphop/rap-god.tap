@@ -1,0 +1,21 @@
+**TRACK: Rap God**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]  
+key: C#m | tempo: 86 | subdivision: 16th  
+time: 4/4 | mood: Aggressive  
+
+[V1] (Verse - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+
+[V2] (Verse - 8 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | F#m . . . | G# . . . | A . . . | B . . . |  
+
+[CH] (Chorus - 4 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | C#m . . . | A . . . | E . . . | B . . . |  

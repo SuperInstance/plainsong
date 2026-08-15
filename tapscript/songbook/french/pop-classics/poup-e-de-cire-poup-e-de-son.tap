@@ -1,0 +1,24 @@
+**TRACK: Poupée de cire, poupée de son**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Bouncy, Yé-yé
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | Bm . . . | E . . . | A . . . |
+Chords: | D . . . | A . . . | E . . . | E . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F#m . . . | Bm . . . | E . . . | A . . . |
+Chords: | D . . . | A . . . | E . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | F#m . . . |
+Chords: | G . . . | D . . . | E . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | A . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | F#m . . . | Bm . . . | E . . . | A . . . |

@@ -1,24 +1,21 @@
 **TRACK: Burn**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 138 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | G . . . | G . . . | F . . . | F . . . | E . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 65
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | D . . . | C . . . | C . . . | G . . . | G . . . | E . . . | E . . . |
-@guitar | d2-f#2-a2 . . . | d2-f#2-a2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | e2-g#2-b2 . . . | vel: 72
 
 [BR] (Bridge - 4 Bars)
 Chords: | F . . . | G . . . | Am . . . | E . . . |
-@guitar | f2-a2-c3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Am . . . | Am . . . | Am . . . | Am . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | a2-e3-a3 . . . | vel: 50

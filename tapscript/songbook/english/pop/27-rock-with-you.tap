@@ -1,0 +1,21 @@
+**TRACK: Rock with You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 114 | subdivision: 8th  
+time: 4/4 | mood: Smooth Groove
+
+[V1] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | G6 . . . | Em7 . . . | Am7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fmaj7 . . . | G6 . . . | Em7 . . . | Am7 . . . |

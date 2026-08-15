@@ -1,26 +1,22 @@
 **TRACK: Lover Man (Oh Where Can You Be)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-bb2 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | Bbm . . . | F . . . | A7 . . . |
-@guitar | bb1-d2-f2 . . . | bb1-db2-f2 . . . | f2-a2-c3 . . . | a1-c#2-e2 . . . | vel: 58
 Chords: | Dm . . . | G7 . . . | C7 . . . | C7 . . . |
-@guitar | d2-f2-a2 . . . | g1-b1-d2 . . . | c2-e2-bb2 . . . | c2-e2-bb2 . . . | vel: 58
 
 [BR] (Bridge - 4 Bars)
 Chords: | Gm7 . . . | C7 . . . | F . . . | E7 . . . |
-@guitar | g1-bb1-d2-f2 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | e1-g#1-b1-d2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Gm7 . . . | C7 . . . | F . . . |
-@guitar | d2-f2-a2 . . . | g1-bb1-d2-f2 . . . | c2-e2-bb2 . . . | f2-a2-c3 . . . | vel: 48

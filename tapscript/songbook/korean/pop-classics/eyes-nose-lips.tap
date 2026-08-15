@@ -1,0 +1,15 @@
+**TRACK: Eyes, Nose, Lips**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 82 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | E . . . | F#m . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bm . . . | E . . . | A . . . | F#m . . . |

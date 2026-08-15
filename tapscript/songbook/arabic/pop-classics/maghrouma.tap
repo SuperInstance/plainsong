@@ -1,0 +1,21 @@
+**TRACK: Maghrouma**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | Bb . . . | C . . . | A7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Dm . . . | Gm . . . | A7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Dm . . . | Dm . . . | Gm . . . | A7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Dm . . . | Gm . . . | A7 . . . | Dm . . . |

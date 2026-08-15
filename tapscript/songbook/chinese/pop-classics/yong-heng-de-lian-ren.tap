@@ -1,0 +1,24 @@
+**TRACK: Yong Heng De Lian Ren**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+Chords: | Eb . . . | Bb/D . . . | Fm7 . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | Ab . . . |
+Chords: | Fm7 . . . | Bb . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb . . . | Gm7 . . . | Cm . . . |
+Chords: | Fm7 . . . | Bb . . . | Eb . . . | Bb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Abm . . . | Eb/Bb . . . | Bb . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Cm . . . | Fm7 . . . | Bb . . . |

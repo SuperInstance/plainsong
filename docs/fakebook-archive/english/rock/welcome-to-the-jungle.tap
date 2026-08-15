@@ -1,24 +1,21 @@
 **TRACK: Welcome to the Jungle**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 113 | subdivision: 8th
 time: 4/4 | mood: Aggressive
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Em . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 70
 
 [V2] (Verse - 8 Bars)
 Chords: | Em . . . | Em . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 75
 
 [CH] (Chorus - 8 Bars)
 Chords: | C . . . | D . . . | Em . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 80
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | Am . . . | C . . . | D . . . |
-@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | c3-e3-g3 . . . | d3-f#3-a3 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 50

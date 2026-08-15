@@ -1,20 +1,18 @@
 **TRACK: You Can't Judge a Book by the Cover**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 132 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
 
 [V2] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 60
 
 [BR] (Bridge - 8 Bars)
 Chords: | A . . . | A . . . | E . . . | E . . . | B . . . | B . . . | A . . . | B . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | b2-d#3-f#3 . . . | a2-c#3-e3 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [V3] (Verse - 12 Bars)
 Chords: | E . . . | E . . . | A . . . | E . . . | E . . . | E . . . | A . . . | E . . . | B . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b

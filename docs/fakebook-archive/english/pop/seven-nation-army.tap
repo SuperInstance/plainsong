@@ -1,24 +1,21 @@
 **TRACK: Seven Nation Army**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E minor | tempo: 124 | subdivision: 8th
 time: 4/4 | mood: Driving, Anthemic
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | Em . . . | G . . . | G . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | Em . . . | G . . . | G . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | vel: 60
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | C . . . | D . . . | D . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | d3-a3-d4 . . . | vel: 70
 
 [BR] (Bridge - 4 Bars)
 Chords: | Em . . . | G . . . | C . . . | D . . . |
-@guitar | e2-b2-e3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | d3-a3-d4 . . . | vel: 65
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | Em . . . | Em . . . | Em . . . |
-@guitar | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | e2-b2-e3 . . . | vel: 55

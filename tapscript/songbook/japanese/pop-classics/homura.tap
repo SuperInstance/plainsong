@@ -1,0 +1,24 @@
+**TRACK: Homura**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 79 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[INTRO] (Intro - 4 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Cm . . . |
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | Db . . . | Eb . . . | Cm . . . |
+Chords: | Fm . . . | Db . . . | Eb . . . | C . . . |
+
+[PRE] (Pre-Chorus - 4 Bars)
+Chords: | Bbm . . . | C . . . | Db . . . | Eb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Db . . . | Bbm . . . | C . . . |
+Chords: | Fm . . . | Db . . . | Eb . . . | C . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bbm . . . | Ab . . . | Db . . . | Eb . . . |
+Chords: | Bbm . . . | Ab . . . | Db . . . | C . . . |

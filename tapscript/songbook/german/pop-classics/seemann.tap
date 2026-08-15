@@ -1,0 +1,21 @@
+**TRACK: Seemann**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 68 | subdivision: 8th
+time: 6/4 | mood: Melancholic
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . . . | C . . . . . | G . . . . . | D . . . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . . . | C . . . . . | G . . . . . | D . . . . . | Em . . . . . | C . . . . . | G . . . . . | D . . . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . . . | D . . . . . | Em . . . . . | C . . . . . | G . . . . . | D . . . . . | Em . . . . . | B . . . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . . . | C . . . . . | G . . . . . | B . . . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . . . | C . . . . . | G . . . . . | Em . . . . . |

@@ -1,0 +1,22 @@
+**TRACK: Wonderwall**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/songbook.md.
+key: G | tempo: 87 | swing: 0% | subdivision: 8th
+
+[intro]
+Chords: Em7 | G | Dsus4 | A7sus4
+
+[verse1]
+Chords: Em7 | G | Dsus4 | A7sus4 (x2)
+
+[pre-chorus]
+Chords: Cadd9 | Dsus4 | Em7 | G (x2)
+
+[chorus]
+Chords: Cadd9 | Em7 | G | Dsus4 (x2)
+
+[verse2]
+Chords: Em7 | G | Dsus4 | A7sus4 (x2)
+
+[outro]
+Chords: Em7 | G | Dsus4 | A7sus4 (repeat, fade)

@@ -1,0 +1,21 @@
+**TRACK: Flieger, grüß mir die Sonne**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 110 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | G . . . | C . . . | G . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | G . . . | C . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | C . . . | G . . . | C . . . | F . . . | C . . . | G . . . | C . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | G . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | F . . . | C . . . | C . . . | G . . . | C . . . | G . . . |

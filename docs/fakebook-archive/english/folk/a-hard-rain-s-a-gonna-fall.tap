@@ -1,24 +1,21 @@
 **TRACK: A Hard Rain's A-Gonna Fall**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | F . . . | C . . . | G . . . | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | F . . . | C . . . | G . . . | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | F . . . | C . . . | G . . . | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V4] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | F . . . | C . . . | G . . . | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [V5] (Verse - 8 Bars)
 Chords: | Am . . . | Am . . . | C . . . | F . . . | C . . . | G . . . | Am . . . | E . . . |
-@guitar | a2-e3-a3 . . . | a2-e3-a3 . .

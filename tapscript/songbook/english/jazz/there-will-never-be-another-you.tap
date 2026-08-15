@@ -1,0 +1,18 @@
+**TRACK: There Will Never Be Another You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb6 . . . | Fm7 . . . | Bb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Abmaj7 . . . | Dbmaj7 . . . | Gm7 . . . | C7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Eb . . . | Eb . . . |

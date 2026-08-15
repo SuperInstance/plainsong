@@ -1,20 +1,18 @@
 **TRACK: Castles Made of Sand**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 76 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | G . . . | Am . . . | B7 . . . |
-@guitar | e2-b3-e4 . . . | g2-b3-d4 . . . | a2-c3-e4 . . . | b2-f#3-a3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | Em . . . | G . . . | Am . . . | B7 . . . |
-@guitar | e2-b3-e4 . . . | g2-b3-d4 . . . | a2-c3-e4 . . . | b2-f#3-a3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | D . . . | Em . . . | B7 . . . |
-@guitar | c3-e3-g3 . . . | d3-f#3-a3 . . . | e3-g3-b3 . . . | b2-d#3-f#3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | C . . . | G . . . | D . . . |
-@guitar | a2-c3-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d3-f#3-a3 . . . | vel: 58

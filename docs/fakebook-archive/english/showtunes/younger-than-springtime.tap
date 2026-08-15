@@ -1,24 +1,21 @@
 **TRACK: Younger Than Springtime**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Tender
 
 [V1] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | Dm . . . | G7 . . . | C . . . | Am . . . | Dm . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | C . . . | E7 . . . | Am . . . | F . . . | C . . . | G7 . . . | C . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 50
 
 [BR] (Bridge - 8 Bars)
 Chords: | F . . . | Fm . . . | C . . . | A7 . . . | Dm . . . | G7 . . . | C . . . | G7 . . . |
-@guitar | f2-a2-c3 . . . | f2-ab2-c3 . . . | c3-e3-g3 . . . | a2-c#3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [V3] (Verse - 8 Bars)
 Chords: | C . . . | Am . . . | Dm . . . | G7 . . . | C . . . | E7 . . . | Am . . . | G7 . . . |
-@guitar | c3-e3-g3 . . . | a2-c3-e3 . . . | d3-f3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | e3-g#3-b3 . . . | a2-c3-e3 . . . | g2-b2-d3 . . . | vel: 50
 
 [OUT] (Outro - 4 Bars)
 Chords: | C . . . | F . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | f2-a2-c3 . . . | c3-e3-g3 .

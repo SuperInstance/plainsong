@@ -1,24 +1,21 @@
 **TRACK: Knockin' on Heaven's Door**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Slow, building
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Am . . . | Am . . . |
-@guitar | g2-b3-d3 . . . | d2-a3-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Am . . . | Am . . . |
-@guitar | g2-b3-d3 . . . | d2-a3-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | C . . . | G . . . | D . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b3-d3 . . . | d2-a3-d3 . . . | vel: 65
 
 [BR] (Bridge - 2 Bars)
 Chords: | Am . . . | Am . . . |
-@guitar | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 45
 
 [OUT] (Outro - 4 Bars)
 Chords: | G . . . | D . . . | Am . . . | Am . . . |
-@guitar | g2-b3-d3 . . . | d2-a3-d3 . . . | a2-c3-e3 . . . | a2-c3-e3 . . . | vel: 40

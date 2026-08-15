@@ -1,0 +1,18 @@
+**TRACK: Mexico**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Festive
+
+[V1] (Verse - 8 Bars)
+Chords: | C . | G7 . | C . | C . | F . | C . | G7 . | C . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . | G7 . | C . | C . | F . | C . | G7 . | C . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . | C . | F . | C . | G7 . | C . | G7 . | C . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . | G7 . | C . | G7 . |

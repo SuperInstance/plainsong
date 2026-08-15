@@ -1,0 +1,21 @@
+**TRACK: God’s Menu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 100 | subdivision: 16th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[PC] (Pre-Chorus - 2 Bars)
+Chords: | Bm . . . | C#7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Bm . . . | F#m . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | F#m . . . | E . . . |

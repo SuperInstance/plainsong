@@ -1,22 +1,15 @@
 **TRACK: I Saw Three Ships**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G4 . A4 B4 | D5 . . . | G4 . A4 B4 | D5 . . . |
-Lyrics: | I saw three ships come sail-ing in | On Christ-mas Day, on Christ-mas Day |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | G4 . A4 B4 | D5 . . . | B4 . A4 G4 | D4 . . . |
-Lyrics: | I saw three ships come sail-ing in | On Christ-mas Day in the morn-ing |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | G4 . G4 . | E4 . G4 . | A4 . B4 . | D5 . . . |
-Lyrics: | And all the an-gels sing | On Christ-mas Day, on Christ-mas Day |
-@piano | g2-b2-d3 . . . | c2-e2-g2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 60

@@ -1,0 +1,22 @@
+**TRACK: Take Me as I Am (Jekyll & Hyde)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 68 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Cm . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F/A . . . | Gm . . . | Eb . . . |
+Chords: | Bb . . . | F . . . | Bb . . . | F . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | Bb/D . . . | Cm . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |

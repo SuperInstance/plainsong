@@ -1,0 +1,17 @@
+**TRACK: Love Come Down**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ebm | tempo: 112 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Ebm7 . . . | Ab7 . . . | Ebm7 . . . | Ab7 . . . |
+Chords: | Ebm7 . . . | Ab7 . . . | Bbm7 . . . | Ab7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab7 . . . | Db7 . . . | Ab7 . . . | Db7 . . . |
+Chords: | Ab7 . . . | Db7 . . . | Ebm7 . . . | Bbm7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Bbm7 . . . | Ab7 . . . | Bbm7 . . . | Ab7 . . . |

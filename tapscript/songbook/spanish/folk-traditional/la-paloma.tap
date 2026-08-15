@@ -1,0 +1,12 @@
+**TRACK: La Paloma**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | C . . . | G7 . . . | G7 . . . | C . . . | C . . . | G7 . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | C . . . | C . . . | G7 . . . | G7 . . . | C . . . | C . . . |

@@ -1,0 +1,18 @@
+**TRACK: Me and My Chauffeur Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A . . . | B7 . . . | E . . . | B7 . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | E . . . | E . . . | E . . . | E . . . | A . . . | A . . . | E . . . | E . . . | B7 . . . | A . . . | E . . . | B7 . . . |

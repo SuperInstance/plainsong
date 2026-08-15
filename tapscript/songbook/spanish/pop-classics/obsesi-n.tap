@@ -1,0 +1,18 @@
+**TRACK: Obsesión**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 128 | subdivision: 16th
+time: 4/4 | mood: Driving Bachata
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | A . . . | F# . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | A . . . | F# . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bm . . . | G . . . | A . . . | F# . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | F# . . . | Bm . . . | Bm . . . |

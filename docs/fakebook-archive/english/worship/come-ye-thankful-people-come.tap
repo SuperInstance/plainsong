@@ -1,22 +1,15 @@
 **TRACK: Come, Ye Thankful People, Come**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Gentle
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | A3 . B3 . | G3 . B3 . | A3 . F#3 . |
-Lyrics: | Come ye thank - ful | peo - ple come | Raise the song of | har - vest home |
-@piano | g2-b2-d3 . . . | d2-f#2-a2 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [V2] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | Am . . . | D . . . |
-Melody: | E4 . G4 . | D4 . E4 . | C4 . D4 . | B3 . A3 . |
-Lyrics: | All is safe - ly | gath - ered in | Ere the win - ter | storms be - gin |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | a2-c3-e3 . . . | d2-f#2-a2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | C . . . | G . . . | D . . . |
-Melody: | B3 . D4 . | C4 . E4 . | D4 . B3 . | A3 . F#3 . |
-Lyrics: | Lord of har - vest | grant that we | Whole - some grain and | pure may be |
-@piano | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55

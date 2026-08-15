@@ -1,0 +1,21 @@
+**TRACK: Snowblind**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | D . . . | C . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | F . . . | G . . . | D . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | D . . . | Em . . . |

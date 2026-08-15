@@ -1,0 +1,21 @@
+**TRACK: South Rampart Street Parade**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 208 | subdivision: 8th
+time: 2/2 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Ab . . . | Db . . . | Db . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Db . . . | Db . . . | Ab . . . | Ab . . . | Eb7 . . . | Eb7 . . . | Ab . . . | Eb7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | Ab .

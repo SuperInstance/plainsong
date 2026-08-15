@@ -1,0 +1,21 @@
+**TRACK: Mann gegen Mann**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E minor | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Industrial Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | D . . . | Em . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am . . . | Em . . . | F . . . | Em . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | C . . . | G . . . | D . . . |

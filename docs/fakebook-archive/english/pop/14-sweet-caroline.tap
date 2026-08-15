@@ -1,20 +1,18 @@
 **TRACK: 14 Sweet Caroline**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bb | tempo: 96 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-f3-bb3 . . . | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
-@guitar | bb2-f3-bb3 . . . | g2-d3-g3 . . . | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | vel: 52
 
 [CH] (Chorus - 8 Bars)
 Chords: | F . . . | Bb . . . | F . . . | Bb . . . |
-@guitar | f2-c3-f3 . . . | bb2-f3-bb3 . . . | f2-c3-f3 . . . | bb2-f3-bb3 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Eb . . . | F . . . | Gm . . . | F . . . |
-@guitar | eb2-bb2-eb3 . . . | f2-c3-f3 . . . | g2-d3-g3 . . . | f2-c3-f3 . . . | vel: 55

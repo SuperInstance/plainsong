@@ -1,24 +1,21 @@
 **TRACK: Impressions**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 144 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
 
 [V2] (Verse - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
 
 [B1] (Bridge - 4 Bars)
 Chords: | Eb7 . . . | Eb7 . . . | Dm . . . | Dm . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 62
 
 [V3] (Verse - 4 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 60
 
 [B2] (Bridge - 4 Bars)
 Chords: | Eb7 . . . | Eb7 . . . | Dm . . . | Dm . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 62

@@ -1,24 +1,21 @@
 **TRACK: The Thrill Is Gone**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Bm | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Blues
 
 [V1] (Verse - 8 Bars)
 Chords: | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Bm . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bm . . . | Bm . . . | Em . . . | F# . . . | Bm . . . | Bm . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | b2-d3-f#3 . . . | b2-d3-f#3 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | Em . . . | F# . . . |
-@guitar | b2-d3-f#3 . . . | g2-b3-d4 . . . | e2-g#3-b3 . . . | f#2-a#3-c#4 . . . | vel: 45
 
 [OUT] (Outro - 8 Bars)
 Chords: | Bm . . . | Bm . . . | Em . . . | F# . . . | Bm . . . | Bm . . . | Bm . . . | Bm . . . |
-@guitar | b2-d3-f#3 . . . | b2-d3-f#3 .

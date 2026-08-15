@@ -1,24 +1,21 @@
 **TRACK: La Grange**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]  
 key: E | tempo: 84 | subdivision: 8th  
 time: 4/4 | mood: Driving  
 
 [V1] (Verse - 8 Bars)  
 Chords: | E . . . | E . . . | D . . . | D . . . | E . . . | E . . . | D . . . | D . . . |  
-@guitar | e2-b3-e4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | d2-a3-d4 . . . | vel: 60  
 
 [V2] (Verse Variation - 8 Bars)  
 Chords: | E . . . | E . . . | D . . . | D . . . | E . . . | E . . . | D . . . | D . . . |  
-@guitar | e2-g#3-b3 . . . | e2-g#3-b3 . . . | d2-f#3-a3 . . . | d2-f#3-a3 . . . | vel: 62  
 
 [BR] (Bridge - 4 Bars)  
 Chords: | F# . . . | F# . . . | E . . . | E . . . |  
-@guitar | f#2-a#3-c#4 . . . | f#2-a#3-c#4 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 58  
 
 [CH] (Chorus - 8 Bars)  
 Chords: | E . . . | D . . . | E . . . | D . . . | E . . . | D . . . | E . . . | E . . . |  
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | d2-a3-d4 . . . | vel: 66  
 
 [OUT] (Outro - 4 Bars)  
 Chords: | E . . . | D . . . | E . . . | E . . . |  
-@guitar | e2-b3-e4 . . . | d2-a3-d4 . . . | e2-b3-e4 . . . | e2-b3-e4 . . . | vel: 50

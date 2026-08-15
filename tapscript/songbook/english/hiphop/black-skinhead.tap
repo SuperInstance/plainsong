@@ -1,0 +1,18 @@
+**TRACK: Black Skinhead**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Aggressive
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F#m . . . | F#m . . . | D . . . | D . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | E . . . | E . . . | D . . . | D . . . |

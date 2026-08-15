@@ -1,0 +1,21 @@
+**TRACK: The Raggle Taggle Gypsies**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Wistful
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | Am . . . | E7 . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | G . . . | C . . . | E7 . . . |
+
+[V3] (Verse - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | E7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | G . . . | C . . . | E7 . . . |

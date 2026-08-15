@@ -1,24 +1,21 @@
 **TRACK: Three Hearts in a Tangle**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: A | tempo: 112 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 58
 
 [V2] (Verse - 8 Bars)
 Chords: | A . . . | A . . . | D . . . | A . . . | E . . . | E . . . | A . . . | A . . . |
-@guitar | a2-c#3-e3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 58
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | E . . . | A . . . | D . . . | A . . . | E . . . | E . . . |
-@guitar | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3 . . . | e2-g#3-b3 . . . | vel: 64
 
 [BR] (Bridge - 4 Bars)
 Chords: | B7 . . . | E7 . . . | A . . . | A . . . |
-@guitar | b2-d#3-f#3-a3 . . . | e2-g#3-b3-d3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | A . . . | D . . . | A . . . | E7 . . . |
-@guitar | a2-c#3-e3 . . . | d2-f#3-a3 . . . | a2-c#3-e3 . . . | e2-g#3-b3-d3 . . . | vel: 55

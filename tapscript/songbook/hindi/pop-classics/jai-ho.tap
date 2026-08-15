@@ -1,0 +1,21 @@
+**TRACK: Jai Ho**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 95 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | G . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Am . . . | Am . . . | F . . . | E . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | E . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | F . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |

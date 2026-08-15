@@ -1,22 +1,15 @@
 **TRACK: Hungarian Dance No. 5**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 130 | subdivision: 8th
 time: 2/4 | mood: Fiery
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | A . . . |
-Melody: | F#4 . A4 . | D5 . . . | C#5 . A4 . | E5 . . . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | a2-e3-a3 . . . | vel: 60
 
 [V2] (Verse - 8 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | A . . . |
-Melody: | F#4 . A4 . | D5 . . . | C#5 . A4 . | E5 . . . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | a2-e3-a3 . . . | vel: 60
 
 [CH] (Chorus - 8 Bars)
 Chords: | D . . . | A . . . | D . . . | A . . . |
-Melody: | D5 . F#5 . | E5 . C#5 . | D5 . A4 . | B4 . C#5 . |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | d2-a2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | vel: 65

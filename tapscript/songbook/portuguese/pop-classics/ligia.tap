@@ -1,0 +1,21 @@
+**TRACK: Ligia**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | Cm7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | C7sus4 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
+Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | C7b9 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Fm7 . . . |

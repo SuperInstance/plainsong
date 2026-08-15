@@ -1,0 +1,15 @@
+**TRACK: La Fille aux cheveux de lin**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gb | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Calm, flowing
+
+[V1] (Verse - 4 Bars)
+Chords: | Gb . . . | Db . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Gb . . . |

@@ -1,0 +1,18 @@
+**TRACK: L'Internationale**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Defiant
+
+[V1] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Bb . . . | F . . . | Gm . . . | F . . . |
+
+[CH2] (Chorus - 4 Bars)
+Chords: | Bb . . . | Eb . . . | Bb . . . | F . . . |

@@ -1,0 +1,18 @@
+**TRACK: Se Todos Fossem Iguais a Você**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fmaj7 | tempo: 132 | subdivision: 8th
+time: 2/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | G7 . . . | Em7 . . . | A7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | G7 . . . | Em7 . . . | A7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Am7 . . . | D7 . . . | Gm7 . . . | C7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Fmaj7 . . . | G7 . . . | Em7 . . . | A7 . . . |

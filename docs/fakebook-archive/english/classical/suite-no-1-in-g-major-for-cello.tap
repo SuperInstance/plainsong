@@ -1,22 +1,15 @@
 **TRACK: Suite No. 1 in G major for Cello - Prelude**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: G | tempo: 80 | subdivision: 16th
 time: 4/4 | mood: Flowing
 
 [V1] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | Em . . . | C . . . |
-Melody: | G3 B3 D4 G4 | D4 F#3 A3 D4 | E4 G3 B3 E4 | C4 E3 G3 C4 |
-Lyrics: | da da da da | da da da da | da da da da | da da da da |
-@piano | g2-b2-d3-g3 . . . | d2-f#2-a2-d3 . . . | e2-g2-b2-e3 . . . | c2-e2-g2-c3 . . . | vel: 48
 
 [V2] (Verse - 4 Bars)
 Chords: | G . . . | D . . . | C . . . | G . . . |
-Melody: | B3 D4 G4 B4 | A3 C#4 E4 A4 | G3 B3 D4 G4 | G3 B3 D4 G4 |
-Lyrics: | da da da da | da da da da | da da da da | da da da da |
-@piano | g2-b2-d3-g3 . . . | a2-c#3-e3-a3 . . . | c2-e2-g2-c3 . . . | g2-b2-d3-g3 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | Em . . . | C . . . | D . . . | G . . . |
-Melody: | E4 G4 B4 E5 | C4 E4 G4 C5 | D4 F#4 A4 D5 | G4 B4 D5 G5 |
-Lyrics: | la la la la | la la la la | la la la la | la la la la |
-@piano | e2-g2-b2-e3 . . . | c2-e2-g2-c3 . . . | d2-f#2-a2-d3 . . . | g2-b2-d3-g3 . . . | vel: 55

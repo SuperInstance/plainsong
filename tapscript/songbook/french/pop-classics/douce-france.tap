@@ -1,0 +1,27 @@
+**TRACK: Douce France**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Nostalgic Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D7 . . . | G . . . | D7 . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | B7 . . . | Em . . . | A7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D7 . . . | G . . . | D7 . . . | G . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | D7 . . . G . . |

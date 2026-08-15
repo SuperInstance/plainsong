@@ -1,24 +1,21 @@
 **TRACK: You Shook Me**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: E | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Swaggering
 
 [V1] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | A . . . | E . . . | B . . . | E . . . |
-@guitar | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | e2-b2-e3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 50
 
 [V3] (Verse - 4 Bars)
 Chords: | E . . . | A . . . | E . . . | B . . . |
-@guitar | e2-b2-e3 . . . | a2-c#3-e3 . . . | e2-b2-e3 . . . | b2-d#3-f#3 . . . | vel: 55

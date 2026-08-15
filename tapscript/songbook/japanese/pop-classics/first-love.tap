@@ -1,0 +1,18 @@
+**TRACK: First Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 86 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Eb . . . | Bb . . . | Cm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |

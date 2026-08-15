@@ -1,0 +1,21 @@
+**TRACK: Ännchen von Tharau**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F | tempo: 80 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . | C7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Bb . . . | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | A7 . . . | Dm . . . | C7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | F . . . | C7 . . . | F . . . | Bb . . . | F . . . | C7 . . . | F . . . | F . . . |

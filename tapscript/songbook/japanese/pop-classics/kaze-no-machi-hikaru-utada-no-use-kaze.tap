@@ -1,0 +1,21 @@
+**TRACK: Kaze (Tatsuro Yamashita)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb major | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Breezy, Nostalgic
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm7 . . . | Eb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm7 . . . | Eb . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Bb . . . | Cm7 . . . | F . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Eb/G . . . | Fm7 . . . | Bb . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Bb . . . | Cm7 . . . | F . . . |

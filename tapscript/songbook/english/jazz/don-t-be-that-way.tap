@@ -1,0 +1,21 @@
+**TRACK: Don't Be That Way**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 184 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . . | Am7 . . . | Dm7 . . . | G7 . . . | C . . . | C7 . . . | F . . . | G7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . . | Am7 . . . | Dm7 . . . | G7 . . . | C . . . | A7 . . . | Dm7 . . . | G7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | C . . . | C7 . . . | F . . . | F#dim . . . | C/G . . . | D7 . . . | G7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Em7 . . . | A7 . . . | Dm7 . . . | G7 . . . | C . . . | G7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | C . . . | F . . . | C/G . . . | C . . . |

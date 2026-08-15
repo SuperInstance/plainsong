@@ -1,20 +1,18 @@
 **TRACK: Goodbye Pork Pie Hat**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Eb | tempo: 80 | subdivision: 8th
 time: 4/4 | mood: Melancholic Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-ab2-eb3 . . . | bb2-d3-f3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-ab2-eb3 . . . | bb2-d3-f3 . . . | vel: 50
 
 [BR] (Bridge - 8 Bars)
 Chords: | Abmaj7 . . . | Db7 . . . | Gbmaj7 . . . | B7 . . . | Emaj7 . . . | A7 . . . | Am7 . . . | D7 . . . |
-@guitar | ab2-c3-eb3-g3 . . . | db3-f3-ab3-b3 . . . | gb2-bb2-db3-f3 . . . | b2-d3-f3-a3 . . . | e3-g#3-b3-d#4 . . . | a2-c#3-e3-g3 . . . | a2-c3-e3-g3 . . . | d3-f#3-a3-c4 . . . | vel: 45
 
 [V3] (Verse - 8 Bars)
 Chords: | Eb . . . | Eb7 . . . | Ab . . . | Abm . . . | Eb . . . | C7 . . . | Fm7 . . . | Bb7 . . . |
-@guitar | eb3-g3-bb3 . . . | eb3-g3-bb3-db4 . . . | ab2-c3-eb3 . . . | ab2-cb3-eb3 . . . | eb3-g3-bb3 . . . | c3-e3-g3-bb3 . . . | f2-ab2-eb3 . . . |

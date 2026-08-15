@@ -1,0 +1,21 @@
+**TRACK: Kufsteinlied**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 120 | subdivision: 8th
+time: 3/4 | mood: Lifting
+
+[V1] (Verse - 8 Bars)
+Chords: | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . | G7 . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . | C . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | G7 . . | C . . | G7 . . | C . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | C . . | G7 . . | C . . | F . . | C . . | G7 . . | C . . | G7 . . C . . |

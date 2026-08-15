@@ -1,24 +1,21 @@
 **TRACK: Ain't No Stoppin' Us Now**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Dm | tempo: 103 | subdivision: 8th
 time: 4/4 | mood: Uplifting
 
 [V1] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Gm . . . | Gm . . . | A . . . | A . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | g3-bb3-d4 . . . | g3-bb3-d4 . . . | a3-c#4-e4 . . . | a3-c#4-e4 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Dm . . . | Dm . . . | Gm . . . | Gm . . . | A . . . | A . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | g3-bb3-d4 . . . | g3-bb3-d4 . . . | a3-c#4-e4 . . . | a3-c#4-e4 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Dm . . . | Dm . . . | Gm . . . | Gm . . . | A . . . | A . . . | Dm . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | d3-f3-a3 . . . | g3-bb3-d4 . . . | g3-bb3-d4 . . . | a3-c#4-e4 . . . | a3-c#4-e4 . . . | d3-f3-a3 . . . | d3-f3-a3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bb . . . | Bb . . . | A . . . | A . . . |
-@guitar | bb2-d3-f3 . . . | bb2-d3-f3 . . . | a2-c#3-e3 . . . | a2-c#3-e3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | Dm . . . | Gm . . . | A . . . | Dm . . . |
-@guitar | d3-f3-a3 . . . | g3-bb3-d4 . . . | a3-c#4-e4 . . . | d3-f3-a3 . . . | vel: 50

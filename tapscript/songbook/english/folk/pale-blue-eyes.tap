@@ -1,0 +1,21 @@
+**TRACK: Pale Blue Eyes**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: A | tempo: 96 | subdivision: 8th
+time: 3/4 | mood: Gentle
+
+[V1] (Verse - 8 Bars)
+Chords: | A . . | A . . | A . . | A . . | D . . | D . . | A . . | E . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | A . . | A . . | A . . | A . . | D . . | D . . | A . . | E . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . | D . . | A . . | A . . | D . . | D . . | E . . | E . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F#m . . | F#m . . | Bm . . | Bm . . | E . . | E . . | A . . | A . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | A . . | A . . | A . . | A . . | D . . | D . . | A . . | E . . |

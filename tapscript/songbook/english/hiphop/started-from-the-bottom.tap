@@ -1,0 +1,15 @@
+**TRACK: Started From The Bottom**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 70 | subdivision: 8th
+time: 4/4 | mood: Dark, Minimal
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Cm . . . | Bb . . . | Ab . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Fm . . . | G . . . | Ab . . . | G . . . |

@@ -1,19 +1,18 @@
 **TRACK: The Chain**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Am | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | E . . . |
-@guitar | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | e2-g#2-b2 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Am . . . | G . . . | F . . . | E . . . |
-@guitar | a2-e3-a3 . . . | g2-b2-d3 . . . | f2-a2-c3 . . . | e2-g#2-b2 . . . | vel: 50
 
 **TRACK: Go Your Own Way**
 [MetaData]
@@ -22,15 +21,12 @@ time: 4/4 | mood: Driving
 
 [V1] (Verse - 4 Bars)
 Chords: | D . . . | A . . . | G . . . | D . . . |
-@guitar | d2-a2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | G . . . | D . . . | A . . . | G . . . |
-@guitar | g2-b2-d3 . . . | d2-a2-d3 . . . | a2-e3-a3 . . . | g2-b2-d3 . . . | vel: 60
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | G . . . | A . . . | D . . . |
-@guitar | b2-d3-f#3 . . . | g2-b2-d3 . . . | a2-e3-a3 . . . | d2-a2-d3 . . . | vel: 50
 
 **TRACK: Gold Dust Woman**
 [MetaData]
@@ -39,4 +35,3 @@ time: 4/4 | mood: Mysterious
 
 [V1] (Verse - 4 Bars)
 Chords: | Em . . . | C . . . | G . . . | D . . . |
-@guitar | e2-b2-e3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | d2-a2-d3 . . .

@@ -1,0 +1,21 @@
+**TRACK: Alvorada**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 92 | subdivision: 8th
+time: 2/4 | mood: Lyrical
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | G . . . | Em . . . | Am . . . | D7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | G . . . | Am . . . | D7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Em . . . | B7 . . . | Em . . . | D7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | G . . . | C . . . | G . . . | G . . . |

@@ -1,0 +1,15 @@
+**TRACK: Ballade No. 1 in G minor**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 72 | subdivision: 8th
+time: 6/4 | mood: Dramatic
+
+[V1] (Verse - 4 Bars)
+Chords: | Gm . . . . . | D . . . . . |
+
+[V2] (Verse 2 - 4 Bars)
+Chords: | Eb . . . . . | Bb . . . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Cm . . . . . | G . . . . . |

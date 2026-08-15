@@ -1,0 +1,19 @@
+**TRACK: Jounetsu**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 118 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | D . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Gm . . . | Eb . . . | Bb . . . | F . . . |
+Chords: | Cm . . . | D . . . | Gm . . . | Gm . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb . . . | Bb . . . | Cm . . . | D . . . |

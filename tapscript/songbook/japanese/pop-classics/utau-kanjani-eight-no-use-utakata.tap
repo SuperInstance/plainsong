@@ -1,0 +1,23 @@
+**TRACK: Utakata**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: F#m | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Melancholic Drive
+
+[V1] (Verse - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | F#m . . . |
+Chords: | G . . . | D . . . | E . . . | E . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bm . . . | F#m . . . | G . . . | D . . . |
+Chords: | Bm . . . | F#m . . . | E . . . | E . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | F#m . . . | D . . . | A . . . | E . . . |

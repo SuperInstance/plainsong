@@ -1,0 +1,21 @@
+**TRACK: Waltz in D-flat major "Minute"**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Db | tempo: 138 | subdivision: 8th
+time: 3/4 | mood: Light and playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Db . . . | Db . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Db . . . | Ab . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Ab . . . |
+
+[V3] (Verse - 4 Bars)
+Chords: | Db . . . | Db . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Db . . . | Db . . . |

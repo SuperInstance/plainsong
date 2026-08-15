@@ -1,0 +1,15 @@
+**TRACK: Romeo and Juliet Fantasy Overture**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Tragic
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | E . . . | F . . . | E . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | C . . . | Dm . . . | E . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Am . . . | F . . . |

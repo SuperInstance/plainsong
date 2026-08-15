@@ -1,0 +1,21 @@
+**TRACK: Pra Machucar Meu Coração**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Gm | tempo: 96 | subdivision: 8th
+time: 2/4 | mood: Samba
+
+[V1] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | D7 . . . | D7 . . . | Gm . . . | Gm . . . | D7 . . . | D7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | D7 . . . | D7 . . . | Gm . . . | Gm . . . | D7 . . . | D7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Eb7 . . . | D7 . . . | Gm . . . | D7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Gm . . . | Gm . . . | D7 . . . | D7 . . . | Gm . . . | Gm . . . | D7 . . . | D7 . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Gm . . . | Gm . . . |

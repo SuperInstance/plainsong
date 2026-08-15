@@ -1,0 +1,12 @@
+**TRACK: The General's Command**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Marching, Solemn
+
+[V1] (Verse - 4 Bars)
+Chords: | Cm . . . | G . . . | Cm . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Ab . . . | Eb . . . | Bb . . . | Cm . . . |

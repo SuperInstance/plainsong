@@ -1,0 +1,18 @@
+**TRACK: I Ain't Got Nobody**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Ab | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Ddim . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Ab . . . | Ab7 . . . | Db . . . | Ddim . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Bb7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Ab . . . | F7 . . . | Bb7 . . . | Eb7 . . . |

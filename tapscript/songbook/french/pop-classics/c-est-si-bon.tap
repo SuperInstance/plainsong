@@ -1,0 +1,21 @@
+**TRACK: C’est si bon**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Swing
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | G7 . . . | C . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Dm . . . | E7 . . . | Am . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | C . . . | E7 . . . | Am . . . | Dm . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F . . . | Dm . . . | G7 . . . | C . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Am . . . |

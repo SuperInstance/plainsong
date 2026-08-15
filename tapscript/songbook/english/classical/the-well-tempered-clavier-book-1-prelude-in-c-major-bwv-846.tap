@@ -1,0 +1,17 @@
+**TRACK: Prelude in C major, BWV 846**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C | tempo: 66 | subdivision: 16th
+time: 4/4 | mood: Serene
+
+[V1] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | F . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | C . . . | G . . . | C . . . | G . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Am . . . | F . . . | C . . . | G . . . |
+
+[OUT] (Outro

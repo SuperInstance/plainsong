@@ -1,0 +1,18 @@
+**TRACK: A Paz**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7alt . . . | Cm7 . . . | C7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | Abmaj7 . . . | Dm7b5 . . . | G7alt . . . | Cm7 . . . | G7b9 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Abmaj7 . . . | Db7 . . . | Ebmaj7 . . . | C7alt . . . | Fm7 . . . | Bb7 . . . | Ebmaj7 . . . | G7b9 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm7b5 . . . | G7b9 . . . | Cm7 . . . | F7 . . . |

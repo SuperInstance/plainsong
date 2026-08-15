@@ -1,16 +1,12 @@
 **TRACK: Come, Christians, Join to Sing**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | C . . . | G . . . | C . . . | G . . . |
-Melody: | C4 . E4 . | D4 . B3 . | C4 . E4 . | D4 . G3 . |
-Lyrics: | Come, Chris - tians, join to sing | Al - le - lu - ia! A - men! | Loud praise to Christ our King | Al - le - lu - ia! A - men! |
-@piano | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | vel: 55
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | G . . . | C . . . |
-Melody: | F4 . A4 . | E4 . C4 . | D4 . B3 . | C4 . . . |
-Lyrics: | Al - le - lu - ia! A - men! | Al - le - lu - ia! A - men! | Al - le - lu - ia! A - men! | A - men! |
-@piano | f2-a2-c3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60

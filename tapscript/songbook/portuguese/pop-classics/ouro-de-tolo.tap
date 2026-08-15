@@ -1,0 +1,21 @@
+**TRACK: Ouro de Tolo**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | Dm . . . | Am . . . | E . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Am . . . | Dm . . . | G . . . | C . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | F . . . | G . . . | C . . . | E . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Dm . . . | E . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Am . . . | Am . . . |

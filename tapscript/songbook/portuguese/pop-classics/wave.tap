@@ -1,0 +1,18 @@
+**TRACK: Wave**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 140 | subdivision: 8th
+time: 2/4 | mood: Bossa Nova
+
+[V1] (Verse - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | A7 . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | A7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Gm7 . . . | C7 . . . | Fmaj7 . . . | Bbmaj7 . . . | Gm7 . . . | C7 . . . | Fmaj7 . . . | E7 . . . |
+
+[V3] (Verse 3 - 8 Bars)
+Chords: | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | G7 . . . | Dm7 . . . | A7 . . . |

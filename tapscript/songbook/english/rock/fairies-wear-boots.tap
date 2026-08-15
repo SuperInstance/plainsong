@@ -1,0 +1,15 @@
+**TRACK: Fairies Wear Boots**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Heavy
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | D . . . | E . . . | E . . . |

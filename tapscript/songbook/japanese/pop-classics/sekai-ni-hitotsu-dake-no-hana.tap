@@ -1,0 +1,24 @@
+**TRACK: Sekai ni Hitotsu Dake no Hana**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Uplifting
+
+[V1] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Bb . . . | Gm . . . | Eb . . . | F . . . |
+Chords: | Dm . . . | Gm . . . | Cm . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | F . . . | Dm . . . | Gm . . . |
+Chords: | Cm . . . | F . . . | Bb . . . | Bb . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Gm . . . | Eb . . . | Cm . . . | F . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | F . . . | Dm . . . | Gm . . . |

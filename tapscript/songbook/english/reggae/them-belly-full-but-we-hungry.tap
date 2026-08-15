@@ -1,0 +1,21 @@
+**TRACK: Them Belly Full (But We Hungry)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | E7 . . . |
+
+[V2] (Verse Variation - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | E7 . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | C . . . | G . . . | Am . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | F . . . | C . . . | G . . . | E7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | G . . . | F . . . | E7 . . . |

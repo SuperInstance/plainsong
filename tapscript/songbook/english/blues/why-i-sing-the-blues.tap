@@ -1,0 +1,22 @@
+**TRACK: Why I Sing the Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bb | tempo: 78 | subdivision: 8th
+time: 12/8 | mood: Swinging Blues
+
+[V1] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | F . . . | Eb . . . | Bb . . . | F . . . |
+
+[V4] (Verse - 12 Bars)
+Chords: | Bb . . . | Bb . . . | Bb . . . | Bb . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Bb . . . | Bb . . . |
+Chords: | F . . . | F . . . | Bb . . . | Bb . . . |

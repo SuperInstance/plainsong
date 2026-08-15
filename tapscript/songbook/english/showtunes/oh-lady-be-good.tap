@@ -1,0 +1,21 @@
+**TRACK: Oh, Lady Be Good!**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 160 | subdivision: 8th
+time: 4/4 | mood: Swinging
+
+[V1] (Verse - 8 Bars)
+Chords: | G . . . | Gm7 . . . | Am7 . . . | D7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | G . . . | Gm7 . . . | Am7 . . . | D7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | Em7 . . . | Am7 . . . | D7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | B7 . . . | E7 . . . | Am7 . . . | D7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | G . . . | Em7 . . . | Am7 . . . | D7 . . . |

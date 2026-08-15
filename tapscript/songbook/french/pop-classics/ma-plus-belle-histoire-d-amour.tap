@@ -1,0 +1,21 @@
+**TRACK: Ma plus belle histoire d'amour**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Fm | tempo: 72 | subdivision: 8th
+time: 4/4 | mood: Ballad
+
+[V1] (Verse - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Fm . . . | Bbm . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | C7 . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Fm . . . | C7 . . . | Db . . . | C7 . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Fm . . . | Bbm . . . | C7 . . . | Fm . . . |

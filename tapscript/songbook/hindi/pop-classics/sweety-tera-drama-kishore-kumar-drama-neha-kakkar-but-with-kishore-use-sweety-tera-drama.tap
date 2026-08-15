@@ -1,0 +1,21 @@
+**TRACK: Sweety Tera Drama**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bbm | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Playful
+
+[V1] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Db . . . | Ab . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Bbm . . . | Gb . . . | Db . . . | Ab . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |
+
+[BR] (Bridge - 2 Bars)
+Chords: | Gb . . . | Ab . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Db . . . | Ab . . . | Bbm . . . | Gb . . . |

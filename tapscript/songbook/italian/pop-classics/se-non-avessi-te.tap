@@ -1,0 +1,22 @@
+**TRACK: Se non avessi te**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: C#m | tempo: 124 | subdivision: 16th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | F#m . . . | C#m . . . |
+Chords: | A . . . | E . . . | B . . . | B . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | F#m . . . | C#m . . . | A . . . | E . . . |
+Chords: | F#m . . . | G#7 . . . | C#m . . . | C#m . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | C#m . . . | A . . . | E . . . | B . . . |
+Chords: | C#m . . . | A . . . | E . . . | B . . . |

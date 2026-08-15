@@ -1,0 +1,18 @@
+**TRACK: Baazigar O Baazigar**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Bm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+
+[V2] (Verse 2 - 8 Bars)
+Chords: | Bm . . . | G . . . | D . . . | A . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | D . . . | A . . . | Bm . . . | G . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | G . . . | A . . . | Bm . . . | F# . . . |

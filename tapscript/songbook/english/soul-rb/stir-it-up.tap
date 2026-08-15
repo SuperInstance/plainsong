@@ -1,0 +1,21 @@
+**TRACK: Stir It Up**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Cm | tempo: 96 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Eb . . . | Bb . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Bb . . . | Eb . . . | Ab . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | Cm . . . | Ab . . . | Fm . . . | G . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Fm . . . | Bb . . . | Eb . . . | Ab . . . |

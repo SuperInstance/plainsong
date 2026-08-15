@@ -1,0 +1,21 @@
+**TRACK: Kanashimi ni Sayonara**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Melancholic Drive
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | G . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | E . . . | Am . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | Dm . . . | Am . . . | Dm . . . | E . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | F . . . | G . . . | C . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | G . . . | E . . . | Am . . . |

@@ -1,0 +1,21 @@
+**TRACK: Funiculì, finiculà**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]  
+key: C | tempo: 120 | subdivision: 8th  
+time: 6/8 | mood: Joyful
+
+[V1] (Verse - 8 Bars)  
+Chords: | C . . | G7 . . | C . . | C . . | F . . | C . . | G7 . . | C . . |  
+
+[V2] (Verse - 8 Bars)  
+Chords: | C . . | G7 . . | C . . | C . . | F . . | C . . | G7 . . | C . . |  
+
+[CH] (Chorus - 8 Bars)  
+Chords: | C . . | C . . | G7 . . | G7 . . | C . . | C . . | G7 . . | C . . |  
+
+[BR] (Bridge - 4 Bars)  
+Chords: | F . . | C . . | G7 . . | C . . |  
+
+[OUT] (Outro - 4 Bars)  
+Chords: | C . . | G7 . . | C . . | C . . |  

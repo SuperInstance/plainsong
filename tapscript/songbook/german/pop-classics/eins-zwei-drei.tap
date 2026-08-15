@@ -1,0 +1,18 @@
+**TRACK: Eins, zwei, drei**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 130 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | E . . . | A . . . | E . . . | B . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | A . . . | E . . . | B . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C#m . . . | A . . . | B . . . | B . . . |

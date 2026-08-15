@@ -1,0 +1,21 @@
+**TRACK: Cálice**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 78 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | E . . . | E . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | Am . . . | F . . . | F . . . | Am . . . | Am . . . | E . . . | E . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Dm . . . | Dm . . . | E . . . | E . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | F . . . | F . . . | G . . . | G . . . | C . . . | C . . . | E . . . | E . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Am . . . | F . . . | E . . . | Am . . . |

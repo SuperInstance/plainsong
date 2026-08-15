@@ -1,0 +1,21 @@
+**TRACK: Night Time Is the Right Time**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 132 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | Eb . . . | Bb7 . . . | Bb7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | C7 . . . | F7 . . . | Bb7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Ab . . . | Ab . . . | Bb7 . . . | Bb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Eb . . . | Ab . . . | Ab . . . | Eb . . . | Ab . . . | Bb7 . . . | Eb . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Eb . . . | Ab . . . | Eb . . . | Bb7 Eb . . . |

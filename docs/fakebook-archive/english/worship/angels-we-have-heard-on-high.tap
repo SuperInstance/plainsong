@@ -1,22 +1,15 @@
 **TRACK: Angels We Have Heard on High**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Joyful
 
 [V1] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . |
-Lyrics: | An-gels we have heard on high | sweet-ly sing-ing o'er the plains | and the moun-tains in re-ply | ech-o-ing their joy-ous strains |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50
 
 [CH] (Chorus - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | C5 . A4 . | F4 . A4 . | G4 . E4 . |
-Lyrics: | Glo-ri-a in ex-cel-sis De-o | glo-ri-a in ex-cel-sis De-o | glo-ri-a in ex-cel-sis De-o | glo-ri-a in ex-cel-sis De-o |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 55
 
 [V2] (Verse - 4 Bars)
 Chords: | F . . . | C . . . | F . . . | C . . . |
-Melody: | F4 . A4 . | G4 . E4 . | F4 . A4 . | G4 . E4 . |
-Lyrics: | Shep-herds why this ju-bi-lee | why your joy-ous strains pro-long | what the glad-some tid-ings be | which in-spire your heav'n-ly song |
-@piano | f2-a2-c3 . . . | c2-e2-g2 . . . | f2-a2-c3 . . . | c2-e2-g2 . . . | vel: 50

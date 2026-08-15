@@ -1,0 +1,21 @@
+**TRACK: Turbo Lover**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E minor | tempo: 122 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | D . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | D . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | G . . . | D . . . | Em . . . | C . . . |
+
+[B] (Bridge - 4 Bars)
+Chords: | Am . . . | C . . . | G . . . | D . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | Em . . . | Em . . . |

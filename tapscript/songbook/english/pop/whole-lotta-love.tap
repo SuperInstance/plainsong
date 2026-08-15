@@ -1,0 +1,21 @@
+**TRACK: Whole Lotta Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: E | tempo: 84 | subdivision: 8th
+time: 4/4 | mood: Heavy, Driving
+
+[V1] (Verse - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | A . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | D . . . | D . . . | A . . . | A . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | E . . . | E . . . | A . . . | B . . . |

@@ -1,28 +1,22 @@
 **TRACK: There Is No Greater Love**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Ab | tempo: 140 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | vel: 55
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | vel: 55
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Db7 . . . | Db7 . . . | C7 . . . | C7 . . . |
-@guitar | db2-f2-ab2 . . . | db2-f2-ab2 . . . | c2-e2-g2 . . . | c2-e2-g2 . . . | vel: 60
 Chords: | Fm7 . . . | Bb7 . . . | Eb7 . . . | Eb7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | eb2-g2-bb2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . . . | bb1-d2-f2 . . . | eb2-g2-bb2 . . . | vel: 55
 Chords: | Ab6 . . . | Fm7 . . . | Bb7 . . . | Eb7 . . . |
-@guitar | ab2-c3-eb3 . . . | f2-ab2-c3 . .

@@ -1,20 +1,18 @@
 **TRACK: St. Louis Blues**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 70 | subdivision: 8th
 time: 4/4 | mood: Bluesy
 
 [V1] (Verse - 12 Bars)
 Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
 
 [V2] (Verse - 12 Bars)
 Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . | C . . . | C . . . |
-@guitar | f2-a2-c3 . . . | f2-a2-c3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | g2-b2-d3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . . | vel: 60
 
 [V3] (Final Verse - 12 Bars)
 Chords: | C . . . | C . . . | C . . . | C . . . | F . . . | F . . . | C . . . | C . . . | G . . . | G . . . | C . . . | C . . . |
-@guitar | c3-e3-g3 . . . | c3-e3-g3 . . . | c3-e3-g3 . . .

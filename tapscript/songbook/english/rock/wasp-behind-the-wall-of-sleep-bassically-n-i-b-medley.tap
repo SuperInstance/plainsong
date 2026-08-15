@@ -1,0 +1,24 @@
+**TRACK: Wasp/Behind the Wall of Sleep/Bassically/N.I.B. (Medley)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Em | tempo: 138 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[INTRO] (Intro - 8 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |
+
+[V1] (Verse - 8 Bars)
+Chords: | Em . . . | Em . . . | D . . . | C . . . |
+Chords: | B7 . . . | B7 . . . | Em . . . | Em . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Em . . . | G . . . | D . . . | C . . . |
+Chords: | B7 . . . | B7 . . . | Em . . . | Em . . . |
+
+[BR] (Bridge - 8 Bars)
+Chords: | C . . . | D . . . | Em . . . | Em . . . |
+Chords: | C . . . | B7 . . . | Em . . . | Em . . . |
+
+[OUT] (Outro - 4 Bars)
+Chords: | Em . . . | D . . . | C . . . | B7 . . . |

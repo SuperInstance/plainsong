@@ -1,0 +1,21 @@
+**TRACK: Tu vuò fà l'americano**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Am | tempo: 120 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | Am . . . | E7 . . . | Am . . . | E7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | Am . . . | E7 . . . | Am . . . | E7 . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Dm . . . | G7 . . . | C . . . | F . . . | Dm . . . | E7 . . . | Am . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | A7 . . . | Dm . . . | E7 . . . | E7 . . . |
+
+[V3] (Verse - 8 Bars)
+Chords: | Am . . . | E7 . . . | Am . . . | Dm . . . | Am . . . | E7 . . . | Am . . . | E7 . . . |

@@ -1,24 +1,21 @@
 **TRACK: My Heart Stood Still**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F | tempo: 100 | subdivision: 8th
 time: 4/4 | mood: Swinging
 
 [V1] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2-bb2 . . . | vel: 55
 
 [V2] (Verse - 8 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2-bb2 . . . | vel: 55
 
 [CH] (Chorus - 8 Bars)
 Chords: | Bb . . . | F . . . | Gm . . . | C7 . . . |
-@guitar | bb2-d3-f3 . . . | f2-a2-c3 . . . | g2-bb2-d3 . . . | c2-e2-g2-bb2 . . . | vel: 60
 
 [B] (Bridge - 4 Bars)
 Chords: | Dm . . . | A7 . . . | Dm . . . | G7 . . . |
-@guitar | d2-f2-a2 . . . | a2-c#3-e3 . . . | d2-f2-a2 . . . | g2-b2-d3 . . . | vel: 58
 
 [OUT] (Outro - 4 Bars)
 Chords: | F . . . | Dm . . . | Gm . . . | C7 . . . |
-@guitar | f2-a2-c3 . . . | d2-f2-a2 . . . | g2-bb2-d3 . . . | c2-e2-g2-bb2 . . . | vel: 50

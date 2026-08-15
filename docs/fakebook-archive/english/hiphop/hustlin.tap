@@ -1,24 +1,21 @@
 **TRACK: Hustlin'**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Menacing
 
 [V1] (Verse - 4 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 62
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 70
 
 [V2] (Verse - 4 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 62
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | F#m . . . | G . . . | E . . . |
-@guitar | b2-f#3-b3 . . . | f#2-c#3-f#3 . . . | g2-d3-g3 . . . | e2-b2-e3 . . . | vel: 58
 
 [CH] (Chorus - 4 Bars)
 Chords: | F#m . . . | D . . . | F#m . . . | E . . . |
-@guitar | f#2-c#3-f#3 . . . | d2-a2-d3 . . . | f#2-c#3-f#3 . . . | e2-b2-e3 . . . | vel: 70

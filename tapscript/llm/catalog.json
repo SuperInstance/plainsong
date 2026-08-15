@@ -1,0 +1,219 @@
+{
+  "$comment": "Provider catalogue. Adding a provider that speaks an existing API shape is a data change, not a code change. Drop extra entries in <config-dir>/providers.json to extend this list without editing the package.",
+  "providers": {
+    "anthropic": {
+      "label": "Anthropic",
+      "api": "anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "env": ["ANTHROPIC_API_KEY"],
+      "default_model": "claude-sonnet-4-5",
+      "models": ["claude-opus-4-5", "claude-sonnet-4-5", "claude-haiku-4-5"],
+      "docs": "https://console.anthropic.com/settings/keys",
+      "tools": true,
+      "streaming": true
+    },
+    "openai": {
+      "label": "OpenAI",
+      "api": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "env": ["OPENAI_API_KEY"],
+      "default_model": "gpt-4o",
+      "models": ["gpt-4o", "gpt-4o-mini", "o3-mini"],
+      "docs": "https://platform.openai.com/api-keys",
+      "tools": true,
+      "streaming": true
+    },
+    "deepseek": {
+      "label": "DeepSeek",
+      "api": "openai",
+      "base_url": "https://api.deepseek.com/v1",
+      "env": ["DEEPSEEK_API_KEY"],
+      "default_model": "deepseek-chat",
+      "models": ["deepseek-chat", "deepseek-reasoner"],
+      "docs": "https://platform.deepseek.com/api_keys",
+      "tools": true,
+      "streaming": true
+    },
+    "openrouter": {
+      "label": "OpenRouter",
+      "api": "openai",
+      "base_url": "https://openrouter.ai/api/v1",
+      "env": ["OPENROUTER_API_KEY"],
+      "default_model": "anthropic/claude-sonnet-4.5",
+      "models": [
+        "anthropic/claude-sonnet-4.5",
+        "openai/gpt-4o",
+        "google/gemini-2.5-pro",
+        "deepseek/deepseek-chat",
+        "meta-llama/llama-3.3-70b-instruct"
+      ],
+      "docs": "https://openrouter.ai/keys",
+      "tools": true,
+      "streaming": true,
+      "headers": {
+        "HTTP-Referer": "https://github.com/SuperInstance/tapscript-studio",
+        "X-Title": "TapScript"
+      }
+    },
+    "xai": {
+      "label": "xAI (Grok)",
+      "api": "openai",
+      "base_url": "https://api.x.ai/v1",
+      "env": ["XAI_API_KEY", "GROK_API_KEY"],
+      "default_model": "grok-4",
+      "models": ["grok-4", "grok-3", "grok-3-mini"],
+      "docs": "https://console.x.ai",
+      "tools": true,
+      "streaming": true
+    },
+    "gemini": {
+      "label": "Google Gemini",
+      "api": "gemini",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta",
+      "env": ["GEMINI_API_KEY", "GOOGLE_API_KEY"],
+      "default_model": "gemini-2.5-flash",
+      "models": ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash"],
+      "docs": "https://aistudio.google.com/apikey",
+      "tools": true,
+      "streaming": false
+    },
+    "groq": {
+      "label": "Groq",
+      "api": "openai",
+      "base_url": "https://api.groq.com/openai/v1",
+      "env": ["GROQ_API_KEY"],
+      "default_model": "llama-3.3-70b-versatile",
+      "models": ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"],
+      "docs": "https://console.groq.com/keys",
+      "tools": true,
+      "streaming": true
+    },
+    "mistral": {
+      "label": "Mistral",
+      "api": "openai",
+      "base_url": "https://api.mistral.ai/v1",
+      "env": ["MISTRAL_API_KEY"],
+      "default_model": "mistral-large-latest",
+      "models": ["mistral-large-latest", "mistral-small-latest", "codestral-latest"],
+      "docs": "https://console.mistral.ai/api-keys",
+      "tools": true,
+      "streaming": true
+    },
+    "together": {
+      "label": "Together AI",
+      "api": "openai",
+      "base_url": "https://api.together.xyz/v1",
+      "env": ["TOGETHER_API_KEY"],
+      "default_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "models": [
+        "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "Qwen/Qwen2.5-72B-Instruct-Turbo",
+        "deepseek-ai/DeepSeek-V3"
+      ],
+      "docs": "https://api.together.xyz/settings/api-keys",
+      "tools": true,
+      "streaming": true
+    },
+    "fireworks": {
+      "label": "Fireworks AI",
+      "api": "openai",
+      "base_url": "https://api.fireworks.ai/inference/v1",
+      "env": ["FIREWORKS_API_KEY"],
+      "default_model": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+      "models": ["accounts/fireworks/models/llama-v3p3-70b-instruct"],
+      "docs": "https://fireworks.ai/account/api-keys",
+      "tools": true,
+      "streaming": true
+    },
+    "cerebras": {
+      "label": "Cerebras",
+      "api": "openai",
+      "base_url": "https://api.cerebras.ai/v1",
+      "env": ["CEREBRAS_API_KEY"],
+      "default_model": "llama-3.3-70b",
+      "models": ["llama-3.3-70b", "llama3.1-8b"],
+      "docs": "https://cloud.cerebras.ai",
+      "tools": true,
+      "streaming": true
+    },
+    "ollama": {
+      "label": "Ollama (local)",
+      "api": "openai",
+      "base_url": "http://localhost:11434/v1",
+      "env": [],
+      "api_key_optional": true,
+      "default_model": "llama3.2",
+      "models": ["llama3.2", "qwen2.5", "mistral", "phi4"],
+      "docs": "https://ollama.com/download",
+      "tools": true,
+      "streaming": true,
+      "local": true
+    },
+    "lmstudio": {
+      "label": "LM Studio (local)",
+      "api": "openai",
+      "base_url": "http://localhost:1234/v1",
+      "env": [],
+      "api_key_optional": true,
+      "default_model": "local-model",
+      "models": ["local-model"],
+      "docs": "https://lmstudio.ai",
+      "tools": true,
+      "streaming": true,
+      "local": true
+    },
+    "vllm": {
+      "label": "vLLM / llama.cpp / any OpenAI-compatible server",
+      "api": "openai",
+      "base_url": "http://localhost:8000/v1",
+      "env": ["VLLM_API_KEY"],
+      "api_key_optional": true,
+      "default_model": "local-model",
+      "models": [],
+      "docs": "https://docs.vllm.ai",
+      "tools": true,
+      "streaming": true,
+      "local": true
+    },
+    "azure": {
+      "label": "Azure OpenAI",
+      "api": "openai",
+      "base_url": "",
+      "env": ["AZURE_OPENAI_API_KEY"],
+      "default_model": "gpt-4o",
+      "models": [],
+      "docs": "https://learn.microsoft.com/azure/ai-services/openai",
+      "tools": true,
+      "streaming": true,
+      "needs_base_url": true,
+      "auth_header": "api-key",
+      "query_params": {"api-version": "2024-10-21"}
+    },
+    "host": {
+      "label": "Host agent (no API key)",
+      "api": "host",
+      "base_url": "",
+      "env": [],
+      "api_key_optional": true,
+      "default_model": "host",
+      "models": ["host"],
+      "docs": "docs/host-bridge.md",
+      "tools": true,
+      "streaming": false,
+      "local": true
+    },
+    "echo": {
+      "label": "Offline stub",
+      "api": "echo",
+      "base_url": "",
+      "env": [],
+      "api_key_optional": true,
+      "default_model": "echo",
+      "models": ["echo"],
+      "docs": "",
+      "tools": true,
+      "streaming": false,
+      "local": true
+    }
+  }
+}

@@ -1,26 +1,21 @@
 **TRACK: Nardis**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Em | tempo: 90 | subdivision: 8th
 time: 4/4 | mood: Driving
 
 [V1] (Verse - 8 Bars)
 Chords: | Em . . . | Am7 . . . | D7 . . . | Gmaj7 . . . |
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 55
 Chords: | Cmaj7 . . . | F#m7b5 . . . | B7alt . . . | Em . . . |
-@guitar | c3-e3-g3 . . . | f#2-a2-c3 . . . | b1-d#3-f#3 . . . | e2-b2-e3 . . . | vel: 55
 
 [V2] (Verse Variation - 8 Bars)
 Chords: | Em . . . | Am7 . . . | D7 . . . | Gmaj7 . . . |
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | vel: 58
 Chords: | Cmaj7 . . . | F#m7b5 . . . | B7alt . . . | Esus . . . |
-@guitar | c3-e3-g3 . . . | f#2-a2-c3 . . . | b1-d#3-f#3 . . . | e2-a2-b2 . . . | vel: 58
 
 [BR] (Bridge - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3 . . . | d2-f#3-a3 . . . | g2-b2-d3 . . . | c3-e3-g3 . . . | vel: 60
 Chords: | F#m7b5 . . . | B7alt . . . | Em . . . | B7sus . . . |
-@guitar | f#2-a2-c3 . . . | b1-d#3-f#3 . . . | e2-b2-e3 . . . | b1-a2-b2 . . . | vel: 60
 
 [OUT] (Outro - 4 Bars)
 Chords: | Em . . . | Am7 . . . | D7 . . . | Em . . . |
-@guitar | e2-b2-e3 . . . | a2-c3-e3 . . . | d2-f#3-a3 . . . | e2-b2-e3 . . . | vel: 50

@@ -1,28 +1,18 @@
 **TRACK: If I Should Lose You**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: Fm | tempo: 92 | subdivision: 8th
 time: 4/4 | mood: Melancholic Swing
 
 [V1] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | G7alt . . . | C7sus . . . | C7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb1-g2-bb2 . . . | ab1-c2-eb2 . . . |
-| db1-f2-ab2 . . . | g1-b2-d3 . . . | c2-f2-bb2 . . . | c2-e2-bb2 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | G7alt . . . | C7sus . . . | C7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb1-g2-bb2 . . . | ab1-c2-eb2 . . . |
-| db1-f2-ab2 . . . | g1-b2-d3 . . . | c2-f2-bb2 . . . | c2-e2-bb2 . . . | vel: 52
 
 [BR] (Bridge - 8 Bars)
 Chords: | Dbmaj7 . . . | Dm7b5 . . . | G7b9 . . . | Cm7 . . . |
-| F7 . . . | Bbm7 . . . | Eb7 . . . | C7alt . . . |
-@guitar | db1-f2-ab2 . . . | d1-f2-ab2 . . . | g1-b2-d3-f3 . . . | c2-eb2-g2 . . . |
-| f1-a2-c3 . . . | bb1-db2-f2 . . . | eb1-g2-bb2 . . . | c2-e2-bb2-db3 . . . | vel: 55
 
 [V3] (Final Verse - 8 Bars)
 Chords: | Fm7 . . . | Bbm7 . . . | Eb7 . . . | Abmaj7 . . . |
-| Dbmaj7 . . . | G7alt . . . | C7sus . . . | Fm7 . . . |
-@guitar | f2-ab2-c3 . . . | bb1-db2-f2 . . . | eb1-g2-bb2 . . . | ab1-c2-eb2 . . . |
-| db1-f2-ab2 . . . | g1-b2-d3 . . . | c2-f2-bb2 .

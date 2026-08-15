@@ -1,26 +1,21 @@
 **TRACK: Prelude to a Kiss**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: C | tempo: 72 | subdivision: 8th
 time: 4/4 | mood: Ballad
 
 [V1] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | vel: 50
 Chords: | Fmaj7 . . . | Bm7b5 . . . | E7 . . . | Am7 . . . |
-@guitar | f1-a2-c3-e3 . . . | b1-d2-f2-a2 . . . | e1-g#2-b2-d3 . . . | a2-c3-e3-g3 . . . | vel: 50
 
 [V2] (Verse - 8 Bars)
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | A7 . . . |
-@guitar | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | a1-c#2-e2-g2 . . . | vel: 55
 Chords: | Dm7 . . . | G7 . . . | Cmaj7 . . . | E7 . . . |
-@guitar | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g2-b2 . . . | e1-g#2-b2-d3 . . . | vel: 55
 
 [BR] (Bridge - 8 Bars)
 Chords: | Am7 . . . | D7 . . . | Gmaj7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d1-f#2-a2-c3 . . . | g1-b2-d3-f#3 . . . | c2-e2-g2-b2 . . . | vel: 60
 Chords: | F#m7b5 . . . | B7 . . . | Em7 . . . | A7 . . . |
-@guitar | f#1-a2-c3-e3 . . . | b1-d#2-f#2-a2 . . . | e2-g2-b2-d3 . . . | a1-c#2-e2-g2 . . . | vel: 60
 
 [V3] (Verse - 8 Bars)
 Chords: | Am7 . . . | Dm7 . . . | G7 . . . | Cmaj7 . . . |
-@guitar | a2-c3-e3-g3 . . . | d2-f2-a2-c3 . . . | g1-b2-d3-f3 . . . | c2-e2-g

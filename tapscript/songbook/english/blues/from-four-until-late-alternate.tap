@@ -1,0 +1,18 @@
+**TRACK: From Four Until Late (alternate)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: A | tempo: 90 | subdivision: 8th
+time: 4/4 | mood: Driving
+
+[V1] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |
+
+[V2] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | D7 . . . | A . . . | E7 . . . | A . . . |
+
+[V3] (Verse - 12 Bars)
+Chords: | A . . . | A7 . . . | D7 . . . | A . . . | A . . . | A7 . . . | D7 . . . | A . . . | E7 . . . | D7 . . . | A . . . | E7 . . . |

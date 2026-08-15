@@ -1,0 +1,12 @@
+**TRACK: The Spring Festival Overture (theme)**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Dm | tempo: 120 | subdivision: 8th
+time: 2/4 | mood: Festive
+
+[V1] (Verse - 4 Bars)
+Chords: | Dm . | A . | Dm . | A . |
+
+[CH] (Chorus - 4 Bars)
+Chords: | Dm . | Gm . | Dm . | A . |

@@ -1,0 +1,21 @@
+**TRACK: Blackbird**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: G | tempo: 92 | subdivision: 8th
+time: 4/4 | mood: Lyrical
+
+[V1] (Verse - 4 Bars)
+Chords: | G . . . | A . . . | G . . . | A . . . |
+
+[V2] (Verse - 4 Bars)
+Chords: | G . . . | A . . . | G . . . | A . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | C . . . | G . . . | A . . . | D . . . |
+
+[V3] (Verse - 4 Bars)
+Chords: | G . . . | A . . . | G . . . | A . . . |
+
+[OUT] (Outro - 2 Bars)
+Chords: | G . . . | G . . . |

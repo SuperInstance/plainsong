@@ -1,20 +1,18 @@
 **TRACK: God's Plan**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
 [MetaData]
 key: F#m | tempo: 77 | subdivision: 8th
 time: 4/4 | mood: Reflective
 
 [V1] (Verse - 8 Bars)
 Chords: | F#m . . . | D . . . | A . . . | E . . . |
-@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 50
 
 [CH] (Chorus - 8 Bars)
 Chords: | F#m . . . | D . . . | A . . . | E . . . |
-@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 65
 
 [BR] (Bridge - 4 Bars)
 Chords: | Bm . . . | F#m . . . | G . . . | D . . . |
-@guitar | b1-d2-f#2 . . . | f#2-a2-c#3 . . . | g2-b2-d3 . . . | d2-f#2-a2 . . . | vel: 55
 
 [OUT] (Outro - 4 Bars)
 Chords: | F#m . . . | D . . . | A . . . | E . . . |
-@guitar | f#2-a2-c#3 . . . | d2-f#2-a2 . . . | a2-c#3-e3 . . . | e2-g#2-b2 . . . | vel: 45

@@ -1,0 +1,21 @@
+**TRACK: On the Street Where You Live**
+// Chord chart only. The melody and the words are the protected expression
+// of a song; a chord progression is not. See docs/fakebook/README.md.
+[MetaData]
+key: Eb | tempo: 100 | subdivision: 8th
+time: 4/4 | mood: Lifting
+
+[V1] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb7 . . . | Eb . . . | Ab . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb7 . . . | Eb . . . | C7 . . . |
+
+[BR] (Bridge - 4 Bars)
+Chords: | Abm . . . | Db7 . . . | Gb . . . | Bb7 . . . |
+
+[V2] (Verse - 8 Bars)
+Chords: | Eb . . . | Bb7 . . . | Eb . . . | Ab . . . |
+
+[CH] (Chorus - 8 Bars)
+Chords: | Ab . . . | Bb7 . . . | Eb . . . | C7 . . . |
