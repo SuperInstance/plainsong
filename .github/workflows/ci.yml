@@ -72,3 +72,20 @@ jobs:
           python-version: "3.12"
       - name: Check every .tap file in the repository
         run: python -m tapscript check docs examples tapscript/songbook README.md
+
+      # `check` proves the corpus still compiles. It says nothing about whether
+      # it compiles to the same notes, and the difference is not academic: with
+      # every major seventh in the package flattened by a semitone, `check`
+      # reports "ok 6333 file(s) checked" and the library.compat spec passes.
+      # This step catches it -- 235 files, all with identical note counts, so
+      # only the hash moves.
+      #
+      # When a change here is intended, re-record with
+      #   python -m tapscript fingerprint docs examples tapscript/songbook \
+      #     --write tests/corpus-fingerprint.txt
+      # and the diff on that file is the review: it names every piece that
+      # changed and by how many notes.
+      - name: The corpus compiles to the same music it did before
+        run: >
+          python -m tapscript fingerprint docs examples tapscript/songbook
+          --check tests/corpus-fingerprint.txt

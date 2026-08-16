@@ -487,6 +487,64 @@ def cmd_chord(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 2 if failed else 0
 
 
+def cmd_fingerprint(args: argparse.Namespace, config: Config, out: Out) -> int:
+    """Print a stable hash of what each file compiles to.
+
+    Answers the one question a compiler otherwise cannot answer for you: did
+    upgrading change my music? Fingerprint before, fingerprint after, diff.
+    """
+    from ..fingerprint import fingerprint_paths, format_report
+
+    entries = fingerprint_paths(args.paths)
+    if not entries:
+        out.fail("no .tap files found")
+        return 2
+
+    if args.check:
+        baseline = Path(args.check)
+        if not baseline.is_file():
+            out.fail(f"no baseline at {baseline}")
+            return 2
+        expected = baseline.read_text(encoding="utf-8").splitlines()
+        actual = format_report(entries).splitlines()
+        # Length first. Pairing the lines of two differently sized lists
+        # silently truncates the longer one, so computing the diff before this
+        # check would report a confident and wrong set of moved files.
+        if len(expected) != len(actual):
+            out.fail(
+                f"the corpus changed size: {len(expected) - 1} files recorded, {len(entries)} found"
+            )
+            out.dim("re-record with --write if files were added or removed on purpose")
+            return 1
+        moved = [
+            (was, now)
+            for was, now in zip(expected, actual, strict=True)
+            if was != now and not was.startswith("#")
+        ]
+        if moved:
+            out.fail(f"{len(moved)} file(s) compile differently than recorded")
+            for was, now in moved[:20]:
+                out.dim(f"    was  {was.strip()}")
+                out.dim(f"    now  {now.strip()}")
+            if len(moved) > 20:
+                out.dim(f"    ... and {len(moved) - 20} more")
+            out.dim("if the change is intended, re-record with --write")
+            out.data({"changed": len(moved), "files": len(entries)})
+            return 1
+        out.ok(f"{len(entries)} file(s) compile exactly as recorded")
+        out.data({"changed": 0, "files": len(entries)})
+        return 0
+
+    report = format_report(entries)
+    if args.write:
+        Path(args.write).write_text(report, encoding="utf-8")
+        out.ok(f"wrote {args.write}")
+    elif not out.json_mode:
+        print(report, end="")
+    out.data({"files": len(entries), "notes": sum(e.notes for e in entries)})
+    return 0
+
+
 def cmd_new(args: argparse.Namespace, config: Config, out: Out) -> int:
     title = args.title or "New Piece"
     target = Path(args.output) if args.output else Path(f"{title.lower().replace(' ', '-')}.tap")
@@ -972,6 +1030,16 @@ def build_parser() -> argparse.ArgumentParser:
     chord_parser.add_argument("--octave", type=int, default=3, help="octave for MIDI numbers")
     chord_parser.add_argument("--flats", action="store_true", help="spell with flats")
     chord_parser.set_defaults(func=cmd_chord)
+
+    fingerprint_parser = subparsers.add_parser(
+        "fingerprint", help="hash what notation compiles to, so a change in the sound is visible"
+    )
+    fingerprint_parser.add_argument("paths", nargs="+", help="files or directories")
+    fingerprint_parser.add_argument(
+        "--check", metavar="FILE", help="compare against a recorded fingerprint and fail on a difference"
+    )
+    fingerprint_parser.add_argument("--write", metavar="FILE", help="record the fingerprint to a file")
+    fingerprint_parser.set_defaults(func=cmd_fingerprint)
 
     new_parser = subparsers.add_parser("new", help="start a new piece from a template")
     new_parser.add_argument("title", nargs="?", help="what to call it")

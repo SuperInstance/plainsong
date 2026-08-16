@@ -4,6 +4,33 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### The corpus is held to compiling to the same music, not merely to compiling
+
+- **`tapscript fingerprint`** hashes what notation compiles to — pitch,
+  position, length, velocity and voice — so a change in the *sound* of existing
+  files is visible. `--check` compares against a recorded baseline and names
+  every file that moved; `--write` re-records one.
+- **CI now runs it over all 6,321 files.** The gap it closes is not
+  hypothetical: with every major seventh in the package flattened by a
+  semitone, `tapscript check` reports `ok 6333 file(s) checked` and the
+  `library.compat` spec passes, because both only ask whether notation still
+  compiles. The fingerprint catches it — 235 files, all with identical note
+  counts, so only the hash moves.
+- It is a user-facing command rather than a test helper because anyone with a
+  folder of `.tap` files has the same problem and no access to our suite:
+  fingerprint before an upgrade, fingerprint after, diff.
+
+### Known, recorded rather than fixed
+
+- **The renderer discards extensions.** `arrange.Options.max_chord_notes` is 4
+  and the notes are taken from the bottom, so a five-note chord keeps
+  root-third-fifth-seventh and drops what was above it. `D9` sounds like `D7`,
+  and `E7#9` sounds like `E7` — 459 occurrences across the corpus, concentrated
+  in exactly the chords where the dropped note is the point. A player thinning a
+  voicing drops the fifth first and then the root; taking the bottom four does
+  the opposite. Not fixed here because it changes how existing files sound,
+  which wants its own reviewed diff — which `fingerprint` now makes readable.
+
 ### Chord symbols are read by a grammar
 
 - **Compound spellings work without being enumerated.** The chord parser held a

@@ -191,10 +191,40 @@ silence started sounding.
 
 ## Still open
 
-`tapscript chord` reports which degrees sound. It does not choose a voicing --
-register, spacing and which note to drop when there are too many are a separate
-decision, because they depend on the instrument and the texture rather than on
-the symbol. Chords currently sound as a plain stack from the root, which is
+### The renderer throws away the notes this parser works out
+
+`tapscript chord` tells you what a symbol means. The renderer then discards
+part of it. `arrange.Options.max_chord_notes` is 4, and the notes are taken
+**from the bottom**, so a five-note chord keeps root-third-fifth-seventh and
+drops whatever was above it — which is precisely the note the symbol was
+written to specify:
+
+```bash
+tapscript chord "G7b9"     # G B D F A♭  -- what it means
+                           # G B D F     -- what you hear
+```
+
+`D9` sounds like `D7`. `E7#9`, the Hendrix chord, sounds like `E7`. `G7alt`
+comes out as four notes that are not a chord anybody would name. Across the
+corpus this affects 459 occurrences, 0.3%, concentrated entirely in the chords
+where it matters most.
+
+The cap itself is defensible — four voices is a reasonable default texture. The
+selection is not. A player thinning a voicing drops the fifth first and then the
+root, because the third and seventh are what carry the identity and the
+extensions are what carry the colour. Taking the bottom four does the opposite
+of that, exactly.
+
+This is not fixed here because fixing it changes how existing files sound, which
+is a different kind of change from teaching the parser new spellings, and wants
+its own reviewed diff. `tapscript fingerprint` exists so that diff can be read
+rather than guessed at.
+
+### Voicing generally
+
+Register, spacing and octave placement are a separate decision from which
+degrees sound, because they depend on the instrument and the texture rather than
+on the symbol. Chords currently sound as a plain stack from the root, which is
 honest but is not what a player would do.
 
 Three places where authorities genuinely disagree, left as they are rather than

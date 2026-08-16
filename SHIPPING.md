@@ -205,12 +205,16 @@ passes on Windows across 3.10 through 3.13.
 - The MCP server has never had a real MCP client connect to it. The protocol is
   verified by hand-driven JSON-RPC, which is strong evidence but not the same
   thing as Claude Desktop or an SDK client connecting.
-- **The chord parser drops `EbMaj7`, `G7alt` and `CM7`.** All three are
-  legitimate spellings. They became silent rests, which is why nobody found
-  them: it took making an unreadable token warn to surface the gap at all.
-  Deliberately not fixed here — accepting them changes how existing notation
-  compiles, so it needs its own spec, its own changelog entry, and a decision
-  about whether it goes behind a setting.
+- **The renderer discards chord extensions.** `arrange.Options.max_chord_notes`
+  is 4 and the notes are taken from the bottom, so a five-note chord keeps
+  root-third-fifth-seventh and drops what sat above. `D9` sounds like `D7`;
+  `E7#9` sounds like `E7`; `G7alt` renders as four notes that are not a chord
+  anybody would name. 459 occurrences, 0.3% of the corpus, concentrated
+  entirely in the chords where the dropped note is the whole point. The cap is
+  defensible; taking the bottom four is not — a player drops the fifth first,
+  then the root, because the third and seventh carry the identity. Left alone
+  because fixing it changes how existing files sound, and that wants its own
+  reviewed diff rather than a ride along with a parser change.
 - **`tapscript/mcp/` also exists in `SuperInstance/tapscript-mcp`.** The one
   open violation of "one of everything", and it is temporary: the extraction
   happened while this branch was in review. Until the copy here is removed, a
