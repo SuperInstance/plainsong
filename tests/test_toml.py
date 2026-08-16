@@ -62,7 +62,7 @@ class TestMatchesTomllib(unittest.TestCase):
         return sorted(
             path
             for path in REPO.rglob("*.toml")
-            if "legacy" not in path.parts and ".venv" not in path.parts
+            if ".venv" not in path.parts
         )
 
     def test_every_toml_file_in_the_repository(self):

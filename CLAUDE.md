@@ -8,8 +8,7 @@ TapScript is a plain-text music notation that compiles to MIDI and audio. The
 product is the `tapscript/` package: one compiler, three interfaces (CLI, TUI,
 web), a provider-agnostic model layer, an embedded agent, and a timing solver
 that treats a written beat as the moment a sound *arrives* rather than the
-moment a player acts. `legacy/` holds the two superseded engines and is not
-maintained.
+moment a player acts. The two superseded engines have been deleted.
 
 Where it came from, because it explains most of the rules below. The first
 version was built by an agent around the tools that agent happened to have: it
@@ -259,8 +258,6 @@ famous for came from those rows and are now 2.
 - The built-in synthesiser is a preview renderer; timbres are approximations.
   Audio is mono.
 - The host bridge cannot stream and reports no token usage.
-- `legacy/` needs `numpy scipy pretty_midi flask` and is excluded from CI and
-  from ruff. It can be deleted.
 - **`tapscript/mcp/` also exists in `SuperInstance/tapscript-mcp`.** This is the
   one open violation of "one of everything" and it is deliberate but temporary:
   the extraction happened while this branch was in review. The intended end

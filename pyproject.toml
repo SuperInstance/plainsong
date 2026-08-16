@@ -62,7 +62,6 @@ addopts = "-q"
 [tool.ruff]
 line-length = 108
 target-version = "py310"
-exclude = ["legacy"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "C4"]

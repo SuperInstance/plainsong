@@ -198,7 +198,6 @@ passes on Windows across 3.10 through 3.13.
 - The host bridge cannot stream and reports no token usage.
 - The bundled songbook is generated material. It
   parses; it is not all well written.
-- `legacy/` is dead weight kept for reference and can be deleted.
 - The TUI needs `curses`, which stock Python on Windows does not ship. It
   reports this and points at `windows-curses` or the web interface. Found by
   the new TUI tests running on Windows CI for the first time.
@@ -225,7 +224,11 @@ passes on Windows across 3.10 through 3.13.
 
 - `master` has been red on its own older workflow since before this branch, for
   reasons unrelated to it.
-- The three Rust-to-Python ports that arrived on master mid-session
-  (`counterpoint_analyzer`, `genome`, `tradition_dna`) were placed in
-  `legacy/src/` beside their siblings. Whether any deserves promotion into the
-  package is an open question this branch deliberately did not decide.
+- **Three Rust-to-Python ports were deleted with `legacy/`, undecided.**
+  `counterpoint_analyzer`, `genome` and `tradition_dna` arrived on master
+  mid-session and were parked in `legacy/src/` beside their siblings. Whether
+  any deserved promotion into the package was an open question this branch
+  chose not to answer -- and deleting the directory did not answer it either,
+  it only removed the artefacts. They are recoverable from git history, and
+  anybody who wants that question reopened should start there rather than
+  assume the deletion was a judgement about their worth.

@@ -948,7 +948,6 @@ tapscript-studio/
 │       ├── neon_shadows.tap
 │       └── deck_work.tap
 ├── scripts/
-│   └── tapscript_v2.py               ← legacy (kept for backward compat during migration)
 └── live/
     └── relay/                        ← TypeScript live backend
         ├── package.json
@@ -1012,9 +1011,8 @@ tapscript-studio/
 
 **Phase 5: Cutover (Week 6)**
 - v3 takes over port 5557.
-- v2 moves to `scripts/tapscript_v2_legacy.py`.
+- v2 is archived.
 - All examples, tests, and documentation updated.
-- v2 is archived but not deleted.
 
 ### 6.5 SWMIDI-8 Codec API (Python)
 

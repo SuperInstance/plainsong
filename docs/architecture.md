@@ -153,7 +153,7 @@ meaningful.
 
 ## What was left behind
 
-`legacy/` holds the two previous engines: separate implementations of the same
-idea, with different notation, different internal representations, duplicated
-tables, both hardcoding port 5557 and one contributor's home directory. Nothing
-imports them. See [legacy/README.md](../legacy/README.md).
+The two previous engines were separate implementations of the same idea, with
+different notation, different internal representations, duplicated tables, both
+hardcoding port 5557 and one contributor's home directory. They have been
+deleted.

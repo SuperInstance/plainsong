@@ -311,7 +311,7 @@ class TestDocumentedNotation(unittest.TestCase):
         fence = re.compile(r"^```(?:tapscript|tap)[ \t]*$(.*?)^```", re.S | re.M)
         root = Path(__file__).resolve().parent.parent
         for markdown in sorted(root.rglob("*.md")):
-            if "legacy" in markdown.parts or "node_modules" in markdown.parts:
+            if "node_modules" in markdown.parts:
                 continue
             text = markdown.read_text(encoding="utf-8", errors="replace")
             for match in fence.finditer(text):
