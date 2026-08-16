@@ -73,7 +73,16 @@ ROLE_LABELS = {
 # Tokens that mean "keep sounding the previous note".
 SUSTAIN_TOKENS = {".", "..", "(hold)", "hold", "-", "~", "(sustain)", "(let ring)", "(ring)"}
 # Tokens that mean "silence here".
-REST_TOKENS = {"(rest)", "rest", "r", "_", "0", "(silence)", "x", "(x)", "--"}
+#
+# `n.c.` is the lead sheet's way of saying *no chord* -- the harmony stops and
+# whatever is happening carries on without it. It read as an unrecognised token
+# before, which produced silence anyway but complained about it, so a piece
+# that said exactly what it meant was told it had made a mistake. Both
+# spellings are in the wild.
+REST_TOKENS = {
+    "(rest)", "rest", "r", "_", "0", "(silence)", "x", "(x)", "--",
+    "n.c.", "nc", "n.c",
+}
 
 SUSTAIN_CHARS = "~"
 

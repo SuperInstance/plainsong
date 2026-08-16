@@ -167,6 +167,41 @@ class TestSpellingsFromRealCharts(unittest.TestCase):
         self.assertEqual(parse_symbol("C/E").bass_pc, 4)
 
 
+class TestNoChord(unittest.TestCase):
+    """`N.C.` is a chord row saying there is no chord.
+
+    Tested here rather than beside the other rest tokens because it is a thing
+    a *chord row* says, and because it was found by the same warning pass that
+    surfaced the unreadable spellings above -- it was being reported as a
+    mistake by a file that had said exactly what it meant.
+    """
+
+    SPELLINGS = ("N.C.", "N.C", "NC", "n.c.")
+
+    def _arrange(self, token: str):
+        from tapscript.notation import arrange, parse
+
+        return arrange(parse(
+            "**TRACK: T**\n[MetaData]\nkey: C | tempo: 120 | time: 4/4\n\n"
+            f"[V1] (Verse - 2 Bars)\nChords: | C . . . | {token} . . . |\n"
+        ))
+
+    def test_no_chord_is_silence_and_says_nothing_about_it(self):
+        for token in self.SPELLINGS:
+            with self.subTest(token=token):
+                arrangement = self._arrange(token)
+                self.assertEqual(arrangement.note_count, 3, "only the C triad should sound")
+                self.assertEqual([d.message for d in arrangement.diagnostics], [])
+
+    def test_it_is_a_rest_rather_than_a_sustain(self):
+        # "No chord" means the harmony stops, not that it hangs on. Holding the
+        # previous chord through an N.C. bar would be the opposite of what the
+        # marking asks for, and would sound like nothing was wrong.
+        held = self._arrange("N.C.")
+        sounding = [n for _t, n in held.iter_notes() if n.start > 0]
+        self.assertEqual(sounding, [], "nothing should sound in the second bar")
+
+
 class TestRefusal(unittest.TestCase):
     def test_prose_is_not_a_chord(self):
         # An unreadable token used to become a rest, so a bar of prose in a
