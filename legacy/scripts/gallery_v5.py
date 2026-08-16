@@ -7,7 +7,7 @@ Keeps all v4 features: gallery grid, albums, img2img, generation queue, cloud mo
 """
 
 import os, sys, json, time, uuid, threading, subprocess, glob, traceback, base64, re
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import HTTPServer, ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
 try:
@@ -25,6 +25,11 @@ CLOUD_SCRIPT = os.path.expanduser("~/.openclaw/workspace/scripts/generate_cloud.
 CHECKPOINT_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/checkpoints"
 LORA_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/loras"
 PORT = 5555
+
+# Reject dead-transfer artifacts (0-byte / 106-byte junk) without filtering real
+# models: real checkpoints here are >= 2.1 GB, real LoRAs >= 177 MB.
+MIN_CKPT_BYTES = 1024 * 1024 * 1024  # 1 GB: smallest real checkpoint here is 2.1 GB
+MIN_LORA_BYTES = 1 * 1024 * 1024
 
 # Cloud models with real pricing (per 1024x1024 image)
 CLOUD_MODELS = [
@@ -80,18 +85,42 @@ def list_albums():
 
 def list_models():
     models = []
-    if os.path.isdir(CHECKPOINT_DIR):
-        for f in sorted(os.listdir(CHECKPOINT_DIR)):
-            if f.endswith(('.safetensors', '.ckpt')):
-                models.append(f.replace('.safetensors', '').replace('.ckpt', ''))
+    seen = set()
+    # ext4 mirror first, then the Windows mount — union of both
+    for base in (os.path.expanduser("~/models/checkpoints"), CHECKPOINT_DIR):
+        if os.path.isdir(base):
+            for f in sorted(os.listdir(base)):
+                if f.endswith(('.safetensors', '.ckpt')):
+                    full = os.path.join(base, f)
+                    try:
+                        if os.path.getsize(full) < MIN_CKPT_BYTES:
+                            continue  # dead-transfer artifact, not a real model
+                    except OSError:
+                        continue
+                    name = f.replace('.safetensors', '').replace('.ckpt', '')
+                    if name not in seen:
+                        seen.add(name)
+                        models.append(name)
     return models
 
 def list_loras():
     loras = []
-    if os.path.isdir(LORA_DIR):
-        for f in sorted(os.listdir(LORA_DIR)):
-            if f.endswith(('.safetensors', '.ckpt')):
-                loras.append(f.replace('.safetensors', '').replace('.ckpt', ''))
+    seen = set()
+    # ext4 mirror first, then the Windows mount — union of both
+    for base in (os.path.expanduser("~/models/loras"), LORA_DIR):
+        if os.path.isdir(base):
+            for f in sorted(os.listdir(base)):
+                if f.endswith(('.safetensors', '.ckpt')):
+                    full = os.path.join(base, f)
+                    try:
+                        if os.path.getsize(full) < MIN_LORA_BYTES:
+                            continue  # dead-transfer artifact, not a real LoRA
+                    except OSError:
+                        continue
+                    name = f.replace('.safetensors', '').replace('.ckpt', '')
+                    if name not in seen:
+                        seen.add(name)
+                        loras.append(name)
     return loras
 
 def scan_gallery():
@@ -826,6 +855,9 @@ document.addEventListener('keydown',e=>{
 # ─── HTTP Handler ───────────────────────────────────────────────────────────────
 
 class Handler(BaseHTTPRequestHandler):
+    # A dead/half-open client must not be able to hold a handler open forever
+    timeout = 60
+
     def do_GET(self):
         parsed = urlparse(self.path)
         p = parsed.path
@@ -1148,7 +1180,8 @@ def main():
         print("   Install: pip install requests")
 
     threading.Thread(target=generation_worker, daemon=True).start()
-    server = HTTPServer(('0.0.0.0', PORT), Handler)
+    # ThreadingHTTPServer so one slow/dead client can't block /api/status for everyone
+    server = ThreadingHTTPServer(('0.0.0.0', PORT), Handler)
     print(f"🎨 Studio v5 at http://localhost:{PORT}", flush=True)
     print(f"   {len(scan_gallery())} images | {len(list_models())} models | {len(list_loras())} LoRAs", flush=True)
     print(f"   Artist chat: {len(ARTIST_MODELS)} models available", flush=True)
