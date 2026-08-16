@@ -51,26 +51,19 @@ class TestStability(unittest.TestCase):
         after = fingerprint_file(self.root / "song.tap")
         self.assertNotEqual(before, after.digest)
 
-    def test_the_four_note_cap_is_currently_audible_and_wrong(self):
-        # Not a feature. `arrange.Options.max_chord_notes` is 4 and the notes
-        # are taken from the bottom, so `G7b9` renders exactly as `G7`: the cap
-        # keeps root-third-fifth-seventh and discards the one note the symbol
-        # was written to specify. Every ninth chord in the corpus loses its
-        # ninth this way -- 459 occurrences, and `E7#9` comes out as `E7`.
+    def test_an_added_ninth_is_audible(self):
+        # This test used to assert the opposite, and was written that way
+        # deliberately. The four-note cap took the *lowest* four notes, so
+        # `G7b9` rendered identically to `G7` -- the cap discarded precisely
+        # the note the symbol was written for. It was pinned rather than fixed
+        # so that whoever fixed it would have to come here and change this on
+        # purpose instead of discovering it.
         #
-        # It is pinned rather than fixed because fixing it changes how existing
-        # files sound, which is a different kind of change from teaching the
-        # parser new spellings and wants its own diff. When somebody does fix
-        # it this test will fail, which is the intent: it should be updated
-        # deliberately, not discovered.
+        # That is what happened. The voicer now gives up the fifth first and
+        # the root second, so the ninth survives and the two differ.
         before = fingerprint_file(self.root / "song.tap").digest
         (self.root / "song.tap").write_text(SONG.replace("G7 . . .", "G7b9 . . ."), encoding="utf-8")
-        self.assertEqual(
-            before,
-            fingerprint_file(self.root / "song.tap").digest,
-            "the four-note cap no longer hides an added ninth -- if that was "
-            "intended, re-record the corpus fingerprint and update this test",
-        )
+        self.assertNotEqual(before, fingerprint_file(self.root / "song.tap").digest)
 
     def test_a_changed_pitch_moves_the_digest_without_moving_the_note_count(self):
         # The case the note count cannot see, and the reason a hash is needed.

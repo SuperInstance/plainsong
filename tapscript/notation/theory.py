@@ -236,7 +236,7 @@ class Chord:
     the rest exactly as written.
     """
 
-    __slots__ = ("root_pc", "quality", "bass_pc", "text", "_intervals", "suffix")
+    __slots__ = ("root_pc", "quality", "bass_pc", "text", "_intervals", "suffix", "degrees")
 
     def __init__(
         self,
@@ -246,6 +246,7 @@ class Chord:
         text: str = "",
         intervals: tuple[int, ...] | None = None,
         suffix: str | None = None,
+        degrees: dict[int, int] | None = None,
     ) -> None:
         self.root_pc = root_pc % 12
         self.quality = quality
@@ -253,6 +254,11 @@ class Chord:
         self.text = text
         self._intervals = intervals
         self.suffix = suffix
+        #: Scale degree -> semitones above the root. Carried because a voicer
+        #: cannot decide what to drop from a bare interval list: dropping the
+        #: fifth is free and dropping the seventh destroys the chord, and the
+        #: two are indistinguishable once the degree labels are gone.
+        self.degrees = dict(degrees) if degrees else {}
 
     def intervals(self) -> tuple[int, ...]:
         """Semitones above the root, including the root itself."""
@@ -282,6 +288,7 @@ class Chord:
             self.text,
             intervals=self._intervals,
             suffix=self.suffix,
+            degrees=self.degrees,
         )
 
     def name(self, prefer_flats: bool = False) -> str:
@@ -341,6 +348,7 @@ def parse_chord(token: str) -> Chord:
         text=text,
         intervals=parsed.intervals(),
         suffix=parsed.suffix,
+        degrees=parsed.degrees,
     )
 
 

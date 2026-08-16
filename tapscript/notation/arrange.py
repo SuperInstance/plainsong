@@ -73,6 +73,15 @@ class ArrangeOptions:
     chords_instrument: str = "nylon guitar"
     chord_voicing_octave: int = 3
     max_chord_notes: int = 4
+    voicing: str = "guide"
+    """Which notes to keep when a chord names more than ``max_chord_notes``.
+
+    ``guide`` gives up the fifth first and the root second, keeping the third,
+    the seventh and whatever extension the symbol was written for. ``stack``
+    is the old behaviour -- the lowest four notes -- which discarded the named
+    extension in half the cases where the cap bit at all, so `D9` sounded like
+    `D7`. ``shell``, ``drop2`` and ``spread`` are also available; see
+    ``notation/voicing.py`` and `docs/voicing.md` for how they were compared."""
     transpose: int = 0
     frame: str = ""
     """Which listener to solve arrival times for. Empty means the one the
@@ -476,8 +485,16 @@ class Arranger:
 
                 flush()
                 if slot.kind == "chord" and slot.chord is not None:
-                    notes = slot.chord.notes(octave=self.options.chord_voicing_octave)
-                    notes = notes[: self.options.max_chord_notes]
+                    from .voicing import voice
+
+                    notes = list(
+                        voice(
+                            slot.chord,
+                            octave=self.options.chord_voicing_octave,
+                            limit=self.options.max_chord_notes,
+                            strategy=self.options.voicing,
+                        )
+                    )
                     pending.append((list(notes), start, start + length))
                     if chords_out is not None:
                         chords_out.append(ChordEvent(start=start, duration=length, chord=slot.chord))

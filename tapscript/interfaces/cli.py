@@ -487,6 +487,105 @@ def cmd_chord(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 2 if failed else 0
 
 
+def cmd_voicing(args: argparse.Namespace, config: Config, out: Out) -> int:
+    """Show, or compare, how a chord's notes are chosen.
+
+    The comparison is here rather than in a one-off script because the default
+    was picked on its numbers, and a claim like that should be re-runnable by
+    whoever doubts it.
+    """
+    from ..notation.theory import NOTE_NAMES_FLAT, NOTE_NAMES_SHARP, TheoryError, parse_chord
+    from ..notation.voicing import NATURAL, STRATEGIES, voice
+
+    names = NOTE_NAMES_FLAT if args.flats else NOTE_NAMES_SHARP
+
+    if args.compare:
+        from ..library import Library
+
+        chords = []
+        for entry in Library().all():
+            try:
+                text = entry.read()
+            except OSError:
+                continue
+            for line in text.splitlines():
+                if not line.lower().startswith(("chords", "@")):
+                    continue
+                body = line.split(":", 1)[1] if ":" in line else ""
+                for token in body.replace("|", " ").split():
+                    try:
+                        chord = parse_chord(token)
+                    except TheoryError:
+                        continue
+                    if len(set(chord.degrees.values())) > args.limit:
+                        chords.append(chord)
+        if not chords:
+            out.fail("no chords found to compare")
+            return 2
+
+        out.ok(f"{len(chords)} chord occurrences where the {args.limit}-note cap bites")
+        rows = []
+        for name in STRATEGIES:
+            kept = total = guides = guide_total = muddy = 0
+            for chord in chords:
+                notes = list(voice(chord, args.octave, args.limit, name))
+                classes = {note % 12 for note in notes}
+                promised = {d for d, o in chord.degrees.items() if d in NATURAL and o != NATURAL[d]}
+                extensions = [d for d in chord.degrees if d > 7]
+                if extensions:
+                    promised.add(max(extensions))
+                for degree in promised:
+                    total += 1
+                    kept += (chord.root_pc + chord.degrees[degree]) % 12 in classes
+                for degree in (3, 7):
+                    if degree in chord.degrees:
+                        guide_total += 1
+                        guides += (chord.root_pc + chord.degrees[degree]) % 12 in classes
+                ordered = sorted(notes)
+                # Adjacent pairs, so the tail is one shorter on purpose.
+                pairs = zip(ordered, ordered[1:], strict=False)
+                muddy += sum(1 for a, b in pairs if b - a < 3 and a < 48)
+            rows.append({
+                "strategy": name,
+                "named_kept": round(100 * kept / max(total, 1), 1),
+                "guide_kept": round(100 * guides / max(guide_total, 1), 1),
+                "muddy": muddy,
+            })
+        if not out.json_mode:
+            out.say(f"{'strategy':<9} {'symbol kept':>12} {'guide tones':>12} {'muddy':>7}")
+            for row in rows:
+                out.say(
+                    f"{row['strategy']:<9} {row['named_kept']:>11}% "
+                    f"{row['guide_kept']:>11}% {row['muddy']:>7}"
+                )
+        out.data({"comparison": rows, "sample": len(chords)})
+        return 0
+
+    if not args.symbol:
+        out.fail("give a chord symbol, or --compare")
+        return 2
+
+    results = []
+    for symbol in args.symbol:
+        try:
+            chord = parse_chord(symbol)
+        except TheoryError as exc:
+            out.fail(f"{symbol}: {exc}")
+            return 2
+        written = [names[(chord.root_pc + o) % 12] for o in sorted(set(chord.degrees.values()))]
+        row = {"symbol": symbol, "written": written, "played": {}}
+        for name in STRATEGIES:
+            row["played"][name] = [names[n % 12] for n in voice(chord, args.octave, args.limit, name)]
+        results.append(row)
+        if not out.json_mode:
+            out.ok(f"{symbol}  written: {' '.join(written)}")
+            for name, notes in row["played"].items():
+                marker = "  <- default" if name == "guide" else ""
+                out.dim(f"    {name:<8} {' '.join(notes)}{marker}")
+    out.data({"chords": results})
+    return 0
+
+
 def cmd_fingerprint(args: argparse.Namespace, config: Config, out: Out) -> int:
     """Print a stable hash of what each file compiles to.
 
@@ -1030,6 +1129,19 @@ def build_parser() -> argparse.ArgumentParser:
     chord_parser.add_argument("--octave", type=int, default=3, help="octave for MIDI numbers")
     chord_parser.add_argument("--flats", action="store_true", help="spell with flats")
     chord_parser.set_defaults(func=cmd_chord)
+
+    voicing_parser = subparsers.add_parser(
+        "voicing", help="show which notes a chord sounds, and why those"
+    )
+    voicing_parser.add_argument("symbol", nargs="*", help="chord symbols")
+    voicing_parser.add_argument(
+        "--compare", action="store_true",
+        help="score every strategy over the library, on the chords where the cap bites",
+    )
+    voicing_parser.add_argument("--limit", type=int, default=4, help="how many voices")
+    voicing_parser.add_argument("--octave", type=int, default=3)
+    voicing_parser.add_argument("--flats", action="store_true")
+    voicing_parser.set_defaults(func=cmd_voicing)
 
     fingerprint_parser = subparsers.add_parser(
         "fingerprint", help="hash what notation compiles to, so a change in the sound is visible"
