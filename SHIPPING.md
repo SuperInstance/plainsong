@@ -225,7 +225,7 @@ passes on Windows across 3.10 through 3.13.
 - `master` has been red on its own older workflow since before this branch, for
   reasons unrelated to it.
 - **Dialect auto-detection fails on a relative-dialect file, and it looks like
-  corrupt source.** `examples/tapscript-4-tap-closing-time.song` is written in
+  corrupt source.** `examples/plainsong-4-tap-closing-time.song` is written in
   the relative dialect -- `I`, `IV`, `vi` as roman-numeral chords and `1 . 3 |
   5 . . |` as scale degrees. `dialect: auto` reads it as absolute, so every
   scale degree becomes an unreadable token: 42 notes and 51 warnings. Told
