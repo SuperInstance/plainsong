@@ -6,16 +6,16 @@ key: G | tempo: 120 | subdivision: 8th
 time: 4/4 | mood: Laid-back
 
 [V1] (Verse - 4 Bars)
-Chords: | G . . . | D . . . | E minor . . . | C . . . |
+Chords: | G . . . | D . . . | Eminor . . . | C . . . |
 
 [V2] (Verse - 4 Bars)
-Chords: | G . . . | D . . . | E minor . . . | C . . . |
+Chords: | G . . . | D . . . | Eminor . . . | C . . . |
 
 [CH] (Chorus - 4 Bars)
 Chords: | C . . . | G . . . | D . . . | G . . . |
 
 [BR] (Bridge - 2 Bars)
-Chords: | A minor . . . | D . . . |
+Chords: | Aminor . . . | D . . . |
 
 [OUT] (Outro - 2 Bars)
 Chords: | G . . . | C . . . |

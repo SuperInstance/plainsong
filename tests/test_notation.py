@@ -335,3 +335,46 @@ class TestDocumentedNotation(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestDialectDetection(unittest.TestCase):
+    """Which dialect a file is written in, when it does not say.
+
+    The relative dialect names its harmony before the first bar -- `I | 1 . 3 |`
+    -- and the detector used to examine only lines that *begin* with a pipe, so
+    it never saw those rows at all. A whole file of roman numerals and scale
+    degrees read as absolute notation: every degree became an unreadable token,
+    and a 111-note piece compiled to 42 notes and 51 warnings while reporting
+    success.
+    """
+
+    RELATIVE = (
+        "Key: Bb\nMeter: 3/4\nTempo: 60\n\n"
+        "[Intro]\nI | 1 . . | 5 . . |\nIV | 4 . . | 6 . . |\n"
+    )
+    ABSOLUTE = (
+        "**TRACK: T**\n[MetaData]\nkey: Am | tempo: 96 | time: 4/4\n\n"
+        "[V1] (Verse - 2 Bars)\nChords: | Am . . . | F . . . |\n"
+        "Melody: | A4 . C5 E5 | F4 . A4 C5 |\n"
+    )
+
+    def test_a_roman_numeral_before_the_bar_marks_the_relative_dialect(self):
+        from plainsong.notation.parser import detect_dialect
+
+        self.assertEqual(detect_dialect(self.RELATIVE), "relative")
+
+    def test_the_scale_degrees_actually_sound(self):
+        # The detector being wrong was invisible except as warnings, because a
+        # misread file still compiles -- just to far fewer notes.
+        from plainsong.notation import arrange, parse
+
+        self.assertGreater(arrange(parse(self.RELATIVE)).note_count, 0)
+        self.assertFalse(
+            [d for d in arrange(parse(self.RELATIVE)).diagnostics if "nothing understood" in d.message]
+        )
+
+    def test_labelled_rows_are_still_absolute(self):
+        # The new evidence must not drag ordinary files into the wrong dialect.
+        from plainsong.notation.parser import detect_dialect
+
+        self.assertEqual(detect_dialect(self.ABSOLUTE), "absolute")

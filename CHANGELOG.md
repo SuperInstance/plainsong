@@ -2,7 +2,46 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.0.1 — 2026-08-17
+
+Fixes to what 1.0.0 said about itself, and to a setting it documented but never
+read. No notation changes: all 6,321 files in the repository compile to exactly
+the music they did in 1.0.0.
+
+### The voicing setting now exists
+
+1.0.0 changed how chords with more than four notes are rendered — a genuinely
+better default, arrived at by measurement — and shipped **no way to opt out**.
+`docs/voicing.md` told readers to set `render.voicing`, `ArrangeOptions` carried
+the field, and nothing anywhere read it from configuration. Anyone whose
+recordings depended on the old rendering had no recourse, and anyone who
+followed the documentation got silence.
+
+- **`core.voicing` selects the strategy**, and `PLAINSONG_CORE_VOICING` sets it
+  for a single run. `stack` restores the pre-1.0.0 rendering exactly.
+- It lives in `[core]` beside `bar_fill`, because it decides which notes exist
+  and therefore changes the MIDI, not merely the audio. `render.voicing` is
+  still honoured so that the spelling 1.0.0 published is not ignored.
+- **A value that is not a strategy is now reported.** It previously fell back to
+  the default in silence, which is indistinguishable from having been obeyed —
+  the same fault, one level down.
+
+### The 1.0.0 notes described a bug that 1.0.0 had already fixed
+
+The release carried a section headed *"Known, recorded rather than fixed"*
+stating that `D9` sounds like `D7`. The commit that fixed exactly that shipped
+in the same release. Users reading the changelog were told the opposite of what
+the software does, and — more seriously — were not told that seventy-two files
+in the bundled corpus had changed how they sound. That section has been replaced
+with what actually happened, including the breaking-change notice it owed.
+
+## 1.0.0 — 2026-08-17
+
+A rebuild. One engine replaces the two that had drifted apart, and everything
+that used to be compiled in — paths, model provider, rendering backend — is now
+resolved at runtime. Chord symbols are read by a grammar rather than a table,
+voicing keeps the note a symbol was written for, and the corpus is held to
+compiling to the same music rather than merely to compiling.
 
 ### The corpus is held to compiling to the same music, not merely to compiling
 
@@ -20,16 +59,32 @@ Notable changes, newest first. Dates are ISO 8601.
   folder of `.song` files has the same problem and no access to our suite:
   fingerprint before an upgrade, fingerprint after, diff.
 
-### Known, recorded rather than fixed
+### Chords that name more notes than fit now keep the note that was named
 
-- **The renderer discards extensions.** `arrange.Options.max_chord_notes` is 4
-  and the notes are taken from the bottom, so a five-note chord keeps
-  root-third-fifth-seventh and drops what was above it. `D9` sounds like `D7`,
-  and `E7#9` sounds like `E7` — 459 occurrences across the corpus, concentrated
-  in exactly the chords where the dropped note is the point. A player thinning a
-  voicing drops the fifth first and then the root; taking the bottom four does
-  the opposite. Not fixed here because it changes how existing files sound,
-  which wants its own reviewed diff — which `fingerprint` now makes readable.
+**This changes how existing files sound.** Seventy-two files in the bundled
+corpus render differently than they did before, and files outside this
+repository containing ninths, elevenths, thirteenths or altered fifths will do
+the same. If you need the old rendering, set `core.voicing = "stack"`.
+
+- **The renderer used to discard extensions.** `arrange.Options.max_chord_notes`
+  is 4 and the notes were taken from the bottom, so a five-note chord kept
+  root-third-fifth-seventh and dropped whatever sat above — which is the one
+  note that made the symbol worth writing. `D9` rendered as `D7`; `E7#9`, the
+  chord an entire Hendrix record is built on, rendered as `E7`; `G7alt`
+  rendered as four notes that are not a chord anybody would name.
+- **A player thinning a voicing drops the fifth first and the root second**,
+  because the third and the seventh are what identify the chord. Taking the
+  bottom four does exactly the opposite.
+- **Chosen by measurement, not by argument.** Five strategies scored over every
+  chord in the repository, reproducible with `plainsong voicing --compare`. The
+  first measurement was useless and is worth recording as a mistake: averaged
+  over all 125,375 chord occurrences it read 99.4% against 99.9%, because 99.7%
+  of the corpus is triads and sevenths where the cap never bites and every
+  strategy agrees. Averaging over the cases where nothing happens hides the case
+  where something does. Scored on the 277 occurrences where a note actually has
+  to go, keeping the symbol's defining note rose from 50.1% to 94.4%.
+- `plainsong voicing "C13"` shows what any symbol reduces to under each
+  strategy, and why. See [docs/voicing.md](docs/voicing.md).
 
 ### Chord symbols are read by a grammar
 
@@ -74,12 +129,6 @@ Notable changes, newest first. Dates are ISO 8601.
   attempt -- the diff caught `Bb-7` turning into a dominant, which would have
   moved 22 minor chords in this repository and sounded wrong without looking
   wrong. Warnings from `plainsong check` over every source fell from 185 to 87.
-
-## 1.0.0 — 2026-08-15
-
-A rebuild. One engine replaces the two that had drifted apart, and everything
-that used to be compiled in — paths, model provider, rendering backend — is now
-resolved at runtime.
 
 ### The compiler
 

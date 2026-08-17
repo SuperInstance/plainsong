@@ -277,9 +277,27 @@ class Arranger:
 
     # -- main walk -----------------------------------------------------------
 
+    def _check_voicing(self) -> None:
+        """A misspelled strategy would otherwise fall back to the default in
+        silence, which looks exactly like the setting having been honoured."""
+        from .voicing import DEFAULT_STRATEGY, STRATEGIES
+
+        name = self.options.voicing
+        if name in STRATEGIES:
+            return
+        known = ", ".join(sorted(STRATEGIES))
+        self.diagnostics.append(
+            Diagnostic(
+                severity="warning",
+                message=f"unknown voicing {name!r}; using {DEFAULT_STRATEGY!r}",
+                hint=f"voicing is one of: {known}",
+            )
+        )
+
     def arrange(self) -> Arrangement:
         meta = self.score.meta
         bar_beats = meta.meter.beats_per_bar
+        self._check_voicing()
         swing = self.options.swing if self.options.swing is not None else meta.swing
         lyrics: list[LyricEvent] = []
         chords: list[ChordEvent] = []

@@ -29,6 +29,7 @@ DEFAULTS: dict[str, Any] = {
     "core": {
         "dialect": "auto",
         "bar_fill": "rescale",
+        "voicing": "guide",
         "default_tempo": 100,
         "default_key": "C",
         "default_meter": "4/4",

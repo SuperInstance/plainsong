@@ -188,8 +188,8 @@ def check_merge_is_deterministic() -> tuple[bool, str]:
 
 def check_features() -> tuple[bool, str]:
     """Sixteen features per bar, in range, and the same every time."""
+    from .. import features
     from ..notation import arrange, parse
-    from . import features
 
     arrangement = arrange(parse(SAMPLE))
     bars = features.extract(arrangement)

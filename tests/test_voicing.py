@@ -125,5 +125,75 @@ class TestEveryStrategyIsUsable(unittest.TestCase):
         self.assertEqual(DEGREE_SEMITONES, NATURAL)
 
 
+class TestTheSettingIsReachable(unittest.TestCase):
+    """1.0.0 changed how existing files sound and shipped no way back.
+
+    The strategy was selectable on `ArrangeOptions` but nothing read it from
+    configuration, so `core.voicing` did nothing at all.
+    """
+
+    SONG = (
+        "**TRACK: Voicing**\n"
+        "[MetaData]\nkey: C | tempo: 100 | time: 4/4\n\n"
+        "[V1] (Verse - 1 Bars)\nChords: | D9 . . . |\n"
+    )
+
+    def _compile(self, strategy=None, *, render=None):
+        from plainsong import pipeline
+        from plainsong.runtime.config import load_config
+
+        config = load_config()
+        if strategy is not None:
+            config.data.setdefault("core", {})["voicing"] = strategy
+        if render is not None:
+            config.data.setdefault("render", {})["voicing"] = render
+        result = pipeline.compile_text(self.SONG, config=config)
+        pitches = sorted(
+            note.pitch for track in result.arrangement.tracks for note in track.notes
+        )
+        return [p % 12 for p in pitches], result.diagnostics
+
+    def test_core_voicing_selects_the_strategy(self):
+        guide, _ = self._compile("guide")
+        stack, _ = self._compile("stack")
+        self.assertNotEqual(guide, stack)
+        # D9 written D F# A C E. `guide` gives up the fifth to keep the ninth;
+        # `stack` is the pre-1.0.0 rendering, which is a D7.
+        self.assertEqual(guide, [2, 6, 0, 4])       # D F# C E
+        self.assertEqual(stack, [2, 6, 9, 0])       # D F# A C
+
+    def test_an_unknown_strategy_says_so(self):
+        # Falling back in silence is indistinguishable from being honoured.
+        _, diagnostics = self._compile("stak")
+        messages = [d.message for d in diagnostics]
+        self.assertTrue(
+            any("unknown voicing" in m and "stak" in m for m in messages), messages
+        )
+
+    def test_the_name_the_1_0_0_docs_printed_still_works(self):
+        # docs/voicing.md said `render.voicing` while nothing read either name.
+        # Anyone who followed it would otherwise still be ignored in silence.
+        self.assertEqual(self._compile(render="stack")[0], self._compile("stack")[0])
+
+    def test_core_wins_when_both_are_written(self):
+        # `[core]` carries a default, so "was it written down?" can only be
+        # answered for a value that differs from it. That is the precedence
+        # documented in docs/voicing.md, and the collision needs two spellings
+        # of one setting disagreeing to arise at all.
+        both, _ = self._compile("shell", render="stack")
+        self.assertEqual(both, self._compile("shell")[0])
+        self.assertNotEqual(both, self._compile("stack")[0])
+
+    def test_the_default_is_unchanged_when_nothing_is_configured(self):
+        from plainsong import pipeline
+
+        default = pipeline.compile_text(self.SONG)
+        pitches = [
+            p % 12
+            for p in sorted(n.pitch for t in default.arrangement.tracks for n in t.notes)
+        ]
+        self.assertEqual(pitches, self._compile("guide")[0])
+
+
 if __name__ == "__main__":
     unittest.main()

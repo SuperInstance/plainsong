@@ -91,17 +91,33 @@ TEMPLATES = [
 ]
 
 
+def _default_ensemble() -> Any:
+    """This repo's own ensemble implementation.
+
+    Resolved lazily, and only used when ``Resources`` is not given one -- see
+    ``tools._default_ensemble`` for why.
+    """
+    from . import ensemble as ens
+
+    return ens
+
+
 class Resources:
     """The resource surface for one server."""
 
-    def __init__(self, config: Config, session_root: Any = None) -> None:
+    def __init__(self, config: Config, session_root: Any = None, ensemble: Any = None) -> None:
         self.config = config
         self.session_root = session_root
+        self._ensemble = ensemble
         self._readers: dict[str, Callable[[str], tuple[str, str]]] = {
             "library": self._read_library,
             "session": self._read_session,
             "spec": self._read_spec,
         }
+
+    def _ens(self) -> Any:
+        """The ensemble module this instance was given, or this repo's own."""
+        return self._ensemble if self._ensemble is not None else _default_ensemble()
 
     # -- listing -------------------------------------------------------------
 
@@ -210,7 +226,7 @@ class Resources:
         return entry.read(), TEXT
 
     def _read_session(self, name: str) -> tuple[str, str]:
-        from . import ensemble
+        ensemble = self._ens()
 
         try:
             session = ensemble.find_session(name, root=self.session_root, paths=self.config.paths)
@@ -259,7 +275,7 @@ class Resources:
             return []  # a broken spec file must not take the resource list with it
 
     def _sessions(self) -> list[str]:
-        from . import ensemble
+        ensemble = self._ens()
 
         try:
             return ensemble.list_sessions(self.session_root, self.config.paths)

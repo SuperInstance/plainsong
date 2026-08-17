@@ -98,9 +98,25 @@ different, and 5 where a slash chord got its seventh back.
 
 ## Changing it
 
-`render.voicing` selects a strategy: `guide`, `stack`, `shell`, `drop2`,
-`spread`. `stack` restores the old behaviour exactly, for anyone whose
+`core.voicing` selects a strategy: `guide`, `stack`, `shell`, `drop2`,
+`spread`. `stack` restores the pre-1.0.0 behaviour exactly, for anyone whose
 recordings depend on it.
+
+```toml
+[core]
+voicing = "stack"
+```
+
+`PLAINSONG_CORE_VOICING` sets it for one run without touching a file.
+
+It sits in `[core]` beside `bar_fill` because it decides which notes exist, so
+it changes the MIDI and not merely the audio. This page called it
+`render.voicing` in 1.0.0, at a point when nothing read either name; that
+spelling is still accepted so that anyone who followed it is not ignored in
+silence. If both are written, `core.voicing` wins whenever it names something
+other than the default. A name that is not a strategy at all is reported rather
+than quietly replaced with the default — a setting that fails silently is
+indistinguishable from one that was honoured.
 
 The strategies live in `plainsong/notation/voicing.py` and are each a few lines,
 because they all operate on the same thing: a **degree map**, scale degree onto

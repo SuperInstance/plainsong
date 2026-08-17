@@ -823,7 +823,7 @@ a1981d40e976995f      96  docs/fakebook-archive/english/jazz/blue-moon.song
 3f223d6f85fa3778     118  docs/fakebook-archive/english/jazz/blue-skies.song
 719bdcde300cc538      64  docs/fakebook-archive/english/jazz/blue-train.song
 cca1212df2aa819d     120  docs/fakebook-archive/english/jazz/blues-in-the-night.song
-0f06bb180a386c4c     126  docs/fakebook-archive/english/jazz/body-and-soul.song
+454ecee219103bdd     128  docs/fakebook-archive/english/jazz/body-and-soul.song
 52fcc7df4961abdd     112  docs/fakebook-archive/english/jazz/but-beautiful.song
 2aa901d6f1e781df     116  docs/fakebook-archive/english/jazz/but-not-for-me.song
 6f2002435ba3c6a1      52  docs/fakebook-archive/english/jazz/can-t-help-lovin-dat-man.song
@@ -1596,7 +1596,7 @@ a36e97c2bacaaa12      60  docs/fakebook-archive/english/pop/we-are-young.song
 d3b8d73d9144edf1      48  docs/fakebook-archive/english/pop/we-didn-t-start-the-fire.song
 0b60196c085ec9bd      60  docs/fakebook-archive/english/pop/we-found-love.song
 ce2bb729deb6dac7      60  docs/fakebook-archive/english/pop/we-will-rock-you.song
-120253bdf610a1d0     119  docs/fakebook-archive/english/pop/what-a-fool-believes.song
+d1e61c10a39847b4     128  docs/fakebook-archive/english/pop/what-a-fool-believes.song
 1421a7dca0b0a70a      65  docs/fakebook-archive/english/pop/what-s-going-on-marvin-gaye-duplicate-avoided-use-mercy-mercy-me-the-ecology.song
 b15afa667a7b4a56      91  docs/fakebook-archive/english/pop/what-s-going-on.song
 004029105cafb5e1      36  docs/fakebook-archive/english/pop/what-s-love-got-to-do-with-it.song
@@ -2206,7 +2206,7 @@ bfc8df393cdb104d      60  docs/fakebook-archive/english/showtunes/you-ll-never-w
 694b35ea65b5b168     108  docs/fakebook-archive/english/soul-rb/ain-t-no-mountain-high-enough.song
 9bdf5c35b4a186d5      96  docs/fakebook-archive/english/soul-rb/ain-t-no-stoppin-us-now.song
 f06ffeae82a28fa1      64  docs/fakebook-archive/english/soul-rb/ain-t-no-sunshine.song
-7648d0ecfab91121      79  docs/fakebook-archive/english/soul-rb/ain-t-no-way.song
+483060d4eda3a54c      80  docs/fakebook-archive/english/soul-rb/ain-t-no-way.song
 ffefeca80468a111      96  docs/fakebook-archive/english/soul-rb/ain-t-nothing-like-the-real-thing.song
 b15761a93ecdddd8      60  docs/fakebook-archive/english/soul-rb/baby-love.song
 e7a544c784cf2ee2      84  docs/fakebook-archive/english/soul-rb/back-stabbers.song
@@ -2487,14 +2487,14 @@ bac02b652bca917c      40  examples/edge-cases/edge-1-polyrhythm.song
 2b7720243b130168      20  examples/edge-cases/edge-3-dense-chords.song
 b1ef7007b7a0f712      34  examples/edge-cases/edge-4-players-only.song
 65a419894d82917f      73  examples/edge-cases/edge-5-kitchen-sink.song
-73ff48fe72d8bf12     157  examples/tapscript-1-creatures-of-interval.song
-a8567c72abd8ec82     143  examples/tapscript-2-the-room-is-safe.song
-87a9033c4c06bcce     224  examples/tapscript-3-hermes-blues.song
-872c7dc2c0741f8b      42  examples/tapscript-4-tap-closing-time.song
-1c2186b5371e33f7     101  examples/tapscript-5-deck-work.song
-d9419c3c1bc05fc0      29  examples/tapscript-6-spacing-melody.song
-a351ccbd50ff2d4e      23  examples/tapscript-7-spacing-chords.song
-8371b77ab7dcfab6      68  examples/tapscript-8-spacing-dashes.song
+73ff48fe72d8bf12     157  examples/plainsong-1-creatures-of-interval.song
+a8567c72abd8ec82     143  examples/plainsong-2-the-room-is-safe.song
+87a9033c4c06bcce     224  examples/plainsong-3-hermes-blues.song
+c4040d29fc2a8835     111  examples/plainsong-4-tap-closing-time.song
+1c2186b5371e33f7     101  examples/plainsong-5-deck-work.song
+d9419c3c1bc05fc0      29  examples/plainsong-6-spacing-melody.song
+a351ccbd50ff2d4e      23  examples/plainsong-7-spacing-chords.song
+8371b77ab7dcfab6      68  examples/plainsong-8-spacing-dashes.song
 49eaa1b413cb6a6b     117  plainsong/songbook/01-house-of-the-rising-sun.song
 8cd2debbc651d639      84  plainsong/songbook/02-wonderwall.song
 d1e3d2e12fa5189c     143  plainsong/songbook/03-hallelujah.song
@@ -3549,7 +3549,7 @@ faa8d8cbdf7c6bd6     108  plainsong/songbook/english/rock/shoot-to-thrill.song
 3ba18698f2c7bafe     108  plainsong/songbook/english/rock/sultans-of-swing.song
 9fc591af1714a2e7      36  plainsong/songbook/english/rock/supernaut.song
 0c3960cd454e271e      50  plainsong/songbook/english/rock/symptom-of-the-universe.song
-6970d0ad94ccf397      48  plainsong/songbook/english/rock/take-it-easy.song
+db695e09a4e4345a      48  plainsong/songbook/english/rock/take-it-easy.song
 443656ad1e49f2a2      96  plainsong/songbook/english/rock/the-dark.song
 422eb5e942209b68      48  plainsong/songbook/english/rock/the-wizard.song
 86fca607a37c2ad7      84  plainsong/songbook/english/rock/the-writ.song
@@ -3706,7 +3706,7 @@ b8a40587458a0e77      48  plainsong/songbook/english/soul-rb/abc.song
 73129292ec54d2cf      96  plainsong/songbook/english/soul-rb/all-night-long-all-night.song
 801bf13308106ec6      48  plainsong/songbook/english/soul-rb/automatic.song
 7855a0750e7c66dc     114  plainsong/songbook/english/soul-rb/bad-girls.song
-f1cc3d8a394486f9      74  plainsong/songbook/english/soul-rb/being-with-you.song
+347e2274416c0aa0      80  plainsong/songbook/english/soul-rb/being-with-you.song
 37600dd6656b79b0      54  plainsong/songbook/english/soul-rb/ben.song
 21995cf119319f04      72  plainsong/songbook/english/soul-rb/billie-jean.song
 2f5a7954705b16e8     112  plainsong/songbook/english/soul-rb/car-wash.song
@@ -3717,7 +3717,7 @@ fae2ce232047aa3a      64  plainsong/songbook/english/soul-rb/got-to-be-real.song
 c403f7d513493732     128  plainsong/songbook/english/soul-rb/got-to-give-it-up.song
 1bab9955076d1e91      54  plainsong/songbook/english/soul-rb/hello.song
 f89eacddf8f070f6      60  plainsong/songbook/english/soul-rb/human-nature.song
-ac3905486f184289      70  plainsong/songbook/english/soul-rb/i-can-t-help-it.song
+6054356e69997ac0      80  plainsong/songbook/english/soul-rb/i-can-t-help-it.song
 e53e4e6e68525a2b     120  plainsong/songbook/english/soul-rb/i-ll-be-around.song
 40da645caa473183      60  plainsong/songbook/english/soul-rb/i-m-coming-out.song
 bea49fed6988b61c      81  plainsong/songbook/english/soul-rb/i-m-every-woman.song
@@ -6319,4 +6319,4 @@ e851f2095bdfcfc6      66  plainsong/songbook/spanish/pop-classics/volver-volver.
 33fb66fd0c9a1007     102  plainsong/songbook/spanish/pop-classics/yo-no-nac-para-amar.song
 cc10b267c8269318      72  plainsong/songbook/spanish/pop-classics/yo-no-s-ma-ana.song
 f1ef299e74cad6fb      62  plainsong/songbook/spanish/pop-classics/yolanda.song
-# 6321 files, 393144 notes, 0 failed
+# 6321 files, 393241 notes, 0 failed

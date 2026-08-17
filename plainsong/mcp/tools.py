@@ -15,8 +15,20 @@ from __future__ import annotations
 
 from typing import Any
 
-from . import ensemble as ens
-from . import features as feat
+from .. import features as feat
+
+
+def _default_ensemble() -> Any:
+    """This repo's own ensemble implementation.
+
+    Resolved lazily, and only used when ``register`` is not given one, so that
+    a caller elsewhere (the sibling plainsong-mcp repo) can pass its own
+    ensemble module and get tools bound to *that* implementation instead of
+    whichever copy this file happens to be sitting next to.
+    """
+    from . import ensemble as ens
+
+    return ens
 
 
 def _schema(properties: dict[str, Any], required: list[str] | None = None) -> dict[str, Any]:
@@ -35,8 +47,20 @@ def _boolean(description: str) -> dict[str, str]:
     return {"type": "boolean", "description": description}
 
 
-def register(registry: Any, session_root: Any = None) -> None:
-    """Add the protocol-facing tools to *registry*."""
+def register(registry: Any, session_root: Any = None, ensemble: Any = None) -> None:
+    """Add the protocol-facing tools to *registry*.
+
+    *ensemble* is the module (or any object with the same names) that the
+    ensemble_* tools call into: ``Session``, ``EnsembleError``, ``Conflict``,
+    ``find_session``, ``open_session``, ``list_sessions``, ``parse_bar_range``.
+    It defaults to this package's own ``plainsong.mcp.ensemble``, so behaviour
+    here is unchanged when the caller passes nothing. A caller that lives
+    somewhere else -- the sibling plainsong-mcp repo, most notably -- passes
+    its own ensemble module here instead, so these tools bind to *that* repo's
+    implementation rather than silently resolving to wherever this file
+    physically lives.
+    """
+    ens = ensemble if ensemble is not None else _default_ensemble()
     config = getattr(registry, "config", None)
     paths = getattr(config, "paths", None)
 

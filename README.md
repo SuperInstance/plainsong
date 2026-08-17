@@ -14,6 +14,18 @@ Lyrics: | the tide  came | in  before  dawn | and  left  a | line  of  salt |
 That is the whole idea. Four rows that line up, bars separated by `|`, and a
 file any editor, any diff tool and any language model can read.
 
+**If you read music but not code**, you already understand most of that block —
+it is a lead sheet with the bars drawn in. Start with
+[Your first song](docs/tutorial-first-song.md); it assumes nothing about
+programming and gets you to something you can hear.
+
+**If you write code but not music**, the thing to know is that you never
+declare durations. You write how many events happen in a bar and the bar divides
+itself. Start with [the notation reference](docs/notation.md).
+
+**If you are an agent**, read [AGENTS.md](AGENTS.md) first. It is short, and
+most of it is the mistakes other agents have already made here.
+
 ## Try it without installing anything
 
 `docs/demo/index.html` is a working compiler in one file — parser, arranger, MIDI
@@ -28,12 +40,11 @@ and they do not.
 
 ## Hello world
 
-Python 3.10 or newer. Nothing else to install.
+Python 3.10 or newer. Nothing else to install — there are no required
+dependencies, and that is enforced by CI rather than merely intended.
 
 ```bash
-git clone https://github.com/SuperInstance/plainsong
-cd plainsong
-pip install -e .
+pip install plainsong
 ```
 
 Now make a piece and listen to it:
@@ -210,9 +221,15 @@ plainsong spec      # verify the system's promises against this machine
 
 There are no required dependencies. The parser, the MIDI writer, the
 synthesiser, the web interface and every model provider adapter are written
-against the standard library. Optional extras — NumPy for faster synthesis,
-fluidsynth for soundfont-quality audio, ffmpeg for mp3, mido for hardware MIDI —
-are detected when present and never required.
+against the standard library.
+
+**Audio.** The built-in synthesiser works with nothing installed. For higher
+quality, install fluidsynth and a General MIDI soundfont — Plainsong will use
+them automatically. See [docs/audio.md](docs/audio.md) for installation and
+configuration.
+
+Optional extras — NumPy for faster synthesis, ffmpeg for format conversion, mido
+for hardware MIDI — are detected when present and never required.
 
 ## Timing that models the room
 
@@ -312,22 +329,60 @@ it is developed and where a client should install it from.
 
 Every command takes `--json`. Use it when parsing output.
 
+## Examples to start from
+
+Nine complete pieces ship in the repository, written to be read rather than
+generated. Each one is a template: copy it, change the chords, recompile.
+
+```bash
+plainsong compile examples/plainsong-1-creatures-of-interval.song --audio out.wav
+```
+
+| | |
+|---|---|
+| [Creatures of Interval](examples/plainsong-1-creatures-of-interval.song) | Four voices, plain 4/4 — the simplest complete piece |
+| [The Room Is Safe](examples/plainsong-2-the-room-is-safe.song) | Lyrics and melody together |
+| [Hermes Blues](examples/plainsong-3-hermes-blues.song) | Twelve-bar blues with swing |
+| [Closing Time](examples/plainsong-4-tap-closing-time.song) | The relative dialect — roman numerals and scale degrees |
+| [Deck Work](examples/plainsong-5-deck-work.song) | Several named players |
+| [Spacing: melody](examples/plainsong-6-spacing-melody.song) · [chords](examples/plainsong-7-spacing-chords.song) · [dashes](examples/plainsong-8-spacing-dashes.song) | How duration-by-spacing behaves |
+
+And five deliberately awkward files in
+[`examples/edge-cases/`](examples/edge-cases/) — polyrhythm, tempo shifts, dense
+chords, players with no chord row, and a kitchen sink. They exist to be
+compiled, not imitated.
+
+Several thousand more chord charts ship inside the package:
+
+```bash
+plainsong library "waltz"        # search by title, key or collection
+plainsong library --collections  # what is in there
+plainsong play stand-by-me       # render and play by name
+```
+
+See [the songbook](docs/songbook.md) for what is in it and why it is chord
+charts only.
+
 ## Documentation
 
 | | |
 |---|---|
+| [For agents](AGENTS.md) | **Read this first if you are one.** The contract, and the mistakes agents make here |
 | [Your first song](docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
 | [Arranging](docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
 | [Integration](docs/integration.md) | Driving Plainsong from other software |
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
 | [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
+| [Audio](docs/audio.md) | Rendering to WAV, MP3, and other formats; fluidsynth with soundfonts |
 | [MCP server](docs/mcp.md) | Driving the system from any MCP client |
 | [Ensemble sessions](docs/ensemble.md) | Several agents co-authoring one score |
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
 | [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
 | [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
+| [Voicing](docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
+| [The songbook](docs/songbook.md) | The bundled charts, and the copyright policy they follow |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |
 | [Specs](docs/specs.md) | The checks the system runs against itself |
@@ -375,8 +430,10 @@ in front of you, so you can confirm the above rather than take it on trust.
 
 Known limits, in the open:
 
-- The built-in synthesiser is a preview renderer. Mono, approximate timbres.
-  fluidsynth with a soundfont is the quality path.
+- The built-in synthesiser produces mono audio with synthetic timbres. It works
+  immediately with no dependencies. For real instrument samples, install
+  fluidsynth and a soundfont (five minutes on any OS). See
+  [docs/audio.md](docs/audio.md).
 - The host bridge cannot stream and reports no token usage.
 - The TUI needs `curses`, which stock Python on Windows does not ship.
 - No third-party MCP client has connected to the server yet; its protocol
