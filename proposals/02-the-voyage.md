@@ -331,13 +331,36 @@ way a `.song` file embeds in a document on a platform we do not control.
 *Exit:* the README's own example renders, prints legibly, and embeds in a
 GitHub markdown file as an `<img>`.
 
-### Phase 4 — Agentic merge
+### Phase 4 — Agentic merge — **the predicate is done; the ensemble is not**
 
-Move the ensemble from file locks to the matrix predicate. Row-disjoint edits
-merge without a lock, because they cannot conflict by construction.
+`notation/merge.py` decides it. An edit occupies a set of `(section, row, bar)`
+cells and two edits conflict exactly when those sets intersect.
 
-*Exit:* two agents concurrently rewriting `@bass` and `Melody:` produce a
-correct score with no serialisation, demonstrated rather than argued.
+*Exit, met for the notation:* two edits rewriting `@bass` and `Melody:` merge,
+with both changes surviving and the conflict list empty — demonstrated in
+`tests/test_merge.py` rather than argued.
+
+The matrix turned out to buy more than the plan claimed. Row-disjointness is
+something a file-per-voice layout already has, and `plainsong-mcp` already had
+it: parts are separate files with per-voice versions. What only a coordinate
+*per bar* can decide is that two edits to **the same row** do not overlap —
+bars 1–4 against bars 5–8 of one melody. That is the case the lock was actually
+serialising, and it is now decidable.
+
+Three rules earned their place by failing the suite when removed. Bars are
+numbered the way the arranger counts them, so a repeated row continues rather
+than restarting — number per row and two agents editing different bars look like
+one collision. A removal is a change, or a deleted row reads as no edit and the
+other side's work is resurrected. And the base is required: without it an
+untouched copy cannot be told from a deliberate revert, and a two-way diff
+silently undoes the other agent.
+
+**Still to do, and deliberately not done here.** `plainsong-mcp`'s `write_part`
+holds a `_FileLock` over the whole session directory. Replacing that with the
+predicate is a change to live concurrency control in another repository, and it
+wants its own diff, its own review, and a test that runs two writers at once
+rather than reasoning about them. The predicate it needs now exists and is
+published.
 
 ### Phase 5 — Syntax sugar **[research]**
 

@@ -4,6 +4,47 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### A conflict between two agents is now decidable
+
+`notation/merge.py` three-way merges two edits of one score. An edit occupies a
+set of `(section, row, bar)` cells, and two edits conflict **exactly when those
+sets intersect** — a decision procedure rather than a heuristic.
+
+```python
+from plainsong.notation.merge import merge
+result = merge(base, mine, theirs)
+result.ok           # False only when both sides wrote the same bar differently
+result.conflicts    # ["section 1, melody, bar 1"] -- a coordinate, not a diff hunk
+```
+
+Two agents rewriting `@bass` and `Melody:` are not in conflict in any sense a
+musician would recognise, and neither are two agents rewriting bars 1–4 and bars
+5–8 of the same melody. **That second case is what the time matrix buys**: a
+file-per-voice model can keep rows apart, but only a coordinate per bar can tell
+that two edits to one row do not overlap.
+
+Three things it gets right, each held by a test that fails when the rule is
+removed:
+
+- **Bars are numbered the way the arranger counts them.** A repeated row
+  continues rather than restarting, so two `Melody:` rows are bars 0–3, not
+  0–1 twice. Numbering per row would make two agents editing different bars
+  look like one collision.
+- **A removal is a change.** Otherwise deleting a row reads as no change at all,
+  and the other side's edit to it is resurrected by a merge that believed nobody
+  objected.
+- **The base is required.** Without it, one agent's untouched copy of a row
+  cannot be told from a deliberate revert, and a two-way diff silently undoes
+  the other agent's work.
+
+Writing the same thing on both sides is agreement, not collision. The merge
+reasons about written tokens rather than arranged notes, so it never changes
+anyone's music by rounding — and it does not claim the result is *good*: two
+agents can write compatible bars that make poor harmony together, which is a
+musical judgement and not a merge conflict.
+
+Phase 4 of `proposals/02-the-voyage.md`.
+
 ### `plainsong chart` draws a chord chart as SVG
 
 ```bash
