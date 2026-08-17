@@ -16,6 +16,7 @@ from typing import Any
 from .notation import parse
 from .notation.arrange import ArrangeOptions, arrange
 from .notation.ir import Arrangement, Diagnostic, Score
+from .notation.voicing import DEFAULT_STRATEGY
 from .render import backends
 from .render.audio import AudioOptions, Synthesiser
 from .render.midi import write_midi
@@ -92,11 +93,30 @@ class CompileResult:
         return "\n".join(lines)
 
 
+def _voicing(core: dict[str, Any], render: dict[str, Any]) -> str:
+    """Resolve the chord voicing strategy.
+
+    It belongs beside `bar_fill` in `[core]`, because it decides which notes
+    exist and so changes the MIDI rather than only the audio. But 1.0.0's
+    `docs/voicing.md` called it `render.voicing` at a point when nothing read
+    either name, so a reader who followed that page is being ignored in
+    silence -- which is the same fault this whole change is about.
+
+    `[core]` always carries a value because it has a default; `render.voicing`
+    has none, so its mere presence means somebody wrote it down.
+    """
+    chosen = core.get("voicing", DEFAULT_STRATEGY)
+    if chosen == DEFAULT_STRATEGY and "voicing" in render:
+        return str(render["voicing"])
+    return str(chosen)
+
+
 def _arrange_options(config: Config, overrides: dict[str, Any] | None = None) -> ArrangeOptions:
     render = config.section("render")
     core = config.section("core")
     options = ArrangeOptions(
         bar_fill=core.get("bar_fill", "rescale"),
+        voicing=_voicing(core, render),
         humanize=bool(render.get("humanize", True)),
         humanize_seed=int(render.get("humanize_seed", 42)),
         humanize_velocity=int(render.get("humanize_velocity", 6)),
