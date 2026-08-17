@@ -45,15 +45,69 @@ git push origin v1.1.0
 
 ## Before the first release
 
-Trusted Publishing has to be configured once, on PyPI, before the publish job can
-work. On the project's PyPI page add a publisher with:
+Nothing has ever been published. `plainsong` is unclaimed on PyPI, and so is
+`plainsong-mcp`. Two things must happen once, in this order, and neither can be
+done from inside this repository.
 
-- owner `SuperInstance`, repository `plainsong`
-- workflow `release.yml`
-- environment: leave empty unless you add one to the workflow
+### 1. Claim the name with Trusted Publishing
 
-Until that exists the publish step fails with an authentication error, and the
-fix is on PyPI rather than in this repository.
+Trusted Publishing is how the workflow authenticates. There is no API token in
+this repository and there should never be one — the job proves its identity with
+a short-lived OIDC credential, which is why it declares `id-token: write`.
+
+Because `plainsong` does not exist on PyPI yet, this is a **pending publisher**,
+created at <https://pypi.org/manage/account/publishing/> rather than on a project
+page that does not exist. Fill in:
+
+| field | value |
+|---|---|
+| PyPI project name | `plainsong` |
+| Owner | `SuperInstance` |
+| Repository name | `plainsong` |
+| Workflow name | `release.yml` |
+| Environment name | *leave empty* |
+
+The repository field is `plainsong`, not `plainsong-studio` — the GitHub
+repository was renamed. A publisher configured against the old name authenticates
+nothing.
+
+### 2. Check the version and the changelog, then tag
+
+```bash
+# The version lives in two places and a test fails if they disagree.
+grep version pyproject.toml plainsong/version.py
+
+# CHANGELOG.md must have the release under its number and today's date,
+# with no `## Unreleased` section left above it.
+
+git tag -a v1.0.0 -m "1.0.0"
+git push origin v1.0.0
+```
+
+The workflow does the rest. Watch it: the publish step runs after a successful
+build, so an authentication failure there means the artefacts were built and
+thrown away, and you fix it on PyPI and re-tag rather than in this repository.
+
+### What to do if the tag was wrong
+
+Delete the tag locally and remotely, fix the tree, tag again. A version number
+that reached PyPI cannot be reused — PyPI refuses a filename it has already
+seen, even after a delete — so if a bad `1.0.0` publishes, the next release is
+`1.0.1` and `1.0.0` stays broken forever. That is why the workflow refuses a tag
+that disagrees with `plainsong/version.py` before it builds anything.
+
+### Then the sibling
+
+`plainsong-mcp` depends on this package by git URL while this one is unpublished:
+
+```toml
+plainsong @ git+https://github.com/SuperInstance/plainsong@master
+```
+
+Once `plainsong` is on PyPI, change that to a version specifier
+(`plainsong>=1.0`) and publish `plainsong-mcp` the same way — its own pending
+publisher, owner `SuperInstance`, repository `plainsong-mcp`, workflow
+`release.yml`. It is the only line in that repository that has to change.
 
 ## What ships in the wheel
 
