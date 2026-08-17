@@ -2,7 +2,13 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.0.0 — 2026-08-17
+
+A rebuild. One engine replaces the two that had drifted apart, and everything
+that used to be compiled in — paths, model provider, rendering backend — is now
+resolved at runtime. Chord symbols are read by a grammar rather than a table,
+voicing keeps the note a symbol was written for, and the corpus is held to
+compiling to the same music rather than merely to compiling.
 
 ### The corpus is held to compiling to the same music, not merely to compiling
 
@@ -74,12 +80,6 @@ Notable changes, newest first. Dates are ISO 8601.
   attempt -- the diff caught `Bb-7` turning into a dominant, which would have
   moved 22 minor chords in this repository and sounded wrong without looking
   wrong. Warnings from `plainsong check` over every source fell from 185 to 87.
-
-## 1.0.0 — 2026-08-15
-
-A rebuild. One engine replaces the two that had drifted apart, and everything
-that used to be compiled in — paths, model provider, rendering backend — is now
-resolved at runtime.
 
 ### The compiler
 
