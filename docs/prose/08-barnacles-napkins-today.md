@@ -4,7 +4,7 @@ Gallery broke — one typo, whole wall fell.
 
 Hermes ran the board, made chaos sing.
 
-First TapScript tune breathed into a WAV.
+First Plainsong tune breathed into a WAV.
 
 Stories told — agents playing like ghosts.
 

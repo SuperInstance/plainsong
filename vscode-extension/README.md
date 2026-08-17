@@ -1,12 +1,12 @@
-# TapScript — VS Code Extension
+# Plainsong — VS Code Extension
 
-Syntax highlighting, snippets, and linting for **TapScript**, a plain-text music notation system for composing, sharing, and compiling music to MIDI and WAV.
+Syntax highlighting, snippets, and linting for **Plainsong**, a plain-text music notation system for composing, sharing, and compiling music to MIDI and WAV.
 
 ## Features
 
 ### 🎵 Syntax Highlighting
 
-Full TextMate grammar covering both TapScript notation styles:
+Full TextMate grammar covering both Plainsong notation styles:
 
 - **v2 (labeled):** `Chords:`, `Melody:`, `Lyrics:`, `@player` lines with `[MetaData]` blocks
 - **v1 (unlabeled):** Roman numeral chords (`i`, `IV`, `V7`) and scale-degree melodies (`1`, `5`, `b3`)
@@ -58,7 +58,7 @@ Real-time checks for:
 - **Unbalanced pipe delimiters** — flags lines with odd pipe counts
 - **Bar count mismatches** — flags lines within a section that have a different number of bars than other lines
 
-Run a manual check via the Command Palette: **TapScript: Check Pipe Delimiter Balance**
+Run a manual check via the Command Palette: **Plainsong: Check Pipe Delimiter Balance**
 
 ## Installation
 
@@ -66,7 +66,7 @@ Run a manual check via the Command Palette: **TapScript: Check Pipe Delimiter Ba
 
 1. Navigate to the extension directory:
    ```bash
-   cd tapscript-studio/vscode-extension
+   cd plainsong/vscode-extension
    ```
 
 2. Install dependencies:
@@ -81,7 +81,7 @@ Run a manual check via the Command Palette: **TapScript: Check Pipe Delimiter Ba
 
 4. Install the `.vsix` file:
    ```bash
-   code --install-extension tapscript-0.1.0.vsix
+   code --install-extension plainsong-0.1.0.vsix
    ```
 
 ### Or: Symlink for Development
@@ -89,7 +89,7 @@ Run a manual check via the Command Palette: **TapScript: Check Pipe Delimiter Ba
 For live development, symlink the folder into your VS Code extensions directory:
 
 ```bash
-ln -s /path/to/tapscript-studio/vscode-extension ~/.vscode/extensions/tapscript
+ln -s /path/to/plainsong/vscode-extension ~/.vscode/extensions/plainsong
 ```
 
 Then reload VS Code (`Ctrl+Shift+P` → "Reload Window").
@@ -100,7 +100,7 @@ Open the `vscode-extension/` folder in VS Code and press `F5` to launch a debug 
 
 ## File Association
 
-Files with the `.tap` extension are automatically recognized as TapScript files.
+Files with the `.song` extension are automatically recognized as Plainsong files.
 
 ## Language Configuration
 
@@ -111,11 +111,11 @@ Files with the `.tap` extension are automatically recognized as TapScript files.
 
 ## Notation Support
 
-This extension supports both TapScript notation variants:
+This extension supports both Plainsong notation variants:
 
 ### v2 (Labeled — recommended for new work)
 
-```tapscript
+```plainsong
 **TRACK: Neon Shadows**
 [MetaData]
 key: Am | tempo: 75 | swing: 10% | subdivision: 16th
@@ -129,7 +129,7 @@ Lyrics: | I     . . . | write . in code |
 
 ### v1 (Unlabeled — Roman numerals)
 
-```tapscript
+```plainsong
 Key: Am
 Tempo: 75
 Meter: 4/4
@@ -145,9 +145,9 @@ This extension does not contribute any settings yet. Future plans:
 
 - Custom color themes for musical elements
 - MIDI preview playback
-- Live error checking via the TapScript compiler
+- Live error checking via the Plainsong compiler
 - Auto-formatting and alignment
 
 ## License
 
-MIT — part of the [TapScript Studio](https://github.com/SuperInstance/tapscript-studio) project.
+MIT — part of the [Plainsong Studio](https://github.com/SuperInstance/plainsong) project.

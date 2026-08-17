@@ -17,12 +17,12 @@ import urllib.request
 from http.server import ThreadingHTTPServer
 from pathlib import Path
 
-from tapscript.agent.tools import Sandbox, ToolRegistry
-from tapscript.mcp import features, protocol
-from tapscript.mcp.protocol import Dispatcher
-from tapscript.mcp.resources import NotFound, Resources
-from tapscript.mcp.server import PROTOCOL_VERSION, Server, build_http_handler
-from tapscript.runtime.config import load_config
+from plainsong.agent.tools import Sandbox, ToolRegistry
+from plainsong.mcp import features, protocol
+from plainsong.mcp.protocol import Dispatcher
+from plainsong.mcp.resources import NotFound, Resources
+from plainsong.mcp.server import PROTOCOL_VERSION, Server, build_http_handler
+from plainsong.runtime.config import load_config
 
 NOTATION = """**TRACK: Protocol Sample**
 [MetaData]
@@ -93,7 +93,7 @@ class TestHandshake(unittest.TestCase):
         self.assertIn("tools", result["capabilities"])
         self.assertIn("resources", result["capabilities"])
         self.assertIn("prompts", result["capabilities"])
-        self.assertEqual(result["serverInfo"]["name"], "tapscript")
+        self.assertEqual(result["serverInfo"]["name"], "plainsong")
         self.assertTrue(result["instructions"].strip())
 
     def test_an_older_protocol_version_is_answered_in_kind(self) -> None:
@@ -272,7 +272,7 @@ class TestStdioTransport(unittest.TestCase):
         read all it wanted. The server must return 0 and say nothing rather than
         raising BrokenPipeError out of the serve loop -- there is nobody left to
         report it to, and a traceback makes a normal disconnect look like a
-        failure to whatever launched the server. Found by tapscript-mcp's CI:
+        failure to whatever launched the server. Found by plainsong-mcp's CI:
         `| grep -q` under `pipefail` closes the pipe on its first match.
         """
 
@@ -328,7 +328,7 @@ class TestHttpTransport(unittest.TestCase):
     def test_get_reports_what_is_served(self) -> None:
         with urllib.request.urlopen(self.url, timeout=10) as response:
             body = json.loads(response.read().decode("utf-8"))
-        self.assertEqual(body["server"], "tapscript")
+        self.assertEqual(body["server"], "plainsong")
         self.assertIn("tools/call", body["methods"])
 
 
@@ -341,19 +341,19 @@ class TestResources(unittest.TestCase):
 
     def test_the_fixed_resources_are_listed_and_readable(self) -> None:
         listed = {entry["uri"] for entry in self.client.result("resources/list")["resources"]}
-        self.assertIn("tapscript://notation-reference", listed)
-        self.assertIn("tapscript://capabilities", listed)
+        self.assertIn("plainsong://notation-reference", listed)
+        self.assertIn("plainsong://capabilities", listed)
         reference = self.client.result(
-            "resources/read", {"uri": "tapscript://notation-reference"}
+            "resources/read", {"uri": "plainsong://notation-reference"}
         )["contents"][0]
-        self.assertIn("TapScript notation reference", reference["text"])
+        self.assertIn("Plainsong notation reference", reference["text"])
         self.assertIn("markdown", reference["mimeType"])
 
     def test_specs_are_listed_and_readable(self) -> None:
         listed = [
             entry["uri"]
             for entry in self.client.result("resources/list")["resources"]
-            if entry["uri"].startswith("tapscript://spec/")
+            if entry["uri"].startswith("plainsong://spec/")
         ]
         self.assertTrue(listed, "no specs were offered as resources")
         body = json.loads(
@@ -369,14 +369,14 @@ class TestResources(unittest.TestCase):
         self.assertEqual(
             templates,
             {
-                "tapscript://library/{name}",
-                "tapscript://session/{name}",
-                "tapscript://spec/{id}",
+                "plainsong://library/{name}",
+                "plainsong://session/{name}",
+                "plainsong://spec/{id}",
             },
         )
 
     def test_an_unknown_uri_is_an_error(self) -> None:
-        answer = self.client.send("resources/read", {"uri": "tapscript://nowhere/1"})
+        answer = self.client.send("resources/read", {"uri": "plainsong://nowhere/1"})
         self.assertIn("error", answer)
         answer = self.client.send("resources/read", {"uri": "https://example.com"})
         self.assertIn("error", answer)
@@ -384,7 +384,7 @@ class TestResources(unittest.TestCase):
     def test_a_session_is_readable_as_a_resource(self) -> None:
         self.client.call("ensemble_open", session="reading", key="Am", tempo=96, bars=2)
         body = json.loads(
-            self.client.result("resources/read", {"uri": "tapscript://session/reading"})[
+            self.client.result("resources/read", {"uri": "plainsong://session/reading"})[
                 "contents"
             ][0]["text"]
         )
@@ -394,7 +394,7 @@ class TestResources(unittest.TestCase):
     def test_reading_directly_raises_not_found(self) -> None:
         resources = Resources(load_config())
         with self.assertRaises(NotFound):
-            resources.read("tapscript://library/definitely-not-here-1234")
+            resources.read("plainsong://library/definitely-not-here-1234")
 
 
 class TestPrompts(unittest.TestCase):
@@ -427,7 +427,7 @@ class TestPrompts(unittest.TestCase):
 
 class TestFeatures(unittest.TestCase):
     def setUp(self) -> None:
-        from tapscript.notation import arrange, parse
+        from plainsong.notation import arrange, parse
 
         self.arrangement = arrange(parse(NOTATION))
 
@@ -452,7 +452,7 @@ class TestFeatures(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_a_silent_bar_is_all_rest(self) -> None:
-        from tapscript.notation import arrange, parse
+        from plainsong.notation import arrange, parse
 
         silent_middle = "[A]\nMelody: | C4 D4 E4 F4 |\n\n[B]\nLyrics: | one two |\n\n[C]\nMelody: | G4 A4 B4 C5 |\n"
         bars = features.extract(arrange(parse(silent_middle)))
@@ -462,7 +462,7 @@ class TestFeatures(unittest.TestCase):
         self.assertEqual(bars[1].onsets, 0)
 
     def test_density_rises_with_the_notes(self) -> None:
-        from tapscript.notation import arrange, parse
+        from plainsong.notation import arrange, parse
 
         sparse = features.extract(arrange(parse("[A]\nMelody: | C4 . . . |\n")))[0]
         dense = features.extract(
@@ -471,7 +471,7 @@ class TestFeatures(unittest.TestCase):
         self.assertLess(sparse.values["note_density"], dense.values["note_density"])
 
     def test_register_is_read_from_the_pitches(self) -> None:
-        from tapscript.notation import arrange, parse
+        from plainsong.notation import arrange, parse
 
         low = features.extract(arrange(parse("[A]\n@bass | c1 . e1 . |\n")))[0]
         high = features.extract(arrange(parse("[A]\nMelody: | C7 . E7 . |\n")))[0]
@@ -536,7 +536,7 @@ class TestConductorBridge(unittest.TestCase):
 
 class TestSelfChecks(unittest.TestCase):
     def test_every_check_passes(self) -> None:
-        from tapscript.mcp import selfcheck
+        from plainsong.mcp import selfcheck
 
         for name in sorted(dir(selfcheck)):
             if not name.startswith("check_"):

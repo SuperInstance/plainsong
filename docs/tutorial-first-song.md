@@ -11,7 +11,7 @@ something here does not match what you see, that is a bug in this document.
 Python 3.10 or newer. Nothing else.
 
 ```bash
-pip install tapscript
+pip install plainsong
 ```
 
 Working from a clone instead? `pip install -e .` in the repository does the
@@ -22,18 +22,18 @@ same thing.
 Do not start from an empty file. Start from one that plays:
 
 ```bash
-tapscript new "Ocean Diner" -o ocean.tap
+plainsong new "Ocean Diner" -o ocean.song
 ```
 
 ```
-ok  wrote ocean.tap
-next: tapscript compile ocean.tap --audio out.wav
+ok  wrote ocean.song
+next: plainsong compile ocean.song --audio out.wav
 ```
 
 Open it. This is the whole language, and you can read it before anyone explains
 it:
 
-```tapscript
+```plainsong
 **TRACK: Ocean Diner**
 [MetaData]
 key: Am | tempo: 96 | swing: 0% | subdivision: 8th
@@ -57,7 +57,7 @@ here". Pitches carry an octave: `A4` is the A above middle C.
 ## 2. Hear it
 
 ```bash
-tapscript compile ocean.tap -o ocean.mid --audio ocean.wav --play
+plainsong compile ocean.song -o ocean.mid --audio ocean.wav --play
 ```
 
 ```
@@ -73,18 +73,18 @@ If it says `no audio player found`, both files were still written — open
 `ocean.wav` however you normally would. Nothing failed.
 
 **Pass `-o` if you want the MIDI beside your file.** Without it the MIDI goes
-into the workspace and the command prints the full path. `tapscript doctor`
+into the workspace and the command prints the full path. `plainsong doctor`
 shows where that is.
 
 ## 3. Change something and hear it again
 
 This is the loop. Everything else is detail.
 
-Open `ocean.tap` and change the first chord of the verse from `Am` to `Dm`.
+Open `ocean.song` and change the first chord of the verse from `Am` to `Dm`.
 Change `tempo: 96` to `tempo: 120`. Recompile:
 
 ```bash
-tapscript compile ocean.tap -o ocean.mid --audio ocean.wav
+plainsong compile ocean.song -o ocean.mid --audio ocean.wav
 ```
 
 ```
@@ -121,7 +121,7 @@ as a player.
 
 Sections are `[TAG] (Description)`. The tag is yours. Add a bridge:
 
-```tapscript
+```plainsong
 [BR] (Bridge - 4 Bars)
 Chords: | Dm . . . | Dm . . . | E7 . . . | E7 . . . |
 Melody: | D4 . F4 A4 | C5 . A4 F4 | E4 . G#4 B4 | E5 . . . |
@@ -151,11 +151,11 @@ Knowing what a mistake looks like is worth more than avoiding one.
 **A chord that is not a chord.** Change a chord to `Xm9`:
 
 ```bash
-tapscript check ocean.tap --strict
+plainsong check ocean.song --strict
 ```
 
 ```
-warn  ocean.tap:7: warning: chords row: nothing understood Xm9; silence there instead
+warn  ocean.song:7: warning: chords row: nothing understood Xm9; silence there instead
     hint: chords look like Am, F#m7, Bb; pitches carry an octave, as in A4 or c3 -- a bare A is not a pitch
 ```
 
@@ -179,21 +179,21 @@ Count your pipes. Rows in a section should agree.
 ## 8. Change key
 
 ```bash
-tapscript transpose ocean.tap D -o ocean-d.tap
+plainsong transpose ocean.song D -o ocean-d.song
 ```
 
 Every row moves, including the chords. Note that **the tonic moves and the mode
 stays**: `Am` transposed to `D` becomes `Dm`, not D major. If you want a
-specific number of semitones instead, `tapscript transpose ocean.tap -- -3`.
+specific number of semitones instead, `plainsong transpose ocean.song -- -3`.
 
 ## 9. Look around the library
 
 Several thousand chord charts ship with the tool:
 
 ```bash
-tapscript library "blues"
-tapscript library --collections
-tapscript play stand-by-me
+plainsong library "blues"
+plainsong library --collections
+plainsong play stand-by-me
 ```
 
 They are chord charts only — no melody, no lyrics. See
@@ -202,7 +202,7 @@ They are chord charts only — no melody, no lyrics. See
 ## 10. Know your machine
 
 ```bash
-tapscript doctor
+plainsong doctor
 ```
 
 Tells you what is installed, what each missing piece would add, and where your
@@ -215,11 +215,11 @@ the difference between a preview and something you would play to somebody.
 - [Arranging](tutorial-arranging.md) — several players, time signatures, the
   stage model
 - [Notation reference](notation.md) — the whole language
-- [Integration](integration.md) — driving TapScript from other software
+- [Integration](integration.md) — driving Plainsong from other software
 
 ## The finished file
 
-```tapscript
+```plainsong
 **TRACK: Ocean Diner**
 [MetaData]
 key: Am | tempo: 120 | swing: 0% | subdivision: 8th

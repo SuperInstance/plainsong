@@ -12,7 +12,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-from tapscript.render.backends import (
+from plainsong.render.backends import (
     BackendResult,
     audio_backends,
     choose_audio_backend,
@@ -21,7 +21,7 @@ from tapscript.render.backends import (
     render_with_fluidsynth,
     send_to_midi_port,
 )
-from tapscript.runtime.capabilities import Capability, CapabilityReport
+from plainsong.runtime.capabilities import Capability, CapabilityReport
 
 
 class TestAudioBackends(unittest.TestCase):
@@ -177,7 +177,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (False, "fluidsynth not in PATH")
                 result = render_with_fluidsynth(midi_path, wav_path, soundfont="/custom.sf2", report=report)
                 # The call should not raise; it reports the failure
@@ -196,7 +196,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (False, "fluidsynth: unknown option")
                 result = render_with_fluidsynth(midi_path, wav_path, report=report)
                 self.assertFalse(result.ok)
@@ -215,7 +215,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 result = render_with_fluidsynth(midi_path, wav_path, report=report)
                 self.assertFalse(result.ok)
@@ -234,7 +234,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 # Create an empty file to simulate fluidsynth producing nothing
                 wav_path.write_bytes(b"")
@@ -254,7 +254,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 # Create a non-empty file to simulate success
                 wav_path.write_bytes(b"fake wav data")
@@ -276,7 +276,7 @@ class TestRenderWithFluidsynth(unittest.TestCase):
             wav_path = Path(tmpdir) / "deep" / "nested" / "out.wav"
             midi_path.write_bytes(b"fake midi")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 # Ensure the directory exists before writing
                 wav_path.parent.mkdir(parents=True, exist_ok=True)
@@ -369,7 +369,7 @@ class TestConvertAudio(unittest.TestCase):
 
             with patch("shutil.which") as mock_which:
                 mock_which.return_value = "/usr/bin/ffmpeg"
-                with patch("tapscript.render.backends._run") as mock_run:
+                with patch("plainsong.render.backends._run") as mock_run:
                     mock_run.return_value = (False, "ffmpeg: codec not found")
                     result = convert_audio(source, target)
                     self.assertFalse(result.ok)
@@ -384,7 +384,7 @@ class TestConvertAudio(unittest.TestCase):
 
             with patch("shutil.which") as mock_which:
                 mock_which.return_value = "/usr/bin/ffmpeg"
-                with patch("tapscript.render.backends._run") as mock_run:
+                with patch("plainsong.render.backends._run") as mock_run:
                     mock_run.return_value = (True, "")
                     # Create the output file to simulate success
                     target.write_bytes(b"fake mp3 data")
@@ -402,7 +402,7 @@ class TestConvertAudio(unittest.TestCase):
 
             with patch("shutil.which") as mock_which:
                 mock_which.return_value = "/usr/bin/ffmpeg"
-                with patch("tapscript.render.backends._run") as mock_run:
+                with patch("plainsong.render.backends._run") as mock_run:
                     mock_run.return_value = (True, "")
                     # Ensure the directory exists before writing
                     target.parent.mkdir(parents=True, exist_ok=True)
@@ -464,7 +464,7 @@ class TestPlayAudio(unittest.TestCase):
             audio_path = Path(tmpdir) / "audio.wav"
             audio_path.write_bytes(b"fake audio")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 result = play_audio(audio_path, report=report)
                 self.assertTrue(result.ok)
@@ -484,7 +484,7 @@ class TestPlayAudio(unittest.TestCase):
             audio_path = Path(tmpdir) / "audio.wav"
             audio_path.write_bytes(b"fake audio")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (True, "")
                 play_audio(audio_path, report=report)
                 # Verify path was appended to the command
@@ -504,7 +504,7 @@ class TestPlayAudio(unittest.TestCase):
             audio_path = Path(tmpdir) / "audio.wav"
             audio_path.write_bytes(b"fake audio")
 
-            with patch("tapscript.render.backends._run") as mock_run:
+            with patch("plainsong.render.backends._run") as mock_run:
                 mock_run.return_value = (False, "ffplay: file not found")
                 result = play_audio(audio_path, report=report)
                 self.assertFalse(result.ok)

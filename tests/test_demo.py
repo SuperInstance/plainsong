@@ -21,8 +21,8 @@ import re
 import unittest
 from pathlib import Path
 
-from tapscript.notation import arrange, parse
-from tapscript.notation.arrange import ArrangeOptions
+from plainsong.notation import arrange, parse
+from plainsong.notation.arrange import ArrangeOptions
 
 PAGE = Path(__file__).resolve().parent.parent / "docs" / "demo" / "index.html"
 

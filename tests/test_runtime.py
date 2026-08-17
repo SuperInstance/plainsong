@@ -11,14 +11,14 @@ from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest import mock
 
-from tapscript.interfaces.cli import main
-from tapscript.library import Library
-from tapscript.notation import arrange, parse
-from tapscript.runtime.capabilities import probe
-from tapscript.runtime.config import DEFAULTS, dumps_toml, load_config
-from tapscript.runtime.paths import Paths, find_project_root
-from tapscript.specs import load_specs, verify_all
-from tapscript.transform import describe, retempo, to_text, transpose
+from plainsong.interfaces.cli import main
+from plainsong.library import Library
+from plainsong.notation import arrange, parse
+from plainsong.runtime.capabilities import probe
+from plainsong.runtime.config import DEFAULTS, dumps_toml, load_config
+from plainsong.runtime.paths import Paths, find_project_root
+from plainsong.specs import load_specs, verify_all
+from plainsong.transform import describe, retempo, to_text, transpose
 
 PIECE = """**TRACK: Runtime Test**
 [MetaData]
@@ -43,7 +43,7 @@ def run_cli(*argv: str) -> tuple[int, str, str]:
 class TestPaths(unittest.TestCase):
     def test_environment_overrides(self):
         with tempfile.TemporaryDirectory() as directory:
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": directory}):
                 self.assertEqual(str(Paths().config_dir), directory)
 
     def test_project_root_detection(self):
@@ -51,11 +51,11 @@ class TestPaths(unittest.TestCase):
 
     def test_workspace_is_project_local_inside_a_project(self):
         paths = Paths(project_root=Path("/tmp/example-project"))
-        self.assertEqual(paths.workspace, Path("/tmp/example-project/.tapscript/workspace"))
+        self.assertEqual(paths.workspace, Path("/tmp/example-project/.plainsong/workspace"))
 
     def test_no_home_directory_is_hardcoded(self):
         """Regression: earlier versions wrote to a fixed ~/.openclaw path."""
-        source = Path(__file__).resolve().parent.parent / "tapscript"
+        source = Path(__file__).resolve().parent.parent / "plainsong"
         offenders = []
         for path in source.rglob("*.py"):
             text = path.read_text(encoding="utf-8")
@@ -72,22 +72,22 @@ class TestConfig(unittest.TestCase):
         self.assertEqual(config.get("render", "ticks_per_beat"), 480)
 
     def test_environment_overrides_defaults(self):
-        with mock.patch.dict(os.environ, {"TAPSCRIPT_PROVIDER": "deepseek"}):
+        with mock.patch.dict(os.environ, {"PLAINSONG_PROVIDER": "deepseek"}):
             self.assertEqual(load_config().get("llm", "provider"), "deepseek")
 
     def test_typed_environment_coercion(self):
-        with mock.patch.dict(os.environ, {"TAPSCRIPT_WEB_PORT": "9000"}):
+        with mock.patch.dict(os.environ, {"PLAINSONG_WEB_PORT": "9000"}):
             self.assertEqual(load_config().get("web", "port"), 9000)
 
     def test_file_is_read(self):
         with tempfile.TemporaryDirectory() as directory:
             Path(directory, "config.toml").write_text('[llm]\nprovider = "gemini"\n')
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}, clear=False):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": directory}, clear=False):
                 self.assertEqual(load_config().get("llm", "provider"), "gemini")
 
     def test_save_writes_only_the_differences(self):
         with tempfile.TemporaryDirectory() as directory:
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}, clear=False):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": directory}, clear=False):
                 config = load_config()
                 config.set("llm", "provider", "xai")
                 target = config.save()
@@ -116,7 +116,7 @@ class TestCapabilities(unittest.TestCase):
         json.dumps(probe().as_dict())
 
     def test_host_agent_detection(self):
-        with mock.patch.dict(os.environ, {"TAPSCRIPT_HOST_AGENT": "openclaw"}, clear=False):
+        with mock.patch.dict(os.environ, {"PLAINSONG_HOST_AGENT": "openclaw"}, clear=False):
             self.assertTrue(probe(refresh=True).has("host_agent"))
 
 
@@ -206,7 +206,7 @@ class TestCli(unittest.TestCase):
 
     def test_new_then_info_then_compile(self):
         with tempfile.TemporaryDirectory() as directory:
-            song = Path(directory) / "song.tap"
+            song = Path(directory) / "song.song"
             self.assertEqual(run_cli("new", "Test Song", "-o", str(song))[0], 0)
             self.assertTrue(song.exists())
 
@@ -224,7 +224,7 @@ class TestCli(unittest.TestCase):
 
     def test_json_output_is_parseable(self):
         with tempfile.TemporaryDirectory() as directory:
-            song = Path(directory) / "song.tap"
+            song = Path(directory) / "song.song"
             run_cli("new", "Json Song", "-o", str(song))
             code, out, _err = run_cli("--json", "info", str(song))
             self.assertEqual(code, 0)
@@ -232,7 +232,7 @@ class TestCli(unittest.TestCase):
 
     def test_check_reports_a_broken_file(self):
         with tempfile.TemporaryDirectory() as directory:
-            broken = Path(directory) / "broken.tap"
+            broken = Path(directory) / "broken.song"
             broken.write_text("this file has no notation in it at all\n")
             code, _out, err = run_cli("check", str(broken))
             self.assertEqual(code, 1)
@@ -240,20 +240,20 @@ class TestCli(unittest.TestCase):
 
     def test_check_passes_a_good_file(self):
         with tempfile.TemporaryDirectory() as directory:
-            song = Path(directory) / "song.tap"
+            song = Path(directory) / "song.song"
             run_cli("new", "Good", "-o", str(song))
             self.assertEqual(run_cli("check", str(song))[0], 0)
 
     def test_transpose_to_stdout(self):
         with tempfile.TemporaryDirectory() as directory:
-            song = Path(directory) / "song.tap"
+            song = Path(directory) / "song.song"
             run_cli("new", "Move Me", "-o", str(song))
             code, out, _err = run_cli("transpose", str(song), "C")
             self.assertEqual(code, 0)
             self.assertIn("key: C", out)
 
     def test_missing_file_is_reported(self):
-        code, _out, err = run_cli("compile", "/definitely/not/here.tap")
+        code, _out, err = run_cli("compile", "/definitely/not/here.song")
         self.assertEqual(code, 2)
         self.assertIn("no such file", err)
 
@@ -276,13 +276,13 @@ class TestCli(unittest.TestCase):
 
         A release is a pushed tag, and the number in the wheel comes from
         `pyproject.toml` while everything a user sees at runtime comes from
-        `version.py`. If they drift, `tapscript --version` reports one thing and
+        `version.py`. If they drift, `plainsong --version` reports one thing and
         `pip show` another, and the release that revealed it is already published.
         """
         import re
         from pathlib import Path
 
-        from tapscript.version import __version__
+        from plainsong.version import __version__
 
         pyproject = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(
             encoding="utf-8"
@@ -292,7 +292,7 @@ class TestCli(unittest.TestCase):
         self.assertEqual(
             declared.group(1),
             __version__,
-            "pyproject.toml and tapscript/version.py disagree",
+            "pyproject.toml and plainsong/version.py disagree",
         )
 
 

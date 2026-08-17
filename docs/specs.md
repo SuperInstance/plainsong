@@ -4,10 +4,10 @@ A spec is a short TOML file stating something the system is supposed to do and
 naming the checks that prove it.
 
 ```bash
-tapscript spec              # run them
-tapscript spec --list       # what exists
-tapscript spec --tag fast   # a subset
-tapscript doctor --specs    # host report and specs together
+plainsong spec              # run them
+plainsong spec --list       # what exists
+plainsong spec --tag fast   # a subset
+plainsong doctor --specs    # host report and specs together
 ```
 
 ```
@@ -69,7 +69,7 @@ All three are picked up.
 |---|---|---|
 | `python` | `module:function` | the function returns true, or `(True, detail)` |
 | `command` | a command line | it exits zero, and `expect` appears in the output if set |
-| `capability` | a capability name | `tapscript doctor` reports it present |
+| `capability` | a capability name | `plainsong doctor` reports it present |
 | `file` | a path | the file exists |
 
 `requires` names a capability that must be present for the check to mean
@@ -79,11 +79,11 @@ instead of shouting at you.
 
 A Python check returns `(ok, detail)`, must not need a network, and must not
 write outside a temporary directory. The ones that ship are in
-`tapscript/selfcheck.py` and are worth reading before writing your own.
+`plainsong/selfcheck.py` and are worth reading before writing your own.
 
 ## In CI
 
-`tapscript spec` exits non-zero if any spec fails, so it works as a build step.
+`plainsong spec` exits non-zero if any spec fails, so it works as a build step.
 The repository's own CI runs it on every supported Python version and operating
 system before the test suite, with nothing installed — which is what keeps the
 "works with no dependencies" claim from quietly becoming false.

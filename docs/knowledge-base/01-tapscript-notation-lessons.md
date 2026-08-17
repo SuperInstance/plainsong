@@ -1,8 +1,8 @@
-# TapScript Design Lessons: Five Hard-Won Truths
+# Plainsong Design Lessons: Five Hard-Won Truths
 
 ## 1. ASCII is a Trap; Unicode is the Escape Hatch
 
-Early TapScript used pure ASCII to stay "terminal-friendly." `C#4` and `Db4` were fine, but accidentals in chords became unreadable: `C#m7b5` looked like a regex. Switching to Unicode symbols (`♯`, `♭`, `𝄪`) reduced cognitive load by 40% in user tests. The lesson: **never sacrifice musical clarity for byte simplicity.** A score is not a config file.
+Early Plainsong used pure ASCII to stay "terminal-friendly." `C#4` and `Db4` were fine, but accidentals in chords became unreadable: `C#m7b5` looked like a regex. Switching to Unicode symbols (`♯`, `♭`, `𝄪`) reduced cognitive load by 40% in user tests. The lesson: **never sacrifice musical clarity for byte simplicity.** A score is not a config file.
 
 ```
 // Before (ASCII)
@@ -74,4 +74,4 @@ D5   F5   A5   D6
 
 Vertical alignment implies simultaneity. Horizontal spacing implies duration. We added a `@grid` mode that auto-aligns columns to beats, and suddenly users stopped thinking about parsing and started *hearing* the page. Also, use line breaks for phrases, not for "wrap length." A phrase is a visual unit.
 
-**Final takeaway:** TapScript's success came from treating notation as a *visual language* with musical affordances, not a text format with musical annotations. Every design decision should pass the test: "Does this look like sheet music to a trained eye?"
+**Final takeaway:** Plainsong's success came from treating notation as a *visual language* with musical affordances, not a text format with musical annotations. Every design decision should pass the test: "Does this look like sheet music to a trained eye?"

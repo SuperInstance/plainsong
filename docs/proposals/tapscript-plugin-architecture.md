@@ -1,4 +1,4 @@
-# TapScript: Interactive Music Notation for Markdown
+# Plainsong: Interactive Music Notation for Markdown
 
 ## (1) Markdown Fence Syntax
 
@@ -7,7 +7,7 @@
 
 Here's a track that renders as an interactive player:
 
-```tapscript
+```plainsong
 **TRACK: Neon Shadows**
 [MetaData]
 key: Am | tempo: 75 | swing: 10% | subdivision: 16th
@@ -33,7 +33,7 @@ Lyrics: | This  is    the   new  | syn   -     tax   for  |
 
 ```json
 {
-  "scopeName": "source.tapscript",
+  "scopeName": "source.plainsong",
   "patterns": [
     { "include": "#track-header" },
     { "include": "#metadata" },
@@ -47,43 +47,43 @@ Lyrics: | This  is    the   new  | syn   -     tax   for  |
     "track-header": {
       "match": "^\\*\\*(TRACK:.*?)\\*\\*",
       "captures": {
-        "1": { "name": "entity.name.track.tapscript" }
+        "1": { "name": "entity.name.track.plainsong" }
       }
     },
     "metadata": {
       "match": "^\\[MetaData\\]",
-      "name": "keyword.metadata.tapscript"
+      "name": "keyword.metadata.plainsong"
     },
     "section-header": {
       "match": "^\\[([A-Z0-9]+)\\]\\s*(?:\\((.*?)\\))?",
       "captures": {
-        "1": { "name": "entity.name.section.tapscript" },
-        "2": { "name": "comment.section-description.tapscript" }
+        "1": { "name": "entity.name.section.plainsong" },
+        "2": { "name": "comment.section-description.plainsong" }
       }
     },
     "chords-line": {
       "match": "^Chords:\\s*(.*)$",
       "captures": {
-        "1": { "name": "entity.chord.tapscript" }
+        "1": { "name": "entity.chord.plainsong" }
       }
     },
     "melody-line": {
       "match": "^Melody:\\s*(.*)$",
       "captures": {
-        "1": { "name": "entity.melody.tapscript" }
+        "1": { "name": "entity.melody.plainsong" }
       }
     },
     "lyrics-line": {
       "match": "^Lyrics:\\s*(.*)$",
       "captures": {
-        "1": { "name": "string.lyrics.tapscript" }
+        "1": { "name": "string.lyrics.plainsong" }
       }
     },
     "instrument-line": {
       "match": "^@(\\w+)\\s+(.*)$",
       "captures": {
-        "1": { "name": "entity.name.instrument.tapscript" },
-        "2": { "name": "entity.pattern.tapscript" }
+        "1": { "name": "entity.name.instrument.plainsong" },
+        "2": { "name": "entity.pattern.plainsong" }
       }
     }
   }
@@ -93,7 +93,7 @@ Lyrics: | This  is    the   new  | syn   -     tax   for  |
 ### Webview Content Structure
 
 ```html
-<div class="tapscript-player" data-key="Am" data-tempo="75">
+<div class="plainsong-player" data-key="Am" data-tempo="75">
   <div class="ts-header">
     <h3>Neon Shadows</h3>
     <div class="ts-controls">
@@ -127,8 +127,8 @@ Lyrics: | This  is    the   new  | syn   -     tax   for  |
 ## (3) markdown-it Plugin Output
 
 ```html
-<div class="tapscript-container">
-  <div class="tapscript-player" data-key="Am" data-tempo="75" data-swing="10">
+<div class="plainsong-container">
+  <div class="plainsong-player" data-key="Am" data-tempo="75" data-swing="10">
     <div class="ts-header">
       <h3>Neon Shadows</h3>
       <div class="ts-controls">
@@ -146,7 +146,7 @@ Lyrics: | This  is    the   new  | syn   -     tax   for  |
   <script>
     // Inline script for player initialization
     (function() {
-      const player = document.querySelector('.tapscript-player');
+      const player = document.querySelector('.plainsong-player');
       player.play = () => { /* Web Audio API implementation */ };
       player.pause = () => { /* Web Audio API implementation */ };
     })();
@@ -216,7 +216,7 @@ interface MetaData {
   subdivision: '8th' | '16th' | '32nd';
 }
 
-interface TapScriptAST {
+interface PlainsongAST {
   trackName: string;
   metadata: MetaData;
   sections: Section[];
@@ -234,7 +234,7 @@ interface CompileError {
 ### Pipeline Stages
 
 ```typescript
-class TapScriptCompiler {
+class PlainsongCompiler {
   // Stage 1: Lexical Analysis (text → tokens)
   lexer(input: string): Token[] {
     // Token types: HEADER, METADATA, SECTION, CHORD, MELODY, LYRIC, INSTRUMENT
@@ -242,12 +242,12 @@ class TapScriptCompiler {
   }
 
   // Stage 2: Parsing (tokens → AST)
-  parser(tokens: Token[]): TapScriptAST {
+  parser(tokens: Token[]): PlainsongAST {
     // Build hierarchical structure
   }
 
   // Stage 3: AST → MIDI
-  toMidi(ast: TapScriptAST): MidiData {
+  toMidi(ast: PlainsongAST): MidiData {
     // Convert notes to MIDI numbers (C4 = 60)
     // Create MIDI events with timing
   }
@@ -308,7 +308,7 @@ class TranspositionHandler {
     this.updateMelodyDisplay(newAST);
   }
 
-  private transposeAST(ast: TapScriptAST, semitones: number): TapScriptAST {
+  private transposeAST(ast: PlainsongAST, semitones: number): PlainsongAST {
     // Deep clone AST
     const newAST = structuredClone(ast);
     

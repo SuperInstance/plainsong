@@ -4,7 +4,7 @@
 
 | Repo | Metaphor | Role | Language |
 |------|----------|------|----------|
-| **TapScript** | The Score | Notation → SWMIDI-8 compilation | Python |
+| **Plainsong** | The Score | Notation → SWMIDI-8 compilation | Python |
 | **Tensor-MIDI** | The Instrument | 12-pulse DAW, BeatClock, Jazz Analyzer | JavaScript |
 | **Plato-Music-Sync** | The Conductor | Groove, counterpoint, cadence, polyrhythm | Rust |
 | **Musician-Soul** | The Player | Persona evolution, pattern digestion, soul_print | Rust |
@@ -25,7 +25,7 @@
                         │ agent writes in their evolved voice
                         ▼
               ┌─────────────────┐
-              │   TapScript      │  (the score)
+              │   Plainsong      │  (the score)
               │   notation       │
               │   ┌───────────┐  │
               │   │ Lexer     │  │

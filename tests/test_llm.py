@@ -15,17 +15,17 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from tapscript.llm import build_provider, load_catalog, mask, provider_status
-from tapscript.llm.catalog import ProviderInfo
-from tapscript.llm.credentials import forget_key, resolve_key, store_key
-from tapscript.llm.providers import ADAPTERS
-from tapscript.llm.providers.anthropic import AnthropicProvider
-from tapscript.llm.providers.gemini import GeminiProvider
-from tapscript.llm.providers.host import _parse_reply, _render_prompt
-from tapscript.llm.providers.openai_compat import OpenAICompatibleProvider
-from tapscript.llm.registry import auto_select
-from tapscript.llm.types import CompletionRequest, Message, ProviderError, ToolCall, ToolSpec
-from tapscript.runtime.paths import Paths
+from plainsong.llm import build_provider, load_catalog, mask, provider_status
+from plainsong.llm.catalog import ProviderInfo
+from plainsong.llm.credentials import forget_key, resolve_key, store_key
+from plainsong.llm.providers import ADAPTERS
+from plainsong.llm.providers.anthropic import AnthropicProvider
+from plainsong.llm.providers.gemini import GeminiProvider
+from plainsong.llm.providers.host import _parse_reply, _render_prompt
+from plainsong.llm.providers.openai_compat import OpenAICompatibleProvider
+from plainsong.llm.registry import auto_select
+from plainsong.llm.types import CompletionRequest, Message, ProviderError, ToolCall, ToolSpec
+from plainsong.runtime.paths import Paths
 
 TOOL = ToolSpec(
     name="write_score",
@@ -36,8 +36,8 @@ TOOL = ToolSpec(
 CONVERSATION = [
     Message.system("be helpful"),
     Message.user("write a waltz"),
-    Message.assistant("", [ToolCall(id="call_1", name="write_score", arguments={"path": "a.tap"})]),
-    Message.tool("call_1", "wrote a.tap"),
+    Message.assistant("", [ToolCall(id="call_1", name="write_score", arguments={"path": "a.song"})]),
+    Message.tool("call_1", "wrote a.song"),
 ]
 
 
@@ -83,7 +83,7 @@ class TestCatalogue(unittest.TestCase):
                     }
                 )
             )
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": str(config_dir)}):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": str(config_dir)}):
                 catalog = load_catalog(Paths())
             self.assertIn("housemodel", catalog)
             self.assertEqual(catalog["housemodel"].base_url, "http://10.0.0.5:8000/v1")
@@ -102,7 +102,7 @@ class TestCredentials(unittest.TestCase):
 
     def test_store_and_forget(self):
         with tempfile.TemporaryDirectory() as directory:
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}, clear=False):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": directory}, clear=False):
                 paths = Paths()
                 info = ProviderInfo(id="fake", label="Fake", env=["FAKE_KEY_NOT_SET"])
                 store_key("fake", "sk-secret", paths)
@@ -113,7 +113,7 @@ class TestCredentials(unittest.TestCase):
     @unittest.skipIf(os.name == "nt", "POSIX permission bits do not apply on Windows")
     def test_stored_keys_are_not_world_readable(self):
         with tempfile.TemporaryDirectory() as directory:
-            with mock.patch.dict(os.environ, {"TAPSCRIPT_CONFIG_DIR": directory}, clear=False):
+            with mock.patch.dict(os.environ, {"PLAINSONG_CONFIG_DIR": directory}, clear=False):
                 path = store_key("fake", "sk-secret", Paths())
             self.assertEqual(path.stat().st_mode & 0o077, 0)
 
@@ -134,7 +134,7 @@ class TestOpenAIAdapter(unittest.TestCase):
         self.assertEqual(roles, ["system", "user", "assistant", "tool"])
         self.assertEqual(
             json.loads(payload["messages"][2]["tool_calls"][0]["function"]["arguments"]),
-            {"path": "a.tap"},
+            {"path": "a.song"},
         )
         self.assertEqual(payload["messages"][3]["tool_call_id"], "call_1")
 
@@ -156,7 +156,7 @@ class TestOpenAIAdapter(unittest.TestCase):
                         "tool_calls": [
                             {
                                 "id": "c1",
-                                "function": {"name": "write_score", "arguments": '{"path": "b.tap"}'},
+                                "function": {"name": "write_score", "arguments": '{"path": "b.song"}'},
                             }
                         ],
                     },
@@ -164,10 +164,10 @@ class TestOpenAIAdapter(unittest.TestCase):
             ],
             "usage": {"prompt_tokens": 11, "completion_tokens": 5},
         }
-        with mock.patch("tapscript.llm.providers.openai_compat.request_json", return_value=payload):
+        with mock.patch("plainsong.llm.providers.openai_compat.request_json", return_value=payload):
             response = self.provider.complete(CompletionRequest(messages=CONVERSATION))
         self.assertEqual(response.text, "on it")
-        self.assertEqual(response.tool_calls[0].arguments, {"path": "b.tap"})
+        self.assertEqual(response.tool_calls[0].arguments, {"path": "b.song"})
         self.assertEqual(response.usage.total, 16)
 
     def test_malformed_tool_arguments_do_not_crash(self):
@@ -181,12 +181,12 @@ class TestOpenAIAdapter(unittest.TestCase):
                 }
             ]
         }
-        with mock.patch("tapscript.llm.providers.openai_compat.request_json", return_value=payload):
+        with mock.patch("plainsong.llm.providers.openai_compat.request_json", return_value=payload):
             response = self.provider.complete(CompletionRequest(messages=CONVERSATION))
         self.assertEqual(response.tool_calls[0].arguments, {"_raw": "not json"})
 
     def test_empty_choices_raises_a_clear_error(self):
-        with mock.patch("tapscript.llm.providers.openai_compat.request_json", return_value={"choices": []}):
+        with mock.patch("plainsong.llm.providers.openai_compat.request_json", return_value={"choices": []}):
             with self.assertRaises(ProviderError):
                 self.provider.complete(CompletionRequest(messages=CONVERSATION))
 
@@ -219,11 +219,11 @@ class TestAnthropicAdapter(unittest.TestCase):
             "stop_reason": "tool_use",
             "content": [
                 {"type": "text", "text": "writing"},
-                {"type": "tool_use", "id": "t1", "name": "write_score", "input": {"path": "c.tap"}},
+                {"type": "tool_use", "id": "t1", "name": "write_score", "input": {"path": "c.song"}},
             ],
             "usage": {"input_tokens": 7, "output_tokens": 3},
         }
-        with mock.patch("tapscript.llm.providers.anthropic.request_json", return_value=payload):
+        with mock.patch("plainsong.llm.providers.anthropic.request_json", return_value=payload):
             response = self.provider.complete(CompletionRequest(messages=CONVERSATION))
         self.assertEqual(response.text, "writing")
         self.assertEqual(response.tool_calls[0].name, "write_score")
@@ -265,14 +265,14 @@ class TestGeminiAdapter(unittest.TestCase):
             ],
             "usageMetadata": {"promptTokenCount": 4, "candidatesTokenCount": 2},
         }
-        with mock.patch("tapscript.llm.providers.gemini.request_json", return_value=payload):
+        with mock.patch("plainsong.llm.providers.gemini.request_json", return_value=payload):
             response = self.provider.complete(CompletionRequest(messages=CONVERSATION))
         self.assertEqual(response.text, "hello")
         self.assertEqual(response.usage.output_tokens, 2)
 
     def test_blocked_prompt_raises(self):
         payload = {"promptFeedback": {"blockReason": "SAFETY"}}
-        with mock.patch("tapscript.llm.providers.gemini.request_json", return_value=payload):
+        with mock.patch("plainsong.llm.providers.gemini.request_json", return_value=payload):
             with self.assertRaises(ProviderError) as caught:
                 self.provider.complete(CompletionRequest(messages=CONVERSATION))
         self.assertIn("SAFETY", str(caught.exception))
@@ -289,10 +289,10 @@ class TestHostBridge(unittest.TestCase):
     def test_reply_forms(self):
         self.assertEqual(_parse_reply('{"text": "hello"}'), ("hello", []))
         self.assertEqual(_parse_reply("just prose"), ("just prose", []))
-        text, calls = _parse_reply('{"tool": "write_score", "arguments": {"path": "x.tap"}}')
+        text, calls = _parse_reply('{"tool": "write_score", "arguments": {"path": "x.song"}}')
         self.assertEqual(text, "")
         self.assertEqual(calls[0].name, "write_score")
-        self.assertEqual(calls[0].arguments["path"], "x.tap")
+        self.assertEqual(calls[0].arguments["path"], "x.song")
 
     def test_fenced_reply(self):
         text, _calls = _parse_reply('```json\n{"text": "fenced"}\n```')
@@ -318,7 +318,7 @@ class TestEchoProvider(unittest.TestCase):
         self.assertTrue(ok)
 
     def test_produces_valid_notation(self):
-        from tapscript.notation import parse
+        from plainsong.notation import parse
 
         provider = build_provider("echo")
         response = provider.complete(
@@ -345,24 +345,24 @@ class TestRegistry(unittest.TestCase):
     def test_missing_key_is_explained(self):
         with mock.patch.dict(os.environ, {}, clear=True):
             with tempfile.TemporaryDirectory() as directory:
-                os.environ["TAPSCRIPT_CONFIG_DIR"] = directory
+                os.environ["PLAINSONG_CONFIG_DIR"] = directory
                 with self.assertRaises(ProviderError) as caught:
                     build_provider("openai")
         message = str(caught.exception)
         self.assertIn("OPENAI_API_KEY", message)
-        self.assertIn("tapscript setup", message)
+        self.assertIn("plainsong setup", message)
 
     def test_auto_select_prefers_a_configured_key(self):
         with tempfile.TemporaryDirectory() as directory:
-            env = {"TAPSCRIPT_CONFIG_DIR": directory, "DEEPSEEK_API_KEY": "x"}
+            env = {"PLAINSONG_CONFIG_DIR": directory, "DEEPSEEK_API_KEY": "x"}
             with mock.patch.dict(os.environ, env, clear=True):
                 self.assertEqual(auto_select(Paths()), "deepseek")
 
     def test_auto_select_falls_back_to_the_host_agent(self):
         with tempfile.TemporaryDirectory() as directory:
-            env = {"TAPSCRIPT_CONFIG_DIR": directory, "TAPSCRIPT_HOST_AGENT": "claude-code"}
+            env = {"PLAINSONG_CONFIG_DIR": directory, "PLAINSONG_HOST_AGENT": "claude-code"}
             with mock.patch.dict(os.environ, env, clear=True):
-                from tapscript.runtime.capabilities import probe
+                from plainsong.runtime.capabilities import probe
 
                 self.assertEqual(auto_select(Paths(), probe(refresh=True)), "host")
 

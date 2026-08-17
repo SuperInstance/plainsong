@@ -1,0 +1,26 @@
+```plainsong
+key: D dorian
+tempo: 110
+time: 4/4
+
+[Main Riff]
+D4-- A4-- F4-- C5--
+D4-- A4-- F4-- C5--
+D4-- A4 C4 C5-- B4--
+A4---- r---- D4 r
+
+[Verse]
+D4~~~ F4~~~ A4~~~ D5~~~
+C5~~~ A4~~~ F4~~~ D4~~~
+E4~~~ G4~~~ B4~~~ E5~~~
+D5~~~ B4~~~ G4~~~ E4~~~
+
+[Bridge]
+D4~~+F4~~+A4~~  C5~~+E5~~+G5~~
+D5~~+F5~~+A5~~  G5~~+E5~~+C5~~
+F4~~~ E4~~~ D4~~~ r~~~~
+r~~~~ D4----
+
+@flash: guitar | fingerpicking | vel: 75
+@hermes: bass | walking | vel: 80
+```

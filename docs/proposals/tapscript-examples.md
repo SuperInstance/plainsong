@@ -1,4 +1,4 @@
-Here are three complete TapScript compositions, crafted with the specified structures and aesthetics.
+Here are three complete Plainsong compositions, crafted with the specified structures and aesthetics.
 
 ---
 

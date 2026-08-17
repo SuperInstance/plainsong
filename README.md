@@ -1,9 +1,9 @@
-# TapScript
+# Plainsong
 
 Music notation you can write in any text editor, read like a lead sheet, keep in
 version control, and compile to MIDI and audio.
 
-```tapscript
+```plainsong
 [V1] (Verse - 4 Bars)
 Chords: | Am . . . | F . . . | C . . . | G . . . |
 Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
@@ -31,16 +31,16 @@ and they do not.
 Python 3.10 or newer. Nothing else to install.
 
 ```bash
-git clone https://github.com/SuperInstance/tapscript-studio
-cd tapscript-studio
+git clone https://github.com/SuperInstance/plainsong
+cd plainsong
 pip install -e .
 ```
 
 Now make a piece and listen to it:
 
 ```bash
-tapscript new "My First Song" -o first.tap
-tapscript compile first.tap -o first.mid --audio first.wav --play
+plainsong new "My First Song" -o first.song
+plainsong compile first.song -o first.mid --audio first.wav --play
 ```
 
 ```
@@ -56,10 +56,10 @@ You now have a MIDI file any DAW will open and a WAV you can play anywhere. If
 `--play` says it cannot find an audio player, the files were still written — open
 `first.wav` however you normally would.
 
-Open `first.tap` in your editor. It is a complete, working piece, and it is the
+Open `first.song` in your editor. It is a complete, working piece, and it is the
 fastest way to learn the format:
 
-```tapscript
+```plainsong
 **TRACK: My First Song**
 [MetaData]
 key: Am | tempo: 96 | swing: 0% | subdivision: 8th
@@ -120,7 +120,7 @@ will tell you what it had to drop.
 
 ### Two rows of the same kind run in sequence
 
-```tapscript
+```plainsong
 [V1] (Verse - 8 Bars)
 Melody: | A4 . C5 E5 | F4 . A4 C5 | E4 . G4 C5 | D4 . F4 B4 |
 Melody: | C5 . E5 G5 | A4 . C5 E5 | F4 . A4 C5 | E4 . . . |
@@ -136,17 +136,17 @@ Everything below works on the file you just made.
 **Look at it.**
 
 ```bash
-tapscript info first.tap            # key, tempo, sections, bars, length
-tapscript info first.tap --verbose  # every diagnostic it can give you
-tapscript check first.tap           # is anything wrong?
+plainsong info first.song            # key, tempo, sections, bars, length
+plainsong info first.song --verbose  # every diagnostic it can give you
+plainsong check first.song           # is anything wrong?
 ```
 
 **Move it to another key.**
 
 ```bash
-tapscript transpose first.tap C          # print it
-tapscript transpose first.tap C -o c.tap # write it
-tapscript transpose first.tap -- -3      # or by semitones
+plainsong transpose first.song C          # print it
+plainsong transpose first.song C -o c.song # write it
+plainsong transpose first.song -- -3      # or by semitones
 ```
 
 Transposition moves the tonic and keeps the mode, so `Am` transposed to `C` is
@@ -168,16 +168,16 @@ feel; `time: 3/4` and `6/8` work as you would expect.
 languages:
 
 ```bash
-tapscript library "waltz"
-tapscript play stand-by-me
+plainsong library "waltz"
+plainsong play stand-by-me
 ```
 
 ## Three ways in
 
 ```bash
-tapscript compile song.tap --play   # command line
-tapscript tui                       # terminal interface
-tapscript serve                     # web interface at localhost:8765
+plainsong compile song.song --play   # command line
+plainsong tui                       # terminal interface
+plainsong serve                     # web interface at localhost:8765
 ```
 
 All three drive the same compiler and see the same library and settings. Nothing
@@ -189,14 +189,14 @@ web interface, which needs nothing.
 
 ## Where your files go
 
-`tapscript compile` writes MIDI beside your `.tap` file when you pass `-o`. If
+`plainsong compile` writes MIDI beside your `.song` file when you pass `-o`. If
 you do not, it writes into the workspace instead, and tells you the full path.
-`tapscript doctor` prints the locations:
+`plainsong doctor` prints the locations:
 
 ```
-config_file   ~/.config/tapscript/config.toml
-workspace     ~/.local/share/tapscript/workspace
-output_dir    ~/.local/share/tapscript/workspace/output
+config_file   ~/.config/plainsong/config.toml
+workspace     ~/.local/share/plainsong/workspace
+output_dir    ~/.local/share/plainsong/workspace/output
 ```
 
 Nothing is hardcoded and nothing is written outside these unless you ask.
@@ -204,8 +204,8 @@ Nothing is hardcoded and nothing is written outside these unless you ask.
 ## What your machine can do
 
 ```bash
-tapscript doctor    # what is installed, and what each missing piece would add
-tapscript spec      # verify the system's promises against this machine
+plainsong doctor    # what is installed, and what each missing piece would add
+plainsong spec      # verify the system's promises against this machine
 ```
 
 There are no required dependencies. The parser, the MIDI writer, the
@@ -218,7 +218,7 @@ are detected when present and never required.
 
 A score usually says "this note is at beat 4.5" without saying *where* that
 happens — at the player's hands, at the instrument, or at the ear it is written
-for. Declare a stage and TapScript treats written times as **arrival** times and
+for. Declare a stage and Plainsong treats written times as **arrival** times and
 solves backwards for when each player has to act:
 
 ```
@@ -229,7 +229,7 @@ listener: conductor
 ```
 
 ```
-$ tapscript stage orchestra.tap
+$ plainsong stage orchestra.song
   voice    distance  onset   travel  p-centre  act
   timpani  9.8 m     0 ms    29 ms   1 ms      -30 ms
   organ    14.0 m    140 ms  41 ms   60 ms     -241 ms
@@ -252,9 +252,9 @@ The compiler does not need a model. Adding one gives you an agent that writes
 and revises notation, and a build agent that adapts the install to your setup.
 
 ```bash
-tapscript setup
-tapscript agent "a slow waltz in D minor, piano and cello, sixteen bars"
-tapscript build            # tailor this install to your machine and use case
+plainsong setup
+plainsong agent "a slow waltz in D minor, piano and cello, sixteen bars"
+plainsong build            # tailor this install to your machine and use case
 ```
 
 It works with hosted APIs (Anthropic, OpenAI, DeepSeek, OpenRouter, Gemini, xAI,
@@ -267,18 +267,18 @@ a JSON file. See [docs/providers.md](docs/providers.md).
 Try it with no key and no network at all:
 
 ```bash
-tapscript agent --provider echo "write something in D minor"
+plainsong agent --provider echo "write something in D minor"
 ```
 
 ## Many agents, one score
 
-`tapscript mcp` serves the whole system over the Model Context Protocol, so any
+`plainsong mcp` serves the whole system over the Model Context Protocol, so any
 MCP-capable client can drive it without shelling out to the CLI.
 
 ```bash
-tapscript mcp                 # JSON-RPC over stdio, what most clients expect
-tapscript mcp --http          # loopback HTTP, for remote and multi-agent setups
-tapscript mcp --list-tools    # what it exposes
+plainsong mcp                 # JSON-RPC over stdio, what most clients expect
+plainsong mcp --http          # loopback HTTP, for remote and multi-agent setups
+plainsong mcp --list-tools    # what it exposes
 ```
 
 On top of that sits an ensemble session: several agents working on one score at
@@ -287,7 +287,7 @@ conflicts, and a write made against a stale version is refused and handed the
 current state to rebase onto rather than overwriting somebody.
 
 That half of the system now has a repository of its own,
-[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp), which is where
+[plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp), which is where
 it is developed and where a client should install it from.
 
 ## Every command
@@ -318,7 +318,7 @@ Every command takes `--json`. Use it when parsing output.
 |---|---|
 | [Your first song](docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
 | [Arranging](docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
-| [Integration](docs/integration.md) | Driving TapScript from other software |
+| [Integration](docs/integration.md) | Driving Plainsong from other software |
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
 | [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
@@ -327,6 +327,7 @@ Every command takes `--json`. Use it when parsing output.
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
 | [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
+| [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |
 | [Specs](docs/specs.md) | The checks the system runs against itself |
@@ -337,23 +338,23 @@ Every command takes `--json`. Use it when parsing output.
 
 ```bash
 python3 -m unittest discover -s tests   # the test suite
-python3 -m tapscript spec               # the system's checks on itself
-python3 -m tapscript check docs examples tapscript/songbook README.md
+python3 -m plainsong spec               # the system's checks on itself
+python3 -m plainsong check docs examples plainsong/songbook README.md
 ```
 
 CI runs all three on Python 3.10 through 3.13 across Linux, macOS and Windows
 with nothing installed, which is what keeps the no-dependencies promise honest.
-`check` reads the examples inside markdown as well as `.tap` files, so a snippet
+`check` reads the examples inside markdown as well as `.song` files, so a snippet
 in the documentation that stopped compiling would fail the build.
 
 ## Relation to the fleet
 
 | Component | Relationship |
 |---|---|
-| [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp) | This compiler over the Model Context Protocol, plus the ensemble session several agents share |
-| [tapscript-worker](https://github.com/SuperInstance/tapscript-worker) | Cloudflare Worker version of this compiler — runs TapScript on the edge |
-| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes TapScript notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `tapscript.perform.conduct` speaks. |
-| [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders TapScript scores as agentic performances |
+| [plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp) | This compiler over the Model Context Protocol, plus the ensemble session several agents share |
+| [plainsong-worker](https://github.com/SuperInstance/plainsong-worker) | Cloudflare Worker version of this compiler — runs Plainsong on the edge |
+| [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes Plainsong notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `plainsong.perform.conduct` speaks. |
+| [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders Plainsong scores as agentic performances |
 
 ## Status
 
@@ -369,7 +370,7 @@ rather than code.
 
 What that claim rests on: the suite runs on Python 3.10 through 3.13 across three
 operating systems with nothing installed; 6,325 notation sources in this
-repository compile; and `tapscript spec` checks the promises against the machine
+repository compile; and `plainsong spec` checks the promises against the machine
 in front of you, so you can confirm the above rather than take it on trust.
 
 Known limits, in the open:
@@ -380,12 +381,11 @@ Known limits, in the open:
 - The TUI needs `curses`, which stock Python on Windows does not ship.
 - No third-party MCP client has connected to the server yet; its protocol
   behaviour is verified against the specification instead.
-- The bundled songbook (`tapscript/songbook/`) is **chord charts only** — melody and lyric rows were removed
+- The bundled songbook (`plainsong/songbook/`) is **chord charts only** — melody and lyric rows were removed
   from all 6,309 files. A chord progression is not protectable expression; a tune
   and its words are, and nothing in those generated files recorded provenance.
   See [docs/songbook.md](docs/songbook.md).
-- `legacy/` holds the two earlier engines this replaced. Nothing imports them and
-  they are not maintained.
+- The two earlier engines are in `legacy/`, unmaintained. Nothing imports them.
 
 ## Licence
 

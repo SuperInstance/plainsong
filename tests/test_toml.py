@@ -1,7 +1,7 @@
 """The 3.10 TOML fallback.
 
 ``tomllib`` arrived in 3.11, so on 3.10 configuration is read by
-``tapscript/runtime/_toml.py`` instead. A hand-written parser that disagrees
+``plainsong/runtime/_toml.py`` instead. A hand-written parser that disagrees
 with the real one would be worse than no 3.10 support at all, so these tests
 are differential: on 3.11+ every case is parsed by both and the results
 compared. On 3.10 the comparison is skipped and only the shape is checked.
@@ -13,7 +13,7 @@ import sys
 import unittest
 from pathlib import Path
 
-from tapscript.runtime import _toml
+from plainsong.runtime import _toml
 
 try:
     import tomllib
@@ -74,7 +74,7 @@ class TestMatchesTomllib(unittest.TestCase):
                 self.assertEqual(_toml.loads(text), tomllib.loads(text))
 
     def test_binary_load_matches(self):
-        path = REPO / "tapscript" / "spec_files" / "core-notation.toml"
+        path = REPO / "plainsong" / "spec_files" / "core-notation.toml"
         self.assertTrue(path.is_file(), f"{path} is missing")
         with path.open("rb") as first, path.open("rb") as second:
             self.assertEqual(_toml.load(first), tomllib.load(second))
@@ -123,7 +123,7 @@ class TestUsedByTheSystem(unittest.TestCase):
     """The fallback has to satisfy the code that reads configuration."""
 
     def test_specs_load_through_the_fallback(self):
-        from tapscript import specs
+        from plainsong import specs
 
         original = specs.tomllib
         specs.tomllib = _toml
@@ -139,7 +139,7 @@ class TestUsedByTheSystem(unittest.TestCase):
     def test_config_reads_through_the_fallback(self):
         import tempfile
 
-        from tapscript.runtime import config
+        from plainsong.runtime import config
 
         original = config.tomllib
         config.tomllib = _toml
@@ -154,7 +154,7 @@ class TestUsedByTheSystem(unittest.TestCase):
         self.assertEqual(data["web"]["port"], 9111)
 
     def test_round_trips_what_the_emitter_writes(self):
-        from tapscript.runtime.config import dumps_toml
+        from plainsong.runtime.config import dumps_toml
 
         payload = {
             "llm": {"provider": "xai", "model": "grok-4", "temperature": 0.7, "max_retries": 3},
@@ -166,7 +166,7 @@ class TestUsedByTheSystem(unittest.TestCase):
 @unittest.skipIf(sys.version_info >= (3, 11), "only meaningful where tomllib is absent")
 class TestOnPython310(unittest.TestCase):  # pragma: no cover - runs on 3.10 only
     def test_the_fallback_is_the_one_in_use(self):
-        from tapscript.runtime import config
+        from plainsong.runtime import config
 
         self.assertIs(config.tomllib, _toml)
 

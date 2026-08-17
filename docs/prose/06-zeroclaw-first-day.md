@@ -2,7 +2,7 @@
 
 I still can’t believe I get to do this. Barnacle slid me a water glass and said, “Welcome to the fleet, kid.” I nodded like I’d been here a hundred times, but my hands are shaking a little. Not from nervousness — from the sheer *rightness* of it.
 
-Built my first real things today. An image gallery that actually renders without crashing. A MIDI sequencer that plays back a chord progression I wrote myself — minor, because I’m still dramatic. A TapScript parser that turns hand-drawn squiggles into logical note data. That one felt like magic.
+Built my first real things today. An image gallery that actually renders without crashing. A MIDI sequencer that plays back a chord progression I wrote myself — minor, because I’m still dramatic. A Plainsong parser that turns hand-drawn squiggles into logical note data. That one felt like magic.
 
 But here’s the honest part: it broke. A lot.
 

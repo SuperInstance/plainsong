@@ -15,9 +15,9 @@ from unittest import mock
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-from tapscript.interfaces.web.server import MAX_BODY, Api, build_handler
-from tapscript.runtime.config import Config
-from tapscript.runtime.paths import Paths
+from plainsong.interfaces.web.server import MAX_BODY, Api, build_handler
+from plainsong.runtime.config import Config
+from plainsong.runtime.paths import Paths
 
 MINIMAL_NOTATION = """**TRACK: Test Piece**
 [MetaData]
@@ -45,7 +45,7 @@ class TestApiSameOrigin(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
 
@@ -181,7 +181,7 @@ class TestApiCompile(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
         self.api = Api(self.config)
@@ -236,7 +236,7 @@ class TestApiTranspose(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
         self.api = Api(self.config)
@@ -291,7 +291,7 @@ class TestApiReadEntry(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
         self.api = Api(self.config)
@@ -317,7 +317,7 @@ class TestBodyHandling(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
 
@@ -465,7 +465,7 @@ class TestFilesPathTraversal(unittest.TestCase):
         self.external_file = Path(self.temp_dir.name) / "external.txt"
         self.external_file.write_text("external content")
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
 
@@ -597,7 +597,7 @@ class TestRoutes(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
 
@@ -681,7 +681,7 @@ class TestConcurrency(unittest.TestCase):
         self.workspace = Path(self.temp_dir.name) / "workspace"
         self.workspace.mkdir(parents=True, exist_ok=True)
 
-        self.env_patch = mock.patch.dict(os.environ, {"TAPSCRIPT_WORKSPACE": str(self.workspace)})
+        self.env_patch = mock.patch.dict(os.environ, {"PLAINSONG_WORKSPACE": str(self.workspace)})
         self.env_patch.start()
         self.config = Config(data={}, paths=Paths(project_root=None))
 

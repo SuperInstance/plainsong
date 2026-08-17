@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import unittest
 
-from tapscript.notation import arrange, parse, theory
-from tapscript.notation.arrange import ArrangeOptions
+from plainsong.notation import arrange, parse, theory
+from plainsong.notation.arrange import ArrangeOptions
 
 BASIC = """**TRACK: Test Piece**
 [MetaData]
@@ -132,7 +132,7 @@ class TestParser(unittest.TestCase):
         self.assertEqual(arrange(score).summary()["tracks"][0]["role"], "chords")
 
     def test_markdown_fence_is_stripped(self):
-        score = parse("```tapscript\n[A]\nChords: | C | G |\n```\n")
+        score = parse("```plainsong\n[A]\nChords: | C | G |\n```\n")
         self.assertFalse(score.has_errors)
         self.assertEqual(score.sections[0].bar_count, 2)
 
@@ -264,7 +264,7 @@ class TestRoundTrip(unittest.TestCase):
         step with the rest of its section -- silent corruption of a file the user
         thought they had only changed the key of.
         """
-        from tapscript.transform import transpose
+        from plainsong.transform import transpose
 
         text = BASIC
         for key in ("D", "E", "F", "G"):
@@ -280,7 +280,7 @@ class TestRoundTrip(unittest.TestCase):
 
     def test_emitted_player_rows_read_back_identically(self):
         """The text a transpose writes must parse to the same shape it came from."""
-        from tapscript.transform import to_text
+        from plainsong.transform import to_text
 
         original = parse(BASIC)
         reparsed = parse(to_text(original))
@@ -295,12 +295,12 @@ class TestDocumentedNotation(unittest.TestCase):
 
     The academy shipped for months teaching a language that did not exist -- one
     lesson on "dynamics and velocity" was a bouncing-ball physics simulation,
-    because a generator saw the word velocity. Nothing caught it: `tapscript
-    check` walked only `.tap` files, and the academy contains none, so pointing
+    because a generator saw the word velocity. Nothing caught it: `plainsong
+    check` walked only `.song` files, and the academy contains none, so pointing
     the check at it passed while every lesson in it was wrong.
 
-    A block tagged ```tapscript is a promise. Syntax that is only proposed goes
-    in a ```tapscript-proposed block, and anything that is not TapScript at all
+    A block tagged ```plainsong is a promise. Syntax that is only proposed goes
+    in a ```plainsong-proposed block, and anything that is not Plainsong at all
     should not claim to be.
     """
 
@@ -308,7 +308,7 @@ class TestDocumentedNotation(unittest.TestCase):
         import re
         from pathlib import Path
 
-        fence = re.compile(r"^```(?:tapscript|tap)[ \t]*$(.*?)^```", re.S | re.M)
+        fence = re.compile(r"^```(?:plainsong|tap)[ \t]*$(.*?)^```", re.S | re.M)
         root = Path(__file__).resolve().parent.parent
         for markdown in sorted(root.rglob("*.md")):
             if "legacy" in markdown.parts or "node_modules" in markdown.parts:

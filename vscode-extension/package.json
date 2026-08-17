@@ -1,13 +1,13 @@
 {
-  "name": "tapscript",
-  "displayName": "TapScript",
-  "description": "Syntax highlighting, snippets, and linting for TapScript music notation files.",
+  "name": "plainsong",
+  "displayName": "Plainsong",
+  "description": "Syntax highlighting, snippets, and linting for Plainsong music notation files.",
   "version": "0.1.0",
   "publisher": "SuperInstance",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SuperInstance/tapscript-studio"
+    "url": "https://github.com/SuperInstance/plainsong"
   },
   "engines": {
     "vscode": "^1.75.0"
@@ -19,45 +19,45 @@
   "keywords": [
     "music",
     "notation",
-    "tapscript",
+    "plainsong",
     "midi",
     "composition"
   ],
   "activationEvents": [
-    "onLanguage:tapscript"
+    "onLanguage:plainsong"
   ],
   "main": "./src/extension.js",
   "contributes": {
     "languages": [
       {
-        "id": "tapscript",
+        "id": "plainsong",
         "aliases": [
-          "TapScript",
-          "tapscript"
+          "Plainsong",
+          "plainsong"
         ],
         "extensions": [
-          ".tap"
+          ".song"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "tapscript",
-        "scopeName": "source.tapscript",
-        "path": "./syntaxes/tapscript.tmLanguage.json"
+        "language": "plainsong",
+        "scopeName": "source.plainsong",
+        "path": "./syntaxes/plainsong.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "tapscript",
-        "path": "./snippets/tapscript.json"
+        "language": "plainsong",
+        "path": "./snippets/plainsong.json"
       }
     ],
     "commands": [
       {
-        "command": "tapscript.checkPipeBalance",
-        "title": "TapScript: Check Pipe Delimiter Balance"
+        "command": "plainsong.checkPipeBalance",
+        "title": "Plainsong: Check Pipe Delimiter Balance"
       }
     ]
   },

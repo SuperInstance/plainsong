@@ -8,7 +8,7 @@ A score says a note is on beat four. Where does that happen?
 
 Those are three different clocks. On a large platform they are tens of
 milliseconds apart, which is more than an ensemble's tolerance for being out of
-time, and the gaps are not the same for everyone. TapScript takes the third one
+time, and the gaps are not the same for everyone. Plainsong takes the third one
 as the one you write in: **a written time is the moment the sound is meant to
 reach the listener the piece is written for**. Everything else is solved
 backwards from it.
@@ -142,7 +142,7 @@ When you know better, say so: `speech: 62ms`.
 
 ## Reference frames
 
-`tapscript stage` and `tapscript compile` both take `--frame`:
+`plainsong stage` and `plainsong compile` both take `--frame`:
 
 | Frame | Means |
 |---|---|
@@ -155,7 +155,7 @@ The same performance has a different arrival pattern at each of them, and being
 able to say so is the point of the whole feature:
 
 ```
-$ tapscript stage processional.tap
+$ plainsong stage processional.song
 
 Processional  --  4 voices at 96 bpm
 written for conductor, listening at conductor, 20 C, sound at 343.21 m/s
@@ -187,7 +187,7 @@ there.
 Now stand behind the drums:
 
 ```
-$ tapscript stage processional.tap --frame player:timpani
+$ plainsong stage processional.song --frame player:timpani
 
 what player:timpani hears, against the written beat
   spread 35 ms
@@ -235,8 +235,8 @@ begins a fraction of a beat in.
 Same file, two renders:
 
 ```
-tapscript compile processional.tap --audio tight.wav
-tapscript compile processional.tap --audio smeared.wav --no-compensate
+plainsong compile processional.song --audio tight.wav
+plainsong compile processional.song --audio smeared.wav --no-compensate
 ```
 
 `tight.wav` is what the podium hears when everybody has corrected for
@@ -258,15 +258,15 @@ hear — and each player's emission falls out of it.
 
 The vocabulary is not ours. It is the one the bandleader in
 [`SuperInstance/fleet-jepa-midi`](https://github.com/SuperInstance/fleet-jepa-midi)
-emits as JSON every one to four bars, and `tapscript.perform.conduct` reads that
+emits as JSON every one to four bars, and `plainsong.perform.conduct` reads that
 JSON unchanged so the two systems mean the same thing by the same word. Nothing
 here opens a socket; it is a pure function from (arrangement, directives) to a
 new arrangement, and somebody else wires the transport.
 
 ```python
 import json
-from tapscript.notation import arrange, parse
-from tapscript.perform import conduct
+from plainsong.notation import arrange, parse
+from plainsong.perform import conduct
 
 written = arrange(parse(text))
 conducted = conduct.apply(written, json.dumps({

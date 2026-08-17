@@ -1,12 +1,12 @@
 # The MCP server
 
-TapScript speaks the Model Context Protocol, so an agent can drive the whole
+Plainsong speaks the Model Context Protocol, so an agent can drive the whole
 system directly rather than shelling out to the CLI and reading text back.
 
 ```bash
-python3 -m tapscript.mcp          # stdio: what an MCP client launches
-python3 -m tapscript mcp          # the same thing through the CLI
-python3 -m tapscript.mcp --http   # loopback HTTP, for several clients at once
+python3 -m plainsong.mcp          # stdio: what an MCP client launches
+python3 -m plainsong mcp          # the same thing through the CLI
+python3 -m plainsong.mcp --http   # loopback HTTP, for several clients at once
 ```
 
 Point a client at it. For Claude Code, `~/.claude/mcp.json` or the project's:
@@ -14,9 +14,9 @@ Point a client at it. For Claude Code, `~/.claude/mcp.json` or the project's:
 ```json
 {
   "mcpServers": {
-    "tapscript": {
+    "plainsong": {
       "command": "python3",
-      "args": ["-m", "tapscript.mcp"],
+      "args": ["-m", "plainsong.mcp"],
       "cwd": "/path/to/your/project"
     }
   }
@@ -91,11 +91,11 @@ the text.
 
 | URI | Contents |
 |---|---|
-| `tapscript://notation-reference` | how to write notation, as Markdown |
-| `tapscript://capabilities` | what this machine can do, as JSON |
-| `tapscript://spec/{id}` | one spec: what it promises and the checks that prove it |
-| `tapscript://library/{name}` | one notation file from the bundled library |
-| `tapscript://session/{name}` | one ensemble session, including the merged score |
+| `plainsong://notation-reference` | how to write notation, as Markdown |
+| `plainsong://capabilities` | what this machine can do, as JSON |
+| `plainsong://spec/{id}` | one spec: what it promises and the checks that prove it |
+| `plainsong://library/{name}` | one notation file from the bundled library |
+| `plainsong://session/{name}` | one ensemble session, including the merged score |
 
 The library and the sessions are given as templates rather than listed. There
 are several thousand notation files in a checkout and putting them all in a
@@ -106,7 +106,7 @@ client's context would be worse than useless; `search_library` is the way in.
 Same messages, same bodies, one JSON-RPC message per POST:
 
 ```bash
-python3 -m tapscript.mcp --http --port 8766
+python3 -m plainsong.mcp --http --port 8766
 
 curl -s localhost:8766 -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
@@ -130,7 +130,7 @@ fleet-jepa-midi's bandleader consumes:
     bass_register  treble_activity  dynamic_range   sustain_ratio
 
 Each is normalised into roughly `[0, 1]` — `contour_direction` alone is signed —
-against the fixed references in `tapscript/mcp/features.py`, not against the
+against the fixed references in `plainsong/mcp/features.py`, not against the
 piece itself. Normalising against the piece would make a bar's numbers depend on
 which other bars you happened to include, and two agents analysing two excerpts
 would disagree about the same bar.
@@ -141,14 +141,14 @@ consecutive notes of a three-part texture is mostly the distance from the bass
 to the tune, which saturates and says nothing.
 
 The analysis is pure: an `Arrangement` in, numbers out, no rendering and nothing
-optional. That makes the several thousand `.tap` files in this repository a
+optional. That makes the several thousand `.song` files in this repository a
 labelled corpus, and lets a bandleader perceive a score that was written rather
 than played.
 
 ## Directives
 
 `apply_directives` passes a bandleader's directive JSON to
-`tapscript.perform.conduct` and returns the result as data: the directives as
+`plainsong.perform.conduct` and returns the result as data: the directives as
 they were read, the arrangement before and after, and the sixteen features per
 bar of each — enough to close the loop of perceive, instruct, perceive again. It
 accepts an ensemble session as well as a file or inline notation.
@@ -156,15 +156,15 @@ accepts an ensemble session as well as a file or inline notation.
 `conduct_score`, from `perform/`, does the same thing and reports it in prose.
 Use that one when a person is going to read the answer.
 
-The import of the conductor is soft. If `tapscript.perform` is missing or has a
+The import of the conductor is soft. If `plainsong.perform` is missing or has a
 different shape, the tool says so and the rest of the server carries on.
 
 ## Checking it
 
 ```bash
-python3 -m tapscript spec --tag mcp
+python3 -m plainsong spec --tag mcp
 python3 -m unittest tests.test_mcp tests.test_ensemble
-python3 -m tapscript.mcp --list-tools
+python3 -m plainsong.mcp --list-tools
 ```
 
 The spec drives a real server with real JSON-RPC messages, including malformed

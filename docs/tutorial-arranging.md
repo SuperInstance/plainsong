@@ -1,7 +1,7 @@
 # Arranging
 
 For when a lead sheet is not enough: several players, other time signatures,
-dynamics, and the stage model — the part of TapScript that has no equivalent
+dynamics, and the stage model — the part of Plainsong that has no equivalent
 elsewhere.
 
 Assumes you have been through [your first song](tutorial-first-song.md). Every
@@ -13,7 +13,7 @@ worked through so you can verify it rather than trust it.
 Start with something with a shape. Chords, a melody, a walking bass and a
 comping part:
 
-```tapscript
+```plainsong
 **TRACK: 12-Bar Blues in G**
 key: G | tempo: 96 | time: 4/4 | subdivision: 4th
 
@@ -25,8 +25,8 @@ Melody: | G4 B4 D5 B4 | D5 . B4 G4 | A4 B4 D5 . | B4 A4 G4 . | C5 . . . | B4 C5 
 ```
 
 ```bash
-tapscript check blues.tap --strict
-tapscript compile blues.tap -o blues.mid --audio blues.wav
+plainsong check blues.song --strict
+plainsong compile blues.song -o blues.mid --audio blues.wav
 ```
 
 Two things worth noticing. The `[MetaData]` header is optional — the metadata
@@ -53,7 +53,7 @@ music.
 The bar-division rule does the work. In 3/4 a bar holds three beats, and the
 tokens still divide whatever the bar is:
 
-```tapscript
+```plainsong
 **TRACK: Waltz**
 key: C | tempo: 100 | time: 3/4
 
@@ -65,7 +65,7 @@ Melody: | C4 D4 E4 | F4 G4 A4 | E4 . . | G4 . . |
 
 And 6/8:
 
-```tapscript
+```plainsong
 **TRACK: Jig**
 key: G | tempo: 120 | time: 6/8
 
@@ -80,7 +80,7 @@ Do not take it on faith. Put different token counts in adjacent bars and read
 the note times out:
 
 ```bash
-tapscript --json info bars.tap
+plainsong --json info bars.song
 ```
 
 At 120 bpm a 4/4 bar is 2 seconds. A bar with three tokens gives starts at 0,
@@ -103,11 +103,11 @@ same start time.
 
 This is the part that is genuinely unlike other notation. A score usually says
 "beat 3" without saying *where* beat 3 happens — at the player's hands, at the
-instrument, or at the ear it was written for. Declare a stage and TapScript
+instrument, or at the ear it was written for. Declare a stage and Plainsong
 treats written times as **arrival** times, then solves backwards for when each
 player must move.
 
-```tapscript
+```plainsong
 **TRACK: Stage Timing Test**
 key: C | tempo: 120 | time: 4/4 | subdivision: 4th
 
@@ -128,7 +128,7 @@ Note that inside `[Stage]` the player names **do** take a colon — it is a
 settings block, not a row of music. Positions are metres, `x,y`.
 
 ```bash
-tapscript stage stage_test.tap
+plainsong stage stage_test.song
 ```
 
 ```
@@ -185,8 +185,8 @@ history.
 ### Rendering with and without compensation
 
 ```bash
-tapscript compile stage_test.tap -o tight.mid
-tapscript compile stage_test.tap -o smeared.mid --no-compensate
+plainsong compile stage_test.song -o tight.mid
+plainsong compile stage_test.song -o smeared.mid --no-compensate
 ```
 
 The first solves each player's emission backwards so the arrivals line up. The
@@ -194,14 +194,14 @@ second emits everything at the written time and lets the distances smear it —
 which is what actually happens when an ensemble stops watching.
 
 Without a `[Stage]` block none of this runs, and written times are taken at face
-value. That default is what every existing `.tap` file relies on.
+value. That default is what every existing `.song` file relies on.
 
 ## Things that will catch you out
 
 - **Player rows in music take no colon** (`@bass |`), but **in `[Stage]` they
   do** (`@bass: pos 0,0`). Music rows versus settings.
 - **An unreadable chord becomes silence**, and only says so under `check`. Run
-  `tapscript check --strict` after editing.
+  `plainsong check --strict` after editing.
 - **Swing does not change the MIDI.** It is a feel, meant to be heard, and MIDI
   carries emission times. Two files differing only in `swing:` produce the same
   MIDI and different audio.

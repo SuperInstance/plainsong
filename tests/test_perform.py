@@ -5,11 +5,11 @@ from __future__ import annotations
 import json
 import unittest
 
-from tapscript.notation import arrange, parse
-from tapscript.notation.arrange import ArrangeOptions
-from tapscript.perform import conduct, profiles, solve, stage
-from tapscript.render.audio import AudioOptions, Synthesiser
-from tapscript.render.midi import midi_bytes
+from plainsong.notation import arrange, parse
+from plainsong.notation.arrange import ArrangeOptions
+from plainsong.perform import conduct, profiles, solve, stage
+from plainsong.render.audio import AudioOptions, Synthesiser
+from plainsong.render.midi import midi_bytes
 
 PLAIN = """**TRACK: Plain**
 [MetaData]
@@ -609,7 +609,7 @@ class TestConducting(unittest.TestCase):
 
 class TestAgentTools(unittest.TestCase):
     def test_the_tools_are_registered(self):
-        from tapscript.agent.tools import ToolRegistry
+        from plainsong.agent.tools import ToolRegistry
 
         names = {spec.name for spec in ToolRegistry().specs()}
         self.assertIn("ensemble_report", names)
@@ -617,7 +617,7 @@ class TestAgentTools(unittest.TestCase):
         self.assertIn("speech_profiles", names)
 
     def test_the_report_tool_runs_on_inline_notation(self):
-        from tapscript.agent.tools import ToolRegistry
+        from plainsong.agent.tools import ToolRegistry
 
         registry = ToolRegistry()
         answer = registry.call("ensemble_report", {"content": ORCHESTRA})
@@ -625,7 +625,7 @@ class TestAgentTools(unittest.TestCase):
         self.assertNotIn("error", answer.lower())
 
     def test_the_report_tool_explains_a_missing_stage(self):
-        from tapscript.agent.tools import ToolRegistry
+        from plainsong.agent.tools import ToolRegistry
 
         answer = ToolRegistry().call("ensemble_report", {"content": PLAIN})
         self.assertIn("no [Stage] block", answer)

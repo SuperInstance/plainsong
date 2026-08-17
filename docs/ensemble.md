@@ -9,7 +9,7 @@ abandoned.
 This is the layer that makes that safe. It is served over MCP (see
 [mcp.md](mcp.md)) and the tools are also available to the built-in agent.
 
-> Not to be confused with `tapscript ensemble`, which reports what a listener on
+> Not to be confused with `plainsong ensemble`, which reports what a listener on
 > a physical stage hears. That is [performance.md](performance.md).
 
 ## A session is a directory
@@ -17,9 +17,9 @@ This is the layer that makes that safe. It is served over MCP (see
 ```
 <workspace>/ensemble/<name>/
     manifest.json      the header, the form, the voices and the version
-    parts/bass.tap     one file per voice, written by its owner
-    parts/violin1.tap
-    score.tap          the merged result -- generated, never hand-edited
+    parts/bass.song     one file per voice, written by its owner
+    parts/violin1.song
+    score.song          the merged result -- generated, never hand-edited
     log.jsonl          one line per accepted change, oldest first
 ```
 
@@ -60,7 +60,7 @@ another's rows through the merge.
 
 ## The merge
 
-`score.tap` is rewritten from the parts after every accepted write and by
+`score.song` is rewritten from the parts after every accepted write and by
 `ensemble_render`; reading a session merges in memory. It is deterministic: the same parts and
 the same header always produce the same bytes. Sections come out in the order
 the manifest declares them, then in the order a part first introduced them;
@@ -78,7 +78,7 @@ viola should not have to read the whole piece to do it.
 {
   "session": "harbour",
   "version": 5,
-  "directory": "/…/.tapscript/workspace/ensemble/harbour",
+  "directory": "/…/.plainsong/workspace/ensemble/harbour",
   "meta": {
     "title": "Harbour Lights", "key": "Am", "tempo": 96,
     "meter": "4/4", "subdivision": "8th", "swing": "0%", "bars": 4
@@ -108,7 +108,7 @@ viola should not have to read the whole piece to do it.
     {"version": 5, "time": "2026-08-13T09:12:05+00:00", "agent": "bob",
      "voice": "chords", "action": "write", "bars": 4, "summary": "verse changes"}
   ],
-  "score_path": "/…/ensemble/harbour/score.tap"
+  "score_path": "/…/ensemble/harbour/score.song"
 }
 ```
 
@@ -196,7 +196,7 @@ far.
 
 ```bash
 python3 -m unittest tests.test_ensemble
-python3 -m tapscript spec --tag mcp
+python3 -m plainsong spec --tag mcp
 ```
 
 The tests run the concurrent cases with threads: several agents writing several

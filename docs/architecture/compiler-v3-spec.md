@@ -1,16 +1,16 @@
-# TapScript Compiler v3 — Architecture Specification
+# Plainsong Compiler v3 — Architecture Specification
 
 **Status:** Draft 1  
 **Date:** 2026-08-13  
 **Author:** Navigation (subagent)  
-**Supersedes:** `tapscript_v2.py` (1675 lines, regex-based, no temporal grid)  
+**Supersedes:** `plainsong_v2.py` (1675 lines, regex-based, no temporal grid)  
 **Consumes:** SWMIDI-8 Wire Format, harmony-core, slackwater-tempo, vibe-protocol, emergence-engine, stigmergy
 
 ---
 
 ## 0. Design Philosophy
 
-TapScript v2 is a working compiler. It parses pipe-delimited monospace notation into nested dicts, then emits `pretty_midi` calls and numpy-synthesized WAV. Its fatal limitation — documented in `docs/structural-analysis.md` — is that **the grid is a lie**: token index drives timing, pipes don't bound bars, empty bars vanish, and subdivisions are binary-only (2 or 4 slots per beat). The notation *looks* like a piano roll but behaves like a token stream.
+Plainsong v2 is a working compiler. It parses pipe-delimited monospace notation into nested dicts, then emits `pretty_midi` calls and numpy-synthesized WAV. Its fatal limitation — documented in `docs/structural-analysis.md` — is that **the grid is a lie**: token index drives timing, pipes don't bound bars, empty bars vanish, and subdivisions are binary-only (2 or 4 slots per beat). The notation *looks* like a piano roll but behaves like a token stream.
 
 v3 makes the grid real.
 
@@ -365,7 +365,7 @@ All three backends consume `SWMIDIEvent[]` (plus a header with tempo map and tra
 
 ### 2.1 Note → SWMIDI-8
 
-A TapScript note like `E4` travels through the pipeline as:
+A Plainsong note like `E4` travels through the pipeline as:
 
 ```
 Source text:    "E4"
@@ -380,7 +380,7 @@ Chord notes (`e2-a2-c3`) expand into multiple NoteOn events at the same tick, di
 
 ### 2.2 Tempo / Swing / Groove Integration
 
-slackwater-tempo's `BeatClock` and `GrooveEngine` feed into Stage 3 (Temporal Resolution). The integration is read-only — TapScript queries the tempo engine for timing, it doesn't modify it.
+slackwater-tempo's `BeatClock` and `GrooveEngine` feed into Stage 3 (Temporal Resolution). The integration is read-only — Plainsong queries the tempo engine for timing, it doesn't modify it.
 
 ```typescript
 interface TempoIntegration {
@@ -411,7 +411,7 @@ The `TempoMapEntry[]` in the PulseGrid is built by querying the BeatClock at eac
 
 Swing is applied per-slot: odd-indexed slots within a beat shift forward by `swingAmount × 0.5 × slotDuration`. This is the same formula as v2 but applied at the tick level (96 PPQ granularity) rather than the seconds level, making it sample-accurate and BPM-independent.
 
-Groove humanization adds Gaussian jitter. The RNG seed is deterministic (hash of the source text), so the same TapScript file always compiles to the same output — critical for reproducible builds.
+Groove humanization adds Gaussian jitter. The RNG seed is deterministic (hash of the source text), so the same Plainsong file always compiles to the same output — critical for reproducible builds.
 
 ### 2.3 Friction Bitfield from Notation
 
@@ -524,7 +524,7 @@ Converg:  ●                                   ← (pulse 1 only)
 - **DMN (Default Mode Network)** fires every 4 pulses (dotted-quarter level in 12/8). This is the "creative" circuit — it handles melody, exploration, novelty. It processes the expressive layer.
 - **Convergence** at pulse 1 is the **relay bridge** — the moment when both networks synchronize. This is the **flow state**, where reflex and creativity align.
 
-**TapScript mapping:** Chord changes and structural events tend to align with ECN pulses (1, 4, 7, 10). Melodic peaks and expressive gestures align with DMN pulses (1, 5, 9). The convergence at pulse 1 is where key changes, section boundaries, and dramatic shifts naturally fall.
+**Plainsong mapping:** Chord changes and structural events tend to align with ECN pulses (1, 4, 7, 10). Melodic peaks and expressive gestures align with DMN pulses (1, 5, 9). The convergence at pulse 1 is where key changes, section boundaries, and dramatic shifts naturally fall.
 
 The compiler doesn't *enforce* this alignment — but the temporal resolver can optionally snap events to the nearest ECN or DMN pulse, and the friction bitfield flags events that fall *between* both networks (pulses 2, 3, 6, 8, 11, 12) as potentially "awkward" for the flow state.
 
@@ -578,7 +578,7 @@ The RNG seed is the MD5 hash of the source text (same as v2), ensuring determini
 ### 4.1 EBNF Grammar
 
 ```ebnf
-(* TapScript v3 Grammar — EBNF *)
+(* Plainsong v3 Grammar — EBNF *)
 
 composition    = title-line, metadata-block, { section } ;
 
@@ -869,7 +869,7 @@ interface LiveEvent {
 Agent A (TypeScript)                Agent B (Python)           Agent C (Rust)
      │                                   │                          │
      ▼                                   ▼                          ▼
- TapScript ──► SWMIDI-8 ──► WS ──► Relay Server ◄── WS ◄── SWMIDI-8 ◄── TapScript
+ Plainsong ──► SWMIDI-8 ──► WS ──► Relay Server ◄── WS ◄── SWMIDI-8 ◄── Plainsong
                                 (Cloudflare Worker)
                                      │
                                      ▼
@@ -908,15 +908,15 @@ The relay server is a Cloudflare Worker (already deployed: `lucineer-relay`). It
 ### 6.2 Package Structure
 
 ```
-tapscript-studio/
+plainsong/
 ├── docs/
 │   └── architecture/
 │       └── compiler-v3-spec.md       ← this document
 ├── src/
-│   └── tapscript/
+│   └── plainsong/
 │       ├── __init__.py
 │       ├── grammar/
-│       │   └── tapscript.lark        ← formal grammar (EBNF → Lark syntax)
+│       │   └── plainsong.lark        ← formal grammar (EBNF → Lark syntax)
 │       ├── lexer.py                  ← Stage 1: text → LineToken[]
 │       ├── parser.py                 ← Stage 2: LineToken[] → Composition AST
 │       ├── temporal.py               ← Stage 3: AST → PulseGrid (96 PPQ)
@@ -942,13 +942,12 @@ tapscript-studio/
 │   ├── test_wav_backend.py           ← compare against v2 WAV output
 │   ├── test_golden.py                ← golden file tests (5 example compositions)
 │   └── fixtures/
-│       ├── harbor_dawn.tap
-│       ├── the_room_is_safe.tap
-│       ├── creatures_of_interval.tap
-│       ├── neon_shadows.tap
-│       └── deck_work.tap
+│       ├── harbor_dawn.song
+│       ├── the_room_is_safe.song
+│       ├── creatures_of_interval.song
+│       ├── neon_shadows.song
+│       └── deck_work.song
 ├── scripts/
-│   └── tapscript_v2.py               ← legacy (kept for backward compat during migration)
 └── live/
     └── relay/                        ← TypeScript live backend
         ├── package.json
@@ -980,16 +979,16 @@ tapscript-studio/
 - BUG-1 through BUG-5 from `BUGS.md` must be fixed and tested
 
 **Golden file tests:**
-- `fixtures/*.tap` files are the canonical test inputs
+- `fixtures/*.song` files are the canonical test inputs
 - `fixtures/*.expected.mid` and `*.expected.wav` are committed expected outputs
-- CI runs `compiler.py --cli fixture.tap --midi out.mid` and diffs against expected
+- CI runs `compiler.py --cli fixture.song --midi out.mid` and diffs against expected
 
 ### 6.4 Migration Path from v2
 
 **Phase 1: Parallel operation (Week 1–2)**
 - Build lexer + parser. Keep v2 running on port 5557.
 - v3 runs on port 5558.
-- Both consume the same `.tap` files.
+- Both consume the same `.song` files.
 - Comparison: compile same file in both, diff the MIDI output.
 
 **Phase 2: Backend porting (Week 2–3)**
@@ -1012,14 +1011,13 @@ tapscript-studio/
 
 **Phase 5: Cutover (Week 6)**
 - v3 takes over port 5557.
-- v2 moves to `scripts/tapscript_v2_legacy.py`.
+- v2 is archived.
 - All examples, tests, and documentation updated.
-- v2 is archived but not deleted.
 
 ### 6.5 SWMIDI-8 Codec API (Python)
 
 ```python
-# src/tapscript/swmidi8.py
+# src/plainsong/swmidi8.py
 
 from dataclasses import dataclass
 from typing import List
@@ -1079,7 +1077,7 @@ def decode_stream(data: bytes) -> List[SWMIDIEvent]:
 ### 6.6 Compiler Entry Point
 
 ```python
-# src/tapscript/compiler.py
+# src/plainsong/compiler.py
 
 from typing import Optional
 from .lexer import lex
@@ -1089,7 +1087,7 @@ from .ir import lower_to_swmidi
 from .backends.midi_backend import write_midi
 from .backends.wav_backend import write_wav
 
-def compile_tapscript(
+def compile_plainsong(
     source: str,
     output_midi: Optional[str] = None,
     output_wav: Optional[str] = None,
@@ -1200,7 +1198,7 @@ The flow state protector can then modify the PulseGrid in real-time (during live
 - **vibe-protocol**: TS/Python/Rust (16-dimensional room descriptors)
 - **emergence-engine**: Python (PredictabilityEstimator, 5 emergence types)
 - **stigmergy**: TypeScript (Pheromone trails, decay/reinforcement)
-- **TapScript v2**: `scripts/tapscript_v2.py` (1675 lines, the compiler this replaces)
+- **Plainsong v2**: `scripts/plainsong_v2.py` (1675 lines, the compiler this replaces)
 - **Structural Analysis**: `docs/structural-analysis.md` (bugs, limitations, recommendations)
 - **Edge Cases**: `examples/edge-cases/BUGS.md` (BUG-1 through BUG-5)
 

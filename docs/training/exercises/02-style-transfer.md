@@ -1,4 +1,4 @@
-Here are 8 style transfer exercises for TapScript training, using the foundational I-vi-IV-V progression.
+Here are 8 style transfer exercises for Plainsong training, using the foundational I-vi-IV-V progression.
 
 ---
 

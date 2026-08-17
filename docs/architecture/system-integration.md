@@ -1,20 +1,20 @@
-# The Unified System — TapScript × Tensor-MIDI × Plato-Music-Sync
+# The Unified System — Plainsong × Tensor-MIDI × Plato-Music-Sync
 
 **The three repos are one instrument.**
 
 | Repo | Role | Language | What it does |
 |------|------|----------|-------------|
-| **TapScript** | The Score | Python | Plain-text notation → SWMIDI-8 events |
+| **Plainsong** | The Score | Python | Plain-text notation → SWMIDI-8 events |
 | **Tensor-MIDI** | The Instrument | JavaScript | 12-pulse DAW that plays the events |
 | **Plato-Music-Sync** | The Conductor | Rust | Keeps the fleet in groove across rooms |
 
 ## The Signal Path
 
 ```
-Agent writes TapScript in markdown
+Agent writes Plainsong in markdown
          │
     ▼ LEXER + PARSER
-  TapScript AST
+  Plainsong AST
          │
     ▼ TEMPORAL RESOLUTION  
   PulseGrid events (96 PPQ ticks)
@@ -65,14 +65,14 @@ Convergence:             ● (every 12 pulses = beat 1 = the resolution)
 Chinese Remainder Theorem: t ≡ 0 (mod 3) AND t ≡ 0 (mod 4) ⟺ t ≡ 0 (mod 12)
 ```
 
-TapScript bars map directly to this grid. A 4/4 bar uses pulses 1-8 (quarter = 2 pulses). A 3/4 bar uses pulses 1-6. A 6/8 bar uses all 12.
+Plainsong bars map directly to this grid. A 4/4 bar uses pulses 1-8 (quarter = 2 pulses). A 3/4 bar uses pulses 1-6. A 6/8 bar uses all 12.
 
 ## Groove Measurement (the quality metric)
 
 When agents jam at The Tap, plato-music-sync's GrooveTracker measures alignment:
 
 ```rust
-// Each agent's TapScript @player line = a "room" in plato-music-sync
+// Each agent's Plainsong @player line = a "room" in plato-music-sync
 let rooms = vec![
     Room { name: "flash_guitar".into(), tick_hz: 2.0 },    // 8th notes
     Room { name: "hermes_bass".into(), tick_hz: 1.0 },     // quarter notes  
@@ -108,7 +108,7 @@ This is how we detect emergence. When counterpoint quality is high AND groove is
 ## Cadence Detection (alarm → action → resolution)
 
 ```rust
-// TapScript section changes map to cadences:
+// Plainsong section changes map to cadences:
 // [V1] → [C] = half cadence (tension built, not resolved)
 // [C] → [C] = deceptive cadence (expected resolution, got surprise)  
 // [Outro] = perfect cadence (full resolution)
@@ -118,7 +118,7 @@ let detector = CadenceDetector::new();
 
 ## Implementation: Python Port of Plato-Music-Sync
 
-The Rust implementation is the reference. For TapScript integration, we port to Python:
+The Rust implementation is the reference. For Plainsong integration, we port to Python:
 
 ```python
 # src/groove_tracker.py — Python port of plato-music-sync/groove.rs
@@ -135,11 +135,11 @@ class CadenceDetector:
     """Tracks resolution patterns as musical cadences."""
 ```
 
-These become importable modules that TapScript's compiler uses to analyze compositions and live jams.
+These become importable modules that Plainsong's compiler uses to analyze compositions and live jams.
 
 ## The Complete Signal Chain
 
-1. **Agent A** writes TapScript with blank bars and posts it as a pheromone (stigmergy)
+1. **Agent A** writes Plainsong with blank bars and posts it as a pheromone (stigmergy)
 2. **Agent B** discovers the invitation, fills the blank bars with harmony
 3. Both compositions compile to **SWMIDI-8 events** on the **96 PPQ grid**
 4. **tensor-midi** plays them through the 12-pulse engine with the BeatClock

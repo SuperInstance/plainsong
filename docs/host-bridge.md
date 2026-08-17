@@ -2,65 +2,65 @@
 
 If you are reading this from inside Claude Code, openclaw, Cursor or a similar
 tool, there is already a capable model in the room, and it already has
-credentials. The host bridge lets TapScript's agent use that model instead of
+credentials. The host bridge lets Plainsong's agent use that model instead of
 asking you for a second API key.
 
 ```bash
-tapscript setup host
+plainsong setup host
 ```
 
-`tapscript doctor` will tell you whether a host was detected.
+`plainsong doctor` will tell you whether a host was detected.
 
 ## Three ways to connect
 
 ### Command — simplest, works with most agents
 
-TapScript runs a subprocess, writes the prompt to its standard input, and reads
+Plainsong runs a subprocess, writes the prompt to its standard input, and reads
 the reply from its standard output.
 
 ```bash
-tapscript config set llm.provider host
-tapscript config set llm.host_mode command
-tapscript config set llm.host_command "claude -p"
+plainsong config set llm.provider host
+plainsong config set llm.host_mode command
+plainsong config set llm.host_command "claude -p"
 ```
 
 Anything with a headless mode works:
 
 ```bash
-tapscript config set llm.host_command "openclaw run --quiet"
-tapscript config set llm.host_command "ollama run llama3.2"
-tapscript config set llm.host_command "llm -m gpt-4o"
+plainsong config set llm.host_command "openclaw run --quiet"
+plainsong config set llm.host_command "ollama run llama3.2"
+plainsong config set llm.host_command "llm -m gpt-4o"
 ```
 
 ### File — works with any agent that can read and write files
 
-TapScript writes a request into the bridge directory and waits for an answer to
+Plainsong writes a request into the bridge directory and waits for an answer to
 appear next to it. The host agent does not need a headless mode, a plugin, or a
 network port — only the ability to work with files, which every agent has.
 
 ```bash
-tapscript config set llm.host_mode file
-tapscript bridge status        # where the directory is
+plainsong config set llm.host_mode file
+plainsong bridge status        # where the directory is
 ```
 
 ### Stdio — for hosts that pipe us directly
 
-TapScript writes one JSON line between sentinels to standard output and reads
+Plainsong writes one JSON line between sentinels to standard output and reads
 one back from standard input.
 
 ```bash
-tapscript config set llm.host_mode stdio
+plainsong config set llm.host_mode stdio
 ```
 
 ## The file protocol
 
-Everything lives under the bridge directory, which `tapscript bridge status`
-prints (by default `.tapscript/workspace/bridge` inside a project).
+Everything lives under the bridge directory, which `plainsong bridge status`
+prints (by default `.plainsong/workspace/bridge` inside a project).
 
 ```
 bridge/
-  requests/<id>.json     written by tapscript, read by the host
-  responses/<id>.json     written by the host, read by tapscript
+  requests/<id>.json     written by plainsong, read by the host
+  responses/<id>.json     written by the host, read by plainsong
 ```
 
 A request:
@@ -69,7 +69,7 @@ A request:
 {
   "id": "1723542891-a3f9c210",
   "created": 1723542891.42,
-  "protocol": "tapscript.bridge/1",
+  "protocol": "plainsong.bridge/1",
   "prompt": "# Instructions\n...\n\n# User\nwrite a slow waltz ...",
   "messages": [{"role": "system", "content": "..."}],
   "tools": [
@@ -92,30 +92,30 @@ To call a tool instead of answering, put a JSON object in `text`:
 
 ```json
 {"id": "1723542891-a3f9c210",
- "text": "{\"tool\": \"write_score\", \"arguments\": {\"path\": \"waltz.tap\", \"content\": \"...\"}}"}
+ "text": "{\"tool\": \"write_score\", \"arguments\": {\"path\": \"waltz.song\", \"content\": \"...\"}}"}
 ```
 
-To report a failure, use `error` instead of `text`. TapScript deletes both files
+To report a failure, use `error` instead of `text`. Plainsong deletes both files
 once it has read the answer, and gives up after `llm.host_timeout` seconds
 (default 900).
 
 ## Answering by hand
 
 ```bash
-tapscript bridge list                                   # what is waiting
-tapscript bridge answer <id> --text "your reply"
-cat reply.txt | tapscript bridge answer <id>            # or from stdin
-tapscript bridge watch                                  # print requests as they arrive
+plainsong bridge list                                   # what is waiting
+plainsong bridge answer <id> --text "your reply"
+cat reply.txt | plainsong bridge answer <id>            # or from stdin
+plainsong bridge watch                                  # print requests as they arrive
 ```
 
-## Driving TapScript from a host agent
+## Driving Plainsong from a host agent
 
 If you are the host agent, the useful shape is:
 
-1. `tapscript doctor --json` to see what the machine can do.
-2. `tapscript agent --provider host ...`, or drive the CLI directly — every
+1. `plainsong doctor --json` to see what the machine can do.
+2. `plainsong agent --provider host ...`, or drive the CLI directly — every
    command takes `--json`, so you do not have to parse tables.
-3. Watch `bridge/requests/`, answer with `tapscript bridge answer`.
+3. Watch `bridge/requests/`, answer with `plainsong bridge answer`.
 
 The CLI is the stable interface. `--json` output is part of it and will not
 change shape without a deprecation cycle.

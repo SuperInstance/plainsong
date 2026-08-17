@@ -1,4 +1,4 @@
-## TapScript Multi-Agent Harmony Exercises
+## Plainsong Multi-Agent Harmony Exercises
 
 **Instructions:** For each exercise, read the LEAD LINE, identify its role, choose a harmony role, and write a `@player` line. Explain your choice in one sentence. Then compare with the Answer Key.
 
