@@ -1,19 +1,19 @@
 # Agents
 
-Two agents ship with TapScript. Both are the same loop with a different prompt
+Two agents ship with Plainsong. Both are the same loop with a different prompt
 and the same tools; neither is required for the compiler to work.
 
 | | |
 |---|---|
-| **composer** | Writes and revises notation. `tapscript agent "..."` |
-| **builder** | Adapts this installation to your machine and use case. `tapscript build` |
+| **composer** | Writes and revises notation. `plainsong agent "..."` |
+| **builder** | Adapts this installation to your machine and use case. `plainsong build` |
 
 ## The composer
 
 ```bash
-tapscript agent "sixteen bars of slow blues in G, walking bass, brushes feel"
-tapscript agent --role composer "make the chorus lift — try a IV before the turnaround"
-tapscript agent                       # no prompt: an interactive session
+plainsong agent "sixteen bars of slow blues in G, walking bass, brushes feel"
+plainsong agent --role composer "make the chorus lift — try a IV before the turnaround"
+plainsong agent                       # no prompt: an interactive session
 ```
 
 It reads the notation reference before writing, writes with a tool that parses
@@ -27,13 +27,13 @@ are saved unless you set `agent.transcript = false`.
 ## The build agent
 
 ```bash
-tapscript build
-tapscript build "I want to drive my hardware synth from a Raspberry Pi"
+plainsong build
+plainsong build "I want to drive my hardware synth from a Raspberry Pi"
 ```
 
 It probes the host first, so what it offers depends on what you actually have.
 Then it asks at most a couple of questions, writes `PLAN.md` into the workspace,
-carries the plan out, verifies with `tapscript spec`, and records each decision
+carries the plan out, verifies with `plainsong spec`, and records each decision
 in `BUILD-JOURNAL.md`.
 
 It prefers configuration over code and a small connector over a large one. What
@@ -49,7 +49,7 @@ to find out why this install is set up the way it is.
 An agent may read the project and write only inside its workspace:
 
 ```
-.tapscript/workspace/          (inside a project; a data directory otherwise)
+.plainsong/workspace/          (inside a project; a data directory otherwise)
   output/                      compiled MIDI and audio
   connectors/                  generated connectors
   specs/                       generated specs
@@ -61,7 +61,7 @@ Paths that escape it are refused, and the refusal is returned to the model as a
 tool error so it can correct itself rather than crash the run.
 
 ```bash
-tapscript agent --workspace ./scratch "..."
+plainsong agent --workspace ./scratch "..."
 ```
 
 ## Tools
@@ -84,7 +84,7 @@ back can try something else; an exception would end the run.
 ## Adding a tool
 
 ```python
-from tapscript.agent.tools import ToolRegistry
+from plainsong.agent.tools import ToolRegistry
 
 registry = ToolRegistry()
 registry.add(
@@ -92,7 +92,7 @@ registry.add(
     description="Render each voice to its own audio file.",
     parameters={
         "type": "object",
-        "properties": {"path": {"type": "string", "description": "A .tap file"}},
+        "properties": {"path": {"type": "string", "description": "A .song file"}},
         "required": ["path"],
     },
     handler=lambda path: f"rendered stems for {path}",
@@ -105,8 +105,8 @@ decide whether to call it, so write it for a reader who has not seen the code.
 ## Using the loop directly
 
 ```python
-from tapscript.agent import Agent, ToolRegistry
-from tapscript.llm import get_provider
+from plainsong.agent import Agent, ToolRegistry
+from plainsong.llm import get_provider
 
 agent = Agent(provider=get_provider(), tools=ToolRegistry(), role="composer")
 result = agent.run("a lullaby in 6/8, harp and voice")
@@ -124,5 +124,5 @@ interface shows what the agent did.
 it has with `stopped_because` set, rather than looping.
 
 Model calls cost money and send your notation to whoever provides the model. The
-agent is the only part of TapScript that talks to a network, and only when you
+agent is the only part of Plainsong that talks to a network, and only when you
 invoke it.

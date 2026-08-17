@@ -7,13 +7,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tapscript.agent.kernel import Agent, load_prompt
-from tapscript.agent.tools import Sandbox, SandboxError, ToolRegistry
-from tapscript.llm import build_provider
-from tapscript.llm.base import Provider
-from tapscript.llm.catalog import ProviderInfo
-from tapscript.llm.types import CompletionRequest, CompletionResponse, ToolCall
-from tapscript.runtime.config import load_config
+from plainsong.agent.kernel import Agent, load_prompt
+from plainsong.agent.tools import Sandbox, SandboxError, ToolRegistry
+from plainsong.llm import build_provider
+from plainsong.llm.base import Provider
+from plainsong.llm.catalog import ProviderInfo
+from plainsong.llm.types import CompletionRequest, CompletionResponse, ToolCall
+from plainsong.runtime.config import load_config
 
 NOTATION = """[A]
 Chords: | Am . . . | F . . . |
@@ -45,7 +45,7 @@ class TestSandbox(unittest.TestCase):
         self.directory.cleanup()
 
     def test_relative_paths_resolve_inside(self):
-        target = self.sandbox.resolve("songs/a.tap", for_write=True)
+        target = self.sandbox.resolve("songs/a.song", for_write=True)
         self.assertTrue(str(target).startswith(str(self.sandbox.root)))
 
     def test_escape_is_refused(self):
@@ -93,22 +93,22 @@ class TestTools(unittest.TestCase):
         self.assertEqual(self.registry.call("read_file", {"path": "notes.md"}), "hello")
 
     def test_write_score_validates_first(self):
-        result = self.registry.call("write_score", {"path": "bad.tap", "content": "not notation"})
+        result = self.registry.call("write_score", {"path": "bad.song", "content": "not notation"})
         self.assertIn("not written", result)
-        self.assertFalse((Path(self.directory.name) / "bad.tap").exists())
+        self.assertFalse((Path(self.directory.name) / "bad.song").exists())
 
     def test_write_score_accepts_valid_notation(self):
-        result = self.registry.call("write_score", {"path": "good.tap", "content": NOTATION})
+        result = self.registry.call("write_score", {"path": "good.song", "content": NOTATION})
         self.assertIn("wrote", result)
-        self.assertTrue((Path(self.directory.name) / "good.tap").exists())
+        self.assertTrue((Path(self.directory.name) / "good.song").exists())
 
     def test_write_score_adds_the_extension(self):
         self.registry.call("write_score", {"path": "noext", "content": NOTATION})
-        self.assertTrue((Path(self.directory.name) / "noext.tap").exists())
+        self.assertTrue((Path(self.directory.name) / "noext.song").exists())
 
     def test_compile_reports_the_arrangement(self):
-        self.registry.call("write_score", {"path": "song.tap", "content": NOTATION})
-        result = self.registry.call("compile_score", {"path": "song.tap"})
+        self.registry.call("write_score", {"path": "song.song", "content": NOTATION})
+        result = self.registry.call("compile_score", {"path": "song.song"})
         self.assertIn("notes", result)
         self.assertTrue((Path(self.directory.name) / "output" / "song.mid").exists())
 
@@ -160,7 +160,7 @@ class TestAgentLoop(unittest.TestCase):
             [
                 CompletionResponse(
                     tool_calls=[
-                        ToolCall(id="1", name="write_score", arguments={"path": "x.tap", "content": NOTATION})
+                        ToolCall(id="1", name="write_score", arguments={"path": "x.song", "content": NOTATION})
                     ]
                 ),
                 CompletionResponse(text="wrote it"),
@@ -170,7 +170,7 @@ class TestAgentLoop(unittest.TestCase):
         self.assertEqual(result.reply, "wrote it")
         self.assertEqual(result.tool_calls, ["write_score"])
         self.assertEqual(result.steps, 2)
-        self.assertTrue((Path(self.directory.name) / "x.tap").exists())
+        self.assertTrue((Path(self.directory.name) / "x.song").exists())
 
     def test_tool_results_are_fed_back(self):
         provider = ScriptedProvider(
@@ -199,7 +199,7 @@ class TestAgentLoop(unittest.TestCase):
     def test_provider_failure_is_returned_not_raised(self):
         class Failing(ScriptedProvider):
             def complete(self, request):
-                from tapscript.llm.types import ProviderError
+                from plainsong.llm.types import ProviderError
 
                 raise ProviderError("no key", provider="failing")
 
@@ -250,7 +250,7 @@ class TestAgentLoop(unittest.TestCase):
         result = agent.run("write me something quiet")
         self.assertTrue(result.ok)
         self.assertIn("write_score", result.tool_calls)
-        written = list(Path(self.directory.name).glob("*.tap"))
+        written = list(Path(self.directory.name).glob("*.song"))
         self.assertEqual(len(written), 1)
 
 

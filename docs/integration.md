@@ -1,6 +1,6 @@
 # Integration
 
-Driving TapScript from other software. Four ways in, in rough order of how much
+Driving Plainsong from other software. Four ways in, in rough order of how much
 you have to buy into: the CLI with `--json`, the Python API, the HTTP interface,
 and MCP.
 
@@ -13,11 +13,11 @@ guessable.
 Every command takes `--json` and prints one JSON object on stdout.
 
 ```bash
-tapscript --json info song.tap
+plainsong --json info song.song
 ```
 
-**The flag goes before the subcommand.** `tapscript --json info song.tap`
-works; `tapscript info --json song.tap` does not. It is a global option, and
+**The flag goes before the subcommand.** `plainsong --json info song.song`
+works; `plainsong info --json song.song` does not. It is a global option, and
 this catches nearly everyone once.
 
 | Command | Top-level keys |
@@ -52,7 +52,7 @@ code alone.
 The most direct path. No subprocess, no temp files unless you want them.
 
 ```python
-from tapscript import pipeline
+from plainsong import pipeline
 
 NOTATION = """**TRACK: Library Test**
 [MetaData]
@@ -84,7 +84,7 @@ are in beats; `pitch` is MIDI note number; `velocity` is 0–127.
 For finer control, the two halves are separate and you can stop between them:
 
 ```python
-from tapscript.notation import parse, arrange
+from plainsong.notation import parse, arrange
 
 score = parse(NOTATION)          # structure and tokens, timing still implicit
 arrangement = arrange(score)     # timed notes
@@ -97,7 +97,7 @@ of diagnostics with `.format()`.
 ## The HTTP interface
 
 ```bash
-tapscript serve --port 8799
+plainsong serve --port 8799
 ```
 
 Loopback by default. `GET /` returns the single-page application; the API is
@@ -134,9 +134,9 @@ workspace.
 ## MCP
 
 ```bash
-tapscript mcp                # JSON-RPC 2.0 over stdio
-tapscript mcp --http         # loopback HTTP
-tapscript mcp --list-tools   # what it offers
+plainsong mcp                # JSON-RPC 2.0 over stdio
+plainsong mcp --http         # loopback HTTP
+plainsong mcp --list-tools   # what it offers
 ```
 
 One JSON message per line. The handshake:
@@ -146,7 +146,7 @@ One JSON message per line. The handshake:
 ```
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"prompts":{"listChanged":false}},"serverInfo":{"name":"tapscript","title":"TapScript","version":"1.0.0"},"instructions":"..."}}
+{"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"prompts":{"listChanged":false}},"serverInfo":{"name":"plainsong","title":"Plainsong","version":"1.0.0"},"instructions":"..."}}
 ```
 
 Then `tools/list` gives 27 tools, and `tools/call` runs one:
@@ -166,7 +166,7 @@ with `isError: true` and a message the model is meant to read and act on.
 A notification — a message with no `id` — draws no response at all.
 
 The server is developed in its own repository,
-[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp), which is where
+[plainsong-mcp](https://github.com/SuperInstance/plainsong-mcp), which is where
 a client should install it from.
 
 ## Conventions worth knowing before you start

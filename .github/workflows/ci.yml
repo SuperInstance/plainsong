@@ -23,19 +23,19 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Show what the host looks like
-        run: python -m tapscript doctor
+        run: python -m plainsong doctor
 
       - name: Verify the specs
-        run: python -m tapscript spec
+        run: python -m plainsong spec
 
       - name: Run the tests
         run: python -m unittest discover -s tests -v
 
       - name: Compile something end to end
         run: |
-          python -m tapscript new "CI Check" -o ci-check.tap
-          python -m tapscript compile ci-check.tap -o ci.mid --audio ci.wav
-          python -m tapscript info ci-check.tap
+          python -m plainsong new "CI Check" -o ci-check.song
+          python -m plainsong compile ci-check.song -o ci.mid --audio ci.wav
+          python -m plainsong info ci-check.song
 
   # The optional accelerators must not change behaviour, only speed.
   accelerated:
@@ -47,7 +47,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install numpy pytest
-      - run: python -m tapscript spec
+      - run: python -m plainsong spec
       - run: python -m pytest tests -q
 
   lint:
@@ -58,8 +58,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install ruff
-      - run: ruff check tapscript tests
-      - run: ruff format --check tapscript tests
+      - run: ruff check plainsong tests
+      - run: ruff format --check plainsong tests
         continue-on-error: true
 
   corpus:
@@ -70,8 +70,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check every .tap file in the repository
-        run: python -m tapscript check docs examples tapscript/songbook README.md
+      - name: Check every .song file in the repository
+        run: python -m plainsong check docs examples plainsong/songbook README.md
 
       # `check` proves the corpus still compiles. It says nothing about whether
       # it compiles to the same notes, and the difference is not academic: with
@@ -81,11 +81,11 @@ jobs:
       # only the hash moves.
       #
       # When a change here is intended, re-record with
-      #   python -m tapscript fingerprint docs examples tapscript/songbook \
+      #   python -m plainsong fingerprint docs examples plainsong/songbook \
       #     --write tests/corpus-fingerprint.txt
       # and the diff on that file is the review: it names every piece that
       # changed and by how many notes.
       - name: The corpus compiles to the same music it did before
         run: >
-          python -m tapscript fingerprint docs examples tapscript/songbook
+          python -m plainsong fingerprint docs examples plainsong/songbook
           --check tests/corpus-fingerprint.txt

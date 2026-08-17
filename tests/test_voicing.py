@@ -11,8 +11,8 @@ from __future__ import annotations
 
 import unittest
 
-from tapscript.notation.theory import parse_chord
-from tapscript.notation.voicing import NATURAL, STRATEGIES, voice
+from plainsong.notation.theory import parse_chord
+from plainsong.notation.voicing import NATURAL, STRATEGIES, voice
 
 NAMES = ("C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B")
 
@@ -97,7 +97,7 @@ class TestNothingGetsWorse(unittest.TestCase):
         # Roman numerals build a Chord straight from intervals, with no degree
         # labels. Without them there is no way to tell a fifth from a seventh,
         # so the voicer must fall back rather than guess.
-        from tapscript.notation.theory import Chord
+        from plainsong.notation.theory import Chord
 
         bare = Chord(0, "maj7", intervals=(0, 4, 7, 11))
         self.assertEqual(len(voice(bare, 3, 4)), 4)
@@ -119,7 +119,7 @@ class TestEveryStrategyIsUsable(unittest.TestCase):
     def test_natural_covers_every_degree_the_parser_emits(self):
         # `NATURAL` decides which degrees count as altered, and a degree
         # missing from it would silently never be treated as identity.
-        from tapscript.notation.chordsymbol import DEGREE_SEMITONES
+        from plainsong.notation.chordsymbol import DEGREE_SEMITONES
 
         self.assertEqual(set(DEGREE_SEMITONES), set(NATURAL))
         self.assertEqual(DEGREE_SEMITONES, NATURAL)

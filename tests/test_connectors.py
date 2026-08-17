@@ -1,4 +1,4 @@
-"""Connectors: plugin edges that bridge TapScript to the outside world.
+"""Connectors: plugin edges that bridge Plainsong to the outside world.
 
 This suite verifies that connectors are discovered, validated, and run
 correctly, that failed connectors degrade gracefully, and that the plugin
@@ -16,9 +16,9 @@ import urllib.error
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-from tapscript.connectors.base import Connector, ConnectorRegistry, ConnectorResult
-from tapscript.connectors.builtin import FileConnector, WebhookConnector
-from tapscript.notation import arrange, parse
+from plainsong.connectors.base import Connector, ConnectorRegistry, ConnectorResult
+from plainsong.connectors.builtin import FileConnector, WebhookConnector
+from plainsong.notation import arrange, parse
 
 # Minimal test notation to create an Arrangement.
 SIMPLE_TAP = """**TRACK: Test**
@@ -200,7 +200,7 @@ class TestLoadDirectory(unittest.TestCase):
             # Write a valid connector module
             connector_file = tmppath / "my_connector.py"
             connector_file.write_text("""
-from tapscript.connectors.base import Connector, ConnectorResult, registry
+from plainsong.connectors.base import Connector, ConnectorResult, registry
 
 @registry.register
 class MyConnector(Connector):
@@ -211,7 +211,7 @@ class MyConnector(Connector):
 
             registry = ConnectorRegistry()
             # Patch the global registry so loaded modules use our test registry
-            with patch("tapscript.connectors.base.registry", registry):
+            with patch("plainsong.connectors.base.registry", registry):
                 loaded = registry.load_directory(tmppath)
             self.assertIn("my_connector", loaded)
             # The connector should now be available
@@ -228,7 +228,7 @@ class MyConnector(Connector):
             # Write a working module that should still load
             working_file = tmppath / "working.py"
             working_file.write_text("""
-from tapscript.connectors.base import Connector, ConnectorResult, registry
+from plainsong.connectors.base import Connector, ConnectorResult, registry
 
 @registry.register
 class WorkingConnector(Connector):
@@ -238,7 +238,7 @@ class WorkingConnector(Connector):
 """)
 
             registry = ConnectorRegistry()
-            with patch("tapscript.connectors.base.registry", registry):
+            with patch("plainsong.connectors.base.registry", registry):
                 loaded = registry.load_directory(tmppath)
             # Broken module should NOT be in loaded list
             self.assertNotIn("broken", loaded)
@@ -253,7 +253,7 @@ class WorkingConnector(Connector):
             # Write a module that should be skipped
             skipped_file = tmppath / "_internal.py"
             skipped_file.write_text("""
-from tapscript.connectors.base import Connector, ConnectorResult, registry
+from plainsong.connectors.base import Connector, ConnectorResult, registry
 
 @registry.register
 class InternalConnector(Connector):
@@ -263,7 +263,7 @@ class InternalConnector(Connector):
 """)
 
             registry = ConnectorRegistry()
-            with patch("tapscript.connectors.base.registry", registry):
+            with patch("plainsong.connectors.base.registry", registry):
                 loaded = registry.load_directory(tmppath)
             self.assertNotIn("_internal", loaded)
             # Connector should not be accessible
@@ -281,7 +281,7 @@ class InternalConnector(Connector):
             tmppath = Path(tmpdir)
             connector_file = tmppath / "once.py"
             connector_file.write_text("""
-from tapscript.connectors.base import Connector, ConnectorResult, registry
+from plainsong.connectors.base import Connector, ConnectorResult, registry
 
 @registry.register
 class OnceConnector(Connector):
@@ -291,7 +291,7 @@ class OnceConnector(Connector):
 """)
 
             registry = ConnectorRegistry()
-            with patch("tapscript.connectors.base.registry", registry):
+            with patch("plainsong.connectors.base.registry", registry):
                 # First load
                 loaded1 = registry.load_directory(tmppath)
                 self.assertIn("once", loaded1)
@@ -422,7 +422,7 @@ key: Dm | tempo: 120 | time: 4/4
             self.assertIn("my-awesome-song", mid_files[0].name)
 
     def test_file_connector_falls_back_to_default_stem_when_title_empty(self):
-        """FileConnector falls back to 'tapscript' when title is empty."""
+        """FileConnector falls back to 'plainsong' when title is empty."""
         tap_no_title = """[MetaData]
 key: Dm | tempo: 120 | time: 4/4
 
@@ -439,7 +439,7 @@ key: Dm | tempo: 120 | time: 4/4
             self.assertTrue(result)
             mid_files = list(tmppath.glob("*.mid"))
             self.assertEqual(len(mid_files), 1)
-            self.assertIn("tapscript", mid_files[0].name)
+            self.assertIn("plainsong", mid_files[0].name)
 
     def test_file_connector_creates_directory_if_missing(self):
         """FileConnector creates the output directory if it doesn't exist."""
@@ -604,7 +604,7 @@ class TestBaseRun(unittest.TestCase):
 
     def test_run_returns_failed_result_when_connector_unavailable(self):
         """run() returns failed ConnectorResult when connector is not available."""
-        from tapscript.connectors import base
+        from plainsong.connectors import base
 
         arrangement = make_arrangement()
 
@@ -620,7 +620,7 @@ class TestBaseRun(unittest.TestCase):
                 # This should never be called
                 raise AssertionError("send() should not be called for unavailable connector")
 
-        with patch("tapscript.connectors.base.discover") as mock_discover:
+        with patch("plainsong.connectors.base.discover") as mock_discover:
             mock_discover.return_value = unavailable_registry
 
             result = base.run("unavailable_test", arrangement)
@@ -633,7 +633,7 @@ class TestBaseRun(unittest.TestCase):
     @patch("urllib.request.urlopen")
     def test_run_successfully_runs_available_connector(self, mock_urlopen):
         """run() successfully calls send() when connector is available."""
-        from tapscript.connectors import base
+        from plainsong.connectors import base
 
         mock_response = MagicMock()
         mock_response.status = 200

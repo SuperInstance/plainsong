@@ -1,4 +1,4 @@
-Here are three designs for TapScript where **duration is shown by physical spacing**, along with full examples, parsing logic, and a final recommendation.
+Here are three designs for Plainsong where **duration is shown by physical spacing**, along with full examples, parsing logic, and a final recommendation.
 
 ---
 

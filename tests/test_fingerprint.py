@@ -15,7 +15,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from tapscript.fingerprint import fingerprint_file, fingerprint_paths, format_report
+from plainsong.fingerprint import fingerprint_file, fingerprint_paths, format_report
 
 SONG = textwrap.dedent(
     """\
@@ -34,21 +34,21 @@ class TestStability(unittest.TestCase):
     def setUp(self):
         self._dir = TemporaryDirectory()
         self.root = Path(self._dir.name)
-        (self.root / "song.tap").write_text(SONG, encoding="utf-8")
+        (self.root / "song.song").write_text(SONG, encoding="utf-8")
 
     def tearDown(self):
         self._dir.cleanup()
 
     def test_the_same_file_fingerprints_the_same_way_twice(self):
-        first = fingerprint_file(self.root / "song.tap")
-        second = fingerprint_file(self.root / "song.tap")
+        first = fingerprint_file(self.root / "song.song")
+        second = fingerprint_file(self.root / "song.song")
         self.assertEqual(first.digest, second.digest)
         self.assertGreater(first.notes, 0)
 
     def test_a_changed_note_changes_the_digest(self):
-        before = fingerprint_file(self.root / "song.tap").digest
-        (self.root / "song.tap").write_text(SONG.replace("Am7 . . .", "Ab7 . . ."), encoding="utf-8")
-        after = fingerprint_file(self.root / "song.tap")
+        before = fingerprint_file(self.root / "song.song").digest
+        (self.root / "song.song").write_text(SONG.replace("Am7 . . .", "Ab7 . . ."), encoding="utf-8")
+        after = fingerprint_file(self.root / "song.song")
         self.assertNotEqual(before, after.digest)
 
     def test_an_added_ninth_is_audible(self):
@@ -61,17 +61,17 @@ class TestStability(unittest.TestCase):
         #
         # That is what happened. The voicer now gives up the fifth first and
         # the root second, so the ninth survives and the two differ.
-        before = fingerprint_file(self.root / "song.tap").digest
-        (self.root / "song.tap").write_text(SONG.replace("G7 . . .", "G7b9 . . ."), encoding="utf-8")
-        self.assertNotEqual(before, fingerprint_file(self.root / "song.tap").digest)
+        before = fingerprint_file(self.root / "song.song").digest
+        (self.root / "song.song").write_text(SONG.replace("G7 . . .", "G7b9 . . ."), encoding="utf-8")
+        self.assertNotEqual(before, fingerprint_file(self.root / "song.song").digest)
 
     def test_a_changed_pitch_moves_the_digest_without_moving_the_note_count(self):
         # The case the note count cannot see, and the reason a hash is needed.
         # Flattening a seventh across the bundled songbook leaves every count
-        # untouched; `tapscript check` and the library.compat spec both pass.
-        before = fingerprint_file(self.root / "song.tap")
-        (self.root / "song.tap").write_text(SONG.replace("Cmaj7", "C7"), encoding="utf-8")
-        after = fingerprint_file(self.root / "song.tap")
+        # untouched; `plainsong check` and the library.compat spec both pass.
+        before = fingerprint_file(self.root / "song.song")
+        (self.root / "song.song").write_text(SONG.replace("Cmaj7", "C7"), encoding="utf-8")
+        after = fingerprint_file(self.root / "song.song")
         self.assertEqual(before.notes, after.notes)
         self.assertNotEqual(before.digest, after.digest)
 
@@ -79,16 +79,16 @@ class TestStability(unittest.TestCase):
         # The fingerprint is of the music, not of the source. Reformatting,
         # retitling and commenting must all be free, or the guard cries wolf
         # and somebody re-records it without reading the diff.
-        before = fingerprint_file(self.root / "song.tap").digest
-        (self.root / "song.tap").write_text(SONG + "\n# a trailing comment\n", encoding="utf-8")
-        self.assertEqual(before, fingerprint_file(self.root / "song.tap").digest)
+        before = fingerprint_file(self.root / "song.song").digest
+        (self.root / "song.song").write_text(SONG + "\n# a trailing comment\n", encoding="utf-8")
+        self.assertEqual(before, fingerprint_file(self.root / "song.song").digest)
 
 
 class TestReport(unittest.TestCase):
     def setUp(self):
         self._dir = TemporaryDirectory()
         self.root = Path(self._dir.name)
-        for name in ("b.tap", "a.tap", "c.tap"):
+        for name in ("b.song", "a.song", "c.song"):
             (self.root / name).write_text(SONG, encoding="utf-8")
 
     def tearDown(self):
@@ -111,9 +111,9 @@ class TestReport(unittest.TestCase):
     def test_a_file_that_stops_compiling_is_recorded_rather_than_raised(self):
         # A crash is a fingerprint result. Raising here would mean the one
         # change most worth catching takes the whole report down with it.
-        (self.root / "broken.tap").write_text("\x00 not notation at all", encoding="utf-8")
+        (self.root / "broken.song").write_text("\x00 not notation at all", encoding="utf-8")
         entries = {Path(e.path).name: e for e in fingerprint_paths([str(self.root)])}
-        self.assertIn("broken.tap", entries)
+        self.assertIn("broken.song", entries)
 
 
 class TestTheRecordedBaselineIsCurrent(unittest.TestCase):

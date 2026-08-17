@@ -16,10 +16,10 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from tapscript.agent.tools import Sandbox, ToolRegistry
-from tapscript.mcp import ensemble
-from tapscript.mcp.server import Server
-from tapscript.runtime.config import load_config
+from plainsong.agent.tools import Sandbox, ToolRegistry
+from plainsong.mcp import ensemble
+from plainsong.mcp.server import Server
+from plainsong.runtime.config import load_config
 
 BASS = "[A]\n@bass | a1 . e2 . | f1 . c2 . |\n"
 BASS_REVISED = "[A]\n@bass | a1 e2 a2 e2 | f1 c2 f2 c2 |\n"
@@ -122,7 +122,7 @@ class TestWriting(SessionTest):
         result = self.session.write_part("bass", "alice", BASS, 0, "walking line")
         self.assertTrue(result["accepted"])
         self.assertEqual(result["bars"], 2)
-        self.assertTrue((self.root / "harbour" / "parts" / "bass.tap").is_file())
+        self.assertTrue((self.root / "harbour" / "parts" / "bass.song").is_file())
         self.assertEqual(self.session.manifest().voices["bass"].version, result["version"])
 
     def test_invalid_notation_never_lands(self) -> None:
@@ -130,7 +130,7 @@ class TestWriting(SessionTest):
             self.session.write_part("bass", "alice", "[A]\nnothing playable in here\n", 0)
         self.assertIn("not written", str(caught.exception))
         self.assertIn("nothing to play", str(caught.exception))
-        self.assertFalse((self.root / "harbour" / "parts" / "bass.tap").exists())
+        self.assertFalse((self.root / "harbour" / "parts" / "bass.song").exists())
 
     def test_a_part_may_only_speak_for_its_own_voice(self) -> None:
         with self.assertRaises(ensemble.EnsembleError) as caught:

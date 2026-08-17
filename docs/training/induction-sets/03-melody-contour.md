@@ -1,4 +1,4 @@
-Here is a **TapScript Melody Contour Induction Set**. Each melody is written in 2-bar rhythmic notation (4/4, 16th-note grid). TapScript uses numbers for scale degrees (1-7, with `1` = tonic, `8` = octave), and dots for rhythm: `.` = rest, `-` = hold, `x` = short tap (16th), `X` = long tap (quarter). The contour is the shape of the numbers.
+Here is a **Plainsong Melody Contour Induction Set**. Each melody is written in 2-bar rhythmic notation (4/4, 16th-note grid). Plainsong uses numbers for scale degrees (1-7, with `1` = tonic, `8` = octave), and dots for rhythm: `.` = rest, `-` = hold, `x` = short tap (16th), `X` = long tap (quarter). The contour is the shape of the numbers.
 
 ---
 

@@ -1,6 +1,6 @@
 # Connectors
 
-A connector is a named way of getting something out of TapScript, or into it.
+A connector is a named way of getting something out of Plainsong, or into it.
 They exist so that adapting this to a particular setup does not mean editing the
 compiler.
 
@@ -14,7 +14,7 @@ compiler.
 | `webhook` | POSTs the arrangement to a URL | network |
 
 ```python
-from tapscript.connectors import iter_connectors
+from plainsong.connectors import iter_connectors
 
 for connector in iter_connectors():
     print(connector["name"], connector["available"], connector["detail"])
@@ -29,10 +29,10 @@ midi-port  False  midi_ports: pip install mido python-rtmidi, then connect a MID
 ## Using one
 
 ```python
-from tapscript.connectors import run
-from tapscript.notation import arrange, parse
+from plainsong.connectors import run
+from plainsong.notation import arrange, parse
 
-arrangement = arrange(parse(open("harbour.tap").read()))
+arrangement = arrange(parse(open("harbour.song").read()))
 result = run("midi-port", arrangement, port="Elektron Digitakt")
 
 print(result.ok, result.detail, result.outputs)
@@ -47,15 +47,15 @@ with no registration step:
 """Send finished renders to the studio machine."""
 
 from pathlib import Path
-from tapscript.connectors.base import Connector, ConnectorResult, registry
-from tapscript.render.midi import write_midi
+from plainsong.connectors.base import Connector, ConnectorResult, registry
+from plainsong.render.midi import write_midi
 
 
 @registry.register
 class StudioConnector(Connector):
     name = "studio"
     summary = "Copy the MIDI to the studio share"
-    requires = ()          # capability names from `tapscript doctor`
+    requires = ()          # capability names from `plainsong doctor`
 
     def send(self, arrangement, **options):
         target = Path(options.get("share", "/Volumes/studio/incoming"))
@@ -68,7 +68,7 @@ class StudioConnector(Connector):
 Three rules:
 
 - Declare what you need in `requires`, using capability names from
-  `tapscript doctor`. Availability is then checked for you and reported
+  `plainsong doctor`. Availability is then checked for you and reported
   usefully.
 - Return a `ConnectorResult`, including for failure. Do not raise for a
   condition the user can fix.
@@ -84,7 +84,7 @@ Connectors are also loaded from the plugins directory, which is per-user rather
 than per-project:
 
 ```bash
-tapscript doctor          # prints data_dir; plugins live in <data_dir>/plugins
+plainsong doctor          # prints data_dir; plugins live in <data_dir>/plugins
 ```
 
 A module that fails to import is skipped rather than taking the others with it.

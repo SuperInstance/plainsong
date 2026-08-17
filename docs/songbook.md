@@ -1,22 +1,22 @@
 # The songbook
 
-Chord charts for well-known songs, in TapScript notation. Reference material for
+Chord charts for well-known songs, in Plainsong notation. Reference material for
 agents learning the notation, and worked examples for anyone reading the format.
 
-Each `.tap` file uses the `**TRACK:**` header with metadata (key, tempo, swing,
+Each `.song` file uses the `**TRACK:**` header with metadata (key, tempo, swing,
 subdivision), section labels, and chord rows.
 
 ## Where it lives
 
 | | |
 |---|---|
-| `tapscript/songbook/` | 3,824 charts. **Inside the package**, so they ship in the wheel. |
+| `plainsong/songbook/` | 3,824 charts. **Inside the package**, so they ship in the wheel. |
 | `docs/fakebook-archive/` | 2,484 more. Not packaged — available to a clone only. |
 
-The packaged half is inside `tapscript/` for the same reason the specs are: a
+The packaged half is inside `plainsong/` for the same reason the specs are: a
 wheel carries only what is under the package. Kept in `docs/`, the whole library
-was invisible to anyone who installed rather than cloned — `tapscript library
-"waltz"` said nothing found, and `tapscript play stand-by-me`, which the README
+was invisible to anyone who installed rather than cloned — `plainsong library
+"waltz"` said nothing found, and `plainsong play stand-by-me`, which the README
 advertises, could not work at all.
 
 ## Chord charts only, and why
@@ -53,20 +53,20 @@ from.
 
 ## Index
 
-The nine hand-written entries at the top of `tapscript/songbook/`. Everything
-else is generated and reached through `tapscript library`.
+The nine hand-written entries at the top of `plainsong/songbook/`. Everything
+else is generated and reached through `plainsong library`.
 
 | # | Song | Artist | Key | Tempo | Difficulty |
 |---|------|--------|-----|-------|------------|
-| 01 | [House of the Rising Sun](../tapscript/songbook/01-house-of-the-rising-sun.tap) | Traditional / Animals | Am | 120 | ★★☆☆☆ |
-| 02 | [Wonderwall](../tapscript/songbook/02-wonderwall.tap) | Oasis | G | 87 | ★★☆☆☆ |
-| 03 | [Hallelujah](../tapscript/songbook/03-hallelujah.tap) | Leonard Cohen | C | 60 | ★★★☆☆ |
-| 04 | [Hotel California](../tapscript/songbook/04-hotel-california.tap) | Eagles | Bm | 75 | ★★★★☆ |
-| 05 | [Knockin' on Heaven's Door](../tapscript/songbook/05-knockin-on-heavens-door.tap) | Bob Dylan | G | 70 | ★☆☆☆☆ |
-| 06 | [Blowin' in the Wind](../tapscript/songbook/06-blowin-in-the-wind.tap) | Bob Dylan | C | 90 | ★☆☆☆☆ |
-| 07 | [No Woman No Cry](../tapscript/songbook/07-no-woman-no-cry.tap) | Bob Marley | C | 76 | ★★★☆☆ |
-| 08 | [Stand By Me](../tapscript/songbook/08-stand-by-me.tap) | Ben E. King | A | 120 | ★★☆☆☆ |
-| 10 | [The Sound of Silence](../tapscript/songbook/10-the-sound-of-silence.tap) | Simon & Garfunkel | Am | 108 | ★★☆☆☆ |
+| 01 | [House of the Rising Sun](../plainsong/songbook/01-house-of-the-rising-sun.song) | Traditional / Animals | Am | 120 | ★★☆☆☆ |
+| 02 | [Wonderwall](../plainsong/songbook/02-wonderwall.song) | Oasis | G | 87 | ★★☆☆☆ |
+| 03 | [Hallelujah](../plainsong/songbook/03-hallelujah.song) | Leonard Cohen | C | 60 | ★★★☆☆ |
+| 04 | [Hotel California](../plainsong/songbook/04-hotel-california.song) | Eagles | Bm | 75 | ★★★★☆ |
+| 05 | [Knockin' on Heaven's Door](../plainsong/songbook/05-knockin-on-heavens-door.song) | Bob Dylan | G | 70 | ★☆☆☆☆ |
+| 06 | [Blowin' in the Wind](../plainsong/songbook/06-blowin-in-the-wind.song) | Bob Dylan | C | 90 | ★☆☆☆☆ |
+| 07 | [No Woman No Cry](../plainsong/songbook/07-no-woman-no-cry.song) | Bob Marley | C | 76 | ★★★☆☆ |
+| 08 | [Stand By Me](../plainsong/songbook/08-stand-by-me.song) | Ben E. King | A | 120 | ★★☆☆☆ |
+| 10 | [The Sound of Silence](../plainsong/songbook/10-the-sound-of-silence.song) | Simon & Garfunkel | Am | 108 | ★★☆☆☆ |
 
 ## Difficulty guide
 
@@ -81,15 +81,15 @@ else is generated and reached through `tapscript library`.
 You do not need to know where a file is. Search by title, key or collection:
 
 ```bash
-tapscript library "waltz"          # search
-tapscript library --collections    # what is in here
-tapscript play stand-by-me         # render and play by name
+plainsong library "waltz"          # search
+plainsong library --collections    # what is in here
+plainsong play stand-by-me         # render and play by name
 ```
 
 Or compile one directly:
 
 ```bash
-tapscript compile tapscript/songbook/01-house-of-the-rising-sun.tap \
+plainsong compile plainsong/songbook/01-house-of-the-rising-sun.song \
   -o rising-sun.mid --audio rising-sun.wav
 ```
 
@@ -106,4 +106,4 @@ tapscript compile tapscript/songbook/01-house-of-the-rising-sun.tap \
 
 ---
 
-Part of [TapScript Studio](..).
+Part of [Plainsong Studio](..).

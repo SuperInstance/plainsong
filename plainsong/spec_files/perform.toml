@@ -1,0 +1,40 @@
+[spec]
+id = "perform.arrival"
+title = "Written times are arrival times, and the players are solved backwards"
+why = """
+A score says a note is on beat four. Where -- at the hands, at the instrument,
+or at the ear it was written for? Those are three clocks, and across a large
+platform they are tens of milliseconds apart. A piece that declares a [Stage]
+block is written in the third one: the compiler works out when each player has
+to act so that the sound lands where it says it does.
+
+The first check is the important one. There are several thousand pieces of
+notation in this repository and more we cannot see, none of which declare a
+stage, and all of which must compile to exactly the bytes they did before this
+existed.
+"""
+tags = ["core", "fast", "perform"]
+
+[[check]]
+id = "inert"
+kind = "python"
+run = "plainsong.selfcheck:check_stage_is_inert"
+description = "Notation with no [Stage] block renders byte for byte as it always did"
+
+[[check]]
+id = "solver"
+kind = "python"
+run = "plainsong.selfcheck:check_arrival_solver"
+description = "Each player acts early by speech plus travel plus p-centre, and the sound lands together"
+
+[[check]]
+id = "conducting"
+kind = "python"
+run = "plainsong.selfcheck:check_conducting"
+description = "One directive holds every voice's arrival together while their hands move apart"
+
+[[check]]
+id = "directives"
+kind = "python"
+run = "plainsong.selfcheck:check_directive_vocabulary"
+description = "anticipate moves the emission alone; push_forward moves the arrival with it"

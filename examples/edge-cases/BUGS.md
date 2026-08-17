@@ -1,7 +1,7 @@
-# TapScript v2 — Edge-Case Bug Reports
+# Plainsong v2 — Edge-Case Bug Reports
 
 Play-tested by Navigation (KimiCode) against the live app at `localhost:5557`
-(parser: `scripts/tapscript_v2.py`). Each bug was reproduced via `POST /api/compile`
+(parser: `scripts/plainsong_v2.py`). Each bug was reproduced via `POST /api/compile`
 and verified by inspecting the resulting MIDI with `pretty_midi`.
 
 Severity key: **HIGH** = wrong musical output or silent data loss,
@@ -12,7 +12,7 @@ Severity key: **HIGH** = wrong musical output or silent data loss,
 
 ## BUG-1 (HIGH): Non-standard token counts are not rescaled — polyrhythm is impossible
 
-**Repro:** `edge-1-polyrhythm.tap`
+**Repro:** `edge-1-polyrhythm.song`
 
 A bar's timing is computed as `slot_time = bar_start + token_index * slot_dur`,
 where `slot_dur` is fixed by `subdivision:` (2 or 4 slots per beat). The token
@@ -50,7 +50,7 @@ clamped silently (`edge-1` section V2 relies on this).
 
 ## BUG-3 (MEDIUM): Mid-song tempo changes are silently ignored
 
-**Repro:** `edge-2-tempo-shifts.tap`
+**Repro:** `edge-2-tempo-shifts.song`
 
 `tempo: 200` and `tempo: 60` lines placed inside sections are not section
 headers and don't start with `Chords:`/`Melody:`/`Lyrics:`/`@`, so the parser
@@ -83,7 +83,7 @@ bar is deleted and the grid silently re-indexes.
 
 ## BUG-5 (MEDIUM): Invalid tokens fail silently; `errors` in the compile response is always empty
 
-**Repro:** probes and `edge-5-kitchen-sink.tap`
+**Repro:** probes and `edge-5-kitchen-sink.song`
 
 - Unknown chord symbol `Hq7` → treated as sustain (chord vanishes, harmony
   holds). No warning.
@@ -98,7 +98,7 @@ counts per bar, and dropped notes. **Actual:** total silence.
 
 ## BUG-6 (LOW): Key name reported enharmonically
 
-**Repro:** `edge-5-kitchen-sink.tap` declares `key: Bbm`; `/api/parse`
+**Repro:** `edge-5-kitchen-sink.song` declares `key: Bbm`; `/api/parse`
 reports `"key": "A#m"`. The internal flat→sharp canonicalization leaks into
 the API response. Musically harmless, confusing in the UI.
 
@@ -106,12 +106,12 @@ the API response. Musically harmless, confusing in the UI.
 
 ## Notes on what did NOT break
 
-- `edge-3-dense-chords.tap`: 6-note and 8-note simultaneous chords render
+- `edge-3-dense-chords.song`: 6-note and 8-note simultaneous chords render
   correctly; degenerate tokens (`e2-.-g2`, `c3--e3`) degrade gracefully to
   2-note chords.
-- `edge-4-players-only.tap`: no `Chords:`/`Melody:`/`Lyrics:` lines — compiles
+- `edge-4-players-only.song`: no `Chords:`/`Melody:`/`Lyrics:` lines — compiles
   fine, drum track correctly flagged `is_drum`.
-- `edge-5-kitchen-sink.tap`: every spec feature in one file — all chord
+- `edge-5-kitchen-sink.song`: every spec feature in one file — all chord
   qualities (`sus4`, `add9`, `m6`, `9`, `aug`, `dim`, `maj7`, `7`), flats in
   note names, `vel:`, swing, multiple players/sections — compiles correctly.
   Caveat: the underfilled bridge bar (`Melody: | A4 . |`) occupies only beat 1

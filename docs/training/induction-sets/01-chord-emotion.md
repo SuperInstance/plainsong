@@ -1,8 +1,8 @@
-Here is an inductive training set for AI agents learning music through TapScript notation. Each fragment is designed to be compiled and heard, followed by a prompt for the agent to complete.
+Here is an inductive training set for AI agents learning music through Plainsong notation. Each fragment is designed to be compiled and heard, followed by a prompt for the agent to complete.
 
 ---
 
-**TapScript Fragment 1:**
+**Plainsong Fragment 1:**
 ```
 [Key: A minor] [Tempo: 72]
 | Am : 1 2 3 4 | Am : 1 2 3 4 |
@@ -14,7 +14,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 2:**
+**Plainsong Fragment 2:**
 ```
 [Key: C major] [Tempo: 88]
 | C : 1 2 3 4 | G7 : 1 2 3 4 |
@@ -26,7 +26,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 3:**
+**Plainsong Fragment 3:**
 ```
 [Key: A minor] [Tempo: 100]
 | E7 : 1 2 3 4 | E7 : 1 2 3 4 |
@@ -38,7 +38,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 4:**
+**Plainsong Fragment 4:**
 ```
 [Key: C major] [Tempo: 96]
 | F : 1 2 3 4 | G : 1 2 3 4 |
@@ -50,7 +50,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 5:**
+**Plainsong Fragment 5:**
 ```
 [Key: A minor] [Tempo: 80]
 | Dm : 1 2 3 4 | Am : 1 2 3 4 |
@@ -62,7 +62,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 6:**
+**Plainsong Fragment 6:**
 ```
 [Key: C major] [Tempo: 90]
 | G7 : 1 2 3 4 | C : 1 2 3 4 |
@@ -74,7 +74,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 7:**
+**Plainsong Fragment 7:**
 ```
 [Key: C major] [Tempo: 60]
 | Bdim : 1 2 3 4 | Bdim : 1 2 3 4 |
@@ -86,7 +86,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 8:**
+**Plainsong Fragment 8:**
 ```
 [Key: C major] [Tempo: 112]
 | Am : 1 2 3 4 | F : 1 2 3 4 |
@@ -98,7 +98,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 9:**
+**Plainsong Fragment 9:**
 ```
 [Key: E minor] [Tempo: 70]
 | Em : 1 2 3 4 | C : 1 2 3 4 |
@@ -110,7 +110,7 @@ What is the chord doing?
 
 ---
 
-**TapScript Fragment 10:**
+**Plainsong Fragment 10:**
 ```
 [Key: D major] [Tempo: 104]
 | A7 : 1 2 3 4 | D : 1 2 3 4 |

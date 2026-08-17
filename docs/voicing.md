@@ -30,7 +30,7 @@ That is the whole rule. Everything below is how it was chosen.
 ## It was measured, not argued
 
 Five strategies were implemented and scored over every chord in the repository.
-Reproduce with `python3 -m tapscript voicing --compare`.
+Reproduce with `python3 -m plainsong voicing --compare`.
 
 The first attempt measured across all 125,375 chord occurrences and produced
 almost no signal — 99.4% against 99.9% — because 99.7% of the corpus is triads
@@ -102,7 +102,7 @@ different, and 5 where a slash chord got its seventh back.
 `spread`. `stack` restores the old behaviour exactly, for anyone whose
 recordings depend on it.
 
-The strategies live in `tapscript/notation/voicing.py` and are each a few lines,
+The strategies live in `plainsong/notation/voicing.py` and are each a few lines,
 because they all operate on the same thing: a **degree map**, scale degree onto
 semitones above the root, carried down from the parser. A voicer cannot decide
 what to drop from a bare list of intervals — dropping the fifth is free and

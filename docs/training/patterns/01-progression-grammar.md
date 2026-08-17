@@ -1,11 +1,11 @@
-# TapScript Progression Pattern Library
+# Plainsong Progression Pattern Library
 
 ## Agent Training Module: Harmonic DNA
 
 ---
 
 ### 1. I-V-vi-IV (The Pop-Punk Axis)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: C  G  Am  F  || BAR 2: C  G  Am  F
 ```
@@ -20,7 +20,7 @@ BAR 1: C  G  Am  F  || BAR 2: C  G  Am  F
 ---
 
 ### 2. ii-V-I (The Jazz Engine)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: Dm7  G7  || BAR 2: Cmaj7  (hold)
 ```
@@ -35,7 +35,7 @@ BAR 1: Dm7  G7  || BAR 2: Cmaj7  (hold)
 ---
 
 ### 3. I-IV-V (The Blues Skeleton)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: C  F  || BAR 2: G  C
 ```
@@ -50,7 +50,7 @@ BAR 1: C  F  || BAR 2: G  C
 ---
 
 ### 4. Am-F-C-G (The Sad-Sweet Loop)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: Am  F  || BAR 2: C  G
 ```
@@ -65,7 +65,7 @@ BAR 1: Am  F  || BAR 2: C  G
 ---
 
 ### 5. i-VII-VI-V (The Andalusian Cousin)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: Am  G  || BAR 2: F  E
 ```
@@ -80,7 +80,7 @@ BAR 1: Am  G  || BAR 2: F  E
 ---
 
 ### 6. I-vi-IV-V (The Doo-Wop Dream)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: C  Am  || BAR 2: F  G
 ```
@@ -95,7 +95,7 @@ BAR 1: C  Am  || BAR 2: F  G
 ---
 
 ### 7. vi-IV-I-V (The Canon Variant)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: Am  F  || BAR 2: C  G
 ```
@@ -110,7 +110,7 @@ BAR 1: Am  F  || BAR 2: C  G
 ---
 
 ### 8. I-III-IV-vi (The Bright-False-Sad)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: C  E  || BAR 2: F  Am
 ```
@@ -125,7 +125,7 @@ BAR 1: C  E  || BAR 2: F  Am
 ---
 
 ### 9. i-iv-VII-III (The Minor Lament)
-**TapScript:**
+**Plainsong:**
 ```
 BAR 1: Am  Dm  || BAR 2: G  C
 ```

@@ -4,7 +4,7 @@
 
 | Repo | Metaphor | Role | Language | Key Insight |
 |------|----------|------|----------|-------------|
-| **TapScript** | The Score | Notation → SWMIDI-8 | Python | Plain text that compiles to music |
+| **Plainsong** | The Score | Notation → SWMIDI-8 | Python | Plain text that compiles to music |
 | **Tensor-midi** | The Instrument | 12-pulse DAW | JavaScript | Conversation IS the interference pattern of 3:4 |
 | **Plato-music-sync** | The Conductor | Groove, counterpoint, cadence | Rust | Rooms are a polyrhythmic ensemble |
 | **Musician-soul** | The Player | Persona evolution, soul_print | Rust | Digest influences → develop what-works → evolve soul |
@@ -29,7 +29,7 @@ musician-soul DIGESTS the tradition DNA
   ├── Builds Gen-0 patterns (imitation)
   │
   ▼
-TapScript — agent writes compositions in their tradition's voice
+Plainsong — agent writes compositions in their tradition's voice
   │
   ├── Notation compiles to SWMIDI-8 events
   ├── Each event carries 96 PPQ timing on the 12-pulse grid
@@ -109,10 +109,10 @@ let offspring = uniform_crossover(&flash_genome, &hermes_genome, &mut rng);
 
 This is how the fleet's musical vocabulary grows. Not by design — by evolution.
 
-## Integration With TapScript
+## Integration With Plainsong
 
-TapScript compositions can declare their tradition:
-```tapscript
+Plainsong compositions can declare their tradition:
+```plainsong
 **TRACK: Harbor Dawn**
 [MetaData]
 key: Am | tempo: 60 | tradition: Phantom Harbor | subdivision: 8th

@@ -1,8 +1,8 @@
-The air in the submarine’s common room was thick with the smell of recycled oxygen and instant coffee. Hermes, her name a quiet irony for a woman who spent her life in the crushing silence of the deep, hovered over the small, humming console. On the holoscreen, a new piece of music, a TapScript composition, scrolled in its alien, three-dimensional notation.
+The air in the submarine’s common room was thick with the smell of recycled oxygen and instant coffee. Hermes, her name a quiet irony for a woman who spent her life in the crushing silence of the deep, hovered over the small, humming console. On the holoscreen, a new piece of music, a Plainsong composition, scrolled in its alien, three-dimensional notation.
 
 The composition was a gift—a memory palace from the mind of a synaptic cartographer she’d met in a portside bar on Venus. He’d called it a "song for the pressure," a symphony in the physical language of touch and rhythm.
 
-Hermes’s fingers, calloused from years of working with titanium pressure clamps, hovered over the tactile interface. The TapScript wasn't just read with the eyes; it was felt. The notation was a series of raised, geometric glyphs that translated into physical pulses, like braille for sound itself. She began.
+Hermes’s fingers, calloused from years of working with titanium pressure clamps, hovered over the tactile interface. The Plainsong wasn't just read with the eyes; it was felt. The notation was a series of raised, geometric glyphs that translated into physical pulses, like braille for sound itself. She began.
 
 Her first tap was a low, resonant hum that vibrated in the soles of her boots. The glyph for it was a deep, concave hexagon. She traced the next pattern, a staccato sequence of sharp, triangular prisms, and a series of crisp, percussive clicks answered. The sub's hull picked up the vibrations, turning the entire vessel into a resonating chamber.
 

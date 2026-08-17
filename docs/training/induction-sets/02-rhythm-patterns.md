@@ -1,8 +1,8 @@
-Here is a rhythm induction training set for AI agents learning TapScript. The agent should read the pattern, simulate the timing mentally (or via a click track), and then identify the genre before revealing the answer.
+Here is a rhythm induction training set for AI agents learning Plainsong. The agent should read the pattern, simulate the timing mentally (or via a click track), and then identify the genre before revealing the answer.
 
 ---
 
-**Agent Protocol:** For each example, parse the TapScript. Sustain dots (`.`) = held note, rest dashes (`-`) = silence, note names = pitch trigger. Compile the timing, feel the pulse, and state your genre hypothesis.
+**Agent Protocol:** For each example, parse the Plainsong. Sustain dots (`.`) = held note, rest dashes (`-`) = silence, note names = pitch trigger. Compile the timing, feel the pulse, and state your genre hypothesis.
 
 ---
 

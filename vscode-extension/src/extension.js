@@ -4,17 +4,17 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-    const diagnosticsCollection = vscode.languages.createDiagnosticCollection('tapscript');
+    const diagnosticsCollection = vscode.languages.createDiagnosticCollection('plainsong');
 
     /**
-     * Check pipe delimiter balance in a TapScript document.
+     * Check pipe delimiter balance in a Plainsong document.
      * Validates that every line with pipe characters has balanced pairs
      * and that the number of bars (pipe-delimited segments) is consistent
      * within each section.
      * @param {vscode.TextDocument} document
      */
     function checkPipeBalance(document) {
-        if (document.languageId !== 'tapscript') return;
+        if (document.languageId !== 'plainsong') return;
 
         const diagnostics = [];
         const pipeRegex = /\|/g;
@@ -137,13 +137,13 @@ function activate(context) {
     }
 
     // Register the command
-    const checkCommand = vscode.commands.registerCommand('tapscript.checkPipeBalance', () => {
+    const checkCommand = vscode.commands.registerCommand('plainsong.checkPipeBalance', () => {
         const editor = vscode.window.activeTextEditor;
-        if (editor && editor.document.languageId === 'tapscript') {
+        if (editor && editor.document.languageId === 'plainsong') {
             checkPipeBalance(editor.document);
-            vscode.window.showInformationMessage('TapScript: Pipe balance check complete.');
+            vscode.window.showInformationMessage('Plainsong: Pipe balance check complete.');
         } else {
-            vscode.window.showWarningMessage('TapScript: No active TapScript file to check.');
+            vscode.window.showWarningMessage('Plainsong: No active Plainsong file to check.');
         }
     });
 
@@ -151,12 +151,12 @@ function activate(context) {
     context.subscriptions.push(
         vscode.workspace.onDidOpenTextDocument(checkPipeBalance),
         vscode.workspace.onDidChangeTextDocument(e => {
-            if (e.document.languageId === 'tapscript') {
+            if (e.document.languageId === 'plainsong') {
                 checkPipeBalance(e.document);
             }
         }),
         vscode.workspace.onDidCloseTextDocument(doc => {
-            if (doc.languageId === 'tapscript') {
+            if (doc.languageId === 'plainsong') {
                 diagnosticsCollection.delete(doc.uri);
             }
         }),

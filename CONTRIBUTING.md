@@ -3,9 +3,9 @@
 ## Getting set up
 
 ```bash
-git clone https://github.com/SuperInstance/tapscript-studio
-cd tapscript-studio
-python3 -m tapscript doctor
+git clone https://github.com/SuperInstance/plainsong
+cd plainsong
+python3 -m plainsong doctor
 ```
 
 There is nothing to install. If you want the linter and pytest:
@@ -17,10 +17,10 @@ pip install -e ".[dev]"
 ## Before you open a pull request
 
 ```bash
-python3 -m tapscript spec                        # the system's own checks
+python3 -m plainsong spec                        # the system's own checks
 python3 -m unittest discover -s tests -v         # the test suite
-python3 -m tapscript check docs examples         # the notation library still parses
-ruff check tapscript tests                       # if you installed it
+python3 -m plainsong check docs examples         # the notation library still parses
+ruff check plainsong tests                       # if you installed it
 ```
 
 The first two also run in CI on Python 3.10 through 3.13, on Linux, macOS and
@@ -32,7 +32,7 @@ Windows, with nothing installed.
 
 A clone with no `pip install` has to parse, compile, write MIDI, synthesise
 audio, serve the web interface and talk to a model API. An import of NumPy,
-`requests`, `pretty_midi` or anything else at module scope in `tapscript/`
+`requests`, `pretty_midi` or anything else at module scope in `plainsong/`
 breaks that, and CI will catch it.
 
 Optional accelerators are welcome. Probe for them in
@@ -61,7 +61,7 @@ The notation is used by several thousand files in this repository and by files
 we cannot see. A change to it needs:
 
 1. A spec that fails before the change and passes after.
-2. `tapscript check docs examples` still clean.
+2. `plainsong check docs examples` still clean.
 3. A note in `CHANGELOG.md` under the right heading.
 
 If existing notation would parse differently after your change, that is a
@@ -115,12 +115,12 @@ worked example over a description of one.
 Include the output of:
 
 ```bash
-tapscript doctor
-tapscript --version
+plainsong doctor
+plainsong --version
 ```
 
 and, if it involves notation, the smallest file that shows the problem.
-`tapscript info yourfile.tap --verbose` prints every diagnostic, which is often
+`plainsong info yourfile.song --verbose` prints every diagnostic, which is often
 the answer on its own.
 
 ## Reporting a security issue

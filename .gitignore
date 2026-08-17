@@ -5,7 +5,7 @@ venv/
 *.egg-info/
 build/
 dist/
-.tapscript/
+.plainsong/
 *.log
 *.mid
 *.wav

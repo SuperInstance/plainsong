@@ -11,8 +11,8 @@ from __future__ import annotations
 
 import unittest
 
-from tapscript.notation import theory
-from tapscript.notation.chordsymbol import ChordSymbolError, parse_symbol
+from plainsong.notation import theory
+from plainsong.notation.chordsymbol import ChordSymbolError, parse_symbol
 
 NAMES = ("C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B")
 
@@ -179,7 +179,7 @@ class TestNoChord(unittest.TestCase):
     SPELLINGS = ("N.C.", "N.C", "NC", "n.c.")
 
     def _arrange(self, token: str):
-        from tapscript.notation import arrange, parse
+        from plainsong.notation import arrange, parse
 
         return arrange(parse(
             "**TRACK: T**\n[MetaData]\nkey: C | tempo: 120 | time: 4/4\n\n"

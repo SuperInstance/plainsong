@@ -1,4 +1,4 @@
-# TapScript notation reference
+# Plainsong notation reference
 
 A file is a header, then sections. Rows inside a section say what each voice
 plays. Bars are separated by `|`.
@@ -139,11 +139,11 @@ Melody: C4~~~ D4~~~ E4~~~ F4~~~
 
 Each token is one eighth plus one per `~`, so that line is four half notes. This
 is the older duration-by-spacing style; the barred form above is easier to keep
-aligned and is what `tapscript new` writes.
+aligned and is what `plainsong new` writes.
 
 ## Diagnostics
 
-`tapscript check` reports three levels:
+`plainsong check` reports three levels:
 
 - **error** — the file will not compile. Nothing is written.
 - **warning** — it compiles, but something will probably not sound as intended:

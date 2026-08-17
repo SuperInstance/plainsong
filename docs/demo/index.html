@@ -1,4 +1,4 @@
-<title>TapScript Playground</title>
+<title>Plainsong Playground</title>
 <style>
   :root {
     --ink:#14181F; --ink-soft:#4A5260; --ink-faint:#8C93A1;
@@ -116,7 +116,7 @@
     <p class="eyebrow">Plain-text music notation</p>
     <h1>Write a lead sheet<span class="bar"> | </span>hear a band</h1>
     <p class="lede">
-      TapScript is notation you type in any editor, diff in git, and compile to MIDI.
+      Plainsong is notation you type in any editor, diff in git, and compile to MIDI.
       This page is the compiler — it runs in your browser, offline, with nothing
       installed and nothing sent anywhere. Everything below is live: edit it, drag it,
       break it.
@@ -131,7 +131,7 @@
     <div class="studio">
       <div class="panel">
         <div class="panel-head">
-          <span>song.tap</span>
+          <span>song.song</span>
           <span class="presets">
             <button data-preset="ocean">Ocean Diner</button>
             <button data-preset="blues">12-bar blues</button>
@@ -139,7 +139,7 @@
             <button data-preset="triplets">Bar division</button>
           </span>
         </div>
-        <textarea id="source" spellcheck="false" aria-label="TapScript notation"></textarea>
+        <textarea id="source" spellcheck="false" aria-label="Plainsong notation"></textarea>
         <div class="controls">
           <button id="generate">Generate a chart</button>
           <button id="share">Copy share link</button>
@@ -164,7 +164,7 @@
   <section class="rule-top">
     <h2>Simulation · the bar divides itself</h2>
     <p class="sub">
-      You never write durations in TapScript. You write how many things happen in a bar,
+      You never write durations in Plainsong. You write how many things happen in a bar,
       and the bar shares itself out between them. Drag the slider and watch the same bar
       hold a different number of events — the bar never changes length.
     </p>
@@ -184,7 +184,7 @@
     <h2>Simulation · a written time is an arrival time</h2>
     <p class="sub">
       The idea the whole system rests on. A score says “beat one” without saying <em>where</em>
-      that happens. TapScript reads a written beat as the moment sound should
+      that happens. Plainsong reads a written beat as the moment sound should
       <span class="grid-note">reach a listener</span>, then solves backwards for when each player
       must physically move. <strong>Drag the players. Drag the ear.</strong> Watch what changes.
     </p>
@@ -255,8 +255,8 @@
       </li>
       <li>
         <h3>Then take the full version</h3>
-        <pre>pip install tapscript
-tapscript serve</pre>
+        <pre>pip install plainsong
+plainsong serve</pre>
         <p style="margin-top:10px">Adds the stage solver, soundfont rendering, 3,800 chord charts,
         an agent, and an MCP server so several agents can write one score at once.</p>
       </li>
@@ -288,7 +288,7 @@ tapscript serve</pre>
 <div class="wrap">
   <footer class="rule-top">
     Runs entirely in your browser · no network, no analytics, nothing uploaded ·
-    <a href="https://github.com/SuperInstance/tapscript-studio">github.com/SuperInstance/tapscript-studio</a>
+    <a href="https://github.com/SuperInstance/plainsong">github.com/SuperInstance/plainsong</a>
   </footer>
 </div>
 
@@ -372,7 +372,7 @@ for(const[name,notes]of byVoice){const ev=[];
 for(const n of notes){ev.push({t:Math.round(n.beat*TPQ),k:0x90,p:n.pitch,v:n.velocity});
 ev.push({t:Math.round((n.beat+n.beats)*TPQ),k:0x80,p:n.pitch,v:0});}
 ev.sort((x,y)=>x.t-y.t||x.k-y.k);const b=[];
-const label=`TapScript ${name}`;
+const label=`Plainsong ${name}`;
 b.push(...varlen(0),0xff,0x03,label.length,...[...label].map(c=>c.charCodeAt(0)&0x7f));
 b.push(...varlen(0),0xc0|(ch&0x0f),(PROGRAM[name]??0)&0x7f);
 let last=0;for(const e of ev){b.push(...varlen(e.t-last),e.k|(ch&0x0f),e.p&0x7f,e.v&0x7f);last=e.t;}
@@ -507,7 +507,7 @@ function download(bytes,name,mime){
   a.download=name; document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(a.href),2000);
 }
-function slug(){ return (current?.score.title||"tapscript").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"tapscript"; }
+function slug(){ return (current?.score.title||"plainsong").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"plainsong"; }
 
 /* Offline render: the page makes a real WAV, not a recording of playback. */
 async function renderWav(){

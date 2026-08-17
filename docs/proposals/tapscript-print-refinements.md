@@ -1,4 +1,4 @@
-Here is a proposal for extending TapScript to handle these essential lead-sheet features. The guiding principle is **"printability first"** — every symbol must be unambiguous on paper, even in a monospaced font, and must not break the vertical alignment of the chord/melody/lyric columns.
+Here is a proposal for extending Plainsong to handle these essential lead-sheet features. The guiding principle is **"printability first"** — every symbol must be unambiguous on paper, even in a monospaced font, and must not break the vertical alignment of the chord/melody/lyric columns.
 
 ---
 
@@ -109,7 +109,7 @@ Lyrics:  | Time  slips  a    | way   in   sev   en   | back  to   four  .     . 
 @drums   | c2    .     g2    | a1    f1    c2    g2   | g1    .     .     .    |
 ```
 
-**Printing rule:** The `4/4` and `7/8` are printed as small fraction-like text at the left edge of the bar. The bar lines are drawn accordingly (you may need to manually adjust the width of the bar to fit the notes—TapScript allows this by adding `.` placeholders).
+**Printing rule:** The `4/4` and `7/8` are printed as small fraction-like text at the left edge of the bar. The bar lines are drawn accordingly (you may need to manually adjust the width of the bar to fit the notes—Plainsong allows this by adding `.` placeholders).
 
 ---
 

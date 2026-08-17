@@ -1,4 +1,4 @@
-# TapScript Progressive Song-Building Curriculum
+# Plainsong Progressive Song-Building Curriculum
 
 ## The Capstone: From One Bar to a Complete Song
 
@@ -10,9 +10,9 @@ This curriculum guides you through ten progressive stages of composition. Each s
 
 **Instructions:** Choose a musical key and an emotional direction for your song. The key determines your tonal palette; the emotion guides every subsequent choice. Write exactly **one bar** of music—a single chord with clear duration.
 
-**Checkpoint Criteria:** Your TapScript must contain a key declaration, an emotion descriptor, and one complete bar with a chord symbol and duration.
+**Checkpoint Criteria:** Your Plainsong must contain a key declaration, an emotion descriptor, and one complete bar with a chord symbol and duration.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 @key = C major
 @emotion = bittersweet nostalgia
@@ -29,7 +29,7 @@ bar 1: Cmaj7 (4 beats)
 
 **Checkpoint Criteria:** Four complete bars, two distinct chords, and a written note explaining the relationship between the chords and your emotion.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 @key = C major
 @emotion = bittersweet nostalgia
@@ -51,7 +51,7 @@ bar 4: Am7 (4 beats)
 
 **Checkpoint Criteria:** A melody line with one note per beat (or clearly notated rhythm), using notes that fit the underlying chords. The melody must have intentional shape.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 @key = C major
 @emotion = bittersweet nostalgia
@@ -73,7 +73,7 @@ bar 4: Am7  | Melody: A - G - E - C
 
 **Checkpoint Criteria:** Every melody note has a corresponding syllable. Lyrics are written beneath the melody line and coherently express the emotion.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 bar 1: Cmaj7 | Melody: E - G - A - G
              | Lyrics: "the - sum - mer - light"
@@ -93,7 +93,7 @@ bar 4: Am7  | Melody: A - G - E - C
 
 **Checkpoint Criteria:** One bass note per bar (minimum), clearly tied to the chord. Bass line direction and rhythm should complement the melody without competing.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 bar 1: Cmaj7 | Melody: E-G-A-G | Lyrics: "the sum-mer light"
              | Bass: C (whole note)
@@ -113,7 +113,7 @@ bar 4: Am7  | Melody: A-G-E-C | Lyrics: "your qui-et voice"
 
 **Checkpoint Criteria:** A new four-bar section with at least one new chord, a melody that moves differently (higher range, wider intervals, or new rhythm), and a clear emotional shift.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 @section = chorus
 @emotion = rising hope beneath sadness
@@ -136,7 +136,7 @@ bar 8: Cmaj7 | Melody: E - G - C - B | Lyrics: "and si - lent wave"
 
 **Checkpoint Criteria:** Dynamic markings (`p`, `mf`, `f`, crescendo/decrescendo) on every bar. A written rationale for at least one dynamic choice.
 
-**Example TapScript:**
+**Example Plainsong:**
 ```
 @dynamics:
 Verse: p (bars 1-2), mp (bars 3-4) — growing unease

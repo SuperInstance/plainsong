@@ -5,18 +5,18 @@
 You need Python 3.10 or newer. Nothing else is required.
 
 ```bash
-git clone https://github.com/SuperInstance/tapscript-studio
-cd tapscript-studio
-python3 -m tapscript --help
+git clone https://github.com/SuperInstance/plainsong
+cd plainsong
+python3 -m plainsong --help
 ```
 
-`pip install -e .` puts a `tapscript` command on your path. Every example below
-works either way — `python3 -m tapscript` and `tapscript` are the same program.
+`pip install -e .` puts a `plainsong` command on your path. Every example below
+works either way — `python3 -m plainsong` and `plainsong` are the same program.
 
 Check what your machine offers:
 
 ```bash
-tapscript doctor
+plainsong doctor
 ```
 
 Anything reported as missing is optional. The line under each one says what it
@@ -25,7 +25,7 @@ would add and how to install it.
 ## Your first piece
 
 ```bash
-tapscript new "Harbour Lights" -o harbour.tap
+plainsong new "Harbour Lights" -o harbour.song
 ```
 
 That writes a file you can open in any editor:
@@ -46,13 +46,13 @@ Lyrics: | write the words | one bar at a time | the bar divides | itself |
 Compile it:
 
 ```bash
-tapscript compile harbour.tap --audio harbour.wav
+plainsong compile harbour.song --audio harbour.wav
 ```
 
 And listen, if this machine can play audio:
 
 ```bash
-tapscript compile harbour.tap --play
+plainsong compile harbour.song --play
 ```
 
 If it cannot, you have a `.wav` and a `.mid` to open in anything else.
@@ -60,7 +60,7 @@ If it cannot, you have a `.wav` and a `.mid` to open in anything else.
 ## Reading a piece before you change it
 
 ```bash
-tapscript info harbour.tap
+plainsong info harbour.song
 ```
 
 ```
@@ -74,12 +74,12 @@ Harbour Lights
   voices   chords (nylon guitar), melody (piano), bass (electric bass)
 ```
 
-`tapscript check` is the same reading, aimed at problems. Point it at a file or
+`plainsong check` is the same reading, aimed at problems. Point it at a file or
 a whole directory:
 
 ```bash
-tapscript check harbour.tap
-tapscript check docs/fakebook --strict
+plainsong check harbour.song
+plainsong check docs/fakebook --strict
 ```
 
 Warnings are worth reading. The most common one — a row covering fewer bars than
@@ -99,8 +99,8 @@ The full language is in [notation.md](notation.md). It is short.
 ## Changing key
 
 ```bash
-tapscript transpose harbour.tap Dm            # to standard output
-tapscript transpose harbour.tap +3 -i          # rewrite the file
+plainsong transpose harbour.song Dm            # to standard output
+plainsong transpose harbour.song +3 -i          # rewrite the file
 ```
 
 Every row moves, including the chord row and the accompaniment.
@@ -110,16 +110,16 @@ Every row moves, including the chord row and the accompaniment.
 The repository carries a few thousand pieces.
 
 ```bash
-tapscript library                 # a sample
-tapscript library "blues"         # search
-tapscript library --collections   # what is in there
-tapscript play stand-by-me        # play one by name
+plainsong library                 # a sample
+plainsong library "blues"         # search
+plainsong library --collections   # what is in there
+plainsong play stand-by-me        # play one by name
 ```
 
 ## The terminal interface
 
 ```bash
-tapscript tui
+plainsong tui
 ```
 
 Arrow keys move, `enter` loads, `c` compiles, `p` plays, `t` transposes,
@@ -128,7 +128,7 @@ Arrow keys move, `enter` loads, `c` compiles, `p` plays, `t` transposes,
 ## The web interface
 
 ```bash
-tapscript serve --open
+plainsong serve --open
 ```
 
 An editor, the library, and the agent in a browser at `http://127.0.0.1:8765`.
@@ -141,7 +141,7 @@ Optional. The compiler does not use one. With one connected you get an agent
 that writes and revises notation for you.
 
 ```bash
-tapscript setup
+plainsong setup
 ```
 
 Pick a provider, paste a key, done. If you are running inside another agent —
@@ -150,35 +150,35 @@ in the room, with no key of its own. See [providers.md](providers.md) and
 [host-bridge.md](host-bridge.md).
 
 ```bash
-tapscript agent "sixteen bars of slow blues in G, walking bass"
-tapscript agent                 # no prompt: an interactive session
+plainsong agent "sixteen bars of slow blues in G, walking bass"
+plainsong agent                 # no prompt: an interactive session
 ```
 
-The agent writes into a workspace (`.tapscript/workspace` inside a project) and
+The agent writes into a workspace (`.plainsong/workspace` inside a project) and
 cannot write anywhere else.
 
 ## Where things go
 
 ```bash
-tapscript config list     # every setting and where it came from
-tapscript config path     # the file to edit
-tapscript config set render.sample_rate 22050
+plainsong config list     # every setting and where it came from
+plainsong config path     # the file to edit
+plainsong config set render.sample_rate 22050
 ```
 
-Output lands in `.tapscript/workspace/output` when you are inside a project, and
-in your platform's data directory otherwise. `tapscript doctor` prints the exact
+Output lands in `.plainsong/workspace/output` when you are inside a project, and
+in your platform's data directory otherwise. `plainsong doctor` prints the exact
 paths. Nothing is written outside them.
 
 ## When something is wrong
 
 | Symptom | Try |
 |---|---|
-| `no such file or library entry` | the path is wrong, or the library index is stale — `tapscript library --refresh` |
-| Compiles but silent | `tapscript info` — a piece with 0 notes usually has its melody on an unlabelled row |
-| Audio is slow to render | `pip install numpy`, or `tapscript config set render.sample_rate 22050` |
-| Audio sounds thin | install fluidsynth and a soundfont; `tapscript doctor` will then offer that backend |
-| `no API key for ...` | `tapscript setup`, or use `--provider echo` to work offline |
+| `no such file or library entry` | the path is wrong, or the library index is stale — `plainsong library --refresh` |
+| Compiles but silent | `plainsong info` — a piece with 0 notes usually has its melody on an unlabelled row |
+| Audio is slow to render | `pip install numpy`, or `plainsong config set render.sample_rate 22050` |
+| Audio sounds thin | install fluidsynth and a soundfont; `plainsong doctor` will then offer that backend |
+| `no API key for ...` | `plainsong setup`, or use `--provider echo` to work offline |
 | The agent stops early | raise `agent.max_steps`, or ask for less in one go |
 
-`tapscript doctor --specs` runs the system's own checks and tells you which part
+`plainsong doctor --specs` runs the system's own checks and tells you which part
 is not working.

@@ -12,13 +12,13 @@ import unittest
 import urllib.error
 from unittest import mock
 
-from tapscript.llm.transport import (
+from plainsong.llm.transport import (
     USER_AGENT,
     _classify,
     request_json,
     request_stream,
 )
-from tapscript.llm.types import ProviderError
+from plainsong.llm.types import ProviderError
 
 
 class TestClassify(unittest.TestCase):
@@ -125,7 +125,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_happy_path_returns_decoded_dict(self):
         """Successful request returns decoded JSON dict."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             response_body = json.dumps({"id": "123", "text": "hello"})
             mock_urlopen.return_value = self._mock_urlopen(body=response_body)
             result = request_json("https://api.example.com/chat", {"prompt": "hi"})
@@ -133,14 +133,14 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_empty_response_returns_empty_dict(self):
         """Empty response body returns {} rather than raising."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             mock_urlopen.return_value = self._mock_urlopen(body="")
             result = request_json("https://api.example.com/chat")
             self.assertEqual(result, {})
 
     def test_request_json_sends_user_agent_header(self):
         """Request includes the User-Agent header."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             mock_urlopen.return_value = self._mock_urlopen(body="{}")
             request_json("https://api.example.com/chat", {"prompt": "hi"})
             call_args = mock_urlopen.call_args
@@ -149,7 +149,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_sends_content_type_application_json(self):
         """Request includes Content-Type: application/json."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             mock_urlopen.return_value = self._mock_urlopen(body="{}")
             request_json("https://api.example.com/chat", {"prompt": "hi"})
             call_args = mock_urlopen.call_args
@@ -158,7 +158,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_merges_caller_headers_over_defaults(self):
         """Caller-provided headers override defaults."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             mock_urlopen.return_value = self._mock_urlopen(body="{}")
             request_json(
                 "https://api.example.com/chat",
@@ -174,8 +174,8 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_500_then_200_returns_good_result(self):
         """Retries on 500 and returns the successful response."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep"):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep"):
                 # First call raises 500, second call succeeds
                 exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"Server error"))
                 mock_urlopen.side_effect = [
@@ -188,7 +188,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_400_raises_immediately_no_retry(self):
         """Non-retryable 400 error raises immediately without retry."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             exc = urllib.error.HTTPError("url", 400, "error", {}, io.BytesIO(b"Bad request"))
             mock_urlopen.side_effect = exc
             with self.assertRaises(ProviderError) as caught:
@@ -198,8 +198,8 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_500_every_time_raises_after_max_retries_plus_one_attempts(self):
         """All retries fail, raises after exactly max_retries + 1 attempts."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep"):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep"):
                 exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"Always fails"))
                 mock_urlopen.side_effect = exc
                 max_retries = 2
@@ -210,7 +210,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_max_retries_zero_makes_exactly_one_attempt(self):
         """With max_retries=0, exactly one attempt is made."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"Fail"))
             mock_urlopen.side_effect = exc
             with self.assertRaises(ProviderError):
@@ -219,8 +219,8 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_urlerror_retries_and_mentions_url(self):
         """URLError is retryable; final error mentions the URL."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep"):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep"):
                 url = "https://api.example.com/chat"
                 exc = urllib.error.URLError("Connection refused")
                 mock_urlopen.side_effect = exc
@@ -231,8 +231,8 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_timeouterror_retries_and_names_timeout(self):
         """TimeoutError is retryable; error mentions the timeout value."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep"):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep"):
                 timeout_val = 45
                 mock_urlopen.side_effect = TimeoutError("timed out")
                 with self.assertRaises(ProviderError) as caught:
@@ -242,7 +242,7 @@ class TestRequestJSON(unittest.TestCase):
 
     def test_request_json_non_json_response_raises_provider_error(self):
         """Response that is valid HTTP but not JSON raises ProviderError."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             mock_urlopen.return_value = self._mock_urlopen(body="<html>Not JSON</html>")
             with self.assertRaises(ProviderError) as caught:
                 request_json("https://api.example.com/chat")
@@ -254,9 +254,9 @@ class TestBackoff(unittest.TestCase):
 
     def test_backoff_attempt_0_sleeps_between_1_and_2_seconds(self):
         """First retry sleeps min(2^0 + random, 20) = [1, 2)."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep") as mock_sleep:
-                with mock.patch("tapscript.llm.transport.random.random", return_value=0.5):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep") as mock_sleep:
+                with mock.patch("plainsong.llm.transport.random.random", return_value=0.5):
                     exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"fail"))
                     mock_urlopen.side_effect = [
                         exc,
@@ -271,9 +271,9 @@ class TestBackoff(unittest.TestCase):
 
     def test_backoff_attempt_1_sleeps_between_2_and_3_seconds(self):
         """Second retry sleeps min(2^1 + random, 20) = [2, 3)."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep") as mock_sleep:
-                with mock.patch("tapscript.llm.transport.random.random", return_value=0.5):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep") as mock_sleep:
+                with mock.patch("plainsong.llm.transport.random.random", return_value=0.5):
                     exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"fail"))
                     mock_urlopen.side_effect = [exc, exc, self._mock_urlopen(body="{}")]
                     request_json("https://api.example.com/chat", max_retries=2)
@@ -286,9 +286,9 @@ class TestBackoff(unittest.TestCase):
 
     def test_backoff_attempt_2_sleeps_between_4_and_5_seconds(self):
         """Third retry sleeps min(2^2 + random, 20) = [4, 5)."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep") as mock_sleep:
-                with mock.patch("tapscript.llm.transport.random.random", return_value=0.3):
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep") as mock_sleep:
+                with mock.patch("plainsong.llm.transport.random.random", return_value=0.3):
                     exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"fail"))
                     mock_urlopen.side_effect = [exc, exc, exc, self._mock_urlopen(body="{}")]
                     request_json("https://api.example.com/chat", max_retries=3)
@@ -299,8 +299,8 @@ class TestBackoff(unittest.TestCase):
 
     def test_backoff_not_called_after_final_failed_attempt(self):
         """No sleep is called after the last failed attempt."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
-            with mock.patch("tapscript.llm.transport.time.sleep") as mock_sleep:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
+            with mock.patch("plainsong.llm.transport.time.sleep") as mock_sleep:
                 exc = urllib.error.HTTPError("url", 500, "error", {}, io.BytesIO(b"fail"))
                 mock_urlopen.side_effect = exc
                 max_retries = 2
@@ -325,7 +325,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_parses_data_lines(self):
         """Parses lines starting with 'data:' as JSON."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1", "text": "hello"}\n',
                 b'data: {"id": "2", "text": "world"}\n',
@@ -342,7 +342,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_skips_blank_lines(self):
         """Blank lines are skipped."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
                 b'\n',
@@ -359,7 +359,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_skips_comment_lines_starting_with_colon(self):
         """Lines starting with ':' are skipped."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
                 b': this is a comment\n',
@@ -376,7 +376,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_skips_lines_without_data_prefix(self):
         """Lines without 'data:' prefix are skipped."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
                 b'event: message\n',
@@ -393,7 +393,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_stops_at_done_marker(self):
         """Stream stops when [DONE] marker is encountered."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
                 b'data: {"id": "2"}\n',
@@ -411,7 +411,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_skips_malformed_json_lines(self):
         """Malformed JSON lines are skipped, not raised."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
                 b'data: {not valid json}\n',
@@ -429,7 +429,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_sets_accept_text_event_stream_header(self):
         """Request includes Accept: text/event-stream header."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             response = mock.MagicMock()
             response.__iter__.return_value = iter([])
             response.__enter__.return_value = response
@@ -442,7 +442,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_converts_httperror_to_classified_provider_error(self):
         """HTTPError is converted to a classified ProviderError."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             exc = urllib.error.HTTPError(
                 "url", 401, "error", {}, io.BytesIO(b'{"error": {"message": "Invalid key"}}')
             )
@@ -454,7 +454,7 @@ class TestRequestStream(unittest.TestCase):
 
     def test_request_stream_converts_urlerror_to_provider_error(self):
         """URLError is converted to a retryable ProviderError."""
-        with mock.patch("tapscript.llm.transport.urllib.request.urlopen") as mock_urlopen:
+        with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             exc = urllib.error.URLError("Connection refused")
             mock_urlopen.side_effect = exc
             with self.assertRaises(ProviderError) as caught:

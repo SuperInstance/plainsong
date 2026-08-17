@@ -5,15 +5,15 @@
 ```
     notation text
          |
-    [ parse ]         tapscript/notation/parser.py
+    [ parse ]         plainsong/notation/parser.py
          |            -> Score: sections, rows, tokens. Timing still implicit.
          |
-    [ arrange ]       tapscript/notation/arrange.py
+    [ arrange ]       plainsong/notation/arrange.py
          |            -> Arrangement: notes with a start, a length and a voice.
          |
     +----+----+
     |         |
-[ midi ]  [ audio ]   tapscript/render/
+[ midi ]  [ audio ]   plainsong/render/
     |         |       -> a .mid file; samples, via the built-in synth or fluidsynth
 ```
 
@@ -107,7 +107,7 @@ imported at module scope, and never required:
 | fluidsynth + a soundfont | instrument-accurate rendering |
 | ffmpeg | mp3, ogg, flac, m4a |
 | mido | playing to hardware MIDI |
-| an audio player | `tapscript play` |
+| an audio player | `plainsong play` |
 
 The pure-Python synthesiser avoids per-sample Python loops: waveforms are built
 once per voice and pitch as a short block of whole cycles and repeated,
@@ -117,12 +117,12 @@ callables so the inner loop stays in C. It is a preview renderer, and says so.
 ## Nothing is hardcoded
 
 Every path is derived in `runtime/paths.py`: environment variable, then a
-project-local `.tapscript/`, then the platform convention. No module may
+project-local `.plainsong/`, then the platform convention. No module may
 hardcode a home directory — there is a test that greps for it, because the
 previous version wrote everything to one contributor's `~/.openclaw`.
 
 Configuration is layered: defaults, user file, project file, environment, flags.
-`tapscript config list` shows the resolved values and where they came from.
+`plainsong config list` shows the resolved values and where they came from.
 
 Providers are catalogue entries rather than code. Adding a service that speaks
 an existing wire format is a JSON file.
@@ -131,7 +131,7 @@ an existing wire format is a JSON file.
 
 The previous version kept four copies of the General MIDI program table, four
 CSS themes and four velocity-humanisation routines that had drifted apart. There
-is now one of each: `tapscript/instruments.py`, one stylesheet in
+is now one of each: `plainsong/instruments.py`, one stylesheet in
 `interfaces/web/app.html`, one arranger.
 
 The three interfaces are thin. They all call `pipeline.compile_text`, so
@@ -140,7 +140,7 @@ The three interfaces are thin. They all call `pipeline.compile_text`, so
 ## Specs
 
 `specs/*.toml` state outcomes the system promises and name the checks that prove
-them. `tapscript spec` runs them; the build agent runs them after making a
+them. `plainsong spec` runs them; the build agent runs them after making a
 change, which is what lets it tell whether the change helped. See
 [specs.md](specs.md).
 

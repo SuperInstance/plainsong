@@ -1,10 +1,10 @@
-Here is a lyric-melody alignment induction set for TapScript training.
+Here is a lyric-melody alignment induction set for Plainsong training.
 
 ---
 
 ### 1. Syllabic (One Note Per Syllable)
 
-**TapScript Example:**
+**Plainsong Example:**
 `| 4/4 | C – E – | G – E – | C – D – | E – – – |`
 `Lyric: "I    see    the    light    in    your    eyes    now"`
 
@@ -21,7 +21,7 @@ Write a 2-bar example in 4/4 using only quarter notes and eighth notes. Use the 
 
 ### 2. Melismatic (Multiple Notes Per Syllable)
 
-**TapScript Example:**
+**Plainsong Example:**
 `| 4/4 | G – A B C | B – A G | E – – – |`
 `Lyric: "You...... are...... the fire......"`
 
@@ -38,7 +38,7 @@ Write a 2-bar example where the word "glow" is sung over a four-note descending 
 
 ### 3. Hemiola (Lyrics in 3 Against a 4-Beat Bar)
 
-**TapScript Example:**
+**Plainsong Example:**
 `| 4/4 | C – – D | – E – F | – G – – |`
 `Lyric: "One    two    three    four    five    six" (sung as triplets over the beat)`
 
@@ -55,7 +55,7 @@ In 4/4, write a 2-bar line where the lyric has six syllables (e.g., "Never let t
 
 ### 4. Anticipation (Lyric Arrives Before the Beat)
 
-**TapScript Example:**
+**Plainsong Example:**
 `| 4/4 | & C – – | – – – – |`
 `Lyric: "Now..... I'm ready" (The "Now" lands on the "and" of beat 4, before bar 2)`
 

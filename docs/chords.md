@@ -1,6 +1,6 @@
 # Chords
 
-TapScript reads chord symbols with a grammar, not a lookup table. That
+Plainsong reads chord symbols with a grammar, not a lookup table. That
 distinction is the whole of this document, so it is worth being concrete about
 what it buys.
 
@@ -23,7 +23,7 @@ Nothing enumerates those three. They work because the parts compose.
 ## Ask, rather than guess
 
 ```bash
-tapscript chord "G7alt" --explain
+plainsong chord "G7alt" --explain
 ```
 
 ```
@@ -99,7 +99,7 @@ and fights it.
 Change the third and the exception lifts:
 
 ```bash
-tapscript chord "C13" "Cm13" "C13#11"
+plainsong chord "C13" "Cm13" "C13#11"
 ```
 
 `Cm13` *does* have its eleventh — a minor third leaves nothing to clash with.
@@ -127,7 +127,7 @@ neither appears. Its `--explain` output says `no fifth` for that reason.
 
 ## Changing it
 
-The file is `tapscript/notation/chordsymbol.py`, and it is arranged so that
+The file is `plainsong/notation/chordsymbol.py`, and it is arranged so that
 most changes are one line.
 
 **To accept a new spelling** — add it to `CORE_ALIASES`. That is the whole
@@ -182,7 +182,7 @@ The same diff is worth re-running after any change here:
 
 ```bash
 python3 -m unittest tests.test_chordsymbol
-python3 -m tapscript check docs examples tapscript/songbook README.md
+python3 -m plainsong check docs examples plainsong/songbook README.md
 ```
 
 The warning count on that last command is the blunt instrument: it fell from
@@ -193,14 +193,14 @@ silence started sounding.
 
 ### The renderer throws away the notes this parser works out
 
-`tapscript chord` tells you what a symbol means. The renderer then discards
+`plainsong chord` tells you what a symbol means. The renderer then discards
 part of it. `arrange.Options.max_chord_notes` is 4, and the notes are taken
 **from the bottom**, so a five-note chord keeps root-third-fifth-seventh and
 drops whatever was above it — which is precisely the note the symbol was
 written to specify:
 
 ```bash
-tapscript chord "G7b9"     # G B D F A♭  -- what it means
+plainsong chord "G7b9"     # G B D F A♭  -- what it means
                            # G B D F     -- what you hear
 ```
 
@@ -217,7 +217,7 @@ of that, exactly.
 
 This is not fixed here because fixing it changes how existing files sound, which
 is a different kind of change from teaching the parser new spellings, and wants
-its own reviewed diff. `tapscript fingerprint` exists so that diff can be read
+its own reviewed diff. `plainsong fingerprint` exists so that diff can be read
 rather than guessed at.
 
 ### Voicing generally

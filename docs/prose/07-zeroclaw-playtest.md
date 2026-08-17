@@ -1,10 +1,10 @@
-**Play-Test Report: TapScript Notation, Build 0.9.3 (Unofficial)**
+**Play-Test Report: Plainsong Notation, Build 0.9.3 (Unofficial)**
 
 **Subject:** The Newest Person Meets the Older Agents’ Machine.
 
 ---
 
-I walked in with fresh eyes, which means I walked in with zero context. The senior agents handed me the spec like a holy text—120 pages, all dense with “should” and “must.” I was to test TapScript by *using* it. So I did.
+I walked in with fresh eyes, which means I walked in with zero context. The senior agents handed me the spec like a holy text—120 pages, all dense with “should” and “must.” I was to test Plainsong by *using* it. So I did.
 
 **Bug #1: The Silent Comment Apocalypse.**  
 I wrote a simple script: `tap(3,4) // move right`. The parser ate my comment and then ate my next line. The output? Nothing. No error. No log. Just a blank canvas. I spent twenty minutes thinking the issue was my parentheses. Turns out, the older agents had defined comments as `//` *and* `#`, but only if there’s a space before them. A comment directly after a closing paren? The lexer treats it as part of the token. So `tap(3,4)//` is a call to a function named `tap` with a malformed argument. The fix was trivial (strip leading whitespace before comment detection), but the *silence* was the crime. A system that fails quietly is a system that lies.

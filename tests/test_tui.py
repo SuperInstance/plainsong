@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from tapscript.interfaces.tui import (
+from plainsong.interfaces.tui import (
     HELP,
     TuiState,
     _init_colours,
@@ -15,9 +15,9 @@ from tapscript.interfaces.tui import (
     _safe_add,
     check_importable,
 )
-from tapscript.library import LibraryEntry
-from tapscript.runtime.config import load_config
-from tapscript.runtime.paths import Paths
+from plainsong.library import LibraryEntry
+from plainsong.runtime.config import load_config
+from plainsong.runtime.paths import Paths
 
 MINIMAL_NOTATION = """**TRACK: Test Piece**
 [MetaData]
@@ -222,7 +222,7 @@ class TestTuiStateLoadCurrent(unittest.TestCase):
     def test_load_current_populates_preview_and_detail(self):
         """load_current() on a valid entry populates preview and detail."""
         # Create a temporary valid notation file
-        tap_file = Path(self.temp_dir.name) / "test.tap"
+        tap_file = Path(self.temp_dir.name) / "test.song"
         tap_file.write_text(MINIMAL_NOTATION, encoding="utf-8")
 
         # Create a library entry pointing to it
@@ -252,7 +252,7 @@ class TestTuiStateLoadCurrent(unittest.TestCase):
     def test_load_current_truncates_long_files(self):
         """load_current() truncates preview to 400 lines."""
         # Create a file with 500 lines
-        tap_file = Path(self.temp_dir.name) / "long.tap"
+        tap_file = Path(self.temp_dir.name) / "long.song"
         lines = ["line content"] * 500
         tap_file.write_text("\n".join(lines), encoding="utf-8")
 
@@ -287,7 +287,7 @@ class TestTuiStateLoadCurrent(unittest.TestCase):
 
     def test_load_current_on_malformed_notation_still_loads_gracefully(self):
         """load_current() on malformed notation handles it gracefully, doesn't raise."""
-        tap_file = Path(self.temp_dir.name) / "malformed.tap"
+        tap_file = Path(self.temp_dir.name) / "malformed.song"
         tap_file.write_text(MALFORMED_NOTATION, encoding="utf-8")
 
         entry = LibraryEntry(path=tap_file, name="malformed", title="Malformed")
@@ -492,7 +492,7 @@ class TestTuiStateIntegration(unittest.TestCase):
             lib_dir = root / "library"
             lib_dir.mkdir()
 
-            tap_file = lib_dir / "test.tap"
+            tap_file = lib_dir / "test.song"
             tap_file.write_text(MINIMAL_NOTATION)
 
             # Create a Paths object pointing to the temp directory

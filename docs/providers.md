@@ -1,6 +1,6 @@
 # Providers
 
-A provider is wherever your model comes from. TapScript treats that as
+A provider is wherever your model comes from. Plainsong treats that as
 configuration, not as a dependency: the same agent code runs against a hosted
 API, a server on your laptop, or the agent that launched you.
 
@@ -10,22 +10,22 @@ sound, you can skip this page entirely.
 ## Connecting one
 
 ```bash
-tapscript setup
+plainsong setup
 ```
 
 Pick from the list, paste a key, and it makes a test call before saving. To skip
 the questions:
 
 ```bash
-tapscript setup deepseek          # a specific provider
-tapscript setup -y                # accept whatever is already detected
+plainsong setup deepseek          # a specific provider
+plainsong setup -y                # accept whatever is already detected
 ```
 
 ## What is in the catalogue
 
 ```bash
-tapscript providers               # everything, and whether it is ready
-tapscript providers --check       # make a real call with the current settings
+plainsong providers               # everything, and whether it is ready
+plainsong providers --check       # make a real call with the current settings
 ```
 
 | Provider | id | Key from |
@@ -58,15 +58,15 @@ In order:
 
 1. A key passed on the command line.
 2. The environment variable(s) the catalogue lists for that provider.
-3. `credentials.toml` in your config directory, written by `tapscript setup`.
+3. `credentials.toml` in your config directory, written by `plainsong setup`.
 
 Keys are never written into `config.toml`, which is meant to be shareable and is
 often committed. The credentials file is separate and is created readable only
 by you.
 
 ```bash
-tapscript config path            # where config.toml lives
-tapscript doctor                 # shows which source each key came from
+plainsong config path            # where config.toml lives
+plainsong doctor                 # shows which source each key came from
 ```
 
 ## Choosing without configuring
@@ -74,18 +74,18 @@ tapscript doctor                 # shows which source each key came from
 With no provider set, one is chosen at the moment you need it:
 
 1. Any provider whose key is already in your environment.
-2. The host agent, if TapScript can tell it is running inside one.
+2. The host agent, if Plainsong can tell it is running inside one.
 3. A local server that is actually listening — Ollama, LM Studio, vLLM.
 4. The offline stub.
 
-Nothing hard-fails for want of a model. `tapscript doctor` prints what
+Nothing hard-fails for want of a model. `plainsong doctor` prints what
 auto-selection would pick right now.
 
 ## Overriding per run
 
 ```bash
-tapscript agent --provider ollama --model qwen2.5 "write a jig"
-TAPSCRIPT_PROVIDER=groq tapscript agent "..."
+plainsong agent --provider ollama --model qwen2.5 "write a jig"
+PLAINSONG_PROVIDER=groq plainsong agent "..."
 ```
 
 ## Adding a provider
@@ -110,7 +110,7 @@ data change — drop a `providers.json` into your config directory:
 }
 ```
 
-It appears in `tapscript providers` immediately. No code, no release.
+It appears in `plainsong providers` immediately. No code, no release.
 
 Fields:
 
@@ -127,12 +127,12 @@ Fields:
 | `tools`, `streaming` | Whether the service supports them |
 
 A service with a genuinely different wire format needs an adapter — about 120
-lines, see `tapscript/llm/providers/`. Register it in `ADAPTERS` and it becomes
+lines, see `plainsong/llm/providers/`. Register it in `ADAPTERS` and it becomes
 available to every catalogue entry naming that shape.
 
 ## What an adapter has to do
 
-Adapters translate to and from one neutral set of types (`tapscript/llm/types.py`)
+Adapters translate to and from one neutral set of types (`plainsong/llm/types.py`)
 so that nothing above them cares which service answered:
 
 - messages with roles, including tool calls and tool results
@@ -146,7 +146,7 @@ not in each adapter.
 
 ## Cost and privacy
 
-TapScript sends the model your prompt, the notation it is working on, and the
+Plainsong sends the model your prompt, the notation it is working on, and the
 results of the tools it calls — which can include file contents from the
 workspace. If that matters, use a local provider (`ollama`, `lmstudio`, `vllm`)
 or none. Nothing is sent anywhere unless you run the agent.

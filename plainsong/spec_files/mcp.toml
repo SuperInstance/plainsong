@@ -1,0 +1,63 @@
+[spec]
+id = "mcp.server"
+title = "Any MCP client can drive the system, and several can drive one score at once"
+why = """
+The CLI, the TUI and the web page are three ways in for a person. An agent has
+none: it can shell out to the CLI and parse text back, which works until the
+text changes. This is the fourth way in -- JSON-RPC over stdio or loopback HTTP,
+the tools described in JSON Schema, the library and the specs as resources.
+
+The tool list is not written twice. It is the agent's own registry, described in
+the schema it already produces, so a tool added anywhere in the codebase is on
+the protocol without anything in mcp/ changing.
+
+The second half is the reason it matters. Several agents write one score at
+once, one voice each, and the thing that keeps them from corrupting each other
+is not a lock -- a lock cannot be held across a model call -- but a version per
+voice. Two agents on two voices both land. Two agents on one voice from the same
+base end with one winner and one rebase, and the loser is handed the current
+part rather than a failure.
+"""
+tags = ["mcp", "fast", "agent"]
+
+[[check]]
+id = "handshake"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_handshake"
+description = "initialize, tools/list and tools/call complete over real JSON-RPC messages"
+
+[[check]]
+id = "errors"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_protocol_errors"
+description = "Bad input gets the right code, notifications get silence, a failing tool is a result"
+
+[[check]]
+id = "resources"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_resources_and_prompts"
+description = "The documented resources, templates and prompts are all served"
+
+[[check]]
+id = "concurrency"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_ensemble_concurrency"
+description = "Two voices written at once both land; a write against an old version is refused"
+
+[[check]]
+id = "merge"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_merge_is_deterministic"
+description = "The same parts merge to the same score whatever order they arrived in"
+
+[[check]]
+id = "features"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_features"
+description = "Sixteen features per bar, in range, and the same every time"
+
+[[check]]
+id = "conductor"
+kind = "python"
+run = "plainsong.mcp.selfcheck:check_conductor_bridge"
+description = "Directives reach the conductor, or the tool says the install has none"

@@ -8,12 +8,12 @@ import unittest
 import wave
 from pathlib import Path
 
-from tapscript.notation import arrange, parse
-from tapscript.pipeline import compile_text, slugify
-from tapscript.render.audio import AudioOptions, Synthesiser, midi_to_hz
-from tapscript.render.midi import midi_bytes, variable_length, write_midi
-from tapscript.render.voices import voice_for_program
-from tapscript.runtime.config import load_config
+from plainsong.notation import arrange, parse
+from plainsong.pipeline import compile_text, slugify
+from plainsong.render.audio import AudioOptions, Synthesiser, midi_to_hz
+from plainsong.render.midi import midi_bytes, variable_length, write_midi
+from plainsong.render.voices import voice_for_program
+from plainsong.runtime.config import load_config
 
 PIECE = """**TRACK: Render Test**
 [MetaData]
