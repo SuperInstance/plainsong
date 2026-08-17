@@ -4,6 +4,36 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### The browser demo cut every held note short
+
+`.` and `-` were in the demo's `REST` set where the compiler has them in
+`SUSTAIN`. They are the two most common tokens in the notation, and they hold
+the note before them. Reading them as rests meant `| Am . . . |` played a
+one-beat chord followed by three beats of silence instead of a chord lasting the
+bar. Every sustained note on the landing page — the first thing anyone hears —
+was cut to a single subdivision.
+
+The demo/compiler parity test could not see it. It pins the **note count** each
+preset produces, and a rest and a sustain produce the same count: they differ
+only in how long the note before them lasts. Counts matched exactly, start to
+finish. The page simply sounded wrong.
+
+- Both token sets now match `notation/parser.py`, including the parenthesised
+  forms (`(hold)`, `(rest)`, `(let ring)`) and the rule that any other
+  `(direction)` holds what is sounding — none of which the page had at all.
+- `tests/test_demo.py` compares both sets against the compiler's and pins the
+  durations that follow from them. Restoring the old sets fails it.
+- `tools/demo_differential.py` is new: it runs notation through the real page in
+  a browser and through the compiler, and compares **pitch, start and duration**
+  of every note across triplets, 3/4, 6/8, chord qualities, stacks, sustains,
+  rests and repeated rows. CI cannot run it — the suite installs nothing and
+  assumes no browser — so it is a manual check, and it reports six of the eight
+  cases differing against the revision this fixes.
+
+The general lesson is worth more than the fix: **a second implementation checked
+by counting is not checked.** Counts are the property most likely to survive a
+divergence.
+
 ### Every written token now has a position, whether or not it sounds
 
 `Arrangement.grid` is a new `TimeGrid` (`notation/timegrid.py`) holding every
@@ -34,6 +64,29 @@ query. Uneven subdivision is legal and often deliberate; a held chord under a
 running melody is two tokens against sixteen and there is nothing wrong with it.
 
 Phase 1 of `proposals/02-the-voyage.md`.
+
+### The demo shows you which characters are sounding
+
+The page's playground had a text box and a piano roll sitting next to each
+other, and nothing ever drew the line between them: a visitor had to infer that
+the third `A4` they typed produced the third block moving in the canvas. That
+inference is the whole idea of the notation, and it was left as an exercise.
+
+Each token now lights up while the note it wrote is sounding — including the
+`.` tokens the note is held across, so `Am . . .` illuminates as one thing and
+you can see that the dots are part of the chord rather than events of their own.
+A textarea cannot hold a styled span, so the same text is painted behind it in
+identical metrics and lit there.
+
+A silent preview sweeps the playhead once on load, so the page is visibly
+something that plays before anything is clicked. It is canvas and CSS only and
+never opens an `AudioContext`: nothing here can make a sound the visitor did not
+ask for. It ends at the first interaction, and does not run under
+`prefers-reduced-motion`.
+
+On a phone the editor used to push the Play button below the fold, so the first
+screen was a text box with no visible way to hear anything. The panel that makes
+sound now comes first.
 
 ### Repeated lyric rows are verses — decided, not yet implemented
 

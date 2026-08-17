@@ -48,7 +48,18 @@
   section { padding:44px 0; }
 
   .studio { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; align-items:start; }
-  @media (max-width:900px){ .studio{ grid-template-columns:minmax(0,1fr);} }
+  /* On one column the editor would push Play below the fold, so the first
+     screen of a phone would be a text box with no visible way to hear
+     anything. The panel that makes sound goes first. */
+  @media (max-width:900px){ .studio{ grid-template-columns:minmax(0,1fr);} .panel-out{ order:-1; } }
+
+  /* A one-off pulse on Play while the silent preview runs, so the eye lands on
+     the control that turns it into sound. Ends at the first interaction. The
+     existing reduced-motion rule only disables transitions, so animation needs
+     saying separately. */
+  @keyframes invite { 0%,100%{ box-shadow:0 0 0 0 transparent; } 50%{ box-shadow:0 0 0 4px var(--amber-soft,rgba(191,124,42,.22)); } }
+  body.inviting #play { animation:invite 1.9s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce){ body.inviting #play{ animation:none; } }
 
   .panel { background:var(--panel); border:1px solid var(--rule); border-radius:4px;
            box-shadow:var(--shadow); overflow:hidden; }
@@ -56,10 +67,28 @@
                 padding:10px 14px; border-bottom:1px solid var(--rule-soft); font-family:var(--mono);
                 font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
 
-  textarea { width:100%; min-height:330px; border:0; resize:vertical; display:block; padding:16px;
-             background:transparent; color:var(--ink); font-family:var(--mono); font-size:13.5px;
-             line-height:1.75; tab-size:2; }
+  /* The editor is a textarea with a mirror behind it. A textarea cannot hold a
+     styled span, so the only way to light a token as it sounds is to paint the
+     same text underneath in exactly the same metrics. Every property that
+     affects where a glyph lands is shared by the rule below; changing one
+     without the other slides the highlight off the word. */
+  .editor { position:relative; }
+  textarea, #mirror {
+             width:100%; box-sizing:border-box; margin:0; padding:16px;
+             font-family:var(--mono); font-size:13.5px; line-height:1.75;
+             letter-spacing:normal; tab-size:2; white-space:pre-wrap; word-break:normal;
+             overflow-wrap:break-word; border:0; }
+  textarea { min-height:330px; resize:vertical; display:block; position:relative; z-index:1;
+             background:transparent; color:var(--ink); }
   textarea:focus { outline:2px solid var(--amber); outline-offset:-2px; }
+  #mirror { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none;
+            color:transparent; opacity:0; transition:opacity .18s ease; }
+  #mirror.lit { opacity:1; }
+  /* The lit token. A background rather than a colour change, so it reads as a
+     playhead touching the character rather than as syntax highlighting. */
+  #mirror span.on { background:var(--amber); color:var(--ground); border-radius:2px;
+                    box-shadow:0 0 0 1px var(--amber); }
+  #mirror span.on.chords { background:var(--teal); box-shadow:0 0 0 1px var(--teal); }
   canvas { display:block; width:100%; background:transparent; touch-action:none; }
   #roll { height:250px; }
   #stage { height:420px; cursor:grab; }
@@ -127,7 +156,8 @@
 <div class="wrap">
   <section class="rule-top">
     <h2>Playground</h2>
-    <p class="sub">Type notation on the left, hear it on the right. It recompiles as you type.</p>
+    <p class="sub">Type notation, hear it play. It recompiles as you type, and each token
+       lights up while the note it wrote is sounding.</p>
     <div class="studio">
       <div class="panel">
         <div class="panel-head">
@@ -139,14 +169,17 @@
             <button data-preset="triplets">Bar division</button>
           </span>
         </div>
-        <textarea id="source" spellcheck="false" aria-label="Plainsong notation"></textarea>
+        <div class="editor">
+          <pre id="mirror" aria-hidden="true"></pre>
+          <textarea id="source" spellcheck="false" aria-label="Plainsong notation"></textarea>
+        </div>
         <div class="controls">
           <button id="generate">Generate a chart</button>
           <button id="share">Copy share link</button>
         </div>
       </div>
 
-      <div class="panel">
+      <div class="panel panel-out">
         <div class="panel-head"><span>Arrangement</span><span id="clock">0.0s</span></div>
         <canvas id="roll" aria-label="Piano roll of the compiled arrangement"></canvas>
         <div class="controls">
@@ -268,9 +301,14 @@ plainsong serve</pre>
     <div class="cols">
       <div>
         <h3>A faithful subset</h3>
-        <p>The browser engine is checked note-for-note against the reference compiler across
-        triplets, 3/4, 6/8, chord qualities, stacks, sustains and repeated rows. Where it is
-        smaller, it is smaller on purpose — it does not solve stages, only draws them.</p>
+        <p>The browser engine is checked against the reference compiler by running both over the
+        same notation and comparing the pitch, start and length of every note — triplets, 3/4,
+        6/8, chord qualities, stacks, sustains, rests and repeated rows
+        (<code>tools/demo_differential.py</code>). That check exists because it found a real
+        one: <code>.</code> and <code>-</code> were read here as rests rather than as holds, so
+        every sustained note was cut to a single subdivision while the note <em>counts</em>
+        stayed right. Where this engine is smaller, it is smaller on purpose — it does not solve
+        stages, only draws them.</p>
       </div>
       <div>
         <h3>Sound</h3>
@@ -299,8 +337,13 @@ plainsong serve</pre>
 <script type="module">
 /* ===================== engine ===================== */
 const LETTER_PC={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
-const REST=new Set([".","-","_","rest","x"]);
-const SUSTAIN=new Set(["~","..","hold"]);
+/* These two sets are plainsong/notation/parser.py's SUSTAIN_TOKENS and
+   REST_TOKENS. `.` and `-` are sustains, not rests -- they hold the note before
+   them, which is why `| Am . . . |` is one chord lasting a bar rather than a
+   beat of chord and three of silence. tests/test_demo.py checks both sets
+   against the Python ones and pins the durations that follow from them. */
+const REST=new Set(["_","0","r","x","--","rest","n.c.","nc","n.c","(rest)","(silence)","(x)"]);
+const SUSTAIN=new Set([".","-","..","~","hold","(hold)","(sustain)","(let ring)","(ring)"]);
 /* Chord grammar — a JS port of plainsong/notation/chordsymbol.py. A symbol is
    read as a root, a core quality, how far to stack, and an ordered list of
    modifications; the notes are derived from a degree map (scale degree ->
@@ -459,7 +502,11 @@ function parseChordSymbol(token){
 function pitchClass(t){const m=/^([A-Ga-g])([#b♯♭]*)/.exec(t);if(!m)return null;let pc=LETTER_PC[m[1].toUpperCase()];for(const c of m[2])pc+=(c==="#"||c==="♯")?1:-1;return{pc:((pc%12)+12)%12,rest:t.slice(m[0].length)};}
 function parsePitch(t,oct){const h=pitchClass(t);if(!h)return null;const m=/^(-?\d+)$/.exec(h.rest);if(!m&&h.rest!=="")return null;const o=m?parseInt(m[1],10):oct;const v=(o+1)*12+h.pc;return v>=0&&v<=127?v:null;}
 function parseChord(t){try{return parseChordSymbol(t);}catch(e){if(e instanceof ChordSymbolError)return null;throw e;}}
-function resolve(tok,role,oct){const b=tok.trim(),l=b.toLowerCase();if(SUSTAIN.has(l))return{kind:"sustain"};if(REST.has(l))return{kind:"rest"};
+function resolve(tok,role,oct){const b=tok.trim(),l=b.toLowerCase();
+if(SUSTAIN.has(l)||l.startsWith("(hold"))return{kind:"sustain"};
+if(REST.has(l)||l.startsWith("(rest")||l.startsWith("(sil"))return{kind:"rest"};
+/* A stage direction where a note could be: hold what is sounding. */
+if(b.startsWith("(")&&b.endsWith(")"))return{kind:"sustain"};
 if(role==="chords"){const c=parseChord(b);return c?{kind:"chord",chord:c}:{kind:"rest",unreadable:b};}
 const parts=b.split("-").filter(Boolean),ps=[];for(const p of parts){const v=parsePitch(p,oct);if(v===null){ps.length=0;break;}ps.push(v);}
 if(ps.length)return{kind:"note",pitches:ps};const c=parseChord(b);if(c)return{kind:"chord",chord:c};return{kind:"rest",unreadable:b};}
@@ -476,7 +523,11 @@ let vel=null;const cells=body.split("|").map(c=>c.trim());
 if(cells.length&&/^vel\s*:/i.test(cells[cells.length-1]))vel=parseInt(cells.pop().split(":")[1],10);
 while(cells.length&&cells[0]==="")cells.shift();while(cells.length&&cells[cells.length-1]==="")cells.pop();
 if(!cells.length)return null;
-return{role,name,lineNumber:ln,velocity:vel,bars:cells.map(c=>c.split(/\s+/).filter(Boolean))};}
+/* bodyStart lets the overlay find these same tokens in the raw text without
+   re-deciding what a row is. Both regexes end in (.*), so the body always
+   runs to the end of the line. Reporting it changes nothing about the parse. */
+return{role,name,lineNumber:ln,velocity:vel,bodyStart:line.length-body.length,
+       bars:cells.map(c=>c.split(/\s+/).filter(Boolean))};}
 function parse(text){const s={title:"",key:"C",tempo:100,beats:4,unit:4,sections:[],diagnostics:[]};let sec=null;
 text.split(/\r?\n/).forEach((raw,i)=>{const line=raw.trim();if(!line||line.startsWith("//")||line.startsWith("#"))return;
 const tr=/^\*\*TRACK:\s*(.+?)\*\*$/.exec(line);if(tr){s.title=tr[1].trim();return;}
@@ -522,9 +573,13 @@ if(!voices.has(row.name))voices.set(row.name,row.role);const bad=new Set();
 row.bars.forEach((toks,bi)=>{if(!toks.length)return;const barStart=start+bi*barBeats;const step=barBeats/toks.length;
 const slots=toks.map(t=>resolve(t,row.role,oct));
 slots.forEach((sl,i)=>{if(sl.unreadable)bad.add(sl.unreadable);if(sl.kind==="rest"||sl.kind==="sustain")return;
-let len=step;for(let j=i+1;j<slots.length&&slots[j].kind==="sustain";j++)len+=step;
+let len=step;const keys=[`${row.lineNumber}-${bi}-${i}`];
+for(let j=i+1;j<slots.length&&slots[j].kind==="sustain";j++){len+=step;keys.push(`${row.lineNumber}-${bi}-${j}`);}
 const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voiceChord(sl.chord,oct);
-for(const p of ps)notes.push({beat:at,beats:len,pitch:p,velocity:vel,voice:row.name,role:row.role});});});
+/* `keys` names the written tokens this note came from -- the note itself and
+   every sustain holding it -- so the editor can light them while it sounds.
+   Carried alongside; nothing downstream of here reads it. */
+for(const p of ps)notes.push({beat:at,beats:len,pitch:p,velocity:vel,voice:row.name,role:row.role,keys});});});
 if(bad.size)diags.push({severity:"warning",line:row.lineNumber,
 message:`${row.role} row: nothing understood ${[...bad].slice(0,3).join(", ")} — silence there instead`});}
 function arrange(score){const notes=[],voices=new Map();const barBeats=score.beats*(4/score.unit);
@@ -619,11 +674,97 @@ function tone(ctx,dest,pitch,at,dur,vel,type){
 const TYPE={chords:"triangle",player:"sine",melody:"sawtooth"};
 
 /* ===================== playground ===================== */
-const source=$("source"), roll=$("roll"), readout=$("readout");
+const source=$("source"), roll=$("roll"), readout=$("readout"), mirror=$("mirror");
 let current=null, playing=false, started=0, raf=0;
+
+/* ---------- the mirror ----------
+   A textarea cannot hold a styled span, so the same text is painted behind it
+   with every token wrapped. Lighting a token while its note sounds is the one
+   thing on this page that says "this character you typed is that sound" --
+   everything else leaves the reader to infer it. Display only: it reads the
+   parse, never steers it. */
+let spanIndex=new Map(), lit=new Set();
+const esc=(s)=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function markCell(cell,ln,bar){
+  if(bar<0)return esc(cell);
+  let out="",i=0,t=0;
+  while(i<cell.length){
+    if(/\s/.test(cell[i])){ out+=esc(cell[i]); i++; continue; }
+    let j=i; while(j<cell.length&&!/\s/.test(cell[j]))j++;
+    out+=`<span data-k="${ln}-${bar}-${t}">${esc(cell.slice(i,j))}</span>`;
+    t++; i=j;
+  }
+  return out;
+}
+function markBody(body,ln){
+  /* Bar numbering has to agree with parseRow exactly, or a highlight lands one
+     bar out. Same split, same trimming, same `vel:` rule -- deliberately
+     duplicated in full rather than approximated. */
+  const raws=body.split("|"), cut=raws.map(c=>c.trim());
+  let lo=0,hi=cut.length-1;
+  if(hi>=0&&/^vel\s*:/i.test(cut[hi]))hi--;
+  while(lo<=hi&&cut[lo]==="")lo++;
+  while(hi>=lo&&cut[hi]==="")hi--;
+  return raws.map((cell,i)=>(i>0?"|":"")+markCell(cell,ln,(i>=lo&&i<=hi)?i-lo:-1)).join("");
+}
+function buildMirror(text){
+  const out=text.split(/\r?\n/).map((raw,i)=>{
+    const line=raw.trim(), row=line?parseRow(line,i+1):null;
+    if(!row||row.bodyStart==null)return esc(raw);
+    const lead=raw.length-raw.trimStart().length;
+    return esc(raw.slice(0,lead+row.bodyStart))
+         + markBody(line.slice(row.bodyStart),row.lineNumber)
+         + esc(raw.slice(lead+line.length));
+  });
+  mirror.innerHTML=out.join("\n")+"\n";
+  spanIndex=new Map(); lit=new Set();
+  for(const el of mirror.querySelectorAll("span[data-k]"))spanIndex.set(el.dataset.k,el);
+}
+function lightTokens(now){
+  if(!spanIndex.size)return;
+  const want=new Map();
+  if(now>=0&&current)for(const n of current.notes){
+    if(n.keys&&now>=n.time&&now<n.time+n.seconds)for(const k of n.keys)want.set(k,n.role);
+  }
+  for(const k of lit)if(!want.has(k)){const el=spanIndex.get(k);if(el)el.className="";}
+  for(const [k,role] of want)if(!lit.has(k)){
+    const el=spanIndex.get(k); if(el)el.className=role==="chords"?"on chords":"on";
+  }
+  lit=new Set(want.keys());
+}
+
+/* ---------- the silent preview ----------
+   Motion on screen within a second of load, before anything is clicked, so the
+   page is visibly a thing that plays rather than a thing that might. Canvas and
+   CSS only -- it never touches an AudioContext, so nothing here can make a
+   sound the visitor did not ask for. */
+let previewRaf=0, previewing=false;
+function endPreview(){
+  if(!previewing)return;
+  previewing=false; cancelAnimationFrame(previewRaf); previewRaf=0;
+  mirror.classList.remove("lit"); lightTokens(-1); drawRoll(-1);
+  document.body.classList.remove("inviting");
+}
+function startPreview(){
+  if(previewing||playing)return;
+  if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  if(!current||!current.notes.length)return;
+  const span=current.seconds||1, ms=Math.min(Math.max(span,3.5),6.5)*1000, t0=performance.now();
+  previewing=true; mirror.classList.add("lit"); document.body.classList.add("inviting");
+  const step=()=>{
+    if(!previewing||playing)return;
+    const p=(performance.now()-t0)/ms;
+    if(p>=1){ endPreview(); return; }
+    drawRoll(p*span); lightTokens(p*span);
+    previewRaf=requestAnimationFrame(step);
+  };
+  previewRaf=requestAnimationFrame(step);
+}
 
 function compileNow(){
   const a=arrange(parse(source.value)); current=a;
+  buildMirror(source.value);
   const errs=a.diagnostics.filter(d=>d.severity==="error");
   const warns=a.diagnostics.filter(d=>d.severity==="warning");
   let html=`<b>${a.notes.length}</b> notes · <b>${a.voices.length}</b> voice${a.voices.length===1?"":"s"}`
@@ -665,20 +806,23 @@ function drawRoll(now){
 }
 function play(){
   if(!current||!current.notes.length)return;
+  endPreview();
   const ctx=ac(); stopAll(true);
   playing=true; $("play").disabled=true; $("stop").disabled=false;
+  mirror.classList.add("lit");
   const t0=ctx.currentTime+0.08; started=t0;
   const master=ctx.createGain(); master.gain.value=0.22; master.connect(ctx.destination);
   for(const n of current.notes) n._osc=tone(ctx,master,n.pitch,t0+n.time,n.seconds*0.92,n.velocity,TYPE[n.role]);
   const tick=()=>{ if(!playing)return;
     const now=ctx.currentTime-started;
-    $("clock").textContent=Math.max(now,0).toFixed(1)+"s"; drawRoll(now);
+    $("clock").textContent=Math.max(now,0).toFixed(1)+"s"; drawRoll(now); lightTokens(now);
     if(now>current.seconds+0.25){stopAll();return;} raf=requestAnimationFrame(tick); };
   raf=requestAnimationFrame(tick);
 }
 function stopAll(quiet){ playing=false; cancelAnimationFrame(raf);
   if(current)for(const n of current.notes){ try{n._osc&&n._osc.stop();}catch(e){} n._osc=null; }
-  if(!quiet){ $("play").disabled=false; $("stop").disabled=true; $("clock").textContent="0.0s"; drawRoll(-1);} }
+  if(!quiet){ $("play").disabled=false; $("stop").disabled=true; $("clock").textContent="0.0s";
+    mirror.classList.remove("lit"); lightTokens(-1); drawRoll(-1);} }
 
 function download(bytes,name,mime){
   const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([bytes],{type:mime}));
@@ -962,6 +1106,14 @@ $("layerMode").addEventListener("click",()=>{
 if(!readHash()) source.value=PRESETS.ocean;
 compileNow(); drawDivide(); drawLayers(); stageLoop();
 window.addEventListener("resize",()=>{ drawRoll(playing?ac().currentTime-started:-1); drawDivide(); drawLayers(); });
+
+/* The mirror sits behind the textarea and does not scroll itself. */
+source.addEventListener("scroll",()=>{ mirror.scrollTop=source.scrollTop; mirror.scrollLeft=source.scrollLeft; });
+/* The preview is an invitation, not a mode: the first sign of a real visitor
+   ends it, whichever form that takes. */
+for(const ev of ["pointerdown","keydown","wheel","touchstart"])
+  window.addEventListener(ev,endPreview,{once:true,passive:true});
+startPreview();
 
 /* WebMIDI, if the browser and the user allow it. */
 if(navigator.requestMIDIAccess){
