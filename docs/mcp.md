@@ -130,7 +130,7 @@ fleet-jepa-midi's bandleader consumes:
     bass_register  treble_activity  dynamic_range   sustain_ratio
 
 Each is normalised into roughly `[0, 1]` — `contour_direction` alone is signed —
-against the fixed references in `plainsong/mcp/features.py`, not against the
+against the fixed references in `plainsong/features.py`, not against the
 piece itself. Normalising against the piece would make a bar's numbers depend on
 which other bars you happened to include, and two agents analysing two excerpts
 would disagree about the same bar.

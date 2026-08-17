@@ -15,8 +15,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from .. import features as feat
 from . import ensemble as ens
-from . import features as feat
 
 
 def _schema(properties: dict[str, Any], required: list[str] | None = None) -> dict[str, Any]:

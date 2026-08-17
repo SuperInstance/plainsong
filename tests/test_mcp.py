@@ -17,8 +17,9 @@ import urllib.request
 from http.server import ThreadingHTTPServer
 from pathlib import Path
 
+from plainsong import features
 from plainsong.agent.tools import Sandbox, ToolRegistry
-from plainsong.mcp import features, protocol
+from plainsong.mcp import protocol
 from plainsong.mcp.protocol import Dispatcher
 from plainsong.mcp.resources import NotFound, Resources
 from plainsong.mcp.server import PROTOCOL_VERSION, Server, build_http_handler

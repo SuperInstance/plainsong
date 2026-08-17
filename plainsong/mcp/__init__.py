@@ -9,8 +9,10 @@ shelling out to the CLI.
 
 The pieces: :mod:`protocol` is JSON-RPC and nothing else, :mod:`server` maps MCP
 methods onto the system, :mod:`resources` is what can be read, :mod:`tools` is
-what can be called, :mod:`ensemble` is the shared score, and :mod:`features`
-turns an arrangement into numbers a model can perceive.
+what can be called, and :mod:`ensemble` is the shared score. Feature
+extraction -- turning an arrangement into numbers a model can perceive -- is
+music analysis, not protocol, and lives at :mod:`plainsong.features`; this
+package only exposes it as a tool.
 """
 
 from __future__ import annotations
