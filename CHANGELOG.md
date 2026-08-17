@@ -2,6 +2,91 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### A syllable can be sung on its note
+
+```plainsong
+[V1] (Verse - 1 Bars)
+Melody: | A4  .   C5  E5 |
+Lyrics: | the tide came  |
+```
+
+`came` is written directly beneath `C5` and sounds two thirds of a beat after
+it, because the melody row divided the bar into four and the lyric row into
+three. Every other notation format binds syllables to notes; they disagree only
+about the mechanism, and the counting mechanism ABC and LilyPond use is what
+Plainsong already is.
+
+```toml
+[core]
+lyrics = "bound"
+```
+
+`PLAINSONG_CORE_LYRICS` does it for one run. **The default is `independent`,
+which is exactly what every existing file already does** — lyric events reach
+the MIDI file as meta events, so binding changes output, and a change to how
+existing notation compiles defaults to the old reading even when the new one is
+better.
+
+- **The barline resyncs.** Each bar's syllables bind to that bar's notes and
+  nothing carries across a `|`. Too many syllables in a bar are reported and not
+  sung, and the next bar is unaffected: a miscount costs one bar and recovers
+  rather than shifting every remaining word in the song.
+- **A held syllable needs no mark.** Fewer words than notes and the last word
+  carries across them; `LyricEvent.duration` says how long.
+- **Lyrics with no melody to bind to are kept where they were written** and
+  reported. Dropping the words silently is the worst available answer.
+
+**Padding is not melisma, and the plan was wrong about this.**
+`proposals/02-the-voyage.md` proposed reading a sustain token in a lyric row as
+a melisma, by analogy with ABC's `_`. The notation people actually write
+disagrees:
+
+```plainsong
+[V1] (Verse - 1 Bars)
+Melody: | Bb3 .   F4    .   |
+Lyrics: | sing .   every .   |
+```
+
+Two words, two notes — the dots hold the *column* under a sustaining melody.
+Read as melismas they would each consume a note and `every` would fall off the
+end of the bar. So a sustain or rest token in a lyric row binds to nothing. The
+rule follows the notation rather than the analogy. See
+[docs/lyrics.md](docs/lyrics.md).
+
+Phase 2 of `proposals/02-the-voyage.md`.
+
+### `plainsong lyrics` shows which note each syllable is sung on
+
+```
+$ plainsong lyrics song.song
+ok  6 syllable(s); 4 move when bound to their notes
+    syllable        written at   sung at    held
+    the                      0         0       2
+    tide                1.3333         2       1   <- moves
+    came                2.6667         3       1   <- moves
+```
+
+It exists for the same reason `chord --explain` does: guessing was cheaper than
+checking, and that is how the misalignment went unnoticed. Both readings are
+shown side by side so the difference is a fact rather than a claim. Syllables
+are paired by position rather than by matching text, so a word that appears
+twice in a song is not paired with the wrong one of itself.
+
+### `plainsong info --verbose` was showing half the diagnostics it promised
+
+Diagnostics come from two places, and the arranger's are the ones a reader most
+needs: an unreadable chord becomes silence while *arranging*, not while parsing.
+`transform.describe` arranged the score and then reported only the parser's
+half, so a file whose one chord was `Xm9` reported `notes 0` and explained
+nowhere.
+
+This affected every consumer of `describe`, not just `info`.
+`Arrangement.diagnostics` is already the union of both, and is now what gets
+reported. This is the second time this exact fault has shipped — `cmd_check` had
+it before — so it is recorded in `CLAUDE.md` rather than just fixed.
+
 ## 1.1.0 — 2026-08-17
 
 A minor rather than a patch: `notation/timegrid.py` is a new public module and

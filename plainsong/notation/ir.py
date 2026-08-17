@@ -300,6 +300,11 @@ class LyricEvent:
     start: float
     text: str
 
+    duration: float = 0.0
+    """How long the syllable is held. Zero when lyrics carry a time of their
+    own rather than being bound to notes; when bound, a word lasts until the
+    next word's note, so fewer words than notes is a melisma without a mark."""
+
 
 @dataclass
 class ChordEvent:

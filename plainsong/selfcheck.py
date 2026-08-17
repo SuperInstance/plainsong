@@ -487,3 +487,45 @@ def check_directive_vocabulary() -> tuple[bool, str]:
         "anticipate moved the hands only, push_forward moved both, and the players stayed "
         f"{gap_after:.4f} beats apart"
     )
+
+
+def check_lyric_binding() -> tuple[bool, str]:
+    """A bound syllable sounds on its note, and the default leaves files alone."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+
+    # `came` is written directly beneath `C5`. The lyric row divides the bar
+    # into three and the melody into four, so written as-is it sounds two
+    # thirds of a beat after the note it sits under.
+    text = (
+        "[V1]\n"
+        "Melody: | A4  .   C5  E5 |\n"
+        "Lyrics: | the tide came  |\n"
+    )
+    loose = arrange(parse(text), ArrangeOptions(humanize=False))
+    starts = [round(event.start, 3) for event in loose.lyrics]
+    if starts != [0.0, 1.333, 2.667]:
+        return False, f"the default moved: expected thirds of the bar, got {starts}"
+
+    bound = arrange(parse(text), ArrangeOptions(humanize=False, lyrics="bound"))
+    starts = [round(event.start, 3) for event in bound.lyrics]
+    if starts != [0.0, 2.0, 3.0]:
+        return False, f"syllables did not land on their notes: {starts}"
+    if round(bound.lyrics[0].duration, 3) != 2.0:
+        return False, (
+            "a word should carry until the next word's note, so `the` lasts while A4 is "
+            f"held; got {bound.lyrics[0].duration}"
+        )
+
+    # Padding holds a column under a sustaining melody; read as melisma it
+    # would consume a note and push the next word off the end of the bar.
+    padded = arrange(
+        parse("[V1]\nMelody: | Bb3 . F4 . |\nLyrics: | sing . every . |\n"),
+        ArrangeOptions(humanize=False, lyrics="bound"),
+    )
+    if [event.text for event in padded.lyrics] != ["sing", "every"]:
+        return False, f"padding was not ignored: {[e.text for e in padded.lyrics]}"
+    if [round(e.start, 3) for e in padded.lyrics] != [0.0, 2.0]:
+        return False, f"words did not land on Bb3 and F4: {[e.start for e in padded.lyrics]}"
+
+    return True, "syllables bind to notes, padding binds to nothing, and the default is unmoved"

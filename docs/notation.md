@@ -38,7 +38,7 @@ the reader. Sections play in the order they appear.
 |---|---|
 | `Chords:` | chord symbols: `Am`, `Cmaj7`, `F#m7b5`, `D/F#`, `G7sus4` |
 | `Melody:` | pitches in scientific notation: `C4`, `A#3`, `Eb5` |
-| `Lyrics:` | words, one bar per cell; never sounded, carried into the MIDI file |
+| `Lyrics:` | words, one bar per cell; never sounded, carried into the MIDI file. See [lyrics.md](lyrics.md) — a word does **not** sound with the note it is written under unless you ask it to |
 | `@name` | a named player: pitches, with `-` stacking a chord: `a2-e3-a3` |
 
 A `@name` row may end with `| vel: 70` to set its loudness (1-127), and
@@ -90,6 +90,12 @@ detected automatically. Write new material in the labelled form above.
 - Do not pad rows to a fixed token count. The bar divides itself.
 - Do not put lyrics on a `Melody:` row; they will be read as pitches and dropped.
 - Do not use `|` inside a lyric; it starts a new bar.
+- **Do not trust a lyric's column.** Rows divide their bars independently, so a
+  word written directly beneath a note need not sound with it: three words under
+  four melody tokens are thirds against quarters. `plainsong lyrics song.song`
+  shows which note each syllable actually lands on, and
+  `core.lyrics = "bound"` makes them land on the notes they are written under.
+  See [lyrics.md](lyrics.md).
 - Keep every row in a section the same number of bars unless you mean the
   short one to stop early.
 

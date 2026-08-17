@@ -129,6 +129,27 @@ divides itself*.
 If you want the older fixed-slot behaviour, set `core.bar_fill = "grid"` — it
 will tell you what it had to drop.
 
+### The other one: a column is not a promise
+
+Every row divides its own bar, which means two rows can look aligned and not be:
+
+```
+Melody: | A4  .   C5  E5 |     four tokens -> quarters
+Lyrics: | the tide came  |     three tokens -> thirds
+```
+
+`came` is written directly beneath `C5` and sounds two thirds of a beat after
+it. Ask rather than assume:
+
+```bash
+plainsong lyrics song.song    # which note each syllable really lands on
+```
+
+Set `core.lyrics = "bound"` and each syllable is sung on the note it is written
+under, with the barline resyncing so a miscount costs one bar instead of the
+rest of the song. The default leaves existing files alone. See
+[docs/lyrics.md](docs/lyrics.md).
+
 ### Two rows of the same kind run in sequence
 
 ```plainsong
@@ -316,6 +337,9 @@ it is developed and where a client should install it from.
 | `new` | start a piece from a template |
 | `info` | summarise a piece, with every diagnostic under `--verbose` |
 | `check` | check notation, including examples inside markdown |
+| `chord` / `voicing` | what a symbol means, and which notes it actually sounds |
+| `lyrics` | which note each syllable is sung on |
+| `fingerprint` | hash what notation compiles to, so a change in the sound is visible |
 | `transpose` | move a piece to another key or by semitones |
 | `library` | browse the bundled notation |
 | `stage` | what each listener on a stage actually hears |
@@ -382,6 +406,7 @@ charts only.
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
 | [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
 | [Voicing](docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
+| [Lyrics](docs/lyrics.md) | Binding syllables to the notes they are sung on, and why padding is not melisma |
 | [The songbook](docs/songbook.md) | The bundled charts, and the copyright policy they follow |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |

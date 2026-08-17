@@ -183,7 +183,15 @@ def describe(text: str, dialect: str = "auto") -> dict:
 
     score = parse(text, dialect=dialect)
     summary = score.summary()
+    diagnostics = score.diagnostics
     if not score.has_errors:
-        summary["arrangement"] = arrange(score).summary()
-    summary["diagnostics"] = [diag.as_dict() for diag in score.diagnostics]
+        arrangement = arrange(score)
+        summary["arrangement"] = arrangement.summary()
+        # Diagnostics come from two places and the arranger's are the ones a
+        # reader most needs: an unreadable chord becomes silence while
+        # arranging, not while parsing. This arranged and then reported only
+        # the parser's, so `Xm9` produced a bar of nothing and said why
+        # nowhere. `Arrangement.diagnostics` is already the union.
+        diagnostics = arrangement.diagnostics
+    summary["diagnostics"] = [diag.as_dict() for diag in diagnostics]
     return summary

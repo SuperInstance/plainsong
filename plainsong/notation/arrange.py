@@ -75,6 +75,7 @@ class ArrangeOptions:
     chord_voicing_octave: int = 3
     max_chord_notes: int = 4
     voicing: str = "guide"
+    lyrics: str = "independent"     # independent | bound
     """Which notes to keep when a chord names more than ``max_chord_notes``.
 
     ``guide`` gives up the fifth first and the root second, keeping the third,
@@ -296,10 +297,24 @@ class Arranger:
             )
         )
 
+    def _check_lyrics(self) -> None:
+        from .lyrics import DEFAULT_MODE, MODES
+
+        if self.options.lyrics in MODES:
+            return
+        self.diagnostics.append(
+            Diagnostic(
+                severity="warning",
+                message=f"unknown lyrics mode {self.options.lyrics!r}; using {DEFAULT_MODE!r}",
+                hint=f"lyrics is one of: {', '.join(sorted(MODES))}",
+            )
+        )
+
     def arrange(self) -> Arrangement:
         meta = self.score.meta
         bar_beats = meta.meter.beats_per_bar
         self._check_voicing()
+        self._check_lyrics()
         swing = self.options.swing if self.options.swing is not None else meta.swing
         lyrics: list[LyricEvent] = []
         chords: list[ChordEvent] = []
@@ -353,6 +368,15 @@ class Arranger:
                 section_beats = max(section_beats, offset - cursor)
 
             cursor += section_beats
+
+        if self.options.lyrics == "bound" and lyrics:
+            # Runs after the walk, because binding reads the finished grid: it
+            # needs every melody onset and every lyric token already placed.
+            from .lyrics import bind
+
+            bound, diagnostics = bind(self.grid)
+            lyrics = bound
+            self.diagnostics.extend(diagnostics)
 
         tracks = list(self._tracks.values())
         for track in tracks:

@@ -42,7 +42,8 @@ python3 -m plainsong check docs examples plainsong/songbook README.md   # every 
 # Working with notation
 python3 -m plainsong new "Title" -o song.song
 python3 -m plainsong compile song.song -o out.mid --audio out.wav
-python3 -m plainsong info song.song --verbose  # every diagnostic
+python3 -m plainsong info song.song --verbose  # every diagnostic, parser and arranger
+python3 -m plainsong lyrics song.song          # which note each syllable is sung on
 python3 -m plainsong transpose song.song Dm
 
 # The browser demo -- open it, no server needed
@@ -89,8 +90,19 @@ reintroduce a running cursor.
 
 **Rows of different kinds sound together; a row repeated in one section follows
 on.** Two `Melody:` rows in a section are eight bars, not four played twice.
-That rule is a claim about *time*, which is why it will not reach lyrics once
-they bind to notes — see `proposals/02-the-voyage.md`.
+That rule is a claim about *time*, which is why it does not reach a bound lyric
+row: a bound row owns no time of its own, so a repeated `Lyrics:` row is a
+second verse over the same music rather than a continuation. No syntax was
+invented for that — see `docs/lyrics.md`.
+
+**A lyric binds to a note, behind a setting.** `core.lyrics = "bound"` makes a
+syllable sound on the note it is written under; the default `independent` is the
+old reading, because lyric events reach the MIDI file and a change to how
+existing notation compiles defaults to the old behaviour. Padding is not
+melisma: a sustain token in a lyric row holds the *column* under a sustaining
+melody and binds to nothing. The plan argued the opposite from ABC's `_`, and
+the one file here with lyric rows settled it — read as melismas, the dots in
+`| sing . every . |` each eat a note and `every` falls off the bar.
 
 **Alignment is a fiction, and `notation/timegrid.py` is where it stops being
 one.** Rows divide their bars independently, so `came` written directly beneath
@@ -227,6 +239,14 @@ The parser produces some and the **arranger** produces others — an unreadable
 chord becoming silence is found while arranging, not while parsing. Anything
 reporting to a user has to ask for both. `cmd_check` showed only the parser's
 for a long time, so the arranger's never reached anybody.
+
+It happened twice. `transform.describe` arranged the score and then reported
+`score.diagnostics`, throwing the arrangement's away — so `plainsong info
+--verbose`, which documents itself as showing every diagnostic, showed half of
+them, and every other consumer of `describe` lost the same half. A file whose
+only chord was `Xm9` reported `notes 0` and explained nowhere.
+`Arrangement.diagnostics` is already the union of both; use it, and do not
+re-parse to fetch diagnostics you have already computed.
 
 Related, and the reason that matters: an unrecognised token silently became a
 rest. `Xm9` compiled "ok, 0 warnings" and produced a bar of nothing. It now

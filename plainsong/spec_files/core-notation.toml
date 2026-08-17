@@ -48,3 +48,9 @@ id = "chord-transposition"
 kind = "python"
 run = "plainsong.selfcheck:check_chord_transposition"
 description = "A chord carrying alterations no quality name can hold survives a transpose"
+
+[[check]]
+id = "lyric-binding"
+kind = "python"
+run = "plainsong.selfcheck:check_lyric_binding"
+description = "A bound syllable sounds on its note, and the default leaves files alone"

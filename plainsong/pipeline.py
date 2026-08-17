@@ -16,6 +16,7 @@ from typing import Any
 from .notation import parse
 from .notation.arrange import ArrangeOptions, arrange
 from .notation.ir import Arrangement, Diagnostic, Score
+from .notation.lyrics import DEFAULT_MODE as LYRICS_DEFAULT
 from .notation.voicing import DEFAULT_STRATEGY
 from .render import backends
 from .render.audio import AudioOptions, Synthesiser
@@ -117,6 +118,7 @@ def _arrange_options(config: Config, overrides: dict[str, Any] | None = None) ->
     options = ArrangeOptions(
         bar_fill=core.get("bar_fill", "rescale"),
         voicing=_voicing(core, render),
+        lyrics=core.get("lyrics", LYRICS_DEFAULT),
         humanize=bool(render.get("humanize", True)),
         humanize_seed=int(render.get("humanize_seed", 42)),
         humanize_velocity=int(render.get("humanize_velocity", 6)),
