@@ -2,7 +2,11 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.1.0 — 2026-08-17
+
+A minor rather than a patch: `notation/timegrid.py` is a new public module and
+`Arrangement.grid` a new public field. Nothing existing changes — all 6,321
+fingerprinted files compile to exactly the music they did in 1.0.0.
 
 ### The browser demo cut every held note short
 
