@@ -8,7 +8,9 @@ Plainsong is a plain-text music notation that compiles to MIDI and audio. The
 product is the `plainsong/` package: one compiler, three interfaces (CLI, TUI,
 web), a provider-agnostic model layer, an embedded agent, and a timing solver
 that treats a written beat as the moment a sound *arrives* rather than the
-moment a player acts. The two superseded engines have been deleted.
+moment a player acts. The two superseded engines are not maintained and live
+in `legacy/`, which also holds unrelated work that is still active -- see
+Rough edges.
 
 Where it came from, because it explains most of the rules below. The first
 version was built by an agent around the tools that agent happened to have: it

@@ -353,9 +353,8 @@ resolved at runtime.
 ### Moved
 
 - The previous engines, the image gallery, the MIDI studio, the fake book
-  generator and the unrelated `src/` ports were archived in `legacy/` (subsequently deleted).
-- The old `docs/01`–`04` describing the old system were archived in `legacy/docs/`
-  (subsequently deleted).
+  generator and the unrelated `src/` ports were archived in `legacy/`.
+- The old `docs/01`–`04` describing the old system were archived in `legacy/docs/`.
 
 ### Known limitations
 

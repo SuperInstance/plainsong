@@ -385,7 +385,7 @@ Known limits, in the open:
   from all 6,309 files. A chord progression is not protectable expression; a tune
   and its words are, and nothing in those generated files recorded provenance.
   See [docs/songbook.md](docs/songbook.md).
-- The two earlier engines have been deleted. Nothing imported them.
+- The two earlier engines are in `legacy/`, unmaintained. Nothing imports them.
 
 ## Licence
 

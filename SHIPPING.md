@@ -224,11 +224,16 @@ passes on Windows across 3.10 through 3.13.
 
 - `master` has been red on its own older workflow since before this branch, for
   reasons unrelated to it.
-- **Three Rust-to-Python ports were deleted with `legacy/`, undecided.**
+- **`legacy/` is not dead, and was nearly deleted for being quiet.** It was
+  removed on the strength of two documents saying it could go and nothing
+  outside it importing it. Both were true and both were beside the point: a
+  commit landed on master the next day adding real work to
+  `legacy/scripts/gallery_v5.py`, an image-generation studio that shares this
+  repository and has nothing to do with the compiler. The directory is
+  restored. Absence of imports measures coupling; it says nothing about whether
+  anybody is working in there. `git log` says that, and it was never consulted.
+- **Three Rust-to-Python ports remain parked and undecided.**
   `counterpoint_analyzer`, `genome` and `tradition_dna` arrived on master
-  mid-session and were parked in `legacy/src/` beside their siblings. Whether
-  any deserved promotion into the package was an open question this branch
-  chose not to answer -- and deleting the directory did not answer it either,
-  it only removed the artefacts. They are recoverable from git history, and
-  anybody who wants that question reopened should start there rather than
-  assume the deletion was a judgement about their worth.
+  mid-session and sit in `legacy/src/` beside their siblings. Whether any
+  deserves promotion into the package is still an open question this branch
+  deliberately did not answer.

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎵 MIDI Studio</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --panel: #12121a;
+  --panel2: #1a1a28;
+  --border: #2a2a3e;
+  --accent: #7c8cf0;
+  --accent2: #5b6cd9;
+  --text: #e0e0f0;
+  --muted: #8888aa;
+  --green: #4caf50;
+  --red: #f44336;
+  --orange: #ff9800;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+/* LEFT PANEL — Chat */
+.chat-panel {
+  width: 350px;
+  min-width: 350px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  padding: 16px;
+  background: var(--panel2);
+  border-bottom: 1px solid var(--border);
+}
+.chat-header h2 { font-size: 16px; margin-bottom: 4px; }
+.chat-header p { font-size: 12px; color: var(--muted); }
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+.msg {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.msg.user {
+  background: var(--accent);
+  color: #fff;
+  margin-left: 30px;
+  border-bottom-right-radius: 4px;
+}
+.msg.ai {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  margin-right: 30px;
+  border-bottom-left-radius: 4px;
+}
+.msg .apply-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 16px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+.msg .apply-btn:hover { opacity: 0.85; }
+.chat-input-area {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: var(--panel2);
+  display: flex;
+  gap: 8px;
+}
+.chat-input {
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+.chat-input:focus { border-color: var(--accent); }
+.chat-send {
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.chat-send:hover { background: var(--accent2); }
+.chat-send:disabled { opacity: 0.5; cursor: default; }
+/* RIGHT PANEL — Studio */
+.studio-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.studio-header {
+  padding: 12px 20px;
+  background: var(--panel2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.studio-header h1 { font-size: 18px; }
+.preset-select {
+  padding: 6px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+}
+.studio-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+/* Parameters Form */
+.param-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.param-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+.param-card label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.param-card select,
+.param-card input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+.param-card select:focus,
+.param-card input:focus { border-color: var(--accent); }
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.slider-row input[type="range"] {
+  flex: 1;
+  accent-color: var(--accent);
+}
+.slider-val {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+  color: var(--accent);
+}
+.chord-input { grid-column: span 2; }
+.key-scale-row {
+  display: flex;
+  gap: 8px;
+}
+.key-scale-row select { flex: 1; }
+.toggle-group {
+  display: flex;
+  gap: 4px;
+}
+.toggle-btn {
+  padding: 4px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+}
+.toggle-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+/* Layers */
+.layers-section {
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.layer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.layer-item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.layer-icon { font-size: 20px; }
+layer-info { flex: 1; }
+.layer-info .lname { font-size: 14px; font-weight: 600; }
+.layer-info .lrole { font-size: 12px; color: var(--muted); }
+.layer-vol {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.layer-vol input[type="range"] {
+  width: 60px;
+  accent-color: var(--accent);
+}
+.layer-actions {
+  display: flex;
+  gap: 4px;
+}
+.layer-actions button {
+  padding: 4px 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 12px;
+}
+.layer-actions button:hover { border-color: var(--accent); }
+.layer-actions button.del:hover { border-color: var(--red); color: var(--red); }
+.add-layer-btn {
+  padding: 8px 16px;
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  width: 100%;
+  margin-top: 8px;
+}
+.add-layer-btn:hover { border-color: var(--accent); color: var(--accent); }
+/* Action Bar */
+.action-bar {
+  padding: 16px 20px;
+  background: var(--panel2);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent2); }
+.btn-secondary {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn-secondary:hover { border-color: var(--accent); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--bg);
+  border-radius: 3px;
+  overflow: hidden;
+  display: none;
+}
+.progress-bar.active { display: block; }
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.3s ease;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+/* Audio Player */
+.audio-player {
+  display: none;
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.audio-player.active { display: block; }
+.audio-player audio { width: 100%; margin-top: 8px; }
+.status-msg {
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 8px;
+}
+.status-msg.error { color: var(--red); }
+.status-msg.success { color: var(--green); }
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- LEFT PANEL: AI Composer Chat -->
+<div class="chat-panel">
+  <div class="chat-header">
+    <h2>🎼 AI Composer</h2>
+    <p>Describe a mood, scene, or feeling</p>
+  </div>
+  <div class="chat-messages" id="chatMsgs">
+    <div class="msg ai">Hi! I'm your AI composer. Describe a mood, scene, or feeling and I'll suggest a composition for you. Try: <em>"A rainy night in a jazz club"</em> or <em>"Epic adventure theme"</em></div>
+  </div>
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Describe your music..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-send" id="chatSend" onclick="sendChat()">Send</button>
+  </div>
+</div>
+
+<!-- RIGHT PANEL: MIDI Studio -->
+<div class="studio-panel">
+  <div class="studio-header">
+    <h1>🎵 MIDI Studio</h1>
+    <div>
+      <select class="preset-select" id="presetSelect" onchange="loadPreset()">
+        <option value="">— Load Preset —</option>
+      </select>
+    </div>
+  </div>
+  <div class="studio-body">
+    <!-- Parameters -->
+    <div class="param-grid">
+      <div class="param-card">
+        <label>Tempo (BPM)</label>
+        <div class="slider-row">
+          <input type="range" id="tempo" min="40" max="200" value="75" oninput="document.getElementById('tempoVal').textContent=this.value">
+          <span class="slider-val" id="tempoVal">75</span>
+        </div>
+      </div>
+      <div class="param-card">
+        <label>Key</label>
+        <div class="key-scale-row">
+          <select id="keySelect">
+            <option>C</option><option>C#</option><option>D</option><option>D#</option>
+            <option>E</option><option>F</option><option>F#</option><option>G</option>
+            <option>G#</option><option selected>A</option><option>A#</option><option>B</option>
+          </select>
+          <div class="toggle-group">
+            <button class="toggle-btn" id="majorBtn" onclick="setMode('major')">Major</button>
+            <button class="toggle-btn active" id="minorBtn" onclick="setMode('minor')">Minor</button>
+          </div>
+        </div>
+      </div>
+      <div class="param-card">
+        <label>Scale</label>
+        <select id="scaleSelect">
+          <option value="major">Major</option>
+          <option value="minor" selected>Minor</option>
+          <option value="dorian">Dorian</option>
+          <option value="mixolydian">Mixolydian</option>
+          <option value="pentatonic">Pentatonic</option>
+          <option value="blues">Blues</option>
+        </select>
+      </div>
+      <div class="param-card">
+        <label>Bars</label>
+        <div class="slider-row">
+          <input type="range" id="bars" min="4" max="64" value="8" oninput="document.getElementById('barsVal').textContent=this.value">
+          <span class="slider-val" id="barsVal">8</span>
+        </div>
+      </div>
+      <div class="param-card chord-input">
+        <label>Chord Progression</label>
+        <input type="text" id="chords" value="Am F C G" placeholder="e.g. Am F C G">
+      </div>
+      <div class="param-card">
+        <label>Swing</label>
+        <div class="slider-row">
+          <input type="range" id="swing" min="0" max="100" value="0" oninput="document.getElementById('swingVal').textContent=this.value+'%'">
+          <span class="slider-val" id="swingVal">0%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layers -->
+    <div class="layers-section">
+      <div class="section-title">🎧 Track Layers</div>
+      <div class="layer-list" id="layerList"></div>
+      <button class="add-layer-btn" onclick="addLayer()">+ Add Layer</button>
+    </div>
+
+    <!-- Audio Player -->
+    <div class="audio-player" id="audioPlayer">
+      <div class="section-title">🔊 Preview</div>
+      <audio id="audioEl" controls></audio>
+    </div>
+  </div>
+
+  <!-- Action Bar -->
+  <div class="action-bar">
+    <button class="btn btn-primary" id="genBtn" onclick="generateMidi()">🎹 Generate MIDI</button>
+    <button class="btn btn-secondary" id="playBtn" onclick="renderWav()" disabled>▶️ Play Preview</button>
+    <a id="midLink" style="display:none"><button class="btn btn-secondary">📥 .mid</button></a>
+    <a id="wavLink" style="display:none"><button class="btn btn-secondary">📥 .wav</button></a>
+    <div class="progress-bar" id="progBar"><div class="progress-fill" id="progFill"></div></div>
+    <span class="status-msg" id="statusMsg"></span>
+  </div>
+</div>
+
+<script>
+let layers = [];
+let currentMode = 'minor';
+let lastMidiPath = null;
+
+// Init presets
+fetch('/api/presets').then(r=>r.json()).then(d=>{
+  const sel = document.getElementById('presetSelect');
+  for (const [k,v] of Object.entries(d.presets)) {
+    const opt = document.createElement('option');
+    opt.value = k; opt.textContent = v.name;
+    sel.appendChild(opt);
+  }
+});
+
+function setMode(m) {
+  currentMode = m;
+  document.getElementById('majorBtn').classList.toggle('active', m==='major');
+  document.getElementById('minorBtn').classList.toggle('active', m==='minor');
+  // Also update scale dropdown
+  document.getElementById('scaleSelect').value = m === 'major' ? 'major' : 'minor';
+}
+
+function setStatus(msg, type='') {
+  const el = document.getElementById('statusMsg');
+  el.textContent = msg;
+  el.className = 'status-msg ' + type;
+}
+
+function showProgress(show) {
+  document.getElementById('progBar').classList.toggle('active', show);
+  if (show) document.getElementById('progFill').style.width = '30%';
+}
+
+// Chat
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  const sendBtn = document.getElementById('chatSend');
+  sendBtn.disabled = true;
+
+  // Add user message
+  const chatDiv = document.getElementById('chatMsgs');
+  const userDiv = document.createElement('div');
+  userDiv.className = 'msg user';
+  userDiv.textContent = msg;
+  chatDiv.appendChild(userDiv);
+  chatDiv.scrollTop = chatDiv.scrollHeight;
+
+  // Typing indicator
+  const typingDiv = document.createElement('div');
+  typingDiv.className = 'msg ai';
+  typingDiv.textContent = '...';
+  typingDiv.id = 'typing';
+  chatDiv.appendChild(typingDiv);
+  chatDiv.scrollTop = chatDiv.scrollHeight;
+
+  try {
+    const resp = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({message: msg})
+    });
+    const data = await resp.json();
+    document.getElementById('typing').remove();
+
+    const aiDiv = document.createElement('div');
+    aiDiv.className = 'msg ai';
+    aiDiv.innerHTML = formatChatReply(data.reply);
+    if (data.suggestion) {
+      const btn = document.createElement('button');
+      btn.className = 'apply-btn';
+      btn.textContent = '🎹 Apply to Studio';
+      btn.onclick = () => applySuggestion(data.suggestion);
+      aiDiv.appendChild(btn);
+    }
+    chatDiv.appendChild(aiDiv);
+    chatDiv.scrollTop = chatDiv.scrollHeight;
+  } catch(e) {
+    document.getElementById('typing').remove();
+    const errDiv = document.createElement('div');
+    errDiv.className = 'msg ai';
+    errDiv.textContent = '⚠️ Error: ' + e.message;
+    chatDiv.appendChild(errDiv);
+  }
+  sendBtn.disabled = false;
+}
+
+function formatChatReply(text) {
+  // Escape HTML
+  let s = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // Format json code blocks
+  s = s.replace(/```json\s*([\s\S]*?)```/g, '<pre style="background:#0d0d15;padding:10px;border-radius:6px;overflow-x:auto;margin-top:8px;font-size:12px;">$1</pre>');
+  s = s.replace(/```\s*([\s\S]*?)```/g, '<pre style="background:#0d0d15;padding:10px;border-radius:6px;overflow-x:auto;margin-top:8px;font-size:12px;">$1</pre>');
+  return s;
+}
+
+function applySuggestion(jsonStr) {
+  try {
+    const s = JSON.parse(jsonStr);
+    if (s.tempo) { document.getElementById('tempo').value = s.tempo; document.getElementById('tempoVal').textContent = s.tempo; }
+    if (s.key) { document.getElementById('keySelect').value = s.key; }
+    if (s.scale) { document.getElementById('scaleSelect').value = s.scale; setMode(s.scale === 'major' ? 'major' : 'minor'); }
+    if (s.sections && s.sections.length > 0) {
+      const sec = s.sections[0];
+      if (sec.bars) { document.getElementById('bars').value = sec.bars; document.getElementById('barsVal').textContent = sec.bars; }
+      if (sec.chord_progression) { document.getElementById('chords').value = sec.chord_progression; }
+    }
+    if (s.chords) { document.getElementById('chords').value = s.chords; }
+    // Build layers from instruments
+    if (s.instruments && s.instruments.length > 0) {
+      layers = [];
+      const roleMap = {
+        'piano': 'chords', 'guitar': 'chords', 'strings': 'pad',
+        'flute': 'melody', 'bass': 'bassline', 'drums': 'beat'
+      };
+      s.instruments.forEach(inst => {
+        const name = inst.toLowerCase().trim();
+        if (GM_INSTR.hasOwnProperty(name)) {
+          layers.push({instrument: name, role: roleMap[name]||'chords', volume: 75, muted: false});
+        }
+      });
+      if (layers.length === 0) layers.push({instrument:'piano',role:'chords',volume:75,muted:false});
+      renderLayers();
+    }
+    setStatus('✅ Composition applied!', 'success');
+  } catch(e) {
+    setStatus('Error applying: ' + e.message, 'error');
+  }
+}
+
+// Layers
+const GM_INSTR = {
+  'piano': {label:'🎹 Piano', roles:['chords','melody','pad']},
+  'guitar': {label:'🎸 Guitar', roles:['chords','fingerpicking','strumming','melody']},
+  'strings': {label:'🎻 Strings', roles:['pad','chords','melody']},
+  'flute': {label:'🪈 Flute', roles:['melody']},
+  'bass': {label:'🎵 Bass', roles:['bassline']},
+  'drums': {label:'🥁 Drums', roles:['beat']},
+};
+
+function addLayer() {
+  layers.push({instrument:'piano', role:'chords', volume:75, muted:false});
+  renderLayers();
+}
+
+function removeLayer(i) {
+  layers.splice(i, 1);
+  renderLayers();
+}
+
+function toggleMute(i) {
+  layers[i].muted = !layers[i].muted;
+  renderLayers();
+}
+
+function changeLayerInstr(i, val) {
+  layers[i].instrument = val;
+  const roles = GM_INSTR[val].roles;
+  layers[i].role = roles[0];
+  renderLayers();
+}
+
+function changeLayerRole(i, val) { layers[i].role = val; }
+function changeLayerVol(i, val) { layers[i].volume = parseInt(val); }
+
+function renderLayers() {
+  const list = document.getElementById('layerList');
+  list.innerHTML = '';
+  layers.forEach((l, i) => {
+    const div = document.createElement('div');
+    div.className = 'layer-item';
+    if (l.muted) div.style.opacity = '0.4';
+    const instrOpts = Object.entries(GM_INSTR).map(([k,v]) =>
+      `<option value="${k}" ${l.instrument===k?'selected':''}>${v.label}</option>`).join('');
+    const roleOpts = (GM_INSTR[l.instrument]?.roles || ['chords']).map(r =>
+      `<option value="${r}" ${l.role===r?'selected':''}>${r}</option>`).join('');
+    div.innerHTML = `
+      <span class="layer-icon">${GM_INSTR[l.instrument]?.label.split(' ')[0] || '🎵'}</span>
+      <div class="layer-info" style="flex:1">
+        <select style="background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:4px;padding:3px;font-size:13px" onchange="changeLayerInstr(${i},this.value)">${instrOpts}</select>
+        <select style="background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:4px;padding:3px;font-size:12px;margin-left:4px" onchange="changeLayerRole(${i},this.value)">${roleOpts}</select>
+      </div>
+      <div class="layer-vol">
+        <span style="font-size:11px;color:var(--muted)">Vol</span>
+        <input type="range" min="0" max="127" value="${l.volume}" oninput="changeLayerVol(${i},this.value)" style="accent-color:var(--accent)">
+      </div>
+      <div class="layer-actions">
+        <button onclick="toggleMute(${i})" title="Mute">${l.muted?'🔇':'🔊'}</button>
+        <button class="del" onclick="removeLayer(${i})" title="Delete">🗑</button>
+      </div>`;
+    list.appendChild(div);
+  });
+  if (layers.length === 0) {
+    list.innerHTML = '<div style="color:var(--muted);font-size:13px;padding:8px">No layers. Click "Add Layer" to start.</div>';
+  }
+}
+
+// Presets
+function loadPreset() {
+  const key = document.getElementById('presetSelect').value;
+  if (!key) return;
+  fetch('/api/presets').then(r=>r.json()).then(d=>{
+    const p = d.presets[key];
+    if (!p) return;
+    document.getElementById('tempo').value = p.tempo;
+    document.getElementById('tempoVal').textContent = p.tempo;
+    document.getElementById('keySelect').value = p.key;
+    document.getElementById('scaleSelect').value = p.scale;
+    setMode(p.scale === 'major' ? 'major' : 'minor');
+    const maxBars = Math.max(...p.layers.map(l=>l.bars));
+    document.getElementById('bars').value = maxBars;
+    document.getElementById('barsVal').textContent = maxBars;
+    document.getElementById('chords').value = p.chords;
+    layers = p.layers.map(l => ({instrument:l.instrument, role:l.role, volume:l.volume||75, muted:false}));
+    renderLayers();
+    setStatus('Loaded: ' + (p.name||key), 'success');
+  });
+}
+
+// Generate MIDI
+async function generateMidi() {
+  const btn = document.getElementById('genBtn');
+  btn.disabled = true;
+  showProgress(true);
+  setStatus('Generating MIDI...');
+
+  const activeLayers = layers.filter(l=>!l.muted).map(l=>({
+    instrument:l.instrument, role:l.role, bars:parseInt(document.getElementById('bars').value),
+    volume:l.volume
+  }));
+
+  const body = {
+    tempo: parseInt(document.getElementById('tempo').value),
+    key: document.getElementById('keySelect').value,
+    scale: document.getElementById('scaleSelect').value,
+    bars: parseInt(document.getElementById('bars').value),
+    chords: document.getElementById('chords').value,
+    layers: activeLayers.length > 0 ? activeLayers : [{instrument:'piano',role:'chords',bars:8,volume:75}],
+    swing: parseFloat(document.getElementById('swing').value) / 100
+  };
+
+  try {
+    document.getElementById('progFill').style.width = '50%';
+    const resp = await fetch('/api/generate-midi', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(body)
+    });
+    const data = await resp.json();
+    document.getElementById('progFill').style.width = '100%';
+    if (data.success) {
+      lastMidiPath = data.path;
+      setStatus('✅ MIDI generated: ' + data.filename, 'success');
+      document.getElementById('playBtn').disabled = false;
+      const ml = document.getElementById('midLink');
+      ml.href = data.url; ml.download = data.filename; ml.style.display = 'inline-block';
+      setTimeout(()=>showProgress(false), 500);
+    } else {
+      setStatus('Error: ' + (data.error||'Unknown'), 'error');
+      showProgress(false);
+    }
+  } catch(e) {
+    setStatus('Error: ' + e.message, 'error');
+    showProgress(false);
+  }
+  btn.disabled = false;
+}
+
+// Render WAV
+async function renderWav() {
+  if (!lastMidiPath) { setStatus('Generate MIDI first', 'error'); return; }
+  const btn = document.getElementById('playBtn');
+  btn.disabled = true;
+  showProgress(true);
+  setStatus('Rendering audio...');
+
+  try {
+    document.getElementById('progFill').style.width = '40%';
+    const resp = await fetch('/api/render-wav', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({midi_path: lastMidiPath})
+    });
+    const data = await resp.json();
+    document.getElementById('progFill').style.width = '100%';
+    if (data.success) {
+      setStatus('✅ Audio ready!', 'success');
+      const player = document.getElementById('audioPlayer');
+      const audio = document.getElementById('audioEl');
+      audio.src = data.url + '&t=' + Date.now();
+      player.classList.add('active');
+      audio.play();
+      const wl = document.getElementById('wavLink');
+      wl.href = data.url; wl.download = data.filename; wl.style.display = 'inline-block';
+      setTimeout(()=>showProgress(false), 500);
+    } else {
+      setStatus('Error: ' + (data.error||'Unknown'), 'error');
+      showProgress(false);
+    }
+  } catch(e) {
+    setStatus('Error: ' + e.message, 'error');
+    showProgress(false);
+  }
+  btn.disabled = false;
+}
+
+// Initialize
+layers = [{instrument:'piano', role:'chords', volume:75, muted:false}];
+renderLayers();
+</script>
+</body>
+</html>
