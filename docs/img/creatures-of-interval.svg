@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="497" height="679" viewBox="0 0 497.00 679.00" role="img" aria-label="chord chart">
+<style>
+:root { color-scheme: light dark; }
+.paper  { fill: #faf8f4; }
+.ink    { fill: #1a1714; }
+.rule   { stroke: #1a1714; }
+.faint  { fill: #6f6862; }
+.chord  { font-weight: 700; }
+text { font-family: Liberation Sans, Arial, Helvetica, sans-serif; }
+@media (prefers-color-scheme: dark) {
+  .paper { fill: #14120f; }
+  .ink   { fill: #f2ede6; }
+  .rule  { stroke: #f2ede6; }
+  .faint { fill: #9a938c; }
+}
+</style>
+<rect class="paper" width="497.00" height="679.00"/>
+<line class="rule" x1="24.50" y1="63.35" x2="472.50" y2="63.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="40.25" x2="24.50" y2="63.35" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="36.05" textLength="33.62" lengthAdjust="spacingAndGlyphs" text-anchor="start">Intro</text>
+<text class="ink chord" x="28.00" y="57.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="40.25" x2="136.50" y2="63.35" stroke-width="1.12"/>
+<text class="ink chord" x="140.00" y="57.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="248.50" y1="40.25" x2="248.50" y2="63.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="57.05" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="360.50" y1="40.25" x2="360.50" y2="63.35" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="57.05" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="472.50" y1="40.25" x2="472.50" y2="63.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="115.85" x2="472.50" y2="115.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="92.75" x2="24.50" y2="115.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="109.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="92.75" x2="136.50" y2="115.85" stroke-width="1.12"/>
+<text class="ink chord" x="140.00" y="109.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="248.50" y1="92.75" x2="248.50" y2="115.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="109.55" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="360.50" y1="92.75" x2="360.50" y2="115.85" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="109.55" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="472.50" y1="92.75" x2="472.50" y2="115.85" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="168.35" x2="472.50" y2="168.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="145.25" x2="24.50" y2="168.35" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="141.05" textLength="57.89" lengthAdjust="spacingAndGlyphs" text-anchor="start">Verse 1</text>
+<text class="ink chord" x="28.00" y="162.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="145.25" x2="136.50" y2="168.35" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="145.25" x2="248.50" y2="168.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="162.05" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="360.50" y1="145.25" x2="360.50" y2="168.35" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="162.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="145.25" x2="472.50" y2="168.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="220.85" x2="472.50" y2="220.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="197.75" x2="24.50" y2="220.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="214.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="197.75" x2="136.50" y2="220.85" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="197.75" x2="248.50" y2="220.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="214.55" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="360.50" y1="197.75" x2="360.50" y2="220.85" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="214.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="197.75" x2="472.50" y2="220.85" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="273.35" x2="472.50" y2="273.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="250.25" x2="24.50" y2="273.35" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="267.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="250.25" x2="136.50" y2="273.35" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="250.25" x2="248.50" y2="273.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="267.05" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="360.50" y1="250.25" x2="360.50" y2="273.35" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="267.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="250.25" x2="472.50" y2="273.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="325.85" x2="472.50" y2="325.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="302.75" x2="24.50" y2="325.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="319.55" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="136.50" y1="302.75" x2="136.50" y2="325.85" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="302.75" x2="248.50" y2="325.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="319.55" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="360.50" y1="302.75" x2="360.50" y2="325.85" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="319.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="302.75" x2="472.50" y2="325.85" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="378.35" x2="472.50" y2="378.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="355.25" x2="24.50" y2="378.35" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="351.05" textLength="54.15" lengthAdjust="spacingAndGlyphs" text-anchor="start">Chorus</text>
+<text class="ink chord" x="28.00" y="372.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="355.25" x2="136.50" y2="378.35" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="355.25" x2="248.50" y2="378.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="372.05" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="360.50" y1="355.25" x2="360.50" y2="378.35" stroke-width="1.12"/>
+<line class="rule" x1="472.50" y1="355.25" x2="472.50" y2="378.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="430.85" x2="472.50" y2="430.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="407.75" x2="24.50" y2="430.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="424.55" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="136.50" y1="407.75" x2="136.50" y2="430.85" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="407.75" x2="248.50" y2="430.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="424.55" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="360.50" y1="407.75" x2="360.50" y2="430.85" stroke-width="1.12"/>
+<line class="rule" x1="472.50" y1="407.75" x2="472.50" y2="430.85" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="483.35" x2="472.50" y2="483.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="460.25" x2="24.50" y2="483.35" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="477.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="136.50" y1="460.25" x2="136.50" y2="483.35" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="460.25" x2="248.50" y2="483.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="477.05" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="360.50" y1="460.25" x2="360.50" y2="483.35" stroke-width="1.12"/>
+<line class="rule" x1="472.50" y1="460.25" x2="472.50" y2="483.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="535.85" x2="472.50" y2="535.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="512.75" x2="24.50" y2="535.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="529.55" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="136.50" y1="512.75" x2="136.50" y2="535.85" stroke-width="1.12"/>
+<line class="rule" x1="248.50" y1="512.75" x2="248.50" y2="535.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="529.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="360.50" y1="512.75" x2="360.50" y2="535.85" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="529.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="512.75" x2="472.50" y2="535.85" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="588.35" x2="472.50" y2="588.35" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="565.25" x2="24.50" y2="588.35" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="561.05" textLength="42.02" lengthAdjust="spacingAndGlyphs" text-anchor="start">Outro</text>
+<text class="ink chord" x="28.00" y="582.05" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="136.50" y1="565.25" x2="136.50" y2="588.35" stroke-width="1.12"/>
+<text class="ink chord" x="140.00" y="582.05" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="248.50" y1="565.25" x2="248.50" y2="588.35" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="582.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="360.50" y1="565.25" x2="360.50" y2="588.35" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="582.05" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="565.25" x2="472.50" y2="588.35" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="640.85" x2="472.50" y2="640.85" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="617.75" x2="24.50" y2="640.85" stroke-width="1.12"/>
+<text class="ink chord" x="28.00" y="634.55" textLength="26.46" lengthAdjust="spacingAndGlyphs" text-anchor="start">VI</text>
+<line class="rule" x1="136.50" y1="617.75" x2="136.50" y2="640.85" stroke-width="1.12"/>
+<text class="ink chord" x="140.00" y="634.55" textLength="34.24" lengthAdjust="spacingAndGlyphs" text-anchor="start">VII</text>
+<line class="rule" x1="248.50" y1="617.75" x2="248.50" y2="640.85" stroke-width="1.12"/>
+<text class="ink chord" x="252.00" y="634.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="360.50" y1="617.75" x2="360.50" y2="640.85" stroke-width="1.12"/>
+<text class="ink chord" x="364.00" y="634.55" textLength="7.78" lengthAdjust="spacingAndGlyphs" text-anchor="start">i</text>
+<line class="rule" x1="472.50" y1="617.75" x2="472.50" y2="640.85" stroke-width="3.50"/>
+</svg>

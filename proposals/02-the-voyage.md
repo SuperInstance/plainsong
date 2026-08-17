@@ -219,7 +219,22 @@ with the rest of lyric binding rather than on its own.
 syllable count warns and recovers at the next barline rather than propagating;
 the existing corpus compiles unchanged.
 
-### Phase 3 — SVG — **decided**
+### Phase 3 — SVG — **done**
+
+`render/chart.py`, `plainsong chart`, and `tools/extract_font_widths.py` for the
+width table. *Exit, met:* a bundled example renders, is legible in light and
+dark, and embeds in this repository's README as an `<img>`.
+
+Two things the research did not predict. The bold face needs measuring
+separately -- `m`, `b` and `j` differ between the weights and chord symbols are
+made of exactly those, so measuring regular and drawing bold makes
+`lengthAdjust` smear every glyph. And bar width should be derived from content
+rather than fixed: each symbol sits at `unit * width`, so the constraint is
+`width >= (advance + gap) / (next_unit - unit)`, and taking the maximum solves
+it in one pass. A fixed width either wastes the page or overlaps the symbols,
+and which one depends on the song.
+
+### Phase 3 as originally reasoned — **kept for the record**
 
 A zero-dependency renderer emitting a chart: bold chords, proportionally spaced
 notes, lyrics under the notes they belong to.

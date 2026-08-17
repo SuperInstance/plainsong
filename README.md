@@ -252,6 +252,27 @@ configuration.
 Optional extras — NumPy for faster synthesis, ffmpeg for format conversion, mido
 for hardware MIDI — are detected when present and never required.
 
+## A chart you can put in a document
+
+```bash
+plainsong chart song.song -o chart.svg
+```
+
+![a chord chart rendered from one of the bundled examples](docs/img/creatures-of-interval.svg)
+
+That image is the SVG above, committed to this repository and embedded with an
+`<img>` tag — which is the only way a chart appears in markdown on a platform
+you do not control, because GitHub strips a raw `<svg>`.
+
+Text layout is computed in Python from a shipped width table and then declared
+with `textLength`, so the chart holds its shape on a machine with none of the
+fonts it names. Bars are as wide as their contents need, worked out from the
+same measurements. It reads `prefers-color-scheme`, so it is legible in a dark
+README as well as a light one.
+
+See [docs/chart.md](docs/chart.md), including what it deliberately is not: a
+chord chart rather than an engraver, with no noteheads, staff or beaming.
+
 ## Timing that models the room
 
 A score usually says "this note is at beat 4.5" without saying *where* that
@@ -338,6 +359,7 @@ it is developed and where a client should install it from.
 | `info` | summarise a piece, with every diagnostic under `--verbose` |
 | `check` | check notation, including examples inside markdown |
 | `chord` / `voicing` | what a symbol means, and which notes it actually sounds |
+| `chart` | draw a chord chart as SVG, for embedding in a document |
 | `lyrics` | which note each syllable is sung on |
 | `fingerprint` | hash what notation compiles to, so a change in the sound is visible |
 | `transpose` | move a piece to another key or by semitones |
@@ -407,6 +429,7 @@ charts only.
 | [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
 | [Voicing](docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
 | [Lyrics](docs/lyrics.md) | Binding syllables to the notes they are sung on, and why padding is not melisma |
+| [Charts](docs/chart.md) | Drawing a chord chart as SVG, and the measurements behind it |
 | [The songbook](docs/songbook.md) | The bundled charts, and the copyright policy they follow |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |
