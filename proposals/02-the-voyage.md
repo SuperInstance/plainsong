@@ -97,28 +97,104 @@ behaviour.
 *Exit:* a lyric has a position; `6321 files compile exactly as recorded` still
 passes. If the fingerprint moves, the refactor changed music and is wrong.
 
-### Phase 2 — Lyric binding **[research]**
+### Phase 2 — Lyric binding — **decided, and it needs no new syntax**
 
-Deciding how syllables attach is a design choice with real prior art, and I
-should read it before inventing. The question I most want answered: **does a `|`
-in ABC's `w:` line resynchronise to the barline?** If it does, a miscount
-damages one bar instead of the rest of the song — which is exactly the failure
-containment this format wants.
+The research came back and the answer is unusually clean.
 
-*Exit:* a written proposal, then a syntax that survives the existing corpus
-unchanged.
+**Syllables bind to notes, never to raw time.** That is uncontested across
+LilyPond, MusicXML, ABC, MEI and Humdrum — the formats disagree about
+*mechanism*, not about the target. So the current behaviour, where a lyric row
+subdivides its bar independently of the melody, is not a variant convention. It
+is simply wrong, and every other format says so.
 
-### Phase 3 — SVG
+Two mechanisms exist. **Attachment** (MusicXML `<lyric>` on `<note>`, MEI
+`<verse>`) makes mismatch structurally inexpressible, but requires the lyric to
+live inside the note — impossible for a row-based text format. **Counting**
+(ABC, LilyPond) walks a flat syllable stream in lockstep against the notes.
+That is what Plainsong already is, so counting it is.
 
-A zero-dependency renderer emitting an inline chart: bold chords, proportional
+**The barline resyncs.** Quoted from the ABC standard: a `w:` line is *"aligned
+syllable by syllable below the previous line of notes"*, and *"if there are not
+as many syllables as notes in a measure, typing a `|` automatically advances to
+the next bar; if there are enough syllables the `|` is just ignored."* Exactly
+the fault containment this format wants: a miscount costs one bar and then
+recovers, instead of shifting every remaining word in the song. Plainsong
+already writes `|` in every row, so the mechanism is present in the syntax
+today and merely unhonoured.
+
+**Melisma and skip are already in the vocabulary.** The two special cases are a
+syllable held across several notes, and a note with no syllable. Plainsong's
+existing token classes already mean exactly those things:
+
+```
+sustain  . .. - ~ hold (hold) (sustain) (let ring) (ring)     hold this across  -> melisma
+rest     _ 0 r x -- rest (rest) (silence) (x) n.c.            nothing here      -> skip
+```
+
+No characters need inventing. The mapping is by *meaning* rather than by
+borrowing another format's spelling — worth stressing, because the spellings
+conflict: `_` is a skip in LilyPond and a melisma in ABC. Plainsong's own
+semantics land on the right side of both.
+
+**One genuine conflict, unresolved.** Every other format stacks repeated lyric
+rows as *parallel verses*. Plainsong's rule is that a repeated row of the same
+kind *runs on in time*. So two `Lyrics:` rows currently mean verse-then-verse
+sequentially, where ABC and LilyPond would mean verse 1 and verse 2 over the
+same music. One of the two readings has to give, and the existing rule is
+load-bearing for `Melody:`. Likely answer: an explicit `Lyrics 2:` or
+`Lyrics(v2):` for parallel verses, leaving the run-on rule intact. Needs a
+decision before Phase 3, because the renderer has to draw them.
+
+*Exit:* lyrics have positions taken from the melody; a bar with the wrong
+syllable count warns and recovers at the next barline rather than propagating;
+the existing corpus compiles unchanged.
+
+### Phase 3 — SVG — **decided**
+
+A zero-dependency renderer emitting a chart: bold chords, proportionally spaced
 notes, lyrics under the notes they belong to.
 
-The hard constraint is text measurement without a font library. **[research]**
-SVG's `textLength` and `lengthAdjust` may let the *browser* do the measuring so
-the renderer never needs metrics — if so, that decides the architecture.
+**Text measurement is solved, and it is the thing that decides the design.**
+`textLength` and `lengthAdjust` are core SVG *geometry* attributes rather than
+CSS or script, so the browser fits the text to a width we declare. The pattern:
+compute layout in Python from the Adobe Core-14 AFM width tables — Helvetica,
+Arial and Liberation Sans are metric-compatible, so one table serves all three,
+and digits are a uniform 0.556 em — then emit `textLength` set to that same
+figure. The rendered font then snaps to the width we planned for even when the
+viewer substitutes a different one. VexFlow does the same thing with bundled
+width tables. No font library, no measurement pass, no drift.
 
-*Exit:* the README's own example renders, prints legibly, and embeds in
-markdown.
+**Everything is expressed in staff spaces**, so the whole chart scales from one
+number. SMuFL fixes the bridge to type: **1 staff space = 0.2 em**, so
+`font-size = 5 × staff_space`. Bravura's own `engravingDefaults`, read from the
+font's source rather than from prose: thin barline `0.16`, final barline `0.5`,
+staff line `0.13`.
+
+**Horizontal space is logarithmic in duration, not linear** — a note twice as
+long is nowhere near twice as wide. Gourlay (1987) is the root reference and
+LilyPond's descendant of it gives usable constants:
+
+```
+width = shortest_space + increment · log2(duration / shortest_duration)
+        shortest_space = 2.4 staff-spaces
+        increment      = 1.2 staff-spaces per doubling
+```
+
+**Chords are left-aligned to their beat, not centred on it.** Confirmed against
+iReal Pro's documented protocol and working arrangers' practice; the casual
+"centred over the beat" phrasing found elsewhere is imprecise and should not be
+implemented literally.
+
+**GitHub strips raw `<svg>` from markdown.** Only `<img src="chart.svg">`
+renders, which has three consequences worth designing around rather than
+discovering: no external webfonts (an image cannot fetch one), no interactivity
+or CSS, and the file must exist at a path or a URL. `textLength` survives it,
+being geometry rather than style. This is also the strongest argument yet for
+the render-service shape of the worker: an `<img>` pointing at a URL is the only
+way a `.song` file embeds in a document on a platform we do not control.
+
+*Exit:* the README's own example renders, prints legibly, and embeds in a
+GitHub markdown file as an `<img>`.
 
 ### Phase 4 — Agentic merge
 
