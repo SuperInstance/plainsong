@@ -29,9 +29,14 @@ Four facts do most of the work:
    triplets. A seventeenth cannot spill into the next bar.
 2. **Rows of different kinds sound together. A repeated row runs on.** Two
    `Melody:` rows in one section are eight bars, not four played twice.
-3. **Whitespace is decorative.** Alignment is for human eyes. `|Am . . .|` and
-   `|   Am    .     .     .   |` compile identically. Do not spend effort
-   aligning columns unless a human will read the file.
+3. **Whitespace is decorative, and so is a column.** `|Am . . .|` and
+   `|   Am    .     .     .   |` compile identically, so do not spend effort
+   aligning columns unless a human will read the file. More importantly, do not
+   *believe* a column: rows divide their bars independently, so a lyric written
+   directly beneath a note need not sound with it. Three words under four melody
+   tokens are thirds against quarters, and the third word lands two thirds of a
+   beat late. `plainsong lyrics song.song` shows where each syllable really is;
+   `core.lyrics = "bound"` puts them on their notes.
 4. **A written time is an *arrival* time** — but only if the piece declares a
    `[Stage]`. Without one, written times are taken at face value and every
    existing file depends on that.
@@ -43,6 +48,7 @@ Every command takes `--json`. Use it.
 ```bash
 plainsong chord "G7alt" --explain     # what a symbol means, degree by degree
 plainsong voicing "C13"               # which notes actually sound, and why those
+plainsong lyrics song.song            # which note each syllable is sung on
 plainsong info song.song --verbose    # every diagnostic available
 plainsong check docs README.md        # compiles fenced blocks out of markdown too
 plainsong fingerprint mysongs --check baseline.txt   # did anything change?
@@ -126,6 +132,18 @@ tree, tells you about the source tree. Python puts the working directory on
 This produced a confident, wrong "the module is present" in this repository.
 **Run verification from `/tmp`, or anywhere that is not the project.**
 
+### A tool that reports nothing has not told you nothing
+
+Diagnostics come from two places. The parser produces some; the **arranger**
+produces others, and the arranger's are the ones that matter most — an
+unreadable chord becomes silence while arranging, not while parsing.
+
+`transform.describe` arranged the score and then reported only the parser's
+half, so `plainsong info --verbose` promised every diagnostic and delivered
+some. A file whose only chord was `Xm9` reported `notes 0` and explained
+nowhere. Fixed, but the shape recurs: when a tool tells you a file is fine and
+the note count says otherwise, believe the note count.
+
 ### Say what you did not do
 
 Reports that end "all tests pass, everything works" are the ones that turn out
@@ -194,6 +212,7 @@ refused and handed the current state to rebase onto. See
 | [docs/notation.md](docs/notation.md) | The full syntax |
 | [docs/chords.md](docs/chords.md) | Every chord spelling, and the rules that derive the notes |
 | [docs/voicing.md](docs/voicing.md) | Which notes sound when a chord names more than fit |
+| [docs/lyrics.md](docs/lyrics.md) | Binding syllables to notes, and why a column is not a promise |
 | [docs/integration.md](docs/integration.md) | `--json`, the Python API, HTTP, MCP |
 | [docs/performance.md](docs/performance.md) | Arrival-centric timing and the `[Stage]` block |
 | [CLAUDE.md](CLAUDE.md) | How the codebase is organised, and why each rule exists |

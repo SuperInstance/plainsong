@@ -218,10 +218,23 @@ def cmd_info(args: argparse.Namespace, config: Config, out: Out) -> int:
         )
     out.table(rows)
 
-    from ..notation import parse
+    # `describe` reports the parser's diagnostics and the arranger's together.
+    # Re-parsing here to fetch them would get only the parser's back, which is
+    # how `--verbose` came to promise every diagnostic and omit half of them.
+    from ..notation.ir import Diagnostic
 
-    score = parse(source.read_text(encoding="utf-8"), dialect=args.dialect)
-    _diagnostics(out, score.diagnostics, str(source), limit=100 if args.verbose else 10)
+    reported = [
+        Diagnostic(
+            severity=d.get("severity", "warning"),
+            message=d.get("message", ""),
+            line=d.get("line", 0),
+            column=d.get("column", 0),
+            hint=d.get("hint", ""),
+            source=d.get("source", ""),
+        )
+        for d in summary.get("diagnostics", [])
+    ]
+    _diagnostics(out, reported, str(source), limit=100 if args.verbose else 10)
     return 0
 
 
@@ -583,6 +596,74 @@ def cmd_voicing(args: argparse.Namespace, config: Config, out: Out) -> int:
                 marker = "  <- default" if name == "guide" else ""
                 out.dim(f"    {name:<8} {' '.join(notes)}{marker}")
     out.data({"chords": results})
+    return 0
+
+
+def cmd_lyrics(args: argparse.Namespace, config: Config, out: Out) -> int:
+    """Show which note each syllable is sung on.
+
+    Vertical alignment is a convention for human eyes: rows divide their bars
+    independently, so a word written directly beneath a note need not sound with
+    it. That is invisible in the source and was invisible in the output too.
+    This answers it directly, and shows both readings side by side so the
+    difference is a fact rather than a claim.
+    """
+    from ..notation import arrange, parse
+    from ..notation.arrange import ArrangeOptions
+    from ..notation.lyrics import is_padding
+
+    try:
+        text = Path(args.file).read_text(encoding="utf-8")
+    except OSError as exc:
+        out.fail(str(exc))
+        return 2
+
+    score = parse(text)
+    loose = arrange(score, ArrangeOptions(humanize=False, lyrics="independent"))
+    bound = arrange(score, ArrangeOptions(humanize=False, lyrics="bound"))
+
+    if not loose.lyrics:
+        out.warn("no lyric rows in this file")
+        return 0
+
+    written = {(round(e.start, 6), e.text) for e in loose.lyrics}
+    moved = [e for e in bound.lyrics if (round(e.start, 6), e.text) not in written]
+
+    # Pair by position, not by matching text or nearby times: a word that
+    # appears twice in a song would otherwise be paired with the wrong one of
+    # itself. Both lists are in written order once padding is dropped, and
+    # padding is dropped from both so the two stay in step.
+    sung = [e for e in bound.lyrics if not is_padding(e.text)]
+    as_written = [e for e in loose.lyrics if not is_padding(e.text)]
+    rows = []
+    for index, event in enumerate(sung):
+        was = as_written[index] if index < len(as_written) else None
+        rows.append(
+            {
+                "syllable": event.text,
+                "bound": round(event.start, 4),
+                "written": None if was is None else round(was.start, 4),
+                "held": round(event.duration, 4),
+            }
+        )
+
+    if not out.json_mode:
+        out.ok(f"{len(rows)} syllable(s); {len(moved)} move when bound to their notes")
+        out.dim(f"    {'syllable':<14}{'written at':>12}{'sung at':>10}{'held':>8}")
+        for row in rows:
+            written_at = "--" if row["written"] is None else f"{row['written']:g}"
+            marker = "" if row["written"] == row["bound"] else "   <- moves"
+            out.dim(
+                f"    {row['syllable']:<14}{written_at:>12}{row['bound']:>10g}"
+                f"{row['held']:>8g}{marker}"
+            )
+        for diagnostic in bound.diagnostics:
+            if diagnostic not in loose.diagnostics:
+                out.warn(diagnostic.message)
+        if not config.get("core", "lyrics", "independent") == "bound":
+            out.dim('    set core.lyrics = "bound" to compile this way')
+
+    out.data({"syllables": rows, "moved": len(moved)})
     return 0
 
 
@@ -1142,6 +1223,12 @@ def build_parser() -> argparse.ArgumentParser:
     voicing_parser.add_argument("--octave", type=int, default=3)
     voicing_parser.add_argument("--flats", action="store_true")
     voicing_parser.set_defaults(func=cmd_voicing)
+
+    lyrics_parser = subparsers.add_parser(
+        "lyrics", help="show which note each syllable is sung on"
+    )
+    lyrics_parser.add_argument("file", help="a .song file")
+    lyrics_parser.set_defaults(func=cmd_lyrics)
 
     fingerprint_parser = subparsers.add_parser(
         "fingerprint", help="hash what notation compiles to, so a change in the sound is visible"

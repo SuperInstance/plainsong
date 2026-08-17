@@ -57,6 +57,36 @@ rule follows the notation rather than the analogy. See
 
 Phase 2 of `proposals/02-the-voyage.md`.
 
+### `plainsong lyrics` shows which note each syllable is sung on
+
+```
+$ plainsong lyrics song.song
+ok  6 syllable(s); 4 move when bound to their notes
+    syllable        written at   sung at    held
+    the                      0         0       2
+    tide                1.3333         2       1   <- moves
+    came                2.6667         3       1   <- moves
+```
+
+It exists for the same reason `chord --explain` does: guessing was cheaper than
+checking, and that is how the misalignment went unnoticed. Both readings are
+shown side by side so the difference is a fact rather than a claim. Syllables
+are paired by position rather than by matching text, so a word that appears
+twice in a song is not paired with the wrong one of itself.
+
+### `plainsong info --verbose` was showing half the diagnostics it promised
+
+Diagnostics come from two places, and the arranger's are the ones a reader most
+needs: an unreadable chord becomes silence while *arranging*, not while parsing.
+`transform.describe` arranged the score and then reported only the parser's
+half, so a file whose one chord was `Xm9` reported `notes 0` and explained
+nowhere.
+
+This affected every consumer of `describe`, not just `info`.
+`Arrangement.diagnostics` is already the union of both, and is now what gets
+reported. This is the second time this exact fault has shipped — `cmd_check` had
+it before — so it is recorded in `CLAUDE.md` rather than just fixed.
+
 ## 1.1.0 — 2026-08-17
 
 A minor rather than a patch: `notation/timegrid.py` is a new public module and
