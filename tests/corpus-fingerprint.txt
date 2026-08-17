@@ -2490,7 +2490,7 @@ b1ef7007b7a0f712      34  examples/edge-cases/edge-4-players-only.song
 73ff48fe72d8bf12     157  examples/tapscript-1-creatures-of-interval.song
 a8567c72abd8ec82     143  examples/tapscript-2-the-room-is-safe.song
 87a9033c4c06bcce     224  examples/tapscript-3-hermes-blues.song
-872c7dc2c0741f8b      42  examples/tapscript-4-tap-closing-time.song
+c4040d29fc2a8835     111  examples/tapscript-4-tap-closing-time.song
 1c2186b5371e33f7     101  examples/tapscript-5-deck-work.song
 d9419c3c1bc05fc0      29  examples/tapscript-6-spacing-melody.song
 a351ccbd50ff2d4e      23  examples/tapscript-7-spacing-chords.song
@@ -6319,4 +6319,4 @@ e851f2095bdfcfc6      66  plainsong/songbook/spanish/pop-classics/volver-volver.
 33fb66fd0c9a1007     102  plainsong/songbook/spanish/pop-classics/yo-no-nac-para-amar.song
 cc10b267c8269318      72  plainsong/songbook/spanish/pop-classics/yo-no-s-ma-ana.song
 f1ef299e74cad6fb      62  plainsong/songbook/spanish/pop-classics/yolanda.song
-# 6321 files, 393172 notes, 0 failed
+# 6321 files, 393241 notes, 0 failed

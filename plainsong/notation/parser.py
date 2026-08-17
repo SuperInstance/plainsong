@@ -179,12 +179,23 @@ def detect_dialect(text: str) -> str:
         if line.startswith("@"):
             labelled += 1
             continue
-        if line.startswith("|"):
+        # A relative row may name its harmony before the first bar -- `I | 1 . 3 |`
+        # -- and only looking at lines that *begin* with a pipe misses every one
+        # of them. That is not hypothetical: it read a whole file of roman
+        # numerals and scale degrees as absolute notation, so every degree became
+        # an unreadable token and a 111-note piece compiled to 42 notes and 51
+        # warnings. A roman numeral standing where a row label goes is strong
+        # evidence on its own, since it means nothing in the absolute dialect.
+        head, bar, rest = line.partition("|")
+        leading_roman = bool(bar) and bool(head.strip()) and theory.is_roman(head.strip())
+        if line.startswith("|") or leading_roman:
             tokens = [
                 tok
-                for tok in re.split(r"[|\s]+", line)
+                for tok in re.split(r"[|\s]+", rest if leading_roman else line)
                 if tok and tok.lower() not in SUSTAIN_TOKENS and tok.lower() not in REST_TOKENS
             ]
+            if leading_roman:
+                relative_rows += 1
             if not tokens:
                 continue
             relative = sum(
