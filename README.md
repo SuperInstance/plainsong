@@ -210,9 +210,15 @@ plainsong spec      # verify the system's promises against this machine
 
 There are no required dependencies. The parser, the MIDI writer, the
 synthesiser, the web interface and every model provider adapter are written
-against the standard library. Optional extras — NumPy for faster synthesis,
-fluidsynth for soundfont-quality audio, ffmpeg for mp3, mido for hardware MIDI —
-are detected when present and never required.
+against the standard library.
+
+**Audio.** The built-in synthesiser works with nothing installed. For higher
+quality, install fluidsynth and a General MIDI soundfont — Plainsong will use
+them automatically. See [docs/audio.md](docs/audio.md) for installation and
+configuration.
+
+Optional extras — NumPy for faster synthesis, ffmpeg for format conversion, mido
+for hardware MIDI — are detected when present and never required.
 
 ## Timing that models the room
 
@@ -322,6 +328,7 @@ Every command takes `--json`. Use it when parsing output.
 | [Getting started](docs/getting-started.md) | From clone to a finished piece |
 | [Notation reference](docs/notation.md) | The whole language |
 | [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
+| [Audio](docs/audio.md) | Rendering to WAV, MP3, and other formats; fluidsynth with soundfonts |
 | [MCP server](docs/mcp.md) | Driving the system from any MCP client |
 | [Ensemble sessions](docs/ensemble.md) | Several agents co-authoring one score |
 | [Providers](docs/providers.md) | Connecting a model, adding your own |
@@ -375,8 +382,10 @@ in front of you, so you can confirm the above rather than take it on trust.
 
 Known limits, in the open:
 
-- The built-in synthesiser is a preview renderer. Mono, approximate timbres.
-  fluidsynth with a soundfont is the quality path.
+- The built-in synthesiser produces mono audio with synthetic timbres. It works
+  immediately with no dependencies. For real instrument samples, install
+  fluidsynth and a soundfont (five minutes on any OS). See
+  [docs/audio.md](docs/audio.md).
 - The host bridge cannot stream and reports no token usage.
 - The TUI needs `curses`, which stock Python on Windows does not ship.
 - No third-party MCP client has connected to the server yet; its protocol
