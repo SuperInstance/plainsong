@@ -37,6 +37,7 @@ from .ir import (
     Track,
 )
 from .parser import REST_TOKENS, SUSTAIN_TOKENS, Slot, token_weight
+from .timegrid import TimeGrid
 
 DEGREE_RE = re.compile(r"^([b#♭♯]?)([1-7])([\^_']*)$")
 SUBDIVISION_UNITS = {
@@ -104,6 +105,7 @@ class Arranger:
         self._rng = random.Random(self.options.humanize_seed)
         self._tracks: dict[str, Track] = {}
         self._channel_cursor = 0
+        self.grid = TimeGrid(bar_beats=score.meta.meter.beats_per_bar)
 
     # -- track allocation ----------------------------------------------------
 
@@ -345,6 +347,7 @@ class Arranger:
                             swing=swing,
                             unit=unit,
                             chords_out=chords if line.role == ROLE_CHORDS else None,
+                            grid_row=key,
                         )
                     offset += length
                 section_beats = max(section_beats, offset - cursor)
@@ -365,6 +368,7 @@ class Arranger:
             chords=chords,
             diagnostics=self.score.diagnostics + self.diagnostics,
             section_starts=section_starts,
+            grid=self.grid,
         )
         self._solve_performance(arrangement)
         return arrangement
@@ -426,7 +430,11 @@ class Arranger:
             bar_start = origin + bar_index * bar_beats
             step = bar_beats / len(cell.tokens)
             for token_index, token in enumerate(cell.tokens):
-                out.append(LyricEvent(start=bar_start + token_index * step, text=token))
+                start = bar_start + token_index * step
+                out.append(LyricEvent(start=start, text=token))
+                self.grid.add(
+                    token=token, row=ROLE_LYRICS, kind="text", onset=start, width=step
+                )
 
     def _place_row(
         self,
@@ -439,6 +447,7 @@ class Arranger:
         swing: float,
         unit: float,
         chords_out: list[ChordEvent] | None,
+        grid_row: str,
     ) -> None:
         pending: list[tuple[list[int], float, float]] = []  # pitches, start, end
 
@@ -492,6 +501,12 @@ class Arranger:
                     placed.append((slot, start, group_start + running * unit - start))
 
             for slot, start, length in placed:
+                # Recorded before the dispatch below, so that a rest and a
+                # sustain -- which produce no note and would otherwise leave no
+                # trace -- still occupy their column.
+                self.grid.add(
+                    token=slot.text, row=grid_row, kind=slot.kind, onset=start, width=length
+                )
                 if slot.kind == "sustain":
                     if pending:
                         pitches, note_start, _ = pending[-1]

@@ -2,6 +2,54 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### Every written token now has a position, whether or not it sounds
+
+`Arrangement.grid` is a new `TimeGrid` (`notation/timegrid.py`) holding every
+token in every row on one coordinate system. Nothing about compilation changes:
+all 6,321 fingerprinted files compile to exactly the music they did.
+
+Rows divide their bars independently, so vertical alignment means nothing to the
+compiler. In
+
+```
+Melody: | A4  .   C5  E5 |
+Lyrics: | the tide came  |
+```
+
+`came` is written directly beneath `C5` and sounds two thirds of a beat after
+it. That was previously not merely unreported but *inexpressible* — there was no
+coordinate in which the two could be compared. Now `C5` is at `unit 0.5`, `came`
+at `unit 0.667`, and `grid.column(0, 0.5)` returns the chord and melody rows
+without the lyric that appears to be standing in them.
+
+`bar` and `unit` are derived in one function, so a lyric and a note cannot drift
+apart by being computed in two places. Rests and sustains are recorded as well:
+a token that makes no sound still occupies its column, because a renderer has to
+leave room for it and a merge has to see it as taken.
+
+This reports nothing and enforces nothing yet — `grid.disagreements()` is a
+query. Uneven subdivision is legal and often deliberate; a held chord under a
+running melody is two tokens against sixteen and there is nothing wrong with it.
+
+Phase 1 of `proposals/02-the-voyage.md`.
+
+### Repeated lyric rows are verses — decided, not yet implemented
+
+Every other notation format stacks repeated lyric rows as parallel verses;
+Plainsong's rule is that a repeated row runs on in time. The plan proposed
+inventing `Lyrics 2:` to have both. That was the wrong shape: run-on is a claim
+about *time*, and once lyrics bind to notes they own no time for a second row to
+follow on into, so the rule does not reach them and needs no exception.
+
+> Every `Melody:` row in a section concatenates into one melodic stream. Each
+> `Lyrics:` row is a verse sung over that whole stream.
+
+No new syntax. Not one of the 6,321 `.song` files here has a section with more
+than one `Lyrics:` row, and lyrics do not enter the fingerprint, so this can move
+no note. It ships gated with the rest of lyric binding rather than on its own.
+
 ## 1.0.1 — 2026-08-17
 
 Fixes to what 1.0.0 said about itself, and to a setting it documented but never
