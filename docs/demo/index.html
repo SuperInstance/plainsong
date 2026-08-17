@@ -301,10 +301,164 @@ plainsong serve</pre>
 const LETTER_PC={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
 const REST=new Set([".","-","_","rest","x"]);
 const SUSTAIN=new Set(["~","..","hold"]);
-const QUALITIES=[["maj7",[0,4,7,11]],["maj9",[0,4,7,11,14]],["m7b5",[0,3,6,10]],["m7",[0,3,7,10]],["m9",[0,3,7,10,14]],["m6",[0,3,7,9]],["m",[0,3,7]],["min",[0,3,7]],["dim7",[0,3,6,9]],["dim",[0,3,6]],["aug",[0,4,8]],["sus4",[0,5,7]],["sus2",[0,2,7]],["sus",[0,5,7]],["6",[0,4,7,9]],["9",[0,4,7,10,14]],["7",[0,4,7,10]],["",[0,4,7]]];
+/* Chord grammar — a JS port of plainsong/notation/chordsymbol.py. A symbol is
+   read as a root, a core quality, how far to stack, and an ordered list of
+   modifications; the notes are derived from a degree map (scale degree ->
+   semitones from root) instead of being looked up in a table of enumerated
+   spellings. tests/test_demo.py checks these tables against the Python
+   module's own tables, so they cannot quietly drift apart. */
+class ChordSymbolError extends Error{}
+const DEGREE_SEMITONES={1:0,2:2,3:4,4:5,5:7,6:9,7:11,9:14,11:17,13:21};
+const STACK_ORDER=[7,9,11,13];
+const CORES={
+  maj:{third:4,fifth:7,seventh:11,majorThird:true,fixed:[]},
+  dom:{third:4,fifth:7,seventh:10,majorThird:true,fixed:[]},
+  min:{third:3,fifth:7,seventh:10,majorThird:false,fixed:[]},
+  minmaj:{third:3,fifth:7,seventh:11,majorThird:false,fixed:[]},
+  halfdim:{third:3,fifth:6,seventh:10,majorThird:false,fixed:[]},
+  dim:{third:3,fifth:6,seventh:9,majorThird:false,fixed:[]},
+  aug:{third:4,fifth:8,seventh:10,majorThird:true,fixed:[]},
+  sus4:{third:null,fifth:7,seventh:10,majorThird:false,fixed:[[11,5]]},
+  sus2:{third:null,fifth:7,seventh:10,majorThird:false,fixed:[[9,2]]},
+  power:{third:null,fifth:7,seventh:10,majorThird:false,fixed:[]}
+};
+const CORE_ALIASES=new Map([
+  ["maj","maj"],["major","maj"],["ma","maj"],["mj","maj"],["M","maj"],
+  ["Δ","maj"],["∆","maj"],["^","maj"],
+  ["m","min"],["min","min"],["mi","min"],["minor","min"],["-","min"],["moll","min"],
+  ["dim","dim"],["o","dim"],["°","dim"],["º","dim"],
+  ["ø","halfdim"],["Ø","halfdim"],["halfdim","halfdim"],["h","halfdim"],
+  ["aug","aug"],["+","aug"],
+  ["sus","sus4"],["sus4","sus4"],["sus2","sus2"],
+  ["5","power"],["no3","power"],["omit3","power"]
+]);
+const CORE_SCAN=[...CORE_ALIASES.entries()].sort((a,b)=>b[0].length-a[0].length);
+const SEVENTH_IMPLIED=new Set(["Δ","∆","^","ø","Ø","halfdim"]);
+const ALT_DEGREES=[[9,13],[9,15],[11,18],[13,20]];
+const ALT_REMOVES=[5];
+const UNICODE_FOLD={"♭":"b","♯":"#","𝄫":"bb","𝄪":"##","−":"-","–":"-","—":"-","＃":"#"};
+const ACCIDENTAL_SHIFT={b:-1,"#":1};
+const ALTER_SHIFT={b:-1,"#":1,"-":-1,"+":1};
+const CHORD_ROOT_RE=/^([A-Ga-g])([#b]*)/;
+const DEGREE_RE=/^(\d{1,2})/;
+function chordNormalise(text){for(const[s,d]of Object.entries(UNICODE_FOLD))text=text.split(s).join(d);return text;}
+function scanChordRoot(text){const m=CHORD_ROOT_RE.exec(text);if(!m)return null;
+  let shift=0;for(const c of m[2])shift+=ACCIDENTAL_SHIFT[c];
+  return{pc:((LETTER_PC[m[1].toUpperCase()]+shift)%12+12)%12,rest:text.slice(m[0].length)};}
+function splitBass(text){const idx=text.lastIndexOf("/");if(idx<0)return[text,null];
+  const head=text.slice(0,idx),tail=text.slice(idx+1);
+  if(CHORD_ROOT_RE.test(tail.trim()))return[head,tail.trim()];
+  return[head+tail,null];}
+function foldDegree(d){return{2:9,4:11}[d]??d;}
+function leadingAccidental(t){return(t[0]==="b"||t[0]==="#")?[ACCIDENTAL_SHIFT[t[0]],t.slice(1)]:[0,t];}
+function scanChordSuffix(suffix,original){
+  let coreName=null,stack=0,seventhKind=null,alt=false;const mods=[];let rest=suffix;
+  while(rest){
+    if(rest.slice(0,3).toLowerCase()==="alt"){alt=true;rest=rest.slice(3);
+      if(rest.slice(0,4).toLowerCase()==="ered")rest=rest.slice(4);continue;}
+    let matched=false;
+    for(const[word,op]of[["add","add"],["omit","omit"],["no","omit"]]){
+      if(rest.slice(0,word.length).toLowerCase()===word){
+        const[shift,tail]=leadingAccidental(rest.slice(word.length));
+        const dm=DEGREE_RE.exec(tail);
+        if(dm){mods.push([op,foldDegree(+dm[1]),shift]);rest=tail.slice(dm[0].length);matched=true;break;}
+      }
+    }
+    if(matched)continue;
+    const signed=(rest[0]==="-"||rest[0]==="+")&&/\d/.test(rest[1]||"")&&coreName!==null;
+    if(rest[0]==="b"||rest[0]==="#"||signed){
+      const shift=ALTER_SHIFT[rest[0]];const dm=DEGREE_RE.exec(rest.slice(1));
+      if(dm){mods.push(["alter",foldDegree(+dm[1]),shift]);rest=rest.slice(1+dm[0].length);continue;}
+    }
+    if(rest.slice(0,2)==="69"){mods.push(["add",6,0]);mods.push(["add",9,0]);rest=rest.slice(2);continue;}
+    const dm=DEGREE_RE.exec(rest);
+    if(dm){
+      const value=+dm[1],tail=rest.slice(dm[0].length);
+      if(value===5&&coreName===null&&!tail){coreName="power";rest=tail;continue;}
+      if(value===7&&(tail[0]==="M"||tail[0]==="m")){seventhKind=tail[0]==="M"?"maj":"min";stack=Math.max(stack,7);rest=tail.slice(1);continue;}
+      if(value===6){mods.push(["add",6,0]);rest=tail;if(tail[0]==="9"){mods.push(["add",9,0]);rest=tail.slice(1);}continue;}
+      if((value===2||value===4)&&coreName===null){mods.push(["add",foldDegree(value),0]);rest=tail;continue;}
+      if([5,7,9,11,13].includes(value)){stack=Math.max(stack,value);rest=tail;continue;}
+      throw new ChordSymbolError(`unreadable degree ${value} in ${JSON.stringify(original)}`);
+    }
+    let hit=false;
+    for(const[alias,name]of CORE_SCAN){
+      const seg=rest.slice(0,alias.length);
+      if(seg===alias||(alias.length>1&&seg.toLowerCase()===alias.toLowerCase())){
+        if(coreName===null)coreName=name;
+        else if(coreName==="min"&&name==="maj")coreName="minmaj";
+        else if(coreName==="maj"&&name==="min")coreName="minmaj";
+        else if(name==="sus4"||name==="sus2"){mods.push(["omit",3,0]);mods.push(["add",name==="sus4"?11:9,0]);}
+        else coreName=name;
+        if(SEVENTH_IMPLIED.has(alias))stack=Math.max(stack,7);
+        rest=rest.slice(alias.length);hit=true;break;
+      }
+    }
+    if(!hit)throw new ChordSymbolError(`unreadable chord quality ${JSON.stringify(suffix)} in ${JSON.stringify(original)}`);
+  }
+  return[resolveChordCore(coreName,stack,seventhKind,alt),stack,mods,alt];
+}
+function resolveChordCore(coreName,stack,seventhKind,alt){
+  if(coreName===null){
+    if(seventhKind==="maj")return"maj";
+    if(alt||stack>=7||seventhKind==="min")return"dom";
+    return"maj";
+  }
+  if(coreName==="maj"&&seventhKind==="min")return"dom";
+  if(coreName==="min"&&seventhKind==="maj")return"minmaj";
+  if(coreName==="maj"&&stack>=7&&seventhKind===null)return"maj";
+  if(["dim","halfdim","aug","sus4","sus2","power","min","minmaj"].includes(coreName))return coreName;
+  if(seventhKind==="maj")return"maj";
+  if(seventhKind==="min")return"dom";
+  return coreName;
+}
+function buildChordDegrees(coreName,stack,mods,alt){
+  const core=CORES[coreName];const degrees={1:0};
+  if(core.third!==null)degrees[3]=core.third;
+  if(core.fifth!==null)degrees[5]=core.fifth;
+  for(const[d,o]of core.fixed)degrees[d]=o;
+  if(alt)stack=Math.max(stack,7);
+  if((coreName==="halfdim"||coreName==="dim")&&stack===0)stack=coreName==="halfdim"?7:stack;
+  if(stack>=7){
+    degrees[7]=core.seventh;
+    for(const degree of STACK_ORDER.slice(1)){
+      if(degree>stack)break;
+      if(degree===11&&degree<stack&&core.majorThird&&(3 in degrees))continue;
+      degrees[degree]=DEGREE_SEMITONES[degree];
+    }
+    if(stack===11&&core.majorThird&&(3 in degrees))delete degrees[3];
+  }
+  if(alt){
+    for(const d of ALT_REMOVES)delete degrees[d];
+    delete degrees[9];degrees[9]=ALT_DEGREES[0][1];degrees[11]=18;degrees[13]=20;
+  }
+  for(const[op,degree,shift]of mods){
+    if(op==="omit")delete degrees[degree];
+    else if(op==="add")degrees[degree]=DEGREE_SEMITONES[degree]+shift;
+    else if(op==="alter"){
+      if(degree===5||degree===3||(degree in degrees))degrees[degree]=DEGREE_SEMITONES[degree]+shift;
+      else{degrees[degree]=DEGREE_SEMITONES[degree]+shift;if(degree>=9&&!(7 in degrees))degrees[7]=CORES[coreName].seventh;}
+    }
+  }
+  return degrees;
+}
+function parseChordSymbol(token){
+  const original=token.trim();
+  if(!original)throw new ChordSymbolError("empty chord");
+  const text=chordNormalise(original);
+  const[head,bassText]=splitBass(text);
+  const rootScan=scanChordRoot(head);
+  if(!rootScan)throw new ChordSymbolError(`no chord root in ${JSON.stringify(head)}`);
+  let bassPc=null;
+  if(bassText){const bassScan=scanChordRoot(bassText);if(!bassScan)throw new ChordSymbolError(`no chord root in ${JSON.stringify(bassText)}`);bassPc=bassScan.pc;}
+  const suffix=rootScan.rest.replace(/[()\s,]/g,"");
+  const[coreName,stack,mods,alt]=scanChordSuffix(suffix,original);
+  const degrees=buildChordDegrees(coreName,stack,mods,alt);
+  return{rootPc:rootScan.pc,core:coreName,degrees,bassPc,text:original};
+}
 function pitchClass(t){const m=/^([A-Ga-g])([#b♯♭]*)/.exec(t);if(!m)return null;let pc=LETTER_PC[m[1].toUpperCase()];for(const c of m[2])pc+=(c==="#"||c==="♯")?1:-1;return{pc:((pc%12)+12)%12,rest:t.slice(m[0].length)};}
 function parsePitch(t,oct){const h=pitchClass(t);if(!h)return null;const m=/^(-?\d+)$/.exec(h.rest);if(!m&&h.rest!=="")return null;const o=m?parseInt(m[1],10):oct;const v=(o+1)*12+h.pc;return v>=0&&v<=127?v:null;}
-function parseChord(t){const h=pitchClass(t);if(!h)return null;let tail=h.rest,bass=null;const s=tail.indexOf("/");if(s>=0){bass=tail.slice(s+1);tail=tail.slice(0,s);}for(const[n,iv]of QUALITIES){if(tail===n)return{root:h.pc,intervals:iv,bass};}return null;}
+function parseChord(t){try{return parseChordSymbol(t);}catch(e){if(e instanceof ChordSymbolError)return null;throw e;}}
 function resolve(tok,role,oct){const b=tok.trim(),l=b.toLowerCase();if(SUSTAIN.has(l))return{kind:"sustain"};if(REST.has(l))return{kind:"rest"};
 if(role==="chords"){const c=parseChord(b);return c?{kind:"chord",chord:c}:{kind:"rest",unreadable:b};}
 const parts=b.split("-").filter(Boolean),ps=[];for(const p of parts){const v=parsePitch(p,oct);if(v===null){ps.length=0;break;}ps.push(v);}
@@ -336,16 +490,40 @@ if(sec&&sec.stage)return;if(!sec)return;
 const row=parseRow(line,i+1);if(row)sec.lines.push(row);});
 if(!s.sections.length)s.diagnostics.push({severity:"error",line:1,message:"no sections yet — open one with a header such as [V1]"});
 return s;}
+/* Voicing — a JS port of plainsong/notation/voicing.py's "guide" strategy.
+   Thinning a chord to `limit` notes gives up the fifth first, then the root;
+   the third, seventh and any named extension stay, and an altered degree
+   (b9, #5, ...) is treated as identity rather than decoration -- the same
+   fix as the intervals.slice(0,4) bug this replaces, where D9 sounded like D7. */
+const DROP_ORDER={5:0,1:1,11:2,9:3,13:4,6:5,2:5,4:5,3:9,7:9};
+const NATURAL_DEGREE={1:0,2:2,3:4,4:5,5:7,6:9,7:11,9:14,11:17,13:21};
+function alteredDegrees(degrees){const s=new Set();
+  for(const k of Object.keys(degrees)){const d=+k;if(d in NATURAL_DEGREE&&degrees[k]!==NATURAL_DEGREE[d])s.add(d);}
+  return s;}
+function rankedDegrees(degrees){const alt=alteredDegrees(degrees);
+  const rank=(d)=>alt.has(d)?9:(DROP_ORDER[d]??5);
+  return Object.keys(degrees).map(Number).sort((a,b)=>{const ra=rank(a),rb=rank(b);return ra!==rb?ra-rb:b-a;});}
+function voiceChord(chord,oct,limit=4){
+  const root=(oct+1)*12+chord.rootPc;
+  const order=rankedDegrees(chord.degrees);
+  const keep=new Set(limit?order.slice(-limit):order);
+  const offsets=Object.keys(chord.degrees).map(Number).filter(d=>keep.has(d)).map(d=>chord.degrees[d]).sort((a,b)=>a-b);
+  let notes=offsets.map(o=>root+o).filter(p=>p>=0&&p<=127);
+  if(chord.bassPc!==null&&chord.bassPc!==chord.rootPc){
+    let bass=(oct+1)*12+chord.bassPc;
+    while(notes.length&&bass>=notes[0])bass-=12;
+    if(bass>=0)notes=[bass,...notes];
+  }
+  return notes;
+}
 const DEF_OCT={melody:4,chords:3,player:3},DEF_VEL={melody:88,chords:64,player:76};
-function voiceOf(ch,oct){const base=(oct+1)*12+ch.root;const ps=ch.intervals.slice(0,4).map(i=>base+i);
-if(ch.bass){const b=pitchClass(ch.bass);if(b)ps.unshift(oct*12+b.pc);}return ps.filter(p=>p>=0&&p<=127);}
 function layRow(row,start,barBeats,notes,voices,diags){const oct=DEF_OCT[row.role]??3;const vel=row.velocity??DEF_VEL[row.role]??76;
 if(!voices.has(row.name))voices.set(row.name,row.role);const bad=new Set();
 row.bars.forEach((toks,bi)=>{if(!toks.length)return;const barStart=start+bi*barBeats;const step=barBeats/toks.length;
 const slots=toks.map(t=>resolve(t,row.role,oct));
 slots.forEach((sl,i)=>{if(sl.unreadable)bad.add(sl.unreadable);if(sl.kind==="rest"||sl.kind==="sustain")return;
 let len=step;for(let j=i+1;j<slots.length&&slots[j].kind==="sustain";j++)len+=step;
-const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voiceOf(sl.chord,oct);
+const at=barStart+i*step;const ps=sl.kind==="note"?sl.pitches:voiceChord(sl.chord,oct);
 for(const p of ps)notes.push({beat:at,beats:len,pitch:p,velocity:vel,voice:row.name,role:row.role});});});
 if(bad.size)diags.push({severity:"warning",line:row.lineNumber,
 message:`${row.role} row: nothing understood ${[...bad].slice(0,3).join(", ")} — silence there instead`});}

@@ -224,6 +224,20 @@ passes on Windows across 3.10 through 3.13.
 
 - `master` has been red on its own older workflow since before this branch, for
   reasons unrelated to it.
+- **Dialect auto-detection fails on a relative-dialect file, and it looks like
+  corrupt source.** `examples/tapscript-4-tap-closing-time.song` is written in
+  the relative dialect -- `I`, `IV`, `vi` as roman-numeral chords and `1 . 3 |
+  5 . . |` as scale degrees. `dialect: auto` reads it as absolute, so every
+  scale degree becomes an unreadable token: 42 notes and 51 warnings. Told
+  `--dialect relative` explicitly, the same file yields **111 notes**. The
+  melody is real and the detector is wrong.
+  This is worth more than the warning count suggests, because of how it nearly
+  went. An agent asked to clear the warnings read the bare digits as generation
+  artefacts and replaced all 51 with rests. The note count stayed at 42, every
+  test passed, the fingerprint moved by exactly the one file it was supposed
+  to, and the warnings went to zero -- a clean bill of health for an edit that
+  deleted a tune. Reverted. **A warning that a parser cannot read something is
+  evidence about the parser at least as often as about the file.**
 - **`legacy/` is not dead, and was nearly deleted for being quiet.** It was
   removed on the strength of two documents saying it could go and nothing
   outside it importing it. Both were true and both were beside the point: a
