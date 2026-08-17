@@ -43,6 +43,33 @@ that is written back out.
 It is also what makes transposition correct: parse, rewrite tokens, emit. Every
 row moves, including the chord row.
 
+## One coordinate system for every token
+
+Rows divide their bars independently, which is the point of the notation and
+also means vertical alignment carries no meaning to the compiler. Write
+`Melody: | A4 . C5 E5 |` over `Lyrics: | the tide came |` and `came` sits
+directly beneath `C5` while sounding two thirds of a beat after it, because one
+row divided the bar into four and the other into three.
+
+`notation/timegrid.py` gives every written token a position — sounding or not —
+computed by one function, so a lyric and a note are placed by the same
+arithmetic. `Arrangement.grid` carries it. `unit` is the load-bearing field: a
+token's position within its own bar, from 0.0 to just under 1.0.
+
+Three separate problems become the same projection:
+
+- rendering is `x = unit * bar_width`, a coordinate transform rather than a
+  layout engine;
+- merging is set intersection on `(row, bar, unit)`, so two agents editing
+  different rows provably cannot collide — the row axis is disjoint, and player
+  rows are keyed by name;
+- alignment linting can finally be *expressed*: `grid.disagreements()` names
+  each bar whose rows divide it differently.
+
+The grid observes; it does not steer. The arranger populates it from positions
+it has already computed, so if building it ever moved a note, the grid would be
+wrong. That is held by the corpus fingerprint rather than by intent.
+
 ## The timing rule
 
 **A bar is one bar long, and whatever tokens a row puts in it divide it.**

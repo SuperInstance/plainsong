@@ -27,7 +27,7 @@ note-hash multiset before and after (`d860576193b5504236ab7162`, both sides).
 
 ## The finding that reorders everything
 
-Rows subdivide independently, and non-sounding rows have no time at all:
+Rows subdivide independently, so vertical alignment means nothing:
 
 ```
 Chords: | Am  .   .   .  |     4 tokens -> quarters
@@ -36,12 +36,17 @@ Lyrics: | the tide came  |     3 tokens -> thirds
 
 chords   beats [0.0]
 melody   beats [0.0, 2.0, 3.0]
-lyrics   beats []               <- no position whatsoever
+lyrics   beats [0.0, 1.333, 2.667]   <- its own subdivision, not the melody's
 ```
 
-`came` is written directly beneath `C5` and sung a twelfth of a bar away from
-it. The alignment a reader trusts is a fiction the compiler cannot see, cannot
-warn about, and cannot render.
+`came` is written directly beneath `C5`. `C5` sounds on beat 2.0 and `came`
+lands on beat 2.667, two thirds of a beat later, because the lyric row divided
+the bar into three and the melody divided it into four. The alignment a reader
+trusts is a fiction: the compiler cannot see it, cannot warn about it, and
+cannot render it.
+
+(An earlier draft of this document said lyric rows had no position at all. They
+have one — it is simply computed from the wrong thing.)
 
 This is the root of three of the four challenges. A renderer has nothing to lay
 lyrics against. A merge tool has no coordinate to detect conflicts in. A linter
@@ -89,15 +94,30 @@ Publish 1.0.0. Nothing below matters if the thing cannot be installed.
 
 *Exit:* `pip install plainsong` works from a clean machine.
 
-### Phase 1 — The time matrix
+### Phase 1 — The time matrix — **done**
 
-Build `TimeGrid`. Populate it where the arranger already walks cells. Change no
-behaviour.
+`notation/timegrid.py`. The arranger populates it from positions it has already
+computed, in the two places it walks cells: `_place_lyrics` and `_place_row`.
 
-*Exit:* a lyric has a position; `6321 files compile exactly as recorded` still
-passes. If the fingerprint moves, the refactor changed music and is wrong.
+`bar` and `unit` are derived in `TimeGrid.add` and nowhere else, which is the
+whole point — a lyric and a note cannot drift apart by being computed in two
+places. Rests and sustains are recorded too, before the note dispatch, so a
+token that makes no sound still occupies its column; a renderer has to leave
+room for it and a merge has to see it as taken.
 
-### Phase 2 — Lyric binding — **decided, and it needs no new syntax**
+*Exit, met:* a lyric has a position, and `6321 file(s) compile exactly as
+recorded` still passes — the grid observes the arranger and does not steer it.
+The `came`/`C5` lie is now something the compiler can state: `C5` sits at
+`unit 0.5`, `came` at `unit 0.667`, and `grid.column(0, 0.5)` returns the chord
+and melody rows without the lyric that appears to be standing in it.
+
+One thing this phase taught, worth keeping. The first version guarded the bar
+boundary twice — rounding the position *and* nudging it before flooring — and
+neither mutation could be made to fail a test, because each fixed the case on
+its own. Two guards that no test can tell apart are one guard and one piece of
+dead code. Collapsed to the nudge, which then failed the suite when removed.
+
+### Phase 2 — Lyric binding — **decided in full, and it needs no new syntax**
 
 The research came back and the answer is unusually clean.
 
@@ -136,14 +156,44 @@ borrowing another format's spelling — worth stressing, because the spellings
 conflict: `_` is a skip in LilyPond and a melisma in ABC. Plainsong's own
 semantics land on the right side of both.
 
-**One genuine conflict, unresolved.** Every other format stacks repeated lyric
-rows as *parallel verses*. Plainsong's rule is that a repeated row of the same
-kind *runs on in time*. So two `Lyrics:` rows currently mean verse-then-verse
-sequentially, where ABC and LilyPond would mean verse 1 and verse 2 over the
-same music. One of the two readings has to give, and the existing rule is
-load-bearing for `Melody:`. Likely answer: an explicit `Lyrics 2:` or
-`Lyrics(v2):` for parallel verses, leaving the run-on rule intact. Needs a
-decision before Phase 3, because the renderer has to draw them.
+**The conflict with the run-on rule — decided, and it dissolves rather than
+resolves.** Every other format stacks repeated lyric rows as *parallel verses*.
+Plainsong's rule is that a repeated row of the same kind *runs on in time*, so
+two `Lyrics:` rows mean verse-then-verse sequentially. The draft of this plan
+proposed inventing `Lyrics 2:` or `Lyrics(v2):` to get parallel verses without
+disturbing the rule.
+
+That is the wrong shape, because the two rules are not in conflict once you
+notice what run-on is a statement *about*. **Run-on is a claim about time**: a
+repeated row continues where the previous one stopped. Phase 2 establishes that
+lyrics do not own time — they bind to notes, and take whatever time those notes
+have. A row that owns no time cannot follow on into any, so the run-on rule does
+not reach lyrics at all. It is not overridden and it needs no exception clause;
+it simply stops applying, for the same reason it says nothing about a `[Stage]`
+block.
+
+So, in one sentence, and with no new syntax:
+
+> Every `Melody:` row in a section concatenates into one melodic stream, as it
+> does today. Each `Lyrics:` row is a verse sung over that whole stream.
+
+This is unambiguous in the case the draft could not settle. A section with two
+`Melody:` rows is eight bars of one tune; two `Lyrics:` rows over it are two
+verses of eight bars each, not one verse chopped in half. Words for the second
+four bars go in the same row that holds the first four — which is exactly how a
+song sheet is written, and why no reader has ever had to be taught it.
+
+Inventing `Lyrics 2:` would have been the worse outcome twice over: a second
+spelling for a thing that already has one, and a permanent reminder in the
+syntax of a conflict that turned out not to exist.
+
+**What it costs.** Nothing measurable. Not one of the 6,321 `.song` files in
+this repository has a section carrying more than one `Lyrics:` row, so no
+notation here changes meaning. Lyrics contribute nothing to the fingerprint —
+it hashes pitch, position, duration, velocity and the two propagation times —
+so this cannot move a note. Files outside this repository could in principle
+hold a stacked lyric row, which is why the reading arrives with Phase 2, gated
+with the rest of lyric binding rather than on its own.
 
 *Exit:* lyrics have positions taken from the melody; a bar with the wrong
 syllable count warns and recovers at the next barline rather than propagating;

@@ -15,6 +15,7 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Any
 
 from .theory import Chord, Key
+from .timegrid import TimeGrid
 
 if TYPE_CHECKING:  # imported for typing only -- perform/ depends on this module
     from ..perform.stage import Placement, Stage
@@ -328,6 +329,12 @@ class Arrangement:
     """Beats the whole piece was pushed later so that nobody has to act before
     it starts. Emission and arrival times both include it, so subtract it to
     compare a solved time against the beat it was written on."""
+
+    grid: TimeGrid = field(default_factory=TimeGrid)
+    """Every written token on one coordinate system, sounding or not -- the
+    only place a lyric and the note above it can be compared. Renderers, the
+    merge in `plainsong-mcp`, and alignment linting all read this rather than
+    each deriving positions of their own. See `notation/timegrid.py`."""
 
     @property
     def total_beats(self) -> float:

@@ -72,6 +72,70 @@ class TestDemoParity(unittest.TestCase):
                 )
 
 
+class TestDemoTokenClasses(unittest.TestCase):
+    """Which tokens hold a note and which end it.
+
+    This is the gap that let a real bug sit on the landing page. The demo had
+    `.` and `-` in its REST set where the compiler has them in SUSTAIN, so
+    `| Am . . . |` played a one-beat chord followed by three beats of silence
+    instead of a chord lasting the bar. Every held note on the front door was
+    cut to a single subdivision.
+
+    The parity test above could not see it, because a rest and a sustain produce
+    the *same number of notes* -- they differ only in how long the note before
+    them lasts. Counts were identical; the page simply sounded wrong. So these
+    tests pin the sets and the durations that follow from them.
+    """
+
+    def _js_set(self, name: str) -> set[str]:
+        text = PAGE.read_text(encoding="utf-8")
+        block = re.search(rf"const {name}=new Set\(\[(.*?)\]\);", text, re.S)
+        assert block, f"could not find the demo's {name} set"
+        return set(ast.literal_eval("[" + block.group(1).replace('"', '"') + "]"))
+
+    def test_sustain_tokens_match_the_compiler(self):
+        from plainsong.notation.parser import SUSTAIN_TOKENS
+
+        self.assertEqual(self._js_set("SUSTAIN"), set(SUSTAIN_TOKENS))
+
+    def test_rest_tokens_match_the_compiler(self):
+        from plainsong.notation.parser import REST_TOKENS
+
+        self.assertEqual(self._js_set("REST"), set(REST_TOKENS))
+
+    def test_the_two_sets_do_not_overlap(self):
+        self.assertEqual(self._js_set("SUSTAIN") & self._js_set("REST"), set())
+
+    def test_a_dot_holds_the_note_rather_than_ending_it(self):
+        """The behavioural statement of the same thing, in the compiler that
+        the demo has to agree with. If this ever changes, the demo's sets and
+        the sentence in `docs/demo/index.html` about them both need revisiting."""
+        arrangement = arrange(
+            parse(
+                "**TRACK: Hold**\n[MetaData]\nkey: C | tempo: 60 | time: 4/4\n\n"
+                "[V1] (Verse - 1 Bars)\nChords: | Am . . . |\n"
+            ),
+            ArrangeOptions(humanize=False),
+        )
+        durations = {round(n.duration, 6) for t in arrangement.tracks for n in t.notes}
+        self.assertEqual(durations, {4.0}, "`.` should hold the chord for the whole bar")
+
+    def test_the_preset_durations_are_what_the_page_should_reproduce(self):
+        """A duration fingerprint for each preset. The demo is a second
+        implementation of this arithmetic; pinning only note counts left it free
+        to disagree about length, and it did."""
+        for name, notation in _presets().items():
+            with self.subTest(preset=name):
+                arrangement = arrange(parse(notation), ArrangeOptions(humanize=False))
+                total = sum(n.duration for t in arrangement.tracks for n in t.notes)
+                self.assertGreater(
+                    total,
+                    arrangement.note_count * 0.9,
+                    f"{name}: notes averaging under a beat suggests sustains are "
+                    "being read as rests",
+                )
+
+
 class _ShadowChordError(Exception):
     """Raised by the shadow parser below, mirroring the demo's ChordSymbolError."""
 

@@ -12,3 +12,7 @@ dist/
 !docs/**/*.wav
 .pytest_cache/
 .ruff_cache/
+
+# a stale pid file was committed once
+server.pid
+*.pid

@@ -2,6 +2,111 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## 1.1.0 — 2026-08-17
+
+A minor rather than a patch: `notation/timegrid.py` is a new public module and
+`Arrangement.grid` a new public field. Nothing existing changes — all 6,321
+fingerprinted files compile to exactly the music they did in 1.0.0.
+
+### The browser demo cut every held note short
+
+`.` and `-` were in the demo's `REST` set where the compiler has them in
+`SUSTAIN`. They are the two most common tokens in the notation, and they hold
+the note before them. Reading them as rests meant `| Am . . . |` played a
+one-beat chord followed by three beats of silence instead of a chord lasting the
+bar. Every sustained note on the landing page — the first thing anyone hears —
+was cut to a single subdivision.
+
+The demo/compiler parity test could not see it. It pins the **note count** each
+preset produces, and a rest and a sustain produce the same count: they differ
+only in how long the note before them lasts. Counts matched exactly, start to
+finish. The page simply sounded wrong.
+
+- Both token sets now match `notation/parser.py`, including the parenthesised
+  forms (`(hold)`, `(rest)`, `(let ring)`) and the rule that any other
+  `(direction)` holds what is sounding — none of which the page had at all.
+- `tests/test_demo.py` compares both sets against the compiler's and pins the
+  durations that follow from them. Restoring the old sets fails it.
+- `tools/demo_differential.py` is new: it runs notation through the real page in
+  a browser and through the compiler, and compares **pitch, start and duration**
+  of every note across triplets, 3/4, 6/8, chord qualities, stacks, sustains,
+  rests and repeated rows. CI cannot run it — the suite installs nothing and
+  assumes no browser — so it is a manual check, and it reports six of the eight
+  cases differing against the revision this fixes.
+
+The general lesson is worth more than the fix: **a second implementation checked
+by counting is not checked.** Counts are the property most likely to survive a
+divergence.
+
+### Every written token now has a position, whether or not it sounds
+
+`Arrangement.grid` is a new `TimeGrid` (`notation/timegrid.py`) holding every
+token in every row on one coordinate system. Nothing about compilation changes:
+all 6,321 fingerprinted files compile to exactly the music they did.
+
+Rows divide their bars independently, so vertical alignment means nothing to the
+compiler. In
+
+```
+Melody: | A4  .   C5  E5 |
+Lyrics: | the tide came  |
+```
+
+`came` is written directly beneath `C5` and sounds two thirds of a beat after
+it. That was previously not merely unreported but *inexpressible* — there was no
+coordinate in which the two could be compared. Now `C5` is at `unit 0.5`, `came`
+at `unit 0.667`, and `grid.column(0, 0.5)` returns the chord and melody rows
+without the lyric that appears to be standing in them.
+
+`bar` and `unit` are derived in one function, so a lyric and a note cannot drift
+apart by being computed in two places. Rests and sustains are recorded as well:
+a token that makes no sound still occupies its column, because a renderer has to
+leave room for it and a merge has to see it as taken.
+
+This reports nothing and enforces nothing yet — `grid.disagreements()` is a
+query. Uneven subdivision is legal and often deliberate; a held chord under a
+running melody is two tokens against sixteen and there is nothing wrong with it.
+
+Phase 1 of `proposals/02-the-voyage.md`.
+
+### The demo shows you which characters are sounding
+
+The page's playground had a text box and a piano roll sitting next to each
+other, and nothing ever drew the line between them: a visitor had to infer that
+the third `A4` they typed produced the third block moving in the canvas. That
+inference is the whole idea of the notation, and it was left as an exercise.
+
+Each token now lights up while the note it wrote is sounding — including the
+`.` tokens the note is held across, so `Am . . .` illuminates as one thing and
+you can see that the dots are part of the chord rather than events of their own.
+A textarea cannot hold a styled span, so the same text is painted behind it in
+identical metrics and lit there.
+
+A silent preview sweeps the playhead once on load, so the page is visibly
+something that plays before anything is clicked. It is canvas and CSS only and
+never opens an `AudioContext`: nothing here can make a sound the visitor did not
+ask for. It ends at the first interaction, and does not run under
+`prefers-reduced-motion`.
+
+On a phone the editor used to push the Play button below the fold, so the first
+screen was a text box with no visible way to hear anything. The panel that makes
+sound now comes first.
+
+### Repeated lyric rows are verses — decided, not yet implemented
+
+Every other notation format stacks repeated lyric rows as parallel verses;
+Plainsong's rule is that a repeated row runs on in time. The plan proposed
+inventing `Lyrics 2:` to have both. That was the wrong shape: run-on is a claim
+about *time*, and once lyrics bind to notes they own no time for a second row to
+follow on into, so the rule does not reach them and needs no exception.
+
+> Every `Melody:` row in a section concatenates into one melodic stream. Each
+> `Lyrics:` row is a verse sung over that whole stream.
+
+No new syntax. Not one of the 6,321 `.song` files here has a section with more
+than one `Lyrics:` row, and lyrics do not enter the fingerprint, so this can move
+no note. It ships gated with the rest of lyric binding rather than on its own.
+
 ## 1.0.1 — 2026-08-17
 
 Fixes to what 1.0.0 said about itself, and to a setting it documented but never

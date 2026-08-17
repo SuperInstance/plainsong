@@ -89,6 +89,17 @@ reintroduce a running cursor.
 
 **Rows of different kinds sound together; a row repeated in one section follows
 on.** Two `Melody:` rows in a section are eight bars, not four played twice.
+That rule is a claim about *time*, which is why it will not reach lyrics once
+they bind to notes — see `proposals/02-the-voyage.md`.
+
+**Alignment is a fiction, and `notation/timegrid.py` is where it stops being
+one.** Rows divide their bars independently, so `came` written directly beneath
+`C5` sounds two thirds of a beat after it. `Arrangement.grid` places every
+token — sounding or not — on one coordinate system, with `bar` and `unit`
+derived in `TimeGrid.add` and nowhere else. Do not compute a position a second
+time somewhere downstream: the entire value of the grid is that a lyric and a
+note went through the same arithmetic. The grid observes the arranger and must
+never steer it, which the corpus fingerprint enforces.
 
 **A written time is an arrival time.** This is the one genuinely new idea in the
 system and the easiest thing here to break. `perform/solve.py` treats the beat a
