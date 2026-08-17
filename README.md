@@ -382,6 +382,7 @@ charts only.
 | [Agents](docs/agents.md) | The composer and build agents, and their tools |
 | [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
 | [Voicing](docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
+| [Lyrics](docs/lyrics.md) | Binding syllables to the notes they are sung on, and why padding is not melisma |
 | [The songbook](docs/songbook.md) | The bundled charts, and the copyright policy they follow |
 | [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
 | [Architecture](docs/architecture.md) | How it fits together, and why |

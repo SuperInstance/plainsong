@@ -30,6 +30,7 @@ DEFAULTS: dict[str, Any] = {
         "dialect": "auto",
         "bar_fill": "rescale",
         "voicing": "guide",
+        "lyrics": "independent",
         "default_tempo": 100,
         "default_key": "C",
         "default_meter": "4/4",
