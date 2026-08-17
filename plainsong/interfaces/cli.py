@@ -599,6 +599,51 @@ def cmd_voicing(args: argparse.Namespace, config: Config, out: Out) -> int:
     return 0
 
 
+def cmd_chart(args: argparse.Namespace, config: Config, out: Out) -> int:
+    """Draw a chord chart as SVG.
+
+    The output is a standalone file so it can be committed and embedded with
+    `<img src="chart.svg">`, which is the only way a chart appears in a markdown
+    document on a platform we do not control: GitHub strips a raw `<svg>` and
+    renders an `<img>`.
+    """
+    from ..pipeline import compile_text
+    from ..render.chart import ChartOptions, render, unrenderable
+
+    source = _resolve_notation(args.file, config, out)
+    if source is None:
+        return 2
+
+    result = compile_text(source.read_text(encoding="utf-8"), config=config, path=str(source))
+    if not result.ok:
+        for diagnostic in result.diagnostics:
+            out.fail(diagnostic.format())
+        return 1
+
+    svg = render(
+        result.arrangement,
+        ChartOptions(
+            staff_space=args.scale,
+            bars_per_line=args.bars,
+            show_lyrics=not args.no_lyrics,
+        ),
+    )
+
+    target = Path(args.output) if args.output else source.with_suffix(".svg")
+    target.write_text(svg, encoding="utf-8")
+
+    # Nothing should reach the page that the reference font cannot draw. This
+    # is cheap and it is the failure that would otherwise be discovered by
+    # someone looking at a blank rectangle where a flat sign belongs.
+    lost = sorted({c for chunk in svg.split(">") for c in unrenderable(chunk)})
+    if lost:
+        out.warn("characters the font cannot draw reached the chart: " + " ".join(lost))
+
+    out.ok(f"chart {target}")
+    out.data({"chart": str(target), "bytes": len(svg)})
+    return 0
+
+
 def cmd_lyrics(args: argparse.Namespace, config: Config, out: Out) -> int:
     """Show which note each syllable is sung on.
 
@@ -1223,6 +1268,18 @@ def build_parser() -> argparse.ArgumentParser:
     voicing_parser.add_argument("--octave", type=int, default=3)
     voicing_parser.add_argument("--flats", action="store_true")
     voicing_parser.set_defaults(func=cmd_voicing)
+
+    chart_parser = subparsers.add_parser(
+        "chart", help="draw a chord chart as SVG, for embedding in a document"
+    )
+    chart_parser.add_argument("file", help="a .song file")
+    chart_parser.add_argument("-o", "--output", help="where to write the SVG")
+    chart_parser.add_argument("--bars", type=int, default=4, help="bars per line")
+    chart_parser.add_argument(
+        "--scale", type=float, default=7.0, help="staff space in px; the chart scales from this"
+    )
+    chart_parser.add_argument("--no-lyrics", action="store_true", help="chords only")
+    chart_parser.set_defaults(func=cmd_chart)
 
     lyrics_parser = subparsers.add_parser(
         "lyrics", help="show which note each syllable is sung on"

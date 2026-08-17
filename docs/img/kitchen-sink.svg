@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="921" height="249" viewBox="0 0 921.03 249.20" role="img" aria-label="Kitchen Sink">
+<style>
+:root { color-scheme: light dark; }
+.paper  { fill: #faf8f4; }
+.ink    { fill: #1a1714; }
+.rule   { stroke: #1a1714; }
+.faint  { fill: #6f6862; }
+.chord  { font-weight: 700; }
+text { font-family: Liberation Sans, Arial, Helvetica, sans-serif; }
+@media (prefers-color-scheme: dark) {
+  .paper { fill: #14120f; }
+  .ink   { fill: #f2ede6; }
+  .rule  { stroke: #f2ede6; }
+  .faint { fill: #9a938c; }
+}
+</style>
+<rect class="paper" width="921.03" height="249.20"/>
+<text class="ink" x="24.50" y="52.50" textLength="178.97" lengthAdjust="spacingAndGlyphs" text-anchor="start">Kitchen Sink</text>
+<text class="faint" x="24.50" y="79.10" textLength="185.28" lengthAdjust="spacingAndGlyphs" text-anchor="start">Bbm  ·  4/4  ·  132 bpm</text>
+<line class="rule" x1="24.50" y1="137.30" x2="896.53" y2="137.30" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="114.20" x2="24.50" y2="137.30" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="110.00" textLength="20.55" lengthAdjust="spacingAndGlyphs" text-anchor="start">V1</text>
+<text class="ink chord" x="28.00" y="131.00" textLength="62.22" lengthAdjust="spacingAndGlyphs" text-anchor="start">Bbm</text>
+<text class="ink chord" x="137.00" y="131.00" textLength="32.68" lengthAdjust="spacingAndGlyphs" text-anchor="start">F7</text>
+<text class="faint" x="28.00" y="149.20" textLength="35.95" lengthAdjust="spacingAndGlyphs" text-anchor="start">sing</text>
+<text class="faint" x="82.50" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<text class="faint" x="137.00" y="149.20" textLength="47.92" lengthAdjust="spacingAndGlyphs" text-anchor="start">every</text>
+<text class="faint" x="191.51" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<line class="rule" x1="242.51" y1="114.20" x2="242.51" y2="137.30" stroke-width="1.12"/>
+<text class="ink chord" x="246.01" y="131.00" textLength="102.70" lengthAdjust="spacingAndGlyphs" text-anchor="start">Gbmaj7</text>
+<text class="ink chord" x="355.01" y="131.00" textLength="70.00" lengthAdjust="spacingAndGlyphs" text-anchor="start">Ddim</text>
+<text class="faint" x="246.01" y="149.20" textLength="47.94" lengthAdjust="spacingAndGlyphs" text-anchor="start">token</text>
+<text class="faint" x="300.51" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<text class="faint" x="355.01" y="149.20" textLength="42.49" lengthAdjust="spacingAndGlyphs" text-anchor="start">once</text>
+<text class="faint" x="409.51" y="149.20" textLength="6.53" lengthAdjust="spacingAndGlyphs" text-anchor="start">-</text>
+<line class="rule" x1="460.52" y1="114.20" x2="460.52" y2="137.30" stroke-width="1.12"/>
+<text class="faint" x="463.32" y="110.00" textLength="12.13" lengthAdjust="spacingAndGlyphs" text-anchor="start">C</text>
+<text class="ink chord" x="464.02" y="131.00" textLength="82.49" lengthAdjust="spacingAndGlyphs" text-anchor="start">Esus4</text>
+<text class="ink chord" x="573.02" y="131.00" textLength="85.57" lengthAdjust="spacingAndGlyphs" text-anchor="start">Cadd9</text>
+<text class="faint" x="464.02" y="149.20" textLength="30.50" lengthAdjust="spacingAndGlyphs" text-anchor="start">sus</text>
+<text class="faint" x="518.52" y="149.20" textLength="6.53" lengthAdjust="spacingAndGlyphs" text-anchor="start">-</text>
+<text class="faint" x="573.02" y="149.20" textLength="43.59" lengthAdjust="spacingAndGlyphs" text-anchor="start">pend</text>
+<text class="faint" x="627.52" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<line class="rule" x1="678.52" y1="114.20" x2="678.52" y2="137.30" stroke-width="1.12"/>
+<text class="ink chord" x="682.02" y="131.00" textLength="60.68" lengthAdjust="spacingAndGlyphs" text-anchor="start">Am6</text>
+<text class="ink chord" x="791.03" y="131.00" textLength="37.35" lengthAdjust="spacingAndGlyphs" text-anchor="start">G9</text>
+<text class="faint" x="682.02" y="149.20" textLength="32.69" lengthAdjust="spacingAndGlyphs" text-anchor="start">add</text>
+<text class="faint" x="736.53" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<text class="faint" x="791.03" y="149.20" textLength="37.04" lengthAdjust="spacingAndGlyphs" text-anchor="start">nine</text>
+<text class="faint" x="845.53" y="149.20" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<line class="rule" x1="896.53" y1="114.20" x2="896.53" y2="137.30" stroke-width="1.12"/>
+<line class="rule" x1="24.50" y1="205.20" x2="460.52" y2="205.20" stroke-width="1.12" opacity="0.28"/>
+<line class="rule" x1="24.50" y1="182.10" x2="24.50" y2="205.20" stroke-width="1.12"/>
+<text class="faint" x="27.30" y="177.90" textLength="11.21" lengthAdjust="spacingAndGlyphs" text-anchor="start">B</text>
+<text class="ink chord" x="28.00" y="198.90" textLength="70.00" lengthAdjust="spacingAndGlyphs" text-anchor="start">Aaug</text>
+<text class="faint" x="28.00" y="217.10" textLength="32.69" lengthAdjust="spacingAndGlyphs" text-anchor="start">aug</text>
+<text class="faint" x="137.00" y="217.10" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<line class="rule" x1="242.51" y1="182.10" x2="242.51" y2="205.20" stroke-width="1.12"/>
+<text class="faint" x="246.01" y="217.10" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<text class="faint" x="355.01" y="217.10" textLength="5.45" lengthAdjust="spacingAndGlyphs" text-anchor="start">.</text>
+<line class="rule" x1="460.52" y1="182.10" x2="460.52" y2="205.20" stroke-width="3.50"/>
+</svg>

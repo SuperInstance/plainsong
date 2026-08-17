@@ -4,6 +4,54 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### `plainsong chart` draws a chord chart as SVG
+
+```bash
+plainsong chart song.song -o chart.svg
+```
+
+A standalone file, so it commits to a repository and embeds with
+`<img src="chart.svg">` — which is the only way a chart appears in markdown on a
+platform we do not control, because GitHub strips a raw `<svg>`. That one fact
+decides most of the design: no webfonts, no script, and the chart carries its
+own background, since an `<img>` cannot inherit the host page's colour and a
+transparent chart is black ink on black in a dark README. It honours
+`prefers-color-scheme`, so it is legible either way.
+
+**Text is measured and then declared.** Layout is computed in Python from a
+width table shipped in the package, and each `<text>` carries `textLength` with
+`lengthAdjust="spacingAndGlyphs"` — SVG geometry rather than styling, so the
+browser fits the string to the width we planned for even with a substituted
+font. `spacing` alone would not do: it adjusts the *n−1* gaps between
+characters, so a one-character symbol like `C` has nothing to adjust.
+
+**Bars are as wide as their contents.** Each symbol sits at `unit × width`, so
+the next is clear only when `width × (next_unit − unit)` covers this symbol's
+advance plus a gap; the largest such requirement across the chart gives the
+width exactly, with no iteration. `| Cmaj7#11 Abm7b5 Db7alt Gbmaj9 |` and
+`| C . . . |` do not need the same room.
+
+**Accidentals are folded to ASCII.** Liberation Sans has U+266F ♯ and has
+neither U+266D ♭ nor U+266E ♮ — the wrong half to lose for a songbook full of
+flats and a parser that accepts `E7♭9`. `E7♭9` draws as `E7b9`.
+
+Positions come from `Arrangement.grid` and nowhere else, so a chart cannot
+disagree with the audio about when a chord arrives. Symbols are read from every
+row rather than only `Chords:`, because in the relative dialect a row mixing
+roman numerals with scale degrees reads as melody — a chart taking only the
+chord row draws empty bars for a piece whose harmony is written plainly.
+
+`tools/extract_font_widths.py` generates `render/fontmetrics.py` from a real
+TrueType file using only `struct`, and measures the bold face separately: `m`,
+`b` and `j` differ between the weights and those are what chord symbols are made
+of. Measuring one weight and drawing the other makes `lengthAdjust` smear every
+glyph.
+
+It is a chord chart, not an engraver — no noteheads, no staff, no beaming. See
+[docs/chart.md](docs/chart.md), which lists what it deliberately does not do.
+
+Phase 3 of `proposals/02-the-voyage.md`.
+
 ### A syllable can be sung on its note
 
 ```plainsong
