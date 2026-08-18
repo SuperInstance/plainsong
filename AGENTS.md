@@ -49,6 +49,7 @@ Every command takes `--json`. Use it.
 plainsong chord "G7alt" --explain     # what a symbol means, degree by degree
 plainsong voicing "C13"               # which notes actually sound, and why those
 plainsong lyrics song.song            # which note each syllable is sung on
+plainsong chart song.song -o out.svg  # a chord chart you can embed in a document
 plainsong info song.song --verbose    # every diagnostic available
 plainsong check docs README.md        # compiles fenced blocks out of markdown too
 plainsong fingerprint mysongs --check baseline.txt   # did anything change?
@@ -213,6 +214,7 @@ refused and handed the current state to rebase onto. See
 | [docs/chords.md](docs/chords.md) | Every chord spelling, and the rules that derive the notes |
 | [docs/voicing.md](docs/voicing.md) | Which notes sound when a chord names more than fit |
 | [docs/lyrics.md](docs/lyrics.md) | Binding syllables to notes, and why a column is not a promise |
+| [docs/chart.md](docs/chart.md) | Drawing a chord chart, and what it deliberately is not |
 | [docs/integration.md](docs/integration.md) | `--json`, the Python API, HTTP, MCP |
 | [docs/performance.md](docs/performance.md) | Arrival-centric timing and the `[Stage]` block |
 | [CLAUDE.md](CLAUDE.md) | How the codebase is organised, and why each rule exists |

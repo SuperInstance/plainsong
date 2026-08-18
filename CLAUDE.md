@@ -38,12 +38,17 @@ python3 -m pytest tests -q                    # works too, if pytest is installe
 python3 -m plainsong spec                     # exits non-zero on failure
 python3 -m plainsong doctor --specs
 python3 -m plainsong check docs examples plainsong/songbook README.md   # every source, prose included
+python3 -m plainsong fingerprint plainsong/songbook examples docs --check tests/corpus-fingerprint.txt
+
+# Checks CI cannot run -- no browser there. Run by hand after touching either side.
+python3 tools/demo_differential.py            # the browser demo against the compiler
 
 # Working with notation
 python3 -m plainsong new "Title" -o song.song
 python3 -m plainsong compile song.song -o out.mid --audio out.wav
 python3 -m plainsong info song.song --verbose  # every diagnostic, parser and arranger
 python3 -m plainsong lyrics song.song          # which note each syllable is sung on
+python3 -m plainsong chart song.song -o out.svg # a chord chart, embeddable as <img>
 python3 -m plainsong transpose song.song Dm
 
 # The browser demo -- open it, no server needed
@@ -298,9 +303,13 @@ famous for came from those rows and are now 2.
   package stops carrying it. Until that lands, a change to one copy must be
   made to the other or they will drift — which is precisely the failure mode
   the rule exists to prevent. Do not build anything new on this copy.
-- The MCP server has never had a third-party MCP client connect to it. Its
-  protocol behaviour is verified by hand-driven JSON-RPC against the
-  specification, which is strong evidence and not the same thing.
+- The MCP server has now been driven by a third-party client: the official
+  `mcp` Python SDK 2.0.0, over stdio. `initialize`, `tools/list`,
+  `resources/list`, `prompts/list`, `tools/call` and `resources/read` all
+  behave, and a missing required argument returns `isError: true`. Notation the
+  compiler cannot read returns `isError: false` with the error in the content,
+  which is defensible — the tool ran — but means a client has to read the
+  diagnostics rather than the flag.
 
 ## Emitting notation must round-trip
 

@@ -11,12 +11,13 @@ Not claims — things this repository can demonstrate on demand.
 
 | | |
 |---|---|
-| Notation compiles | 6,333 sources, 0 errors, including every fenced example in the prose |
+| Notation compiles | 6,340 sources, 0 errors, including every fenced example in the prose |
 | The music is pinned | 6,321 files hashed; CI fails if any file's *notes* change |
 | Chord symbols | An open grammar. `C7b9#11` works without being enumerated |
 | Voicing | Decided by measurement: 94.4% of named notes survive, against 50.1% |
-| Tests | 578, plus 7 specs, on 3.10–3.13 across three operating systems, nothing installed |
-| Packaging | Wheel built and exercised in a clean venv outside the tree |
+| Tests | 667, plus 7 specs, on 3.10–3.13 across three operating systems, nothing installed |
+| Packaging | On PyPI. `pip install plainsong` and the specs pass on a machine that never saw this repository |
+| Rendering | `plainsong chart` draws an SVG chord chart with no font and no dependency |
 
 Two properties matter more than the numbers. **Parsing is already whitespace
 invariant** — tight, loose, ragged and tab-separated layouts of the same bar

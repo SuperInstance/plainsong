@@ -21,8 +21,8 @@ Around that core:
 
 | Package | Holds |
 |---|---|
-| `notation/` | theory, parser, arranger, the intermediate representation |
-| `render/` | MIDI writer, synthesiser, voices, optional backends |
+| `notation/` | theory, parser, arranger, the intermediate representation, the time grid, lyric binding, merge |
+| `render/` | MIDI writer, synthesiser, voices, the SVG chart and its font metrics, optional backends |
 | `runtime/` | paths, layered configuration, host capability probing |
 | `llm/` | provider-neutral types, transport, catalogue, adapters |
 | `agent/` | the loop, the tool registry, prompts |
@@ -56,15 +56,21 @@ computed by one function, so a lyric and a note are placed by the same
 arithmetic. `Arrangement.grid` carries it. `unit` is the load-bearing field: a
 token's position within its own bar, from 0.0 to just under 1.0.
 
-Three separate problems become the same projection:
+Three separate problems become the same projection, and two of them are built:
 
-- rendering is `x = unit * bar_width`, a coordinate transform rather than a
-  layout engine;
-- merging is set intersection on `(row, bar, unit)`, so two agents editing
-  different rows provably cannot collide — the row axis is disjoint, and player
-  rows are keyed by name;
-- alignment linting can finally be *expressed*: `grid.disagreements()` names
-  each bar whose rows divide it differently.
+- **Rendering.** `render/chart.py` places a chord at `x = unit * bar_width` — a
+  coordinate transform rather than a layout engine, so a chart cannot disagree
+  with the audio about when a chord arrives.
+- **Merging.** `notation/merge.py` decides a conflict by set intersection on
+  `(section, row, bar)`: two edits collide exactly when those sets overlap. The
+  row axis is disjoint and player rows are keyed by name, so two agents on
+  `@bass` and `Melody:` cannot collide — and, less obviously, neither can two
+  agents rewriting bars 1–4 and 5–8 of *one* melody. That second case is what a
+  coordinate per bar buys over a file per voice.
+- **Linting**, not yet built. `grid.disagreements()` names each bar whose rows
+  divide it differently, which is the `came`/`C5` lie stated as data. Nothing
+  raises a diagnostic from it: uneven subdivision is legal and usually
+  deliberate, so what to warn about is still an open question.
 
 The grid observes; it does not steer. The arranger populates it from positions
 it has already computed, so if building it ever moved a note, the grid would be

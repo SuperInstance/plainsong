@@ -4,6 +4,45 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### Housekeeping: two rename leftovers, and documentation that had drifted
+
+- **`examples/plainsong-4-tap-closing-time.song`** still carried `tap` from
+  before the rename, as did `docs/traditions/03-the-tap-songbook.md`. Both
+  renamed. The fingerprint is keyed on path, so its baseline was re-recorded —
+  and proved inert the way the earlier renames were, by comparing the note-hash
+  multiset across all 6,321 files: `b850e4729399e7e5068a13c0` before and after.
+  Not one note moved.
+- **The README claimed nine complete examples and ships eight.**
+- **`SHIPPING.md` said 527 tests and 6,333 sources**; it is 667 and 6,340. It
+  opens by saying every claim in it was checked against the working tree, so
+  stale numbers make it lie about itself.
+- **It also still listed the four-note chord cap as an open limitation** —
+  `D9` sounds like `D7` — which 1.0.1 fixed. Corrected, with the measurement and
+  the `core.voicing = "stack"` escape hatch.
+- **Its claim about the browser demo was the pre-fix one**, describing note
+  counts as the guard. Counting was exactly what failed to catch `.` and `-`
+  being read as rests. Rewritten to describe what actually checks it now.
+- `chart` and `merge` reached `CLAUDE.md`, `AGENTS.md` and
+  `docs/architecture.md`, which described neither.
+
+### A third-party MCP client has now connected
+
+The long-standing caveat — *"the MCP server has never had a real MCP client
+connect to it"* — is closed. Driven with the official `mcp` Python SDK 2.0.0
+over stdio, as any client would: `initialize` returns `plainsong 1.1.0` on
+protocol `2025-06-18`, and 27 tools, 9 resources and 2 prompts enumerate.
+`compile_score` round-trips inline notation, a resource reads back, and a call
+missing a required argument correctly returns `isError: true`.
+
+**One thing worth knowing.** Notation the compiler cannot read returns
+`isError: false`, with the failure in the *content* (`error: no sections
+found`). The tool ran; the music did not compile. That is defensible under the
+specification, which reserves `isError` for execution failures — but it means an
+agent client has to read the diagnostics rather than the flag, which is the
+"success is not evidence" trap `AGENTS.md` warns about, served over the wire.
+Recorded rather than changed: altering `isError` semantics is a decision about
+the protocol surface, not a tidy-up.
+
 ### A conflict between two agents is now decidable
 
 `notation/merge.py` three-way merges two edits of one score. An edit occupies a
