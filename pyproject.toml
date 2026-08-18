@@ -41,6 +41,9 @@ plainsong = "plainsong.interfaces.cli:main"
 Homepage = "https://github.com/SuperInstance/plainsong"
 Documentation = "https://github.com/SuperInstance/plainsong/tree/master/docs"
 Source = "https://github.com/SuperInstance/plainsong"
+Changelog = "https://github.com/SuperInstance/plainsong/blob/master/CHANGELOG.md"
+Issues = "https://github.com/SuperInstance/plainsong/issues"
+"For agents" = "https://github.com/SuperInstance/plainsong/blob/master/AGENTS.md"
 
 [tool.setuptools.packages.find]
 include = ["plainsong*"]

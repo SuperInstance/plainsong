@@ -2,6 +2,23 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### The demo has a URL
+
+`docs/index.html` redirects the GitHub Pages root to the browser demo, so
+"try it" is a link rather than "download this file and open it". `docs/.nojekyll`
+stops Pages running the markdown through Jekyll.
+
+**This needs Pages switched on** — Settings → Pages → Deploy from a branch →
+`master` / `docs`. Until that is done the README's link 404s.
+
+### Badges, and the links PyPI shows in its sidebar
+
+Version, supported Pythons, CI, dependencies-none and licence. `[project.urls]`
+gains Changelog, Issues and a direct link to `AGENTS.md`, which PyPI renders as
+sidebar links and which cost nothing to keep accurate.
+
 ## 1.3.0 — 2026-08-18
 
 A minor rather than a patch on two counts: `Meter.readable` and `theory.KEY_RE`
