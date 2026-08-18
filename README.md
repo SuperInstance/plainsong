@@ -377,7 +377,7 @@ Every command takes `--json`. Use it when parsing output.
 
 ## Examples to start from
 
-Nine complete pieces ship in the repository, written to be read rather than
+Eight complete pieces ship in the repository, written to be read rather than
 generated. Each one is a template: copy it, change the chords, recompile.
 
 ```bash
@@ -389,7 +389,7 @@ plainsong compile examples/plainsong-1-creatures-of-interval.song --audio out.wa
 | [Creatures of Interval](examples/plainsong-1-creatures-of-interval.song) | Four voices, plain 4/4 — the simplest complete piece |
 | [The Room Is Safe](examples/plainsong-2-the-room-is-safe.song) | Lyrics and melody together |
 | [Hermes Blues](examples/plainsong-3-hermes-blues.song) | Twelve-bar blues with swing |
-| [Closing Time](examples/plainsong-4-tap-closing-time.song) | The relative dialect — roman numerals and scale degrees |
+| [Closing Time](examples/plainsong-4-closing-time.song) | The relative dialect — roman numerals and scale degrees |
 | [Deck Work](examples/plainsong-5-deck-work.song) | Several named players |
 | [Spacing: melody](examples/plainsong-6-spacing-melody.song) · [chords](examples/plainsong-7-spacing-chords.song) · [dashes](examples/plainsong-8-spacing-dashes.song) | How duration-by-spacing behaves |
 

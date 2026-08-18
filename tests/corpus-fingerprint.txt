@@ -2490,7 +2490,7 @@ b1ef7007b7a0f712      34  examples/edge-cases/edge-4-players-only.song
 73ff48fe72d8bf12     157  examples/plainsong-1-creatures-of-interval.song
 a8567c72abd8ec82     143  examples/plainsong-2-the-room-is-safe.song
 87a9033c4c06bcce     224  examples/plainsong-3-hermes-blues.song
-c4040d29fc2a8835     111  examples/plainsong-4-tap-closing-time.song
+c4040d29fc2a8835     111  examples/plainsong-4-closing-time.song
 1c2186b5371e33f7     101  examples/plainsong-5-deck-work.song
 d9419c3c1bc05fc0      29  examples/plainsong-6-spacing-melody.song
 a351ccbd50ff2d4e      23  examples/plainsong-7-spacing-chords.song

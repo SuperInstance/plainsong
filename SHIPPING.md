@@ -15,16 +15,20 @@ These have been proven, not assumed.
 | Works on Python 3.10 | Hid `tomllib` entirely and ran the CLI (`info`, `compile`) and all specs through the fallback reader. |
 | The TOML fallback matches the real one | Differential test: every TOML file in the repo plus 17 edge cases parsed by both readers and compared. |
 | Arrival timing is arithmetically right | Hand-checked a three-voice stage: 14 m at 343.21 m/s is 40.8 ms, plus 140 ms pipe speech and 60 ms perceptual attack gives the organ's -241 ms. Spread is 0 ms at the podium and non-zero at every player's desk. |
-| Notation compatibility held | 6,333 sources compile with 0 errors, including every fenced `plainsong` block in the prose. |
+| Notation compatibility held | 6,340 sources compile with 0 errors, including every fenced `plainsong` block in the prose, and 6,321 files compile to exactly the music they did -- which `check` cannot see and `fingerprint` can. |
 | No hidden dependencies | CI installs nothing on 4 Python versions x 3 operating systems. |
 | No hardcoded paths | A test greps the package for `~/.openclaw`, `/home/eileen`, `/Users/`. |
 | Nothing half-written | No TODO, FIXME, XXX, HACK or `NotImplementedError` anywhere in `plainsong/`. |
-| The browser demo agrees with the compiler | `docs/demo/index.html` carries its own parser and arranger in JavaScript. It states the note count it produces for each preset, and `tests/test_demo.py` compiles the same notation with the real compiler and requires the same answer -- so a change to the arranger that moves a count fails CI rather than making the page quietly lie. |
+| The browser demo agrees with the compiler | Checked by running both implementations over the same notation and comparing **pitch, start and duration** of every note (`tools/demo_differential.py`). Counting alone was not enough and this is not hypothetical: `.` and `-` sat in the demo's REST set where the compiler has them in SUSTAIN, so every held note was cut to a single subdivision while the note *counts* stayed identical and CI stayed green. A second implementation checked by counting is not checked. |
 | A wheel actually works | Built, installed into a clean venv outside the source tree, and exercised there. This is the only way the two packaging faults were visible: `plainsong spec` and `plainsong library` both did nothing for anyone who installed rather than cloned. |
+| A chart renders without a font | `plainsong chart` emits a standalone SVG; inspected in headless Chromium at three viewport sizes, light and dark. Text carries `textLength` so layout survives font substitution, and the flat sign is folded to ASCII because Liberation Sans has U+266F and lacks U+266D. |
+| A merge conflict is decidable | Two edits occupy sets of `(section, row, bar)` cells and collide exactly when those intersect. Three rules -- run-on bar numbering, removal counting as a change, and requiring the base -- were each mutated and the suite confirmed red. |
+| The rename moved no music | `examples/plainsong-4-tap-closing-time.song` became `plainsong-4-closing-time.song`. Proved inert by comparing the note-hash multiset across all 6,321 files before and after: `b850e4729399e7e5068a13c0`, both sides. |
 | The new tests would catch a regression | Each guard was removed and the suite confirmed to go red: retryable statuses, the `[DONE]` stream terminator, the User-Agent and header merge, the same-origin refusal, the `/files/` basename and containment guards together, the null-byte guard, percent-decoding, the `MAX_BODY` limit, `ConnectorResult.__bool__`, the broken-connector skip, and the availability check in `run()`. |
 
-527 tests, 7 specs, 6,333 sources checked including every fenced example in the
-prose, ruff clean.
+667 tests, 7 specs, 6,340 sources checked including every fenced example in the
+prose, ruff clean. Published: `pip install plainsong` installs 1.1.0 from PyPI
+and its specs pass on a machine that has never seen this repository.
 
 ## Blockers
 
@@ -201,19 +205,27 @@ passes on Windows across 3.10 through 3.13.
 - The TUI needs `curses`, which stock Python on Windows does not ship. It
   reports this and points at `windows-curses` or the web interface. Found by
   the new TUI tests running on Windows CI for the first time.
-- The MCP server has never had a real MCP client connect to it. The protocol is
-  verified by hand-driven JSON-RPC, which is strong evidence but not the same
-  thing as Claude Desktop or an SDK client connecting.
-- **The renderer discards chord extensions.** `arrange.Options.max_chord_notes`
-  is 4 and the notes are taken from the bottom, so a five-note chord keeps
-  root-third-fifth-seventh and drops what sat above. `D9` sounds like `D7`;
-  `E7#9` sounds like `E7`; `G7alt` renders as four notes that are not a chord
-  anybody would name. 459 occurrences, 0.3% of the corpus, concentrated
-  entirely in the chords where the dropped note is the whole point. The cap is
-  defensible; taking the bottom four is not — a player drops the fifth first,
-  then the root, because the third and seventh carry the identity. Left alone
-  because fixing it changes how existing files sound, and that wants its own
-  reviewed diff rather than a ride along with a parser change.
+- ~~The MCP server has never had a real MCP client connect to it.~~ **Closed.**
+  Driven with the official `mcp` Python SDK 2.0.0 as any third-party client
+  would: `initialize` returns `plainsong 1.1.0` on protocol `2025-06-18`, and
+  27 tools, 9 resources and 2 prompts enumerate. `compile_score` round-trips
+  inline notation, a resource reads back, and a call with a missing required
+  argument correctly returns `isError: true`.
+  **One thing to know:** notation the compiler cannot read returns
+  `isError: false` with the failure in the *content* (`error: no sections
+  found`). The tool ran; the music did not compile. That is defensible under the
+  specification, which reserves `isError` for execution failures, but it means
+  an agent client must read the diagnostics rather than the flag — the same
+  "success is not evidence" trap `AGENTS.md` warns humans about, presented over
+  the wire.
+- ~~**The renderer discards chord extensions.**~~ **Fixed in 1.0.1.** The
+  four-note cap took the lowest four notes, so `D9` sounded like `D7` and
+  `G7alt` rendered as four notes nobody would name. A player drops the fifth
+  first and the root second, because the third and seventh carry the identity;
+  taking the bottom four does the opposite. Chosen by measurement over the 277
+  occurrences where the cap actually bites: keeping the symbol's defining note
+  went from 50.1% to 94.4%. It changed how seventy-two bundled files sound, so
+  `core.voicing = "stack"` restores the old rendering exactly.
 - **`plainsong/mcp/` also exists in `SuperInstance/plainsong-mcp`.** The one
   open violation of "one of everything", and it is temporary: the extraction
   happened while this branch was in review. Until the copy here is removed, a
@@ -225,7 +237,7 @@ passes on Windows across 3.10 through 3.13.
 - `master` has been red on its own older workflow since before this branch, for
   reasons unrelated to it.
 - **Dialect auto-detection fails on a relative-dialect file, and it looks like
-  corrupt source.** `examples/plainsong-4-tap-closing-time.song` is written in
+  corrupt source.** `examples/plainsong-4-closing-time.song` is written in
   the relative dialect -- `I`, `IV`, `vi` as roman-numeral chords and `1 . 3 |
   5 . . |` as scale degrees. `dialect: auto` reads it as absolute, so every
   scale degree becomes an unreadable token: 42 notes and 51 warnings. Told
