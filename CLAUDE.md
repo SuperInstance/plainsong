@@ -296,13 +296,25 @@ famous for came from those rows and are now 2.
 - The built-in synthesiser is a preview renderer; timbres are approximations.
   Audio is mono.
 - The host bridge cannot stream and reports no token usage.
-- **`plainsong/mcp/` also exists in `SuperInstance/plainsong-mcp`.** This is the
-  one open violation of "one of everything" and it is deliberate but temporary:
-  the extraction happened while this branch was in review. The intended end
-  state is that the MCP server lives only in the sibling repository and this
-  package stops carrying it. Until that lands, a change to one copy must be
-  made to the other or they will drift — which is precisely the failure mode
-  the rule exists to prevent. Do not build anything new on this copy.
+- **`plainsong/mcp/` also exists in `SuperInstance/plainsong-mcp`.** The one
+  open violation of "one of everything". Do not build anything new on this copy.
+
+  **This has now cost something real, so it is no longer a theoretical rule.**
+  The two copies were measured: 240 lines of difference across seven of eight
+  files. Most is mechanical — relative versus absolute imports, unavoidable when
+  the same code lives inside and outside a package. One was not. The HTTP
+  transport's DNS-rebinding guard (`_host_is_local`, requiring a loopback
+  `Host` because Origin-against-Host alone is defeated by rebinding) existed
+  **here and not in the sibling**, which is the copy people `pip install` for
+  MCP. Fixed there, with tests, but it sat open for months with nothing in
+  either repository able to notice.
+
+  The injection machinery in `mcp/tools.py` and `mcp/resources.py` — the
+  `ensemble=` parameter and `_default_ensemble()` — is **unused**. It was
+  written so the sibling could import this `tools.py` and pass its own ensemble;
+  the sibling never does, having its own copy bound by relative import. Do not
+  extend it: the end state is that MCP lives only in the sibling and this
+  directory goes.
 - The MCP server has now been driven by a third-party client: the official
   `mcp` Python SDK 2.0.0, over stdio. `initialize`, `tools/list`,
   `resources/list`, `prompts/list`, `tools/call` and `resources/read` all

@@ -2,6 +2,58 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### Header typos were swallowed in silence
+
+`tempo: banana` compiled happily at 100. `time: 3-4` compiled at 4/4. `key: Zz`
+sounded in C while a chart printed `Zz` over it. None of them said anything —
+not on `compile`, not on `check`, and not on `info --verbose`, which documents
+itself as showing every diagnostic.
+
+Each still falls back to a default, which is right: a typo in a header should
+not cost you the piece. What was wrong is falling back **without saying so**,
+the same fault as `Xm9` compiling to a silent bar. Now:
+
+```
+warning: tempo 'banana' is not a number; using 100
+warning: time '3-4' is not a metre; using 4/4
+warning: key 'Zz' is not a key; sounding in C major
+```
+
+The key message names the *sounding* key rather than the text, because the
+unreadable text is kept for display — so "using Zz major" would have been no
+help at all.
+
+The parsers do not raise on nonsense, so these could not simply catch an
+exception. `theory.KEY_RE` and `Meter.readable` name each rule once and serve
+both the parse and the question "will parsing work", rather than a second copy
+of each pattern drifting from the first.
+
+Found by a fresh agent installing from PyPI and typing plausible mistakes — a
+test this project cannot run on itself, having long since stopped making
+beginner errors. It immediately turned up a real one in the bundled songbook:
+`time: 2/4 (Lassan) then 4/4 (Friska)` on the Hungarian Rhapsody, a human
+annotation the metre field cannot express, silently becoming 4/4. The file is
+left alone — changing the metre would change the music — and the warning now
+says what was ignored.
+
+### The README is the PyPI page, and its links did not work there
+
+`pyproject.toml` sets `readme = "README.md"`, so that file *is* the project page.
+Forty-four relative links and one relative image resolved on GitHub and 404'd on
+PyPI, which is where a `pip install` user reads them. The page told people to
+read a dozen documents none of which they could reach.
+
+All absolute now, images through `raw.githubusercontent.com` because a `blob`
+URL serves HTML rather than an image. `tests/test_readme_links.py` buys back the
+guarantee absolute links lose: every URL into this repository is mapped to a path
+and checked to exist, images must not use `blob`, and the version the README
+claims must match the tree — it said "Version 1.0" while PyPI shipped 1.2.0.
+
+The examples section also told pip users to compile `examples/…`, which the wheel
+does not ship. It now says so, and points at the bundled library, which it does.
+
 ## 1.2.0 — 2026-08-18
 
 A minor rather than a patch: `notation/merge.py`, `notation/lyrics.py` and

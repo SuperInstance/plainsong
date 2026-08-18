@@ -74,10 +74,17 @@ jobs:
           name: dist
           path: dist/
 
+      # skip-existing makes a re-run idempotent. Without it, a release that got
+      # its files onto PyPI some other way -- a manual twine upload, or a first
+      # attempt that uploaded and then failed later in the job -- can never be
+      # re-run, because the upload aborts on "file already exists". That took
+      # 1.0.1, 1.1.0 and 1.2.0 with it: the publish step failed, the release
+      # job below never ran, and the repository has tags with no releases.
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/
+          skip-existing: true
 
   release:
     name: Create GitHub Release

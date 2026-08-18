@@ -451,12 +451,18 @@ MODE_WORDS = {
 }
 
 
+KEY_RE = re.compile(r"^([A-Ga-g])([#b♯♭]*)\s*(.*)$")
+"""What a key has to start with. Named because the parser also needs to ask
+whether a header value *is* a key, and asking with a second copy of this
+pattern is how the two answers drift apart."""
+
+
 def parse_key(text: str) -> Key:
     """Parse ``Am``, ``A minor``, ``F# dorian`` or ``Bb`` into a :class:`Key`."""
     cleaned = text.strip()
     if not cleaned:
         return Key(0, "major")
-    match = re.match(r"^([A-Ga-g])([#b♯♭]*)\s*(.*)$", cleaned)
+    match = KEY_RE.match(cleaned)
     if not match:
         return Key(0, "major", text=cleaned)
     letter, accidentals, remainder = match.groups()

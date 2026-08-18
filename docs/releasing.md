@@ -18,10 +18,31 @@ python3 -m unittest discover -s tests
 python3 -m plainsong spec
 python3 -m plainsong check docs examples plainsong/songbook README.md
 
-# 4. Tag and push.
+# 4. Tag the commit that carries the bump -- not whatever master happened to be
+#    when you started. Merge the version bump FIRST, then pull, then tag.
+git pull
+grep __version__ plainsong/version.py    # must be the version you are tagging
 git tag -a v1.1.0 -m "1.1.0"
 git push origin v1.1.0
 ```
+
+**Tag the right commit.** `v1.2.0` was once created on the commit before the
+version bump merged. The tree there still said 1.1.0, so the workflow's tag
+check refused it -- correctly, and that is the guard doing its job -- and a
+local `python -m build` in the same clone quietly produced `1.1.0` artifacts
+that PyPI then rejected as duplicates. The one-line `grep` above is what catches
+it. If you have already pushed a tag to the wrong commit:
+
+```bash
+git tag -d v1.2.0
+git push origin :refs/tags/v1.2.0     # delete it from the remote
+git pull                              # get the real bump
+git tag -a v1.2.0 -m "1.2.0"
+git push origin v1.2.0
+```
+
+Do not use a shallow (`--depth 1`) clone for that: deleting and re-pushing a tag
+needs the real history.
 
 ## What the workflow then does
 
@@ -39,6 +60,13 @@ git push origin v1.1.0
    [Trusted Publishing](https://docs.pypi.org/trusted-publishers/). There is no
    API token in the repository and there should never be one: the job authenticates
    with a short-lived OIDC identity, which is why it declares `id-token: write`.
+   It passes `skip-existing`, so a version already on PyPI is skipped rather than
+   failing the job. That matters more than it sounds: without it, a release whose
+   files reached PyPI some other way -- a manual `twine upload`, or an attempt
+   that uploaded and then failed later -- can never be re-run, because the upload
+   aborts on "file already exists" and the **release** step below never gets to
+   run. That is exactly how 1.0.1, 1.1.0 and 1.2.0 ended up as tags with no
+   GitHub Release.
 4. **release** — creates the GitHub Release with the artifacts attached and
    generated notes. This needs `contents: write`; without it the step fails at the
    very end, after a successful publish, which is the worst place to find out.
