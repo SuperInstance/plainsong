@@ -2,7 +2,13 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.2.0 — 2026-08-18
+
+A minor rather than a patch: `notation/merge.py`, `notation/lyrics.py` and
+`render/chart.py` are new public modules, and `plainsong chart` and
+`plainsong lyrics` are new commands. Nothing existing changes — all 6,321
+fingerprinted files compile to exactly the music they did in 1.0.0, and lyric
+binding is opt-in for that reason.
 
 ### Housekeeping: two rename leftovers, and documentation that had drifted
 
