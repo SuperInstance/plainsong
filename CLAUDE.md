@@ -309,6 +309,18 @@ famous for came from those rows and are now 2.
   MCP. Fixed there, with tests, but it sat open for months with nothing in
   either repository able to notice.
 
+  It then cost a second time, and inside this repository. The guard also lived
+  in `interfaces/web/server.py`, and the MCP copy was a copy of it — so when
+  the shared eight lines got two things wrong, both servers got both wrong.
+  `name.startswith("127.")` admits `127.evil.example`, a registrable domain
+  that can be pointed at 127.0.0.1, which is precisely the attack; and
+  stripping a port before removing IPv6 brackets reads `[::1]` as `":"` and
+  refuses a real loopback caller. **Whether a name is loopback now lives only
+  in `runtime/localhost.py`**, `tests/test_localhost.py` fails if a module
+  starts deciding it again, and `bind_is_loopback` is kept separate from
+  `host_is_local` because `0.0.0.0` is a fine thing to be addressed as and a
+  bad thing to be bound to. The sibling still has its own copy.
+
   The injection machinery in `mcp/tools.py` and `mcp/resources.py` — the
   `ensemble=` parameter and `_default_ensemble()` — is **unused**. It was
   written so the sibling could import this `tools.py` and pass its own ensemble;

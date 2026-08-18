@@ -4,6 +4,41 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### The loopback check let a domain through, and there were two of it
+
+Both local servers — `plainsong serve` and `plainsong mcp --http` — refuse a
+request whose `Host` is not this machine. That is the guard against DNS
+rebinding, and comparing `Origin` against `Host` does not replace it: point
+`evil.example` at 127.0.0.1 and a page served from that domain sends both
+headers reading `evil.example`, matching perfectly. What gives it away is the
+name itself.
+
+The name was matched with `name.startswith("127.")`. `127.evil.example` starts
+with those characters, is registrable, and can be pointed anywhere — so the
+test meant to recognise the 127/8 block admitted the exact attack the guard
+exists to stop. An address is parsed as an address now, not compared as a
+string.
+
+The same eight lines also read a bracketed IPv6 `Host` wrongly. The brackets
+are what separate the address from the port, so stripping the port first turned
+`[::1]` — which is what a client sends when the port is the default — into
+`":"`, and a loopback caller was refused.
+
+Both faults were in both servers, because the second was a copy of the first.
+There is now one `plainsong/runtime/localhost.py`, and `tests/test_localhost.py`
+fails if a third appears. The rebinding refusal is pinned over a real socket on
+both servers, with and without an `Origin` header — the `Host` check has to run
+before `Origin` is read, since a non-browser client simply omits `Origin` and an
+`Origin`-only guard then has nothing to say.
+
+`bind_is_loopback` is separated from `host_is_local` in the same move, because
+they are different questions: a request addressed to `0.0.0.0` is legitimate,
+and a server *bound* to `0.0.0.0` is what the "anyone who can reach this port"
+warning is for.
+
+The sibling `SuperInstance/plainsong-mcp` carries its own copy and needs the
+same fix.
+
 ### The demo has a URL
 
 `docs/index.html` redirects the GitHub Pages root to the browser demo, so
