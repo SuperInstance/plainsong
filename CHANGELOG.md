@@ -2,7 +2,12 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.4.0 — 2026-08-18
+
+A minor rather than a patch: `plainsong.runtime.localhost` is a new public
+module, and a `Host` header that was accepted before is refused now. Nothing
+about notation changes -- 6,321 files compile to exactly the music they did in
+1.0.0.
 
 ### The loopback check let a domain through, and there were two of it
 
@@ -38,6 +43,37 @@ warning is for.
 
 The sibling `SuperInstance/plainsong-mcp` carries its own copy and needs the
 same fix.
+
+### Every release run had failed, for a reason nobody had read
+
+Five tags, four versions on PyPI, and zero GitHub Releases. 1.3.0 blamed this on
+`skip-existing` and shipped a fix for it. That was the wrong diagnosis. Reading
+the job logs rather than reasoning about them, all six runs died at the same
+step with the same error:
+
+```
+invalid-publisher: valid token, but no corresponding publisher
+environment: MISSING
+```
+
+No Trusted Publisher was ever configured on PyPI. Every version up there had
+been uploaded by hand. `skip-existing` is still worth having — it is what makes
+a re-run idempotent — but it was never the blocker, and the `test` and `build`
+jobs passing in all six runs is what made the failure easy to keep mis-reading.
+
+`docs/releasing.md` is rewritten around this. It had been describing a project
+that "has never been published", still sending the reader to the *pending*
+publisher page — which refuses a name that already exists rather than
+redirecting — and telling them to publish the sibling "the same way" when the
+sibling has no release workflow at all. It now says which of PyPI's two pages
+applies when, that the claims printed in the error are exactly what the
+publisher must match, and that `environment: MISSING` means leave the field
+empty.
+
+One consequence worth knowing: a re-run uses the workflow file **as it was at
+the tag**. `v1.0.1`, `v1.1.0` and `v1.2.0` predate `skip-existing`, so those
+three cannot be backfilled by re-running — they authenticate and then abort on
+files already on PyPI. From `v1.3.0` on, a re-run completes.
 
 ### The demo has a URL
 
