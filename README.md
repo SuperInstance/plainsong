@@ -16,14 +16,14 @@ file any editor, any diff tool and any language model can read.
 
 **If you read music but not code**, you already understand most of that block —
 it is a lead sheet with the bars drawn in. Start with
-[Your first song](docs/tutorial-first-song.md); it assumes nothing about
+[Your first song](https://github.com/SuperInstance/plainsong/blob/master/docs/tutorial-first-song.md); it assumes nothing about
 programming and gets you to something you can hear.
 
 **If you write code but not music**, the thing to know is that you never
 declare durations. You write how many events happen in a bar and the bar divides
-itself. Start with [the notation reference](docs/notation.md).
+itself. Start with [the notation reference](https://github.com/SuperInstance/plainsong/blob/master/docs/notation.md).
 
-**If you are an agent**, read [AGENTS.md](AGENTS.md) first. It is short, and
+**If you are an agent**, read [AGENTS.md](https://github.com/SuperInstance/plainsong/blob/master/AGENTS.md) first. It is short, and
 most of it is the mistakes other agents have already made here.
 
 ## Try it without installing anything
@@ -148,7 +148,7 @@ plainsong lyrics song.song    # which note each syllable really lands on
 Set `core.lyrics = "bound"` and each syllable is sung on the note it is written
 under, with the barline resyncing so a miscount costs one bar instead of the
 rest of the song. The default leaves existing files alone. See
-[docs/lyrics.md](docs/lyrics.md).
+[docs/lyrics.md](https://github.com/SuperInstance/plainsong/blob/master/docs/lyrics.md).
 
 ### Two rows of the same kind run in sequence
 
@@ -246,7 +246,7 @@ against the standard library.
 
 **Audio.** The built-in synthesiser works with nothing installed. For higher
 quality, install fluidsynth and a General MIDI soundfont — Plainsong will use
-them automatically. See [docs/audio.md](docs/audio.md) for installation and
+them automatically. See [docs/audio.md](https://github.com/SuperInstance/plainsong/blob/master/docs/audio.md) for installation and
 configuration.
 
 Optional extras — NumPy for faster synthesis, ffmpeg for format conversion, mido
@@ -258,7 +258,7 @@ for hardware MIDI — are detected when present and never required.
 plainsong chart song.song -o chart.svg
 ```
 
-![a chord chart rendered from one of the bundled examples](docs/img/creatures-of-interval.svg)
+![a chord chart rendered from one of the bundled examples](https://raw.githubusercontent.com/SuperInstance/plainsong/master/docs/img/creatures-of-interval.svg)
 
 That image is the SVG above, committed to this repository and embedded with an
 `<img>` tag — which is the only way a chart appears in markdown on a platform
@@ -270,7 +270,7 @@ fonts it names. Bars are as wide as their contents need, worked out from the
 same measurements. It reads `prefers-color-scheme`, so it is legible in a dark
 README as well as a light one.
 
-See [docs/chart.md](docs/chart.md), including what it deliberately is not: a
+See [docs/chart.md](https://github.com/SuperInstance/plainsong/blob/master/docs/chart.md), including what it deliberately is not: a
 chord chart rather than an engraver, with no noteheads, staff or beaming.
 
 ## Timing that models the room
@@ -300,7 +300,7 @@ what conductor hears, against the written beat
 The organist's key goes down 241 ms early so the pipe speaks on the beat. At the
 podium everything lands together; at any player's desk it does not, which is why
 an orchestra watches rather than listens. See
-[docs/performance.md](docs/performance.md).
+[docs/performance.md](https://github.com/SuperInstance/plainsong/blob/master/docs/performance.md).
 
 Without a `[Stage]` block none of this applies and written times are taken at
 face value, exactly as before.
@@ -321,7 +321,7 @@ Groq, Mistral, Together, Fireworks, Cerebras, Azure), with local servers (Ollama
 LM Studio, vLLM, llama.cpp), and with **no key at all** when you are already
 running inside another agent such as Claude Code — it borrows the model that is
 already there. Providers are catalogue entries rather than code, so adding one is
-a JSON file. See [docs/providers.md](docs/providers.md).
+a JSON file. See [docs/providers.md](https://github.com/SuperInstance/plainsong/blob/master/docs/providers.md).
 
 Try it with no key and no network at all:
 
@@ -380,21 +380,33 @@ Every command takes `--json`. Use it when parsing output.
 Eight complete pieces ship in the repository, written to be read rather than
 generated. Each one is a template: copy it, change the chords, recompile.
 
+These live in the repository rather than the wheel, so a `pip install` does not
+put them on your disk. Clone, or read them at the links below:
+
 ```bash
-plainsong compile examples/plainsong-1-creatures-of-interval.song --audio out.wav
+git clone https://github.com/SuperInstance/plainsong
+plainsong compile plainsong/examples/plainsong-1-creatures-of-interval.song --audio out.wav
+```
+
+With only `pip install`, the bundled library is the equivalent — several thousand
+charts that *are* shipped:
+
+```bash
+plainsong library "waltz"        # search what came with the package
+plainsong play stand-by-me       # render and play one by name
 ```
 
 | | |
 |---|---|
-| [Creatures of Interval](examples/plainsong-1-creatures-of-interval.song) | Four voices, plain 4/4 — the simplest complete piece |
-| [The Room Is Safe](examples/plainsong-2-the-room-is-safe.song) | Lyrics and melody together |
-| [Hermes Blues](examples/plainsong-3-hermes-blues.song) | Twelve-bar blues with swing |
-| [Closing Time](examples/plainsong-4-closing-time.song) | The relative dialect — roman numerals and scale degrees |
-| [Deck Work](examples/plainsong-5-deck-work.song) | Several named players |
-| [Spacing: melody](examples/plainsong-6-spacing-melody.song) · [chords](examples/plainsong-7-spacing-chords.song) · [dashes](examples/plainsong-8-spacing-dashes.song) | How duration-by-spacing behaves |
+| [Creatures of Interval](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-1-creatures-of-interval.song) | Four voices, plain 4/4 — the simplest complete piece |
+| [The Room Is Safe](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-2-the-room-is-safe.song) | Lyrics and melody together |
+| [Hermes Blues](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-3-hermes-blues.song) | Twelve-bar blues with swing |
+| [Closing Time](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-4-closing-time.song) | The relative dialect — roman numerals and scale degrees |
+| [Deck Work](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-5-deck-work.song) | Several named players |
+| [Spacing: melody](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-6-spacing-melody.song) · [chords](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-7-spacing-chords.song) · [dashes](https://github.com/SuperInstance/plainsong/blob/master/examples/plainsong-8-spacing-dashes.song) | How duration-by-spacing behaves |
 
 And five deliberately awkward files in
-[`examples/edge-cases/`](examples/edge-cases/) — polyrhythm, tempo shifts, dense
+[`examples/edge-cases/`](https://github.com/SuperInstance/plainsong/blob/master/examples/edge-cases/) — polyrhythm, tempo shifts, dense
 chords, players with no chord row, and a kitchen sink. They exist to be
 compiled, not imitated.
 
@@ -406,36 +418,36 @@ plainsong library --collections  # what is in there
 plainsong play stand-by-me       # render and play by name
 ```
 
-See [the songbook](docs/songbook.md) for what is in it and why it is chord
+See [the songbook](https://github.com/SuperInstance/plainsong/blob/master/docs/songbook.md) for what is in it and why it is chord
 charts only.
 
 ## Documentation
 
 | | |
 |---|---|
-| [For agents](AGENTS.md) | **Read this first if you are one.** The contract, and the mistakes agents make here |
-| [Your first song](docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
-| [Arranging](docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
-| [Integration](docs/integration.md) | Driving Plainsong from other software |
-| [Getting started](docs/getting-started.md) | From clone to a finished piece |
-| [Notation reference](docs/notation.md) | The whole language |
-| [Performance timing](docs/performance.md) | Stages, arrival times, conductor directives |
-| [Audio](docs/audio.md) | Rendering to WAV, MP3, and other formats; fluidsynth with soundfonts |
-| [MCP server](docs/mcp.md) | Driving the system from any MCP client |
-| [Ensemble sessions](docs/ensemble.md) | Several agents co-authoring one score |
-| [Providers](docs/providers.md) | Connecting a model, adding your own |
-| [Host bridge](docs/host-bridge.md) | Running under another agent, with no key |
-| [Agents](docs/agents.md) | The composer and build agents, and their tools |
-| [Chords](docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
-| [Voicing](docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
-| [Lyrics](docs/lyrics.md) | Binding syllables to the notes they are sung on, and why padding is not melisma |
-| [Charts](docs/chart.md) | Drawing a chord chart as SVG, and the measurements behind it |
-| [The songbook](docs/songbook.md) | The bundled charts, and the copyright policy they follow |
-| [Connectors](docs/connectors.md) | Getting notation and audio into other systems |
-| [Architecture](docs/architecture.md) | How it fits together, and why |
-| [Specs](docs/specs.md) | The checks the system runs against itself |
-| [Releasing](docs/releasing.md) | How a version is cut |
-| [Contributing](CONTRIBUTING.md) | Getting involved |
+| [For agents](https://github.com/SuperInstance/plainsong/blob/master/AGENTS.md) | **Read this first if you are one.** The contract, and the mistakes agents make here |
+| [Your first song](https://github.com/SuperInstance/plainsong/blob/master/docs/tutorial-first-song.md) | Thirty minutes from install to a piece you wrote |
+| [Arranging](https://github.com/SuperInstance/plainsong/blob/master/docs/tutorial-arranging.md) | Several players, time signatures, and the stage model |
+| [Integration](https://github.com/SuperInstance/plainsong/blob/master/docs/integration.md) | Driving Plainsong from other software |
+| [Getting started](https://github.com/SuperInstance/plainsong/blob/master/docs/getting-started.md) | From clone to a finished piece |
+| [Notation reference](https://github.com/SuperInstance/plainsong/blob/master/docs/notation.md) | The whole language |
+| [Performance timing](https://github.com/SuperInstance/plainsong/blob/master/docs/performance.md) | Stages, arrival times, conductor directives |
+| [Audio](https://github.com/SuperInstance/plainsong/blob/master/docs/audio.md) | Rendering to WAV, MP3, and other formats; fluidsynth with soundfonts |
+| [MCP server](https://github.com/SuperInstance/plainsong/blob/master/docs/mcp.md) | Driving the system from any MCP client |
+| [Ensemble sessions](https://github.com/SuperInstance/plainsong/blob/master/docs/ensemble.md) | Several agents co-authoring one score |
+| [Providers](https://github.com/SuperInstance/plainsong/blob/master/docs/providers.md) | Connecting a model, adding your own |
+| [Host bridge](https://github.com/SuperInstance/plainsong/blob/master/docs/host-bridge.md) | Running under another agent, with no key |
+| [Agents](https://github.com/SuperInstance/plainsong/blob/master/docs/agents.md) | The composer and build agents, and their tools |
+| [Chords](https://github.com/SuperInstance/plainsong/blob/master/docs/chords.md) | Which symbols are understood, and the rules that derive the notes |
+| [Voicing](https://github.com/SuperInstance/plainsong/blob/master/docs/voicing.md) | Which notes sound when a chord names more than fit, and how that was measured |
+| [Lyrics](https://github.com/SuperInstance/plainsong/blob/master/docs/lyrics.md) | Binding syllables to the notes they are sung on, and why padding is not melisma |
+| [Charts](https://github.com/SuperInstance/plainsong/blob/master/docs/chart.md) | Drawing a chord chart as SVG, and the measurements behind it |
+| [The songbook](https://github.com/SuperInstance/plainsong/blob/master/docs/songbook.md) | The bundled charts, and the copyright policy they follow |
+| [Connectors](https://github.com/SuperInstance/plainsong/blob/master/docs/connectors.md) | Getting notation and audio into other systems |
+| [Architecture](https://github.com/SuperInstance/plainsong/blob/master/docs/architecture.md) | How it fits together, and why |
+| [Specs](https://github.com/SuperInstance/plainsong/blob/master/docs/specs.md) | The checks the system runs against itself |
+| [Releasing](https://github.com/SuperInstance/plainsong/blob/master/docs/releasing.md) | How a version is cut |
+| [Contributing](https://github.com/SuperInstance/plainsong/blob/master/CONTRIBUTING.md) | Getting involved |
 
 ## Testing
 
@@ -461,7 +473,7 @@ in the documentation that stopped compiling would fail the build.
 
 ## Status
 
-Version 1.0. The notation, the CLI surface and the provider catalogue format are
+Version 1.2. The notation, the CLI surface and the provider catalogue format are
 stable; changes to them will go through a deprecation cycle.
 
 This release is a rebuild rather than an increment. The previous engine assumed a
@@ -481,7 +493,7 @@ Known limits, in the open:
 - The built-in synthesiser produces mono audio with synthetic timbres. It works
   immediately with no dependencies. For real instrument samples, install
   fluidsynth and a soundfont (five minutes on any OS). See
-  [docs/audio.md](docs/audio.md).
+  [docs/audio.md](https://github.com/SuperInstance/plainsong/blob/master/docs/audio.md).
 - The host bridge cannot stream and reports no token usage.
 - The TUI needs `curses`, which stock Python on Windows does not ship.
 - No third-party MCP client has connected to the server yet; its protocol
@@ -489,9 +501,9 @@ Known limits, in the open:
 - The bundled songbook (`plainsong/songbook/`) is **chord charts only** — melody and lyric rows were removed
   from all 6,309 files. A chord progression is not protectable expression; a tune
   and its words are, and nothing in those generated files recorded provenance.
-  See [docs/songbook.md](docs/songbook.md).
+  See [docs/songbook.md](https://github.com/SuperInstance/plainsong/blob/master/docs/songbook.md).
 - The two earlier engines are in `legacy/`, unmaintained. Nothing imports them.
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/SuperInstance/plainsong/blob/master/LICENSE).

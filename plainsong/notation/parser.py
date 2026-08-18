@@ -346,27 +346,71 @@ class Parser:
             if not value:
                 continue
             try:
-                self._apply_metadata(key, value)
+                self._apply_metadata(key, value, index)
             except Exception as exc:  # never let a header field abort a parse
                 self._note("warning", f"could not read {key} = {value!r} ({exc})", index)
 
-    def _apply_metadata(self, key: str, value: str) -> None:
+    def _apply_metadata(self, key: str, value: str, index: int = 0) -> None:
+        """Read one header field, and say so when it cannot be read.
+
+        Every one of these falls back to a default rather than failing, which is
+        right -- a typo in a header should not cost you the piece. What was
+        wrong is that it fell back in *silence*: `tempo: banna` compiled happily
+        at 100, `time: 3-4` at 4/4, and nothing anywhere said why the piece came
+        out at the wrong speed or in the wrong metre. The parsers below do not
+        raise on nonsense, so the check has to be here.
+        """
         if key == "key":
             self.meta.key = theory.parse_key(value)
+            if not theory.KEY_RE.match(value.strip()):
+                # `parse_key` keeps the text it was given, so an unreadable key
+                # is displayed on a chart while the music sounds in C.
+                # Report what will *sound*, not the text that was kept. The
+                # unreadable text is carried through for display, so a chart
+                # would print `Zz` over music in C and the warning saying "using
+                # Zz major" would be no help at all.
+                sounding = theory.NOTE_NAMES_SHARP[self.meta.key.tonic_pc % 12]
+                self._note(
+                    "warning",
+                    f"key {value!r} is not a key; sounding in {sounding} {self.meta.key.mode}",
+                    index,
+                    hint="a key looks like C, Am, F#m, Bb, or a mode: `key: D dorian`",
+                )
         elif key in {"tempo", "bpm"}:
             number = re.search(r"-?\d+(?:\.\d+)?", value)
             if number:
                 tempo = float(number.group(0))
                 self.meta.tempo = min(max(tempo, 20.0), 400.0)
+            else:
+                self._note(
+                    "warning",
+                    f"tempo {value!r} is not a number; using {self.meta.tempo:g}",
+                    index,
+                    hint="tempo is beats per minute, as in `tempo: 96`",
+                )
         elif key == "swing":
             number = re.search(r"-?\d+(?:\.\d+)?", value)
             if number:
                 swing = float(number.group(0))
                 self.meta.swing = swing / 100.0 if swing > 1 else swing
+            else:
+                self._note(
+                    "warning",
+                    f"swing {value!r} is not a number; using {self.meta.swing:g}",
+                    index,
+                    hint="swing is a percentage, as in `swing: 62%`",
+                )
         elif key == "subdivision":
             self.meta.subdivision = value
         elif key in {"time", "meter"}:
             self.meta.meter = Meter.parse(value)
+            if not Meter.readable(value):
+                self._note(
+                    "warning",
+                    f"time {value!r} is not a metre; using {self.meta.meter}",
+                    index,
+                    hint="a metre is two numbers over a slash, as in `time: 6/8`",
+                )
         else:
             self.meta.extra[key] = value
 

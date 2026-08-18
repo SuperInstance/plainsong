@@ -138,15 +138,30 @@ class Meter:
         return f"{self.numerator}/{self.denominator}"
 
     @classmethod
-    def parse(cls, text: str) -> Meter:
+    def readable(cls, text: str) -> bool:
+        """Whether `parse` will get a metre out of this rather than defaulting.
+
+        The parser needs to tell "you wrote 4/4" from "you wrote nonsense and
+        got 4/4", and it cannot do that from the result alone.
+        """
         try:
-            numerator, _, denominator = text.strip().partition("/")
+            numerator, slash, denominator = text.strip().partition("/")
+        except AttributeError:
+            return False
+        if not slash and not numerator.strip().isdigit():
+            return False
+        try:
             meter = cls(int(numerator), int(denominator or 4))
-            if meter.numerator < 1 or meter.denominator not in (1, 2, 4, 8, 16, 32):
-                return cls()
-            return meter
         except (ValueError, AttributeError):
+            return False
+        return meter.numerator >= 1 and meter.denominator in (1, 2, 4, 8, 16, 32)
+
+    @classmethod
+    def parse(cls, text: str) -> Meter:
+        if not cls.readable(text):
             return cls()
+        numerator, _, denominator = text.strip().partition("/")
+        return cls(int(numerator), int(denominator or 4))
 
 
 @dataclass
