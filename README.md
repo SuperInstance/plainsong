@@ -1,5 +1,11 @@
 # Plainsong
 
+[![PyPI](https://img.shields.io/pypi/v/plainsong.svg)](https://pypi.org/project/plainsong/)
+[![Python](https://img.shields.io/pypi/pyversions/plainsong.svg)](https://pypi.org/project/plainsong/)
+[![CI](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml)
+[![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](#hello-world)
+[![License](https://img.shields.io/pypi/l/plainsong.svg)](https://github.com/SuperInstance/plainsong/blob/master/LICENSE)
+
 Music notation you can write in any text editor, read like a lead sheet, keep in
 version control, and compile to MIDI and audio.
 
@@ -28,9 +34,13 @@ most of it is the mistakes other agents have already made here.
 
 ## Try it without installing anything
 
-`docs/demo/index.html` is a working compiler in one file — parser, arranger, MIDI
-writer, a player and three interactive simulations. Save it and open it; it runs
-from `file://` with no server, no build step and no network.
+**[superinstance.github.io/plainsong](https://superinstance.github.io/plainsong/)**
+— a working compiler in one file: parser, arranger, MIDI writer, a player and
+three interactive simulations.
+
+It is [one HTML file](https://github.com/SuperInstance/plainsong/blob/master/docs/demo/index.html),
+so you can also save it and open it from `file://` with no server, no build step
+and no network. Nothing you type leaves the page.
 
 The simulations are there because two of this system's ideas are hard to believe
 from prose. One shows a bar subdividing as you change how many events it holds.
