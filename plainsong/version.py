@@ -1,6 +1,6 @@
 """Single source of truth for the version number."""
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"
 
 # Notation dialect versions this build understands.
 SUPPORTED_DIALECTS = ("absolute", "relative")
