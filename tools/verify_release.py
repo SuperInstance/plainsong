@@ -193,18 +193,25 @@ def exercise(binary: Path, report: Report, label: str, expect_version: str | Non
             out.splitlines()[-1] if out else "",
         )
 
-        # A MIDI file is not proof of music. Read the note count back.
-        code, out = run([str(plainsong), "info", str(source), "--json"], cwd=outside)
+        # A MIDI file is not proof of music -- an unreadable chord becomes a
+        # rest and still writes a file. Read the note count back.
+        #
+        # `--json` is a global flag and has to precede the subcommand:
+        # `plainsong --json info x`, not `plainsong info x --json`, which
+        # argparse rejects outright. The count is `arrangement.notes`, the
+        # total across tracks; the per-track counts live under
+        # `arrangement.tracks[].notes`.
+        code, out = run([str(plainsong), "--json", "info", str(source)], cwd=outside)
         notes = None
         if code == 0:
             try:
-                notes = json.loads(out).get("notes")
+                notes = json.loads(out).get("arrangement", {}).get("notes")
             except (ValueError, AttributeError):
                 notes = None
         report.check(
             f"[{label}] the compile actually produced notes",
             isinstance(notes, int) and notes > 0,
-            f"notes={notes}",
+            f"arrangement.notes={notes}",
         )
 
         code, out = run([str(plainsong), "chart", str(source), "-o", str(work / "out.svg")], cwd=outside)
