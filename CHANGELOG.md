@@ -2,7 +2,17 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.3.0 — 2026-08-18
+
+A minor rather than a patch on two counts: `Meter.readable` and `theory.KEY_RE`
+are new public names, and unreadable header values now produce diagnostics that
+were not there before — which changes what `check` reports for anyone counting
+warnings in CI. No notation changes: 6,321 files compile to exactly the music
+they did in 1.0.0.
+
+Also the release workflow passes `skip-existing`, so a run whose artifacts are
+already on PyPI completes instead of dying on duplicates. That is what has been
+blocking the GitHub Release notes for 1.0.1, 1.1.0 and 1.2.0.
 
 ### Header typos were swallowed in silence
 
