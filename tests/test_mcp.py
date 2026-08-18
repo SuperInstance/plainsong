@@ -7,6 +7,7 @@ format rather than the Python behind it.
 
 from __future__ import annotations
 
+import http.client
 import io
 import json
 import tempfile
@@ -325,6 +326,76 @@ class TestHttpTransport(unittest.TestCase):
     def test_cross_origin_is_refused(self) -> None:
         status, _ = self.post(message("ping"), {"Origin": "http://elsewhere.example"})
         self.assertEqual(status, 403)
+
+    def test_a_rebound_hostname_is_refused_even_though_origin_matches_host(self) -> None:
+        """DNS rebinding defeats an Origin-against-Host check on its own.
+
+        An attacker points `evil.example` at 127.0.0.1. A page served from that
+        domain then sends Origin and Host both reading `evil.example` -- they
+        match perfectly, and a check that only compares the two waves it
+        through to a tool that writes files. Requiring Host to name this
+        machine breaks it, because a rebound request always carries the
+        attacker's hostname.
+
+        This guard existed here and not in `SuperInstance/plainsong-mcp`, the
+        copy people `pip install`, and sat that way for months because nothing
+        in either repository could notice. It is pinned on both sides now.
+        """
+        body = message("ping").encode("utf-8")
+        connection = http.client.HTTPConnection("127.0.0.1", self.http.server_port, timeout=10)
+        self.addCleanup(connection.close)
+        connection.putrequest("POST", "/", skip_host=True, skip_accept_encoding=True)
+        connection.putheader("Host", "evil.example")
+        connection.putheader("Origin", "http://evil.example")
+        connection.putheader("Content-Type", "application/json")
+        connection.putheader("Content-Length", str(len(body)))
+        connection.endheaders()
+        connection.send(body)
+
+        self.assertEqual(connection.getresponse().status, 403)
+
+    def test_a_rebound_hostname_is_refused_with_no_origin_at_all(self) -> None:
+        """Origin is optional, and a non-browser client simply omits it.
+
+        So the Host check cannot live inside the branch that compares them:
+        with no Origin to disagree with, an Origin-only guard has nothing to
+        say and lets the request through. `_host_is_local` runs first, before
+        Origin is ever read, and this is the test that holds it there.
+        """
+        body = message("ping").encode("utf-8")
+        connection = http.client.HTTPConnection("127.0.0.1", self.http.server_port, timeout=10)
+        self.addCleanup(connection.close)
+        connection.putrequest("POST", "/", skip_host=True, skip_accept_encoding=True)
+        connection.putheader("Host", "evil.example")
+        connection.putheader("Content-Type", "application/json")
+        connection.putheader("Content-Length", str(len(body)))
+        connection.endheaders()
+        connection.send(body)
+
+        self.assertEqual(connection.getresponse().status, 403)
+
+    def test_the_loopback_names_this_machine_answers(self) -> None:
+        """The guard has to admit the names a local client actually sends.
+
+        Refusing everything would pass both tests above and break the server,
+        so this is the other half: `localhost`, `127.0.0.1` and a port suffix
+        are all this machine.
+        """
+        for host in ("localhost", "127.0.0.1", "127.0.0.1:1", "[::1]"):
+            with self.subTest(host=host):
+                body = message("ping").encode("utf-8")
+                connection = http.client.HTTPConnection(
+                    "127.0.0.1", self.http.server_port, timeout=10
+                )
+                self.addCleanup(connection.close)
+                connection.putrequest("POST", "/", skip_host=True, skip_accept_encoding=True)
+                connection.putheader("Host", host)
+                connection.putheader("Content-Type", "application/json")
+                connection.putheader("Content-Length", str(len(body)))
+                connection.endheaders()
+                connection.send(body)
+
+                self.assertEqual(connection.getresponse().status, 200)
 
     def test_get_reports_what_is_served(self) -> None:
         with urllib.request.urlopen(self.url, timeout=10) as response:

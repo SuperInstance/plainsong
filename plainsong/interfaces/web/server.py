@@ -20,6 +20,7 @@ from typing import Any
 from urllib.parse import parse_qs, unquote, urlparse
 
 from ...runtime.config import Config, load_config
+from ...runtime.localhost import bind_is_loopback, host_is_local
 from ...version import __version__
 
 WEB_ROOT = Path(__file__).parent
@@ -197,18 +198,10 @@ def build_handler(config: Config):
         def _host_is_local(self) -> bool:
             """Whether the Host header names this machine rather than a domain.
 
-            Comparing Origin against Host alone is defeated by DNS rebinding: an
-            attacker points `evil.example` at 127.0.0.1, and a page on that
-            domain then sends Origin and Host both reading `evil.example`, which
-            match perfectly. Requiring the Host to be a loopback name breaks
-            that, because a rebound request always carries the attacker's
-            hostname in Host.
+            Comparing Origin against Host alone is defeated by DNS rebinding;
+            see `runtime.localhost`, which both local servers share.
             """
-            host = self.headers.get("Host", "")
-            name = host.rsplit(":", 1)[0].strip("[]").lower() if host else ""
-            return name in {"localhost", "127.0.0.1", "::1", "0.0.0.0", ""} or name.startswith(
-                "127."
-            )
+            return host_is_local(self.headers.get("Host", ""))
 
         def _same_origin(self) -> bool:
             """Reject cross-origin writes; this is a local tool, not an API."""
@@ -346,7 +339,7 @@ def serve(
         out.head("plainsong web")
         out.say(f"  {url}")
         out.dim(f"  workspace {config.paths.workspace}")
-        if host not in ("127.0.0.1", "localhost", "::1"):
+        if not bind_is_loopback(host):
             out.warn("bound to a non-loopback address -- anyone who can reach this port can use it")
         out.say()
         out.dim("  ctrl-c to stop")

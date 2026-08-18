@@ -483,7 +483,7 @@ in the documentation that stopped compiling would fail the build.
 
 ## Status
 
-Version 1.3. The notation, the CLI surface and the provider catalogue format are
+Version 1.4. The notation, the CLI surface and the provider catalogue format are
 stable; changes to them will go through a deprecation cycle.
 
 This release is a rebuild rather than an increment. The previous engine assumed a
