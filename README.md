@@ -1,5 +1,9 @@
 # Plainsong
 
+<p align="center">
+  <img src="assets/images/hero-musicbox.jpg" alt="The band lives in the music — a music box open on a glowing sheet of plainsong" width="640">
+</p>
+
 [![PyPI](https://img.shields.io/pypi/v/plainsong.svg)](https://pypi.org/project/plainsong/)
 [![Python](https://img.shields.io/pypi/pyversions/plainsong.svg)](https://pypi.org/project/plainsong/)
 [![CI](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml)
