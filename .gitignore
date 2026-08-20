@@ -23,3 +23,6 @@ tools/plainsong-songs.sql
 tools/features-fixture.json
 tools/plainsong-discovered-edges.json
 tools/edges-queries-cache.jsonl
+
+# wrangler local state
+.wrangler/

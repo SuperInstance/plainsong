@@ -1,0 +1,24 @@
+// plainsong-feel — the Feel Radio worker.
+// One deploy: the HTML page + JSON API over the existing D1 + Vectorize data.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plainsong-feel",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-01",
+  "account_id": "049ff5e84ecf636b53b162cbb580aae6",
+
+  "vectorize": [
+    {
+      "binding": "VECTORIZE_INDEX",
+      "index_name": "plainsong-feel"
+    }
+  ],
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "plainsong",
+      "database_id": "bb0cbc42-0397-4052-9299-cd423fe7113d"
+    }
+  ]
+}
