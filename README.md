@@ -492,6 +492,9 @@ in the documentation that stopped compiling would fail the build.
 | [plainsong-worker](https://github.com/SuperInstance/plainsong-worker) | Cloudflare Worker version of this compiler — runs Plainsong on the edge |
 | [fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi) | Takes Plainsong notation as input; JEPA perceives the feel. Its conductor-directive vocabulary is the one `plainsong.perform.conduct` speaks. |
 | [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble) | Renders Plainsong scores as agentic performances |
+| [tapscript-studio](https://github.com/SuperInstance/tapscript-studio) | The retired parent — the studio this compiler grew out of; the notation dialect survives as TapScript |
+| [fleet-radio](https://github.com/SuperInstance/fleet-radio) | Plays the output — its music library and broadcasts are where compiled Plainsong reaches listeners |
+| [AI-Writings](https://github.com/SuperInstance/AI-Writings) | Holds the corpus — the music, lyrics, and BPM-study wings the notation serves |
 
 ## Status
 
