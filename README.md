@@ -1,4 +1,4 @@
-# Plainsong
+# TapScript Studio
 
 <p align="center">
   <img src="assets/images/hero-musicbox.jpg" alt="The band lives in the music — a music box open on a glowing sheet of plainsong" width="640">
@@ -6,7 +6,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/plainsong.svg)](https://pypi.org/project/plainsong/)
 [![Python](https://img.shields.io/pypi/pyversions/plainsong.svg)](https://pypi.org/project/plainsong/)
-[![CI](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/plainsong/actions/workflows/ci.yml)
+[![CI](https://github.com/SuperInstance/tapscript-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/tapscript-studio/actions/workflows/ci.yml)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](#hello-world)
 [![License](https://img.shields.io/pypi/l/plainsong.svg)](https://github.com/SuperInstance/plainsong/blob/master/LICENSE)
 
@@ -272,7 +272,7 @@ for hardware MIDI — are detected when present and never required.
 plainsong chart song.song -o chart.svg
 ```
 
-![a chord chart rendered from one of the bundled examples](https://raw.githubusercontent.com/SuperInstance/plainsong/master/docs/img/creatures-of-interval.svg)
+![a chord chart rendered from one of the bundled examples](docs/img/creatures-of-interval.svg)
 
 That image is the SVG above, committed to this repository and embedded with an
 `<img>` tag — which is the only way a chart appears in markdown on a platform
