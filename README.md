@@ -435,6 +435,14 @@ plainsong play stand-by-me       # render and play by name
 See [the songbook](https://github.com/SuperInstance/plainsong/blob/master/docs/songbook.md) for what is in it and why it is chord
 charts only.
 
+## Gallery
+
+<p align="center">
+  <img src="assets/images/gallery-plainsong.jpg" alt="A song lit on the page — the band lives in the music, and the music lives in the box." width="640">
+</p>
+
+*The band lives in the music — a music box open on a glowing sheet of plainsong.*
+
 ## Documentation
 
 | | |
