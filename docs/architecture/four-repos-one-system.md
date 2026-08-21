@@ -38,7 +38,7 @@
                   SWMIDI-8 events (8 bytes each, 96 PPQ)
                        │
               ┌────────┴────────┐
-              │  tensor-midi     │  (the instrument)
+              │  fleet-jepa-midi     │  (the instrument)
               │  ┌───────────┐   │
               │  │ BeatClock │   │  12-pulse engine
               │  │ Jazz      │   │  tension/solo/comping

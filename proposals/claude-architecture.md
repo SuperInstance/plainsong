@@ -2,7 +2,7 @@
 ### Systems angle — compiler, type system, async event model, DAW renderer
 **Author:** Claude (Piano — systems thinker) · **Date:** 2026-08-12
 
-> Note on process: I polled for `scripts/architecture-brief.md` every 10s for 2 minutes per instructions; it never appeared. This proposal is grounded instead in the three source documents I was told to read — `tensor-midi/README.md`, `POLYFORMALISM.md`, `src/swmidi.js` — plus the existing `scripts/plainsong.py` prototype, which already implements a first draft of the notation this proposal formalizes and extends.
+> Note on process: I polled for `scripts/architecture-brief.md` every 10s for 2 minutes per instructions; it never appeared. This proposal is grounded instead in the three source documents I was told to read — `fleet-jepa-midi/README.md`, `POLYFORMALISM.md`, `src/swmidi.js` — plus the existing `scripts/plainsong.py` prototype, which already implements a first draft of the notation this proposal formalizes and extends.
 
 ---
 

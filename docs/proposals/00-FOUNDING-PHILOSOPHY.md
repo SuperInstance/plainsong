@@ -56,7 +56,7 @@ This is fishing. You cast conditions into the water. You listen for bites. Most 
 
 ## Connection to Tensor-MIDI
 
-The tensor-midi system already understands this: the conversation IS the music. Messages become notes. Sentiment becomes harmony. The 3:4 polyrhythm resolving at 12 is the mathematical structure under which emergence happens — the Chinese Remainder Theorem guarantees that two independent rhythms (3 and 4) will meet on beat 1, creating resolution. That's not composition — that's the condition for resolution to emerge.
+The fleet-jepa-midi system already understands this: the conversation IS the music. Messages become notes. Sentiment becomes harmony. The 3:4 polyrhythm resolving at 12 is the mathematical structure under which emergence happens — the Chinese Remainder Theorem guarantees that two independent rhythms (3 and 4) will meet on beat 1, creating resolution. That's not composition — that's the condition for resolution to emerge.
 
 The Platonic Randomness engine adds another layer: different Platonic solids = different feels. Tetrahedron (combat) is fast and readable. Icosahedron (social) is pulse-grid aligned. The CHOICE OF SOLID IS A MUSICAL DECISION.
 

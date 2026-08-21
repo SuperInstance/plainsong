@@ -14,7 +14,7 @@ Plainsong v2 is a working compiler. It parses pipe-delimited monospace notation 
 
 v3 makes the grid real.
 
-The compiler pipeline has five stages, each with exact data structures. The intermediate representation is SWMIDI-8 — an 8-byte-per-event wire format already designed for the tensor-midi project. Every backend (MIDI file, WAV, live stream) consumes the same IR. The temporal model is the tensor-midi 12-pulse architecture: 12/8 internal representation, 96 PPQ grid, convergent ECN/DMN firing patterns.
+The compiler pipeline has five stages, each with exact data structures. The intermediate representation is SWMIDI-8 — an 8-byte-per-event wire format already designed for the fleet-jepa-midi project. Every backend (MIDI file, WAV, live stream) consumes the same IR. The temporal model is the fleet-jepa-midi 12-pulse architecture: 12/8 internal representation, 96 PPQ grid, convergent ECN/DMN firing patterns.
 
 The grammar is formal. The structural analysis recommendations — slot validation, empty-bar preservation, per-section metadata, meter declaration, tuplets — are in the production rules, not bolted on.
 
@@ -307,7 +307,7 @@ The SWMIDI-8 wire format IS the intermediate representation. This stage converts
 // SWMIDI-8 Event: exactly 8 bytes
 // This is the IR. Every backend consumes this format.
 interface SWMIDIEvent {
-  // Byte layout (see tensor-midi/src/swmidi.js for canonical implementation)
+  // Byte layout (see fleet-jepa-midi/src/swmidi.js for canonical implementation)
   // 
   // Byte 0: [status:4][channel:4]
   // Byte 1: [data1:8]   (pitch / CC number / program)
@@ -511,7 +511,7 @@ At 96 PPQ, each pulse = 8 ticks (96 ÷ 12 = 8). This gives sub-pulse resolution 
 
 ### 3.2 The 3:4 Polyrhythm: ECN and DMN
 
-The tensor-midi architecture defines two neural circuits that fire on different subdivisions of the 12-pulse bar:
+The fleet-jepa-midi architecture defines two neural circuits that fire on different subdivisions of the 12-pulse bar:
 
 ```
 Pulse:    1  2  3  4  5  6  7  8  9  10  11  12
@@ -1192,7 +1192,7 @@ The flow state protector can then modify the PulseGrid in real-time (during live
 
 ## 8. REFERENCES
 
-- **SWMIDI-8 Wire Format**: `tensor-midi/src/swmidi.js` (canonical JS implementation, 210 lines)
+- **SWMIDI-8 Wire Format**: `fleet-jepa-midi/src/swmidi.js` (canonical JS implementation, 210 lines)
 - **harmony-core**: `slackwater-rust` (Rust crate, Hurst exponent + Shannon entropy + Φ)
 - **slackwater-tempo**: Python package (BeatClock, GrooveEngine, EnergyAdapter, GameState)
 - **vibe-protocol**: TS/Python/Rust (16-dimensional room descriptors)

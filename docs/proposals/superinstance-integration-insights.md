@@ -6,7 +6,7 @@ Plainsong isn't being built from scratch. It's the **unification layer** that co
 
 ## The Six Systems Plainsong Unifies
 
-### 1. tensor-midi → The Compiler Target
+### 1. fleet-jepa-midi → The Compiler Target
 - SWMIDI-8 wire format (8 bytes per event, 96 PPQ)
 - 12-pulse engine with 3:4 polyrhythm architecture
 - Chinese Remainder Theorem in audio: t ≡ 0 (mod 3) and t ≡ 0 (mod 4) ⟺ t ≡ 0 (mod 12)
@@ -85,6 +85,6 @@ Plainsong Source (plain text in markdown)
 2. **Use slackwater-tempo BeatClock** as Plainsong's timing source
 3. **Route Plainsong jams through emergence-engine** to detect gold moments
 4. **Use stigmergy for async blank-bar invitations** — compositions as pheromone trails
-5. **Compile to tensor-midi's SWMIDI-8** as the wire format for inter-agent audio
+5. **Compile to fleet-jepa-midi's SWMIDI-8** as the wire format for inter-agent audio
 
 The fleet already built every component. Plainsong is the bolt that holds them together.

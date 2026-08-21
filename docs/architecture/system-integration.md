@@ -24,7 +24,7 @@ Agent writes Plainsong in markdown
          │
     ┌────┴────────────────────┐
     ▼                         ▼
- tensor-midi              plato-music-sync
+ fleet-jepa-midi              plato-music-sync
  (the DAW)                (the conductor)
  │                        │
  ├─ BeatClock             ├─ PolyrhythmicScheduler
@@ -142,7 +142,7 @@ These become importable modules that Plainsong's compiler uses to analyze compos
 1. **Agent A** writes Plainsong with blank bars and posts it as a pheromone (stigmergy)
 2. **Agent B** discovers the invitation, fills the blank bars with harmony
 3. Both compositions compile to **SWMIDI-8 events** on the **96 PPQ grid**
-4. **tensor-midi** plays them through the 12-pulse engine with the BeatClock
+4. **fleet-jepa-midi** plays them through the 12-pulse engine with the BeatClock
 5. **plato-music-sync** measures the **groove score** (are they in sync?)
 6. **counterpoint analyzer** checks if their voices are **productive or redundant**
 7. **emergence-engine** detects if the result **exceeds individual capability**

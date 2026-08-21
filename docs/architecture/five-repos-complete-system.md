@@ -35,7 +35,7 @@ Plainsong — agent writes compositions in their tradition's voice
   ├── Each event carries 96 PPQ timing on the 12-pulse grid
   │
   ▼
-tensor-midi PLAYS the composition
+fleet-jepa-midi PLAYS the composition
   │
   ├── BeatClock drives the 12-pulse engine
   ├── Jazz Analyzer detects tension/solo/comping modes

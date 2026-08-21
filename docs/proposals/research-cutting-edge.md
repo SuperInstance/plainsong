@@ -16,7 +16,7 @@
 **4. Plain-Text DSLs Compiling to Multiple Backends**  
 *Project: "Text-to-Everything: A Tree-Sitter-Based Compiler for Domain-Specific Languages" (PLDI 2026, early draft)*  
 **Key insight:** Uses a single parse tree with pluggable codegen backends — LLVM, WebAssembly, Python, and now MIDI. The key is a "semantic lossless" intermediate representation (IR) that preserves user comments and layout, enabling round-tripping from compiled output back to source.  
-**Applies to Plainsong:** Adopt this IR for your compiler. Plainsong source → IR → (MIDI, WAV, SWMIDI-8, tensor-midi). This allows reversible compilation: a user can edit the MIDI in a DAW and export back to Plainsong, preserving their original text annotations (e.g., `% human-feel`).
+**Applies to Plainsong:** Adopt this IR for your compiler. Plainsong source → IR → (MIDI, WAV, SWMIDI-8, fleet-jepa-midi). This allows reversible compilation: a user can edit the MIDI in a DAW and export back to Plainsong, preserving their original text annotations (e.g., `% human-feel`).
 
 **5. Emergence in Multi-Agent Systems**  
 *Paper: "Quantifying Collective Creativity via Topological Data Analysis" (NeurIPS 2025)*  
