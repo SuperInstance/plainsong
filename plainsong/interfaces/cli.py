@@ -879,8 +879,16 @@ def cmd_spec(args: argparse.Namespace, config: Config, out: Out) -> int:
     results = verify_all(paths=config.paths, tag=args.tag)
     out.data([result.as_dict() for result in results])
     if not results:
-        out.warn("no specs found")
-        return 0
+        # Finding nothing to verify is not success. The specs once shipped
+        # outside the package, so every pip install answered "no specs found"
+        # and exited 0 -- the self-verification the whole design leans on,
+        # quietly doing nothing, with every caller reading that zero as a pass.
+        # A packaging regression has to be loud here or it is invisible.
+        if args.tag:
+            out.warn(f"no specs are tagged {args.tag!r}")
+        else:
+            out.warn("no specs found -- this install is missing its spec files")
+        return 1
     out.say(format_results(results, verbose=args.verbose))
     return 1 if any(result.status == "FAIL" for result in results) else 0
 
