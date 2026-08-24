@@ -16,9 +16,11 @@ Every command takes `--json` and prints one JSON object on stdout.
 plainsong --json info song.song
 ```
 
-**The flag goes before the subcommand.** `plainsong --json info song.song`
-works; `plainsong info --json song.song` does not. It is a global option, and
-this catches nearly everyone once.
+**The flag works in either position.** `plainsong --json info song.song` and
+`plainsong info song.song --json` are the same command. The second used to be
+refused, which caught nearly everyone once -- including this project's own
+release checker -- so it is now accepted rather than explained. The same goes
+for `-v` and `-q`.
 
 | Command | Top-level keys |
 |---|---|
@@ -173,7 +175,8 @@ a client should install it from.
 
 Collected because every one of these cost somebody time:
 
-1. **`--json` goes before the subcommand.**
+1. **`--json` works before or after the subcommand.** It did not always;
+   if you are on 1.4.0 or older it must come first.
 2. **JSON and HTTP APIs use `content`**; the CLI takes a file path positionally.
 3. **MCP tool names differ from CLI command names** (`compile_score` vs
    `compile`).
