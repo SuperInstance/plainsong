@@ -4,6 +4,21 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### `--help` now shows the shape of the notation
+
+Every small model observed driving this CLI cold ran `--help` first. The ones
+that reached `plainsong new` were fine -- it writes a correct file and they read
+the format off it, and one reached for it even when told not to. The ones that
+could not, because they were adding a file to an existing project, guessed. They
+guessed `Title:`, which is not the notation, and got a dropped title and a
+phantom section for it.
+
+Six lines of `--help` remove the guess. Because those lines are now a claim
+about the language, they are held to the same bar as a fenced block in the
+prose: `tests/test_runtime.py::TestTheHelpTeachesRealNotation` compiles the
+sample, requires it to sound, and requires it to produce no diagnostics. Putting
+`Title:` in the help fails two of those three.
+
 ### Global flags now work in either position
 
 `plainsong info song.song --json` was refused outright -- `unrecognized

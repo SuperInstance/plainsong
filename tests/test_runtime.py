@@ -5,6 +5,7 @@ from __future__ import annotations
 import io
 import json
 import os
+import re
 import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
@@ -38,6 +39,45 @@ def run_cli(*argv: str) -> tuple[int, str, str]:
     with redirect_stdout(out), redirect_stderr(err):
         code = main(list(argv))
     return code, out.getvalue(), err.getvalue()
+
+
+class TestTheHelpTeachesRealNotation(unittest.TestCase):
+    """`--help` now shows the shape of the notation, so it has to be true.
+
+    Every small model observed driving this CLI cold ran `--help` first. The
+    ones that could not reach `plainsong new` guessed the format, guessed
+    `Title:`, and got a dropped title and a phantom section. The sample closes
+    that guess -- which makes it a promise, held to the same bar as a fenced
+    block in the prose: it must compile, and it must make a sound.
+    """
+
+    def _sample(self) -> str:
+        from plainsong.interfaces.cli import NOTATION_AT_A_GLANCE
+
+        lines = [
+            re.sub(r"\s{2,}<- .*$", "", line[2:])
+            for line in NOTATION_AT_A_GLANCE.splitlines()
+            if line.startswith("  ")
+        ]
+        return "\n".join(lines) + "\n"
+
+    def test_it_compiles_and_sounds(self) -> None:
+        from plainsong.notation import arrange, parse
+
+        arrangement = arrange(parse(self._sample()))
+        self.assertGreater(arrangement.note_count, 0, "the help sample is silent")
+
+    def test_it_produces_no_diagnostics(self) -> None:
+        """A sample that warns is teaching the warning."""
+        from plainsong.notation import arrange, parse
+
+        arrangement = arrange(parse(self._sample()))
+        self.assertEqual([d.format() for d in arrangement.diagnostics], [])
+
+    def test_it_names_the_title_row_the_parser_actually_wants(self) -> None:
+        from plainsong.notation import parse
+
+        self.assertEqual(parse(self._sample()).meta.title, "Title")
 
 
 class TestGlobalFlagsWorkInBothPositions(unittest.TestCase):

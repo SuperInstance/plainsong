@@ -35,6 +35,29 @@ Melody: | F4 . A4 C5 | G4 . B4 D5 | A4 . C5 E5 | A4 . . . |
 """
 
 
+# Every agent observed driving this CLI cold ran `--help` first, and the ones
+# that could not reach `plainsong new` -- writing a file into an existing
+# project rather than scaffolding one -- had to guess the shape of the notation.
+# They guessed `Title:`, which is not it, and got a dropped title and a phantom
+# section for it. Six lines here cost nothing and remove the guess.
+NOTATION_AT_A_GLANCE = """\
+The notation, in one section:
+
+  **TRACK: Title**            <- the title. `Title:` is not it.
+  [MetaData]
+  key: Am | tempo: 96 | time: 4/4
+
+  [V1] (Verse - 2 Bars)       <- a section
+  Chords: | Am . . . | F . . . |
+  Melody: | A4 . C5 E5 | F4 . A4 C5 |
+
+A bar is one bar long and its tokens divide it, so three tokens are triplets and
+you never write durations. Rows of different kinds sound together.
+
+Start with: plainsong new, then plainsong compile <file> --play
+Flags (--json, -v, -q) work before or after the subcommand."""
+
+
 # --------------------------------------------------------------------------
 # output helpers
 # --------------------------------------------------------------------------
@@ -1240,7 +1263,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="plainsong",
         description="Plain-text music notation that compiles to MIDI and audio.",
-        epilog="Start with: plainsong new, then plainsong compile <file> --play",
+        epilog=NOTATION_AT_A_GLANCE,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--version", action="version", version=f"plainsong {__version__}")
