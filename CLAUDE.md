@@ -69,7 +69,11 @@ python3 -m plainsong setup                   # connect a model
 python3 -m plainsong build                   # tailor this install to the machine
 ```
 
-Every command takes `--json`. Use it when parsing output.
+Every command takes `--json`, but it is a **global** flag and goes before the
+subcommand: `plainsong --json info song.song`. Written after it, argparse
+refuses the whole invocation with `unrecognized arguments: --json`. Use it when
+parsing output, and note the totals live under `arrangement` -- `arrangement.notes`
+is the note count, not a top-level key.
 
 Run the suite with `discover`, not by naming files. Several tests are about how
 modules behave when imported in a particular order, and a single-file run can
@@ -255,10 +259,13 @@ re-parse to fetch diagnostics you have already computed.
 
 Related, and the reason that matters: an unrecognised token silently became a
 rest. `Xm9` compiled "ok, 0 warnings" and produced a bar of nothing. It now
-warns. Turning that on immediately found that `EbMaj7`, `G7alt` and `CM7` are
-legitimate spellings the chord parser does not accept and has been quietly
-dropping — still open, and it wants a spec and a changelog entry because it
-changes how existing notation compiles.
+warns. Turning that on immediately found that `EbMaj7`, `G7alt` and `CM7` were
+legitimate spellings the chord parser did not accept and had been quietly
+dropping. **That is fixed** -- all three parse, and `chordsymbol.parse_symbol`
+is the place to confirm it rather than this paragraph. The lesson the entry is
+kept for is the one that generalises: the warning is what found them. Before
+it, an unreadable chord and a deliberate rest were the same silence, and the
+compiler reported `ok` for both.
 
 ## Changing the notation
 
@@ -289,7 +296,10 @@ It lives inside the package because `plainsong library` and
 `plainsong play stand-by-me` found nothing for anyone who had not cloned.
 
 Two side effects worth knowing: the ~3,800 bar-count warnings this directory was
-famous for came from those rows and are now 2.
+famous for came from those rows and are now 1 -- the Hungarian Rhapsody's
+`time: 2/4 (Lassan) then 4/4 (Friska)`, a human annotation the metre field
+cannot express. That file is deliberately left alone, because changing the
+metre would change the music.
 
 ## Rough edges
 
