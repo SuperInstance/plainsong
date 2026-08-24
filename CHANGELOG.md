@@ -2,7 +2,19 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
-## Unreleased
+## 1.5.0 — 2026-08-24
+
+A minor rather than a patch: the CLI accepts flags it used to refuse, `--verbose`
+shows a severity that was previously displayed nowhere, and `plainsong spec`
+exits non-zero on finding no specs where it used to exit 0. Nothing about the
+notation changes -- 6,321 files compile to exactly the music they did in 1.0.0,
+which the corpus fingerprint checks rather than assumes.
+
+The one thing to read before upgrading: **`plainsong spec` now fails when it
+finds nothing.** A script that ran it against an install missing its spec files
+and treated 0 as success will now see a failure. That is the point -- that exact
+silence is what let a broken package through a release.
+
 
 ### `--help` now shows the shape of the notation
 
