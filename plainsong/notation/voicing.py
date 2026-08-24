@@ -39,15 +39,15 @@ DEFAULT_STRATEGY = "guide"
 #: the chord's identity. Everything above the seventh sits between the two
 #: groups: more expendable than a guide tone, far less expendable than a fifth.
 DROP_ORDER: dict[int, int] = {
-    5: 0,    # first to go
-    1: 1,    # then the root
-    11: 2,   # then the eleventh, which is the muddiest extension
+    5: 0,  # first to go
+    1: 1,  # then the root
+    11: 2,  # then the eleventh, which is the muddiest extension
     9: 3,
     13: 4,
     6: 5,
     2: 5,
     4: 5,
-    3: 9,    # never, in practice
+    3: 9,  # never, in practice
     7: 9,
 }
 
@@ -178,7 +178,7 @@ def voice(
     if not degrees:
         offsets = sorted(set(chord.intervals()))
         kept = offsets[:limit] if limit else offsets
-        return Voicing(tuple(root + o for o in kept), tuple(offsets[len(kept):]))
+        return Voicing(tuple(root + o for o in kept), tuple(offsets[len(kept) :]))
 
     chosen = STRATEGIES.get(strategy, _guide)(degrees, root, limit)
     notes = [n for n in chosen.notes if 0 <= n <= 127]

@@ -100,9 +100,7 @@ class TestToolsRegisterInjection(unittest.TestCase):
         fake = fake_ensemble_module(calls)
         with tempfile.TemporaryDirectory() as raw:
             registry = build_registry(Path(raw))
-            mcp_tools.register(
-                registry, session_root=Path(raw) / "sessions", ensemble=fake
-            )
+            mcp_tools.register(registry, session_root=Path(raw) / "sessions", ensemble=fake)
             self.assertEqual(len(registry.specs()), 27, "injection must not add or drop tools")
 
             text, failed = registry.call_result("ensemble_status", {})

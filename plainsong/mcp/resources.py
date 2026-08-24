@@ -78,8 +78,7 @@ TEMPLATES = [
     Template(
         f"{SCHEME}://session/{{name}}",
         "ensemble session",
-        "The state of one ensemble session: header, form, voices, claims and the "
-        "current merged score.",
+        "The state of one ensemble session: header, form, voices, claims and the current merged score.",
         JSON,
     ),
     Template(
@@ -133,15 +132,12 @@ class Resources:
             Resource(
                 f"{SCHEME}://capabilities",
                 "host capabilities",
-                "What this machine can do: optional libraries, soundfonts, MIDI ports, "
-                "audio playback.",
+                "What this machine can do: optional libraries, soundfonts, MIDI ports, audio playback.",
                 JSON,
             ),
         ]
         for spec in self._specs():
-            found.append(
-                Resource(f"{SCHEME}://spec/{spec.id}", f"spec: {spec.id}", spec.title, JSON)
-            )
+            found.append(Resource(f"{SCHEME}://spec/{spec.id}", f"spec: {spec.id}", spec.title, JSON))
         for name in self._sessions():
             found.append(
                 Resource(

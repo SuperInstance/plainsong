@@ -25,7 +25,13 @@ __all__ = ["TOMLDecodeError", "load", "loads"]
 BARE_KEY_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-")
 
 ESCAPES = {
-    '"': '"', "\\": "\\", "b": "\b", "f": "\f", "n": "\n", "r": "\r", "t": "\t",
+    '"': '"',
+    "\\": "\\",
+    "b": "\b",
+    "f": "\f",
+    "n": "\n",
+    "r": "\r",
+    "t": "\t",
 }
 
 

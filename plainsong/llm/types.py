@@ -69,7 +69,9 @@ class Message:
             role=data.get("role", "user"),
             content=data.get("content", "") or "",
             tool_calls=[
-                ToolCall(id=call.get("id", ""), name=call.get("name", ""), arguments=call.get("arguments", {}))
+                ToolCall(
+                    id=call.get("id", ""), name=call.get("name", ""), arguments=call.get("arguments", {})
+                )
                 for call in data.get("tool_calls", [])
             ],
             tool_call_id=data.get("tool_call_id", ""),
@@ -120,9 +122,7 @@ def _strip_unsupported(schema: dict[str, Any]) -> dict[str, Any]:
         if isinstance(value, dict):
             cleaned[key] = _strip_unsupported(value)
         elif isinstance(value, list):
-            cleaned[key] = [
-                _strip_unsupported(item) if isinstance(item, dict) else item for item in value
-            ]
+            cleaned[key] = [_strip_unsupported(item) if isinstance(item, dict) else item for item in value]
         else:
             cleaned[key] = value
     return cleaned

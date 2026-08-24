@@ -45,12 +45,12 @@ class Placement:
     """One written token, positioned on the common matrix."""
 
     token: str
-    row: str        # "chords" | "melody" | "lyrics" | "player:bass"
-    kind: str       # note | chord | sustain | rest | text
-    bar: int        # absolute bar index from the start of the piece
-    onset: float    # beats from the start of the piece
-    width: float    # beats
-    unit: float     # position within its own bar, 0.0 <= unit < 1.0
+    row: str  # "chords" | "melody" | "lyrics" | "player:bass"
+    kind: str  # note | chord | sustain | rest | text
+    bar: int  # absolute bar index from the start of the piece
+    onset: float  # beats from the start of the piece
+    width: float  # beats
+    unit: float  # position within its own bar, 0.0 <= unit < 1.0
 
     @property
     def sounds(self) -> bool:
@@ -77,9 +77,7 @@ class TimeGrid:
         unit = position - bar
         if unit < _EPSILON:
             unit = 0.0
-        placement = Placement(
-            token=token, row=row, kind=kind, bar=bar, onset=onset, width=width, unit=unit
-        )
+        placement = Placement(token=token, row=row, kind=kind, bar=bar, onset=onset, width=width, unit=unit)
         self.placements.append(placement)
         return placement
 
@@ -139,10 +137,6 @@ class TimeGrid:
         reader would say are in the same column, as opposed to the ones that
         merely look that way."""
         return sorted(
-            (
-                p
-                for p in self.placements
-                if p.bar == bar and abs(p.unit - unit) <= tolerance
-            ),
+            (p for p in self.placements if p.bar == bar and abs(p.unit - unit) <= tolerance),
             key=lambda p: p.row,
         )

@@ -58,8 +58,7 @@ class Sandbox:
                     return target
 
         raise SandboxError(
-            f"{relative!r} is outside the working directory ({self.root}); "
-            "use a relative path inside it"
+            f"{relative!r} is outside the working directory ({self.root}); use a relative path inside it"
         )
 
     def relative(self, path: Path) -> str:
@@ -151,11 +150,7 @@ class ToolRegistry:
         self.register(Tool(name, description, parameters, handler, dangerous))
 
     def specs(self) -> list[ToolSpec]:
-        return [
-            tool.spec()
-            for tool in self.tools.values()
-            if self.allow_dangerous or not tool.dangerous
-        ]
+        return [tool.spec() for tool in self.tools.values() if self.allow_dangerous or not tool.dangerous]
 
     def call(self, name: str, arguments: dict[str, Any]) -> str:
         """Run a tool and return what it said. Failures are text, not exceptions."""
@@ -216,7 +211,9 @@ class ToolRegistry:
         self.add(
             "list_files",
             "List files in the working directory.",
-            _schema({"path": _string("Directory relative to the working directory. Defaults to the root.")}),
+            _schema(
+                {"path": _string("Directory relative to the working directory. Defaults to the root.")}
+            ),
             self._list_files,
         )
         self.add(
@@ -430,9 +427,7 @@ class ToolRegistry:
             moved = transpose(source.read_text(encoding="utf-8"), key)
         except TheoryError as exc:
             return f"error: {exc}; give a key such as Dm, F#, Bb or 'A minor'"
-        target = self.sandbox.resolve(
-            f"{Path(path).stem}-{key.replace('#', 'sharp')}.song", for_write=True
-        )
+        target = self.sandbox.resolve(f"{Path(path).stem}-{key.replace('#', 'sharp')}.song", for_write=True)
         target.write_text(moved, encoding="utf-8")
         return f"wrote {self.sandbox.relative(target)}\n\n{moved[:1500]}"
 
@@ -466,6 +461,8 @@ class ToolRegistry:
     def _record_decision(self, note: str) -> str:
         self.journal.append(note)
         journal_path = self.sandbox.resolve("BUILD-JOURNAL.md", for_write=True)
-        existing = journal_path.read_text(encoding="utf-8") if journal_path.exists() else "# Build journal\n"
+        existing = (
+            journal_path.read_text(encoding="utf-8") if journal_path.exists() else "# Build journal\n"
+        )
         journal_path.write_text(f"{existing.rstrip()}\n- {note}\n", encoding="utf-8")
         return f"recorded in {self.sandbox.relative(journal_path)}"

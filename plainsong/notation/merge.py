@@ -40,7 +40,7 @@ class Cell:
     """One bar of one row, in one section. The unit a merge reasons about."""
 
     section: int
-    row: str        # "chords" | "melody" | "lyrics" | "player:bass"
+    row: str  # "chords" | "melody" | "lyrics" | "player:bass"
     bar: int
 
     def __str__(self) -> str:
@@ -139,13 +139,9 @@ def merge(base: str, mine: str, theirs: str, dialect: str = "auto") -> MergeResu
 
     overlap = my_edit.cells & their_edit.cells
     # Both sides writing a cell the same way is agreement, not collision.
-    conflicts = sorted(
-        cell for cell in overlap if mine_cells.get(cell) != their_cells.get(cell)
-    )
+    conflicts = sorted(cell for cell in overlap if mine_cells.get(cell) != their_cells.get(cell))
     if conflicts:
-        return MergeResult(
-            ok=False, conflicts=conflicts, mine=my_edit, theirs=their_edit
-        )
+        return MergeResult(ok=False, conflicts=conflicts, mine=my_edit, theirs=their_edit)
 
     merged = dict(base_cells)
     for cell in my_edit.cells:

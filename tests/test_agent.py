@@ -65,9 +65,7 @@ class TestSandbox(unittest.TestCase):
 class TestTools(unittest.TestCase):
     def setUp(self):
         self.directory = tempfile.TemporaryDirectory()
-        self.registry = ToolRegistry(
-            sandbox=Sandbox(root=Path(self.directory.name)), config=load_config()
-        )
+        self.registry = ToolRegistry(sandbox=Sandbox(root=Path(self.directory.name)), config=load_config())
 
     def tearDown(self):
         self.directory.cleanup()
@@ -138,9 +136,7 @@ class TestAgentLoop(unittest.TestCase):
     def setUp(self):
         self.directory = tempfile.TemporaryDirectory()
         self.config = load_config()
-        self.registry = ToolRegistry(
-            sandbox=Sandbox(root=Path(self.directory.name)), config=self.config
-        )
+        self.registry = ToolRegistry(sandbox=Sandbox(root=Path(self.directory.name)), config=self.config)
 
     def tearDown(self):
         self.directory.cleanup()
@@ -160,7 +156,9 @@ class TestAgentLoop(unittest.TestCase):
             [
                 CompletionResponse(
                     tool_calls=[
-                        ToolCall(id="1", name="write_score", arguments={"path": "x.song", "content": NOTATION})
+                        ToolCall(
+                            id="1", name="write_score", arguments={"path": "x.song", "content": NOTATION}
+                        )
                     ]
                 ),
                 CompletionResponse(text="wrote it"),
@@ -215,9 +213,7 @@ class TestAgentLoop(unittest.TestCase):
                 CompletionResponse(text="done"),
             ]
         )
-        agent = Agent(
-            provider=provider, tools=self.registry, config=self.config, on_event=events.append
-        )
+        agent = Agent(provider=provider, tools=self.registry, config=self.config, on_event=events.append)
         agent.run("hello")
         kinds = [event.kind for event in events]
         self.assertIn("tool_call", kinds)
@@ -288,8 +284,11 @@ class TestDangerousToolGate(unittest.TestCase):
             with self.subTest(allow_dangerous=allowed):
                 registry = self._registry(allowed)
                 registry.add(
-                    "detonate", "test-only", {"type": "object", "properties": {}},
-                    lambda: "boom", dangerous=True,
+                    "detonate",
+                    "test-only",
+                    {"type": "object", "properties": {}},
+                    lambda: "boom",
+                    dangerous=True,
                 )
                 text, failed = registry.call_result("detonate", {})
                 if allowed:
@@ -304,8 +303,11 @@ class TestDangerousToolGate(unittest.TestCase):
         """A model must not be told about a tool it will then be refused."""
         registry = self._registry(False)
         registry.add(
-            "detonate", "test-only", {"type": "object", "properties": {}},
-            lambda: "boom", dangerous=True,
+            "detonate",
+            "test-only",
+            {"type": "object", "properties": {}},
+            lambda: "boom",
+            dangerous=True,
         )
         self.assertNotIn("detonate", [spec.name for spec in registry.specs()])
 

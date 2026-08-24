@@ -314,9 +314,7 @@ def cmd_check(args: argparse.Namespace, config: Config, out: Out) -> int:
             arrangement = arrange(score)
             notes = arrangement.note_count
             row_warnings = [
-                diagnostic
-                for diagnostic in arrangement.diagnostics
-                if diagnostic.severity == "warning"
+                diagnostic for diagnostic in arrangement.diagnostics if diagnostic.severity == "warning"
             ]
             if notes == 0:
                 warnings += 1
@@ -435,8 +433,18 @@ def cmd_chord(args: argparse.Namespace, config: Config, out: Out) -> int:
 
     #: Which degree is which, in words, so the explanation reads like a
     #: musician talking rather than like a table dump.
-    labels = {1: "root", 3: "third", 5: "fifth", 6: "sixth", 7: "seventh",
-              9: "ninth", 11: "eleventh", 13: "thirteenth", 2: "second", 4: "fourth"}
+    labels = {
+        1: "root",
+        3: "third",
+        5: "fifth",
+        6: "sixth",
+        7: "seventh",
+        9: "ninth",
+        11: "eleventh",
+        13: "thirteenth",
+        2: "second",
+        4: "fourth",
+    }
     natural = {1: 0, 2: 2, 3: 4, 4: 5, 5: 7, 6: 9, 7: 11, 9: 14, 11: 17, 13: 21}
 
     results = []
@@ -558,12 +566,14 @@ def cmd_voicing(args: argparse.Namespace, config: Config, out: Out) -> int:
                 # Adjacent pairs, so the tail is one shorter on purpose.
                 pairs = zip(ordered, ordered[1:], strict=False)
                 muddy += sum(1 for a, b in pairs if b - a < 3 and a < 48)
-            rows.append({
-                "strategy": name,
-                "named_kept": round(100 * kept / max(total, 1), 1),
-                "guide_kept": round(100 * guides / max(guide_total, 1), 1),
-                "muddy": muddy,
-            })
+            rows.append(
+                {
+                    "strategy": name,
+                    "named_kept": round(100 * kept / max(total, 1), 1),
+                    "guide_kept": round(100 * guides / max(guide_total, 1), 1),
+                    "muddy": muddy,
+                }
+            )
         if not out.json_mode:
             out.say(f"{'strategy':<9} {'symbol kept':>12} {'guide tones':>12} {'muddy':>7}")
             for row in rows:
@@ -699,8 +709,7 @@ def cmd_lyrics(args: argparse.Namespace, config: Config, out: Out) -> int:
             written_at = "--" if row["written"] is None else f"{row['written']:g}"
             marker = "" if row["written"] == row["bound"] else "   <- moves"
             out.dim(
-                f"    {row['syllable']:<14}{written_at:>12}{row['bound']:>10g}"
-                f"{row['held']:>8g}{marker}"
+                f"    {row['syllable']:<14}{written_at:>12}{row['bound']:>10g}{row['held']:>8g}{marker}"
             )
         for diagnostic in bound.diagnostics:
             if diagnostic not in loose.diagnostics:
@@ -736,9 +745,7 @@ def cmd_fingerprint(args: argparse.Namespace, config: Config, out: Out) -> int:
         # silently truncates the longer one, so computing the diff before this
         # check would report a confident and wrong set of moved files.
         if len(expected) != len(actual):
-            out.fail(
-                f"the corpus changed size: {len(expected) - 1} files recorded, {len(entries)} found"
-            )
+            out.fail(f"the corpus changed size: {len(expected) - 1} files recorded, {len(entries)} found")
             out.dim("re-record with --write if files were added or removed on purpose")
             return 1
         moved = [
@@ -796,7 +803,9 @@ def cmd_library(args: argparse.Namespace, config: Config, out: Out) -> int:
         out.table(rows or [("(none)", "")])
         return 0
 
-    entries = library.search(args.query, limit=args.limit) if args.query else library.entries(limit=args.limit)
+    entries = (
+        library.search(args.query, limit=args.limit) if args.query else library.entries(limit=args.limit)
+    )
     out.data([entry.as_dict() for entry in entries])
     if not entries:
         out.say("nothing found")
@@ -1222,10 +1231,14 @@ def build_parser() -> argparse.ArgumentParser:
     compile_parser = subparsers.add_parser("compile", help="compile notation to MIDI and audio")
     compile_parser.add_argument("file", help="a .song file")
     compile_parser.add_argument("-o", "--midi", metavar="PATH", help="MIDI output path")
-    compile_parser.add_argument("-a", "--audio", metavar="PATH", nargs="?", const="", help="audio output path")
+    compile_parser.add_argument(
+        "-a", "--audio", metavar="PATH", nargs="?", const="", help="audio output path"
+    )
     compile_parser.add_argument("--no-midi", action="store_true", help="skip the MIDI file")
     compile_parser.add_argument("--play", action="store_true", help="play the audio when it is ready")
-    compile_parser.add_argument("--backend", default="auto", help="audio backend: auto, builtin, fluidsynth")
+    compile_parser.add_argument(
+        "--backend", default="auto", help="audio backend: auto, builtin, fluidsynth"
+    )
     compile_parser.add_argument("--soundfont", metavar="PATH", help="soundfont for the fluidsynth backend")
     compile_parser.add_argument("--dialect", default="auto", choices=["auto", "absolute", "relative"])
     compile_parser.add_argument("--semitones", type=int, default=0, help="transpose while compiling")
@@ -1256,7 +1269,9 @@ def build_parser() -> argparse.ArgumentParser:
     play_parser = subparsers.add_parser("play", help="compile and play")
     play_parser.add_argument("file", help="a .song file or a library entry")
     play_parser.add_argument("--backend", default="auto")
-    play_parser.add_argument("--port", nargs="?", const="", metavar="NAME", help="play to a MIDI port instead")
+    play_parser.add_argument(
+        "--port", nargs="?", const="", metavar="NAME", help="play to a MIDI port instead"
+    )
     play_parser.set_defaults(func=cmd_play)
 
     info_parser = subparsers.add_parser("info", help="summarise a piece")
@@ -1279,24 +1294,22 @@ def build_parser() -> argparse.ArgumentParser:
     transpose_parser.add_argument("-i", "--in-place", action="store_true")
     transpose_parser.set_defaults(func=cmd_transpose)
 
-    chord_parser = subparsers.add_parser(
-        "chord", help="read a chord symbol and say what is in it"
-    )
+    chord_parser = subparsers.add_parser("chord", help="read a chord symbol and say what is in it")
     chord_parser.add_argument("symbol", nargs="+", help="one or more chord symbols")
     chord_parser.add_argument(
-        "--explain", action="store_true",
+        "--explain",
+        action="store_true",
         help="show every degree, what bent it, and what is deliberately absent",
     )
     chord_parser.add_argument("--octave", type=int, default=3, help="octave for MIDI numbers")
     chord_parser.add_argument("--flats", action="store_true", help="spell with flats")
     chord_parser.set_defaults(func=cmd_chord)
 
-    voicing_parser = subparsers.add_parser(
-        "voicing", help="show which notes a chord sounds, and why those"
-    )
+    voicing_parser = subparsers.add_parser("voicing", help="show which notes a chord sounds, and why those")
     voicing_parser.add_argument("symbol", nargs="*", help="chord symbols")
     voicing_parser.add_argument(
-        "--compare", action="store_true",
+        "--compare",
+        action="store_true",
         help="score every strategy over the library, on the chords where the cap bites",
     )
     voicing_parser.add_argument("--limit", type=int, default=4, help="how many voices")
@@ -1316,9 +1329,7 @@ def build_parser() -> argparse.ArgumentParser:
     chart_parser.add_argument("--no-lyrics", action="store_true", help="chords only")
     chart_parser.set_defaults(func=cmd_chart)
 
-    lyrics_parser = subparsers.add_parser(
-        "lyrics", help="show which note each syllable is sung on"
-    )
+    lyrics_parser = subparsers.add_parser("lyrics", help="show which note each syllable is sung on")
     lyrics_parser.add_argument("file", help="a .song file")
     lyrics_parser.set_defaults(func=cmd_lyrics)
 
@@ -1356,9 +1367,7 @@ def build_parser() -> argparse.ArgumentParser:
     spec_parser.set_defaults(func=cmd_spec)
 
     providers_parser = subparsers.add_parser("providers", help="list model providers")
-    providers_parser.add_argument(
-        "--check", nargs="?", const=True, metavar="ID", help="make a test call"
-    )
+    providers_parser.add_argument("--check", nargs="?", const=True, metavar="ID", help="make a test call")
     providers_parser.set_defaults(func=cmd_providers)
 
     setup_parser = subparsers.add_parser("setup", help="connect a model provider")
@@ -1382,9 +1391,7 @@ def build_parser() -> argparse.ArgumentParser:
     agent_parser.add_argument("--max-steps", type=int, default=0)
     agent_parser.set_defaults(func=cmd_agent)
 
-    build_parser = subparsers.add_parser(
-        "build", help="have the agent tailor this install to your machine"
-    )
+    build_parser = subparsers.add_parser("build", help="have the agent tailor this install to your machine")
     build_parser.add_argument("goal", nargs="?", default="", help="what you want to build")
     build_parser.add_argument("--provider", default="")
     build_parser.add_argument("--model", default="")
@@ -1398,9 +1405,7 @@ def build_parser() -> argparse.ArgumentParser:
     serve_parser.add_argument("--open", action="store_true", help="open a browser")
     serve_parser.set_defaults(func=cmd_serve)
 
-    mcp_parser = subparsers.add_parser(
-        "mcp", help="serve over the Model Context Protocol, for agents"
-    )
+    mcp_parser = subparsers.add_parser("mcp", help="serve over the Model Context Protocol, for agents")
     mcp_parser.add_argument("--http", action="store_true", help="serve over HTTP instead of stdio")
     mcp_parser.add_argument("--host", default="127.0.0.1", help="HTTP bind address (loopback)")
     mcp_parser.add_argument("--port", type=int, default=8766, help="HTTP port")
@@ -1411,9 +1416,7 @@ def build_parser() -> argparse.ArgumentParser:
     tui_parser.add_argument("file", nargs="?", default="", help="open this file")
     tui_parser.set_defaults(func=cmd_tui)
 
-    bridge_parser = subparsers.add_parser(
-        "bridge", help="answer model requests on behalf of a host agent"
-    )
+    bridge_parser = subparsers.add_parser("bridge", help="answer model requests on behalf of a host agent")
     bridge_parser.add_argument(
         "action", nargs="?", default="status", choices=["status", "list", "answer", "watch"]
     )

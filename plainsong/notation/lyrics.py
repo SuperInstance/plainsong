@@ -92,9 +92,7 @@ def bind(grid: TimeGrid) -> tuple[list[LyricEvent], list[Diagnostic]]:
             unbindable.append(bar)
             for placement in sorted(by_bar[bar], key=lambda p: p.unit):
                 events.append(
-                    LyricEvent(
-                        start=placement.onset, text=placement.token, duration=placement.width
-                    )
+                    LyricEvent(start=placement.onset, text=placement.token, duration=placement.width)
                 )
             continue
 

@@ -108,9 +108,7 @@ class VoiceTiming:
         alignment = shaping.alignment if compensate else 0.0
         correction = self.speech + shaping.preparation + self.reference_propagation + self.p_center
         emission = self.feel * shaping.feel_scale + shaping.feel - alignment * correction
-        arrival = (
-            emission + self.speech + shaping.preparation + self.p_center + self.observed_propagation
-        )
+        arrival = emission + self.speech + shaping.preparation + self.p_center + self.observed_propagation
         return emission, arrival
 
     def as_dict(self) -> dict[str, Any]:
@@ -271,8 +269,7 @@ def apply_to(
         arrangement.diagnostics.append(
             Diagnostic(
                 severity="warning",
-                message=f"nobody called {frame!r} is on this stage; listening at "
-                f"{solution.frame} instead",
+                message=f"nobody called {frame!r} is on this stage; listening at {solution.frame} instead",
                 hint="frames are: " + ", ".join(frames_for(stage)),
             )
         )
@@ -327,19 +324,14 @@ def analyse(arrangement: Any, frame: str = "") -> dict[str, Any]:
     if stage is None:
         return {"stage": False, "reason": "this piece has no [Stage] block"}
 
-    voices = [
-        (track.name.strip().lower(), track.program, track.is_drum)
-        for track in arrangement.tracks
-    ]
+    voices = [(track.name.strip().lower(), track.program, track.is_drum) for track in arrangement.tracks]
     chosen = solve(stage, voices, frame=frame)
 
     # Standing at a desk, the reference you actually judge by is your own
     # sound, which reaches you first. This is the number a player would
     # describe as "the timpani are late".
     relative: list[dict[str, Any]] = []
-    own = chosen.frame[len(PLAYER_FRAME_PREFIX) :] if chosen.frame.startswith(
-        PLAYER_FRAME_PREFIX
-    ) else ""
+    own = chosen.frame[len(PLAYER_FRAME_PREFIX) :] if chosen.frame.startswith(PLAYER_FRAME_PREFIX) else ""
     if own and own in chosen.voices:
         anchor = chosen.voices[own].arrival_offset
         relative = [
@@ -422,9 +414,7 @@ def format_report(report: dict[str, Any]) -> str:
         )
     widths = [max(len(row[index]) for row in rows) for index in range(len(header))]
     for row in rows:
-        lines.append(
-            "  " + "  ".join(cell.ljust(widths[index]) for index, cell in enumerate(row)).rstrip()
-        )
+        lines.append("  " + "  ".join(cell.ljust(widths[index]) for index, cell in enumerate(row)).rstrip())
     if solution["lead_in_beats"]:
         lines.append(
             f"  the piece begins {solution['lead_in_beats']:.3f} beats later than written, so the "
@@ -508,9 +498,7 @@ def movement(before: Any, after: Any) -> dict[str, Any]:
 
     def spread(arrangement: Any) -> float:
         firsts = [
-            min(note.arrival_time for note in track.notes)
-            for track in arrangement.tracks
-            if track.notes
+            min(note.arrival_time for note in track.notes) for track in arrangement.tracks if track.notes
         ]
         return (max(firsts) - min(firsts)) * to_ms if firsts else 0.0
 
@@ -540,9 +528,7 @@ def format_movement(report: dict[str, Any]) -> str:
     widths = [max(len(row[index]) for row in rows) for index in range(len(header))]
     lines = ["what the directives did"]
     for row in rows:
-        lines.append(
-            "  " + "  ".join(cell.ljust(widths[index]) for index, cell in enumerate(row)).rstrip()
-        )
+        lines.append("  " + "  ".join(cell.ljust(widths[index]) for index, cell in enumerate(row)).rstrip())
     lines.append(
         f"  spread at the listener {report['spread_before_ms']:.0f} ms -> "
         f"{report['spread_after_ms']:.0f} ms, "

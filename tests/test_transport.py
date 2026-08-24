@@ -345,8 +345,8 @@ class TestRequestStream(unittest.TestCase):
         with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
-                b'\n',
-                b'  \n',
+                b"\n",
+                b"  \n",
                 b'data: {"id": "2"}\n',
             ]
             response = mock.MagicMock()
@@ -362,8 +362,8 @@ class TestRequestStream(unittest.TestCase):
         with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
-                b': this is a comment\n',
-                b'::: another comment\n',
+                b": this is a comment\n",
+                b"::: another comment\n",
                 b'data: {"id": "2"}\n',
             ]
             response = mock.MagicMock()
@@ -379,8 +379,8 @@ class TestRequestStream(unittest.TestCase):
         with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
-                b'event: message\n',
-                b'id: 123\n',
+                b"event: message\n",
+                b"id: 123\n",
                 b'data: {"id": "2"}\n',
             ]
             response = mock.MagicMock()
@@ -397,7 +397,7 @@ class TestRequestStream(unittest.TestCase):
             lines = [
                 b'data: {"id": "1"}\n',
                 b'data: {"id": "2"}\n',
-                b'data: [DONE]\n',
+                b"data: [DONE]\n",
                 b'data: {"id": "3"}\n',  # Should not be yielded
             ]
             response = mock.MagicMock()
@@ -414,7 +414,7 @@ class TestRequestStream(unittest.TestCase):
         with mock.patch("plainsong.llm.transport.urllib.request.urlopen") as mock_urlopen:
             lines = [
                 b'data: {"id": "1"}\n',
-                b'data: {not valid json}\n',
+                b"data: {not valid json}\n",
                 b'data: {"id": "2"}\n',
             ]
             response = mock.MagicMock()

@@ -143,4 +143,6 @@ def request_stream(
     except urllib.error.HTTPError as exc:
         raise _classify(exc.code, exc.read().decode("utf-8", errors="replace"), provider) from exc
     except urllib.error.URLError as exc:
-        raise ProviderError(f"could not reach {url}: {exc.reason}", provider=provider, retryable=True) from exc
+        raise ProviderError(
+            f"could not reach {url}: {exc.reason}", provider=provider, retryable=True
+        ) from exc

@@ -67,7 +67,9 @@ class TestPaddingIsNotMelisma(unittest.TestCase):
     melody that sustains, and reading it as a melisma pushes words off the bar.
     """
 
-    KITCHEN = Path(__file__).resolve().parent.parent / "examples" / "edge-cases" / "edge-5-kitchen-sink.song"
+    KITCHEN = (
+        Path(__file__).resolve().parent.parent / "examples" / "edge-cases" / "edge-5-kitchen-sink.song"
+    )
 
     def test_dots_in_a_lyric_row_bind_to_nothing(self):
         text = self.KITCHEN.read_text(encoding="utf-8")
@@ -165,7 +167,9 @@ class TestTheSettingBehaves(unittest.TestCase):
 
     def test_binding_moves_no_note(self):
         """It is a change to lyrics, and only to lyrics."""
-        text = Path(__file__).resolve().parent.parent / "examples" / "edge-cases" / "edge-5-kitchen-sink.song"
+        text = (
+            Path(__file__).resolve().parent.parent / "examples" / "edge-cases" / "edge-5-kitchen-sink.song"
+        )
         source = text.read_text(encoding="utf-8")
 
         def pitches(mode):
@@ -267,9 +271,7 @@ class TestInfoReportsBothKindsOfDiagnostic(unittest.TestCase):
         from plainsong.transform import describe
 
         messages = [d["message"] for d in describe(self.UNREADABLE)["diagnostics"]]
-        self.assertTrue(
-            any("nothing understood" in m and "Xm9" in m for m in messages), messages
-        )
+        self.assertTrue(any("nothing understood" in m and "Xm9" in m for m in messages), messages)
 
     def test_a_clean_file_reports_none(self):
         from plainsong.transform import describe

@@ -134,9 +134,7 @@ def register(registry: Any, session_root: Any = None, ensemble: Any = None) -> N
             known = ens.list_sessions(session_root, paths)
             return {"sessions": known, "note": "pass a session name to read one"}
         try:
-            return _session(session).read(
-                voice=voice, agent=agent, bars=bars, history=history
-            )
+            return _session(session).read(voice=voice, agent=agent, bars=bars, history=history)
         except ens.EnsembleError as exc:
             return f"error: {exc}"
 

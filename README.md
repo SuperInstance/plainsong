@@ -272,7 +272,7 @@ for hardware MIDI — are detected when present and never required.
 plainsong chart song.song -o chart.svg
 ```
 
-![a chord chart rendered from one of the bundled examples](docs/img/creatures-of-interval.svg)
+![a chord chart rendered from one of the bundled examples](https://raw.githubusercontent.com/SuperInstance/plainsong/master/docs/img/creatures-of-interval.svg)
 
 That image is the SVG above, committed to this repository and embedded with an
 `<img>` tag — which is the only way a chart appears in markdown on a platform

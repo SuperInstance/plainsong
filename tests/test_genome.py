@@ -9,7 +9,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from genome import N_GENES, MusicalGenome
+from genome import MusicalGenome
 from tradition_dna import (
     TRADITION_GENOMES,
     TRADITION_NAMES,
@@ -139,7 +139,7 @@ def test_tradition_genomes_dial_positions():
 
     for name, centre in TRADITION_CENTRES:
         pos = TRADITION_GENOMES[name].dial_position()
-        for got, want in zip(pos, centre):
+        for got, want in zip(pos, centre, strict=True):
             assert abs(got - want) < 1.0, f"{name}: {got} vs {want}"
 
 

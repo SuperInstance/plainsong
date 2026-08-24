@@ -143,11 +143,7 @@ class TestWriting(SessionTest):
 
     def test_writing_leaves_no_temporary_files_behind(self) -> None:
         self.session.write_part("bass", "alice", BASS, 0)
-        leftovers = [
-            path.name
-            for path in (self.root / "harbour").rglob("*")
-            if path.name.endswith(".tmp")
-        ]
+        leftovers = [path.name for path in (self.root / "harbour").rglob("*") if path.name.endswith(".tmp")]
         self.assertEqual(leftovers, [])
 
     def test_every_change_is_logged(self) -> None:
@@ -270,9 +266,7 @@ class TestConcurrency(SessionTest):
         with self.assertRaises(ensemble.Conflict) as caught:
             self.session.write_part("bass", "bob", BASS_REVISED, 0)
         current = caught.exception.state
-        accepted = self.session.write_part(
-            "bass", "bob", BASS_REVISED, current["voice_version"], "rebased"
-        )
+        accepted = self.session.write_part("bass", "bob", BASS_REVISED, current["voice_version"], "rebased")
         self.assertTrue(accepted["accepted"])
         self.assertIn("a1 e2 a2 e2", self.session.part("bass"))
 
@@ -302,9 +296,7 @@ class TestConcurrency(SessionTest):
         for thread in threads:
             thread.join()
 
-        self.assertEqual(
-            failures, {}, f"claims raised: {[(v, repr(e)) for v, e in failures.items()]}"
-        )
+        self.assertEqual(failures, {}, f"claims raised: {[(v, repr(e)) for v, e in failures.items()]}")
         manifest = self.session.manifest()
         missing = [voice for voice in voices if voice not in manifest.voices]
         self.assertEqual(missing, [], "voices lost from the manifest -- a write overwrote another")
@@ -346,9 +338,7 @@ class TestMerge(SessionTest):
             for line in self.session.score().splitlines()
             if line.startswith(("Chords:", "Melody:", "Lyrics:", "@"))
         ]
-        self.assertEqual(
-            [row.split()[0] for row in rows], ["Chords:", "@bass", "@violin1"]
-        )
+        self.assertEqual([row.split()[0] for row in rows], ["Chords:", "@bass", "@violin1"])
 
     def test_the_merged_score_compiles(self) -> None:
         self.session.write_part("bass", "alice", BASS, 0)
@@ -400,9 +390,7 @@ class TestReading(SessionTest):
         state = self.session.read(voice="bass", agent="alice")
         self.assertEqual(state["you"]["content"], BASS)
         self.assertTrue(state["you"]["yours"])
-        self.assertEqual(
-            state["you"]["base_version"], self.session.manifest().voices["bass"].version
-        )
+        self.assertEqual(state["you"]["base_version"], self.session.manifest().voices["bass"].version)
 
     def test_recent_changes_are_included(self) -> None:
         recent = self.session.read(history=3)["recent"]
@@ -464,12 +452,8 @@ class TestOverTheProtocol(unittest.TestCase):
         )
         self.assertEqual(opened["meta"]["key"], "Dm")
 
-        first = self.payload(
-            self.call("ensemble_join", session="duet", voice="@bass", agent="alice")
-        )
-        second = self.payload(
-            self.call("ensemble_join", session="duet", voice="@violin1", agent="bob")
-        )
+        first = self.payload(self.call("ensemble_join", session="duet", voice="@bass", agent="alice"))
+        second = self.payload(self.call("ensemble_join", session="duet", voice="@violin1", agent="bob"))
         self.assertEqual(first["you"]["base_version"], 0)
         self.assertEqual(second["you"]["base_version"], 0)
 

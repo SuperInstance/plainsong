@@ -57,10 +57,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install ruff
+      # ruff is pinned because this step gates for real now: an unpinned
+      # formatter changes its own style on its own schedule, which would turn
+      # the build red with nobody having touched the repository. Bumping it is
+      # a deliberate commit that carries the reformatting with it.
+      - run: pip install ruff==0.16.3
       - run: ruff check plainsong tests
+      # This step carried `continue-on-error: true` and had never once passed:
+      # it reported 60 unformatted files and exit 1 on every run since it was
+      # written, and the job went green anyway. A check that cannot fail is
+      # decoration -- see docs/verification.md, which this repository wrote.
       - run: ruff format --check plainsong tests
-        continue-on-error: true
 
   # Every other job runs with the repository on sys.path, which is structurally
   # blind to packaging. That is not hypothetical: the spec files once lived

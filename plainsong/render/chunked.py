@@ -2,19 +2,26 @@
 
 Streams synthesis in fixed-size chunks so peak memory is O(chunk + longest_note),
 not O(total_samples). Produces byte-identical output to ``write_wav``.
-Requires NumPy.
+
+Requires NumPy, which is why the import sits inside the two functions that use
+it rather than at module scope. ``render/__init__`` imports this module eagerly,
+so a top-level ``import numpy`` makes *every* renderer -- including the pure
+stdlib MIDI writer -- unavailable without it, and `plainsong compile -o out.mid`
+fails on a machine that has no NumPy. That is the whole point of the rule.
 """
 
 from __future__ import annotations
 
 import wave
 from pathlib import Path
-
-import numpy as np
+from typing import TYPE_CHECKING
 
 from ..notation.ir import Arrangement, Note, Track
-from .audio import AudioOptions, Synthesiser, midi_to_hz
+from .audio import AudioOptions, Synthesiser
 from .voices import Voice, voice_for_program
+
+if TYPE_CHECKING:
+    import numpy as np
 
 
 def _note_info(
@@ -44,9 +51,7 @@ def _add_note_to_chunk(
     ov_e = min(note_end, chunk_end)
     if ov_s >= ov_e:
         return
-    buf[ov_s - chunk_start : ov_e - chunk_start] += (
-        block[ov_s - note_start : ov_e - note_start] * gain
-    )
+    buf[ov_s - chunk_start : ov_e - chunk_start] += block[ov_s - note_start : ov_e - note_start] * gain
 
 
 def write_wav_chunked(
@@ -61,6 +66,8 @@ def write_wav_chunked(
     Two-pass: first pass finds global peak after lowpass (needed for
     normalisation), second pass writes. Peak memory is O(chunk_samples + longest_note).
     """
+    import numpy as np
+
     opts = options or AudioOptions()
     synth = Synthesiser(opts)
     if synth.backend != "numpy":
@@ -97,9 +104,7 @@ def write_wav_chunked(
                 break  # sorted, rest are even later
             if ne <= s:
                 continue  # note ended before this chunk
-            block = np.asarray(
-                synth._note_samples(voice, pitch, nsamples), dtype=np.float64
-            )
+            block = np.asarray(synth._note_samples(voice, pitch, nsamples), dtype=np.float64)
             _add_note_to_chunk(buf, ns, block, gain, s, e)
         if do_lp:
             filtered = np.empty_like(buf)

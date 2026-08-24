@@ -35,11 +35,7 @@ def targets() -> list[str]:
 class TestTheReadmeWorksOnPyPI(unittest.TestCase):
     def test_no_relative_links_remain(self):
         """A relative link is invisible on PyPI, silently."""
-        relative = [
-            t
-            for t in targets()
-            if not t.startswith(("http://", "https://", "#", "mailto:"))
-        ]
+        relative = [t for t in targets() if not t.startswith(("http://", "https://", "#", "mailto:"))]
         self.assertEqual(relative, [], f"these 404 on the PyPI page: {relative}")
 
     def test_every_link_into_this_repo_points_at_a_real_file(self):

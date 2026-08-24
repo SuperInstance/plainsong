@@ -51,7 +51,11 @@ class AnthropicProvider(Provider):
                     "content": message.content,
                 }
                 # Consecutive tool results belong in one user turn.
-                if converted and converted[-1]["role"] == "user" and isinstance(converted[-1]["content"], list):
+                if (
+                    converted
+                    and converted[-1]["role"] == "user"
+                    and isinstance(converted[-1]["content"], list)
+                ):
                     existing = converted[-1]["content"]
                     if existing and existing[0].get("type") == "tool_result":
                         existing.append(block)
@@ -107,7 +111,9 @@ class AnthropicProvider(Provider):
             provider=self.id,
         )
         if data.get("type") == "error":
-            raise ProviderError(str(data.get("error", {}).get("message", "unknown error")), provider=self.id)
+            raise ProviderError(
+                str(data.get("error", {}).get("message", "unknown error")), provider=self.id
+            )
 
         text_parts: list[str] = []
         tool_calls: list[ToolCall] = []

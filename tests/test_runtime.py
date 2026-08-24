@@ -245,8 +245,12 @@ class TestCli(unittest.TestCase):
             self.assertIn("Test Song", out)
 
             code, _out, _err = run_cli(
-                "compile", str(song), "-o", str(Path(directory) / "out.mid"),
-                "--audio", str(Path(directory) / "out.wav"),
+                "compile",
+                str(song),
+                "-o",
+                str(Path(directory) / "out.mid"),
+                "--audio",
+                str(Path(directory) / "out.wav"),
             )
             self.assertEqual(code, 0)
             self.assertTrue((Path(directory) / "out.mid").exists())
@@ -314,9 +318,7 @@ class TestCli(unittest.TestCase):
 
         from plainsong.version import __version__
 
-        pyproject = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(
-            encoding="utf-8"
-        )
+        pyproject = (Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8")
         declared = re.search(r'(?m)^version\s*=\s*"([^"]+)"', pyproject)
         self.assertIsNotNone(declared, "pyproject.toml has no version")
         self.assertEqual(

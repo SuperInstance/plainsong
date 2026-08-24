@@ -64,9 +64,7 @@ def check_bar_fill() -> tuple[bool, str]:
     """An unusual token count divides its bar instead of spilling over."""
     from .notation import arrange, parse
 
-    text = (
-        "[A]\nMelody: | C4 D4 E4 F4 G4 A4 B4 C5 C4 D4 E4 F4 G4 A4 B4 C5 D5 |\n"
-    )
+    text = "[A]\nMelody: | C4 D4 E4 F4 G4 A4 B4 C5 C4 D4 E4 F4 G4 A4 B4 C5 D5 |\n"
     arrangement = arrange(parse(text))
     if arrangement.total_beats != 4.0:
         return False, f"17 tokens should still fill one bar, got {arrangement.total_beats} beats"
@@ -163,12 +161,12 @@ def check_chord_vocabulary() -> tuple[bool, str]:
         # symbol      -> semitones above the root
         "C7b9#11": (0, 4, 7, 10, 13, 18),
         "F13#11": (0, 4, 7, 10, 14, 18, 21),
-        "C7M": (0, 4, 7, 11),        # sétima maior
-        "EbMaj7": (0, 4, 7, 11),     # capitalised, which used to refuse
+        "C7M": (0, 4, 7, 11),  # sétima maior
+        "EbMaj7": (0, 4, 7, 11),  # capitalised, which used to refuse
         "C13": (0, 4, 7, 10, 14, 21),  # no eleventh: it fights the major third
         "Cm13": (0, 3, 7, 10, 14, 17, 21),  # minor third, so the eleventh stays
-        "C9sus4": (0, 5, 7, 10, 14),   # no third, so nothing to avoid
-        "Bb-7": (0, 3, 7, 10),       # a minus before a seven is minor
+        "C9sus4": (0, 5, 7, 10, 14),  # no third, so nothing to avoid
+        "Bb-7": (0, 3, 7, 10),  # a minus before a seven is minor
     }
     for symbol, intervals in expected.items():
         try:
@@ -225,12 +223,7 @@ def check_transpose() -> tuple[bool, str]:
         return False, f"note count changed: {original.note_count} -> {moved.note_count}"
 
     def pitches(arrangement, role):
-        return [
-            note.pitch
-            for track in arrangement.tracks
-            if track.role == role
-            for note in track.notes
-        ]
+        return [note.pitch for track in arrangement.tracks if track.role == role for note in track.notes]
 
     melody_before, melody_after = pitches(original, "melody"), pitches(moved, "melody")
     shifts = {later - earlier for earlier, later in zip(melody_before, melody_after, strict=True)}
@@ -396,10 +389,7 @@ def check_arrival_solver() -> tuple[bool, str]:
     if report["solution"]["spread_ms"] > 1.0:
         return False, f"arrivals are {report['solution']['spread_ms']}ms apart at the podium"
 
-    first = {
-        track.name: min(note.arrival_time for note in track.notes)
-        for track in arrangement.tracks
-    }
+    first = {track.name: min(note.arrival_time for note in track.notes) for track in arrangement.tracks}
     if abs(first["timpani"] - first["organ"]) > 1e-6:
         return False, f"first arrivals differ by {abs(first['timpani'] - first['organ'])} beats"
     if min(note.emission_time for _track, note in arrangement.iter_notes()) < 0.0:
@@ -428,9 +418,7 @@ def check_conducting() -> tuple[bool, str]:
         note = min(track.notes, key=lambda item: item.start)
         return note.arrival_time - note.emission_time
 
-    landing = {
-        track.name: min(note.arrival_time for note in track.notes) for track in conducted.tracks
-    }
+    landing = {track.name: min(note.arrival_time for note in track.notes) for track in conducted.tracks}
     if abs(landing["timpani"] - landing["organ"]) > 1e-6:
         return False, "the directive pulled the ensemble apart"
     organ = lead(conducted, "organ") - lead(written, "organ")
@@ -497,11 +485,7 @@ def check_lyric_binding() -> tuple[bool, str]:
     # `came` is written directly beneath `C5`. The lyric row divides the bar
     # into three and the melody into four, so written as-is it sounds two
     # thirds of a beat after the note it sits under.
-    text = (
-        "[V1]\n"
-        "Melody: | A4  .   C5  E5 |\n"
-        "Lyrics: | the tide came  |\n"
-    )
+    text = "[V1]\nMelody: | A4  .   C5  E5 |\nLyrics: | the tide came  |\n"
     loose = arrange(parse(text), ArrangeOptions(humanize=False))
     starts = [round(event.start, 3) for event in loose.lyrics]
     if starts != [0.0, 1.333, 2.667]:

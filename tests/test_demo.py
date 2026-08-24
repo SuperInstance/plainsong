@@ -48,7 +48,7 @@ class TestDemoParity(unittest.TestCase):
     def test_the_page_exists_and_is_self_contained(self):
         """No external fetch: the demo must work offline, from a file:// URL."""
         text = PAGE.read_text(encoding="utf-8")
-        for forbidden in ("<script src=", "<link rel=\"stylesheet\"", "@import", "fetch(", "XMLHttpRequest"):
+        for forbidden in ("<script src=", '<link rel="stylesheet"', "@import", "fetch(", "XMLHttpRequest"):
             self.assertNotIn(forbidden, text, f"the demo reaches outside itself: {forbidden}")
 
     def test_every_preset_is_valid_notation(self):
@@ -131,8 +131,7 @@ class TestDemoTokenClasses(unittest.TestCase):
                 self.assertGreater(
                     total,
                     arrangement.note_count * 0.9,
-                    f"{name}: notes averaging under a beat suggests sustains are "
-                    "being read as rests",
+                    f"{name}: notes averaging under a beat suggests sustains are being read as rests",
                 )
 
 
@@ -150,16 +149,40 @@ _ALTER_SHIFT = {"b": -1, "#": 1, "-": -1, "+": 1}
 #: stop parsing again, that is exactly the regression this file exists to
 #: catch -- see the module docstring and docs/chords.md.
 VOCABULARY = (
-    "CM7", "C7M", "G7alt", "C7alt", "C13", "Cadd9", "C7b9",
-    "C7b9#11", "C13#11", "C6/9", "Cø", "CΔ",
+    "CM7",
+    "C7M",
+    "G7alt",
+    "C7alt",
+    "C13",
+    "Cadd9",
+    "C7b9",
+    "C7b9#11",
+    "C13#11",
+    "C6/9",
+    "Cø",
+    "CΔ",
     # Extra coverage beyond the twelve named in the task, exercising the
     # rules docs/chords.md calls out explicitly (the eleventh-over-a-major-
     # third exception, alteration displacing the natural form, sus dropping
     # the third, the Brazilian 7M, the two triangles, ASCII vs Unicode
     # accidentals, and the historically-regressed `Bb-7`/`C-9` spellings).
-    "Cm13", "CmMaj7", "Bbmaj7#5", "C11", "Csus4", "C9sus4", "Cm7b5",
-    "EbMaj7", "G7#9", "F#dim7", "GbΔ", "Bb-7", "C-9", "C5", "Csus2",
-    "F13#11", "E7♭9",
+    "Cm13",
+    "CmMaj7",
+    "Bbmaj7#5",
+    "C11",
+    "Csus4",
+    "C9sus4",
+    "Cm7b5",
+    "EbMaj7",
+    "G7#9",
+    "F#dim7",
+    "GbΔ",
+    "Bb-7",
+    "C-9",
+    "C5",
+    "Csus2",
+    "F13#11",
+    "E7♭9",
 )
 
 
@@ -279,7 +302,7 @@ def _shadow_scan_root(text: str) -> tuple[int, str] | None:
         return None
     letter, accidentals = match.groups()
     shift = sum(_ACCIDENTAL_SHIFT[c] for c in accidentals)
-    return (LETTER_PC[letter.upper()] + shift) % 12, text[match.end():]
+    return (LETTER_PC[letter.upper()] + shift) % 12, text[match.end() :]
 
 
 def _shadow_scan_suffix(suffix: str, original: str, tables: dict):
@@ -297,11 +320,11 @@ def _shadow_scan_suffix(suffix: str, original: str, tables: dict):
         matched = False
         for word, op in (("add", "add"), ("omit", "omit"), ("no", "omit")):
             if rest[: len(word)].lower() == word:
-                shift, tail = _leading_accidental(rest[len(word):])
+                shift, tail = _leading_accidental(rest[len(word) :])
                 dm = _DEGREE_RE.match(tail)
                 if dm:
                     mods.append((op, _fold_degree(int(dm.group(1))), shift))
-                    rest = tail[dm.end():]
+                    rest = tail[dm.end() :]
                     matched = True
                     break
         if matched:
@@ -313,7 +336,7 @@ def _shadow_scan_suffix(suffix: str, original: str, tables: dict):
             dm = _DEGREE_RE.match(rest[1:])
             if dm:
                 mods.append(("alter", _fold_degree(int(dm.group(1))), shift))
-                rest = rest[1 + dm.end():]
+                rest = rest[1 + dm.end() :]
                 continue
 
         if rest[:2] == "69":
@@ -325,7 +348,7 @@ def _shadow_scan_suffix(suffix: str, original: str, tables: dict):
         dm = _DEGREE_RE.match(rest)
         if dm:
             value = int(dm.group(1))
-            tail = rest[dm.end():]
+            tail = rest[dm.end() :]
             if value == 5 and core_name is None and not tail:
                 core_name = "power"
                 rest = tail
@@ -369,7 +392,7 @@ def _shadow_scan_suffix(suffix: str, original: str, tables: dict):
                     core_name = name
                 if alias in tables["seventh_implied"]:
                     stack = max(stack, 7)
-                rest = rest[len(alias):]
+                rest = rest[len(alias) :]
                 hit = True
                 break
         if not hit:

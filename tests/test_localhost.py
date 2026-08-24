@@ -149,9 +149,7 @@ class TestThereIsOneCopy(unittest.TestCase):
             # both faults were in that decision.
             if 'startswith("127.' in text or '"localhost", "::1"' in text:
                 offenders.append(str(path.relative_to(package)))
-        self.assertEqual(
-            offenders, [], f"these should call runtime.localhost instead: {offenders}"
-        )
+        self.assertEqual(offenders, [], f"these should call runtime.localhost instead: {offenders}")
 
     def test_both_servers_read_the_host_header_through_the_shared_check(self):
         from pathlib import Path
@@ -162,7 +160,7 @@ class TestThereIsOneCopy(unittest.TestCase):
                 text = (package / relative).read_text(encoding="utf-8")
                 self.assertIn("from ", text)
                 self.assertIn("localhost import", text)
-                self.assertIn("host_is_local(self.headers.get(\"Host\", \"\"))", text)
+                self.assertIn('host_is_local(self.headers.get("Host", ""))', text)
 
 
 if __name__ == "__main__":

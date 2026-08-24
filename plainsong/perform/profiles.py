@@ -83,27 +83,27 @@ GENERIC = SpeechProfile("generic", 0.010, 0.008, "used when nothing better is kn
 PROGRAM_RANGES: tuple[tuple[int, int, SpeechProfile], ...] = (
     (0, 7, PIANO),
     (8, 15, MALLET),
-    (16, 18, ELECTRIC),          # drawbar, percussive and rock organ are electronic
-    (19, 19, ORGAN_LARGE),       # church organ
+    (16, 18, ELECTRIC),  # drawbar, percussive and rock organ are electronic
+    (19, 19, ORGAN_LARGE),  # church organ
     (20, 20, REED_ORGAN),
-    (21, 23, REED_ORGAN),        # accordion, harmonica, tango accordion
+    (21, 23, REED_ORGAN),  # accordion, harmonica, tango accordion
     (24, 31, PLUCKED),
     (32, 39, PLUCKED_BASS),
-    (40, 44, BOWED),             # solo violin through tremolo strings
-    (45, 46, PLUCKED),           # pizzicato strings, harp
-    (47, 47, PERCUSSION),        # timpani
+    (40, 44, BOWED),  # solo violin through tremolo strings
+    (45, 46, PLUCKED),  # pizzicato strings, harp
+    (47, 47, PERCUSSION),  # timpani
     (48, 51, BOWED_SECTION),
     (52, 54, VOICE),
-    (55, 55, PERCUSSION),        # orchestra hit
+    (55, 55, PERCUSSION),  # orchestra hit
     (56, 63, BRASS),
     (64, 71, WOODWIND),
     (72, 79, WOODWIND_FLUE),
     (80, 87, ELECTRIC),
     (88, 95, PAD),
     (96, 103, PAD),
-    (104, 109, PLUCKED),         # sitar, banjo, shamisen, koto, kalimba, bagpipe
-    (110, 110, BOWED),           # fiddle
-    (111, 111, WOODWIND),        # shanai
+    (104, 109, PLUCKED),  # sitar, banjo, shamisen, koto, kalimba, bagpipe
+    (110, 110, BOWED),  # fiddle
+    (111, 111, WOODWIND),  # shanai
     (112, 119, PERCUSSION),
     (120, 127, ELECTRIC),
 )
@@ -111,9 +111,26 @@ PROGRAM_RANGES: tuple[tuple[int, int, SpeechProfile], ...] = (
 BY_NAME: dict[str, SpeechProfile] = {
     profile.name: profile
     for profile in (
-        PERCUSSION, MALLET, PLUCKED, PLUCKED_BASS, PIANO, ELECTRIC, BOWED, BOWED_SHORT,
-        BOWED_SECTION, BRASS, BRASS_SOFT, WOODWIND, WOODWIND_FLUE, VOICE, REED_ORGAN,
-        ORGAN_SMALL, ORGAN, ORGAN_LARGE, PAD, GENERIC,
+        PERCUSSION,
+        MALLET,
+        PLUCKED,
+        PLUCKED_BASS,
+        PIANO,
+        ELECTRIC,
+        BOWED,
+        BOWED_SHORT,
+        BOWED_SECTION,
+        BRASS,
+        BRASS_SOFT,
+        WOODWIND,
+        WOODWIND_FLUE,
+        VOICE,
+        REED_ORGAN,
+        ORGAN_SMALL,
+        ORGAN,
+        ORGAN_LARGE,
+        PAD,
+        GENERIC,
     )
 }
 

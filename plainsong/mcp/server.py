@@ -76,9 +76,7 @@ class Server:
         from ..agent.tools import ToolRegistry
 
         self.config = config or load_config()
-        self.registry = registry or ToolRegistry(
-            config=self.config, allow_dangerous=allow_dangerous
-        )
+        self.registry = registry or ToolRegistry(config=self.config, allow_dangerous=allow_dangerous)
         mcp_tools.register(self.registry, session_root=session_root)
         self.resources = Resources(self.config, session_root=session_root)
         self.initialized = False
@@ -117,9 +115,7 @@ class Server:
         requested = str(params.get("protocolVersion", "") or "")
         # Speak the client's version when we know it, ours when we do not. A
         # client that cannot live with the answer says so and disconnects.
-        self.protocol_version = (
-            requested if requested in SUPPORTED_PROTOCOL_VERSIONS else PROTOCOL_VERSION
-        )
+        self.protocol_version = requested if requested in SUPPORTED_PROTOCOL_VERSIONS else PROTOCOL_VERSION
         self.client = dict(params.get("clientInfo") or {})
         return {
             "protocolVersion": self.protocol_version,
@@ -162,9 +158,7 @@ class Server:
             raise protocol.invalid_params("arguments must be an object")
         known = {spec.name for spec in self.registry.specs()}
         if name not in known:
-            raise protocol.invalid_params(
-                f"unknown tool: {name}", {"tools": sorted(known)}
-            )
+            raise protocol.invalid_params(f"unknown tool: {name}", {"tools": sorted(known)})
 
         # The registry is not built for two callers at once, and a tool that
         # writes files is not something to run twice over.
@@ -222,9 +216,7 @@ class Server:
 
         name = params.get("name")
         if not isinstance(name, str) or name not in PROMPTS:
-            raise protocol.invalid_params(
-                f"unknown prompt: {name!r}", {"prompts": sorted(PROMPTS)}
-            )
+            raise protocol.invalid_params(f"unknown prompt: {name!r}", {"prompts": sorted(PROMPTS)})
         text = load_prompt(name)
         if not text:
             raise RpcError(protocol.INTERNAL_ERROR, f"the {name} prompt is missing from this install")

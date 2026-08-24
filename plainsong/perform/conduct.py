@@ -236,11 +236,10 @@ class DirectiveSet:
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> DirectiveSet:
         raw = data.get("directives") or []
-        directives = tuple(
-            Directive.from_dict(item) for item in raw if isinstance(item, dict)
-        )
+        directives = tuple(Directive.from_dict(item) for item in raw if isinstance(item, dict))
         problems = [
-            f"directive {index}: not an object" for index, item in enumerate(raw)
+            f"directive {index}: not an object"
+            for index, item in enumerate(raw)
             if not isinstance(item, dict)
         ]
         return cls(
@@ -603,9 +602,8 @@ def describe(directives: Any) -> str:
     reading = read(directives)
     lines: list[str] = []
     for directive in reading.directives:
-        window = (
-            f"from beat {directive.offset_beats:g}"
-            + (f" for {directive.duration_beats:g}" if directive.duration_beats else " onwards")
+        window = f"from beat {directive.offset_beats:g}" + (
+            f" for {directive.duration_beats:g}" if directive.duration_beats else " onwards"
         )
         target = ", ".join(directive.target) or "everyone"
         mark = "" if directive.handled else "  (not a timing action; ignored here)"
