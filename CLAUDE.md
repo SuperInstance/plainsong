@@ -35,13 +35,20 @@ python3 -m unittest tests.test_notation.TestArrange.test_tokens_divide_the_bar
 python3 -m pytest tests -q                    # works too, if pytest is installed
 
 # The system's checks on itself -- run these before and after any change
-python3 -m plainsong spec                     # exits non-zero on failure
+python3 -m plainsong spec                     # exits non-zero on failure,
+                                              # and on finding no specs at all
 python3 -m plainsong doctor --specs
 python3 -m plainsong check docs examples plainsong/songbook README.md   # every source, prose included
 python3 -m plainsong fingerprint plainsong/songbook examples docs --check tests/corpus-fingerprint.txt
 
 # Checks CI cannot run -- no browser there. Run by hand after touching either side.
 python3 tools/demo_differential.py            # the browser demo against the compiler
+
+# The one check the test suite structurally cannot do: everything in tests/ runs
+# with this repository on sys.path, so it never meets the artifact anyone
+# installs. This builds a wheel, installs it outside the tree, and drives it.
+python3 tools/verify_release.py --stage wheel # what CI gates on
+python3 tools/verify_release.py               # tree, wheel and PyPI
 
 # Working with notation
 python3 -m plainsong new "Title" -o song.song
@@ -206,6 +213,17 @@ there rather than by reasoning:
 
 `chmod` is a no-op on Windows, so permission tests must be skipped there rather
 than asserted around.
+
+## How this project decides something is true
+
+`docs/verification.md` is the short version and it is worth reading before you
+trust any green result here. The one-line summary: **success is not evidence**.
+`plainsong spec` once printed "no specs found" and exited 0, so every install
+missing its spec files reported a pass; a guard that no mutation can fail is
+decoration; and a test suite with this repository on `sys.path` cannot see a
+packaging bug, which is why `tools/verify_release.py` never imports plainsong.
+
+When you add a check, break the thing it checks and confirm it goes red.
 
 ## Specs
 
