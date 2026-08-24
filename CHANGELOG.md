@@ -4,6 +4,24 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### `plainsong mcp` is deprecated
+
+`plainsong-mcp` 1.0.0 is on PyPI, so for the first time there is somewhere to
+send people. `plainsong mcp` still works and will keep working until 2.0; it now
+warns and names the replacement.
+
+That duplication has already cost twice. A DNS-rebinding fix existed in this
+copy and not the sibling for months -- in the copy people `pip install` for MCP.
+Then the same eight lines got the same two things wrong in both, because the
+second was a copy of the first. Neither repository could notice either time.
+
+The notice goes to **stderr**, and that is not a detail. In stdio mode stdout
+*is* the protocol: a deprecation line printed there would desynchronise every
+client, turning a courtesy into an outage. `PLAINSONG_NO_DEPRECATION=1` silences
+it. A test drives the real subprocess and parses every stdout line as JSON, so
+the rule is enforced rather than remembered.
+
+
 ### `plainsong spec` called finding nothing a pass
 
 It printed `no specs found` and exited **0**. That is the exact shape of the

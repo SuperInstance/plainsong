@@ -1096,9 +1096,36 @@ def cmd_serve(args: argparse.Namespace, config: Config, out: Out) -> int:
     return serve(config, host=host, port=port, open_browser=args.open, out=out)
 
 
+MCP_DEPRECATION = (
+    "warning: `plainsong mcp` is deprecated and will be removed in 2.0.\n"
+    "         Use the dedicated package instead:  pip install plainsong-mcp\n"
+    "         It is the same server, maintained in one place rather than two.\n"
+    "         Set PLAINSONG_NO_DEPRECATION=1 to silence this."
+)
+
+
+def _warn_mcp_deprecated() -> None:
+    """Say it on stderr, never stdout, and never through `out`.
+
+    In stdio mode stdout *is* the protocol: one stray line desynchronises the
+    client, which is why `cmd_mcp` prints nothing there. stderr is the only
+    channel safe in all three modes, and MCP clients treat it as a log.
+
+    `plainsong/mcp/` duplicates `SuperInstance/plainsong-mcp`, and that
+    duplication has already cost twice -- a DNS-rebinding fix that existed in
+    one copy and not the other for months, then the same eight lines getting
+    the same two things wrong in both. The sibling is on PyPI now, so for the
+    first time there is somewhere to send people.
+    """
+    if os.environ.get("PLAINSONG_NO_DEPRECATION"):
+        return
+    print(MCP_DEPRECATION, file=sys.stderr)
+
+
 def cmd_mcp(args: argparse.Namespace, config: Config, out: Out) -> int:
     from ..mcp.server import Server, serve_http, serve_stdio
 
+    _warn_mcp_deprecated()
     server = Server(config=config)
     if args.list_tools:
         for spec in sorted(server.registry.specs(), key=lambda spec: spec.name):

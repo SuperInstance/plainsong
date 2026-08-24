@@ -326,6 +326,12 @@ metre would change the music.
 - The host bridge cannot stream and reports no token usage.
 - **`plainsong/mcp/` also exists in `SuperInstance/plainsong-mcp`.** The one
   open violation of "one of everything". Do not build anything new on this copy.
+  **`plainsong mcp` is now deprecated and goes in 2.0.** It warns on stderr and
+  points at `pip install plainsong-mcp`, which is published and is the same
+  server maintained in one place. The notice cannot go on stdout -- that is the
+  protocol in stdio mode, and one stray line desynchronises every client, which
+  `tests/test_mcp.py::TestDeprecationNoticeStaysOffTheWire` holds by driving a
+  real subprocess and parsing every stdout line as JSON.
 
   **This has now cost something real, so it is no longer a theoretical rule.**
   The two copies were measured: 240 lines of difference across seven of eight
