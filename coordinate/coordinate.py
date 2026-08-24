@@ -1,6 +1,6 @@
 """Scheduling backwards from when an effect should land.
 
-Copyright 2026 SuperInstance. Licensed under the Apache License, Version 2.0.
+Copyright (c) 2026 SuperInstance. MIT licensed -- see LICENSE beside this file.
 
 Most scheduling says when to *act*. This says when the effect should *arrive*,
 and solves backwards for when each participant has to move. That inversion is

@@ -2,7 +2,7 @@
 
 **Scheduling backwards from when an effect should land.**
 
-One file, standard library only, Apache-2.0. Copy it next to whatever needs it.
+One file, standard library only, MIT. Copy it next to whatever needs it.
 
 Most scheduling says when to *act*. This says when the effect should *arrive*,
 and solves backwards for when each participant has to move:
