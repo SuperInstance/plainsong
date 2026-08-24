@@ -35,13 +35,20 @@ python3 -m unittest tests.test_notation.TestArrange.test_tokens_divide_the_bar
 python3 -m pytest tests -q                    # works too, if pytest is installed
 
 # The system's checks on itself -- run these before and after any change
-python3 -m plainsong spec                     # exits non-zero on failure
+python3 -m plainsong spec                     # exits non-zero on failure,
+                                              # and on finding no specs at all
 python3 -m plainsong doctor --specs
 python3 -m plainsong check docs examples plainsong/songbook README.md   # every source, prose included
 python3 -m plainsong fingerprint plainsong/songbook examples docs --check tests/corpus-fingerprint.txt
 
 # Checks CI cannot run -- no browser there. Run by hand after touching either side.
 python3 tools/demo_differential.py            # the browser demo against the compiler
+
+# The one check the test suite structurally cannot do: everything in tests/ runs
+# with this repository on sys.path, so it never meets the artifact anyone
+# installs. This builds a wheel, installs it outside the tree, and drives it.
+python3 tools/verify_release.py --stage wheel # what CI gates on
+python3 tools/verify_release.py               # tree, wheel and PyPI
 
 # Working with notation
 python3 -m plainsong new "Title" -o song.song
@@ -69,7 +76,11 @@ python3 -m plainsong setup                   # connect a model
 python3 -m plainsong build                   # tailor this install to the machine
 ```
 
-Every command takes `--json`. Use it when parsing output.
+Every command takes `--json`, but it is a **global** flag and goes before the
+subcommand: `plainsong --json info song.song`. Written after it, argparse
+refuses the whole invocation with `unrecognized arguments: --json`. Use it when
+parsing output, and note the totals live under `arrangement` -- `arrangement.notes`
+is the note count, not a top-level key.
 
 Run the suite with `discover`, not by naming files. Several tests are about how
 modules behave when imported in a particular order, and a single-file run can
@@ -203,6 +214,17 @@ there rather than by reasoning:
 `chmod` is a no-op on Windows, so permission tests must be skipped there rather
 than asserted around.
 
+## How this project decides something is true
+
+`docs/verification.md` is the short version and it is worth reading before you
+trust any green result here. The one-line summary: **success is not evidence**.
+`plainsong spec` once printed "no specs found" and exited 0, so every install
+missing its spec files reported a pass; a guard that no mutation can fail is
+decoration; and a test suite with this repository on `sys.path` cannot see a
+packaging bug, which is why `tools/verify_release.py` never imports plainsong.
+
+When you add a check, break the thing it checks and confirm it goes red.
+
 ## Specs
 
 `plainsong/spec_files/*.toml` state what the system promises;
@@ -255,10 +277,13 @@ re-parse to fetch diagnostics you have already computed.
 
 Related, and the reason that matters: an unrecognised token silently became a
 rest. `Xm9` compiled "ok, 0 warnings" and produced a bar of nothing. It now
-warns. Turning that on immediately found that `EbMaj7`, `G7alt` and `CM7` are
-legitimate spellings the chord parser does not accept and has been quietly
-dropping — still open, and it wants a spec and a changelog entry because it
-changes how existing notation compiles.
+warns. Turning that on immediately found that `EbMaj7`, `G7alt` and `CM7` were
+legitimate spellings the chord parser did not accept and had been quietly
+dropping. **That is fixed** -- all three parse, and `chordsymbol.parse_symbol`
+is the place to confirm it rather than this paragraph. The lesson the entry is
+kept for is the one that generalises: the warning is what found them. Before
+it, an unreadable chord and a deliberate rest were the same silence, and the
+compiler reported `ok` for both.
 
 ## Changing the notation
 
@@ -289,7 +314,10 @@ It lives inside the package because `plainsong library` and
 `plainsong play stand-by-me` found nothing for anyone who had not cloned.
 
 Two side effects worth knowing: the ~3,800 bar-count warnings this directory was
-famous for came from those rows and are now 2.
+famous for came from those rows and are now 1 -- the Hungarian Rhapsody's
+`time: 2/4 (Lassan) then 4/4 (Friska)`, a human annotation the metre field
+cannot express. That file is deliberately left alone, because changing the
+metre would change the music.
 
 ## Rough edges
 
@@ -298,6 +326,12 @@ famous for came from those rows and are now 2.
 - The host bridge cannot stream and reports no token usage.
 - **`plainsong/mcp/` also exists in `SuperInstance/plainsong-mcp`.** The one
   open violation of "one of everything". Do not build anything new on this copy.
+  **`plainsong mcp` is now deprecated and goes in 2.0.** It warns on stderr and
+  points at `pip install plainsong-mcp`, which is published and is the same
+  server maintained in one place. The notice cannot go on stdout -- that is the
+  protocol in stdio mode, and one stray line desynchronises every client, which
+  `tests/test_mcp.py::TestDeprecationNoticeStaysOffTheWire` holds by driving a
+  real subprocess and parsing every stdout line as JSON.
 
   **This has now cost something real, so it is no longer a theoretical rule.**
   The two copies were measured: 240 lines of difference across seven of eight

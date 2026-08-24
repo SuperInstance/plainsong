@@ -10,6 +10,8 @@ from __future__ import annotations
 import http.client
 import io
 import json
+import subprocess
+import sys
 import tempfile
 import threading
 import unittest
@@ -288,6 +290,53 @@ class TestStdioTransport(unittest.TestCase):
                 message("initialize", {"protocolVersion": PROTOCOL_VERSION}, 1) + "\n"
             )
             self.assertEqual(protocol.serve_stdio(server.dispatcher, reader, ClosedPipe()), 0)
+
+
+class TestDeprecationNoticeStaysOffTheWire(unittest.TestCase):
+    """`plainsong mcp` is deprecated, and saying so must not break it.
+
+    stdout *is* the protocol in stdio mode. A deprecation line printed there
+    would desynchronise every client -- turning a courtesy into an outage --
+    which is why the notice goes to stderr and why this test exists rather
+    than a reading of the code.
+    """
+
+    def _run(self, args: list[str], env_extra: dict | None = None) -> subprocess.CompletedProcess:
+        import os
+
+        env = dict(os.environ)
+        env.pop("PLAINSONG_NO_DEPRECATION", None)
+        env.update(env_extra or {})
+        root = Path(__file__).resolve().parent.parent
+        return subprocess.run(
+            [sys.executable, "-m", "plainsong", *args],
+            input='{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}\n',
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=str(root),
+            env=env,
+        )
+
+    def test_stdout_carries_only_json_rpc(self) -> None:
+        finished = self._run(["mcp"])
+        for line in finished.stdout.splitlines():
+            if not line.strip():
+                continue
+            # Fails loudly with the offending line rather than a bare False.
+            try:
+                json.loads(line)
+            except ValueError:  # pragma: no cover - the failure path is the point
+                self.fail(f"non-protocol line on stdout: {line!r}")
+
+    def test_the_notice_is_on_stderr_and_names_the_replacement(self) -> None:
+        finished = self._run(["mcp"])
+        self.assertIn("deprecated", finished.stderr)
+        self.assertIn("plainsong-mcp", finished.stderr)
+
+    def test_it_can_be_silenced(self) -> None:
+        finished = self._run(["mcp"], {"PLAINSONG_NO_DEPRECATION": "1"})
+        self.assertNotIn("deprecated", finished.stderr)
 
 
 class TestHttpTransport(unittest.TestCase):

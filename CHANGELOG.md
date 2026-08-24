@@ -2,6 +2,67 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### `plainsong mcp` is deprecated
+
+`plainsong-mcp` 1.0.0 is on PyPI, so for the first time there is somewhere to
+send people. `plainsong mcp` still works and will keep working until 2.0; it now
+warns and names the replacement.
+
+That duplication has already cost twice. A DNS-rebinding fix existed in this
+copy and not the sibling for months -- in the copy people `pip install` for MCP.
+Then the same eight lines got the same two things wrong in both, because the
+second was a copy of the first. Neither repository could notice either time.
+
+The notice goes to **stderr**, and that is not a detail. In stdio mode stdout
+*is* the protocol: a deprecation line printed there would desynchronise every
+client, turning a courtesy into an outage. `PLAINSONG_NO_DEPRECATION=1` silences
+it. A test drives the real subprocess and parses every stdout line as JSON, so
+the rule is enforced rather than remembered.
+
+
+### `plainsong spec` called finding nothing a pass
+
+It printed `no specs found` and exited **0**. That is the exact shape of the
+fault it exists to catch: the spec files once sat in a top-level `specs/`
+directory, outside the package, so every `pip install` shipped without them --
+and every install, and every CI job that ran `plainsong spec`, read that zero
+as a pass. The self-verification the whole design leans on was doing nothing,
+loudly enough to print a warning and quietly enough that nobody's exit status
+moved.
+
+It exits 1 now, and says which of the two things happened: an install missing
+its spec files, or a `--tag` nothing carries. This is a **behaviour change** --
+a script that ran `plainsong spec` against an install with no specs and treated
+0 as success will now see a failure, which is the point.
+
+Found while building `tools/verify_release.py` (below): a wheel built with the
+specs deliberately excluded still passed the packaging canary, because the
+canary trusted the exit status. Verified directly -- that wheel carries zero
+`spec_files` entries, and `plainsong spec` in a venv installed from it reports
+`no specs found`.
+
+### A release is now verified from outside the tree
+
+Everything in `tests/` runs with the repository on `sys.path`, which is
+structurally blind to packaging: the "no specs found" bug above lived through a
+release with a fully green suite. `tools/verify_release.py` never imports
+plainsong. It builds a wheel, installs it into a throwaway virtualenv outside
+the source tree, and drives the console script from `/tmp` with `PYTHONPATH`
+stripped, then repeats against what is actually on PyPI -- including driving
+the MCP server with real JSON-RPC over stdio and checking that the sibling's
+loopback re-export is the compiler's own function.
+
+CI gains a `packaging` job running `--stage wheel`, so a data file that stops
+being packaged fails a pull request rather than a release.
+
+One trap it had to learn: setuptools copies the package into `build/lib` and
+**reuses whatever is already there**, so a data file that has stopped being
+packaged still reaches the wheel from the last build that did include it. A
+broken package then verifies perfectly. The script clears `build/` and
+`*.egg-info` before building for that reason.
+
 ## 1.4.0 — 2026-08-18
 
 A minor rather than a patch: `plainsong.runtime.localhost` is a new public

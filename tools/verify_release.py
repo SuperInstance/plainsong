@@ -16,8 +16,9 @@ Then it does the same against whatever is actually on PyPI, which is a
 different question: the tree can be right and the upload can be a version
 behind.
 
-    python3 tools/verify_release.py            # tree, wheel and PyPI
-    python3 tools/verify_release.py --local    # skip the network
+    python3 tools/verify_release.py                  # tree, wheel and PyPI
+    python3 tools/verify_release.py --stage wheel    # what CI gates on
+    python3 tools/verify_release.py --local          # tree and wheel, no network
     python3 tools/verify_release.py --json
 
 Exit status is 0 only if every check passed. Nothing here is skipped silently:
@@ -169,11 +170,19 @@ def exercise(binary: Path, report: Report, label: str, expect_version: str | Non
     # The packaging canary. `spec` reads the spec_files/ TOMLs out of the
     # installed package, so it fails loudly when package-data is wrong -- which
     # is the failure the test suite structurally cannot see.
+    # An exit status alone was not enough here, and finding that out is the
+    # reason this check is worded so carefully. `plainsong spec` used to answer
+    # "no specs found" and exit 0, so a wheel carrying none of them passed this
+    # check. The CLI now exits non-zero for that, but the canary should not
+    # depend on any single signal: require that specs were actually found and
+    # that none failed.
     code, out = run([str(plainsong), "spec"], cwd=outside)
+    last = out.splitlines()[-1] if out else ""
+    found = "no specs found" not in out and " passed," in out
     report.check(
         f"[{label}] specs pass from the install (packaging canary)",
-        code == 0,
-        out.splitlines()[-1] if out else "",
+        code == 0 and found,
+        last,
     )
 
     # The songbook is package data too, and shipped for exactly this command.
@@ -249,6 +258,17 @@ def exercise(binary: Path, report: Report, label: str, expect_version: str | Non
 def check_wheel(report: Report) -> Path | None:
     """Build the tree and install the wheel somewhere clean."""
     print("\nbuilt wheel")
+
+    # Clear `build/` first, and this is not housekeeping. setuptools copies the
+    # package into `build/lib` and *reuses whatever is already there*, so a data
+    # file that has stopped being packaged still reaches the wheel from the last
+    # build that did include it. A broken package then verifies perfectly. This
+    # was found the hard way: removing the specs from `package-data` and
+    # rebuilding produced a wheel that still carried all seven of them, and this
+    # script reported ten checks passed.
+    for stale in (ROOT / "build", *ROOT.glob("*.egg-info")):
+        shutil.rmtree(stale, ignore_errors=True)
+
     dist = Path(tempfile.mkdtemp(prefix="plainsong-dist-"))
     code, out = run([sys.executable, "-m", "build", "--outdir", str(dist)], cwd=ROOT)
     wheels = sorted(dist.glob("*.whl"))
@@ -349,15 +369,35 @@ def check_pypi(report: Report) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--stage",
+        action="append",
+        choices=("tree", "wheel", "pypi"),
+        help="run only this stage; repeatable. Default: all three. "
+        "CI runs `--stage wheel`, the tree already being covered by the other jobs.",
+    )
     parser.add_argument("--local", action="store_true", help="skip the checks that need the network")
     parser.add_argument("--json", action="store_true", help="machine-readable summary on stdout")
     args = parser.parse_args()
 
+    stages = set(args.stage or ("tree", "wheel", "pypi"))
+    if args.local:
+        stages.discard("pypi")
+
     report = Report()
-    check_tree(report)
-    check_wheel(report)
-    if not args.local:
+    if "tree" in stages:
+        check_tree(report)
+    if "wheel" in stages:
+        check_wheel(report)
+    if "pypi" in stages:
         check_pypi(report)
+
+    # A run that checked nothing must not report success -- that is the same
+    # confusion between "we did not look" and "it was fine" that the rest of
+    # this script exists to prevent.
+    if not report.results:
+        print("no stages selected, so nothing was verified", file=sys.stderr)
+        return 1
 
     passed = len(report.results) - len(report.failed)
     if args.json:

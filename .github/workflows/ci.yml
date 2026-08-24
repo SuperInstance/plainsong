@@ -62,6 +62,23 @@ jobs:
       - run: ruff format --check plainsong tests
         continue-on-error: true
 
+  # Every other job runs with the repository on sys.path, which is structurally
+  # blind to packaging. That is not hypothetical: the spec files once lived
+  # outside the package, so `plainsong spec` reported "no specs found" to
+  # everybody who installed rather than cloned -- through a release, with a
+  # fully green suite. This job builds a wheel, installs it into a clean venv
+  # and drives the console script from outside the checkout.
+  packaging:
+    name: the built wheel actually works
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build
+      - run: python tools/verify_release.py --stage wheel
+
   corpus:
     name: notation library still parses
     runs-on: ubuntu-latest

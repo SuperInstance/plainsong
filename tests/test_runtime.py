@@ -180,6 +180,36 @@ class TestSpecs(unittest.TestCase):
             self.assertTrue(spec.title)
             self.assertTrue(spec.checks, f"{spec.id} has no checks")
 
+    def test_finding_no_specs_is_a_failure_not_a_pass(self):
+        """`plainsong spec` answered "no specs found" and exited 0.
+
+        That is the shape of the bug it exists to catch. The spec files once
+        sat in a top-level `specs/` directory, outside the package, so every
+        pip install shipped without them -- and every install, and every CI job
+        that ran `plainsong spec`, read that zero as a pass. The
+        self-verification the design leans on was doing nothing, loudly enough
+        to print a warning and quietly enough that nobody's exit status moved.
+
+        Found again while building `tools/verify_release.py`: a wheel built with
+        the specs excluded still passed the packaging canary, because the canary
+        trusted the exit status.
+        """
+        import argparse
+        import contextlib
+        import io
+
+        from plainsong.interfaces.cli import Out, cmd_spec
+        from plainsong.runtime.config import load_config
+
+        config = load_config()
+        # A tag nothing carries is the reachable way to make the result set
+        # empty without dismantling the install.
+        args = argparse.Namespace(list=False, tag="no-such-tag-exists", verbose=False)
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            status = cmd_spec(args, config, Out())
+        self.assertEqual(status, 1, "an empty spec run must not report success")
+
     def test_all_specs_pass(self):
         failures = [result for result in verify_all() if result.status == "FAIL"]
         self.assertEqual(
