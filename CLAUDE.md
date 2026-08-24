@@ -76,11 +76,15 @@ python3 -m plainsong setup                   # connect a model
 python3 -m plainsong build                   # tailor this install to the machine
 ```
 
-Every command takes `--json`, but it is a **global** flag and goes before the
-subcommand: `plainsong --json info song.song`. Written after it, argparse
-refuses the whole invocation with `unrecognized arguments: --json`. Use it when
-parsing output, and note the totals live under `arrangement` -- `arrangement.notes`
-is the note count, not a top-level key.
+Every command takes `--json`, `-v` and `-q`, **in either position**:
+`plainsong --json info song.song` and `plainsong info song.song --json` are the
+same command. The second used to be refused outright with `unrecognized
+arguments: --json` -- it is what almost everyone types, it is what
+`tools/verify_release.py` was written against, and documenting the constraint
+did not stop anyone falling into it, so the constraint was removed instead.
+
+Use it when parsing output, and note the totals live under `arrangement` --
+`arrangement.notes` is the note count, not a top-level key.
 
 Run the suite with `discover`, not by naming files. Several tests are about how
 modules behave when imported in a particular order, and a single-file run can

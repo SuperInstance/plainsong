@@ -4,6 +4,44 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### Global flags now work in either position
+
+`plainsong info song.song --json` was refused outright -- `unrecognized
+arguments: --json` -- because argparse hangs global options off the top-level
+parser only. It is what almost everyone types, and it is not a small failure:
+the command does not run at all.
+
+This was documented rather than fixed, and documenting it did not work.
+`tools/verify_release.py` in this repository was written against the
+documentation and reported two false failures. To find out whether that
+generalises, four Haiku-class agents were pointed at the CLI cold, with the
+docs withheld. One hit the flag position three times in a single session -- on
+`--json`, on `-v` and on `--quiet` -- and named it first when asked what it
+wished the tool had said up front.
+
+So the trap is removed instead of explained. All 24 subcommands now accept
+`--json`, `-v`/`--verbose` and `-q`/`--quiet` themselves, via
+`argparse.SUPPRESS` so the global position is not silently clobbered by a
+subparser default -- which would have traded a loud failure for a quiet one.
+A subcommand defining its own flag keeps it: `info --verbose` is untouched.
+
+### `--verbose` now shows info-level diagnostics, which nothing showed before
+
+An entire severity was write-only. `_diagnostics` filtered to errors and
+warnings, so info-level diagnostics were produced by the parser and displayed
+by no command at all -- including `info --verbose`, which documents itself as
+showing every diagnostic available.
+
+It matters because `Title: My Song` is the natural way to name a piece and is
+not the notation. The parser says so at info level, so the title was dropped
+silently, the stray row silently became a section, and the only trace was
+`(untitled)` and a section count one too high. Another of the cold agents hit
+exactly that and had to read the parser's source to work out why.
+
+The default output is unchanged; only `--verbose` grows. The corpus produces no
+info-level diagnostics, so nothing in the songbook gets noisier.
+
+
 ### CI was red, and one of its checks could not go red at all
 
 Four jobs were failing on master and had been since 19 August. The cause of

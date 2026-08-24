@@ -91,14 +91,32 @@ class Out:
             self.say("  " + line.rstrip())
 
 
-def _diagnostics(out: Out, diagnostics: list, path: str = "", limit: int = 20) -> None:
-    shown = [diag for diag in diagnostics if diag.severity in ("error", "warning")]
+def _diagnostics(
+    out: Out, diagnostics: list, path: str = "", limit: int = 20, verbose: bool = False
+) -> None:
+    """Show the diagnostics. `verbose` adds the info-level ones.
+
+    Info-level diagnostics used to be produced and then displayed by nothing at
+    all -- not by `compile`, not by `check`, and not by `info --verbose`, which
+    documents itself as showing every diagnostic available. An entire severity
+    was write-only.
+
+    That is not a cosmetic gap. `Title: My Song` is the most natural way to name
+    a piece and is not the notation; the parser says so at info level, so the
+    title was silently dropped, the stray row silently became a section, and the
+    only visible trace was `(untitled)` and a section count one too high. A
+    small model driving this cold hit exactly that.
+    """
+    levels = ("error", "warning", "info") if verbose else ("error", "warning")
+    shown = [diag for diag in diagnostics if diag.severity in levels]
     if not shown:
         return
     out.say()
+    painters = {"error": out.fail, "warning": out.warn}
     for diag in shown[:limit]:
-        painter = out.fail if diag.severity == "error" else out.warn
-        painter(diag.format(path))
+        # Info keeps its own voice: painting it "warn" would say the file has a
+        # problem when what it has is a remark.
+        painters.get(diag.severity, out.dim)(diag.format(path))
     if len(shown) > limit:
         out.dim(f"  ... and {len(shown) - limit} more")
 
@@ -147,7 +165,13 @@ def cmd_compile(args: argparse.Namespace, config: Config, out: Out) -> int:
     for message in result.messages:
         out.warn(message)
     if not args.quiet:
-        _diagnostics(out, result.diagnostics, str(source), limit=8 if not args.verbose else 100)
+        _diagnostics(
+            out,
+            result.diagnostics,
+            str(source),
+            limit=8 if not args.verbose else 100,
+            verbose=args.verbose,
+        )
 
     if args.play and result.audio_path:
         from ..render.backends import play_audio
@@ -234,7 +258,7 @@ def cmd_info(args: argparse.Namespace, config: Config, out: Out) -> int:
         )
         for d in summary.get("diagnostics", [])
     ]
-    _diagnostics(out, reported, str(source), limit=100 if args.verbose else 10)
+    _diagnostics(out, reported, str(source), limit=100 if args.verbose else 10, verbose=args.verbose)
     return 0
 
 
@@ -1424,7 +1448,52 @@ def build_parser() -> argparse.ArgumentParser:
     bridge_parser.add_argument("--text", default="", help="the reply, for `answer`")
     bridge_parser.set_defaults(func=cmd_bridge)
 
+    _accept_global_flags_after_the_subcommand(subparsers)
     return parser
+
+
+# `plainsong info song.song --json` is what almost everyone types, because that
+# is where flags go in nearly every other CLI. argparse hangs global options off
+# the top-level parser only, so that invocation was refused outright --
+# `unrecognized arguments: --json` -- and the refusal is total: the command does
+# not run, it errors. This is not hypothetical. tools/verify_release.py in this
+# repository was written against it and reported two false failures, and a small
+# model driving this CLI cold hit it three times in one session, on --json, on
+# -v and on --quiet, then named flag position as the single thing it most wished
+# the tool had told it.
+#
+# Documenting the constraint was the old fix and it does not work: the sentence
+# "Every command takes --json" was in AGENTS.md, and following it literally is
+# what produced the bug above. So the trap is removed rather than described.
+#
+# argparse.SUPPRESS is the load-bearing detail. Without it the subparser's own
+# default overwrites whatever the global flag set, so `plainsong --json info x`
+# would parse and then silently lose its --json -- trading a loud failure for a
+# quiet one, which is the worse trade.
+GLOBAL_FLAGS_AFTER_SUBCOMMAND = (
+    (("-q", "--quiet"), "quiet", "only print what was asked for"),
+    (("-v", "--verbose"), "verbose", "show more detail"),
+    (("--json",), "json_mode", "machine-readable output"),
+)
+
+
+def _accept_global_flags_after_the_subcommand(subparsers: argparse._SubParsersAction) -> None:
+    """Let every subcommand take the global flags in the natural position too."""
+    for sub in subparsers.choices.values():
+        for options, dest, help_text in GLOBAL_FLAGS_AFTER_SUBCOMMAND:
+            # A subcommand that already defines one of these keeps its own --
+            # `info` has its own `--verbose`, and overriding it here would be a
+            # behaviour change rather than an addition.
+            free = [o for o in options if o not in sub._option_string_actions]
+            if not free:
+                continue
+            sub.add_argument(
+                *free,
+                dest=dest,
+                action="store_true",
+                default=argparse.SUPPRESS,
+                help=help_text,
+            )
 
 
 def main(argv: list[str] | None = None) -> int:

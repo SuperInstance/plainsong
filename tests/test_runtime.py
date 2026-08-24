@@ -40,6 +40,86 @@ def run_cli(*argv: str) -> tuple[int, str, str]:
     return code, out.getvalue(), err.getvalue()
 
 
+class TestGlobalFlagsWorkInBothPositions(unittest.TestCase):
+    """`plainsong info x --json` is what people type, so it has to work.
+
+    argparse hangs global options off the top-level parser only, so the natural
+    position was refused outright -- and refused loudly enough to abort the
+    command. This repository's own tools/verify_release.py was written against
+    that and reported two false failures; a small model driving the CLI cold hit
+    it three times in one session, on --json, -v and --quiet.
+    """
+
+    SONG = "Key: Am\nTempo: 96\n\n[A]\nChords: | Am . . . |\n"
+
+    def _song(self) -> str:
+        directory = tempfile.mkdtemp()
+        path = Path(directory) / "x.song"
+        path.write_text(self.SONG, encoding="utf-8")
+        return str(path)
+
+    def test_json_after_the_subcommand_is_accepted(self) -> None:
+        code, out, _err = run_cli("info", self._song(), "--json")
+        self.assertEqual(code, 0)
+        json.loads(out)  # it is real JSON, not the human summary
+
+    def test_both_positions_agree(self) -> None:
+        song = self._song()
+        _c1, before, _e = run_cli("--json", "info", song)
+        _c2, after, _e = run_cli("info", song, "--json")
+        self.assertEqual(json.loads(before), json.loads(after))
+
+    def test_the_global_position_still_wins_when_the_flag_is_not_repeated(self) -> None:
+        """argparse.SUPPRESS is what stops the subparser default clobbering it."""
+        code, out, _err = run_cli("--json", "info", self._song())
+        self.assertEqual(code, 0)
+        self.assertEqual(json.loads(out)["key"], "Am")
+
+    def test_every_subcommand_takes_them(self) -> None:
+        from plainsong.interfaces.cli import build_parser
+
+        subparsers = [
+            action
+            for action in build_parser()._actions
+            if isinstance(getattr(action, "choices", None), dict)
+        ][0]
+        for name, sub in subparsers.choices.items():
+            with self.subTest(command=name):
+                options = sub._option_string_actions
+                self.assertIn("--json", options)
+                self.assertIn("--verbose", options)
+                self.assertIn("--quiet", options)
+
+
+class TestVerboseShowsInfoDiagnostics(unittest.TestCase):
+    """Info-level diagnostics were produced and displayed by nothing at all.
+
+    `Title: My Song` is the natural way to name a piece and is not the notation.
+    The parser says so at info level, so the title was dropped, the row became a
+    section, and the only visible trace was `(untitled)` and a section count one
+    too high.
+    """
+
+    TITLED = "Title: Midnight Echo\nKey: Dm\nTempo: 96\n\n[A]\nChords: | Dm . . . |\n"
+
+    def _song(self) -> str:
+        directory = tempfile.mkdtemp()
+        path = Path(directory) / "titled.song"
+        path.write_text(self.TITLED, encoding="utf-8")
+        return str(path)
+
+    def test_verbose_explains_why_the_title_vanished(self) -> None:
+        code, out, _err = run_cli("info", self._song(), "--verbose")
+        self.assertEqual(code, 0)
+        self.assertIn("Title", out)
+        self.assertIn("unrecognised row label", out)
+
+    def test_the_default_stays_quiet(self) -> None:
+        """Only --verbose changes; a clean run must not grow new chatter."""
+        _code, out, _err = run_cli("info", self._song())
+        self.assertNotIn("unrecognised row label", out)
+
+
 class TestPaths(unittest.TestCase):
     def test_environment_overrides(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -43,7 +43,9 @@ Four facts do most of the work:
 
 ## Ask the tool; do not infer
 
-Every command takes `--json`. Use it.
+Every command takes `--json`, and it works before or after the subcommand --
+`plainsong --json info song.song` and `plainsong info song.song --json` are the
+same command. Use it.
 
 ```bash
 plainsong chord "G7alt" --explain     # what a symbol means, degree by degree
