@@ -30,9 +30,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--sessions", metavar="DIR", help="where ensemble sessions live; defaults to the workspace"
     )
-    parser.add_argument(
-        "--allow-dangerous", action="store_true", help="offer tools that need approval"
-    )
+    parser.add_argument("--allow-dangerous", action="store_true", help="offer tools that need approval")
     parser.add_argument("--list-tools", action="store_true", help="print the tools and exit")
     return parser
 

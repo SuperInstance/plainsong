@@ -112,9 +112,7 @@ class Stage:
 
     temperature: float = 20.0
     compensate: bool = True
-    listeners: dict[str, tuple[float, float]] = field(
-        default_factory=lambda: dict(DEFAULT_LISTENERS)
-    )
+    listeners: dict[str, tuple[float, float]] = field(default_factory=lambda: dict(DEFAULT_LISTENERS))
     placements: dict[str, Placement] = field(default_factory=dict)
     problems: list[tuple[int, str]] = field(default_factory=list)
     """(line number, message) for anything in the block that could not be read."""

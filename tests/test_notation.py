@@ -270,13 +270,9 @@ class TestRoundTrip(unittest.TestCase):
         for key in ("D", "E", "F", "G"):
             text = transpose(text, key)
             widths = {
-                line.role: len(line.cells)
-                for section in parse(text).sections
-                for line in section.lines
+                line.role: len(line.cells) for section in parse(text).sections for line in section.lines
             }
-            self.assertEqual(
-                set(widths.values()), {2}, f"a row changed width after transposing to {key}"
-            )
+            self.assertEqual(set(widths.values()), {2}, f"a row changed width after transposing to {key}")
 
     def test_emitted_player_rows_read_back_identically(self):
         """The text a transpose writes must parse to the same shape it came from."""
@@ -322,9 +318,7 @@ class TestDocumentedNotation(unittest.TestCase):
         for label, block in self._blocks():
             with self.subTest(example=label):
                 score = parse(block)
-                self.assertEqual(
-                    [diagnostic.format() for diagnostic in score.errors()], [], label
-                )
+                self.assertEqual([diagnostic.format() for diagnostic in score.errors()], [], label)
 
     def test_every_documented_example_makes_a_sound(self):
         """Parsing is not enough: a block that yields no notes teaches nothing."""
@@ -348,10 +342,7 @@ class TestDialectDetection(unittest.TestCase):
     success.
     """
 
-    RELATIVE = (
-        "Key: Bb\nMeter: 3/4\nTempo: 60\n\n"
-        "[Intro]\nI | 1 . . | 5 . . |\nIV | 4 . . | 6 . . |\n"
-    )
+    RELATIVE = "Key: Bb\nMeter: 3/4\nTempo: 60\n\n[Intro]\nI | 1 . . | 5 . . |\nIV | 4 . . | 6 . . |\n"
     ABSOLUTE = (
         "**TRACK: T**\n[MetaData]\nkey: Am | tempo: 96 | time: 4/4\n\n"
         "[V1] (Verse - 2 Bars)\nChords: | Am . . . | F . . . |\n"

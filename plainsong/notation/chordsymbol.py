@@ -76,11 +76,11 @@ class ChordSymbolError(ValueError):
 
 DEGREE_SEMITONES: dict[int, int] = {
     1: 0,
-    2: 2,    # only ever reached through sus2 or add2; folded onto 9 elsewhere
+    2: 2,  # only ever reached through sus2 or add2; folded onto 9 elsewhere
     3: 4,
-    4: 5,    # likewise sus4 / add4, folded onto 11
+    4: 5,  # likewise sus4 / add4, folded onto 11
     5: 7,
-    6: 9,    # a sixth is a sixth, not a thirteenth: it sits below the seventh
+    6: 9,  # a sixth is a sixth, not a thirteenth: it sits below the seventh
     7: 11,
     9: 14,
     11: 17,
@@ -158,21 +158,42 @@ CORES: dict[str, Core] = {
 
 CORE_ALIASES: dict[str, str] = {
     # major
-    "maj": "maj", "major": "maj", "ma": "maj", "mj": "maj", "M": "maj",
-    "Δ": "maj", "∆": "maj", "^": "maj",
+    "maj": "maj",
+    "major": "maj",
+    "ma": "maj",
+    "mj": "maj",
+    "M": "maj",
+    "Δ": "maj",
+    "∆": "maj",
+    "^": "maj",
     # minor. `-` is the Real Book's spelling and is very common.
-    "m": "min", "min": "min", "mi": "min", "minor": "min", "-": "min",
+    "m": "min",
+    "min": "min",
+    "mi": "min",
+    "minor": "min",
+    "-": "min",
     "moll": "min",
     # diminished
-    "dim": "dim", "o": "dim", "°": "dim", "º": "dim",
+    "dim": "dim",
+    "o": "dim",
+    "°": "dim",
+    "º": "dim",
     # half-diminished
-    "ø": "halfdim", "Ø": "halfdim", "halfdim": "halfdim", "h": "halfdim",
+    "ø": "halfdim",
+    "Ø": "halfdim",
+    "halfdim": "halfdim",
+    "h": "halfdim",
     # augmented
-    "aug": "aug", "+": "aug",
+    "aug": "aug",
+    "+": "aug",
     # suspended
-    "sus": "sus4", "sus4": "sus4", "sus2": "sus2",
+    "sus": "sus4",
+    "sus4": "sus4",
+    "sus2": "sus2",
     # no third
-    "5": "power", "no3": "power", "omit3": "power",
+    "5": "power",
+    "no3": "power",
+    "omit3": "power",
 }
 
 #: Longest first, so a scan cannot stop early on a prefix.
@@ -203,8 +224,13 @@ ALT_REMOVES: tuple[int, ...] = (5,)
 # --- accidentals -----------------------------------------------------------
 
 _UNICODE = {
-    "♭": "b", "♯": "#", "𝄫": "bb", "𝄪": "##",
-    "−": "-", "–": "-", "—": "-",   # minus signs that are not hyphens
+    "♭": "b",
+    "♯": "#",
+    "𝄫": "bb",
+    "𝄪": "##",
+    "−": "-",
+    "–": "-",
+    "—": "-",  # minus signs that are not hyphens
     "＃": "#",
 }
 
@@ -271,7 +297,7 @@ def _scan_root(text: str) -> tuple[int, str]:
         raise ChordSymbolError(f"no chord root in {text!r}")
     letter, accidentals = match.groups()
     shift = sum(_ACCIDENTAL_SHIFT[character] for character in accidentals)
-    return (LETTER_PC[letter.upper()] + shift) % 12, text[match.end():]
+    return (LETTER_PC[letter.upper()] + shift) % 12, text[match.end() :]
 
 
 def _split_bass(text: str) -> tuple[str, str | None]:
@@ -341,7 +367,7 @@ def _written_suffix(token: str) -> str:
     text = token.strip()
     head, _bass = _split_bass(_normalise(text))
     match = _ROOT_RE.match(head)
-    return head[match.end():] if match else head
+    return head[match.end() :] if match else head
 
 
 # A modification: what to do, to which degree, and by how much.
@@ -378,13 +404,13 @@ def _scan_suffix(suffix: str, original: str) -> tuple[str, int, list[Modificatio
         matched = False
         for word, operation in (("add", "add"), ("omit", "omit"), ("no", "omit")):
             if rest[: len(word)].lower() == word:
-                tail = rest[len(word):]
+                tail = rest[len(word) :]
                 shift, tail = _leading_accidental(tail)
                 degree_match = _DEGREE_RE.match(tail)
                 if degree_match:
                     degree = int(degree_match.group(1))
                     mods.append((operation, _fold(degree), shift))
-                    rest = tail[degree_match.end():]
+                    rest = tail[degree_match.end() :]
                     matched = True
                     break
         if matched:
@@ -411,7 +437,7 @@ def _scan_suffix(suffix: str, original: str) -> tuple[str, int, list[Modificatio
             if degree_match:
                 degree = int(degree_match.group(1))
                 mods.append(("alter", _fold(degree), shift))
-                rest = rest[1 + degree_match.end():]
+                rest = rest[1 + degree_match.end() :]
                 continue
 
         # A number: either how far to stack, or a sixth, or -- when it is
@@ -428,7 +454,7 @@ def _scan_suffix(suffix: str, original: str) -> tuple[str, int, list[Modificatio
         degree_match = _DEGREE_RE.match(rest)
         if degree_match:
             value = int(degree_match.group(1))
-            tail = rest[degree_match.end():]
+            tail = rest[degree_match.end() :]
             if value == 5 and core_name is None and not tail:
                 # A bare `C5`: root and fifth, no third. Anywhere else a 5 is
                 # either a stack height nobody writes or part of `b5`/`#5`,
@@ -479,7 +505,7 @@ def _scan_suffix(suffix: str, original: str) -> tuple[str, int, list[Modificatio
                 if core_name is None:
                     core_name = name
                 elif core_name == "min" and name == "maj":
-                    core_name = "minmaj"       # CmMaj7, C-Δ7
+                    core_name = "minmaj"  # CmMaj7, C-Δ7
                 elif core_name == "maj" and name == "min":
                     core_name = "minmaj"
                 elif name in ("sus4", "sus2"):
@@ -489,7 +515,7 @@ def _scan_suffix(suffix: str, original: str) -> tuple[str, int, list[Modificatio
                     core_name = name
                 if alias in SEVENTH_IMPLIED:
                     stack = max(stack, 7)
-                rest = rest[len(alias):]
+                rest = rest[len(alias) :]
                 break
         else:
             raise ChordSymbolError(f"unreadable chord quality {suffix!r} in {original!r}")

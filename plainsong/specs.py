@@ -112,7 +112,10 @@ class Check:
             if not shutil.which(argv[0]):
                 return (self.optional, f"skipped: {argv[0]} is not installed")
             completed = subprocess.run(
-                argv, capture_output=True, timeout=300, check=False,
+                argv,
+                capture_output=True,
+                timeout=300,
+                check=False,
                 cwd=str(paths.project_root or Path.cwd()),
             )
             output = (completed.stdout or completed.stderr).decode("utf-8", "replace").strip()
@@ -179,8 +182,7 @@ class SpecResult:
             "title": self.spec.title,
             "status": self.status,
             "checks": [
-                {"id": check.id, "status": check.status, "detail": check.detail}
-                for check in self.checks
+                {"id": check.id, "status": check.status, "detail": check.detail} for check in self.checks
             ],
         }
 

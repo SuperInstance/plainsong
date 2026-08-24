@@ -2,13 +2,18 @@
 
 import math
 import sys
+import unittest
 from pathlib import Path
-
-import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from groove_tracker import GrooveTracker, TickEvent
+
+# The stdlib-only CI job has no pytest and runs `unittest discover`, which
+# imports every test module -- so importing pytest here took all twelve
+# platform jobs down. These few assertions have exact stdlib equivalents,
+# so the dependency is not worth a skip.
+_assert = unittest.TestCase()
 
 
 def test_perfect_sync():
@@ -110,7 +115,7 @@ def test_phase_wrapping():
     tracker.record_tick(
         TickEvent(room_name="engine", expected_phase=0.05, actual_phase=0.95, timestamp=0.0)
     )
-    assert tracker.groove() == pytest.approx(math.exp(-0.1 * 20.0))
+    _assert.assertAlmostEqual(tracker.groove(), math.exp(-0.1 * 20.0))
 
 
 def test_threshold_getter():

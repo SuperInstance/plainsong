@@ -102,9 +102,7 @@ class TestBarsAreCountedNotAccumulated(unittest.TestCase):
         # Onsets are produced by division, so a downbeat can arrive as
         # 11.999999999999998. Flooring that lands it a whole bar early.
         grid = TimeGrid(bar_beats=4.0)
-        placement = grid.add(
-            token="x", row="melody", kind="note", onset=11.999999999999998, width=1.0
-        )
+        placement = grid.add(token="x", row="melody", kind="note", onset=11.999999999999998, width=1.0)
         self.assertEqual(placement.bar, 3)
         self.assertEqual(placement.unit, 0.0)
 
@@ -130,8 +128,12 @@ class TestTheGridDoesNotChangeTheMusic(unittest.TestCase):
         self.assertEqual(
             pitches,
             [
-                (57, 0.0, 4.0), (60, 0.0, 4.0), (64, 0.0, 4.0),   # Am, held
-                (69, 0.0, 2.0), (72, 2.0, 1.0), (76, 3.0, 1.0),   # A4 . C5 E5
+                (57, 0.0, 4.0),
+                (60, 0.0, 4.0),
+                (64, 0.0, 4.0),  # Am, held
+                (69, 0.0, 2.0),
+                (72, 2.0, 1.0),
+                (76, 3.0, 1.0),  # A4 . C5 E5
             ],
         )
 
@@ -142,12 +144,8 @@ class TestTheGridDoesNotChangeTheMusic(unittest.TestCase):
 
 class TestPlacement(unittest.TestCase):
     def test_sounds_distinguishes_a_note_from_a_column_holder(self):
-        self.assertTrue(
-            Placement("C4", "melody", "note", 0, 0.0, 1.0, 0.0).sounds
-        )
-        self.assertFalse(
-            Placement("the", "lyrics", "text", 0, 0.0, 1.0, 0.0).sounds
-        )
+        self.assertTrue(Placement("C4", "melody", "note", 0, 0.0, 1.0, 0.0).sounds)
+        self.assertFalse(Placement("the", "lyrics", "text", 0, 0.0, 1.0, 0.0).sounds)
 
 
 if __name__ == "__main__":

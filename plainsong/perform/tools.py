@@ -98,9 +98,7 @@ def register(registry: Any) -> None:
             return problem
         score = parse(text, path=path)
         if score.has_errors:
-            return "the notation has errors:\n" + "\n".join(
-                f"  {diag.format()}" for diag in score.errors()
-            )
+            return "the notation has errors:\n" + "\n".join(f"  {diag.format()}" for diag in score.errors())
         if score.meta.stage is None:
             return (
                 "this piece has no [Stage] block, so every voice is heard where it is written. "
@@ -125,9 +123,7 @@ def register(registry: Any) -> None:
     def directive_reference() -> str:
         return DIRECTIVE_HELP
 
-    def conduct_score(
-        directives: str, path: str = "", content: str = "", frame: str = ""
-    ) -> str:
+    def conduct_score(directives: str, path: str = "", content: str = "", frame: str = "") -> str:
         from ..notation import arrange, parse
         from ..notation.arrange import ArrangeOptions
         from . import conduct
@@ -138,9 +134,7 @@ def register(registry: Any) -> None:
             return problem
         score = parse(text, path=path)
         if score.has_errors:
-            return "the notation has errors:\n" + "\n".join(
-                f"  {diag.format()}" for diag in score.errors()
-            )
+            return "the notation has errors:\n" + "\n".join(f"  {diag.format()}" for diag in score.errors())
         reading = conduct.read(directives)
         written = arrange(score, ArrangeOptions(frame=frame))
         conducted = conduct.apply(written, reading, frame=frame)

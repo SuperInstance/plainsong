@@ -52,9 +52,7 @@ class PlaybackConnector(Connector):
         from ..render.backends import play_audio
 
         target = Path(options.get("path") or self.config.paths.output_dir / "playback.wav")
-        synth = Synthesiser(
-            AudioOptions(sample_rate=int(self.config.get("render", "sample_rate", 44100)))
-        )
+        synth = Synthesiser(AudioOptions(sample_rate=int(self.config.get("render", "sample_rate", 44100))))
         synth.write(arrangement, target)
         outcome = play_audio(target)
         return ConnectorResult(outcome.ok, detail=outcome.message or "played", outputs=[str(target)])

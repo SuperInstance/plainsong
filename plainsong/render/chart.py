@@ -58,11 +58,11 @@ which is close to the average and never zero -- a zero would stack glyphs."""
 class ChartOptions:
     """Everything about the drawing, in staff spaces unless stated."""
 
-    staff_space: float = 7.0            # px; the one number the chart scales from
+    staff_space: float = 7.0  # px; the one number the chart scales from
     bars_per_line: int = 4
-    bar_width: float = 16.0             # staff spaces
-    line_height: float = 7.5            # staff spaces between system baselines
-    margin: float = 3.5                 # staff spaces
+    bar_width: float = 16.0  # staff spaces
+    line_height: float = 7.5  # staff spaces between system baselines
+    margin: float = 3.5  # staff spaces
     show_lyrics: bool = True
     title: bool = True
 
@@ -90,12 +90,7 @@ def text_width(text: str, font_size: float, bold: bool = False) -> float:
 
 
 def _escape(text: str) -> str:
-    return (
-        text.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
 def _text(x: float, y: float, body: str, size: float, cls: str, anchor: str = "start") -> str:
@@ -134,9 +129,7 @@ def _chords_by_bar(arrangement: Arrangement) -> dict[int, list[tuple[float, str]
     return {bar: sorted(units.items()) for bar, units in seen.items()}
 
 
-def _required_width(
-    items: list[tuple[float, str]], size: float, bold: bool, gap: float
-) -> float:
+def _required_width(items: list[tuple[float, str]], size: float, bold: bool, gap: float) -> float:
     """The narrowest bar width at which none of these items overlap.
 
     Each item sits at `unit * width`, so the next one starting at `next_unit`
@@ -170,11 +163,7 @@ def _lyrics_by_bar(arrangement: Arrangement, bar_beats: float) -> dict[int, list
 
 
 def _sections_by_bar(arrangement: Arrangement, bar_beats: float) -> dict[int, str]:
-    return {
-        int(beat / bar_beats + 1e-9): name
-        for name, beat in arrangement.section_starts
-        if name
-    }
+    return {int(beat / bar_beats + 1e-9): name for name, beat in arrangement.section_starts if name}
 
 
 _STYLE = """
@@ -231,7 +220,7 @@ def render(arrangement: Arrangement, options: ChartOptions | None = None) -> str
 
     line_h = options.line_height * space
     if lyrics:
-        line_h += space * 2.2   # room for the words, and for the next section label
+        line_h += space * 2.2  # room for the words, and for the next section label
 
     heading = size * 2.3 if (options.title and arrangement.meta.title) else 0.0
     width = margin * 2 + bar_w * per_line
@@ -251,8 +240,7 @@ def render(arrangement: Arrangement, options: ChartOptions | None = None) -> str
         # right-aligned metadata line collide, and which one wins depends on
         # the title, so there is no width at which the layout is safe.
         meta_line = (
-            f"{arrangement.meta.key.text}  ·  {arrangement.meta.meter}"
-            f"  ·  {arrangement.meta.tempo:g} bpm"
+            f"{arrangement.meta.key.text}  ·  {arrangement.meta.meter}  ·  {arrangement.meta.tempo:g} bpm"
         )
         parts.append(_text(margin, margin + size * 1.95, meta_line, size * 0.62, "faint"))
 

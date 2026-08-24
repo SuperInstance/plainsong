@@ -46,18 +46,18 @@ FEATURE_NAMES = (
 # notes are dense, an octave is a large melodic leap, four sounding voices is a
 # full texture.
 REFERENCES = {
-    "note_density": 4.0,           # onsets per beat
-    "rhythmic_complexity": 1.0,    # stdev of inter-onset intervals, in beats
-    "velocity_std": 32.0,          # MIDI velocity
-    "contour_direction": 12.0,     # semitones, signed
-    "interval_size": 12.0,         # semitones
-    "chord_density": 6.0,          # simultaneous notes
+    "note_density": 4.0,  # onsets per beat
+    "rhythmic_complexity": 1.0,  # stdev of inter-onset intervals, in beats
+    "velocity_std": 32.0,  # MIDI velocity
+    "contour_direction": 12.0,  # semitones, signed
+    "interval_size": 12.0,  # semitones
+    "chord_density": 6.0,  # simultaneous notes
 }
 
 MIDI_MAX = 127.0
-BASS_CEILING = 48   # below this is bass register
-TREBLE_FLOOR = 84   # above this is treble activity
-BEAT = 1.0          # a beat, in the units the arranger works in
+BASS_CEILING = 48  # below this is bass register
+TREBLE_FLOOR = 84  # above this is treble activity
+BEAT = 1.0  # a beat, in the units the arranger works in
 ON_BEAT_TOLERANCE = 1e-3
 PITCH_CLASSES = 12
 
@@ -222,9 +222,7 @@ def _describe_bar(
         "velocity_mean": _clip(_mean(velocities) / MIDI_MAX),
         "velocity_std": _clip(_stdev(velocities) / REFERENCES["velocity_std"]),
         "syncopation": (off_beat / len(onsets)) if onsets else 0.0,
-        "contour_direction": _clip(
-            _mean(intervals) / REFERENCES["contour_direction"], -1.0, 1.0
-        ),
+        "contour_direction": _clip(_mean(intervals) / REFERENCES["contour_direction"], -1.0, 1.0),
         "interval_size": _clip(
             _mean([abs(interval) for interval in intervals]) / REFERENCES["interval_size"]
         ),
@@ -258,8 +256,7 @@ def _melodic_intervals(lines: Sequence[Sequence[Any]], start: float, end: float)
             key=lambda note: (note.start, note.pitch),
         )
         intervals.extend(
-            float(within[index + 1].pitch - within[index].pitch)
-            for index in range(len(within) - 1)
+            float(within[index + 1].pitch - within[index].pitch) for index in range(len(within) - 1)
         )
     return intervals
 
@@ -285,9 +282,7 @@ def summarise(bars: Sequence[BarFeatures]) -> dict[str, float]:
     """The mean of each feature over a run of bars."""
     if not bars:
         return dict.fromkeys(FEATURE_NAMES, 0.0)
-    return {
-        name: _round(_mean([bar.values[name] for bar in bars])) for name in FEATURE_NAMES
-    }
+    return {name: _round(_mean([bar.values[name] for bar in bars])) for name in FEATURE_NAMES}
 
 
 def format_table(bars: Sequence[BarFeatures], width: int = 6) -> str:

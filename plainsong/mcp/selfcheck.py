@@ -226,15 +226,13 @@ def check_resources_and_prompts() -> tuple[bool, str]:
             if wanted not in patterns:
                 return False, f"{wanted} is not offered as a template"
 
-        read = _call(
-            server, "resources/read", {"uri": "plainsong://capabilities"}, identifier=3
-        )["result"]["contents"][0]
+        read = _call(server, "resources/read", {"uri": "plainsong://capabilities"}, identifier=3)["result"][
+            "contents"
+        ][0]
         if not read["text"].strip().startswith("{"):
             return False, "capabilities did not come back as JSON"
 
-        missing = _call(
-            server, "resources/read", {"uri": "plainsong://spec/nothing"}, identifier=4
-        )
+        missing = _call(server, "resources/read", {"uri": "plainsong://spec/nothing"}, identifier=4)
         if "error" not in missing:
             return False, "an unknown resource was not reported as an error"
 
@@ -260,9 +258,7 @@ def check_conductor_bridge() -> tuple[bool, str]:
                 "arguments": {
                     "content": SAMPLE,
                     "directives": {
-                        "directives": [
-                            {"action": "lay_back", "intensity": 0.5, "duration_beats": 4}
-                        ]
+                        "directives": [{"action": "lay_back", "intensity": 0.5, "duration_beats": 4}]
                     },
                     "features": False,
                 },

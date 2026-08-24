@@ -3,19 +3,24 @@ in genome.rs and tradition_dna.rs."""
 
 import random
 import sys
+import unittest
 from pathlib import Path
-
-import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from genome import N_GENES, MusicalGenome
+from genome import MusicalGenome
 from tradition_dna import (
     TRADITION_GENOMES,
     TRADITION_NAMES,
     decode_tradition,
     encode_tradition,
 )
+
+# The stdlib-only CI job has no pytest and runs `unittest discover`, which
+# imports every test module -- so importing pytest here took all twelve
+# platform jobs down. These few assertions have exact stdlib equivalents,
+# so the dependency is not worth a skip.
+_assert = unittest.TestCase()
 
 
 def _make_rng():
@@ -32,7 +37,7 @@ def test_new_valid():
 
 
 def test_new_wrong_length():
-    with pytest.raises(ValueError):
+    with _assert.assertRaises(ValueError):
         MusicalGenome([1.0] * 10)
 
 
@@ -82,7 +87,7 @@ def test_from_tradition():
 
 
 def test_from_unknown_tradition():
-    with pytest.raises(ValueError):
+    with _assert.assertRaises(ValueError):
         MusicalGenome.from_tradition("NonExistent", _make_rng())
 
 
@@ -139,7 +144,7 @@ def test_tradition_genomes_dial_positions():
 
     for name, centre in TRADITION_CENTRES:
         pos = TRADITION_GENOMES[name].dial_position()
-        for got, want in zip(pos, centre):
+        for got, want in zip(pos, centre, strict=True):
             assert abs(got - want) < 1.0, f"{name}: {got} vs {want}"
 
 

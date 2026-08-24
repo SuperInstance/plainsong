@@ -150,8 +150,7 @@ class TestSynthesis(unittest.TestCase):
 
         self.assertGreater(frames, 8000)
         peak = max(
-            abs(int.from_bytes(raw[i : i + 2], "little", signed=True))
-            for i in range(0, len(raw) - 1, 2)
+            abs(int.from_bytes(raw[i : i + 2], "little", signed=True)) for i in range(0, len(raw) - 1, 2)
         )
         self.assertGreater(peak, 5000, "audio is too quiet to be real output")
         self.assertLessEqual(peak, 32767)

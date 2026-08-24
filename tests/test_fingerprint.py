@@ -98,7 +98,10 @@ class TestReport(unittest.TestCase):
         # Sorted by posix path so Windows and Linux produce the same file. The
         # separator is part of the string, so unsorted output would make the
         # recorded baseline platform-specific and the CI job useless.
-        names = [line.split()[-1] for line in format_report(fingerprint_paths([str(self.root)])).splitlines()[:-1]]
+        names = [
+            line.split()[-1]
+            for line in format_report(fingerprint_paths([str(self.root)])).splitlines()[:-1]
+        ]
         self.assertEqual(names, sorted(names))
 
     def test_the_total_line_is_last(self):

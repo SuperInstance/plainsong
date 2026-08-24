@@ -38,11 +38,11 @@ could not work at all.
 
 def bundled_songbook() -> Path:
     return Path(__file__).resolve().parent / BUNDLED_SONGBOOK
+
+
 INDEX_VERSION = 2
 
-HEADER_RE = re.compile(
-    r"^(?:\*\*)?TRACK\s*:\s*(?P<title>.+?)(?:\*\*)?$", re.IGNORECASE | re.MULTILINE
-)
+HEADER_RE = re.compile(r"^(?:\*\*)?TRACK\s*:\s*(?P<title>.+?)(?:\*\*)?$", re.IGNORECASE | re.MULTILINE)
 KEY_RE = re.compile(r"^key\s*:\s*(?P<key>[^|\n]+)", re.IGNORECASE | re.MULTILINE)
 TEMPO_RE = re.compile(r"tempo\s*:\s*(?P<tempo>\d+)", re.IGNORECASE)
 
@@ -243,9 +243,7 @@ class Library:
         """Resolve a path, a filename or a title to one entry."""
         candidate = Path(reference)
         if candidate.exists() and candidate.suffix == ".song":
-            return LibraryEntry(
-                path=candidate, name=candidate.stem, title=candidate.stem, collection=""
-            )
+            return LibraryEntry(path=candidate, name=candidate.stem, title=candidate.stem, collection="")
         lowered = reference.strip().lower()
         for entry in self.all():
             if lowered in (entry.name.lower(), entry.title.lower(), str(entry.path).lower()):

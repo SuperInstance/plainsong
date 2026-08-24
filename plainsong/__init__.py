@@ -31,5 +31,7 @@ def __getattr__(name: str):
     if name in {"compile_text", "compile_file", "CompileResult"}:
         from .pipeline import CompileResult, compile_file, compile_text
 
-        return {"compile_text": compile_text, "compile_file": compile_file, "CompileResult": CompileResult}[name]
+        return {"compile_text": compile_text, "compile_file": compile_file, "CompileResult": CompileResult}[
+            name
+        ]
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

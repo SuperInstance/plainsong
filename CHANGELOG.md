@@ -4,6 +4,41 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### CI was red, and one of its checks could not go red at all
+
+Four jobs were failing on master and had been since 19 August. The cause of
+three of them was one line.
+
+`plainsong/render/chunked.py` imported NumPy at module scope, and
+`render/__init__` imports that module eagerly -- so every renderer needed NumPy,
+including the pure-stdlib MIDI writer. `plainsong compile song.song -o out.mid`,
+with no audio anywhere in it, failed on a machine without NumPy. That is the
+rule this project cares most about, broken in the direction it is meant to
+prevent. The import now sits in the two functions that use it. **PyPI is not
+affected** -- this landed after 1.4.0 was tagged, so no released version carries
+it.
+
+The other two: `src/genome.py` defines a classmethod named `random`, which
+shadows the `random` module for the rest of the class body, so the next
+`rng: random.Random` annotation was evaluated against the classmethod and raised
+at import -- taking the whole pytest run down with it. And `tests/test_chunked.py`
+imported both NumPy and pytest at module scope, so on the stdlib-only job -- which
+has neither, and runs `unittest discover`, which imports every test module -- an
+absent optional dependency became a collection error rather than a skip.
+
+The fourth is the one worth reading. `ruff format --check` carried
+`continue-on-error: true`, and **had never passed**: it reported 60 unformatted
+files and exit 1 on every run since it was written, while the job went green.
+A check that cannot fail is decoration -- which is the first rule in this
+repository's own `docs/verification.md`, sitting in this repository's own CI.
+The suppression is gone, the 63 files are formatted, and ruff is pinned, because
+a gating formatter that upgrades itself would turn the build red with nobody
+having touched the code.
+
+The corpus fingerprint is what makes the reformatting safe to believe: 6,321
+files compile to exactly the music they did before.
+
+
 ### `plainsong mcp` is deprecated
 
 `plainsong-mcp` 1.0.0 is on PyPI, so for the first time there is somewhere to

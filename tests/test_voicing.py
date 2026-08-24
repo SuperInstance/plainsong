@@ -50,7 +50,7 @@ class TestWhatGetsGivenUp(unittest.TestCase):
     def test_the_fifth_goes_first(self):
         # C13 is C E G Bb D A. Six notes into four voices: the G leaves.
         self.assertNotIn("G", played("C13"))
-        self.assertIn("E", played("C13"))   # third
+        self.assertIn("E", played("C13"))  # third
         self.assertIn("Bb", played("C13"))  # seventh
 
     def test_the_root_goes_second(self):
@@ -66,7 +66,8 @@ class TestWhatGetsGivenUp(unittest.TestCase):
                 for degree in (3, 7):
                     if degree in chord.degrees:
                         self.assertIn(
-                            (chord.root_pc + chord.degrees[degree]) % 12, notes,
+                            (chord.root_pc + chord.degrees[degree]) % 12,
+                            notes,
                             f"{symbol} lost its {degree}",
                         )
 
@@ -89,8 +90,8 @@ class TestNothingGetsWorse(unittest.TestCase):
         # The old cap counted the bass note against the chord, so `Am7/G` lost
         # its seventh to make room for its own bass and sounded like `Am/G`.
         notes = played("Am7/G")
-        self.assertEqual(notes[0], "G")             # the bass, below
-        self.assertIn("G", notes[1:])               # and the seventh, still there
+        self.assertEqual(notes[0], "G")  # the bass, below
+        self.assertIn("G", notes[1:])  # and the seventh, still there
         self.assertEqual(len(notes), 5)
 
     def test_a_chord_with_no_degree_map_still_voices(self):
@@ -148,9 +149,7 @@ class TestTheSettingIsReachable(unittest.TestCase):
         if render is not None:
             config.data.setdefault("render", {})["voicing"] = render
         result = pipeline.compile_text(self.SONG, config=config)
-        pitches = sorted(
-            note.pitch for track in result.arrangement.tracks for note in track.notes
-        )
+        pitches = sorted(note.pitch for track in result.arrangement.tracks for note in track.notes)
         return [p % 12 for p in pitches], result.diagnostics
 
     def test_core_voicing_selects_the_strategy(self):
@@ -159,16 +158,14 @@ class TestTheSettingIsReachable(unittest.TestCase):
         self.assertNotEqual(guide, stack)
         # D9 written D F# A C E. `guide` gives up the fifth to keep the ninth;
         # `stack` is the pre-1.0.0 rendering, which is a D7.
-        self.assertEqual(guide, [2, 6, 0, 4])       # D F# C E
-        self.assertEqual(stack, [2, 6, 9, 0])       # D F# A C
+        self.assertEqual(guide, [2, 6, 0, 4])  # D F# C E
+        self.assertEqual(stack, [2, 6, 9, 0])  # D F# A C
 
     def test_an_unknown_strategy_says_so(self):
         # Falling back in silence is indistinguishable from being honoured.
         _, diagnostics = self._compile("stak")
         messages = [d.message for d in diagnostics]
-        self.assertTrue(
-            any("unknown voicing" in m and "stak" in m for m in messages), messages
-        )
+        self.assertTrue(any("unknown voicing" in m and "stak" in m for m in messages), messages)
 
     def test_the_name_the_1_0_0_docs_printed_still_works(self):
         # docs/voicing.md said `render.voicing` while nothing read either name.
@@ -188,10 +185,7 @@ class TestTheSettingIsReachable(unittest.TestCase):
         from plainsong import pipeline
 
         default = pipeline.compile_text(self.SONG)
-        pitches = [
-            p % 12
-            for p in sorted(n.pitch for t in default.arrangement.tracks for n in t.notes)
-        ]
+        pitches = [p % 12 for p in sorted(n.pitch for t in default.arrangement.tracks for n in t.notes)]
         self.assertEqual(pitches, self._compile("guide")[0])
 
 

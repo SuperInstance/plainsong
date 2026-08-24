@@ -26,8 +26,7 @@ def spell(symbol: str) -> str:
     """
     parsed = parse_symbol(symbol)
     return " ".join(
-        NAMES[(parsed.root_pc + offset) % 12]
-        for offset in sorted(set(parsed.degrees.values()))
+        NAMES[(parsed.root_pc + offset) % 12] for offset in sorted(set(parsed.degrees.values()))
     )
 
 
@@ -181,10 +180,12 @@ class TestNoChord(unittest.TestCase):
     def _arrange(self, token: str):
         from plainsong.notation import arrange, parse
 
-        return arrange(parse(
-            "**TRACK: T**\n[MetaData]\nkey: C | tempo: 120 | time: 4/4\n\n"
-            f"[V1] (Verse - 2 Bars)\nChords: | C . . . | {token} . . . |\n"
-        ))
+        return arrange(
+            parse(
+                "**TRACK: T**\n[MetaData]\nkey: C | tempo: 120 | time: 4/4\n\n"
+                f"[V1] (Verse - 2 Bars)\nChords: | C . . . | {token} . . . |\n"
+            )
+        )
 
     def test_no_chord_is_silence_and_says_nothing_about_it(self):
         for token in self.SPELLINGS:
@@ -215,8 +216,7 @@ class TestRefusal(unittest.TestCase):
         # behaviour the corpus depends on -- it writes voicings in lowercase --
         # and this test pins it so a future change to the root scanner cannot
         # widen it without somebody noticing.
-        accepted = [w for w in ("a", "b", "c", "d", "e", "f", "g", "am", "ebb")
-                    if _parses(w)]
+        accepted = [w for w in ("a", "b", "c", "d", "e", "f", "g", "am", "ebb") if _parses(w)]
         self.assertEqual(accepted, ["a", "b", "c", "d", "e", "f", "g", "am", "ebb"])
         for word in ("bad", "cab", "dab", "face", "fade", "deaf", "decaf", "beef"):
             self.assertFalse(_parses(word), word)
@@ -233,9 +233,27 @@ class TestTranspositionSurvivesTheNewVocabulary(unittest.TestCase):
     """
 
     SYMBOLS = (
-        "C7b9#11", "G7alt", "EbMaj7", "C7M", "C6/9", "Cm7b5", "F13#11",
-        "Bmaj7#5", "C9sus4", "Cadd11", "Am", "D/F#", "Cm/Bb", "C∆7",
-        "Bb-7", "Cø", "C7(b13)", "Cdim7", "C5", "C", "Csus4",
+        "C7b9#11",
+        "G7alt",
+        "EbMaj7",
+        "C7M",
+        "C6/9",
+        "Cm7b5",
+        "F13#11",
+        "Bmaj7#5",
+        "C9sus4",
+        "Cadd11",
+        "Am",
+        "D/F#",
+        "Cm/Bb",
+        "C∆7",
+        "Bb-7",
+        "Cø",
+        "C7(b13)",
+        "Cdim7",
+        "C5",
+        "C",
+        "Csus4",
     )
 
     def test_one_step_keeps_the_pitch_classes(self):
@@ -273,16 +291,30 @@ class TestNothingThatCompiledBeforeCompilesDifferently(unittest.TestCase):
     """
 
     KNOWN = {
-        "C": (0, 4, 7), "Cm": (0, 3, 7), "C7": (0, 4, 7, 10),
-        "Cmaj7": (0, 4, 7, 11), "Cm7": (0, 3, 7, 10), "Cdim": (0, 3, 6),
-        "Cdim7": (0, 3, 6, 9), "Caug": (0, 4, 8), "Csus2": (0, 2, 7),
-        "Csus4": (0, 5, 7), "C6": (0, 4, 7, 9), "Cm6": (0, 3, 7, 9),
-        "C9": (0, 4, 7, 10, 14), "Cmaj9": (0, 4, 7, 11, 14),
-        "Cm9": (0, 3, 7, 10, 14), "C7sus4": (0, 5, 7, 10),
-        "Cm7b5": (0, 3, 6, 10), "Cadd9": (0, 4, 7, 14),
-        "C7b9": (0, 4, 7, 10, 13), "C7#9": (0, 4, 7, 10, 15),
-        "C7b5": (0, 4, 6, 10), "C7#5": (0, 4, 8, 10),
-        "CmMaj7": (0, 3, 7, 11), "C5": (0, 7),
+        "C": (0, 4, 7),
+        "Cm": (0, 3, 7),
+        "C7": (0, 4, 7, 10),
+        "Cmaj7": (0, 4, 7, 11),
+        "Cm7": (0, 3, 7, 10),
+        "Cdim": (0, 3, 6),
+        "Cdim7": (0, 3, 6, 9),
+        "Caug": (0, 4, 8),
+        "Csus2": (0, 2, 7),
+        "Csus4": (0, 5, 7),
+        "C6": (0, 4, 7, 9),
+        "Cm6": (0, 3, 7, 9),
+        "C9": (0, 4, 7, 10, 14),
+        "Cmaj9": (0, 4, 7, 11, 14),
+        "Cm9": (0, 3, 7, 10, 14),
+        "C7sus4": (0, 5, 7, 10),
+        "Cm7b5": (0, 3, 6, 10),
+        "Cadd9": (0, 4, 7, 14),
+        "C7b9": (0, 4, 7, 10, 13),
+        "C7#9": (0, 4, 7, 10, 15),
+        "C7b5": (0, 4, 6, 10),
+        "C7#5": (0, 4, 8, 10),
+        "CmMaj7": (0, 3, 7, 11),
+        "C5": (0, 7),
     }
 
     def test_the_common_vocabulary_is_unchanged(self):

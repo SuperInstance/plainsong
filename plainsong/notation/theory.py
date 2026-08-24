@@ -155,7 +155,13 @@ QUALITY_ALIASES: tuple[tuple[str, str], ...] = tuple(
 )
 
 ROMAN_DEGREES = {
-    "I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7,
+    "I": 1,
+    "II": 2,
+    "III": 3,
+    "IV": 4,
+    "V": 5,
+    "VI": 6,
+    "VII": 7,
 }
 
 _PITCH_RE = re.compile(r"^([A-Ga-g])([#b♯♭]*)(-?\d+)?$")
@@ -353,9 +359,16 @@ def parse_chord(token: str) -> Chord:
 
 
 _LEGACY_BY_CORE = {
-    "maj": "maj", "dom": "7", "min": "min", "minmaj": "minmaj7",
-    "halfdim": "min7b5", "dim": "dim", "aug": "aug",
-    "sus4": "sus4", "sus2": "sus2", "power": "5",
+    "maj": "maj",
+    "dom": "7",
+    "min": "min",
+    "minmaj": "minmaj7",
+    "halfdim": "min7b5",
+    "dim": "dim",
+    "aug": "aug",
+    "sus4": "sus4",
+    "sus2": "sus2",
+    "power": "5",
 }
 
 
@@ -441,12 +454,23 @@ class Key:
 
 
 MODE_WORDS = {
-    "major": "major", "maj": "major", "": "major", "ionian": "ionian",
-    "minor": "minor", "min": "minor", "m": "minor", "aeolian": "aeolian",
-    "dorian": "dorian", "phrygian": "phrygian", "lydian": "lydian",
-    "mixolydian": "mixolydian", "locrian": "locrian",
-    "harmonic minor": "harmonic_minor", "harmonic_minor": "harmonic_minor",
-    "melodic minor": "melodic_minor", "melodic_minor": "melodic_minor",
+    "major": "major",
+    "maj": "major",
+    "": "major",
+    "ionian": "ionian",
+    "minor": "minor",
+    "min": "minor",
+    "m": "minor",
+    "aeolian": "aeolian",
+    "dorian": "dorian",
+    "phrygian": "phrygian",
+    "lydian": "lydian",
+    "mixolydian": "mixolydian",
+    "locrian": "locrian",
+    "harmonic minor": "harmonic_minor",
+    "harmonic_minor": "harmonic_minor",
+    "melodic minor": "melodic_minor",
+    "melodic_minor": "melodic_minor",
     "blues": "blues",
 }
 

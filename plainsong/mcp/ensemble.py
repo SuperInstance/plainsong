@@ -90,9 +90,7 @@ def safe_name(name: str, what: str = "session") -> str:
     """A name that is safe as a directory or file name, or an error."""
     cleaned = str(name).strip().lstrip("@").lower().replace(" ", "-")
     if not cleaned or not set(cleaned) <= NAME_ALLOWED:
-        raise EnsembleError(
-            f"{what} names may use letters, digits, '-' and '_' only; got {name!r}"
-        )
+        raise EnsembleError(f"{what} names may use letters, digits, '-' and '_' only; got {name!r}")
     return cleaned
 
 
@@ -343,10 +341,7 @@ class Session:
         directory = self.directory / PARTS
         if not directory.is_dir():
             return {}
-        return {
-            path.stem: path.read_text(encoding="utf-8")
-            for path in sorted(directory.glob("*.song"))
-        }
+        return {path.stem: path.read_text(encoding="utf-8") for path in sorted(directory.glob("*.song"))}
 
     def entries(self, limit: int = 0) -> list[dict[str, Any]]:
         """The change log, oldest first; *limit* keeps the last N."""
@@ -428,11 +423,7 @@ class Session:
         return {"session": self.name, "voice": voice_label(voice), "released": True}
 
     def _free(self, manifest: Manifest) -> list[str]:
-        return [
-            voice_label(name)
-            for name, state in sorted(manifest.voices.items())
-            if not state.owner
-        ]
+        return [voice_label(name) for name, state in sorted(manifest.voices.items()) if not state.owner]
 
     # -- writing -------------------------------------------------------------
 
@@ -648,11 +639,7 @@ class Session:
             "tempo": manifest.tempo,
             "meter": manifest.meter,
             "voices": [found.as_dict() for _, found in sorted(manifest.voices.items())],
-            "held": [
-                voice_label(name)
-                for name, state in sorted(manifest.voices.items())
-                if state.owner
-            ],
+            "held": [voice_label(name) for name, state in sorted(manifest.voices.items()) if state.owner],
             "bars": score.bar_count,
             "errors": [diag.format() for diag in score.errors()],
             "warnings": len(score.warnings()),
@@ -757,9 +744,7 @@ def list_sessions(root: Path | None = None, paths: Paths | None = None) -> list[
     base = root or ensemble_root(paths)
     if not base.is_dir():
         return []
-    return sorted(
-        entry.name for entry in base.iterdir() if (entry / MANIFEST).is_file()
-    )
+    return sorted(entry.name for entry in base.iterdir() if (entry / MANIFEST).is_file())
 
 
 def _sections(sections: list[Any] | None, bars: int) -> list[dict[str, Any]]:
@@ -915,8 +900,10 @@ def _bar_table(score: Score) -> list[dict[str, Any]]:
         for line in section.lines:
             if line.role == ROLE_NOTE or not line.cells:
                 continue
-            label = voice_label(line.name.lower()) if line.role == ROLE_PLAYER else ROW_LABEL.get(
-                line.role, line.role
+            label = (
+                voice_label(line.name.lower())
+                if line.role == ROLE_PLAYER
+                else ROW_LABEL.get(line.role, line.role)
             )
             cells.setdefault(label, []).extend(line.cells)
         length = max((len(found) for found in cells.values()), default=0)

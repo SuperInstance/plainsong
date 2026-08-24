@@ -431,7 +431,7 @@ class TestBodyHandling(unittest.TestCase):
         request = Request(url, method="POST")
         request.add_header("Content-Type", "application/json")
         # Invalid UTF-8 sequence
-        invalid_utf8 = b'\xff\xfe invalid utf8'
+        invalid_utf8 = b"\xff\xfe invalid utf8"
         request.add_header("Content-Length", str(len(invalid_utf8)))
         request.data = invalid_utf8
 

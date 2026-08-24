@@ -26,7 +26,6 @@ except ModuleNotFoundError:  # pragma: no cover - the 3.10 path
     from ..runtime import _toml as tomllib
 
 
-
 def _read_store(paths: Paths) -> dict[str, str]:
     path = paths.secrets_file
     if not path.exists():

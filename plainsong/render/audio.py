@@ -43,10 +43,10 @@ class AudioOptions:
 
     sample_rate: int = 44100
     normalize: float = 0.89
-    tail: float = 1.2            # seconds of room left after the last note
-    max_voices: int = 64         # simultaneous notes before gain protection
+    tail: float = 1.2  # seconds of room left after the last note
+    max_voices: int = 64  # simultaneous notes before gain protection
     use_numpy: bool = True
-    lowpass: bool = True         # gentle one-pole smoothing on the master mix
+    lowpass: bool = True  # gentle one-pole smoothing on the master mix
 
 
 def midi_to_hz(pitch: int) -> float:
@@ -219,7 +219,11 @@ class Synthesiser:
         total_seconds = arrangement.duration_seconds + options.tail
         total_samples = max(1, int(total_seconds * rate))
 
-        mix = _np.zeros(total_samples, dtype=_np.float64) if self.backend == "numpy" else [0.0] * total_samples
+        mix = (
+            _np.zeros(total_samples, dtype=_np.float64)
+            if self.backend == "numpy"
+            else [0.0] * total_samples
+        )
 
         for track in arrangement.tracks:
             voice = voice_for_program(track.program, track.is_drum)

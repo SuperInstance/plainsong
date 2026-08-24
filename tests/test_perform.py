@@ -94,11 +94,9 @@ class TestProfiles(unittest.TestCase):
             self.assertLess(profile.speech, 0.5)
 
     def test_percussion_is_the_fast_end_and_organ_the_slow_one(self):
-        self.assertEqual(profiles.profile_for_program(47).name, "percussion")   # timpani
+        self.assertEqual(profiles.profile_for_program(47).name, "percussion")  # timpani
         self.assertEqual(profiles.profile_for_program(19).name, "organ-large")  # church organ
-        self.assertLess(
-            profiles.profile_for_program(47).total, profiles.profile_for_program(19).total
-        )
+        self.assertLess(profiles.profile_for_program(47).total, profiles.profile_for_program(19).total)
 
     def test_drums_are_always_percussion(self):
         self.assertEqual(profiles.profile_for_program(48, is_drum=True).name, "percussion")
@@ -248,10 +246,7 @@ class TestArrangementIntegration(unittest.TestCase):
 
     def test_arrivals_coincide_after_the_lead_in(self):
         arrangement = arrange(parse(STAGED))
-        first = {
-            track.name: min(note.arrival_time for note in track.notes)
-            for track in arrangement.tracks
-        }
+        first = {track.name: min(note.arrival_time for note in track.notes) for track in arrangement.tracks}
         self.assertAlmostEqual(first["timpani"], first["organ"], places=6)
 
     def test_midi_carries_emission_and_audio_carries_arrival(self):
@@ -266,7 +261,8 @@ class TestArrangementIntegration(unittest.TestCase):
         organ = next(track for track in loose.tracks if track.name == "organ")
         timpani = next(track for track in loose.tracks if track.name == "timpani")
         self.assertGreater(
-            organ.notes[0].arrival_time - timpani.notes[0].arrival_time, 0.1  # beats
+            organ.notes[0].arrival_time - timpani.notes[0].arrival_time,
+            0.1,  # beats
         )
         # ... and the score itself is untouched by that choice.
         self.assertTrue(parse(STAGED).meta.stage.compensate)
@@ -274,9 +270,7 @@ class TestArrangementIntegration(unittest.TestCase):
     def test_the_smeared_render_is_different_audio(self):
         options = AudioOptions(sample_rate=8000, tail=0.2)
         tight = Synthesiser(options).to_wav_bytes(arrange(parse(STAGED)))
-        loose = Synthesiser(options).to_wav_bytes(
-            arrange(parse(STAGED), ArrangeOptions(compensate=False))
-        )
+        loose = Synthesiser(options).to_wav_bytes(arrange(parse(STAGED), ArrangeOptions(compensate=False)))
         self.assertNotEqual(tight, loose)
 
     def test_solved_times_are_deterministic(self):
@@ -462,8 +456,11 @@ class TestConducting(unittest.TestCase):
         written = next(item for item in self.arrangement.tracks if item.name == "timpani")
         lateness = [
             note.arrival_time - conducted.lead_in - (base.arrival_time - self.arrangement.lead_in)
-            for note, base in zip(sorted(track.notes, key=lambda n: n.start),
-                                  sorted(written.notes, key=lambda n: n.start), strict=True)
+            for note, base in zip(
+                sorted(track.notes, key=lambda n: n.start),
+                sorted(written.notes, key=lambda n: n.start),
+                strict=True,
+            )
         ]
         self.assertLess(lateness[0], lateness[-1])
         self.assertAlmostEqual(lateness[0], 0.0, places=6)
@@ -471,8 +468,11 @@ class TestConducting(unittest.TestCase):
     def test_a_window_leaves_the_rest_of_the_piece_alone(self):
         conducted = conduct.apply(
             self.arrangement,
-            {"directives": [{"action": "lay_back", "intensity": 1.0, "offset_beats": 4,
-                             "duration_beats": 4}]},
+            {
+                "directives": [
+                    {"action": "lay_back", "intensity": 1.0, "offset_beats": 4, "duration_beats": 4}
+                ]
+            },
         )
         track = next(item for item in conducted.tracks if item.name == "timpani")
         written = next(item for item in self.arrangement.tracks if item.name == "timpani")
@@ -494,17 +494,11 @@ class TestConducting(unittest.TestCase):
 
     def test_float_widens_the_spread_and_lock_in_closes_it(self):
         def spread(arrangement):
-            firsts = [
-                min(note.arrival_time for note in track.notes) for track in arrangement.tracks
-            ]
+            firsts = [min(note.arrival_time for note in track.notes) for track in arrangement.tracks]
             return max(firsts) - min(firsts)
 
-        loose = conduct.apply(
-            self.arrangement, {"directives": [{"action": "float", "intensity": 1.0}]}
-        )
-        tight = conduct.apply(
-            self.arrangement, {"directives": [{"action": "lock_in", "intensity": 1.0}]}
-        )
+        loose = conduct.apply(self.arrangement, {"directives": [{"action": "float", "intensity": 1.0}]})
+        tight = conduct.apply(self.arrangement, {"directives": [{"action": "lock_in", "intensity": 1.0}]})
         self.assertGreater(spread(loose), spread(self.arrangement))
         self.assertLess(spread(tight), 1e-9)
 
@@ -528,8 +522,7 @@ class TestConducting(unittest.TestCase):
             {"directives": [{"action": "half_time", "intensity": 1.0, "duration_beats": 8}]},
         )
         by_voice = {
-            track.name: sorted(note.arrival_time for note in track.notes)
-            for track in conducted.tracks
+            track.name: sorted(note.arrival_time for note in track.notes) for track in conducted.tracks
         }
         self.assertAlmostEqual(by_voice["timpani"][0], by_voice["organ"][0], places=6)
         self.assertAlmostEqual(by_voice["timpani"][-1], by_voice["organ"][-1], places=6)
@@ -556,9 +549,7 @@ class TestConducting(unittest.TestCase):
         self.assertGreater(abs(organ), abs(timpani) * 5)
 
     def test_energy_moves_velocities_not_times(self):
-        conducted = conduct.apply(
-            self.arrangement, {"energy": {"target": 0.8, "mode": "absolute"}}
-        )
+        conducted = conduct.apply(self.arrangement, {"energy": {"target": 0.8, "mode": "absolute"}})
         before = [note.start for _t, note in self.arrangement.iter_notes()]
         after = [note.start for _t, note in conducted.iter_notes()]
         self.assertEqual(before, after)
@@ -570,14 +561,10 @@ class TestConducting(unittest.TestCase):
     def test_straighten_pulls_the_offbeats_back_onto_the_grid(self):
         swung = arrange(parse(SWUNG))
         offbeat = 0.5 + 0.6 / 6.0
-        original = [
-            note.start for _t, note in swung.iter_notes() if abs(note.start % 1.0 - offbeat) < 1e-6
-        ]
+        original = [note.start for _t, note in swung.iter_notes() if abs(note.start % 1.0 - offbeat) < 1e-6]
         self.assertTrue(original, "the sample has no swung off-beats to straighten")
         straight = conduct.apply(swung, {"directives": [{"action": "straighten", "intensity": 1.0}]})
-        moved = [
-            note.start for _t, note in straight.iter_notes() if abs(note.start % 1.0 - 0.5) < 1e-6
-        ]
+        moved = [note.start for _t, note in straight.iter_notes() if abs(note.start % 1.0 - 0.5) < 1e-6]
         self.assertEqual(len(moved), len(original))
 
     def test_deepen_swing_pushes_them_further_out(self):

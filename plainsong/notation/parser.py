@@ -45,16 +45,34 @@ TITLE_RE = re.compile(r"^\s*(?:\*\*)?TRACK\s*:\s*(.+?)(?:\*\*)?\s*$", re.IGNOREC
 MD_TITLE_RE = re.compile(r"^\s*#\s+(.+?)\s*$")
 SECTION_RE = re.compile(r"^\s*\[([^\]]+)\]\s*(?:\(([^)]*)\))?\s*$")
 LABEL_RE = re.compile(r"^\s*([A-Za-z][A-Za-z0-9 _-]{0,20})\s*:\s*(.*)$")
-OPTION_RE = re.compile(r"^\s*(vel|velocity|inst|instrument|program|pan|oct|octave)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
+OPTION_RE = re.compile(
+    r"^\s*(vel|velocity|inst|instrument|program|pan|oct|octave)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE
+)
 # Stage options may also be written at the end of a player's note row. They are
 # only taken as options when the value reads as one, so a bar that happens to
 # start with the word stays a bar.
 STAGE_OPTION_RE = re.compile(r"^\s*(pos|position|speech|feel)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
 
 METADATA_KEYS = {
-    "key", "tempo", "bpm", "swing", "subdivision", "time", "meter", "mood",
-    "style", "feel", "artist", "composer", "source", "capo", "genre", "year",
-    "arranger", "difficulty", "notes",
+    "key",
+    "tempo",
+    "bpm",
+    "swing",
+    "subdivision",
+    "time",
+    "meter",
+    "mood",
+    "style",
+    "feel",
+    "artist",
+    "composer",
+    "source",
+    "capo",
+    "genre",
+    "year",
+    "arranger",
+    "difficulty",
+    "notes",
 }
 
 ROLE_LABELS = {
@@ -80,8 +98,18 @@ SUSTAIN_TOKENS = {".", "..", "(hold)", "hold", "-", "~", "(sustain)", "(let ring
 # that said exactly what it meant was told it had made a mistake. Both
 # spellings are in the wild.
 REST_TOKENS = {
-    "(rest)", "rest", "r", "_", "0", "(silence)", "x", "(x)", "--",
-    "n.c.", "nc", "n.c",
+    "(rest)",
+    "rest",
+    "r",
+    "_",
+    "0",
+    "(silence)",
+    "x",
+    "(x)",
+    "--",
+    "n.c.",
+    "nc",
+    "n.c",
 }
 
 SUSTAIN_CHARS = "~"
@@ -199,9 +227,7 @@ def detect_dialect(text: str) -> str:
             if not tokens:
                 continue
             relative = sum(
-                1
-                for tok in tokens
-                if theory.is_roman(tok) or re.match(r"^[b#]?[1-7][\^_',:]*$", tok)
+                1 for tok in tokens if theory.is_roman(tok) or re.match(r"^[b#]?[1-7][\^_',:]*$", tok)
             )
             if relative >= len(tokens) * 0.5:
                 relative_rows += 1
@@ -229,7 +255,9 @@ class Parser:
 
     def _note(self, severity: str, message: str, line: int, hint: str = "", source: str = "") -> None:
         self.diagnostics.append(
-            Diagnostic(severity=severity, message=message, line=line, hint=hint, source=source.strip()[:120])
+            Diagnostic(
+                severity=severity, message=message, line=line, hint=hint, source=source.strip()[:120]
+            )
         )
 
     # -- entry point ---------------------------------------------------------
@@ -488,9 +516,7 @@ class Parser:
         if not cells:
             self._note("info", f"empty {role} row", index, source=raw)
             return
-        self._append_line(
-            Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in payload)
-        )
+        self._append_line(Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in payload))
 
     def _handle_player(self, line: str, index: int) -> None:
         name, is_declaration, remainder = split_player_line(line)
@@ -546,9 +572,7 @@ class Parser:
         self._place_from_options(name, options)
 
         if not cells_text:
-            self._append_line(
-                Line(role=ROLE_NOTE, name=name, options=options, line_number=index, raw=line)
-            )
+            self._append_line(Line(role=ROLE_NOTE, name=name, options=options, line_number=index, raw=line))
             return
 
         cells = [Cell(tokens=self._tokenise(text, ROLE_PLAYER), line=index) for text in cells_text]
@@ -583,9 +607,7 @@ class Parser:
             self._append_line(Line(role=ROLE_NOTE, cells=[], line_number=index, raw=raw))
             return
         cells = [Cell(tokens=self._tokenise(text, role), line=index) for text in cells_text]
-        self._append_line(
-            Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in line)
-        )
+        self._append_line(Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in line))
 
     def _classify_bare(self, tokens: list[str], strict: bool = False) -> str | None:
         """Decide whether an unlabelled row is harmony or melody.
@@ -679,7 +701,9 @@ class Parser:
 
     def _validate(self) -> None:
         if not self.sections:
-            self._note("error", "no sections found", 1, hint="start a section with a header such as [Verse]")
+            self._note(
+                "error", "no sections found", 1, hint="start a section with a header such as [Verse]"
+            )
             return
         playable = 0
         for section in self.sections:
@@ -706,7 +730,9 @@ class Parser:
                         source=first.raw,
                     )
             playable += sum(
-                1 for line in section.lines if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER}
+                1
+                for line in section.lines
+                if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER}
             )
         if playable == 0:
             self._note(

@@ -1,11 +1,21 @@
 from __future__ import annotations
 
 import gc
+import importlib.util
 import tempfile
+import unittest
 from pathlib import Path
 
-import numpy as np
-import pytest
+# The chunked renderer needs NumPy by design, and this file used to import both
+# numpy and pytest at module scope. CI's stdlib-only job has neither and runs
+# `unittest discover`, which imports every test module -- so an absent
+# dependency became a collection error that took the whole run down rather than
+# a skip. `unittest.SkipTest` is understood by unittest and pytest alike and
+# needs neither package installed.
+# Nothing here calls NumPy directly -- `write_wav_chunked` does -- so this asks
+# whether it is installed rather than binding a name it would not use.
+if importlib.util.find_spec("numpy") is None:  # pragma: no cover
+    raise unittest.SkipTest("the chunked renderer requires NumPy")
 
 from plainsong.notation.ir import Arrangement, Metadata, Note, Track
 from plainsong.render.audio import AudioOptions, write_wav
@@ -51,9 +61,7 @@ def test_bounded_memory():
 
     # Peak should be well under total_samples * 8 bytes (f64)
     limit = total_samples * 8  # full-buffer cost
-    assert peak < limit, (
-        f"Peak memory {peak} >= full-buffer cost {limit} (samples={total_samples})"
-    )
+    assert peak < limit, f"Peak memory {peak} >= full-buffer cost {limit} (samples={total_samples})"
     print(f"PASS: bounded — peak {peak} bytes < {limit} (60s @ 44100Hz)")
 
 
@@ -65,6 +73,7 @@ def test_smoke_duration():
         p = Path(tmp) / "smoke.wav"
         write_wav_chunked(arr, p, options=opts)
         import wave
+
         with wave.open(str(p)) as w:
             frames = w.getnframes()
             rate = w.getframerate()

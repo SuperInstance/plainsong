@@ -191,11 +191,11 @@ def _init_colours() -> None:
         return
     curses.start_color()
     curses.use_default_colors()
-    curses.init_pair(1, curses.COLOR_CYAN, -1)     # headings
+    curses.init_pair(1, curses.COLOR_CYAN, -1)  # headings
     curses.init_pair(2, curses.COLOR_BLACK, curses.COLOR_CYAN)  # selection
-    curses.init_pair(3, curses.COLOR_YELLOW, -1)   # status
-    curses.init_pair(4, curses.COLOR_GREEN, -1)    # good
-    curses.init_pair(5, curses.COLOR_RED, -1)      # bad
+    curses.init_pair(3, curses.COLOR_YELLOW, -1)  # status
+    curses.init_pair(4, curses.COLOR_GREEN, -1)  # good
+    curses.init_pair(5, curses.COLOR_RED, -1)  # bad
 
 
 def _pair(index: int):
@@ -241,7 +241,7 @@ def _draw(screen, state: TuiState, show_help: bool) -> None:
 
     for row, entry in enumerate(items[state.offset : state.offset + list_height]):
         index = state.offset + row
-        label = f"{entry.title[:split - 12]:<{max(1, split - 12)}} {entry.key or '-':>4}"
+        label = f"{entry.title[: split - 12]:<{max(1, split - 12)}} {entry.key or '-':>4}"
         attr = _pair(2) if index == state.selected else 0
         _safe_add(screen, row + 2, 1, label.ljust(split - 2), attr)
 
@@ -281,9 +281,7 @@ def _draw_detail(screen, state: TuiState, column: int, span: int) -> None:
         for fact in facts:
             _safe_add(screen, row, column, fact[:span])
             row += 1
-        voices = ", ".join(
-            f"{track['name']}({track['notes']})" for track in arrangement.get("tracks", [])
-        )
+        voices = ", ".join(f"{track['name']}({track['notes']})" for track in arrangement.get("tracks", []))
         if voices:
             _safe_add(screen, row, column, f"voices: {voices}"[:span])
             row += 1

@@ -26,7 +26,10 @@ BOLD_SOURCE = "LiberationSans-Bold.ttf"
 UNITS_PER_EM = 1000
 
 #: Characters the reference font does not contain at all.
-MISSING = ("\u266d", "\u266e",)
+MISSING = (
+    "\u266d",
+    "\u266e",
+)
 
 WIDTHS: dict[str, int] = {
     " ": 278,

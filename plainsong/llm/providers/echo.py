@@ -79,10 +79,14 @@ class EchoProvider(Provider):
             key=palette["key"],
             tempo=tempo,
             mood=palette["mood"],
-            c1=palette["chords"][0], c2=palette["chords"][1],
-            c3=palette["chords"][2], c4=palette["chords"][3],
-            m1=palette["melody"][0], m2=palette["melody"][1],
-            m3=palette["melody"][2], m4=palette["melody"][3],
+            c1=palette["chords"][0],
+            c2=palette["chords"][1],
+            c3=palette["chords"][2],
+            c4=palette["chords"][3],
+            m1=palette["melody"][0],
+            m2=palette["melody"][1],
+            m3=palette["melody"][2],
+            m4=palette["melody"][3],
         )
 
     def complete(self, request: CompletionRequest) -> CompletionResponse:

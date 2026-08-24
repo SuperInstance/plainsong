@@ -194,20 +194,14 @@ class TestProtocolErrors(unittest.TestCase):
         )
 
     def test_missing_method(self) -> None:
-        self.assertEqual(
-            self.error_code('{"jsonrpc": "2.0", "id": 1}'), protocol.INVALID_REQUEST
-        )
+        self.assertEqual(self.error_code('{"jsonrpc": "2.0", "id": 1}'), protocol.INVALID_REQUEST)
 
     def test_unknown_method(self) -> None:
         self.assertEqual(self.error_code(message("no/such")), protocol.METHOD_NOT_FOUND)
 
     def test_bad_params(self) -> None:
-        self.assertEqual(
-            self.error_code(message("tools/call", {})), protocol.INVALID_PARAMS
-        )
-        self.assertEqual(
-            self.error_code(message("resources/read", {})), protocol.INVALID_PARAMS
-        )
+        self.assertEqual(self.error_code(message("tools/call", {})), protocol.INVALID_PARAMS)
+        self.assertEqual(self.error_code(message("resources/read", {})), protocol.INVALID_PARAMS)
         self.assertEqual(
             self.error_code('{"jsonrpc": "2.0", "id": 1, "method": "ping", "params": 4}'),
             protocol.INVALID_PARAMS,
@@ -286,9 +280,7 @@ class TestStdioTransport(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as directory:
             server = build_server(Path(directory))
-            reader = io.StringIO(
-                message("initialize", {"protocolVersion": PROTOCOL_VERSION}, 1) + "\n"
-            )
+            reader = io.StringIO(message("initialize", {"protocolVersion": PROTOCOL_VERSION}, 1) + "\n")
             self.assertEqual(protocol.serve_stdio(server.dispatcher, reader, ClosedPipe()), 0)
 
 
@@ -433,9 +425,7 @@ class TestHttpTransport(unittest.TestCase):
         for host in ("localhost", "127.0.0.1", "127.0.0.1:1", "[::1]"):
             with self.subTest(host=host):
                 body = message("ping").encode("utf-8")
-                connection = http.client.HTTPConnection(
-                    "127.0.0.1", self.http.server_port, timeout=10
-                )
+                connection = http.client.HTTPConnection("127.0.0.1", self.http.server_port, timeout=10)
                 self.addCleanup(connection.close)
                 connection.putrequest("POST", "/", skip_host=True, skip_accept_encoding=True)
                 connection.putheader("Host", host)
@@ -464,9 +454,9 @@ class TestResources(unittest.TestCase):
         listed = {entry["uri"] for entry in self.client.result("resources/list")["resources"]}
         self.assertIn("plainsong://notation-reference", listed)
         self.assertIn("plainsong://capabilities", listed)
-        reference = self.client.result(
-            "resources/read", {"uri": "plainsong://notation-reference"}
-        )["contents"][0]
+        reference = self.client.result("resources/read", {"uri": "plainsong://notation-reference"})[
+            "contents"
+        ][0]
         self.assertIn("Plainsong notation reference", reference["text"])
         self.assertIn("markdown", reference["mimeType"])
 
@@ -477,9 +467,7 @@ class TestResources(unittest.TestCase):
             if entry["uri"].startswith("plainsong://spec/")
         ]
         self.assertTrue(listed, "no specs were offered as resources")
-        body = json.loads(
-            self.client.result("resources/read", {"uri": listed[0]})["contents"][0]["text"]
-        )
+        body = json.loads(self.client.result("resources/read", {"uri": listed[0]})["contents"][0]["text"])
         self.assertTrue(body["checks"])
 
     def test_the_parameterised_sets_are_templates(self) -> None:
@@ -505,9 +493,9 @@ class TestResources(unittest.TestCase):
     def test_a_session_is_readable_as_a_resource(self) -> None:
         self.client.call("ensemble_open", session="reading", key="Am", tempo=96, bars=2)
         body = json.loads(
-            self.client.result("resources/read", {"uri": "plainsong://session/reading"})[
-                "contents"
-            ][0]["text"]
+            self.client.result("resources/read", {"uri": "plainsong://session/reading"})["contents"][0][
+                "text"
+            ]
         )
         self.assertEqual(body["meta"]["key"], "Am")
         self.assertIn("score", body)
@@ -575,7 +563,9 @@ class TestFeatures(unittest.TestCase):
     def test_a_silent_bar_is_all_rest(self) -> None:
         from plainsong.notation import arrange, parse
 
-        silent_middle = "[A]\nMelody: | C4 D4 E4 F4 |\n\n[B]\nLyrics: | one two |\n\n[C]\nMelody: | G4 A4 B4 C5 |\n"
+        silent_middle = (
+            "[A]\nMelody: | C4 D4 E4 F4 |\n\n[B]\nLyrics: | one two |\n\n[C]\nMelody: | G4 A4 B4 C5 |\n"
+        )
         bars = features.extract(arrange(parse(silent_middle)))
         self.assertEqual(len(bars), 3)
         self.assertEqual(bars[1].values["rest_ratio"], 1.0)
@@ -586,9 +576,7 @@ class TestFeatures(unittest.TestCase):
         from plainsong.notation import arrange, parse
 
         sparse = features.extract(arrange(parse("[A]\nMelody: | C4 . . . |\n")))[0]
-        dense = features.extract(
-            arrange(parse("[A]\nMelody: | C4 D4 E4 F4 G4 A4 B4 C5 |\n"))
-        )[0]
+        dense = features.extract(arrange(parse("[A]\nMelody: | C4 D4 E4 F4 G4 A4 B4 C5 |\n")))[0]
         self.assertLess(sparse.values["note_density"], dense.values["note_density"])
 
     def test_register_is_read_from_the_pitches(self) -> None:

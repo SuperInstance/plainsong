@@ -98,10 +98,16 @@ def render_with_fluidsynth(
     target.parent.mkdir(parents=True, exist_ok=True)
     ok, message = _run(
         [
-            "fluidsynth", "-ni", "-g", "0.8",
-            "-r", str(sample_rate),
-            "-F", str(target),
-            str(font), str(midi_path),
+            "fluidsynth",
+            "-ni",
+            "-g",
+            "0.8",
+            "-r",
+            str(sample_rate),
+            "-F",
+            str(target),
+            str(font),
+            str(midi_path),
         ]
     )
     if not ok:
@@ -157,9 +163,7 @@ def send_to_midi_port(midi_path: str | Path, port: str | None = None) -> Backend
     try:
         import mido  # type: ignore
     except ImportError:
-        return BackendResult(
-            False, "mido", message="pip install mido python-rtmidi to play to a MIDI port"
-        )
+        return BackendResult(False, "mido", message="pip install mido python-rtmidi to play to a MIDI port")
     try:
         names = mido.get_output_names()
         if not names:

@@ -51,9 +51,7 @@ class TestItIsAFileYouCanShip(unittest.TestCase):
         self.assertEqual(svg.count("http://www.w3.org/2000/svg"), 1)
         without_namespace = svg.replace("http://www.w3.org/2000/svg", "")
         for forbidden in ("http://", "https://", "@import", "<script", "xlink:href", "url("):
-            self.assertNotIn(
-                forbidden, without_namespace, f"the chart reaches outside itself: {forbidden}"
-            )
+            self.assertNotIn(forbidden, without_namespace, f"the chart reaches outside itself: {forbidden}")
 
     def test_the_same_notation_draws_the_same_bytes(self):
         self.assertEqual(chart(), chart())
@@ -110,9 +108,7 @@ class TestTextHoldsTheWidthItWasMeasuredFor(unittest.TestCase):
 
     def test_the_declared_length_is_the_measured_advance(self):
         size = 28.0
-        self.assertAlmostEqual(
-            text_width("Am", size), (WIDTHS["A"] + WIDTHS["m"]) * size / 1000.0
-        )
+        self.assertAlmostEqual(text_width("Am", size), (WIDTHS["A"] + WIDTHS["m"]) * size / 1000.0)
 
     def test_bold_is_measured_bold(self):
         # `m`, `b` and `j` differ between the faces, and those are exactly the
@@ -131,9 +127,7 @@ class TestTheChartAgreesWithTheGrid(unittest.TestCase):
 
     def test_a_chord_sits_at_its_unit_within_the_bar(self):
         arrangement = pipeline.compile_text(SONG).arrangement
-        placements = [
-            p for p in arrangement.grid.placements if p.kind == "chord" and p.bar == 0
-        ]
+        placements = [p for p in arrangement.grid.placements if p.kind == "chord" and p.bar == 0]
         units = sorted(p.unit for p in placements)
         self.assertEqual([round(u, 3) for u in units], [0.0, 0.5])
 
@@ -141,14 +135,12 @@ class TestTheChartAgreesWithTheGrid(unittest.TestCase):
         """In the relative dialect a row mixing roman numerals with scale
         degrees reads as melody. A chart taking only the `Chords:` row draws a
         page of empty bars for a piece whose harmony is written down plainly."""
-        svg = chart(
-            "[V1]\n| i 1 . | VII 7 . |\n"
-        )
+        svg = chart("[V1]\n| i 1 . | VII 7 . |\n")
         self.assertIn("VII", svg)
 
     def test_an_empty_piece_still_draws_something(self):
         svg = chart("[V1]\nMelody: | C4 . . . |\n")
-        ET.fromstring(svg)   # must not raise
+        ET.fromstring(svg)  # must not raise
 
 
 class TestBarsAreAsWideAsTheirContents(unittest.TestCase):
@@ -170,13 +162,9 @@ class TestBarsAreAsWideAsTheirContents(unittest.TestCase):
         )
         root = ET.fromstring(svg)
         chords = [
-            e
-            for e in root.iter()
-            if e.tag.endswith("}text") and "chord" in e.attrib.get("class", "")
+            e for e in root.iter() if e.tag.endswith("}text") and "chord" in e.attrib.get("class", "")
         ]
-        placed = sorted(
-            (float(e.attrib["x"]), float(e.attrib["textLength"])) for e in chords
-        )
+        placed = sorted((float(e.attrib["x"]), float(e.attrib["textLength"])) for e in chords)
         for (x, width), (next_x, _) in zip(placed, placed[1:], strict=False):
             self.assertLessEqual(x + width, next_x + 1e-6, f"{x}+{width} overruns {next_x}")
 

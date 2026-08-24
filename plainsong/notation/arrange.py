@@ -41,9 +41,12 @@ from .timegrid import TimeGrid
 
 DEGREE_RE = re.compile(r"^([b#♭♯]?)([1-7])([\^_']*)$")
 SUBDIVISION_UNITS = {
-    "4th": 1.0, "quarter": 1.0,
-    "8th": 0.5, "eighth": 0.5,
-    "16th": 0.25, "sixteenth": 0.25,
+    "4th": 1.0,
+    "quarter": 1.0,
+    "8th": 0.5,
+    "eighth": 0.5,
+    "16th": 0.25,
+    "sixteenth": 0.25,
     "32nd": 0.125,
     "triplet": 1.0 / 3.0,
 }
@@ -65,17 +68,17 @@ DEFAULT_OCTAVE = {
 class ArrangeOptions:
     """Knobs the caller may turn. Defaults match the documented behaviour."""
 
-    bar_fill: str = "rescale"          # rescale | grid
+    bar_fill: str = "rescale"  # rescale | grid
     humanize: bool = True
     humanize_seed: int = 42
     humanize_velocity: int = 6
-    swing: float | None = None          # None means take it from the score
+    swing: float | None = None  # None means take it from the score
     melody_instrument: str = "piano"
     chords_instrument: str = "nylon guitar"
     chord_voicing_octave: int = 3
     max_chord_notes: int = 4
     voicing: str = "guide"
-    lyrics: str = "independent"     # independent | bound
+    lyrics: str = "independent"  # independent | bound
     """Which notes to keep when a chord names more than ``max_chord_notes``.
 
     ``guide`` gives up the fifth first and the root second, keeping the third,
@@ -205,9 +208,7 @@ class Arranger:
                 accidental, number, marks = degree.groups()
                 shift = {"b": -1, "♭": -1, "#": 1, "♯": 1}.get(accidental, 0)
                 octave_shift = marks.count("^") + marks.count("'") - marks.count("_")
-                pitches.append(
-                    self.score.meta.key.degree_pitch(int(number), octave + octave_shift, shift)
-                )
+                pitches.append(self.score.meta.key.degree_pitch(int(number), octave + octave_shift, shift))
                 continue
             return ()
         return tuple(pitch for pitch in pitches if 0 <= pitch <= 127)
@@ -243,7 +244,7 @@ class Arranger:
                         message=f"bar holds {int(capacity)} slots but the row wrote "
                         f"{total_weight:g}; {dropped} token(s) dropped",
                         line=line.line_number,
-                        hint="use the default bar_fill = \"rescale\" to fit the tokens to the bar instead",
+                        hint='use the default bar_fill = "rescale" to fit the tokens to the bar instead',
                         source=line.raw,
                     )
                 )
@@ -325,9 +326,7 @@ class Arranger:
         unit = SUBDIVISION_UNITS.get(str(meta.subdivision).lower(), 0.5)
 
         for section in self.score.sections:
-            playable = [
-                line for line in section.lines if line.cells and line.role != ROLE_NOTE
-            ]
+            playable = [line for line in section.lines if line.cells and line.role != ROLE_NOTE]
             if not playable:
                 continue
             section_starts.append((section.name, cursor))
@@ -456,9 +455,7 @@ class Arranger:
             for token_index, token in enumerate(cell.tokens):
                 start = bar_start + token_index * step
                 out.append(LyricEvent(start=start, text=token))
-                self.grid.add(
-                    token=token, row=ROLE_LYRICS, kind="text", onset=start, width=step
-                )
+                self.grid.add(token=token, row=ROLE_LYRICS, kind="text", onset=start, width=step)
 
     def _place_row(
         self,
@@ -490,9 +487,7 @@ class Arranger:
             pending.clear()
 
         if line.barred:
-            groups = [
-                (origin + index * bar_beats, cell.tokens) for index, cell in enumerate(line.cells)
-            ]
+            groups = [(origin + index * bar_beats, cell.tokens) for index, cell in enumerate(line.cells)]
         else:
             groups = [(origin, [token for cell in line.cells for token in cell.tokens])]
 
@@ -528,9 +523,7 @@ class Arranger:
                 # Recorded before the dispatch below, so that a rest and a
                 # sustain -- which produce no note and would otherwise leave no
                 # trace -- still occupy their column.
-                self.grid.add(
-                    token=slot.text, row=grid_row, kind=slot.kind, onset=start, width=length
-                )
+                self.grid.add(token=slot.text, row=grid_row, kind=slot.kind, onset=start, width=length)
                 if slot.kind == "sustain":
                     if pending:
                         pitches, note_start, _ = pending[-1]

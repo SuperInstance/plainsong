@@ -41,9 +41,7 @@ def test_motion_score_fishing_boat():
     analyzer = CounterpointAnalyzer(100)
     # Engine heating up while bilge level goes down (contrary — productive)
     for i in range(50):
-        analyzer.record(
-            [RoomSnapshot("engine", 50.0 + i), RoomSnapshot("bilge", 30.0 - i * 0.5)]
-        )
+        analyzer.record([RoomSnapshot("engine", 50.0 + i), RoomSnapshot("bilge", 30.0 - i * 0.5)])
     score = analyzer.motion_score("engine", "bilge")
     assert score.contrary_ratio > 0.9
     assert score.quality > 0.7
@@ -92,9 +90,7 @@ def test_motion_score_empty_history():
 def test_parallel_motion_low_quality():
     analyzer = CounterpointAnalyzer(100)
     for i in range(20):
-        analyzer.record(
-            [RoomSnapshot("engine", 50.0 + i), RoomSnapshot("bilge", 30.0 + i)]
-        )
+        analyzer.record([RoomSnapshot("engine", 50.0 + i), RoomSnapshot("bilge", 30.0 + i)])
     score = analyzer.motion_score("engine", "bilge")
     assert score.parallel_ratio == 1.0
     assert score.quality == 0.2

@@ -12,6 +12,13 @@ mean of its 8-gene block.
 Ported from flux-genome-rs/src/genome.rs.
 """
 
+# `MusicalGenome.random` is a classmethod, which shadows the `random` module
+# for the remainder of the class body -- so a later `rng: random.Random`
+# annotation resolves to the classmethod and raises at import. Deferring
+# annotations means they are never evaluated there, and the method keeps its
+# name.
+from __future__ import annotations
+
 import math
 import random
 

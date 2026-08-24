@@ -42,7 +42,9 @@ CONVERSATION = [
 
 
 def info_for(api: str, **kwargs) -> ProviderInfo:
-    return ProviderInfo(id=f"test-{api}", label="Test", api=api, base_url="https://example.test/v1", **kwargs)
+    return ProviderInfo(
+        id=f"test-{api}", label="Test", api=api, base_url="https://example.test/v1", **kwargs
+    )
 
 
 class TestCatalogue(unittest.TestCase):
@@ -52,7 +54,17 @@ class TestCatalogue(unittest.TestCase):
 
     def test_expected_providers_are_present(self):
         catalog = load_catalog()
-        for name in ("anthropic", "openai", "deepseek", "openrouter", "xai", "gemini", "ollama", "host", "echo"):
+        for name in (
+            "anthropic",
+            "openai",
+            "deepseek",
+            "openrouter",
+            "xai",
+            "gemini",
+            "ollama",
+            "host",
+            "echo",
+        ):
             self.assertIn(name, catalog)
 
     def test_local_providers_need_no_key(self):

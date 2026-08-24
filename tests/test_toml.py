@@ -25,10 +25,10 @@ REPO = Path(__file__).resolve().parent.parent
 CASES = [
     "a = 1\nb = -2\nc = 3.5\nd = 1e3\ne = 1_000\nf = 0xff\ng = 0b101\nh = 0o17\n",
     "a = true\nb = false\n",
-    's1 = "hi\\nthere"\ns2 = \'raw\\nnot\'\n',
+    "s1 = \"hi\\nthere\"\ns2 = 'raw\\nnot'\n",
     's = """\nmulti\nline\n"""\n',
     "s = '''\nliteral\nmulti\n'''\n",
-    "arr = [1, 2, 3]\nnested = [[1, 2], [3]]\nmixed = [\"a\", \"b\"]\nempty = []\n",
+    'arr = [1, 2, 3]\nnested = [[1, 2], [3]]\nmixed = ["a", "b"]\nempty = []\n',
     "arr = [\n  1,\n  2,  # trailing comment\n]\n",
     "[a]\nx = 1\n[a.b]\ny = 2\n",
     "[[t]]\nn = 1\n\n[[t]]\nn = 2\n",
@@ -84,7 +84,9 @@ class TestShape(unittest.TestCase):
     """Checks that hold with or without tomllib present."""
 
     def test_tables_and_arrays_of_tables(self):
-        data = _toml.loads('[spec]\nid = "x"\ntags = ["a", "b"]\n\n[[check]]\nid = "one"\n\n[[check]]\nid = "two"\n')
+        data = _toml.loads(
+            '[spec]\nid = "x"\ntags = ["a", "b"]\n\n[[check]]\nid = "one"\n\n[[check]]\nid = "two"\n'
+        )
         self.assertEqual(data["spec"]["id"], "x")
         self.assertEqual(data["spec"]["tags"], ["a", "b"])
         self.assertEqual([check["id"] for check in data["check"]], ["one", "two"])
