@@ -23,7 +23,7 @@ import unittest
 from pathlib import Path
 
 from plainsong import pipeline
-from plainsong.notation.ir import ROLE_NOTE
+from plainsong.notation.ir import ROLE_ANNOTATION, ROLE_NOTE
 
 ROOT = Path(__file__).resolve().parents[1]
 SONG = ROOT / "examples" / "overture-boot.song"
@@ -50,8 +50,8 @@ class TestTheOvertureParses(unittest.TestCase):
         self.assertNotIn("warning", severities)
         self.assertNotIn("error", severities)
         names = {line.name for s in result.score.sections for line in s.lines
-                 if line.role == ROLE_NOTE}
-        self.assertEqual(names, {"score", "bg", "seed"})
+                 if line.role in (ROLE_NOTE, ROLE_ANNOTATION)}
+        self.assertEqual(names, {"Score", "Bg", "Seed"})
 
     def test_every_state_voice_actually_plays(self):
         # Success is not evidence: count the notes, not the exit code.

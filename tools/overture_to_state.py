@@ -42,11 +42,15 @@ SPACERS = SUSTAIN_TOKENS | {"."}
 
 def _payload(line) -> str:
     """The bar cells of an annotation row, as written after its label."""
-    return split_cells(line.raw.split(":", 1)[1]) if ":" in line.raw else []
+    if getattr(line, "cells", None):
+        return list(line.cells)
+    raw = getattr(line, "raw", "")
+    return split_cells(raw.split(":", 1)[1]) if ":" in raw else []
 
 
-def _tokens(cell: str) -> list[str]:
-    return [tok for tok in cell.split() if tok not in SPACERS]
+def _tokens(cell) -> list[str]:
+    text = cell.text if hasattr(cell, "text") else str(cell)
+    return [tok for tok in text.split() if tok not in SPACERS]
 
 
 def bass_pitches(arrangement: Arrangement) -> list[int]:
@@ -105,7 +109,7 @@ def annotation_rows(score: Score) -> dict[str, list[list[str]]]:
     for section in score.sections:
         for line in section.lines:
             if line.role in (ROLE_NOTE, ROLE_ANNOTATION) and line.name:
-                rows.setdefault(line.name, []).extend(_tokens(c) for c in _payload(line))
+                rows.setdefault(line.name.lower(), []).extend(_tokens(c) for c in _payload(line))
     return rows
 
 
