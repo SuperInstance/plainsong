@@ -1,0 +1,10 @@
+**TRACK: Golden Compat**
+[MetaData]
+key: Am | tempo: 96 | swing: 0% | subdivision: 8th
+time: 4/4
+
+[V1] (Verse - 2 Bars)
+Chords: | Am . . . | F . . . |
+Melody: | A4 . C5 E5 | F4 . A4 C5 |
+Lyrics: | one two three | four five six |
+@bass | a1 . e2 . | f1 . c2 . | vel: 70

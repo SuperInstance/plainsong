@@ -513,3 +513,97 @@ def check_lyric_binding() -> tuple[bool, str]:
         return False, f"words did not land on Bb3 and F4: {[e.start for e in padded.lyrics]}"
 
     return True, "syllables bind to notes, padding binds to nothing, and the default is unmoved"
+
+
+def check_dynamics() -> tuple[bool, str]:
+    """Per-note dynamics reach the arrangement and the MIDI file."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+    from .render.midi import MidiWriter
+
+    text = "[V1]\nMelody: | C4 D4! E4@40 F4 |\nVel: | mf . cresc . |\n"
+    arrangement = arrange(parse(text), ArrangeOptions(humanize=False))
+    notes = sorted(arrangement.tracks[0].notes, key=lambda note: note.start)
+    velocities = [note.velocity for note in notes]
+    # mf holds, the accent adds twenty, @40 names its note exactly, and the
+    # crescendo ramps the row's own line 80 -> 104 (the inline override on one
+    # note does not feed back into the ramp).
+    if velocities != [80, 100, 40, 104]:
+        return False, f"expected [80, 100, 40, 104], got {velocities}"
+
+    # The MIDI file is the evidence a player would act on: assert the
+    # velocities that actually reach the wire rather than trusting the
+    # arrangement to be written down faithfully.
+    writer = MidiWriter()
+
+    def note_ons(data: bytes) -> list[tuple[int, int]]:
+        events: list[tuple[int, int]] = []
+        position = 0
+        while position < len(data):
+            size = int.from_bytes(data[position + 4 : position + 8], "big")
+            body = data[position + 8 : position + 8 + size]
+            position += 8 + size
+            if data[position - 8 - size : position - 8 - size + 4] != b"MTrk":
+                continue
+            tick = 0
+            index = 0
+            while index < len(body):
+                delta = 0
+                while True:
+                    byte = body[index]
+                    index += 1
+                    delta = (delta << 7) | (byte & 0x7F)
+                    if not byte & 0x80:
+                        break
+                tick += delta
+                status = body[index]
+                if status == 0xFF:
+                    index += 2  # past the status byte and the meta type
+                    length = body[index]  # meta payloads here never exceed 127
+                    index += 1 + length
+                elif status & 0xF0 in (0x80, 0x90):
+                    pitch, velocity = body[index + 1], body[index + 2]
+                    index += 3
+                    if status & 0xF0 == 0x90 and velocity > 0:
+                        events.append((tick, velocity))
+                else:
+                    index += 2
+        return events
+
+    played = [velocity for _tick, velocity in sorted(note_ons(writer.to_bytes(arrangement)))]
+    if played != velocities:
+        return False, f"the MIDI file carries {played}, the arrangement says {velocities}"
+    return True, "one velocity per note, from the Vel: row and inline marks, into the MIDI file"
+
+
+def check_swing() -> tuple[bool, str]:
+    """Swing is a playback decision with exact, documented arithmetic."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions, swing_amount
+
+    if (swing_amount(0.0), swing_amount(0.66), swing_amount(1.0)) != (0.5, 0.66, 0.9):
+        return False, "the swing clamp moved: 50% straight, 66% triplet, past 90% held at 90%"
+
+    text = "[V1]\nMelody: | C4 D4 E4 F4 G4 A4 B4 C5 |\n"
+    swung = arrange(parse(text), ArrangeOptions(humanize=False, swing=2.0 / 3.0))
+    starts = [round(note.start, 6) for note in swung.tracks[0].notes]
+    if starts != [0.0, 0.666667, 1.0, 1.666667, 2.0, 2.666667, 3.0, 3.666667]:
+        return False, f"the off-beats did not land on the triplet: {starts}"
+    durations = [round(note.duration, 6) for note in swung.tracks[0].notes]
+    if durations[0] <= durations[1]:
+        return False, f"the pair is not long-short: {durations}"
+
+    # Notation timing is untouched: the grid keeps every written token where
+    # it was written, and a piece with no swing setting compiles as it did.
+    grid_starts = sorted(
+        placement.onset for placement in swung.grid.placements if placement.row == "melody"
+    )
+    if grid_starts != [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5]:
+        return False, f"swing moved the written grid: {grid_starts}"
+
+    straight = arrange(parse(text), ArrangeOptions(humanize=False, swing=0.5))
+    if [note.start for note in straight.tracks[0].notes] != [
+        note.start for note in arrange(parse(text), ArrangeOptions(humanize=False)).tracks[0].notes
+    ]:
+        return False, "50% swing is not the same as no swing at all"
+    return True, "long-short pairs at the named ratio, written times unmoved, 50% straight"

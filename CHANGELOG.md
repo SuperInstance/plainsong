@@ -2,6 +2,40 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### Per-note dynamics and working swing
+
+Two things a lead sheet could not say, demanded by the same wall hit from
+two directions (duke-lab and seamstress-gate1): one velocity per row, and a
+`swing:` header that parsed and did nothing audible in most files.
+
+**Dynamics.** A `Vel:` row marks the playable row directly above it — the
+k-th token of a `Vel:` cell holds the k-th token of that bar, so a mark sits
+under the note it shapes and `.` holds its column. Cells hold numbers (72),
+the `pp`–`ff` ladder, `+10`/`-8` changes, `!` accents and `cresc`/`dim`
+ramps. Dynamics hold until the next one, as they do on paper. A mark can
+also ride on a token itself — `C4!` accents, `C4@99` names an exact velocity —
+and inline marks survive transposition. `plainsong.features` reads arrangement
+velocities, so `velocity_std` and `dynamic_range` now see all of it.
+
+**Swing.** `swing: NN%` now names the share of a beat the long note of each
+eighth-note pair occupies: 50% straight, 66% ≈ triplet, 75% dotted; below 50%
+reads as straight, above 90% is held at 90%. Only the half-beat moves, notes
+stretch to meet it (long-short, not late-and-overlapping — the old formula
+shifted onsets only and let every swung pair overrun the next beat), and
+nothing written moves: the time grid, chord events and lyrics are untouched.
+The previous semantics treated the number as "amount of triplet", moved the
+off-beat by `swing/6`, and — because no file in the repository ever placed a
+note on the half-beat with swing set — never surfaced; the corpus fingerprint
+is unchanged, byte for byte, over all 6,321 files.
+
+Backward compatibility is enforced twice: `tests/test_dynamics_swing.py`
+compiles a fixture with none of the new syntax and requires the exact MIDI
+bytes recorded before the change, and the corpus fingerprint still passes
+without re-recording. New spec checks `core.notation/dynamics` and
+`core.notation/swing` hold both features to their documented arithmetic.
+
 ## 1.5.0 — 2026-08-24
 
 A minor rather than a patch: the CLI accepts flags it used to refuse, `--verbose`

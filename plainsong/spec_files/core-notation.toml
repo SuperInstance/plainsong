@@ -54,3 +54,15 @@ id = "lyric-binding"
 kind = "python"
 run = "plainsong.selfcheck:check_lyric_binding"
 description = "A bound syllable sounds on its note, and the default leaves files alone"
+
+[[check]]
+id = "dynamics"
+kind = "python"
+run = "plainsong.selfcheck:check_dynamics"
+description = "Per-note dynamics -- the Vel: row and inline marks -- reach the MIDI file"
+
+[[check]]
+id = "swing"
+kind = "python"
+run = "plainsong.selfcheck:check_swing"
+description = "Swing plays long-short pairs at the named ratio and moves nothing written"

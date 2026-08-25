@@ -16,26 +16,30 @@ from .notation.ir import (
     ROLE_MELODY,
     ROLE_NOTE,
     ROLE_PLAYER,
+    ROLE_VELOCITY,
     Line,
     Score,
 )
-from .notation.parser import REST_TOKENS, SUSTAIN_TOKENS, parse, token_weight
+from .notation.parser import REST_TOKENS, SUSTAIN_TOKENS, parse, split_dynamics, token_weight
 
 ROLE_PREFIX = {
     ROLE_CHORDS: "Chords:",
     ROLE_MELODY: "Melody:",
     ROLE_LYRICS: "Lyrics:",
+    ROLE_VELOCITY: "Vel:",
 }
 
 
 def _shift_pitch_token(token: str, semitones: int, prefer_flats: bool) -> str:
-    """Move one pitch token, keeping stacks, sustains and letter case."""
+    """Move one pitch token, keeping stacks, sustains, dynamics and letter case."""
     bare, _weight = token_weight(token)
     tail = token[len(bare) :]
-    if bare.lower() in SUSTAIN_TOKENS or bare.lower() in REST_TOKENS:
+    core, _absolute, _delta = split_dynamics(bare)
+    mark = bare[len(core) :]
+    if core.lower() in SUSTAIN_TOKENS or core.lower() in REST_TOKENS:
         return token
 
-    parts = bare.split("-")
+    parts = core.split("-")
     moved: list[str] = []
     for part in parts:
         if not theory.is_pitch(part):
@@ -46,21 +50,23 @@ def _shift_pitch_token(token: str, semitones: int, prefer_flats: bool) -> str:
             return token
         name = theory.pitch_name(max(0, min(127, midi + semitones)), prefer_flats)
         moved.append(name.lower() if part[0].islower() else name)
-    return "-".join(moved) + tail
+    return "-".join(moved) + mark + tail
 
 
 def _shift_chord_token(token: str, semitones: int, prefer_flats: bool, key: theory.Key) -> str:
     bare, _weight = token_weight(token)
     tail = token[len(bare) :]
-    if bare.lower() in SUSTAIN_TOKENS or bare.lower() in REST_TOKENS:
+    core, _absolute, _delta = split_dynamics(bare)
+    mark = bare[len(core) :]
+    if core.lower() in SUSTAIN_TOKENS or core.lower() in REST_TOKENS:
         return token
-    if theory.is_roman(bare):
+    if theory.is_roman(core):
         return token  # roman numerals are already relative to the key
     try:
-        chord = theory.parse_chord(bare)
+        chord = theory.parse_chord(core)
     except theory.TheoryError:
         return token
-    return chord.transpose(semitones).name(prefer_flats) + tail
+    return chord.transpose(semitones).name(prefer_flats) + mark + tail
 
 
 def transpose_score(score: Score, semitones: int) -> Score:
@@ -72,7 +78,9 @@ def transpose_score(score: Score, semitones: int) -> Score:
 
     for section in score.sections:
         for line in section.lines:
-            if line.role in (ROLE_LYRICS, ROLE_NOTE):
+            # A Vel: row carries marks, not music; it passes through untouched,
+            # still aligned to the tokens it was written under.
+            if line.role in (ROLE_LYRICS, ROLE_NOTE, ROLE_VELOCITY):
                 continue
             for cell in line.cells:
                 if line.role == ROLE_CHORDS:

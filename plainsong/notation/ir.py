@@ -25,6 +25,7 @@ ROLE_CHORDS = "chords"
 ROLE_MELODY = "melody"
 ROLE_LYRICS = "lyrics"
 ROLE_PLAYER = "player"
+ROLE_VELOCITY = "velocity"
 ROLE_NOTE = "annotation"
 
 SEVERITIES = ("info", "warning", "error")
