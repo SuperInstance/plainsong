@@ -28,6 +28,7 @@ from .ir import (
     ROLE_LYRICS,
     ROLE_MELODY,
     ROLE_NOTE,
+    ROLE_PERF,
     ROLE_PLAYER,
     ROLE_VELOCITY,
     Annotation,
@@ -521,6 +522,113 @@ class Arranger:
             index = resume
         return values
 
+    # -- perf channels -------------------------------------------------------
+
+    def _perf_prepass(
+        self,
+    ) -> tuple[list[tuple[Line, Line]], dict[int, list[int | None]], set[int]]:
+        """Pair every ``[Perf]`` channel row with the voice rows it marks.
+
+        Returns ``(pairs, vel_plans, marked)``: the ``(target, segment)`` pairs
+        a consumer may resolve against the grid, the per-attack velocity plans
+        for ``vel`` channels (keyed by target row, like a ``Vel:`` plan), and
+        the ids of the rows a perf row marks, so the walk records their grid
+        slices. Two ``vel`` channels over one voice are a conflict and the
+        first stands -- the same rule two ``Vel:`` rows over one row obey.
+        """
+        from . import perf as perf_grammar
+
+        pairs: list[tuple[Line, Line]] = []
+        vel_plans: dict[int, list[int | None]] = {}
+        marked: set[int] = set()
+        claimed_vel: set[str] = set()
+        for row in self.score.perf:
+            voice = str(row.options.get("voice") or "")
+            targets = perf_grammar.targets_for(self.score, voice)
+            if not targets:
+                keys = ", ".join(sorted({target_key(line) for section in self.score.sections for line in section.lines if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER}}))
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"[Perf] {voice}.{row.name} names a voice the piece does not play",
+                        line=row.line_number,
+                        hint=f"the piece plays: {keys or 'nothing'}",
+                        source=row.raw,
+                    )
+                )
+                continue
+            semantic = perf_grammar.semantic_for_channel(row.name)
+            key = perf_grammar.voice_key(voice)
+            if semantic == "velocity" and key in claimed_vel:
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"[Perf] a second vel channel marks {voice}; the first stands",
+                        line=row.line_number,
+                        source=row.raw,
+                    )
+                )
+                continue
+            if semantic == "velocity":
+                claimed_vel.add(key)
+            offset = 0
+            for target in targets:
+                segment, offset = perf_grammar.segment(row, offset, target)
+                pairs.append((target, segment))
+                marked.add(id(target))
+                if semantic == "velocity":
+                    vel_plans[id(target)] = self._perf_velocity_plan(target, segment)
+        return pairs, vel_plans, marked
+
+    def _perf_velocity_plan(self, target: Line, segment: Line) -> list[int | None]:
+        """One ``vel`` channel segment, resolved to per-attack velocities.
+
+        The walk is ``walk_bars`` -- the shared positional rule -- so a perf
+        value and a ``Vel:`` mark over the same column address the same
+        event. Values are literals in v1: an integer names the velocity, a
+        spacer leaves the note to whatever else governs it (row base,
+        ``Vel:``, inline marks), and anything else is data the compiler
+        warned about at parse time and does not act on here.
+        """
+        values: list[int | None] = []
+        for bar, tokens, written in walk_bars(target, segment):
+            if len(written) > len(tokens):
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"[Perf] {segment.options.get('voice')}.{segment.name}: "
+                        f"bar {bar + 1} writes {len(written)} value(s) over "
+                        f"{len(tokens)} token(s); the extra values do nothing",
+                        line=segment.line_number,
+                        hint="a perf cell holds one value per token of the voice's bar",
+                        source=segment.raw,
+                    )
+                )
+            junk: list[str] = []
+            for position, token in enumerate(tokens):
+                if not self._is_attack(token):
+                    continue
+                mark = written[position] if position < len(written) else None
+                value: int | None = None
+                if mark is not None and not is_spacer(mark):
+                    if re.fullmatch(r"\d{1,3}", mark):
+                        value = max(1, min(127, int(mark)))
+                    else:
+                        junk.append(mark)
+                values.append(value)
+            if junk:
+                shown = ", ".join(sorted(set(junk))[:4])
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"[Perf] {segment.options.get('voice')}.{segment.name}: "
+                        f"velocities are integers 1-127; nothing understood {shown}",
+                        line=segment.line_number,
+                        source=segment.raw,
+                    )
+                )
+        return values
+
     # -- main walk -----------------------------------------------------------
 
     def _check_voicing(self) -> None:
@@ -567,6 +675,9 @@ class Arranger:
         fallback_index = 0
         unit = SUBDIVISION_UNITS.get(str(meta.subdivision).lower(), 0.5)
         annotations_out: list[Annotation] = []
+        perf_pairs, perf_vel_plans, perf_marked = self._perf_prepass()
+        perf_slices: dict[int, tuple[int, int]] = {}
+        perf_out: list[Annotation] = []
 
         for section in self.score.sections:
             playable = [
@@ -593,11 +704,12 @@ class Arranger:
                 groups.setdefault(key, []).append(line)
 
             section_beats = 0.0
-            # The grid slice each placed line owns, recorded only when a named
-            # annotation layer marks something in this section: that slice is
-            # how a layer's values join onto the tokens that were timed, which
-            # is the whole address. Two len() calls a row is the cost; a
-            # section with no layers pays nothing.
+            # The grid slice each placed line owns, recorded only when
+            # something downstream joins onto it: a named annotation layer
+            # marks something in this section, or a [Perf] channel marks the
+            # line. That slice is how a layer's values join onto the tokens
+            # that were timed, which is the whole address. Two len() calls a
+            # row is the cost; a section with neither pays nothing.
             slices: dict[int, tuple[int, int]] = {}
             for key, group in groups.items():
                 offset = cursor
@@ -610,7 +722,7 @@ class Arranger:
                         if line.role == ROLE_PLAYER and key not in self._tracks:
                             fallback_index += 1
                         track = self._track_for(key, line.name or line.role, line.role, instrument)
-                        before = len(self.grid.placements) if has_layers else 0
+                        before = len(self.grid.placements) if (has_layers or id(line) in perf_marked) else 0
                         self._place_row(
                             line=line,
                             track=track,
@@ -623,9 +735,12 @@ class Arranger:
                             chords_out=chords if line.role == ROLE_CHORDS else None,
                             grid_row=key,
                             vel_plan=vel_plans.get(id(line)),
+                            perf_vel=perf_vel_plans.get(id(line)),
                         )
                         if has_layers:
                             slices[id(line)] = (before, len(self.grid.placements))
+                        if id(line) in perf_marked:
+                            perf_slices[id(line)] = (before, len(self.grid.placements))
                     offset += length
                 section_beats = max(section_beats, offset - cursor)
 
@@ -647,6 +762,24 @@ class Arranger:
                     )
 
             cursor += section_beats
+
+        # Perf channels resolve after the walk, against the finished grid --
+        # the same slices the arranger timed the target rows on, so a channel
+        # value and its note went through the same arithmetic. Every channel
+        # lands here, vel included: what the take wrote is data too.
+        for target, segment in perf_pairs:
+            span = perf_slices.get(id(target))
+            if span is None:  # the target was never placed; keep the row, skip the address
+                continue
+            perf_out.extend(
+                resolve(
+                    segment,
+                    target,
+                    voice=target_key(target),
+                    target_role=target.role,
+                    placements=self.grid.placements[span[0] : span[1]],
+                )
+            )
 
         if self.options.lyrics == "bound" and lyrics:
             # Runs after the walk, because binding reads the finished grid: it
@@ -673,6 +806,7 @@ class Arranger:
             section_starts=section_starts,
             grid=self.grid,
             annotations=annotations_out,
+            perf=perf_out,
         )
         self._solve_performance(arrangement)
         return arrangement
@@ -751,6 +885,7 @@ class Arranger:
         chords_out: list[ChordEvent] | None,
         grid_row: str,
         vel_plan: list[int | None] | None = None,
+        perf_vel: list[int | None] | None = None,
     ) -> None:
         # pitches, start, end, slot, attack index -- the attack index is the
         # Vel: row's coordinate: the k-th attack of the row takes the k-th
@@ -774,6 +909,14 @@ class Arranger:
                     value = slot.velocity
                 if slot.velocity_delta:
                     value += slot.velocity_delta
+                # A [Perf] vel channel speaks last: the take over the chart.
+                # A spacer left this attack to the sources above, which is
+                # how a performance layer composes with them instead of
+                # flattening them.
+                if perf_vel is not None and attack_index < len(perf_vel):
+                    channelled = perf_vel[attack_index]
+                    if channelled is not None:
+                        value = channelled
                 for pitch in pitches:
                     track.add(
                         Note(

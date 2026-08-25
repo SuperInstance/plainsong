@@ -185,6 +185,17 @@ def to_text(score: Score) -> str:
                 continue
             lines.append(_format_row(line))
 
+    # The [Perf] block, if the piece wrote one: channel tables over the
+    # piece's own voices. Emitted at the end so the grid reads first, and
+    # re-parsed to the same rows, so transposing a take keeps its channels.
+    if score.perf:
+        lines.append("")
+        lines.append("[Perf]")
+        for row in score.perf:
+            voice = str(row.options.get("voice") or "").strip()
+            body = "| " + " | ".join(cell.text for cell in row.cells) + " |"
+            lines.append(f"@{voice}.{row.name} {body}")
+
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -217,6 +228,18 @@ def describe(text: str, dialect: str = "auto") -> dict:
             summary["annotations"] = {
                 name: {"values": entry["values"], "voices": sorted(entry["voices"])}  # type: ignore[arg-type]
                 for name, entry in layers.items()
+            }
+        if arrangement.perf:
+            # Perf channels, if any: same shape as the annotation layers,
+            # over the [Perf] block's channel tables instead of named rows.
+            channels: dict[str, dict[str, object]] = {}
+            for mark in arrangement.perf:
+                entry = channels.setdefault(mark.name, {"values": 0, "voices": set()})
+                entry["values"] = int(entry["values"]) + 1
+                entry["voices"].add(mark.voice)  # type: ignore[union-attr]
+            summary["perf"] = {
+                channel: {"values": entry["values"], "voices": sorted(entry["voices"])}  # type: ignore[arg-type]
+                for channel, entry in channels.items()
             }
         # Diagnostics come from two places and the arranger's are the ones a
         # reader most needs: an unreadable chord becomes silence while

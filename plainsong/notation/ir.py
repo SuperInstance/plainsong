@@ -34,6 +34,13 @@ The string is ``annot`` because ``annotation`` was taken -- by ROLE_NOTE,
 years before named layers existed -- for free-text lines a file carries
 without playing."""
 ROLE_NOTE = "annotation"
+ROLE_PERF = "perf"
+"""A channel row of a ``[Perf]`` block: ``@piano.vel | 88 58 . . |``.
+
+Perf rows live on :attr:`Score.perf`, never inside a section -- a ``[Perf]``
+block is read, not played, the same contract as ``[Stage]``. ``name`` is the
+channel (``vel``), ``options["voice"]`` the voice selector (``piano``); see
+``notation/perf.py``."""
 
 SEVERITIES = ("info", "warning", "error")
 
@@ -211,6 +218,11 @@ class Score:
     dialect: str = "absolute"
     source: str = ""
     path: str = ""
+    perf: list[Line] = field(default_factory=list)
+    """The channel rows of every ``[Perf]`` block, in written order.
+
+    Empty for a piece that writes none -- a block a composer does not write
+does not exist, and nothing phantom is constructed to stand in for it."""
 
     @property
     def bar_count(self) -> int:
@@ -445,6 +457,13 @@ class Arrangement:
     annotations: list[Annotation] = field(default_factory=list)
     """Named annotation values, resolved to the events they mark. Empty for
     a piece that writes no such rows; nothing phantom is constructed."""
+
+    perf: list[Annotation] = field(default_factory=list)
+    """Perf channel values, resolved to the events they mark. Every channel
+    lands here -- ``vel`` included, since the value the take wrote is data
+    too -- addressed the same way annotations are, so a consumer joins on
+    ``(voice, bar, onset)`` rather than trusting a column. Empty for a piece
+    that writes no ``[Perf]`` block."""
 
     @property
     def total_beats(self) -> float:
