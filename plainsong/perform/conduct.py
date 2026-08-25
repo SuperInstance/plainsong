@@ -51,6 +51,7 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from .solve import Shaping
+from ..notation.arrange import SWING_STRAIGHT, SWING_TOLERANCE, swing_amount
 
 # Beats per integration step when warping the timeline. Fixed rather than
 # adaptive so the same score always warps to the same numbers.
@@ -585,15 +586,18 @@ def apply(
 def _swing_shift(beat: float, written: float, target: float) -> float:
     """Move an off-beat between two swing settings.
 
-    The arranger delays an off-beat by ``swing / 6`` of a beat, so undoing that
-    much finds where the note was written and tells us whether it is one of the
-    notes a swing setting is about.
+    The arranger places a swung off-beat at ``swing_amount`` of its beat, so
+    undoing that much finds where the note was written and tells us whether it
+    is one of the notes a swing setting is about.
     """
     if abs(target - written) < 1e-9:
         return 0.0
-    position = (beat - written / 6.0) % 1.0
-    if abs(position - 0.5) < 0.05:
-        return (target - written) / 6.0
+    amount_written = swing_amount(written)
+    if abs(swing_amount(target) - amount_written) < 1e-9:
+        return 0.0
+    straight = beat - (amount_written - SWING_STRAIGHT)
+    if abs(straight % 1.0 - SWING_STRAIGHT) < SWING_TOLERANCE:
+        return swing_amount(target) - amount_written
     return 0.0
 
 

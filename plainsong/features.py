@@ -18,6 +18,7 @@ two agents analysing different excerpts would disagree about the same bar.
 from __future__ import annotations
 
 import math
+import re
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
 from typing import Any
@@ -283,6 +284,61 @@ def summarise(bars: Sequence[BarFeatures]) -> dict[str, float]:
     if not bars:
         return dict.fromkeys(FEATURE_NAMES, 0.0)
     return {name: _round(_mean([bar.values[name] for bar in bars])) for name in FEATURE_NAMES}
+
+
+# -- annotation layers -------------------------------------------------------
+#
+# The sixteen fixed features describe what a piece *sounds* like. A named
+# annotation row (``Breath: | 0.6 . . . |``) describes a dimension no fixed
+# table could have anticipated, so the eye that reads it is generic: collect
+# the numeric values of any layer and report the same statistics the fixed
+# features report, over whatever the writer chose to measure.
+
+_NUMBER_RE = re.compile(r"^[+-]?\d+(?:\.\d+)?$")
+
+
+def annotation_values(arrangement: Any, name: str = "", voice: str = "") -> list[float]:
+    """The numeric values of one annotation dimension, in written order.
+
+    *name* selects the layer, case-insensitively (``"breath"`` matches
+    ``Breath:``); *voice* restricts it to values marking one voice, by the
+    same key the time grid uses (``"melody"``, ``"player:bass"``). Either
+    empty means everything. Non-numeric tokens are skipped rather than
+    guessed at -- ``Gaze: | far . near . |`` is data a musician can read and
+    a number-cruncher cannot, and silently encoding it would lie about which
+    it was.
+    """
+    values: list[float] = []
+    key = name.strip().lower()
+    for annotation in getattr(arrangement, "annotations", ()):
+        if key and annotation.name.lower() != key:
+            continue
+        if voice and annotation.voice != voice:
+            continue
+        match = _NUMBER_RE.match(annotation.token.strip())
+        if match:
+            values.append(float(match.group(0)))
+    return values
+
+
+def annotation_stats(arrangement: Any, name: str = "", voice: str = "") -> dict[str, Any]:
+    """Mean, standard deviation and range of one annotation dimension.
+
+    The same statistics ``velocity_mean`` and ``velocity_std`` report, over a
+    dimension the writer named: a future eye can *see* custom layers, not
+    just velocity. ``count`` is how many numeric values were found, so an
+    all-word layer reports honestly as zero rather than as a mean of nothing.
+    """
+    values = annotation_values(arrangement, name, voice)
+    return {
+        "name": name or "*",
+        "voice": voice or "*",
+        "count": len(values),
+        "mean": _round(_mean(values)),
+        "std": _round(_stdev(values)),
+        "min": _round(min(values)) if values else 0.0,
+        "max": _round(max(values)) if values else 0.0,
+    }
 
 
 def format_table(bars: Sequence[BarFeatures], width: int = 6) -> str:

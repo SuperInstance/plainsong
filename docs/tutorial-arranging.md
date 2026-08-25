@@ -202,9 +202,13 @@ value. That default is what every existing `.song` file relies on.
   do** (`@bass: pos 0,0`). Music rows versus settings.
 - **An unreadable chord becomes silence**, and only says so under `check`. Run
   `plainsong check --strict` after editing.
-- **Swing does not change the MIDI.** It is a feel, meant to be heard, and MIDI
-  carries emission times. Two files differing only in `swing:` produce the same
-  MIDI and different audio.
+- **Swing changes playback, not the page.** Two files differing only in
+  `swing:` produce the same chart, the same time grid and the same note
+  count — and different MIDI and audio, because the eighth-note pairs play
+  long-short at the named ratio. (This bullet once claimed swing never
+  changed the MIDI, which was only ever true because nothing moved: the old
+  formula shifted the half-beat by `swing/6` and no file ever met its
+  conditions.)
 - **Rows in a section should be the same number of bars.** A short row stops
   early rather than stretching, and `check` warns.
 - **`subdivision:` and `time:` are different things.** The time signature sets

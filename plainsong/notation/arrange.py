@@ -21,12 +21,16 @@ from dataclasses import dataclass
 
 from .. import instruments as gm
 from . import theory
+from .annotations import is_spacer, pair_annotation_rows, resolve, target_key, walk_bars
 from .ir import (
+    ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
     ROLE_NOTE,
     ROLE_PLAYER,
+    ROLE_VELOCITY,
+    Annotation,
     Arrangement,
     ChordEvent,
     Diagnostic,
@@ -36,7 +40,14 @@ from .ir import (
     Score,
     Track,
 )
-from .parser import REST_TOKENS, SUSTAIN_TOKENS, Slot, token_weight
+from .parser import (
+    REST_TOKENS,
+    SUSTAIN_TOKENS,
+    Slot,
+    parse_velocity_mark,
+    split_dynamics,
+    token_weight,
+)
 from .timegrid import TimeGrid
 
 DEGREE_RE = re.compile(r"^([b#♭♯]?)([1-7])([\^_']*)$")
@@ -62,6 +73,27 @@ DEFAULT_OCTAVE = {
     ROLE_CHORDS: 3,
     ROLE_PLAYER: 3,
 }
+
+# -- swing -----------------------------------------------------------------
+#
+# ``swing: NN%`` names the share of a beat the *long* note of each
+# eighth-note pair occupies. 50% is straight (the pair splits the beat in
+# half), 66% is approximately a triplet, 75% is dotted. Anything at or below
+# 50% reads as straight; anything above 90% is held at 90%, because past that
+# the short eighth of the pair is so brief the pair stops being a pair.
+
+SWING_STRAIGHT = 0.5
+SWING_CEILING = 0.9
+# Onsets are produced by division, so "on the half-beat" arrives as 0.4999…
+# and has to be recognised within a tolerance.
+SWING_TOLERANCE = 0.05
+
+
+def swing_amount(swing: float) -> float:
+    """The share of a beat the long eighth of a swung pair occupies."""
+    if swing <= 0.0:
+        return SWING_STRAIGHT
+    return min(SWING_CEILING, max(SWING_STRAIGHT, float(swing)))
 
 
 @dataclass
@@ -153,21 +185,35 @@ class Arranger:
             # A stage direction where a note could be: hold what is sounding.
             return Slot(kind="sustain", weight=weight, text=bare)
 
+        # A dynamics mark written on the token (`C4!`, `Am@64`) travels with
+        # it and is resolved here rather than left to the renderer, so the
+        # arrangement carries one velocity per note no matter who reads it.
+        core, absolute, delta = split_dynamics(bare)
+
         if role == ROLE_CHORDS:
-            chord = self._resolve_chord(bare)
+            chord = self._resolve_chord(core)
             if chord is not None:
-                return Slot(kind="chord", weight=weight, chord=chord, text=bare)
+                return Slot(
+                    kind="chord", weight=weight, chord=chord, text=bare,
+                    velocity=absolute, velocity_delta=delta,
+                )
             self._unreadable.add(bare)
             return Slot(kind="rest", weight=weight, text=bare)
 
-        pitches = self._resolve_pitches(bare, octave)
+        pitches = self._resolve_pitches(core, octave)
         if pitches:
-            return Slot(kind="note", weight=weight, pitches=pitches, text=bare)
+            return Slot(
+                kind="note", weight=weight, pitches=pitches, text=bare,
+                velocity=absolute, velocity_delta=delta,
+            )
 
         # A melody row may legitimately carry a chord symbol.
-        chord = self._resolve_chord(bare)
+        chord = self._resolve_chord(core)
         if chord is not None:
-            return Slot(kind="chord", weight=weight, chord=chord, text=bare)
+            return Slot(
+                kind="chord", weight=weight, chord=chord, text=bare,
+                velocity=absolute, velocity_delta=delta,
+            )
         # Nothing understood this token, and it is about to become silence.
         # Saying so matters: `Xm9` and `A B C D` (pitches with no octave) both
         # compiled clean and produced nothing, so the first a writer knew about
@@ -265,19 +311,215 @@ class Arranger:
             placed.append((slot, start, end - start))
         return placed
 
-    def _swing_offset(self, start: float, swing: float) -> float:
-        if swing <= 0:
-            return 0.0
-        position = start % 1.0
-        if abs(position - 0.5) < 0.05:
-            return swing * (2.0 / 3.0 - 0.5)
-        return 0.0
+    def _swing_time(self, time: float, swing: float) -> float:
+        """Remap one written time onto the swung timeline.
+
+        Only the half-beat moves: a time sitting on the eighth-note off-beat
+        slides from 0.5 of its beat to the swing amount, and every other time
+        -- downbeats, sixteenths, triplet thirds, bar lines -- stays exactly
+        where it was written. Notes stretch to meet the moved off-beat, which
+        is what makes a pair long-short rather than merely late.
+        """
+        amount = swing_amount(swing)
+        if amount <= SWING_STRAIGHT + 1e-9:
+            return time
+        position = time % 1.0
+        if abs(position - SWING_STRAIGHT) < SWING_TOLERANCE:
+            return time - position + amount
+        return time
 
     def _velocity(self, base: int) -> int:
         if not self.options.humanize or self.options.humanize_velocity <= 0:
             return max(1, min(127, base))
         jitter = self._rng.randint(-self.options.humanize_velocity, self.options.humanize_velocity)
         return max(1, min(127, base + jitter))
+
+    # -- dynamics ------------------------------------------------------------
+
+    def _is_attack(self, token: str) -> bool:
+        """Whether a written token starts a sound, by the cheap test.
+
+        The full answer lives in ``_resolve_token``, but working out which
+        tokens a ``Vel:`` row marks must not re-implement pitch and chord
+        parsing. Sustains, rests and parenthesised directions are the tokens
+        that never attack; an unreadable token counts here and becomes a rest
+        later, which can skew the marks of a row that is already warning about
+        the tokens it cannot read.
+        """
+        bare, _weight = token_weight(token)
+        lowered = bare.lower()
+        if lowered in SUSTAIN_TOKENS or lowered.startswith("(hold"):
+            return False
+        if lowered in REST_TOKENS or lowered.startswith("(rest") or lowered.startswith("(sil"):
+            return False
+        if bare.startswith("(") and bare.endswith(")"):
+            return False
+        return True
+
+    def _velocity_plans(
+        self, section, pairs: list[tuple[Line, Line]] | None = None
+    ) -> dict[int, list[int | None]]:
+        """Resolve the ``Vel:`` rows of one section into per-attack velocities.
+
+        A ``Vel:`` row marks the nearest playable row above it and owns no time
+        of its own, the way a bound lyric row owns none -- the pairing rule it
+        shares with every named annotation layer, which is why the pairs come
+        from :func:`~plainsong.notation.annotations.pair_annotation_rows`.
+        The result is keyed by the target row's ``id`` and holds one value per
+        attack -- ``None`` where the mark said nothing and the row's own
+        velocity stands.
+        """
+        if pairs is None:
+            pairs = pair_annotation_rows(section.lines)
+        plans: dict[int, list[int | None]] = {}
+        claimed: set[int] = set()
+        for target, vel_line in pairs:
+            if vel_line.role != ROLE_VELOCITY or not vel_line.cells:
+                continue
+            if id(target) in claimed:
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"a second Vel: row marks the {target.role} row above it; the first stands",
+                        line=vel_line.line_number,
+                        source=vel_line.raw,
+                    )
+                )
+                continue
+            claimed.add(id(target))
+            plans[id(target)] = self._velocity_plan(target, vel_line)
+        return plans
+
+    def _velocity_plan(self, target: Line, vel_line: Line) -> list[int | None]:
+        """One target row and its ``Vel:`` row, resolved to attack velocities.
+
+        The k-th token of a ``Vel:`` cell marks the k-th token of the bar
+        above it. That is a *positional* reading, deliberately: a writer lays
+        the marks under the notes they are for, and a ``.`` in the marking row
+        holds that column the way it holds a note. The positional walk is the
+        shared one -- every named annotation layer pairs through
+        :func:`~plainsong.notation.annotations.walk_bars`, which is what
+        keeps a ``Breath:`` value and a ``Vel:`` mark over the same column
+        landing on the same event. Marks standing over a sustain or a rest do
+        nothing, and the cheap attack test decides which tokens those are.
+        """
+        base = int(target.options.get("velocity") or DEFAULT_VELOCITY.get(target.role, 76))
+
+        marks: list[tuple[str, object] | None] = []
+        for bar, tokens, written in walk_bars(target, vel_line):
+            if len(written) > len(tokens):
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"Vel: bar {bar + 1} writes {len(written)} mark(s) over "
+                        f"{len(tokens)} token(s); the extra marks do nothing",
+                        line=vel_line.line_number,
+                        hint="a Vel: cell holds one mark per token of the row above",
+                        source=vel_line.raw,
+                    )
+                )
+            junk: list[str] = []
+            for position, token in enumerate(tokens):
+                if not self._is_attack(token):
+                    continue
+                mark = None
+                if position < len(written):
+                    mark = parse_velocity_mark(written[position])
+                    if mark is None and not is_spacer(written[position]):
+                        junk.append(written[position])
+                        mark = None
+                marks.append(mark)
+            if junk:
+                shown = ", ".join(sorted(set(junk))[:4])
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"Vel: row: nothing understood {shown}; skipped",
+                        line=vel_line.line_number,
+                        hint="a Vel: cell holds numbers (72), changes (+10, -8), names "
+                        "(mf, f), cresc/dim, or . to leave a note alone",
+                        source=vel_line.raw,
+                    )
+                )
+
+        return self._resolve_marks(marks, base)
+
+    @staticmethod
+    def _resolve_marks(marks: list[tuple[str, object] | None], base: int) -> list[int | None]:
+        """Turn a per-attack sequence of marks into per-attack velocities.
+
+        Dynamics hold until the next one -- ``| p . . f |`` plays piano
+        through the first three notes and forte on the fourth, the way a
+        marking does on paper. ``.`` is the same rule spelt as a token. Numbers
+        and names stand for themselves; ``+10``/``-8`` ride on whatever came
+        before. ``cresc``/``dim`` ramp from the note they sit on to the next
+        explicit value later in the row -- or, when the row never names one, to
+        24 louder or softer, reached on the row's last note.
+        """
+
+        def clamp(value: int) -> int:
+            return max(1, min(127, value))
+
+        values: list[int | None] = [None] * len(marks)
+        current = clamp(base)
+        index = 0
+        while index < len(marks):
+            mark = marks[index]
+            if mark is None:
+                values[index] = current
+                index += 1
+                continue
+            kind, value = mark
+            if kind == "absolute":
+                current = clamp(int(value))
+                values[index] = current
+                index += 1
+                continue
+            if kind == "delta":
+                current = clamp(current + int(value))
+                values[index] = current
+                index += 1
+                continue
+            # A ramp: interpolate from the note it sits on to an anchor note.
+            direction = 1 if kind == "cresc" else -1
+            start = current
+            end = index + 1
+            while end < len(marks) and marks[end] is None:
+                end += 1
+            anchored = (
+                end < len(marks)
+                and marks[end] is not None
+                and marks[end][0] in ("absolute", "delta")
+            )
+            if anchored:
+                kind_end, value_end = marks[end]
+                target = (
+                    clamp(int(value_end)) if kind_end == "absolute" else clamp(current + int(value_end))
+                )
+                anchor = end
+                resume = end + 1
+            elif end < len(marks):
+                # A second ramp takes over: this one climbs to it and stops.
+                target = clamp(start + direction * 24)
+                anchor = end
+                resume = end
+            else:
+                target = clamp(start + direction * 24)
+                anchor = len(marks) - 1
+                resume = len(marks)
+            if anchor <= index:
+                # No room to ramp: the marking sits on the row's last note and
+                # there is nothing after it to swell towards.
+                values[index] = start
+                index += 1
+                continue
+            span = anchor - index
+            for step in range(span + 1):
+                fraction = step / span
+                values[index + step] = clamp(round(start + (target - start) * fraction))
+            current = values[anchor]
+            index = resume
+        return values
 
     # -- main walk -----------------------------------------------------------
 
@@ -324,12 +566,23 @@ class Arranger:
         cursor = 0.0
         fallback_index = 0
         unit = SUBDIVISION_UNITS.get(str(meta.subdivision).lower(), 0.5)
+        annotations_out: list[Annotation] = []
 
         for section in self.score.sections:
-            playable = [line for line in section.lines if line.cells and line.role != ROLE_NOTE]
+            playable = [
+                line
+                for line in section.lines
+                if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER, ROLE_LYRICS}
+            ]
             if not playable:
                 continue
             section_starts.append((section.name, cursor))
+            # One pairing for the whole section: Vel: rows and named layers
+            # walk the same rule (nearest playable row above), so they are
+            # computed once and consumed by both.
+            pairs = pair_annotation_rows(section.lines)
+            vel_plans = self._velocity_plans(section, pairs)
+            has_layers = any(layer.role == ROLE_ANNOTATION for _target, layer in pairs)
 
             # Rows of different kinds sound together; a row repeated within one
             # section continues it, bar after bar, the way successive lines of a
@@ -340,6 +593,12 @@ class Arranger:
                 groups.setdefault(key, []).append(line)
 
             section_beats = 0.0
+            # The grid slice each placed line owns, recorded only when a named
+            # annotation layer marks something in this section: that slice is
+            # how a layer's values join onto the tokens that were timed, which
+            # is the whole address. Two len() calls a row is the cost; a
+            # section with no layers pays nothing.
+            slices: dict[int, tuple[int, int]] = {}
             for key, group in groups.items():
                 offset = cursor
                 for line in group:
@@ -351,6 +610,7 @@ class Arranger:
                         if line.role == ROLE_PLAYER and key not in self._tracks:
                             fallback_index += 1
                         track = self._track_for(key, line.name or line.role, line.role, instrument)
+                        before = len(self.grid.placements) if has_layers else 0
                         self._place_row(
                             line=line,
                             track=track,
@@ -362,9 +622,29 @@ class Arranger:
                             unit=unit,
                             chords_out=chords if line.role == ROLE_CHORDS else None,
                             grid_row=key,
+                            vel_plan=vel_plans.get(id(line)),
                         )
+                        if has_layers:
+                            slices[id(line)] = (before, len(self.grid.placements))
                     offset += length
                 section_beats = max(section_beats, offset - cursor)
+
+            if has_layers:
+                for target, layer in pairs:
+                    if layer.role != ROLE_ANNOTATION:
+                        continue
+                    span = slices.get(id(target))
+                    if span is None:  # the target was never placed; keep the data, skip the address
+                        continue
+                    annotations_out.extend(
+                        resolve(
+                            layer,
+                            target,
+                            voice=target_key(target),
+                            target_role=target.role,
+                            placements=self.grid.placements[span[0] : span[1]],
+                        )
+                    )
 
             cursor += section_beats
 
@@ -392,6 +672,7 @@ class Arranger:
             diagnostics=self.score.diagnostics + self.diagnostics,
             section_starts=section_starts,
             grid=self.grid,
+            annotations=annotations_out,
         )
         self._solve_performance(arrangement)
         return arrangement
@@ -469,19 +750,37 @@ class Arranger:
         unit: float,
         chords_out: list[ChordEvent] | None,
         grid_row: str,
+        vel_plan: list[int | None] | None = None,
     ) -> None:
-        pending: list[tuple[list[int], float, float]] = []  # pitches, start, end
+        # pitches, start, end, slot, attack index -- the attack index is the
+        # Vel: row's coordinate: the k-th attack of the row takes the k-th
+        # mark, rests and sustains never consume one.
+        pending: list[tuple[list[int], float, float, Slot, int]] = []
 
         def flush() -> None:
-            for pitches, start, end in pending:
-                duration = max(end - start, 1e-3)
+            for pitches, start, end, slot, attack_index in pending:
+                # Swing is a playback decision, not a notation one: starts and
+                # ends both remap, so a pair comes out long-short rather than
+                # merely late, and nothing downstream sees a half-moved note.
+                swung_start = self._swing_time(start, swing)
+                swung_end = self._swing_time(end, swing)
+                duration = max(swung_end - swung_start, 1e-3)
+                value = velocity
+                if vel_plan is not None and attack_index < len(vel_plan):
+                    marked = vel_plan[attack_index]
+                    if marked is not None:
+                        value = marked
+                if slot.velocity is not None:
+                    value = slot.velocity
+                if slot.velocity_delta:
+                    value += slot.velocity_delta
                 for pitch in pitches:
                     track.add(
                         Note(
-                            start=start + self._swing_offset(start, swing),
+                            start=swung_start,
                             duration=duration,
                             pitch=pitch,
-                            velocity=self._velocity(velocity),
+                            velocity=self._velocity(value),
                         )
                     )
             pending.clear()
@@ -491,6 +790,7 @@ class Arranger:
         else:
             groups = [(origin, [token for cell in line.cells for token in cell.tokens])]
 
+        attack_index = 0
         for group_start, tokens in groups:
             self._unreadable.clear()
             slots = [self._resolve_token(token, line.role, octave) for token in tokens]
@@ -526,8 +826,8 @@ class Arranger:
                 self.grid.add(token=slot.text, row=grid_row, kind=slot.kind, onset=start, width=length)
                 if slot.kind == "sustain":
                     if pending:
-                        pitches, note_start, _ = pending[-1]
-                        pending[-1] = (pitches, note_start, start + length)
+                        pitches, note_start, _end, slot_held, attack = pending[-1]
+                        pending[-1] = (pitches, note_start, start + length, slot_held, attack)
                     continue
                 if slot.kind == "rest":
                     flush()
@@ -545,11 +845,13 @@ class Arranger:
                             strategy=self.options.voicing,
                         )
                     )
-                    pending.append((list(notes), start, start + length))
+                    pending.append((list(notes), start, start + length, slot, attack_index))
+                    attack_index += 1
                     if chords_out is not None:
                         chords_out.append(ChordEvent(start=start, duration=length, chord=slot.chord))
                 elif slot.kind == "note":
-                    pending.append((list(slot.pitches), start, start + length))
+                    pending.append((list(slot.pitches), start, start + length, slot, attack_index))
+                    attack_index += 1
         flush()
 
 

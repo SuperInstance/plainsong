@@ -22,6 +22,70 @@ literally named "fading sonar"), and the third is `edge-3-dense-chords.song`,
 whose degenerate tokens are documented in `examples/edge-cases/BUGS.md` as
 testing that they degrade gracefully.
 
+### Generic annotation rows
+
+`Vel:` was one instance of a general idea: a row of bar-aligned cells that
+marks the playable row above it. Any label the compiler does not otherwise
+claim now parses as an **annotation layer** — `Breath:`, `Mute:`, `Gaze:`,
+`Emotion:`, any dimension a composer can name. Rows nobody writes do not
+exist; nothing phantom is constructed for them.
+
+- **Syntax.** `Name: | cell | cell |` where `Name` is not a role the compiler
+  plays (`Chords:`, `Melody:`, `Lyrics:`, `Vel:` and aliases) or a metadata
+  key. The name is kept as written and round-trips exactly. A layer may name
+  its target explicitly with a trailing `on:` cell (`Breath: | ... | on: @bass`),
+  the way a player row ends with `vel: 70`.
+- **Linking and timestamps are shared, not duplicated.** `Vel:` and generic
+  layers pair through one function (`annotations.pair_annotation_rows`) and
+  walk positions through one function (`annotations.walk_bars`); each resolved
+  value carries `(voice, bar, unit, onset, width, target)` read off the time
+  grid the target row was already placed on, so consumers join on the address
+  instead of trusting a column.
+- **Data, not errors.** Unknown rows never warn and never change a byte of
+  the compile. `Vel:` remains the built-in layer with MIDI semantics; a new
+  semantic registers in one table, `ANNOTATION_SEMANTICS`.
+- **Access.** `Score.annotation_rows()`, `Arrangement.annotations`, a
+  `describe()` summary, and `plainsong.features.annotation_stats` —
+  mean/std/min/max over any *numeric* layer, so a future eye can see custom
+  dimensions, not just velocity. Word-valued layers report zero rather than
+  inventing numbers.
+- **Compatibility.** Golden compiles are byte-identical, the corpus
+  fingerprint is unchanged (annotations touch no note), transposition leaves
+  layer rows where they were written, and the `Title:` free-text diagnostic
+  path is untouched.
+
+### Per-note dynamics and working swing
+
+Two things a lead sheet could not say, demanded by the same wall hit from
+two directions (duke-lab and seamstress-gate1): one velocity per row, and a
+`swing:` header that parsed and did nothing audible in most files.
+
+**Dynamics.** A `Vel:` row marks the playable row directly above it — the
+k-th token of a `Vel:` cell holds the k-th token of that bar, so a mark sits
+under the note it shapes and `.` holds its column. Cells hold numbers (72),
+the `pp`–`ff` ladder, `+10`/`-8` changes, `!` accents and `cresc`/`dim`
+ramps. Dynamics hold until the next one, as they do on paper. A mark can
+also ride on a token itself — `C4!` accents, `C4@99` names an exact velocity —
+and inline marks survive transposition. `plainsong.features` reads arrangement
+velocities, so `velocity_std` and `dynamic_range` now see all of it.
+
+**Swing.** `swing: NN%` now names the share of a beat the long note of each
+eighth-note pair occupies: 50% straight, 66% ≈ triplet, 75% dotted; below 50%
+reads as straight, above 90% is held at 90%. Only the half-beat moves, notes
+stretch to meet it (long-short, not late-and-overlapping — the old formula
+shifted onsets only and let every swung pair overrun the next beat), and
+nothing written moves: the time grid, chord events and lyrics are untouched.
+The previous semantics treated the number as "amount of triplet", moved the
+off-beat by `swing/6`, and — because no file in the repository ever placed a
+note on the half-beat with swing set — never surfaced; the corpus fingerprint
+is unchanged, byte for byte, over all 6,321 files.
+
+Backward compatibility is enforced twice: `tests/test_dynamics_swing.py`
+compiles a fixture with none of the new syntax and requires the exact MIDI
+bytes recorded before the change, and the corpus fingerprint still passes
+without re-recording. New spec checks `core.notation/dynamics` and
+`core.notation/swing` hold both features to their documented arithmetic.
+
 ## 1.5.0 — 2026-08-24
 
 A minor rather than a patch: the CLI accepts flags it used to refuse, `--verbose`

@@ -25,6 +25,14 @@ ROLE_CHORDS = "chords"
 ROLE_MELODY = "melody"
 ROLE_LYRICS = "lyrics"
 ROLE_PLAYER = "player"
+ROLE_VELOCITY = "velocity"
+ROLE_ANNOTATION = "annot"
+"""A named annotation layer (``Breath:``, ``Gaze:`` ... any row the writer
+names). ``Vel:`` is the built-in one; see ``notation/annotations.py``.
+
+The string is ``annot`` because ``annotation`` was taken -- by ROLE_NOTE,
+years before named layers existed -- for free-text lines a file carries
+without playing."""
 ROLE_NOTE = "annotation"
 
 SEVERITIES = ("info", "warning", "error")
@@ -226,6 +234,23 @@ class Score:
                     seen.append(line.name)
         return seen
 
+    def annotation_rows(self, name: str = "") -> list["Line"]:
+        """The named annotation rows of the piece, in written order.
+
+        *name* filters case-insensitively (``score.annotation_rows("breath")``);
+        empty means every layer. Empty for a piece that writes none -- a row
+        a composer does not write does not exist, and nothing phantom is
+        constructed to stand in for it. ``Vel:`` rows are not included: they
+        are the built-in layer, parsed to their own role.
+        """
+        key = name.strip().lower()
+        return [
+            line
+            for section in self.sections
+            for line in section.lines
+            if line.role == ROLE_ANNOTATION and (not key or line.name.lower() == key)
+        ]
+
     def summary(self) -> dict[str, Any]:
         return {
             "title": self.meta.title or "(untitled)",
@@ -321,6 +346,67 @@ class LyricEvent:
     next word's note, so fewer words than notes is a melisma without a mark."""
 
 
+@dataclass(frozen=True)
+class Annotation:
+    """One annotation value, resolved to the event it marks.
+
+    Built by the arranger from the time grid the target row was already
+    placed on, so the address and the note went through the same arithmetic:
+    a consumer joins on ``(voice, bar, onset)`` -- or simply compares against
+    the grid -- rather than trusting the column a writer laid out. ``target``
+    is the token the value stands over and ``target_kind`` what it is
+    (``note``, ``chord``, ``sustain``, ``rest``); a value over a rest is still
+    data, and a consumer that only wants attacks filters on the kind.
+    """
+
+    name: str
+    """The dimension as written (``Breath``), not lowercased."""
+
+    token: str
+    """The value as written (``deep``, ``0.6``)."""
+
+    voice: str
+    """The target row's key on the time grid: ``melody`` or ``player:bass``."""
+
+    role: str
+    """The target row's role: ``melody``, ``chords`` or ``player``."""
+
+    bar: int
+    """Absolute bar index from the start of the piece."""
+
+    unit: float
+    """Position within the bar, 0.0 <= unit < 1.0."""
+
+    onset: float
+    """Beats from the start of the piece: the beat window's start."""
+
+    width: float
+    """Beats the marked token occupies: the beat window's length."""
+
+    target: str
+    """The target token the value stands over, as written."""
+
+    target_kind: str
+    """What the target token is: note | chord | sustain | rest."""
+
+    line_number: int = 0
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "token": self.token,
+            "voice": self.voice,
+            "role": self.role,
+            "bar": self.bar,
+            "unit": round(self.unit, 6),
+            "onset": round(self.onset, 6),
+            "width": round(self.width, 6),
+            "target": self.target,
+            "target_kind": self.target_kind,
+            "line": self.line_number,
+        }
+
+
 @dataclass
 class ChordEvent:
     """A chord symbol positioned in time, for lead sheets and analysis."""
@@ -355,6 +441,10 @@ class Arrangement:
     only place a lyric and the note above it can be compared. Renderers, the
     merge in `plainsong-mcp`, and alignment linting all read this rather than
     each deriving positions of their own. See `notation/timegrid.py`."""
+
+    annotations: list[Annotation] = field(default_factory=list)
+    """Named annotation values, resolved to the events they mark. Empty for
+    a piece that writes no such rows; nothing phantom is constructed."""
 
     @property
     def total_beats(self) -> float:

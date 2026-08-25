@@ -26,11 +26,13 @@ from dataclasses import dataclass
 
 from . import theory
 from .ir import (
+    ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
     ROLE_NOTE,
     ROLE_PLAYER,
+    ROLE_VELOCITY,
     Cell,
     Diagnostic,
     Line,
@@ -52,6 +54,9 @@ OPTION_RE = re.compile(
 # only taken as options when the value reads as one, so a bar that happens to
 # start with the word stays a bar.
 STAGE_OPTION_RE = re.compile(r"^\s*(pos|position|speech|feel)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
+# A named annotation layer may say which row it marks: `on: melody`,
+# `on: @bass`. Read at the end of the layer's row, after the last bar.
+ON_RE = re.compile(r"on\s*[:=]\s*(.+)", re.IGNORECASE)
 
 METADATA_KEYS = {
     "key",
@@ -86,6 +91,10 @@ ROLE_LABELS = {
     "lyric": ROLE_LYRICS,
     "words": ROLE_LYRICS,
     "text": ROLE_LYRICS,
+    "vel": ROLE_VELOCITY,
+    "vels": ROLE_VELOCITY,
+    "velocity": ROLE_VELOCITY,
+    "dynamics": ROLE_VELOCITY,
 }
 
 # Tokens that mean "keep sounding the previous note".
@@ -114,6 +123,29 @@ REST_TOKENS = {
 
 SUSTAIN_CHARS = "~"
 
+# A trailing dynamics mark on a note token: `C4!` accents (+20), `C4@99`
+# names an exact MIDI velocity, `C4@99!` does both. `@` and `!` appear in no
+# pitch, chord or degree spelling, so the mark is free real estate; the core
+# has to be non-empty or the token is left alone.
+DYNAMIC_MARK_RE = re.compile(r"^(.+?)(?:@(\d{1,3}))?(!*)$")
+
+
+def split_dynamics(token: str) -> tuple[str, int | None, int]:
+    """Split a trailing dynamics mark off a note token.
+
+    Returns ``(core, absolute, delta)``. ``absolute`` is ``None`` unless the
+    mark named a velocity (``@99``); ``delta`` is 20 per ``!``. The core is
+    the token unchanged when it carries no mark.
+    """
+    match = DYNAMIC_MARK_RE.match(token)
+    if not match:
+        return token, None, 0
+    core, named, accents = match.groups()
+    if not core or core == token:
+        return token, None, 0
+    absolute = max(1, min(127, int(named))) if named is not None else None
+    return core, absolute, 20 * len(accents)
+
 
 @dataclass
 class Slot:
@@ -124,6 +156,10 @@ class Slot:
     pitches: tuple[int, ...] = ()
     chord: theory.Chord | None = None
     text: str = ""
+    velocity: int | None = None
+    """An exact MIDI velocity written on the token (``C4@99``), if any."""
+    velocity_delta: int = 0
+    """A velocity nudge written on the token (``C4!`` accents by 20)."""
 
     @property
     def sounds(self) -> bool:
@@ -173,6 +209,50 @@ def token_weight(token: str) -> tuple[str, float]:
     stripped = token.rstrip(SUSTAIN_CHARS)
     extra = len(token) - len(stripped)
     return (stripped or token), 1.0 + extra
+
+
+# What a dynamics mark in a Vel: row can say. Numbers are exact MIDI
+# velocities, names are the usual loudness ladder, and a signed number rides
+# on whatever the row's base velocity is.
+NAMED_DYNAMICS = {
+    "pp": 32,
+    "p": 48,
+    "mp": 64,
+    "mf": 80,
+    "f": 96,
+    "ff": 112,
+}
+CRESCENDO = {"cresc", "crescendo"}
+DIMINUENDO = {"dim", "diminuendo", "decresc", "decrescendo"}
+
+
+def parse_velocity_mark(token: str) -> tuple[str, object] | None:
+    """Read one token of a ``Vel:`` row.
+
+    Returns ``(kind, value)`` -- one of ``("absolute", int)``,
+    ``("delta", int)``, ``("cresc", None)`` and ``("dim", None)`` -- or
+    ``None`` for a spacer (``.``, ``-``, ``~``) or a token that says nothing,
+    which never consumes an attack either way.
+    """
+    text = token.strip()
+    lowered = text.lower()
+    if not text or text in SUSTAIN_TOKENS or text in REST_TOKENS:
+        return None
+    if lowered in NAMED_DYNAMICS:
+        return ("absolute", NAMED_DYNAMICS[lowered])
+    if lowered in CRESCENDO:
+        return ("cresc", None)
+    if lowered in DIMINUENDO:
+        return ("dim", None)
+    number = re.fullmatch(r"[+-]?\d{1,3}", text)
+    if number:
+        value = int(text)
+        if text[0] in "+-":
+            return ("delta", value)
+        return ("absolute", max(1, min(127, value)))
+    if text == "!":
+        return ("delta", 20)
+    return None
 
 
 def split_player_line(line: str) -> tuple[str, bool, str]:
@@ -327,6 +407,14 @@ class Parser:
                 return
             if name in METADATA_KEYS or "|" in payload and self._looks_like_metadata(payload):
                 self._handle_metadata(line, index)
+                return
+            if "|" in payload:
+                # A labelled row of bar-aligned cells the compiler does not
+                # otherwise claim: an annotation layer, not an unrecognised
+                # label. `Breath:` and `Gaze:` are data the writer meant, so
+                # they never warn -- the old reading filed them under "could
+                # not read this", which is the opposite of what they are.
+                self._handle_annotation_layer(label.group(1).strip(), payload, index, raw)
                 return
             self._note(
                 "info",
@@ -516,7 +604,74 @@ class Parser:
         if not cells:
             self._note("info", f"empty {role} row", index, source=raw)
             return
+        if role == ROLE_VELOCITY:
+            # A Vel: row marks the playable row above it. Saying so here
+            # rather than while arranging, because a section whose only rows
+            # are Vel: rows is skipped by the arranger and would never get to
+            # complain -- the marking would just vanish.
+            above = [
+                line
+                for line in (self._current.lines if self._current else [])
+                if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER}
+            ]
+            if not above:
+                self._note(
+                    "warning",
+                    "Vel: row has no playable row above it to mark",
+                    index,
+                    hint="write the Vel: row directly under the row it marks",
+                    source=raw,
+                )
         self._append_line(Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in payload))
+
+    def _handle_annotation_layer(self, written_name: str, payload: str, index: int, raw: str) -> None:
+        """A named row of bar-aligned cells: a semantic layer over the row above.
+
+        Any label the compiler does not play -- ``Breath:``, ``Mute:``,
+        ``Gaze:``, ``Emotion:`` -- becomes an annotation layer with no
+        compilation effect, unless a semantic is registered for the name in
+        ``ANNOTATION_SEMANTICS`` (recorded on the line, so a consumer can
+        dispatch on it). The name is kept as written, so the row round-trips
+        exactly, and no diagnostic is produced: the row is data, not an error.
+        Orphaned layers -- nothing playable above them -- are preserved too;
+        they simply mark nothing.
+        """
+        # Imported here rather than at module scope: the annotations module
+        # reads this module's token vocabulary, the same way perform.stage is
+        # imported where it is used to break the other direction of the cycle.
+        from .annotations import semantic_for
+
+        cells_text = split_cells(payload)
+        # An explicit target rides at the end of the row, the way `vel: 70`
+        # rides on a player row, and is popped before the layer's cells are
+        # built so it can never be mistaken for a value.
+        target_hint = ""
+        if cells_text:
+            named = ON_RE.fullmatch(cells_text[-1])
+            if named:
+                target_hint = named.group(1).strip()
+                cells_text.pop()
+        cells = [
+            Cell(tokens=self._tokenise(text, ROLE_ANNOTATION), line=index)
+            for text in cells_text
+        ]
+        if not cells:
+            return  # pipes and nothing else: no data to preserve
+        self._ensure_section(index)
+        self._append_line(
+            Line(
+                role=ROLE_ANNOTATION,
+                name=written_name,
+                cells=cells,
+                options={
+                    "semantic": semantic_for(written_name),
+                    **({"on": target_hint} if target_hint else {}),
+                },
+                line_number=index,
+                raw=raw,
+                barred=True,
+            )
+        )
 
     def _handle_player(self, line: str, index: int) -> None:
         name, is_declaration, remainder = split_player_line(line)
@@ -618,7 +773,7 @@ class Parser:
         easily be prose -- every token must be musical and pitches must carry
         an octave, or the row is left as an annotation.
         """
-        bare = [token_weight(tok)[0] for tok in tokens]
+        bare = [split_dynamics(token_weight(tok)[0])[0] for tok in tokens]
         meaningful = [
             tok for tok in bare if tok.lower() not in SUSTAIN_TOKENS and tok.lower() not in REST_TOKENS
         ]
@@ -709,9 +864,13 @@ class Parser:
         for section in self.sections:
             # Rows repeated within a section run one after another, so compare
             # each voice's total against the longest voice, not row by row.
+            # A Vel: row owns no time of its own -- it marks the row above it
+            # -- so it is not a voice and never counts towards these totals.
+            # A named annotation layer is the same kind of row, whatever its
+            # name happens to be.
             groups: dict[str, list[Line]] = {}
             for line in section.lines:
-                if not line.cells or line.role == ROLE_NOTE:
+                if not line.cells or line.role in (ROLE_NOTE, ROLE_VELOCITY, ROLE_ANNOTATION):
                     continue
                 key = f"{line.role}:{line.name}" if line.role == ROLE_PLAYER else line.role
                 groups.setdefault(key, []).append(line)
