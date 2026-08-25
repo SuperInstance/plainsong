@@ -1,0 +1,12 @@
+```plainsong
+**TRACK: Overture Boot**
+[MetaData]
+key: Am | tempo: 96 | time: 4/4
+
+[Boot] (four bars, four facets -- every row is boot state)
+@bass   | e2 . a1 . | c2 . g1 . | d2 . a1 . | e2 . a1 . |
+Melody: | G#4 E4 . . | Eb4 . . . | F4 C4 . . | G4 D4 . . |
+Score:  | 0 . . . | 480 . . . | 360 . . . | 240 . . . |
+Bg:     | night . . . | stars . . . | ridge . . . | grid . . . |
+Seed:   | spawn 42 . . | drop 1337 . . | weather 777 . . | encounter 9001 . . |
+```

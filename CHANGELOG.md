@@ -54,6 +54,20 @@ exist; nothing phantom is constructed for them.
   layer rows where they were written, and the `Title:` free-text diagnostic
   path is untouched.
 
+### The Overture Boot (proof lane)
+
+`examples/overture-boot.song` — one piece where every row is game boot
+state: `@bass` hashes to the world seed, `Melody:` encodes HP/lives/
+position/energy as pitches (G#4 E4 = 100 HP, big-endian base-12), and the
+`Score:`/`Bg:`/`Seed:` annotation rows are the scoreboard, scene tags and RNG
+constants — kept as data by the parser (the Vel: row's marking-not-sounding
+contract), never played. `tools/overture_to_state.py` actualizes the same
+file to game-state JSON; the compiler actualizes it to audio. One file,
+two renderings, one state: parse twice → identical JSON, one seed-note
+semitone → a different world with the player untouched. See
+`examples/OVERTURE-README.md`. Corpus fingerprint grows by exactly that one
+file (15 notes).
+
 ### Per-note dynamics and working swing
 
 Two things a lead sheet could not say, demanded by the same wall hit from

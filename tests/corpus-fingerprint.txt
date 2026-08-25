@@ -2487,6 +2487,7 @@ bac02b652bca917c      40  examples/edge-cases/edge-1-polyrhythm.song
 2b7720243b130168      20  examples/edge-cases/edge-3-dense-chords.song
 b1ef7007b7a0f712      34  examples/edge-cases/edge-4-players-only.song
 65a419894d82917f      73  examples/edge-cases/edge-5-kitchen-sink.song
+4531631370fe7678      15  examples/overture-boot.song
 73ff48fe72d8bf12     157  examples/plainsong-1-creatures-of-interval.song
 a8567c72abd8ec82     143  examples/plainsong-2-the-room-is-safe.song
 87a9033c4c06bcce     224  examples/plainsong-3-hermes-blues.song
@@ -6319,4 +6320,4 @@ e851f2095bdfcfc6      66  plainsong/songbook/spanish/pop-classics/volver-volver.
 33fb66fd0c9a1007     102  plainsong/songbook/spanish/pop-classics/yo-no-nac-para-amar.song
 cc10b267c8269318      72  plainsong/songbook/spanish/pop-classics/yo-no-s-ma-ana.song
 f1ef299e74cad6fb      62  plainsong/songbook/spanish/pop-classics/yolanda.song
-# 6321 files, 393241 notes, 0 failed
+# 6322 files, 393256 notes, 0 failed
