@@ -26,7 +26,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from plainsong import pipeline
-from plainsong.notation.ir import ROLE_NOTE, Arrangement, Score
+from plainsong.notation.ir import ROLE_ANNOTATION, ROLE_NOTE, Arrangement, Score
 from plainsong.notation.parser import SUSTAIN_TOKENS, split_cells
 
 #: The player row whose note sequence hashes to the world seed.
@@ -104,7 +104,7 @@ def annotation_rows(score: Score) -> dict[str, list[list[str]]]:
     rows: dict[str, list[list[str]]] = {}
     for section in score.sections:
         for line in section.lines:
-            if line.role == ROLE_NOTE and line.name:
+            if line.role in (ROLE_NOTE, ROLE_ANNOTATION) and line.name:
                 rows.setdefault(line.name, []).extend(_tokens(c) for c in _payload(line))
     return rows
 
