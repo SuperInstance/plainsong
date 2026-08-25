@@ -2,6 +2,26 @@
 
 Notable changes, newest first. Dates are ISO 8601.
 
+## Unreleased
+
+### The shipped examples were wrapped in markdown fences
+
+All eight files in `examples/` opened with ```` ```plainsong ```` and closed with
+```` ``` ````. They are `.song` files, not markdown. The parser ignores the
+fence, so nothing sounded wrong and nothing warned -- but these files are the
+first thing anyone reads to learn the notation, and one of the observed failure
+modes is an agent copying an example verbatim. It was copying a fence.
+
+Removing them changed no music, which is checked rather than asserted: the
+corpus fingerprint hashes the compiled arrangement, and it is unmoved at 6,321
+files.
+
+The three warnings `plainsong check examples` reports are all deliberate and
+stay: two are sections whose chords stop early on purpose (one of them an outro
+literally named "fading sonar"), and the third is `edge-3-dense-chords.song`,
+whose degenerate tokens are documented in `examples/edge-cases/BUGS.md` as
+testing that they degrade gracefully.
+
 ## 1.5.0 — 2026-08-24
 
 A minor rather than a patch: the CLI accepts flags it used to refuse, `--verbose`
