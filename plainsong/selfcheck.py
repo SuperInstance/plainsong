@@ -576,6 +576,61 @@ def check_dynamics() -> tuple[bool, str]:
     return True, "one velocity per note, from the Vel: row and inline marks, into the MIDI file"
 
 
+def check_annotation_rows() -> tuple[bool, str]:
+    """Any named row is a layer: linked, timestamped, silent about the music."""
+    from .features import annotation_stats
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+
+    text = (
+        "[V1]\n"
+        "Melody: | C4 . E4 G4 | A4 G4 E4 C4 |\n"
+        "Breath: | 1.0 . 0.6 0.9 | . 0.2 . . |\n"
+        "Vel: | mf . . f |\n"
+    )
+    score = parse(text)
+    if score.warnings():
+        return False, f"a data row warned: {[d.message for d in score.warnings()]}"
+    arrangement = arrange(score, ArrangeOptions(humanize=False))
+    if not arrangement.annotations:
+        return False, "the Breath: row resolved to nothing"
+
+    # The address is the point: the value over the bar's third token names the
+    # voice, the bar, the beat window, and the event it marks -- and agrees
+    # with the time grid, because both came through the same arithmetic.
+    marked = next(a for a in arrangement.annotations if a.token == "0.6")
+    if (marked.voice, marked.bar, marked.onset, marked.width, marked.target) != (
+        "melody",
+        0,
+        2.0,
+        1.0,
+        "E4",
+    ):
+        return False, f"misaddressed: {marked.as_dict()}"
+    column = arrangement.grid.column(marked.bar, marked.unit)
+    if not column or column[0].token != "E4":
+        return False, "the address and the time grid disagree about the event"
+
+    # The generic eye: statistics over a dimension nobody shipped a table for.
+    stats = annotation_stats(arrangement, "Breath")
+    if (stats["count"], stats["mean"], stats["std"]) != (4, 0.675, 0.311247):
+        return False, f"annotation_stats lost the layer: {stats}"
+
+    # And no effect on the compile: the same piece without the layer compiles
+    # to the very same notes, velocities included.
+    plain = arrange(
+        parse("[V1]\nMelody: | C4 . E4 G4 | A4 G4 E4 C4 |\nVel: | mf . . f |\n"),
+        ArrangeOptions(humanize=False),
+    )
+    layered = [(note.pitch, note.start, note.velocity) for _t, note in arrangement.iter_notes()]
+    bare = [(note.pitch, note.start, note.velocity) for _t, note in plain.iter_notes()]
+    if layered != bare:
+        return False, "the Breath: row changed the music"
+    return True, (
+        "any Name: row parses as a linked, timestamped layer with no effect on the compile"
+    )
+
+
 def check_swing() -> tuple[bool, str]:
     """Swing is a playback decision with exact, documented arithmetic."""
     from .notation import arrange, parse

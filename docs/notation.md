@@ -40,6 +40,7 @@ the reader. Sections play in the order they appear.
 | `Melody:` | pitches in scientific notation: `C4`, `A#3`, `Eb5` |
 | `Lyrics:` | words, one bar per cell; never sounded, carried into the MIDI file. See [lyrics.md](lyrics.md) — a word does **not** sound with the note it is written under unless you ask it to |
 | `Vel:` | dynamics for the row above it: numbers, `pp`–`ff`, `+10`/`-8`, `cresc`/`dim`. See [Dynamics](#dynamics) |
+| `AnyName:` | an annotation layer over the row above it — any dimension you can name. See [Annotation rows](#annotation-rows) |
 | `@name` | a named player: pitches, with `-` stacking a chord: `a2-e3-a3` |
 
 A `@name` row may end with `| vel: 70` to set its loudness (1-127), and
@@ -85,6 +86,61 @@ A mark can also ride on the token itself: `C4!` accents that note by twenty,
 `C4@99` plays it at exactly 99, and both work on chord symbols and stacks
 (`Am!`, `a2-e3-a3@64`) in either dialect. Marks go before any sustains —
 `C4!~~~`, not `C4~~~!` — and travel with the note through transposition.
+
+## Annotation rows
+
+`Vel:` is one instance of a general thing: **any row you can name**. A
+labelled row of bar-aligned cells that the compiler does not otherwise play —
+`Breath:`, `Mute:`, `Gaze:`, `Emotion:` — is an annotation layer over the
+playable row above it, parsed as first-class data: preserved, addressable,
+and round-tripped. If a composer doesn't need a row, it isn't there; nothing
+phantom is constructed. A row the compiler cannot interpret is data, not an
+error — unknown names never warn and never change a note of the compile.
+
+```plainsong
+[Verse]
+Melody: | A4 . C5 E5 | G4 . E5 . |
+Breath: | 1.0 . 0.6 0.9 | . 0.8 . . |
+Gaze: | far . near . | . close . . |
+```
+
+The alignment is the alignment `Vel:` and `Lyrics:` use — the k-th token of a
+layer's cell holds the k-th token of that bar, `.` holds its column — so a
+value sits under the event it describes rather than merely looking like it
+does. Every value carries its resolved address in the arrangement: which
+voice, which bar, which beat window, which target token — the same arithmetic
+that timed the notes, which is what lets a consumer join on it:
+
+```python
+from plainsong.notation import arrange, parse
+from plainsong.features import annotation_stats
+
+arrangement = arrange(parse(text))
+for mark in arrangement.annotations:
+    print(mark.name, mark.token, mark.voice, mark.bar, mark.onset, mark.target)
+# Breath 1.0 melody 0 0.0 A4
+# Breath 0.6 melody 0 2.0 C5
+annotation_stats(arrangement, "Breath")  # {'count': 4, 'mean': 0.825, ...}
+```
+
+A layer marks the nearest playable row (`Chords:`, `Melody:`, `@player`)
+above it. To name the row it marks instead — useful when the layer is written
+elsewhere, or two voices need separate layers of one dimension — end the row
+with `on:`, the same way a player row ends with `vel: 70`:
+
+```plainsong
+[Verse]
+Breath: | deep . light . | on: @bass
+Chords: | Am . F . |
+@bass | a1 . e2 . | vel: 70
+```
+
+Layers own no time, never count as a voice, survive transposition untouched
+(the values stay under the notes they were written for), and pass through
+`plainsong transpose` and back. `Vel:` is simply the built-in layer whose
+values have MIDI velocity semantics; a new semantic for a new name is
+registered in one table, `plainsong.notation.annotations.ANNOTATION_SEMANTICS`,
+and unregistered names stay data forever.
 
 ## Swing
 

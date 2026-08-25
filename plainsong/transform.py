@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from .notation import theory
 from .notation.ir import (
+    ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
@@ -78,9 +79,10 @@ def transpose_score(score: Score, semitones: int) -> Score:
 
     for section in score.sections:
         for line in section.lines:
-            # A Vel: row carries marks, not music; it passes through untouched,
-            # still aligned to the tokens it was written under.
-            if line.role in (ROLE_LYRICS, ROLE_NOTE, ROLE_VELOCITY):
+            # A Vel: row and a named annotation layer carry marks and data,
+            # not music; they pass through untouched, still aligned to the
+            # tokens they were written under.
+            if line.role in (ROLE_LYRICS, ROLE_NOTE, ROLE_VELOCITY, ROLE_ANNOTATION):
                 continue
             for cell in line.cells:
                 if line.role == ROLE_CHORDS:
@@ -135,6 +137,14 @@ def _format_row(line: Line) -> str:
             separator = "" if body.rstrip().endswith("|") else " |"
             suffix = f"{separator} vel: {line.options['velocity']}"
         return f"{prefix}{body}{suffix}"
+    if line.role == ROLE_ANNOTATION:
+        # The dimension's own name, as written: `Breath:` round-trips as
+        # `Breath:`, not as something the compiler renamed it to. An explicit
+        # target rides after the last bar, the way `vel: 70` does on a player
+        # row -- and for the same reason: the same bar line separates the last
+        # cell from the option, so no empty cell is invented.
+        suffix = f" on: {line.options['on']}" if line.options.get("on") else ""
+        return f"{(line.name or 'Annotation').strip()}: {body}{suffix}"
     return f"{ROLE_PREFIX.get(line.role, line.role.title() + ':')} {body}"
 
 
@@ -195,6 +205,19 @@ def describe(text: str, dialect: str = "auto") -> dict:
     if not score.has_errors:
         arrangement = arrange(score)
         summary["arrangement"] = arrangement.summary()
+        if arrangement.annotations:
+            # Named layers, if any: what dimensions the writer used and how
+            # many values resolved to an address. Absent for a file with none,
+            # which is the common case and stays exactly as it was.
+            layers: dict[str, dict[str, object]] = {}
+            for annotation in arrangement.annotations:
+                entry = layers.setdefault(annotation.name, {"values": 0, "voices": set()})
+                entry["values"] = int(entry["values"]) + 1
+                entry["voices"].add(annotation.voice)  # type: ignore[union-attr]
+            summary["annotations"] = {
+                name: {"values": entry["values"], "voices": sorted(entry["voices"])}  # type: ignore[arg-type]
+                for name, entry in layers.items()
+            }
         # Diagnostics come from two places and the arranger's are the ones a
         # reader most needs: an unreadable chord becomes silence while
         # arranging, not while parsing. This arranged and then reported only

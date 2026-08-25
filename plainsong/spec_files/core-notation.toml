@@ -66,3 +66,9 @@ id = "swing"
 kind = "python"
 run = "plainsong.selfcheck:check_swing"
 description = "Swing plays long-short pairs at the named ratio and moves nothing written"
+
+[[check]]
+id = "annotation-rows"
+kind = "python"
+run = "plainsong.selfcheck:check_annotation_rows"
+description = "Any Name: row is a linked, timestamped annotation layer with no compile effect"

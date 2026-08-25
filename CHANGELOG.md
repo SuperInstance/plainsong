@@ -4,6 +4,38 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### Generic annotation rows
+
+`Vel:` was one instance of a general idea: a row of bar-aligned cells that
+marks the playable row above it. Any label the compiler does not otherwise
+claim now parses as an **annotation layer** — `Breath:`, `Mute:`, `Gaze:`,
+`Emotion:`, any dimension a composer can name. Rows nobody writes do not
+exist; nothing phantom is constructed for them.
+
+- **Syntax.** `Name: | cell | cell |` where `Name` is not a role the compiler
+  plays (`Chords:`, `Melody:`, `Lyrics:`, `Vel:` and aliases) or a metadata
+  key. The name is kept as written and round-trips exactly. A layer may name
+  its target explicitly with a trailing `on:` cell (`Breath: | ... | on: @bass`),
+  the way a player row ends with `vel: 70`.
+- **Linking and timestamps are shared, not duplicated.** `Vel:` and generic
+  layers pair through one function (`annotations.pair_annotation_rows`) and
+  walk positions through one function (`annotations.walk_bars`); each resolved
+  value carries `(voice, bar, unit, onset, width, target)` read off the time
+  grid the target row was already placed on, so consumers join on the address
+  instead of trusting a column.
+- **Data, not errors.** Unknown rows never warn and never change a byte of
+  the compile. `Vel:` remains the built-in layer with MIDI semantics; a new
+  semantic registers in one table, `ANNOTATION_SEMANTICS`.
+- **Access.** `Score.annotation_rows()`, `Arrangement.annotations`, a
+  `describe()` summary, and `plainsong.features.annotation_stats` —
+  mean/std/min/max over any *numeric* layer, so a future eye can see custom
+  dimensions, not just velocity. Word-valued layers report zero rather than
+  inventing numbers.
+- **Compatibility.** Golden compiles are byte-identical, the corpus
+  fingerprint is unchanged (annotations touch no note), transposition leaves
+  layer rows where they were written, and the `Title:` free-text diagnostic
+  path is untouched.
+
 ### Per-note dynamics and working swing
 
 Two things a lead sheet could not say, demanded by the same wall hit from

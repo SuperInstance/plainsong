@@ -21,13 +21,16 @@ from dataclasses import dataclass
 
 from .. import instruments as gm
 from . import theory
+from .annotations import is_spacer, pair_annotation_rows, resolve, target_key, walk_bars
 from .ir import (
+    ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
     ROLE_NOTE,
     ROLE_PLAYER,
     ROLE_VELOCITY,
+    Annotation,
     Arrangement,
     ChordEvent,
     Diagnostic,
@@ -353,40 +356,38 @@ class Arranger:
             return False
         return True
 
-    def _velocity_plans(self, section) -> dict[int, list[int | None]]:
+    def _velocity_plans(
+        self, section, pairs: list[tuple[Line, Line]] | None = None
+    ) -> dict[int, list[int | None]]:
         """Resolve the ``Vel:`` rows of one section into per-attack velocities.
 
         A ``Vel:`` row marks the nearest playable row above it and owns no time
-        of its own, the way a bound lyric row owns none. The result is keyed by
-        the target row's ``id`` and holds one value per attack -- ``None`` where
-        the mark said nothing and the row's own velocity stands.
+        of its own, the way a bound lyric row owns none -- the pairing rule it
+        shares with every named annotation layer, which is why the pairs come
+        from :func:`~plainsong.notation.annotations.pair_annotation_rows`.
+        The result is keyed by the target row's ``id`` and holds one value per
+        attack -- ``None`` where the mark said nothing and the row's own
+        velocity stands.
         """
+        if pairs is None:
+            pairs = pair_annotation_rows(section.lines)
         plans: dict[int, list[int | None]] = {}
         claimed: set[int] = set()
-        target: Line | None = None
-        for line in section.lines:
-            if line.role == ROLE_VELOCITY:
-                if not line.cells:
-                    continue
-                if target is None or not target.cells:
-                    # The parser already said this at parse time, with a line
-                    # number -- saying it again here would double the warning.
-                    continue
-                if id(target) in claimed:
-                    self.diagnostics.append(
-                        Diagnostic(
-                            severity="warning",
-                            message=f"a second Vel: row marks the {target.role} row above it; the first stands",
-                            line=line.line_number,
-                            source=line.raw,
-                        )
-                    )
-                    continue
-                claimed.add(id(target))
-                plans[id(target)] = self._velocity_plan(target, line)
+        for target, vel_line in pairs:
+            if vel_line.role != ROLE_VELOCITY or not vel_line.cells:
                 continue
-            if line.cells and line.role in {ROLE_CHORDS, ROLE_MELODY, ROLE_PLAYER}:
-                target = line
+            if id(target) in claimed:
+                self.diagnostics.append(
+                    Diagnostic(
+                        severity="warning",
+                        message=f"a second Vel: row marks the {target.role} row above it; the first stands",
+                        line=vel_line.line_number,
+                        source=vel_line.raw,
+                    )
+                )
+                continue
+            claimed.add(id(target))
+            plans[id(target)] = self._velocity_plan(target, vel_line)
         return plans
 
     def _velocity_plan(self, target: Line, vel_line: Line) -> list[int | None]:
@@ -395,27 +396,17 @@ class Arranger:
         The k-th token of a ``Vel:`` cell marks the k-th token of the bar
         above it. That is a *positional* reading, deliberately: a writer lays
         the marks under the notes they are for, and a ``.`` in the marking row
-        holds that column the way it holds a note. Marks standing over a
-        sustain or a rest do nothing, and the cheap attack test decides which
-        tokens those are -- the same cheap test ``_is_attack`` documents.
+        holds that column the way it holds a note. The positional walk is the
+        shared one -- every named annotation layer pairs through
+        :func:`~plainsong.notation.annotations.walk_bars`, which is what
+        keeps a ``Breath:`` value and a ``Vel:`` mark over the same column
+        landing on the same event. Marks standing over a sustain or a rest do
+        nothing, and the cheap attack test decides which tokens those are.
         """
         base = int(target.options.get("velocity") or DEFAULT_VELOCITY.get(target.role, 76))
-        target_bars = (
-            [cell.tokens for cell in target.cells]
-            if target.barred
-            else [[token for cell in target.cells for token in cell.tokens]]
-        )
-        vel_bars = (
-            [cell.tokens for cell in vel_line.cells]
-            if vel_line.barred
-            else [[token for cell in vel_line.cells for token in cell.tokens]]
-        )
 
         marks: list[tuple[str, object] | None] = []
-        width = max(len(target_bars), len(vel_bars))
-        for bar in range(width):
-            tokens = target_bars[bar] if bar < len(target_bars) else []
-            written = vel_bars[bar] if bar < len(vel_bars) else []
+        for bar, tokens, written in walk_bars(target, vel_line):
             if len(written) > len(tokens):
                 self.diagnostics.append(
                     Diagnostic(
@@ -434,7 +425,7 @@ class Arranger:
                 mark = None
                 if position < len(written):
                     mark = parse_velocity_mark(written[position])
-                    if mark is None and not self._is_velocity_spacer(written[position]):
+                    if mark is None and not is_spacer(written[position]):
                         junk.append(written[position])
                         mark = None
                 marks.append(mark)
@@ -452,12 +443,6 @@ class Arranger:
                 )
 
         return self._resolve_marks(marks, base)
-
-    @staticmethod
-    def _is_velocity_spacer(token: str) -> bool:
-        bare, _weight = token_weight(token)
-        lowered = bare.lower()
-        return lowered in SUSTAIN_TOKENS or lowered in REST_TOKENS
 
     @staticmethod
     def _resolve_marks(marks: list[tuple[str, object] | None], base: int) -> list[int | None]:
@@ -581,6 +566,7 @@ class Arranger:
         cursor = 0.0
         fallback_index = 0
         unit = SUBDIVISION_UNITS.get(str(meta.subdivision).lower(), 0.5)
+        annotations_out: list[Annotation] = []
 
         for section in self.score.sections:
             playable = [
@@ -591,7 +577,12 @@ class Arranger:
             if not playable:
                 continue
             section_starts.append((section.name, cursor))
-            vel_plans = self._velocity_plans(section)
+            # One pairing for the whole section: Vel: rows and named layers
+            # walk the same rule (nearest playable row above), so they are
+            # computed once and consumed by both.
+            pairs = pair_annotation_rows(section.lines)
+            vel_plans = self._velocity_plans(section, pairs)
+            has_layers = any(layer.role == ROLE_ANNOTATION for _target, layer in pairs)
 
             # Rows of different kinds sound together; a row repeated within one
             # section continues it, bar after bar, the way successive lines of a
@@ -602,6 +593,12 @@ class Arranger:
                 groups.setdefault(key, []).append(line)
 
             section_beats = 0.0
+            # The grid slice each placed line owns, recorded only when a named
+            # annotation layer marks something in this section: that slice is
+            # how a layer's values join onto the tokens that were timed, which
+            # is the whole address. Two len() calls a row is the cost; a
+            # section with no layers pays nothing.
+            slices: dict[int, tuple[int, int]] = {}
             for key, group in groups.items():
                 offset = cursor
                 for line in group:
@@ -613,6 +610,7 @@ class Arranger:
                         if line.role == ROLE_PLAYER and key not in self._tracks:
                             fallback_index += 1
                         track = self._track_for(key, line.name or line.role, line.role, instrument)
+                        before = len(self.grid.placements) if has_layers else 0
                         self._place_row(
                             line=line,
                             track=track,
@@ -626,8 +624,27 @@ class Arranger:
                             grid_row=key,
                             vel_plan=vel_plans.get(id(line)),
                         )
+                        if has_layers:
+                            slices[id(line)] = (before, len(self.grid.placements))
                     offset += length
                 section_beats = max(section_beats, offset - cursor)
+
+            if has_layers:
+                for target, layer in pairs:
+                    if layer.role != ROLE_ANNOTATION:
+                        continue
+                    span = slices.get(id(target))
+                    if span is None:  # the target was never placed; keep the data, skip the address
+                        continue
+                    annotations_out.extend(
+                        resolve(
+                            layer,
+                            target,
+                            voice=target_key(target),
+                            target_role=target.role,
+                            placements=self.grid.placements[span[0] : span[1]],
+                        )
+                    )
 
             cursor += section_beats
 
@@ -655,6 +672,7 @@ class Arranger:
             diagnostics=self.score.diagnostics + self.diagnostics,
             section_starts=section_starts,
             grid=self.grid,
+            annotations=annotations_out,
         )
         self._solve_performance(arrangement)
         return arrangement

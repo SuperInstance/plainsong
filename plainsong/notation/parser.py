@@ -26,6 +26,7 @@ from dataclasses import dataclass
 
 from . import theory
 from .ir import (
+    ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
@@ -53,6 +54,9 @@ OPTION_RE = re.compile(
 # only taken as options when the value reads as one, so a bar that happens to
 # start with the word stays a bar.
 STAGE_OPTION_RE = re.compile(r"^\s*(pos|position|speech|feel)\s*[:=]\s*(.+?)\s*$", re.IGNORECASE)
+# A named annotation layer may say which row it marks: `on: melody`,
+# `on: @bass`. Read at the end of the layer's row, after the last bar.
+ON_RE = re.compile(r"on\s*[:=]\s*(.+)", re.IGNORECASE)
 
 METADATA_KEYS = {
     "key",
@@ -404,6 +408,14 @@ class Parser:
             if name in METADATA_KEYS or "|" in payload and self._looks_like_metadata(payload):
                 self._handle_metadata(line, index)
                 return
+            if "|" in payload:
+                # A labelled row of bar-aligned cells the compiler does not
+                # otherwise claim: an annotation layer, not an unrecognised
+                # label. `Breath:` and `Gaze:` are data the writer meant, so
+                # they never warn -- the old reading filed them under "could
+                # not read this", which is the opposite of what they are.
+                self._handle_annotation_layer(label.group(1).strip(), payload, index, raw)
+                return
             self._note(
                 "info",
                 f"unrecognised row label {label.group(1).strip()!r}, kept as an annotation",
@@ -612,6 +624,55 @@ class Parser:
                 )
         self._append_line(Line(role=role, cells=cells, line_number=index, raw=raw, barred="|" in payload))
 
+    def _handle_annotation_layer(self, written_name: str, payload: str, index: int, raw: str) -> None:
+        """A named row of bar-aligned cells: a semantic layer over the row above.
+
+        Any label the compiler does not play -- ``Breath:``, ``Mute:``,
+        ``Gaze:``, ``Emotion:`` -- becomes an annotation layer with no
+        compilation effect, unless a semantic is registered for the name in
+        ``ANNOTATION_SEMANTICS`` (recorded on the line, so a consumer can
+        dispatch on it). The name is kept as written, so the row round-trips
+        exactly, and no diagnostic is produced: the row is data, not an error.
+        Orphaned layers -- nothing playable above them -- are preserved too;
+        they simply mark nothing.
+        """
+        # Imported here rather than at module scope: the annotations module
+        # reads this module's token vocabulary, the same way perform.stage is
+        # imported where it is used to break the other direction of the cycle.
+        from .annotations import semantic_for
+
+        cells_text = split_cells(payload)
+        # An explicit target rides at the end of the row, the way `vel: 70`
+        # rides on a player row, and is popped before the layer's cells are
+        # built so it can never be mistaken for a value.
+        target_hint = ""
+        if cells_text:
+            named = ON_RE.fullmatch(cells_text[-1])
+            if named:
+                target_hint = named.group(1).strip()
+                cells_text.pop()
+        cells = [
+            Cell(tokens=self._tokenise(text, ROLE_ANNOTATION), line=index)
+            for text in cells_text
+        ]
+        if not cells:
+            return  # pipes and nothing else: no data to preserve
+        self._ensure_section(index)
+        self._append_line(
+            Line(
+                role=ROLE_ANNOTATION,
+                name=written_name,
+                cells=cells,
+                options={
+                    "semantic": semantic_for(written_name),
+                    **({"on": target_hint} if target_hint else {}),
+                },
+                line_number=index,
+                raw=raw,
+                barred=True,
+            )
+        )
+
     def _handle_player(self, line: str, index: int) -> None:
         name, is_declaration, remainder = split_player_line(line)
         if not name:
@@ -805,9 +866,11 @@ class Parser:
             # each voice's total against the longest voice, not row by row.
             # A Vel: row owns no time of its own -- it marks the row above it
             # -- so it is not a voice and never counts towards these totals.
+            # A named annotation layer is the same kind of row, whatever its
+            # name happens to be.
             groups: dict[str, list[Line]] = {}
             for line in section.lines:
-                if not line.cells or line.role in (ROLE_NOTE, ROLE_VELOCITY):
+                if not line.cells or line.role in (ROLE_NOTE, ROLE_VELOCITY, ROLE_ANNOTATION):
                     continue
                 key = f"{line.role}:{line.name}" if line.role == ROLE_PLAYER else line.role
                 groups.setdefault(key, []).append(line)
