@@ -142,6 +142,47 @@ values have MIDI velocity semantics; a new semantic for a new name is
 registered in one table, `plainsong.notation.annotations.ANNOTATION_SEMANTICS`,
 and unregistered names stay data forever.
 
+## Perf blocks
+
+A `Vel:` row marks the row above it, positionally. A `[Perf]` block marks
+the whole take: **channel tables over a voice's own notes, written anywhere
+in the file**. Where annotation layers are prose over the chart, `[Perf]` is
+the performance — what the player does with the notes, bar by bar.
+
+```plainsong
+[V1]
+@piano | C3-G3-D4 . E4 G4 (rest) C5 . . | vel: 82
+
+[Perf]
+@piano.vel | 96 . 64 40 . 112 . . |
+@piano.ache | 0.2 . 0.8 1.0 . 0.4 . . |
+```
+
+One row is one *channel* of one *voice*. `@piano.vel` marks the player
+named piano; a row kind written bare (`melody.vel`) marks that row instead.
+The cells are bar-aligned and the alignment is the same walk `Vel:` uses:
+the k-th token of a cell holds the k-th token of that voice's bar, `.` holds
+its column, and a voice that runs across several rows or sections is one
+stream, marked in order. A stack (`C3-G3-D4`) is one attack and takes one
+value.
+
+Values are **literals — numbers only**. A curve in v1 is an explicit value
+list; expressions, and everything they would buy, arrive in v2.
+
+`vel` is the one channel with compilation semantics: it drives per-note
+MIDI velocity. Precedence is deliberate and one line: **a `[Perf]` value
+wins; a `.` leaves whatever else said standing.** The take speaks over the
+chart, but only where it has something to say — row `vel:`, `Vel:` marks and
+inline `@n`/`!` marks all survive underneath a spacer column.
+
+Any other channel is data: kept, addressed like an annotation (voice, bar,
+beat window, target token — on `arrangement.perf`), and with zero effect on
+the compile. Registering a new channel semantic happens in one table,
+`plainsong.notation.perf.CHANNEL_SEMANTICS`, the same contract annotation
+layers use. The block is read, not played — like `[Stage]`, it never joins a
+section — and it survives `plainsong transpose` and back, so a transposed
+take keeps its channels.
+
 ## Swing
 
 `swing:` names the share of a beat the *long* note of each eighth-note pair

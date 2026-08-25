@@ -1,0 +1,53 @@
+[spec]
+id = "core.perf"
+title = "[Perf] blocks: performance channels over the piece's own voices"
+why = """
+A row can name one velocity for a whole bar and an inline mark can name one
+note, but nothing in the notation could say what a *take* does inside a bar:
+the arm is one weight, per row, and every attempt to shape a performance ran
+into that. The [Perf] block is the minimal core of the perf spec (draft
+docs/perf-spec-draft.md, first ship-step): bar-aligned tables of literal
+values -- one column per note-slot of the voice they name -- one channel per
+row.
+
+v1 is seminar-gated (seminar A1): values are literals, numbers only. No
+expressions, no recursion, no cross-voice reads -- those stay behind v2's
+demonstrated-need door. What v1 ships is the address: a channel row maps to
+that voice's notes in order, through the same positional walk the Vel: row
+and every named annotation layer already use, so a perf value and a Vel: mark
+over the same column cannot disagree about which event they mean.
+
+The precedence rule is deliberate and documented: a [Perf] velocity wins over
+the Vel: row and over inline @n/! marks. It is the take speaking over the
+chart, which is the only order that makes a performance layer worth writing.
+
+The first check is the one every notation change here owes: a file with no
+[Perf] block compiles to the very bytes it always did, and a [Perf] row whose
+channel has no registered semantic is data -- kept, addressed, queryable, and
+without one byte of effect on the compile.
+"""
+tags = ["core", "fast", "notation"]
+
+[[check]]
+id = "velocity"
+kind = "python"
+run = "plainsong.selfcheck:check_perf_velocity"
+description = "A vel channel drives per-note MIDI velocity, into the note-on bytes"
+
+[[check]]
+id = "precedence"
+kind = "python"
+run = "plainsong.selfcheck:check_perf_precedence"
+description = "[Perf] wins over Vel: rows and inline marks; a . leaves them standing"
+
+[[check]]
+id = "data"
+kind = "python"
+run = "plainsong.selfcheck:check_perf_data_channels"
+description = "Unknown channels are data: addressed, queryable, zero compile effect"
+
+[[check]]
+id = "inert"
+kind = "python"
+run = "plainsong.selfcheck:check_perf_is_inert"
+description = "No [Perf] block constructs nothing phantom and changes no byte"

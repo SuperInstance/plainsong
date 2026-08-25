@@ -137,7 +137,10 @@ class TestResourcesInjection(unittest.TestCase):
             resources = Resources(config, session_root=Path(raw) / "sessions")
             self.assertEqual(resources._sessions(), [])
             found = resources.list()
-            self.assertEqual(len(found), 9)
+            # The fixed set is notation-reference, capabilities and every
+            # spec -- one resource per spec file, so a new spec moves this
+            # count (perf.toml is the tenth).
+            self.assertEqual(len(found), 10)
 
     def test_injected_ensemble_module_is_actually_used(self) -> None:
         calls: list[str] = []
@@ -153,7 +156,7 @@ class TestResourcesInjection(unittest.TestCase):
             # one session ("from-fake-module"), and each session lists as its
             # own resource. The fixed set (notation-reference, capabilities,
             # every spec) is unchanged by which ensemble module is injected.
-            self.assertEqual(len(found), 10)
+            self.assertEqual(len(found), 11)
             names = [entry["name"] for entry in found]
             self.assertIn("session: from-fake-module", names)
 

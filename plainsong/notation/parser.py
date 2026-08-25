@@ -25,12 +25,14 @@ import re
 from dataclasses import dataclass
 
 from . import theory
+from .perf import PERF_SECTIONS
 from .ir import (
     ROLE_ANNOTATION,
     ROLE_CHORDS,
     ROLE_LYRICS,
     ROLE_MELODY,
     ROLE_NOTE,
+    ROLE_PERF,
     ROLE_PLAYER,
     ROLE_VELOCITY,
     Cell,
@@ -330,6 +332,8 @@ class Parser:
         self._current: Section | None = None
         self._saw_metadata_marker = False
         self._in_stage = False
+        self._in_perf = False
+        self.perf_rows: list[Line] = []
 
     # -- diagnostics ---------------------------------------------------------
 
@@ -354,6 +358,7 @@ class Parser:
             dialect=self.dialect,
             source=self.raw_text,
             path=self.path,
+            perf=self.perf_rows,
         )
 
     # -- line dispatch -------------------------------------------------------
@@ -379,11 +384,15 @@ class Parser:
         if section:
             name = section.group(1).strip()
             self._in_stage = False
+            self._in_perf = False
             if name.lower() in {"metadata", "meta", "header"}:
                 self._saw_metadata_marker = True
                 return
             if name.lower() in {"stage", "hall", "room"}:
                 self._begin_stage()
+                return
+            if name.lower() in PERF_SECTIONS:
+                self._begin_perf()
                 return
             self._start_section(name, (section.group(2) or "").strip(), index)
             return
@@ -392,6 +401,12 @@ class Parser:
         # Its lines are geometry, not music, so they never reach the arranger.
         if self._in_stage:
             self._handle_stage(line, index)
+            return
+
+        # A [Perf] block runs until the next header, the way [Stage] does.
+        # Its rows are channels over the piece's voices, not music.
+        if self._in_perf:
+            self._handle_perf_line(line, index, raw)
             return
 
         if line.startswith("@"):
@@ -538,6 +553,55 @@ class Parser:
         self._finish_section()
         if self.meta.stage is None:
             self.meta.stage = Stage()
+
+    def _begin_perf(self) -> None:
+        """Start a ``[Perf]`` block: read, not played, like ``[Stage]``."""
+        self._in_perf = True
+        self._finish_section()
+
+    def _handle_perf_line(self, line: str, index: int, raw: str) -> None:
+        """One row of a ``[Perf]`` block: a channel table over a voice.
+
+        ``@piano.vel | 88 58 . . |`` is numbers per note-slot, v1's whole
+        grammar (the safe interpreter is v2, behind the seminar's gate).
+        Values that are neither numbers nor spacers are kept as written data
+        and warned about -- the row is the writer's meaning, not an error,
+        but the compiler is not going to pretend it read it.
+        """
+        from .annotations import is_spacer
+        from .perf import NUMBER_RE, parse_channel_row
+
+        stripped = line.lstrip()
+        if stripped.startswith("#") or stripped.startswith("//"):
+            return
+        row = parse_channel_row(line, self)
+        if row is None:
+            self._note(
+                "warning",
+                f"[Perf] row not understood: {line.strip()[:60]}",
+                index,
+                hint="a perf row is a channel table: `@piano.vel | 88 58 . . |`",
+                source=raw,
+            )
+            return
+        row.line_number = index
+        junk = [
+            token
+            for cell in row.cells
+            for token in cell.tokens
+            if not is_spacer(token) and not NUMBER_RE.match(token)
+        ]
+        if junk:
+            shown = ", ".join(sorted(set(junk))[:4])
+            self._note(
+                "warning",
+                f"[Perf] {row.options.get('voice')}.{row.name}: v1 values are numbers; "
+                f"nothing understood {shown}, kept as data",
+                index,
+                hint="curves in v1 are explicit value lists; expressions arrive in v2",
+                source=raw,
+            )
+        self.perf_rows.append(row)
 
     def _handle_stage(self, line: str, index: int) -> None:
         from ..perform.stage import read_stage_line

@@ -4,6 +4,36 @@ Notable changes, newest first. Dates are ISO 8601.
 
 ## Unreleased
 
+### `[Perf]` blocks: performance channels (v1, literals only)
+
+A row could name one velocity for a whole bar and an inline mark one note,
+but nothing could say what a take does *inside* a bar — intra-bar dynamic
+shape was structurally inexpressible, and a feature like `velocity_std`
+read the same for every take. `[Perf]` is the first ship-step of the perf
+spec (`docs/perf-spec-draft.md` §18), seminar-gated to literals (seminar A1:
+expressions and recursion are v2, behind demonstrated need):
+
+```plainsong
+[V1]
+@piano | C3-G3-D4 . E4 G4 | vel: 82
+
+[Perf]
+@piano.vel | 96 . 64 40 |
+```
+
+One row is one channel of one voice — a player name or a row kind — and the
+cells are bar-aligned over that voice's notes through the same positional
+walk `Vel:` and annotation layers use. `vel` drives per-note MIDI velocity
+and wins over `Vel:` rows and inline `@n`/`!` marks; a `.` column leaves
+those standing. Any other channel name is data: kept, addressed, queryable,
+zero compile effect.
+
+Backward compatibility is checked, not asserted: a piece with no `[Perf]`
+block compiles byte for byte as before (golden digests in
+`tests/test_perf.py`), and the corpus fingerprint is unmoved. One MCP test
+count moved 9→10/10→11 because the resource list includes every spec file
+and this adds `spec_files/perf.toml`.
+
 ### The shipped examples were wrapped in markdown fences
 
 All eight files in `examples/` opened with ```` ```plainsong ```` and closed with

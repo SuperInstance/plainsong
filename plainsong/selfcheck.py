@@ -662,3 +662,156 @@ def check_swing() -> tuple[bool, str]:
     ]:
         return False, "50% swing is not the same as no swing at all"
     return True, "long-short pairs at the named ratio, written times unmoved, 50% straight"
+
+
+# -- [Perf] blocks -----------------------------------------------------------
+#
+# The first ship-step of docs/perf-spec-draft.md: bar-aligned tables of
+# literal channel values over a voice's own notes, gated to numbers only by
+# the seminar's A1 decision (expressions and recursion are v2, behind
+# demonstrated need). The checks hold the four promises the spec file names.
+
+PERF_VELOCITY_SAMPLE = """[V1]
+Melody: | C4 D4 E4 F4 | G4 . E4 . |
+Vel: | mf . . f | . . . . |
+[Perf]
+@melody.vel | 40 90 40 90 | . . 64 . |
+"""
+
+
+def _perf_note_ons(arrangement) -> list[int]:
+    """Velocities as they reach the wire, in onset order."""
+    from .render.midi import midi_bytes
+
+    data = midi_bytes(arrangement)
+    events: list[tuple[int, int]] = []
+    position = 0
+    while position + 8 <= len(data):
+        tag, size = data[position : position + 4], int.from_bytes(
+            data[position + 4 : position + 8], "big"
+        )
+        body = data[position + 8 : position + 8 + size]
+        position += 8 + size
+        if tag != b"MTrk":
+            continue
+        tick = 0
+        index = 0
+        while index < len(body):
+            delta = 0
+            while True:
+                byte = body[index]
+                index += 1
+                delta = (delta << 7) | (byte & 0x7F)
+                if not byte & 0x80:
+                    break
+            tick += delta
+            status = body[index]
+            if status == 0xFF:
+                index += 2
+                length = body[index]
+                index += 1 + length
+            elif status & 0xF0 in (0x80, 0x90):
+                _pitch, velocity = body[index + 1], body[index + 2]
+                index += 3
+                if status & 0xF0 == 0x90 and velocity > 0:
+                    events.append((tick, velocity))
+            else:
+                index += 2
+    return [velocity for _tick, velocity in sorted(events)]
+
+
+def check_perf_velocity() -> tuple[bool, str]:
+    """A vel channel drives per-note velocity, note for note, into the MIDI."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+
+    arrangement = arrange(parse(PERF_VELOCITY_SAMPLE), ArrangeOptions(humanize=False))
+    notes = sorted(arrangement.tracks[0].notes, key=lambda note: note.start)
+    written = [note.velocity for note in notes]
+    # Bar 1: the channel names all four attacks. Bar 2: Vel:'s f holds over
+    # G4 (96), the 64 lands on the third column's attack, and the spacers
+    # leave the rest to the row's own sources.
+    if written != [40, 90, 40, 90, 96, 64]:
+        return False, f"expected [40, 90, 40, 90, 96, 64], got {written}"
+
+    played = _perf_note_ons(arrangement)
+    if played != written:
+        return False, f"the MIDI file carries {played}, the arrangement says {written}"
+    return True, "one velocity per note from the [Perf] table, into the note-on bytes"
+
+
+def check_perf_precedence() -> tuple[bool, str]:
+    """[Perf] wins over Vel: rows and inline marks; a . leaves them standing."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+
+    text = (
+        "[V1]\n"
+        "Melody: | C4! D4@40 E4 F4 |\n"
+        "Vel: | mf . f . |\n"
+        "[Perf]\n"
+        "melody.vel | . . 30 . |\n"
+    )
+    arrangement = arrange(parse(text), ArrangeOptions(humanize=False))
+    notes = sorted(arrangement.tracks[0].notes, key=lambda note: note.start)
+    velocities = [note.velocity for note in notes]
+    # C4: mf then the accent (100), perf says nothing. D4: the @40 mark.
+    # E4: the channel's 30 beats Vel:'s f. F4: f holds, 96.
+    if velocities != [100, 40, 30, 96]:
+        return False, f"expected [100, 40, 30, 96], got {velocities}"
+    return True, "[Perf] over Vel: and inline marks; . columns keep what those said"
+
+
+def check_perf_data_channels() -> tuple[bool, str]:
+    """Unknown channels are data: addressed, queryable, zero compile effect."""
+    from .notation import arrange, parse
+    from .notation.arrange import ArrangeOptions
+    from .render.midi import midi_bytes
+
+    music = "[V1]\nMelody: | C4 D4 E4 (rest) | F4 . . . |\n"
+    layered = music + "[Perf]\nmelody.ache | 0.2 0.9 0.5 . | 0.7 . . . |\n"
+
+    arrangement = arrange(parse(layered), ArrangeOptions(humanize=False))
+    if len(arrangement.perf) != 4:
+        return False, f"expected 4 kept values, got {len(arrangement.perf)}"
+    marked = next(a for a in arrangement.perf if a.token == "0.9")
+    if (marked.name, marked.voice, marked.bar, marked.onset, marked.target) != (
+        "ache",
+        "melody",
+        0,
+        1.0,
+        "D4",
+    ):
+        return False, f"misaddressed: {marked.as_dict()}"
+
+    # The same notes, byte for byte, without the layer.
+    bare = arrange(parse(music), ArrangeOptions(humanize=False))
+    if midi_bytes(arrangement) != midi_bytes(bare):
+        return False, "a data channel changed the compile"
+    return True, "unknown channels resolve to addresses and change not one byte"
+
+
+def check_perf_is_inert() -> tuple[bool, str]:
+    """No [Perf] block: nothing phantom is constructed, nothing moves."""
+    from .notation import arrange, parse
+    from .render.midi import midi_bytes
+
+    score = parse(SAMPLE)
+    if score.perf:
+        return False, "a file with no [Perf] block picked one up anyway"
+    arrangement = arrange(score)
+    if arrangement.perf:
+        return False, "the arrangement constructed perf data from nothing"
+    if any("[Perf]" in line for line in score.source.splitlines()):
+        return False, "the sample grew a perf block; pick another control"
+
+    from .notation.arrange import ArrangeOptions
+
+    plain = arrange(parse(SAMPLE), ArrangeOptions(humanize=False))
+    layered = arrange(
+        parse(SAMPLE + "\n[Perf]\n@bass.ache | 0.5 . | 0.9 . |\n"),
+        ArrangeOptions(humanize=False),
+    )
+    if midi_bytes(plain) != midi_bytes(layered):
+        return False, "a data-only [Perf] block changed the bytes"
+    return True, "no phantom perf structures; a data-only block is byte-identical"
